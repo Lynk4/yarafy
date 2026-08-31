@@ -19,7 +19,6 @@ malwarebazaar:
       - "macho"
       - "dmg"
       - "pkg"
-      - "zip"
     windows:
       - "exe"
       - "dll"
@@ -44,6 +43,9 @@ malwarebazaar:
       - "JokerSpy"
       - "MacStealer"
       - "BansheeStealer"
+      - "CthulhuStealer"
+      - "ShadowVault"
+      - "DazzleSpy"
 
 # VirusTotal Enrichment Settings (Free Tier Compliant)
 virustotal:
