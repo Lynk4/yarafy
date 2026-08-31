@@ -10,10 +10,9 @@
 yarafy/
 ├── yara-rules/                   # YARA Rules Repository
 │   ├── macos/                    # macOS rules (Mach-O, DMG, PKG, Plists, scripts)
-│   │   ├── infostealer_macos_amos.yar
-│   │   ├── backdoor_macos_rustdoor.yar
-│   │   ├── infostealer_macos_banshee.yar
-│   │   └── macos_persistence_launchd.yar
+│   │   ├── MALW_macOS_MacSync_Stealer.yar
+│   │   ├── OSX_Stealer_AMOS_Generic.yar
+│   │   └── macOS_ClickFix_AppleScript.yar
 │   ├── windows/                  # Windows rules (PE, DLL, .NET, PowerShell)
 │   ├── linux/                    # Linux rules (ELF, shell scripts)
 │   └── non-pe/                   # Scripting & document payloads
