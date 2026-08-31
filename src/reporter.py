@@ -120,10 +120,10 @@ class TelemetryReporter:
     ) -> None:
         """Generates a GitHub-flavored Markdown report in telemetry/."""
         lines = [
-            "# 🎯 Yarafy Telemetry & Threat Hunting Report",
+            "# Yarafy Telemetry & Threat Hunting Report",
             f"\n**Last Run:** `{stats.get('last_run', 'N/A')}`",
             f"**Total Samples Scanned:** `{stats.get('total_scanned', 0)}` | **Total Rule Hits:** `{stats.get('total_hits', 0)}`\n",
-            "## 📊 Hits Breakdown by Platform",
+            "## Hits Breakdown by Platform",
             "| Platform | Total Hits |",
             "| :--- | :--- |",
         ]
@@ -134,7 +134,7 @@ class TelemetryReporter:
             lines.append("| *None recorded yet* | `0` |")
 
         lines.extend([
-            "\n## 🏆 Hits Breakdown by YARA Rule",
+            "\n## Hits Breakdown by YARA Rule",
             "| Rule Name | Total Detections |",
             "| :--- | :--- |",
         ])
@@ -145,7 +145,7 @@ class TelemetryReporter:
             lines.append("| *No rule hits yet* | `0` |")
 
         lines.extend([
-            "\n## 🚨 Recent Positive Detections",
+            "\n## Recent Positive Detections",
             "| Timestamp | Rule | Platform | SHA256 | VT Detection | VT Threat Label |",
             "| :--- | :--- | :--- | :--- | :--- | :--- |",
         ])
@@ -174,12 +174,12 @@ class TelemetryReporter:
     def send_webhook_alert(self, hits: List[Dict[str, Any]]) -> None:
         """Send notification webhook to Slack/Discord."""
         try:
-            summary_text = f"🚨 **Yarafy Alert**: {len(hits)} new malware hit(s) detected!\n\n"
+            summary_text = f"**Yarafy Alert**: {len(hits)} new malware hit(s) detected!\n\n"
             for h in hits[:5]:
                 rule = h.get("rule_name")
                 sha = h.get("sample_sha256")
                 vt = h.get("vt_enrichment", {}).get("detection_ratio", "N/A")
-                summary_text += f"• **Rule**: `{rule}`\n  **SHA256**: `{sha}`\n  **VT**: `{vt}`\n\n"
+                summary_text += f"* **Rule**: `{rule}`\n  **SHA256**: `{sha}`\n  **VT**: `{vt}`\n\n"
 
             payload = {"content": summary_text, "text": summary_text}
             requests.post(self.webhook_url, json=payload, timeout=10)

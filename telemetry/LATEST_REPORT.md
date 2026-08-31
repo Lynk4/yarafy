@@ -1,21 +1,21 @@
-# 🎯 Yarafy Telemetry & Threat Hunting Report
+# Yarafy Telemetry & Threat Hunting Report
 
 **Last Run:** `2026-08-31T13:32:12.521808+00:00`
 **Total Samples Scanned:** `133` | **Total Rule Hits:** `13`
 
-## 📊 Hits Breakdown by Platform
+## Hits Breakdown by Platform
 | Platform | Total Hits |
 | :--- | :--- |
 | **MACOS** | `13` |
 
-## 🏆 Hits Breakdown by YARA Rule
+## Hits Breakdown by YARA Rule
 | Rule Name | Total Detections |
 | :--- | :--- |
 | [`macOS_ClickFix_AppleScript_Dropper`](../yara-rules/) | `10` |
 | [`infostealer_macos_banshee`](../yara-rules/) | `2` |
 | [`infostealer_macos_amos`](../yara-rules/) | `1` |
 
-## 🚨 Recent Positive Detections
+## Recent Positive Detections
 | Timestamp | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-08-31 13:32:12 | `infostealer_macos_banshee` | macos | [`15d1afca78...`](https://www.virustotal.com/gui/file/15d1afca780e2ea6ffec8c4862a3401e003b5e79ce5f9076b4eea4ab599bc4ce) | `33/62` | `trojan.stealer/macstealer` |

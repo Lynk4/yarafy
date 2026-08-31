@@ -17,7 +17,7 @@ console = Console()
 
 def cmd_lint(args: argparse.Namespace) -> int:
     """Validate all YARA rules for syntax errors."""
-    console.print(Panel("[bold blue]🔍 Validating YARA Rules[/bold blue]"))
+    console.print(Panel("[bold blue]Validating YARA Rules[/bold blue]"))
     scanner = YaraScanner(
         rules_root=settings.rules_dir,
         active_platforms=settings.active_platforms,
@@ -28,12 +28,12 @@ def cmd_lint(args: argparse.Namespace) -> int:
 
     valid, errors = scanner.validate_rules()
     if valid:
-        console.print("[bold green]✅ All YARA rules compiled and validated successfully![/bold green]")
+        console.print("[bold green]All YARA rules compiled and validated successfully![/bold green]")
         return 0
     else:
-        console.print("[bold red]❌ Syntax errors found in YARA rules:[/bold red]")
+        console.print("[bold red]Syntax errors found in YARA rules:[/bold red]")
         for err in errors:
-            console.print(f"  • [red]{err}[/red]")
+            console.print(f"  * [red]{err}[/red]")
         return 1
 
 
@@ -41,7 +41,7 @@ def cmd_scan_local(args: argparse.Namespace) -> int:
     """Scan a local file or directory."""
     target = Path(args.target)
     if not target.exists():
-        console.print(f"[bold red]❌ Target path not found: {target}[/bold red]")
+        console.print(f"[bold red]Target path not found: {target}[/bold red]")
         return 1
 
     scanner = YaraScanner(
@@ -50,7 +50,7 @@ def cmd_scan_local(args: argparse.Namespace) -> int:
     )
     scanner.compile()
 
-    console.print(f"[bold blue]🔍 Scanning {target}...[/bold blue]")
+    console.print(f"[bold blue]Scanning {target}...[/bold blue]")
 
     files_to_scan = [target] if target.is_file() else [p for p in target.rglob("*") if p.is_file()]
     all_hits = []
@@ -60,7 +60,7 @@ def cmd_scan_local(args: argparse.Namespace) -> int:
         if hits:
             all_hits.extend(hits)
             for h in hits:
-                console.print(f"[bold red]🚨 HIT:[/bold red] Rule [cyan]{h['rule_name']}[/cyan] matched in [yellow]{f.name}[/yellow]")
+                console.print(f"[bold red]HIT:[/bold red] Rule [cyan]{h['rule_name']}[/cyan] matched in [yellow]{f.name}[/yellow]")
 
     console.print(f"\n[bold green]Scan complete. {len(files_to_scan)} files scanned, {len(all_hits)} hits found.[/bold green]")
     return 0
@@ -68,7 +68,7 @@ def cmd_scan_local(args: argparse.Namespace) -> int:
 
 def cmd_hunt(args: argparse.Namespace) -> int:
     """Execute live hunting against MalwareBazaar + VirusTotal enrichment + telemetry logging."""
-    console.print(Panel("[bold magenta]🎯 Starting Yarafy Feed Hunting Workflow[/bold magenta]"))
+    console.print(Panel("[bold magenta]Starting Yarafy Feed Hunting Workflow[/bold magenta]"))
 
     # 1. Initialize Scanner
     scanner = YaraScanner(
@@ -77,9 +77,9 @@ def cmd_hunt(args: argparse.Namespace) -> int:
     )
     valid, errors = scanner.validate_rules()
     if not valid:
-        console.print("[bold red]❌ Cannot proceed with hunt: YARA syntax errors detected.[/bold red]")
+        console.print("[bold red]Cannot proceed with hunt: YARA syntax errors detected.[/bold red]")
         for err in errors:
-            console.print(f"  • {err}")
+            console.print(f"  * {err}")
         return 1
 
     scanner.compile()
@@ -118,7 +118,7 @@ def cmd_hunt(args: argparse.Namespace) -> int:
     # Deduplicate
     unique_samples = {s["sha256_hash"]: s for s in total_samples_meta if "sha256_hash" in s}
     sample_list = list(unique_samples.values())
-    console.print(f"[bold green]✓ Retrieved {len(sample_list)} unique candidate samples to scan.[/bold green]")
+    console.print(f"[bold green]Retrieved {len(sample_list)} unique candidate samples to scan.[/bold green]")
 
     if not sample_list:
         console.print("[yellow]No new samples returned from feed queries.[/yellow]")
@@ -144,7 +144,7 @@ def cmd_hunt(args: argparse.Namespace) -> int:
         hits = scanner.scan_data(sample_bytes, sample_name=sample_name)
         if hits:
             for hit in hits:
-                console.print(f"  [bold red]🚨 MATCH DETECTED![/bold red] Rule: [bold yellow]{hit['rule_name']}[/bold yellow]")
+                console.print(f"  [bold red]MATCH DETECTED![/bold red] Rule: [bold yellow]{hit['rule_name']}[/bold yellow]")
                 # Attach MalwareBazaar metadata
                 hit["mb_metadata"] = {
                     "first_seen": s_meta.get("first_seen"),
@@ -155,11 +155,11 @@ def cmd_hunt(args: argparse.Namespace) -> int:
 
                 # 5. Enrich with VirusTotal
                 if settings.virustotal_config.get("enabled", True):
-                    console.print(f"  [cyan]ℹ Querying VirusTotal for hash {sha256[:12]}...[/cyan]")
+                    console.print(f"  [cyan]Querying VirusTotal for hash {sha256[:12]}...[/cyan]")
                     vt_data = vt_enricher.lookup_hash(sha256)
                     hit["vt_enrichment"] = vt_data
                     if vt_data.get("vt_status") == "success":
-                        console.print(f"  [green]✓ VT Detections: {vt_data.get('detection_ratio')} | Label: {vt_data.get('suggested_threat_label')}[/green]")
+                        console.print(f"  [green]VT Detections: {vt_data.get('detection_ratio')} | Label: {vt_data.get('suggested_threat_label')}[/green]")
 
                 matched_hits.append(hit)
 
@@ -167,10 +167,10 @@ def cmd_hunt(args: argparse.Namespace) -> int:
     stats = reporter.record_run(scanned_count, matched_hits, settings.active_platforms)
     console.print(Panel(
         f"[bold green]Hunt Complete![/bold green]\n"
-        f"• Samples Downloaded & Scanned: [cyan]{scanned_count}[/cyan]\n"
-        f"• Positive Hits in this run: [bold red]{len(matched_hits)}[/bold red]\n"
-        f"• Total Lifetime Hits: [bold yellow]{stats['total_hits']}[/bold yellow]\n"
-        f"• Report saved to: [magenta]{settings.report_file}[/magenta]"
+        f"* Samples Downloaded & Scanned: [cyan]{scanned_count}[/cyan]\n"
+        f"* Positive Hits in this run: [bold red]{len(matched_hits)}[/bold red]\n"
+        f"* Total Lifetime Hits: [bold yellow]{stats['total_hits']}[/bold yellow]\n"
+        f"* Report saved to: [magenta]{settings.report_file}[/magenta]"
     ))
 
     return 0
@@ -186,7 +186,7 @@ def cmd_stats(args: argparse.Namespace) -> int:
     stats = reporter.load_stats()
     hits = reporter.load_hits()
 
-    table = Table(title="🎯 Yarafy Telemetry Overview")
+    table = Table(title="Yarafy Telemetry Overview")
     table.add_column("Metric", style="cyan")
     table.add_column("Value", style="yellow")
 
@@ -197,7 +197,7 @@ def cmd_stats(args: argparse.Namespace) -> int:
     console.print(table)
 
     if stats.get("hits_by_rule"):
-        rule_table = Table(title="🏆 Hits by YARA Rule")
+        rule_table = Table(title="Hits by YARA Rule")
         rule_table.add_column("Rule Name", style="magenta")
         rule_table.add_column("Detections", style="green")
         for r, c in sorted(stats["hits_by_rule"].items(), key=lambda x: x[1], reverse=True):

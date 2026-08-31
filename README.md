@@ -1,27 +1,27 @@
-# 🎯 Yarafy
+# Yarafy
 
 **Yarafy** is an automated YARA rule management, threat hunting, and telemetry pipeline. It enables security researchers and threat hunters to write and store YARA rules (starting with **macOS** Mach-O/DMG/scripts, and extensible to **Windows**, **Linux**, and **non-PE** files), automatically hunt against live malware feeds on **MalwareBazaar**, enrich positive hits using **VirusTotal**, and record continuous detection telemetry.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 yarafy/
-├── yara-rules/                   # 📂 YARA Rules Repository
-│   ├── macos/                    # 🍎 macOS rules (Mach-O, DMG, PKG, Plists, scripts)
+├── yara-rules/                   # YARA Rules Repository
+│   ├── macos/                    # macOS rules (Mach-O, DMG, PKG, Plists, scripts)
 │   │   ├── infostealer_macos_amos.yar
 │   │   ├── backdoor_macos_rustdoor.yar
 │   │   ├── infostealer_macos_banshee.yar
 │   │   └── macos_persistence_launchd.yar
-│   ├── windows/                  # 🪟 Windows rules (PE, DLL, .NET, PowerShell)
-│   ├── linux/                    # 🐧 Linux rules (ELF, shell scripts)
-│   └── non-pe/                   # 📄 Scripting & document payloads
-├── telemetry/                    # 📊 Telemetry and Hit Logs
+│   ├── windows/                  # Windows rules (PE, DLL, .NET, PowerShell)
+│   ├── linux/                    # Linux rules (ELF, shell scripts)
+│   └── non-pe/                   # Scripting & document payloads
+├── telemetry/                    # Telemetry and Hit Logs
 │   ├── hits.json                 # Historical match database (deduplicated)
 │   ├── stats.json                # Aggregate metrics & detection counts
 │   └── LATEST_REPORT.md          # Generated markdown summary
-├── src/                          # ⚙️ Core Engine
+├── src/                          # Core Engine
 │   ├── collector.py              # MalwareBazaar API client & sample downloader
 │   ├── scanner.py                # YARA compiler & multi-file scanner
 │   ├── enricher.py               # VirusTotal API v3 enricher (rate-limited)
@@ -38,7 +38,7 @@ yarafy/
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ### 1. Installation
 
@@ -64,7 +64,7 @@ Fill in your API keys:
 
 ---
 
-## 🛠️ CLI Commands
+## CLI Commands
 
 ### 1. Validate & Lint Rules
 Validates that all rules in `yara-rules/` compile without syntax errors:
@@ -91,7 +91,7 @@ python -m src.main stats
 
 ---
 
-## 🤖 GitHub Actions Automation
+## GitHub Actions Automation
 
 The repository includes ready-to-run GitHub Actions:
 
@@ -108,7 +108,7 @@ To enable the hunting action on GitHub:
 
 ---
 
-## ➕ Adding New Rules
+## Adding New Rules
 
 To add a new rule:
 1. Navigate to the relevant platform folder (e.g. [`yara-rules/macos/`](yara-rules/macos/)).
