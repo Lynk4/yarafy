@@ -1,9 +1,13 @@
 {
-  "total_scanned": 0,
-  "total_hits": 0,
-  "last_run": "2026-08-31T13:21:43.667765+00:00",
+  "total_scanned": 133,
+  "total_hits": 13,
+  "last_run": "2026-08-31T13:32:12.521808+00:00",
   "hits_by_platform": {
-    "macos": 0
+    "macos": 13
   },
-  "hits_by_rule": {}
+  "hits_by_rule": {
+    "macOS_ClickFix_AppleScript_Dropper": 10,
+    "infostealer_macos_amos": 1,
+    "infostealer_macos_banshee": 2
+  }
 }
