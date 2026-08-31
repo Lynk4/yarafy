@@ -1,7 +1,7 @@
 # Yarafy Telemetry & Threat Hunting Report
 
-**Last Run:** `2026-08-31T14:41:41.676801+00:00`
-**Total Samples Scanned:** `135` | **Total Rule Hits:** `20`
+**Last Run:** `2026-08-31T22:48:34.005779+00:00`
+**Total Samples Scanned:** `272` | **Total Rule Hits:** `20`
 
 ## Hits Breakdown by Platform
 | Platform | Total Hits |
