@@ -7,6 +7,12 @@ from pathlib import Path
 from typing import Any, Dict, Generator, List, Optional, Tuple
 import requests
 
+try:
+    import pyzipper
+    HAS_PYZIPPER = True
+except ImportError:
+    HAS_PYZIPPER = False
+
 
 class MalwareBazaarCollector:
     """Client to query and download malware samples from MalwareBazaar (abuse.ch)."""
@@ -113,13 +119,31 @@ class MalwareBazaarCollector:
                     pass
 
             # Extract zip payload password-protected with 'infected'
-            with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
-                for file_info in zf.infolist():
-                    try:
-                        extracted_bytes = zf.read(file_info, pwd=b"infected")
-                        return (file_info.filename, extracted_bytes)
-                    except Exception as e:
-                        print(f"[!] Failed to decrypt {file_info.filename}: {e}")
+            if HAS_PYZIPPER:
+                try:
+                    with pyzipper.AESZipFile(io.BytesIO(resp.content)) as zf:
+                        zf.pwd = b"infected"
+                        for file_info in zf.infolist():
+                            try:
+                                extracted_bytes = zf.read(file_info)
+                                return (file_info.filename, extracted_bytes)
+                            except Exception as e:
+                                print(f"[!] pyzipper failed to decrypt {file_info.filename}: {e}")
+                except Exception:
+                    pass
+
+            # Fallback to standard zipfile
+            try:
+                with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
+                    for file_info in zf.infolist():
+                        try:
+                            extracted_bytes = zf.read(file_info, pwd=b"infected")
+                            return (file_info.filename, extracted_bytes)
+                        except Exception as e:
+                            print(f"[!] zipfile failed to decrypt {file_info.filename}: {e}")
+            except Exception as e:
+                print(f"[!] Failed to parse zip archive: {e}")
+
             return None
         except Exception as e:
             print(f"[!] Error downloading sample {sha256_hash}: {e}")
