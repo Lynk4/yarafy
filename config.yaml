@@ -1,0 +1,66 @@
+# Yarafy Configuration File
+
+# Path to YARA rules root directory
+rules_dir: "yara-rules"
+
+# Active platforms to scan. Options: "macos", "windows", "linux", "non-pe"
+active_platforms:
+  - "macos"
+
+# MalwareBazaar Collection Settings
+malwarebazaar:
+  enabled: true
+  api_url: "https://mb-api.abuse.ch/api/v1/"
+  # Number of recent samples / queries to retrieve per execution
+  limit: 50
+  # Filter by file type for active platforms
+  platform_file_types:
+    macos:
+      - "macho"
+      - "dmg"
+      - "pkg"
+      - "zip"
+    windows:
+      - "exe"
+      - "dll"
+      - "msi"
+    linux:
+      - "elf"
+    non-pe:
+      - "script"
+      - "sh"
+      - "py"
+      - "js"
+  # Common tags to query for focused hunting
+  platform_tags:
+    macos:
+      - "macOS"
+      - "Mac"
+      - "Mach-O"
+      - "AMOS"
+      - "AtomicStealer"
+      - "RustBucket"
+      - "RustDoor"
+      - "JokerSpy"
+      - "MacStealer"
+      - "BansheeStealer"
+
+# VirusTotal Enrichment Settings (Free Tier Compliant)
+virustotal:
+  enabled: true
+  # Free tier allows 4 requests per minute -> 15s delay between requests
+  rate_limit_seconds: 15.0
+  # Only enrich samples when a YARA rule triggers a hit
+  enrich_on_hit_only: true
+  api_url: "https://www.virustotal.com/api/v3/files/"
+
+# Telemetry and Storage
+telemetry:
+  hits_file: "telemetry/hits.json"
+  stats_file: "telemetry/stats.json"
+  report_file: "telemetry/LATEST_REPORT.md"
+  dashboard_readme: true
+
+# Notification and Alerting
+alerts:
+  webhook_enabled: false

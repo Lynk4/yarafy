@@ -1,0 +1,57 @@
+name: "Automated Feed Hunt & Telemetry"
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Number of samples per query to fetch"
+        required: false
+        default: "25"
+
+permissions:
+  contents: write
+
+jobs:
+  hunt:
+    name: "MalwareBazaar Hunt & VT Enrichment"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout Code"
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: "Install Dependencies"
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: "Execute Threat Feed Hunting"
+        env:
+          MALWAREBAZAAR_API_KEY: ${{ secrets.MALWAREBAZAAR_API_KEY }}
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: |
+          python -m src.main hunt --limit ${{ github.event.inputs.limit || '25' }}
+
+      - name: "Commit and Push Updated Telemetry"
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add telemetry/
+          if git diff --staged --quiet; then
+            echo "No telemetry changes to commit."
+          else
+            git commit -m "chore(telemetry): update hits and detection statistics [skip ci]"
+            git push
+          fi
