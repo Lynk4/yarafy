@@ -71,19 +71,29 @@ Validates that all rules in `yara-rules/` compile without syntax errors:
 python -m src.main lint
 ```
 
-### 2. Run Feed Hunt
-Fetches the latest platform samples from MalwareBazaar, scans them with your rules, enriches hits via VirusTotal, and updates telemetry:
+### 2. Run MalwareBazaar Feed Hunt
+Fetches recent macOS samples from MalwareBazaar, scans them with your rules, and updates telemetry:
 ```bash
 python -m src.main hunt --limit 25
 ```
 
-### 3. Scan Local File or Folder
+### 3. Run VirusTotal Live Sample Hunt
+Searches VirusTotal Intelligence, downloads live samples using your VT API key, and scans them against your rules:
+```bash
+# Search and download 10 recent macOS Mach-O samples from VT
+python -m src.main vt-hunt --query "type:macho positives:5+ fs:30d+" --limit 10
+
+# Search for specific threat campaigns
+python -m src.main vt-hunt --query "type:macho tag:stealer" --limit 5
+```
+
+### 4. Scan Local File or Folder
 Test your rules against local samples or directories:
 ```bash
 python -m src.main scan-local /path/to/suspicious/folder/
 ```
 
-### 4. View Telemetry Stats
+### 5. View Telemetry Stats
 ```bash
 python -m src.main stats
 ```
@@ -92,17 +102,18 @@ python -m src.main stats
 
 ## GitHub Actions Automation
 
-The repository includes ready-to-run GitHub Actions:
+The repository includes 3 workflows:
 
-1. **`yara_lint.yml`**: Automatically verifies syntax whenever you push or submit a PR modifying any rule in `yara-rules/`.
-2. **`hunt_feed.yml`**: Runs automatically on a **6-hour schedule** (and on manual trigger), queries MalwareBazaar, enriches hits with VirusTotal, updates `telemetry/hits.json` and `telemetry/LATEST_REPORT.md`, and commits the updated telemetry back to the repository.
+1. **`yara_lint.yml`**: Automatically verifies syntax on every push or PR modifying any rule in `yara-rules/`.
+2. **`hunt_feed.yml`**: Runs on a **6-hour schedule** (and manual trigger), downloading free samples from MalwareBazaar and scanning them.
+3. **`vt_hunt.yml`** *(Manual Trigger Only)*: Lets you search, download, and scan live binaries directly from **VirusTotal Intelligence** using your VT API key with customizable search queries and download limits.
 
 ### Adding GitHub Secrets
-To enable the hunting action on GitHub:
+To enable hunting actions on GitHub:
 1. Go to your repo on GitHub: **Settings > Secrets and variables > Actions**.
 2. Add the following repository secrets:
    - `MALWAREBAZAAR_API_KEY` (Free API key from abuse.ch)
-   - `VT_API_KEY` (Free VirusTotal API key)
+   - `VT_API_KEY` (VirusTotal API key)
    - `ALERT_WEBHOOK_URL` (Optional webhook)
 
 ---

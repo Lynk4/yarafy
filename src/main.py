@@ -11,6 +11,7 @@ from src.config import settings
 from src.enricher import VirusTotalEnricher
 from src.reporter import TelemetryReporter
 from src.scanner import YaraScanner
+from src.vt_hunter import VirusTotalHunter
 
 console = Console()
 
@@ -176,6 +177,95 @@ def cmd_hunt(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_vt_hunt(args: argparse.Namespace) -> int:
+    """Download and scan live malware samples directly from VirusTotal Intelligence."""
+    console.print(Panel("[bold cyan]Starting VirusTotal Live Sample Hunting Workflow[/bold cyan]"))
+
+    if not settings.virustotal_api_key:
+        console.print("[bold red]VT_API_KEY is not set. Please add your VirusTotal API key to .env or GitHub Secrets.[/bold red]")
+        return 1
+
+    # 1. Initialize Scanner
+    scanner = YaraScanner(
+        rules_root=settings.rules_dir,
+        active_platforms=settings.active_platforms,
+    )
+    valid, errors = scanner.validate_rules()
+    if not valid:
+        console.print("[bold red]Cannot proceed: YARA syntax errors detected.[/bold red]")
+        return 1
+
+    scanner.compile()
+    console.print(f"[*] Compiled rules for active platforms: [bold cyan]{', '.join(settings.active_platforms)}[/bold cyan]")
+
+    # 2. Initialize VT Hunter & Reporter
+    vt_hunter = VirusTotalHunter(
+        api_key=settings.virustotal_api_key,
+        rate_limit_seconds=settings.virustotal_config.get("rate_limit_seconds", 1.0),
+    )
+    reporter = TelemetryReporter(
+        hits_file=settings.hits_file,
+        stats_file=settings.stats_file,
+        report_file=settings.report_file,
+        webhook_url=settings.webhook_url,
+    )
+
+    query = args.query or "type:macho positives:5+ fs:30d+"
+    limit = args.limit or 10
+    console.print(f"[*] Querying VirusTotal Intelligence: [yellow]{query}[/yellow] (Limit: {limit})")
+
+    candidates = vt_hunter.search_intelligence(query=query, limit=limit)
+    if not candidates:
+        console.print("[yellow]No samples returned from VirusTotal query or query was rejected.[/yellow]")
+        return 0
+
+    console.print(f"[bold green]Retrieved {len(candidates)} candidate sample(s) from VirusTotal.[/bold green]")
+
+    matched_hits = []
+    scanned_count = 0
+
+    for i, c_meta in enumerate(candidates, 1):
+        sha256 = c_meta["sha256"]
+        names = c_meta.get("names", ["sample.bin"])
+        fname = names[0] if names else "sample.bin"
+        console.print(f"[{i}/{len(candidates)}] Downloading & scanning {sha256[:12]}... ({fname})")
+
+        dl_res = vt_hunter.download_sample_bytes(sha256)
+        if not dl_res:
+            continue
+
+        sample_name, sample_bytes = dl_res
+        scanned_count += 1
+
+        hits = scanner.scan_data(sample_bytes, sample_name=sample_name)
+        if hits:
+            for hit in hits:
+                console.print(f"  [bold red]MATCH DETECTED![/bold red] Rule: [bold yellow]{hit['rule_name']}[/bold yellow]")
+                hit["vt_enrichment"] = {
+                    "vt_status": "success",
+                    "positives": c_meta.get("positives", 0),
+                    "total_engines": c_meta.get("total_engines", 0),
+                    "detection_ratio": c_meta.get("detection_ratio", "N/A"),
+                    "suggested_threat_label": c_meta.get("suggested_threat_label", "unknown"),
+                    "names": c_meta.get("names", []),
+                    "tags": c_meta.get("tags", []),
+                    "vt_permalink": f"https://www.virustotal.com/gui/file/{sha256}",
+                }
+                matched_hits.append(hit)
+
+    # Record Telemetry
+    stats = reporter.record_run(scanned_count, matched_hits, settings.active_platforms)
+    console.print(Panel(
+        f"[bold green]VirusTotal Hunt Complete![/bold green]\n"
+        f"* Samples Downloaded & Scanned from VT: [cyan]{scanned_count}[/cyan]\n"
+        f"* Positive Hits in this run: [bold red]{len(matched_hits)}[/bold red]\n"
+        f"* Total Lifetime Hits: [bold yellow]{stats['total_hits']}[/bold yellow]\n"
+        f"* Report saved to: [magenta]{settings.report_file}[/magenta]"
+    ))
+
+    return 0
+
+
 def cmd_stats(args: argparse.Namespace) -> int:
     """Display current telemetry stats."""
     reporter = TelemetryReporter(
@@ -217,9 +307,14 @@ def main():
     # Lint
     subparsers.add_parser("lint", help="Validate and test YARA rules for syntax errors")
 
-    # Hunt
-    hunt_parser = subparsers.add_parser("hunt", help="Execute hunting against MalwareBazaar + VT enrichment")
+    # Hunt (MalwareBazaar)
+    hunt_parser = subparsers.add_parser("hunt", help="Execute hunting against MalwareBazaar")
     hunt_parser.add_argument("--limit", type=int, default=25, help="Number of samples to fetch per query")
+
+    # VT Hunt (VirusTotal Live Sample Download & Scan)
+    vt_parser = subparsers.add_parser("vt-hunt", help="Search, download, and scan live samples directly from VirusTotal")
+    vt_parser.add_argument("--query", type=str, default="type:macho positives:5+ fs:30d+", help="VirusTotal search query")
+    vt_parser.add_argument("--limit", type=int, default=10, help="Max number of samples to download & scan")
 
     # Local scan
     scan_parser = subparsers.add_parser("scan-local", help="Scan a local file or folder with YARA rules")
@@ -237,6 +332,8 @@ def main():
         sys.exit(cmd_lint(args))
     elif args.command == "hunt":
         sys.exit(cmd_hunt(args))
+    elif args.command == "vt-hunt":
+        sys.exit(cmd_vt_hunt(args))
     elif args.command == "scan-local":
         sys.exit(cmd_scan_local(args))
     elif args.command == "stats":
