@@ -1657,5 +1657,81 @@
       "vt_permalink": "https://www.virustotal.com/gui/file/76c2e4e7fb5290366d7bd04703ea60ec92d314ff651172387b9c6dbfca22b82a"
     },
     "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
+    "namespace": "macos_MALW_macOS_MacSync_Stealer",
+    "tags": [],
+    "meta": {
+      "description": "Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)",
+      "date": "2026-08-31",
+      "family": "MacSync",
+      "threat_type": "Infostealer / Stager / Exfiltrator",
+      "platform": "macOS (x86_64 & ARM64)"
+    },
+    "matched_strings": [],
+    "sample_sha256": "a864c989d8a28cc5d2162050bb862775ee7297ce305c19014a0c63a4b73e993b",
+    "sample_md5": "6c50481eeea199f059bda10184bea0a6",
+    "sample_name": "a864c989d8a28cc5.macho",
+    "sample_size_bytes": 137328,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 23,
+      "total_engines": 76,
+      "detection_ratio": "23/76",
+      "suggested_threat_label": "trojan.coins/abtrojan",
+      "names": [
+        "Launcher",
+        "Launcher/Launcher.app/Contents/MacOS/Launcher"
+      ],
+      "tags": [
+        "64bits",
+        "multi-arch",
+        "macho",
+        "self-delete",
+        "self-signed",
+        "arm"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/a864c989d8a28cc5d2162050bb862775ee7297ce305c19014a0c63a4b73e993b"
+    },
+    "detected_at": "2026-09-01T10:24:38.407549+00:00"
+  },
+  {
+    "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
+    "namespace": "macos_MALW_macOS_MacSync_Stealer",
+    "tags": [],
+    "meta": {
+      "description": "Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)",
+      "date": "2026-08-31",
+      "family": "MacSync",
+      "threat_type": "Infostealer / Stager / Exfiltrator",
+      "platform": "macOS (x86_64 & ARM64)"
+    },
+    "matched_strings": [],
+    "sample_sha256": "9ff32f7c0108e9d27a3b491edf04827b6ca025f44db68aeadc44eeb97c9aab11",
+    "sample_md5": "9678f71ea4cccbc3d511dc8d7f24b113",
+    "sample_name": "9ff32f7c0108e9d2.macho",
+    "sample_size_bytes": 38800,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 27,
+      "total_engines": 76,
+      "detection_ratio": "27/76",
+      "suggested_threat_label": "trojan.coins/infostl",
+      "names": [
+        "localfile~.x64"
+      ],
+      "tags": [
+        "macho",
+        "64bits",
+        "self-signed",
+        "malware",
+        "self-delete"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/9ff32f7c0108e9d27a3b491edf04827b6ca025f44db68aeadc44eeb97c9aab11"
+    },
+    "detected_at": "2026-09-01T10:24:38.407549+00:00"
   }
 ]
