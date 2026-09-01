@@ -51,6 +51,10 @@ class Config:
         return os.getenv("VT_API_KEY", "").strip()
 
     @property
+    def virustotal_enterprise_api_key(self) -> str:
+        return os.getenv("VT_ENTERPRISE_API_KEY", "").strip() or self.virustotal_api_key
+
+    @property
     def webhook_url(self) -> str:
         return os.getenv("ALERT_WEBHOOK_URL", "").strip()
 

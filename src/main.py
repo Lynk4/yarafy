@@ -181,8 +181,9 @@ def cmd_vt_hunt(args: argparse.Namespace) -> int:
     """Download and scan live malware samples directly from VirusTotal Intelligence."""
     console.print(Panel("[bold cyan]Starting VirusTotal Live Sample Hunting Workflow[/bold cyan]"))
 
-    if not settings.virustotal_api_key:
-        console.print("[bold red]VT_API_KEY is not set. Please add your VirusTotal API key to .env or GitHub Secrets.[/bold red]")
+    vt_key = settings.virustotal_enterprise_api_key
+    if not vt_key:
+        console.print("[bold red]VT_ENTERPRISE_API_KEY (or VT_API_KEY) is not set. Please add your VirusTotal API key to .env or GitHub Secrets.[/bold red]")
         return 1
 
     # 1. Initialize Scanner
@@ -200,7 +201,7 @@ def cmd_vt_hunt(args: argparse.Namespace) -> int:
 
     # 2. Initialize VT Hunter & Reporter
     vt_hunter = VirusTotalHunter(
-        api_key=settings.virustotal_api_key,
+        api_key=vt_key,
         rate_limit_seconds=settings.virustotal_config.get("rate_limit_seconds", 1.0),
     )
     reporter = TelemetryReporter(

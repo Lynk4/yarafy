@@ -39,7 +39,7 @@ jobs:
 
       - name: "Execute VirusTotal Live Hunt"
         env:
-          VT_API_KEY: ${{ secrets.VT_API_KEY }}
+          VT_ENTERPRISE_API_KEY: ${{ secrets.VT_ENTERPRISE_API_KEY || secrets.VT_API_KEY }}
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: |
           python -m src.main vt-hunt --query "${{ github.event.inputs.query }}" --limit ${{ github.event.inputs.limit }}
