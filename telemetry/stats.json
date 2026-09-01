@@ -1,13 +1,16 @@
 {
-  "total_scanned": 546,
-  "total_hits": 20,
-  "last_run": "2026-09-01T04:45:49.467910+00:00",
+  "total_scanned": 586,
+  "total_hits": 29,
+  "last_run": "2026-09-01T07:05:16.190034+00:00",
   "hits_by_platform": {
-    "macos": 20
+    "macos": 29
   },
   "hits_by_rule": {
-    "macOS_ClickFix_AppleScript_Dropper": 10,
+    "macOS_ClickFix_AppleScript_Dropper": 19,
     "OSX_Stealer_AMOS_Generic": 9,
     "MALW_macOS_MacSync_Stealer_Universal": 1
+  },
+  "hits_by_source": {
+    "VirusTotal Enterprise": 9
   }
 }

@@ -1301,5 +1301,341 @@
       "vt_permalink": "https://www.virustotal.com/gui/file/30f97ae88f8861eeadeb54854d47078724e52e2ef36dd847180663b7f5763168"
     },
     "detected_at": "2026-08-31T14:41:41.676801+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "00f918996b9192c8ccd0ba4ad80f6f2ed17844d6cbe00eb65afb9df0c8f05430",
+    "sample_md5": "0e089ec295022c4bcee6ef0ae15baf4d",
+    "sample_name": "00f918996b9192c8.macho",
+    "sample_size_bytes": 363504,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 11,
+      "total_engines": 76,
+      "detection_ratio": "11/76",
+      "suggested_threat_label": "trojan.amos/camelot",
+      "names": [
+        "suspicious",
+        "/private/tmp/.w97b0h",
+        ".w97b0h"
+      ],
+      "tags": [
+        "macho",
+        "multi-arch",
+        "arm",
+        "64bits",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/00f918996b9192c8ccd0ba4ad80f6f2ed17844d6cbe00eb65afb9df0c8f05430"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "780dc4cb1bf8697cbc784c8926cc7f55b64c04e8eaa51d20f938cfa352f8c998",
+    "sample_md5": "1cf712f1a5b235c7f2baf179a8d2292c",
+    "sample_name": "780dc4cb1bf8697c.macho",
+    "sample_size_bytes": 163488,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 10,
+      "total_engines": 76,
+      "detection_ratio": "10/76",
+      "suggested_threat_label": "trojan.amos/camelot",
+      "names": [
+        "localfile~.x64"
+      ],
+      "tags": [
+        "macho",
+        "64bits",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/780dc4cb1bf8697cbc784c8926cc7f55b64c04e8eaa51d20f938cfa352f8c998"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "e4e8aa9a827e820fd98fa061442cac2ac95fbb7ed1b3e5a0d99aef048e4a123e",
+    "sample_md5": "82a8dd0979c155a5b937457a055ceec9",
+    "sample_name": "e4e8aa9a827e820f.macho",
+    "sample_size_bytes": 183168,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 11,
+      "total_engines": 76,
+      "detection_ratio": "11/76",
+      "suggested_threat_label": "trojan.amos/camelot",
+      "names": [
+        "localfile~.arm64"
+      ],
+      "tags": [
+        "macho",
+        "64bits",
+        "arm",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/e4e8aa9a827e820fd98fa061442cac2ac95fbb7ed1b3e5a0d99aef048e4a123e"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "e0ad9eab55dee8da82090915d94b2b07ae2b0537312b4d0397fec8bb1380ad2c",
+    "sample_md5": "194e600ceabf884ac24e5e26f809a899",
+    "sample_name": "e0ad9eab55dee8da.macho",
+    "sample_size_bytes": 363392,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 11,
+      "total_engines": 76,
+      "detection_ratio": "11/76",
+      "suggested_threat_label": "trojan.amos/camelot",
+      "names": [
+        "helper.bin"
+      ],
+      "tags": [
+        "arm",
+        "macho",
+        "multi-arch",
+        "64bits",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/e0ad9eab55dee8da82090915d94b2b07ae2b0537312b4d0397fec8bb1380ad2c"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "04465e8d0cebb270bacc5db8bb874cf01bd4ba85afd317b9d8748cbcb53ce5c7",
+    "sample_md5": "2a3d2a7f5d237f4043df74f9384a4d1e",
+    "sample_name": "04465e8d0cebb270.macho",
+    "sample_size_bytes": 159488,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 10,
+      "total_engines": 76,
+      "detection_ratio": "10/76",
+      "suggested_threat_label": "trojan.amos/camelot",
+      "names": [
+        "localfile~.x64"
+      ],
+      "tags": [
+        "64bits",
+        "macho",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/04465e8d0cebb270bacc5db8bb874cf01bd4ba85afd317b9d8748cbcb53ce5c7"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "e20f38eedb7fd126834250aa43453faa99833e7c0f39029691dad8ca5e9f5ce9",
+    "sample_md5": "5830375e56c336e44c31113463061ce9",
+    "sample_name": "e20f38eedb7fd126.macho",
+    "sample_size_bytes": 183280,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 10,
+      "total_engines": 76,
+      "detection_ratio": "10/76",
+      "suggested_threat_label": "trojan.camelot/multiverze",
+      "names": [
+        "localfile~.arm64"
+      ],
+      "tags": [
+        "macho",
+        "64bits",
+        "arm",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/e20f38eedb7fd126834250aa43453faa99833e7c0f39029691dad8ca5e9f5ce9"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "620662ab495dacef6ac971ab82da995d430b9b0e9f92445acd136e0cd07d6821",
+    "sample_md5": "3102e826afb3cbe093361fe42b4f1945",
+    "sample_name": "620662ab495dacef.macho",
+    "sample_size_bytes": 183184,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 11,
+      "total_engines": 76,
+      "detection_ratio": "11/76",
+      "suggested_threat_label": "trojan.amos/camelot",
+      "names": [
+        "localfile~.arm64"
+      ],
+      "tags": [
+        "arm",
+        "64bits",
+        "macho",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/620662ab495dacef6ac971ab82da995d430b9b0e9f92445acd136e0cd07d6821"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "ef1d615bbf15dbee3d2dd51f843a462230014f0212423182c38d93140e176460",
+    "sample_md5": "24acf4e03df9c598499eab765412a14c",
+    "sample_name": "ef1d615bbf15dbee.macho",
+    "sample_size_bytes": 159392,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 10,
+      "total_engines": 76,
+      "detection_ratio": "10/76",
+      "suggested_threat_label": "trojan.amos/camelot",
+      "names": [
+        "localfile~.x64"
+      ],
+      "tags": [
+        "macho",
+        "64bits",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/ef1d615bbf15dbee3d2dd51f843a462230014f0212423182c38d93140e176460"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "76c2e4e7fb5290366d7bd04703ea60ec92d314ff651172387b9c6dbfca22b82a",
+    "sample_md5": "a19b8d6e37d51b294a96bac703de24cb",
+    "sample_name": "76c2e4e7fb529036.macho",
+    "sample_size_bytes": 363408,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 11,
+      "total_engines": 76,
+      "detection_ratio": "11/76",
+      "suggested_threat_label": "trojan.amos/camelot",
+      "names": [
+        "stage3.bin"
+      ],
+      "tags": [
+        "arm",
+        "multi-arch",
+        "macho",
+        "64bits",
+        "self-signed",
+        "service-scan"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/76c2e4e7fb5290366d7bd04703ea60ec92d314ff651172387b9c6dbfca22b82a"
+    },
+    "detected_at": "2026-09-01T07:05:16.190034+00:00"
   }
 ]
