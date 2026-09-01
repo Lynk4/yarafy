@@ -146,6 +146,7 @@ def cmd_hunt(args: argparse.Namespace) -> int:
         if hits:
             for hit in hits:
                 console.print(f"  [bold red]MATCH DETECTED![/bold red] Rule: [bold yellow]{hit['rule_name']}[/bold yellow]")
+                hit["source_feed"] = "MalwareBazaar"
                 # Attach MalwareBazaar metadata
                 hit["mb_metadata"] = {
                     "first_seen": s_meta.get("first_seen"),
@@ -242,6 +243,7 @@ def cmd_vt_hunt(args: argparse.Namespace) -> int:
         if hits:
             for hit in hits:
                 console.print(f"  [bold red]MATCH DETECTED![/bold red] Rule: [bold yellow]{hit['rule_name']}[/bold yellow]")
+                hit["source_feed"] = "VirusTotal Enterprise"
                 hit["vt_enrichment"] = {
                     "vt_status": "success",
                     "positives": c_meta.get("positives", 0),
@@ -286,6 +288,14 @@ def cmd_stats(args: argparse.Namespace) -> int:
     table.add_row("Last Run Timestamp", str(stats.get("last_run", "N/A")))
 
     console.print(table)
+
+    if stats.get("hits_by_source"):
+        src_table = Table(title="Hits by Source Feed")
+        src_table.add_column("Source Feed", style="blue")
+        src_table.add_column("Detections", style="green")
+        for s, c in sorted(stats["hits_by_source"].items(), key=lambda x: x[1], reverse=True):
+            src_table.add_row(s, str(c))
+        console.print(src_table)
 
     if stats.get("hits_by_rule"):
         rule_table = Table(title="Hits by YARA Rule")

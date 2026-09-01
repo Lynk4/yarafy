@@ -34,6 +34,7 @@ class TelemetryReporter:
                 "last_run": None,
                 "hits_by_platform": {},
                 "hits_by_rule": {},
+                "hits_by_source": {},
             }
             with open(self.stats_file, "w", encoding="utf-8") as f:
                 json.dump(default_stats, f, indent=2)
@@ -48,7 +49,10 @@ class TelemetryReporter:
     def load_stats(self) -> Dict[str, Any]:
         try:
             with open(self.stats_file, "r", encoding="utf-8") as f:
-                return json.load(f)
+                stats = json.load(f)
+                if "hits_by_source" not in stats:
+                    stats["hits_by_source"] = {}
+                return stats
         except Exception:
             return {
                 "total_scanned": 0,
@@ -56,6 +60,7 @@ class TelemetryReporter:
                 "last_run": None,
                 "hits_by_platform": {},
                 "hits_by_rule": {},
+                "hits_by_source": {},
             }
 
     def record_run(
@@ -91,6 +96,10 @@ class TelemetryReporter:
                 rule = hit.get("rule_name", "unknown")
                 stats["hits_by_rule"][rule] = stats["hits_by_rule"].get(rule, 0) + 1
 
+                # Source Feed (MalwareBazaar vs VirusTotal Enterprise)
+                source = hit.get("source_feed", "Unknown")
+                stats["hits_by_source"][source] = stats["hits_by_source"].get(source, 0) + 1
+
                 # Platform from namespace or meta
                 plat = hit.get("meta", {}).get("os") or hit.get("namespace", "").split("_")[0] or "unknown"
                 stats["hits_by_platform"][plat] = stats["hits_by_platform"].get(plat, 0) + 1
@@ -123,10 +132,21 @@ class TelemetryReporter:
             "# Yarafy Telemetry & Threat Hunting Report",
             f"\n**Last Run:** `{stats.get('last_run', 'N/A')}`",
             f"**Total Samples Scanned:** `{stats.get('total_scanned', 0)}` | **Total Rule Hits:** `{stats.get('total_hits', 0)}`\n",
-            "## Hits Breakdown by Platform",
-            "| Platform | Total Hits |",
+            "## Hits Breakdown by Source Feed",
+            "| Source Feed | Total Hits |",
             "| :--- | :--- |",
         ]
+
+        for src, count in stats.get("hits_by_source", {}).items():
+            lines.append(f"| **{src}** | `{count}` |")
+        if not stats.get("hits_by_source"):
+            lines.append("| *No hits recorded yet* | `0` |")
+
+        lines.extend([
+            "\n## Hits Breakdown by Platform",
+            "| Platform | Total Hits |",
+            "| :--- | :--- |",
+        ])
 
         for plat, count in stats.get("hits_by_platform", {}).items():
             lines.append(f"| **{plat.upper()}** | `{count}` |")
@@ -146,13 +166,14 @@ class TelemetryReporter:
 
         lines.extend([
             "\n## Recent Positive Detections",
-            "| Timestamp | Rule | Platform | SHA256 | VT Detection | VT Threat Label |",
-            "| :--- | :--- | :--- | :--- | :--- | :--- |",
+            "| Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |",
+            "| :--- | :--- | :--- | :--- | :--- | :--- | :--- |",
         ])
 
-        # Show latest 20 hits in reverse chronological order
-        for hit in reversed(all_hits[-20:]):
+        # Show latest 25 hits in reverse chronological order
+        for hit in reversed(all_hits[-25:]):
             rule = hit.get("rule_name", "N/A")
+            src_feed = hit.get("source_feed", "Unknown")
             plat = hit.get("meta", {}).get("os") or hit.get("namespace", "N/A")
             sha = hit.get("sample_sha256", "N/A")
             sha_short = f"`{sha[:10]}...`"
@@ -163,10 +184,10 @@ class TelemetryReporter:
             vt_link = vt_info.get("vt_permalink")
 
             sha_display = f"[{sha_short}]({vt_link})" if vt_link else sha_short
-            lines.append(f"| {ts} | `{rule}` | {plat} | {sha_display} | `{vt_ratio}` | `{vt_label}` |")
+            lines.append(f"| {ts} | **{src_feed}** | `{rule}` | {plat} | {sha_display} | `{vt_ratio}` | `{vt_label}` |")
 
         if not all_hits:
-            lines.append("| - | *No hits recorded* | - | - | - | - |")
+            lines.append("| - | - | *No hits recorded* | - | - | - | - |")
 
         with open(self.report_file, "w", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
@@ -176,10 +197,11 @@ class TelemetryReporter:
         try:
             summary_text = f"**Yarafy Alert**: {len(hits)} new malware hit(s) detected!\n\n"
             for h in hits[:5]:
+                src = h.get("source_feed", "Feed")
                 rule = h.get("rule_name")
                 sha = h.get("sample_sha256")
                 vt = h.get("vt_enrichment", {}).get("detection_ratio", "N/A")
-                summary_text += f"* **Rule**: `{rule}`\n  **SHA256**: `{sha}`\n  **VT**: `{vt}`\n\n"
+                summary_text += f"* **Source**: `{src}` | **Rule**: `{rule}`\n  **SHA256**: `{sha}`\n  **VT**: `{vt}`\n\n"
 
             payload = {"content": summary_text, "text": summary_text}
             requests.post(self.webhook_url, json=payload, timeout=10)
