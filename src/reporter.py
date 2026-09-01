@@ -42,7 +42,22 @@ class TelemetryReporter:
     def load_hits(self) -> List[Dict[str, Any]]:
         try:
             with open(self.hits_file, "r", encoding="utf-8") as f:
-                return json.load(f)
+                hits = json.load(f)
+                # Auto-backfill missing source_feed for existing legacy hits
+                modified = False
+                for h in hits:
+                    if "source_feed" not in h or not h["source_feed"]:
+                        if "mb_metadata" in h:
+                            h["source_feed"] = "MalwareBazaar"
+                        elif h.get("vt_enrichment", {}).get("vt_status") == "success":
+                            h["source_feed"] = "VirusTotal Enterprise"
+                        else:
+                            h["source_feed"] = "MalwareBazaar"
+                        modified = True
+                if modified:
+                    with open(self.hits_file, "w", encoding="utf-8") as f_out:
+                        json.dump(hits, f_out, indent=2)
+                return hits
         except Exception:
             return []
 
@@ -91,18 +106,21 @@ class TelemetryReporter:
                 existing_hits.append(hit)
                 truly_new_hits.append(hit)
 
-                # Update stats
-                stats["total_hits"] += 1
-                rule = hit.get("rule_name", "unknown")
-                stats["hits_by_rule"][rule] = stats["hits_by_rule"].get(rule, 0) + 1
+        # Full recalculation of stats from all accumulated hits to ensure 100% consistency
+        stats["total_hits"] = len(existing_hits)
+        stats["hits_by_rule"] = {}
+        stats["hits_by_source"] = {}
+        stats["hits_by_platform"] = {}
 
-                # Source Feed (MalwareBazaar vs VirusTotal Enterprise)
-                source = hit.get("source_feed", "Unknown")
-                stats["hits_by_source"][source] = stats["hits_by_source"].get(source, 0) + 1
+        for h in existing_hits:
+            rule = h.get("rule_name", "unknown")
+            stats["hits_by_rule"][rule] = stats["hits_by_rule"].get(rule, 0) + 1
 
-                # Platform from namespace or meta
-                plat = hit.get("meta", {}).get("os") or hit.get("namespace", "").split("_")[0] or "unknown"
-                stats["hits_by_platform"][plat] = stats["hits_by_platform"].get(plat, 0) + 1
+            source = h.get("source_feed", "MalwareBazaar")
+            stats["hits_by_source"][source] = stats["hits_by_source"].get(source, 0) + 1
+
+            plat = h.get("meta", {}).get("os") or h.get("namespace", "").split("_")[0] or "unknown"
+            stats["hits_by_platform"][plat] = stats["hits_by_platform"].get(plat, 0) + 1
 
         # Save hits
         with open(self.hits_file, "w", encoding="utf-8") as f:
@@ -170,10 +188,10 @@ class TelemetryReporter:
             "| :--- | :--- | :--- | :--- | :--- | :--- | :--- |",
         ])
 
-        # Show latest 25 hits in reverse chronological order
-        for hit in reversed(all_hits[-25:]):
+        # Show all recorded hits in reverse chronological order
+        for hit in reversed(all_hits[-50:]):
             rule = hit.get("rule_name", "N/A")
-            src_feed = hit.get("source_feed", "Unknown")
+            src_feed = hit.get("source_feed", "MalwareBazaar")
             plat = hit.get("meta", {}).get("os") or hit.get("namespace", "N/A")
             sha = hit.get("sample_sha256", "N/A")
             sha_short = f"`{sha[:10]}...`"
