@@ -1,7 +1,7 @@
 {
-  "total_scanned": 1185,
+  "total_scanned": 1322,
   "total_hits": 42,
-  "last_run": "2026-09-02T08:06:00.959996+00:00",
+  "last_run": "2026-09-02T11:09:18.798440+00:00",
   "hits_by_platform": {
     "macos": 42
   },
