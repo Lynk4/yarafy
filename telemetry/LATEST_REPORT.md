@@ -1,29 +1,34 @@
 # Yarafy Telemetry & Threat Hunting Report
 
-**Last Run:** `2026-09-02T15:04:01.629246+00:00`
-**Total Samples Scanned:** `1335` | **Total Rule Hits:** `42`
+**Last Run:** `2026-09-02T15:18:39.415006+00:00`
+**Total Samples Scanned:** `1375` | **Total Rule Hits:** `47`
 
 ## Hits Breakdown by Source Feed
 | Source Feed | Total Hits |
 | :--- | :--- |
 | **MalwareBazaar** | `20` |
-| **VirusTotal Enterprise** | `22` |
+| **VirusTotal Enterprise** | `27` |
 
 ## Hits Breakdown by Platform
 | Platform | Total Hits |
 | :--- | :--- |
-| **MACOS** | `42` |
+| **MACOS** | `47` |
 
 ## Hits Breakdown by YARA Rule
 | Rule Name | Total Detections |
 | :--- | :--- |
-| [`macOS_ClickFix_AppleScript_Dropper`](../yara-rules/) | `26` |
+| [`macOS_ClickFix_AppleScript_Dropper`](../yara-rules/) | `31` |
 | [`OSX_Stealer_AMOS_Generic`](../yara-rules/) | `13` |
 | [`MALW_macOS_MacSync_Stealer_Universal`](../yara-rules/) | `3` |
 
 ## Recent Positive Detections
 | Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-09-02 15:18:39 | **VirusTotal Enterprise** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`fad2eda617...`](https://www.virustotal.com/gui/file/fad2eda61740a347df03b0f64fee4510fc05631549c4d501487522cb8fb980c4) | `11/76` | `trojan.amos/camelot` |
+| 2026-09-02 15:18:39 | **VirusTotal Enterprise** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`23269d1af5...`](https://www.virustotal.com/gui/file/23269d1af542f94427f6994c509de9b1c31bdad5cc48ed1acc773130faf5bd9a) | `11/76` | `trojan.amos/camelot` |
+| 2026-09-02 15:18:39 | **VirusTotal Enterprise** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`7ac18a4680...`](https://www.virustotal.com/gui/file/7ac18a468064212c7c74d602364e43afde5b00a93ac7e84acf321ae2279a1213) | `10/76` | `trojan.amos/camelot` |
+| 2026-09-02 15:18:39 | **VirusTotal Enterprise** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`69670fdc89...`](https://www.virustotal.com/gui/file/69670fdc892a5794bc78811ef551dcd40bed770cfa4f6aa6851db688c6466dd0) | `11/76` | `trojan.amos/camelot` |
+| 2026-09-02 15:18:39 | **VirusTotal Enterprise** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`ea8f3d6c2b...`](https://www.virustotal.com/gui/file/ea8f3d6c2bfd3701bf1091f280843e29dec54d9403d77c680079d208fa2924a7) | `11/76` | `trojan.amos/camelot` |
 | 2026-09-02 08:06:00 | **VirusTotal Enterprise** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`0ce6c083c8...`](https://www.virustotal.com/gui/file/0ce6c083c86d95df0962b6274a705631ccb87f5eb497b0fadd34d6040bb4913c) | `12/76` | `trojan.amos/amosstealer` |
 | 2026-09-02 08:06:00 | **VirusTotal Enterprise** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`55364ff47a...`](https://www.virustotal.com/gui/file/55364ff47a8789d5c4b414dd7dae05820e8129d6c7592708778550b6b3e220f3) | `10/76` | `trojan.amos/camelot` |
 | 2026-09-02 08:06:00 | **VirusTotal Enterprise** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`e5a00c378d...`](https://www.virustotal.com/gui/file/e5a00c378da0a2bbcc1233a620a115f73c627d9ac9831f66be713632d9611183) | `12/76` | `trojan.amos/amosstealer` |
