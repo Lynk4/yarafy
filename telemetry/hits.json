@@ -2599,5 +2599,84 @@
       "vt_permalink": "https://www.virustotal.com/gui/file/aaa56fb51a0dd7cf74667d090d456cc24f6b5b3b3484831f4371e38481cb9fb4"
     },
     "detected_at": "2026-09-03T05:14:39.088706+00:00"
+  },
+  {
+    "rule_name": "OSX_Stealer_AMOS_Generic",
+    "namespace": "macos_OSX_Stealer_AMOS_Generic",
+    "tags": [],
+    "meta": {
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "date": "2026-08-20",
+      "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "malware_family": "Atomic Stealer / AMOS",
+      "os": "macos",
+      "silent": 1
+    },
+    "matched_strings": [],
+    "sample_sha256": "a5655a9b4c4889bfd7fcbf928d4979afcacb1577fff3697defae7c0cccafea8a",
+    "sample_md5": "d0d9aa01e0f056550e45e63bc626add5",
+    "sample_name": "a5655a9b4c4889bf.macho",
+    "sample_size_bytes": 362624,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 17,
+      "total_engines": 76,
+      "detection_ratio": "17/76",
+      "suggested_threat_label": "trojan.stealer/amos",
+      "names": [
+        "localfile~.arm64"
+      ],
+      "tags": [
+        "64bits",
+        "arm",
+        "macho",
+        "self-signed",
+        "service-scan"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/a5655a9b4c4889bfd7fcbf928d4979afcacb1577fff3697defae7c0cccafea8a"
+    },
+    "detected_at": "2026-09-03T17:22:39.836553+00:00"
+  },
+  {
+    "rule_name": "OSX_Stealer_AMOS_Generic",
+    "namespace": "macos_OSX_Stealer_AMOS_Generic",
+    "tags": [],
+    "meta": {
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "date": "2026-08-20",
+      "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "malware_family": "Atomic Stealer / AMOS",
+      "os": "macos",
+      "silent": 1
+    },
+    "matched_strings": [],
+    "sample_sha256": "3b9aa24a02b112fd7881c9c7fdccba1b4677e138b4571d211b54a1cf5b68fe0d",
+    "sample_md5": "63dec2e7d422c784e50146223c4091f1",
+    "sample_name": "3b9aa24a02b112fd.macho",
+    "sample_size_bytes": 723072,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 28,
+      "total_engines": 76,
+      "detection_ratio": "28/76",
+      "suggested_threat_label": "trojan.stealer/amos",
+      "names": [
+        "momq4l493yfj6gmq"
+      ],
+      "tags": [
+        "self-signed",
+        "multi-arch",
+        "arm",
+        "macho",
+        "64bits",
+        "self-delete",
+        "checks-cpu-name",
+        "password-dialog"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/3b9aa24a02b112fd7881c9c7fdccba1b4677e138b4571d211b54a1cf5b68fe0d"
+    },
+    "detected_at": "2026-09-03T17:22:39.836553+00:00"
   }
 ]
