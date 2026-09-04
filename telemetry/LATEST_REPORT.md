@@ -1,6 +1,6 @@
 # Yarafy Telemetry & Threat Hunting Report
 
-**Last Run:** `2026-09-04T05:40:37.603450+00:00`
+**Last Run:** `2026-09-04T09:25:46.895203+00:00`
 **Total Samples Scanned:** `2465` | **Total Rule Hits:** `62`
 
 ## Hits Breakdown by Source Feed
@@ -13,6 +13,9 @@
 | Platform | Total Hits |
 | :--- | :--- |
 | **MACOS** | `62` |
+| **WINDOWS** | `0` |
+| **LINUX** | `0` |
+| **NON-PE** | `0` |
 
 ## Hits Breakdown by YARA Rule
 | Rule Name | Total Detections |

@@ -1,0 +1,2941 @@
+window.YARAFY_DATA = {
+  "stats": {
+    "total_scanned": 2465,
+    "total_hits": 62,
+    "last_run": "2026-09-04T09:25:46.895203+00:00",
+    "hits_by_platform": {
+      "macos": 62,
+      "windows": 0,
+      "linux": 0,
+      "non-pe": 0
+    },
+    "hits_by_rule": {
+      "macOS_ClickFix_AppleScript_Dropper": 34,
+      "OSX_Stealer_AMOS_Generic": 25,
+      "MALW_macOS_MacSync_Stealer_Universal": 3
+    },
+    "hits_by_source": {
+      "MalwareBazaar": 20,
+      "VirusTotal Enterprise": 42
+    }
+  },
+  "hits": [
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "sample_md5": "39b0878c62984b3f3ec751118174c63e",
+      "sample_name": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72.macho",
+      "sample_size_bytes": 347088,
+      "mb_metadata": {
+        "first_seen": "2026-08-23 11:00:08",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "ClickFix",
+          "machO",
+          "stealer"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 25,
+        "total_engines": 61,
+        "detection_ratio": "25/61",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          }
+        ],
+        "names": [
+          "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "arm",
+          "64bits",
+          "self-signed",
+          "checks-cpu-name",
+          "macho",
+          "multi-arch"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bx",
+          "ESET-NOD32": "OSX/PSW.Agent.JL trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "0f808ec0e7d9fb413f44331ba5fc6a23ca282363f244062f0acaa418e55b2ec8",
+      "sample_md5": "c00317bc309b92bb2865b005e363e381",
+      "sample_name": "0f808ec0e7d9fb413f44331ba5fc6a23ca282363f244062f0acaa418e55b2ec8.macho",
+      "sample_size_bytes": 723072,
+      "mb_metadata": {
+        "first_seen": "2026-08-12 18:14:01",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "machO",
+          "whack.sh"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 33,
+        "total_engines": 62,
+        "detection_ratio": "33/62",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 18
+          }
+        ],
+        "names": [
+          "1vo6lm4y50k3ww0f",
+          "0f808ec0e7d9fb413f44331ba5fc6a23ca282363f244062f0acaa418e55b2ec8.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "arm",
+          "macho",
+          "64bits",
+          "multi-arch",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/0f808ec0e7d9fb413f44331ba5fc6a23ca282363f244062f0acaa418e55b2ec8"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "9e221f45649bdd5d7fdd77949083b1d37ac34f8cf3cbf91b686edb1c6b2262f6",
+      "sample_md5": "39dffdbdd1cdfd93ee47ed072ce99e23",
+      "sample_name": "9e221f45649bdd5d7fdd77949083b1d37ac34f8cf3cbf91b686edb1c6b2262f6.macho",
+      "sample_size_bytes": 723072,
+      "mb_metadata": {
+        "first_seen": "2026-08-12 18:13:58",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "machO",
+          "whack.sh"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 33,
+        "total_engines": 62,
+        "detection_ratio": "33/62",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 18
+          }
+        ],
+        "names": [
+          "zeb8cgwmkkpvu7pc",
+          "9e221f45649bdd5d7fdd77949083b1d37ac34f8cf3cbf91b686edb1c6b2262f6.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "multi-arch",
+          "64bits",
+          "arm",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/9e221f45649bdd5d7fdd77949083b1d37ac34f8cf3cbf91b686edb1c6b2262f6"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "275aeaa88d853ddb93c6e3c102beb1aa2ba41ca1b68af25b47781d9f4460bc5d",
+      "sample_md5": "e1d35d2d895b0399bff341875f722173",
+      "sample_name": "275aeaa88d853ddb93c6e3c102beb1aa2ba41ca1b68af25b47781d9f4460bc5d.macho",
+      "sample_size_bytes": 723072,
+      "mb_metadata": {
+        "first_seen": "2026-08-12 13:12:14",
+        "file_type": "macho",
+        "signature": "AMOS",
+        "tags": [
+          "adhoc-signed",
+          "AMOS",
+          "Gatekeeper-bypass",
+          "machO",
+          "macOS",
+          "stealer"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 33,
+        "total_engines": 62,
+        "detection_ratio": "33/62",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 18
+          }
+        ],
+        "names": [
+          "y6b3fuzj0w6pt97e",
+          "275aeaa88d853ddb93c6e3c102beb1aa2ba41ca1b68af25b47781d9f4460bc5d.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "multi-arch",
+          "self-signed",
+          "64bits",
+          "macho",
+          "arm"
+        ],
+        "reputation": -52,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/275aeaa88d853ddb93c6e3c102beb1aa2ba41ca1b68af25b47781d9f4460bc5d"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69",
+      "sample_md5": "cfbd77887c6ba5525f9651da652c558e",
+      "sample_name": "c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69.macho",
+      "sample_size_bytes": 297968,
+      "mb_metadata": {
+        "first_seen": "2026-08-09 15:22:53",
+        "file_type": "macho",
+        "signature": "AMOS",
+        "tags": [
+          "AMOS",
+          "AtomicStealer",
+          "freshfix",
+          "machO",
+          "WaterDaruanak"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 61,
+        "detection_ratio": "28/61",
+        "suggested_threat_label": "trojan.stealer/abtrojan",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          }
+        ],
+        "names": [
+          "c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69.macho",
+          "amos.bin"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "self-signed",
+          "multi-arch",
+          "64bits",
+          "arm",
+          "macho"
+        ],
+        "reputation": -51,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:Win32/Suschil!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Agent.ag",
+          "ESET-NOD32": "OSX/PSW.Agent.JE trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "29be0f56275f051181ea3ec37ddc3d3807cde34cb65de855709fae0e13786a40",
+      "sample_md5": "ab477021780e553be4271cb34bb8394b",
+      "sample_name": "29be0f56275f051181ea3ec37ddc3d3807cde34cb65de855709fae0e13786a40.macho",
+      "sample_size_bytes": 297968,
+      "mb_metadata": {
+        "first_seen": "2026-08-06 23:09:06",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "machO"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 29,
+        "total_engines": 62,
+        "detection_ratio": "29/62",
+        "suggested_threat_label": "trojan.stealer/atomic",
+        "popular_threat_category": [
+          {
+            "count": 17,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "bd5a94643df64a4f8901513fbf99d15993d94b8a",
+          "payload.bin",
+          "29be0f56275f051181ea3ec37ddc3d3807cde34cb65de855709fae0e13786a40.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "multi-arch",
+          "arm",
+          "64bits",
+          "self-signed",
+          "macho"
+        ],
+        "reputation": -52,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:Win32/Qwexlafiba!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Agent.ag",
+          "ESET-NOD32": "OSX/PSW.Agent.JE trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/29be0f56275f051181ea3ec37ddc3d3807cde34cb65de855709fae0e13786a40"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "ec0d13eb92a22465723e904b2ace56ddf20489810971f3b437197fdc78d10098",
+      "sample_md5": "2682871c759800d029608e7b80e01ceb",
+      "sample_name": "ec0d13eb92a22465723e904b2ace56ddf20489810971f3b437197fdc78d10098.macho",
+      "sample_size_bytes": 568368,
+      "mb_metadata": {
+        "first_seen": "2026-08-03 12:40:21",
+        "file_type": "macho",
+        "signature": "AMOS",
+        "tags": [
+          "AMOS",
+          "AtomicStealer",
+          "ClickFix",
+          "InstallFix",
+          "machO",
+          "macOS",
+          "stealer"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 33,
+        "total_engines": 62,
+        "detection_ratio": "33/62",
+        "suggested_threat_label": "trojan.amos/stealer",
+        "popular_threat_category": [
+          {
+            "count": 19,
+            "value": "trojan"
+          },
+          {
+            "count": 7,
+            "value": "dropper"
+          }
+        ],
+        "names": [
+          "ec0d13eb92a22465723e904b2ace56ddf20489810971f3b437197fdc78d10098.macho",
+          "f5e2d7126b110ad4c5267796641ec5ffda11b4b6",
+          "1.macho",
+          "fgncmbvnhk.exe",
+          "57bn5r97.exe"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "self-signed",
+          "multi-arch",
+          "checks-cpu-name",
+          "arm",
+          "macho",
+          "64bits"
+        ],
+        "reputation": -52,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Backdoor.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-HM",
+          "ESET-NOD32": "OSX/PSW.Agent.JH trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/ec0d13eb92a22465723e904b2ace56ddf20489810971f3b437197fdc78d10098"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "4c487d86d904ec55002123163e8db6dfa93918a342036cf0d155ce9c2f662c7a",
+      "sample_md5": "7672211e57d1f557c6c3aa013503df28",
+      "sample_name": "4c487d86d904ec55002123163e8db6dfa93918a342036cf0d155ce9c2f662c7a.macho",
+      "sample_size_bytes": 723072,
+      "mb_metadata": {
+        "first_seen": "2026-07-26 15:32:56",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "45-94-47-226"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 31,
+        "total_engines": 58,
+        "detection_ratio": "31/58",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "4c487d86d904ec55002123163e8db6dfa93918a342036cf0d155ce9c2f662c7a.macho",
+          "cursor"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "arm",
+          "macho",
+          "password-dialog",
+          "multi-arch",
+          "checks-cpu-name",
+          "self-delete"
+        ],
+        "reputation": -58,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/4c487d86d904ec55002123163e8db6dfa93918a342036cf0d155ce9c2f662c7a"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "81bedb0639d5857c6d28b23b06cf87f812c1070d2c7c6ee8c985362a0ef2b873",
+      "sample_md5": "b9fdf930964edaa587c352d0b2d066c4",
+      "sample_name": "81bedb0639d5857c6d28b23b06cf87f812c1070d2c7c6ee8c985362a0ef2b873.macho",
+      "sample_size_bytes": 750400,
+      "mb_metadata": {
+        "first_seen": "2026-07-26 14:30:50",
+        "file_type": "macho",
+        "signature": null,
+        "tags": null
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 32,
+        "total_engines": 60,
+        "detection_ratio": "32/60",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 17
+          }
+        ],
+        "names": [
+          "81bedb0639d5857c6d28b23b06cf87f812c1070d2c7c6ee8c985362a0ef2b873.macho",
+          "Yipibul"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "arm",
+          "multi-arch",
+          "password-dialog",
+          "self-delete",
+          "checks-cpu-name",
+          "macho"
+        ],
+        "reputation": -1,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/81bedb0639d5857c6d28b23b06cf87f812c1070d2c7c6ee8c985362a0ef2b873"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "fc2009166867bee88885f2f889a608260cb971c1e946bbb79ea7d75ae0d429f6",
+      "sample_md5": "2990c4b21076c457b7e11c117ba3b3ef",
+      "sample_name": "fc2009166867bee88885f2f889a608260cb971c1e946bbb79ea7d75ae0d429f6.macho",
+      "sample_size_bytes": 330752,
+      "mb_metadata": {
+        "first_seen": "2026-07-22 13:04:03",
+        "file_type": "macho",
+        "signature": "AMOS",
+        "tags": [
+          "AMOS",
+          "machO"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 29,
+        "total_engines": 61,
+        "detection_ratio": "29/61",
+        "suggested_threat_label": "trojan.stealer/atomic",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "fc2009166867bee88885f2f889a608260cb971c1e946bbb79ea7d75ae0d429f6.macho",
+          "e09bb220036fad6a30ad66539879a17fc0ed548e",
+          "malwarepayload"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "self-signed",
+          "64bits",
+          "multi-arch",
+          "macho",
+          "arm"
+        ],
+        "reputation": -52,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Agent.ag",
+          "ESET-NOD32": "OSX/PSW.Agent.JE trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/fc2009166867bee88885f2f889a608260cb971c1e946bbb79ea7d75ae0d429f6"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "b30b4b58eb215b60a8526c506d689ffab91ed43124709bc20b4085edf9d5361b",
+      "sample_md5": "77526447f9a15358ff5d991bed9a6359",
+      "sample_name": "b30b4b58eb215b60a8526c506d689ffab91ed43124709bc20b4085edf9d5361b.macho",
+      "sample_size_bytes": 750400,
+      "mb_metadata": {
+        "first_seen": "2026-07-20 16:16:01",
+        "file_type": "macho",
+        "signature": null,
+        "tags": null
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 32,
+        "total_engines": 59,
+        "detection_ratio": "32/59",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "count": 18,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "gyou90ug9.exe",
+          "03f524001f52f4e6b9bdd0a067ccdf1ba7074af0",
+          "b30b4b58eb215b60a8526c506d689ffab91ed43124709bc20b4085edf9d5361b.macho",
+          "Vozeyuy"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "arm",
+          "multi-arch",
+          "self-signed",
+          "macho",
+          "self-delete",
+          "password-dialog",
+          "64bits",
+          "checks-cpu-name"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/b30b4b58eb215b60a8526c506d689ffab91ed43124709bc20b4085edf9d5361b"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "43e4dfdd3c1295e54a2704158c50e1ce5913f8d700790441367cba8abe07195b",
+      "sample_md5": "aad29a9edc86c712461a8efb16f18982",
+      "sample_name": "43e4dfdd3c1295e54a2704158c50e1ce5913f8d700790441367cba8abe07195b.macho",
+      "sample_size_bytes": 431696,
+      "mb_metadata": {
+        "first_seen": "2026-07-14 13:59:39",
+        "file_type": "macho",
+        "signature": "AMOS",
+        "tags": [
+          "AMOS",
+          "ClickFix",
+          "machO",
+          "macOS",
+          "osx.amos",
+          "Poseidon"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 29,
+        "total_engines": 60,
+        "detection_ratio": "29/60",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "count": 17,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "43e4dfdd3c1295e54a2704158c50e1ce5913f8d700790441367cba8abe07195b.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "checks-cpu-name",
+          "self-signed",
+          "macho",
+          "64bits",
+          "multi-arch",
+          "arm"
+        ],
+        "reputation": -52,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Backdoor.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-HF",
+          "ESET-NOD32": "OSX/PSW.Agent.IN trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/43e4dfdd3c1295e54a2704158c50e1ce5913f8d700790441367cba8abe07195b"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "23f900e9fb8ff57f420901178a087cc5570dcaf1fd161d8e8c0b38fcdb4e68f1",
+      "sample_md5": "057e87fb81fe57fc6bcc006a6cffa2be",
+      "sample_name": "23f900e9fb8ff57f420901178a087cc5570dcaf1fd161d8e8c0b38fcdb4e68f1.macho",
+      "sample_size_bytes": 356496,
+      "mb_metadata": {
+        "first_seen": "2026-07-14 13:59:07",
+        "file_type": "macho",
+        "signature": "AMOS",
+        "tags": [
+          "AMOS",
+          "ClickFix",
+          "machO",
+          "macOS",
+          "osx.amos",
+          "Poseidon"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 60,
+        "detection_ratio": "28/60",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "23f900e9fb8ff57f420901178a087cc5570dcaf1fd161d8e8c0b38fcdb4e68f1.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "checks-cpu-name",
+          "macho",
+          "self-signed",
+          "arm",
+          "64bits",
+          "multi-arch"
+        ],
+        "reputation": -52,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Backdoor.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-HM",
+          "ESET-NOD32": "OSX/PSW.Agent.HG trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/23f900e9fb8ff57f420901178a087cc5570dcaf1fd161d8e8c0b38fcdb4e68f1"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "f284297b7bf551617553a9c19f101b3aa55f94e3fb60cab2e596e4c287908281",
+      "sample_md5": "2e038a38cdf34371d2b64ddd92b971c0",
+      "sample_name": "f284297b7bf551617553a9c19f101b3aa55f94e3fb60cab2e596e4c287908281.macho",
+      "sample_size_bytes": 750400,
+      "mb_metadata": {
+        "first_seen": "2026-06-17 00:51:24",
+        "file_type": "macho",
+        "signature": "AmosStealer",
+        "tags": [
+          "AMOS",
+          "AmosStealer",
+          "ClickFix",
+          "Mach-O",
+          "machO",
+          "macOS",
+          "MioLab"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 34,
+        "total_engines": 62,
+        "detection_ratio": "34/62",
+        "suggested_threat_label": "trojan.stealer/infostl",
+        "popular_threat_category": [
+          {
+            "count": 18,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "f284297b7bf551617553a9c19f101b3aa55f94e3fb60cab2e596e4c287908281.macho",
+          "Fanave"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "multi-arch",
+          "self-signed",
+          "arm",
+          "64bits",
+          "macho"
+        ],
+        "reputation": -1,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/f284297b7bf551617553a9c19f101b3aa55f94e3fb60cab2e596e4c287908281"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "a91d954fa5a9a1f167625e7ac8314a481e32a9dbee4635533b52be21be4e508b",
+      "sample_md5": "6dd0a512e4e25d256c19f3b41b6fa3b9",
+      "sample_name": "a91d954fa5a9a1f167625e7ac8314a481e32a9dbee4635533b52be21be4e508b.macho",
+      "sample_size_bytes": 723072,
+      "mb_metadata": {
+        "first_seen": "2026-06-17 00:51:20",
+        "file_type": "macho",
+        "signature": "AmosStealer",
+        "tags": [
+          "AMOS",
+          "AmosStealer",
+          "ClickFix",
+          "Mach-O",
+          "machO",
+          "macOS",
+          "MioLab"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 34,
+        "total_engines": 62,
+        "detection_ratio": "34/62",
+        "suggested_threat_label": "trojan.stealer/infostl",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 18
+          }
+        ],
+        "names": [
+          "a91d954fa5a9a1f167625e7ac8314a481e32a9dbee4635533b52be21be4e508b.macho",
+          "Dezuboh"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "self-signed",
+          "multi-arch",
+          "64bits",
+          "arm"
+        ],
+        "reputation": -1,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/a91d954fa5a9a1f167625e7ac8314a481e32a9dbee4635533b52be21be4e508b"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "a7bb346838db73301fe16e8f6bf2e0caee397570bc0df184484245a2715fb9f5",
+      "sample_md5": "455db1c91cdd974a3249172bd0b338fe",
+      "sample_name": "a7bb346838db73301fe16e8f6bf2e0caee397570bc0df184484245a2715fb9f5.macho",
+      "sample_size_bytes": 810660,
+      "mb_metadata": {
+        "first_seen": "2023-11-20 13:43:25",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "mac",
+          "Mach-O",
+          "machO",
+          "macOS",
+          "Meterpreter",
+          "OSX"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 38,
+        "total_engines": 62,
+        "detection_ratio": "38/62",
+        "suggested_threat_label": "trojan.mettle/meterpreter",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 12
+          },
+          {
+            "value": "pua",
+            "count": 3
+          }
+        ],
+        "names": [
+          "135fc266af08a28fc7b2d3e0c2ca92e9611e626cec13fb70b9eaad1278b72793.macho",
+          "9.macho",
+          "a7bb346838db73301fe16e8f6bf2e0caee397570bc0df184484245a2715fb9f5.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "64bits"
+        ],
+        "reputation": -11,
+        "key_engine_detections": {
+          "Microsoft": "Backdoor:MacOS/Meddlingmetal.A",
+          "SentinelOne": "Static AI - Malicious Mach-O",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.l",
+          "Sophos": "OSX/Swrort-AX",
+          "ESET-NOD32": "OSX/Riskware.Meterpreter.E application"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/a7bb346838db73301fe16e8f6bf2e0caee397570bc0df184484245a2715fb9f5"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "a6fd2f09eb81bf3afc83c4b019f21c63aa89a73239e67d0acdf6c8f4e714f2ba",
+      "sample_md5": "a369d5c3521cc2a4bdccfd1b9608b4d7",
+      "sample_name": "a6fd2f09eb81bf3afc83c4b019f21c63aa89a73239e67d0acdf6c8f4e714f2ba.macho",
+      "sample_size_bytes": 810654,
+      "mb_metadata": {
+        "first_seen": "2023-11-20 13:34:13",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "mac",
+          "Mach-O",
+          "machO",
+          "macOS",
+          "Meterpreter",
+          "OSX"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 35,
+        "total_engines": 59,
+        "detection_ratio": "35/59",
+        "suggested_threat_label": "trojan.mettle/meterpreter",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 12
+          },
+          {
+            "value": "pua",
+            "count": 3
+          }
+        ],
+        "names": [
+          "135fc266af08a28fc7b2d3e0c2ca92e9611e626cec13fb70b9eaad1278b72793.macho",
+          "8.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "checks-hostname",
+          "macho"
+        ],
+        "reputation": -13,
+        "key_engine_detections": {
+          "Microsoft": "Backdoor:MacOS/Meddlingmetal.A",
+          "SentinelOne": "Static AI - Malicious Mach-O",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.l",
+          "Sophos": "OSX/Swrort-AX",
+          "ESET-NOD32": "OSX/Riskware.Meterpreter.E application"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/a6fd2f09eb81bf3afc83c4b019f21c63aa89a73239e67d0acdf6c8f4e714f2ba"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
+      "namespace": "macos_MALW_macOS_MacSync_Stealer",
+      "tags": [],
+      "meta": {
+        "description": "Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)",
+        "date": "2026-08-31",
+        "family": "MacSync",
+        "threat_type": "Infostealer / Stager / Exfiltrator",
+        "platform": "macOS (x86_64 & ARM64)"
+      },
+      "matched_strings": [],
+      "sample_sha256": "4d751dd363298589cb436d78cd302f9d794ae1e3670722a464884be908671a9c",
+      "sample_md5": "f9e73c254d7d66e8a99daeb4462e8827",
+      "sample_name": "4d751dd363298589cb436d78cd302f9d794ae1e3670722a464884be908671a9c.macho",
+      "sample_size_bytes": 136032,
+      "mb_metadata": {
+        "first_seen": "2025-11-17 15:29:55",
+        "file_type": "macho",
+        "signature": "MacSync",
+        "tags": [
+          "infostealer",
+          "Mach-O",
+          "machO",
+          "macOS",
+          "MacSync"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 31,
+        "total_engines": 58,
+        "detection_ratio": "31/58",
+        "suggested_threat_label": "trojan.stealer/infostl",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 18
+          },
+          {
+            "value": "downloader",
+            "count": 3
+          }
+        ],
+        "names": [
+          "4d751dd363298589cb436d78cd302f9d794ae1e3670722a464884be908671a9c.macho",
+          "Order (1).macho",
+          "Zoom",
+          "_4d751dd363298589cb436d78cd302f9d794ae1e3670722a464884be908671a9c"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "multi-arch",
+          "arm",
+          "macho",
+          "self-signed",
+          "64bits"
+        ],
+        "reputation": -55,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/SuspOsaDownload.A",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-Downloader.OSX.Agent.az",
+          "Sophos": "OSX/InfoStl-FI",
+          "ESET-NOD32": "OSX/PSW.Agent.FJ trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/4d751dd363298589cb436d78cd302f9d794ae1e3670722a464884be908671a9c"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "135fc266af08a28fc7b2d3e0c2ca92e9611e626cec13fb70b9eaad1278b72793",
+      "sample_md5": "2a59f062689ca79a5a81fdcdbedf8e19",
+      "sample_name": "135fc266af08a28fc7b2d3e0c2ca92e9611e626cec13fb70b9eaad1278b72793.macho",
+      "sample_size_bytes": 810648,
+      "mb_metadata": {
+        "first_seen": "2023-10-02 10:21:33",
+        "file_type": "macho",
+        "signature": "Meterpreter",
+        "tags": [
+          "Mach-O",
+          "machO",
+          "macOS",
+          "Meterpreter"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 37,
+        "total_engines": 61,
+        "detection_ratio": "37/61",
+        "suggested_threat_label": "trojan.mettle/meterpreter",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 12
+          },
+          {
+            "value": "pua",
+            "count": 3
+          }
+        ],
+        "names": [
+          "135fc266af08a28fc7b2d3e0c2ca92e9611e626cec13fb70b9eaad1278b72793.macho",
+          "payload.bin"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "checks-hostname",
+          "macho",
+          "64bits"
+        ],
+        "reputation": -1,
+        "key_engine_detections": {
+          "Microsoft": "Backdoor:MacOS/Meddlingmetal.A",
+          "SentinelOne": "Static AI - Malicious Mach-O",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.l",
+          "Sophos": "OSX/Swrort-AX",
+          "ESET-NOD32": "OSX/Riskware.Meterpreter.E application"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/135fc266af08a28fc7b2d3e0c2ca92e9611e626cec13fb70b9eaad1278b72793"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "30f97ae88f8861eeadeb54854d47078724e52e2ef36dd847180663b7f5763168",
+      "sample_md5": "760c89959e2d80f9b78a320023a875b7",
+      "sample_name": "30f97ae88f8861eeadeb54854d47078724e52e2ef36dd847180663b7f5763168.macho",
+      "sample_size_bytes": 521440,
+      "mb_metadata": {
+        "first_seen": "2026-02-10 15:45:15",
+        "file_type": "macho",
+        "signature": "AmosStealer",
+        "tags": [
+          "91-92-242-30",
+          "AMOS",
+          "AmosStealer",
+          "machO",
+          "macOS",
+          "Trojan:MacOS/Amos.FB!MTB"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 37,
+        "total_engines": 62,
+        "detection_ratio": "37/62",
+        "suggested_threat_label": "trojan.amos/stealer",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 21
+          }
+        ],
+        "names": [
+          "sztvvbrvmp.exe",
+          "eelmlbmntr.exe",
+          "ojoqaintzz.exe",
+          "bqzwxvshnd.exe",
+          "fpkxbujlke.exe"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "self-signed",
+          "multi-arch",
+          "macho",
+          "64bits",
+          "arm"
+        ],
+        "reputation": -160,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AMOS.HAD!MTB",
+          "SentinelOne": "Static AI - Malicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-FX",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/30f97ae88f8861eeadeb54854d47078724e52e2ef36dd847180663b7f5763168"
+      },
+      "detected_at": "2026-08-31T14:41:41.676801+00:00",
+      "source_feed": "MalwareBazaar"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "00f918996b9192c8ccd0ba4ad80f6f2ed17844d6cbe00eb65afb9df0c8f05430",
+      "sample_md5": "0e089ec295022c4bcee6ef0ae15baf4d",
+      "sample_name": "00f918996b9192c8.macho",
+      "sample_size_bytes": 363504,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "suspicious",
+          "/private/tmp/.w97b0h",
+          ".w97b0h"
+        ],
+        "tags": [
+          "macho",
+          "multi-arch",
+          "arm",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/00f918996b9192c8ccd0ba4ad80f6f2ed17844d6cbe00eb65afb9df0c8f05430"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "780dc4cb1bf8697cbc784c8926cc7f55b64c04e8eaa51d20f938cfa352f8c998",
+      "sample_md5": "1cf712f1a5b235c7f2baf179a8d2292c",
+      "sample_name": "780dc4cb1bf8697c.macho",
+      "sample_size_bytes": 163488,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 10,
+        "total_engines": 76,
+        "detection_ratio": "10/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/780dc4cb1bf8697cbc784c8926cc7f55b64c04e8eaa51d20f938cfa352f8c998"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "e4e8aa9a827e820fd98fa061442cac2ac95fbb7ed1b3e5a0d99aef048e4a123e",
+      "sample_md5": "82a8dd0979c155a5b937457a055ceec9",
+      "sample_name": "e4e8aa9a827e820f.macho",
+      "sample_size_bytes": 183168,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "arm",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/e4e8aa9a827e820fd98fa061442cac2ac95fbb7ed1b3e5a0d99aef048e4a123e"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "e0ad9eab55dee8da82090915d94b2b07ae2b0537312b4d0397fec8bb1380ad2c",
+      "sample_md5": "194e600ceabf884ac24e5e26f809a899",
+      "sample_name": "e0ad9eab55dee8da.macho",
+      "sample_size_bytes": 363392,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "helper.bin"
+        ],
+        "tags": [
+          "arm",
+          "macho",
+          "multi-arch",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/e0ad9eab55dee8da82090915d94b2b07ae2b0537312b4d0397fec8bb1380ad2c"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "04465e8d0cebb270bacc5db8bb874cf01bd4ba85afd317b9d8748cbcb53ce5c7",
+      "sample_md5": "2a3d2a7f5d237f4043df74f9384a4d1e",
+      "sample_name": "04465e8d0cebb270.macho",
+      "sample_size_bytes": 159488,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 10,
+        "total_engines": 76,
+        "detection_ratio": "10/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "64bits",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/04465e8d0cebb270bacc5db8bb874cf01bd4ba85afd317b9d8748cbcb53ce5c7"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "e20f38eedb7fd126834250aa43453faa99833e7c0f39029691dad8ca5e9f5ce9",
+      "sample_md5": "5830375e56c336e44c31113463061ce9",
+      "sample_name": "e20f38eedb7fd126.macho",
+      "sample_size_bytes": 183280,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 10,
+        "total_engines": 76,
+        "detection_ratio": "10/76",
+        "suggested_threat_label": "trojan.camelot/multiverze",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "arm",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/e20f38eedb7fd126834250aa43453faa99833e7c0f39029691dad8ca5e9f5ce9"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "620662ab495dacef6ac971ab82da995d430b9b0e9f92445acd136e0cd07d6821",
+      "sample_md5": "3102e826afb3cbe093361fe42b4f1945",
+      "sample_name": "620662ab495dacef.macho",
+      "sample_size_bytes": 183184,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "arm",
+          "64bits",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/620662ab495dacef6ac971ab82da995d430b9b0e9f92445acd136e0cd07d6821"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "ef1d615bbf15dbee3d2dd51f843a462230014f0212423182c38d93140e176460",
+      "sample_md5": "24acf4e03df9c598499eab765412a14c",
+      "sample_name": "ef1d615bbf15dbee.macho",
+      "sample_size_bytes": 159392,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 10,
+        "total_engines": 76,
+        "detection_ratio": "10/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/ef1d615bbf15dbee3d2dd51f843a462230014f0212423182c38d93140e176460"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "76c2e4e7fb5290366d7bd04703ea60ec92d314ff651172387b9c6dbfca22b82a",
+      "sample_md5": "a19b8d6e37d51b294a96bac703de24cb",
+      "sample_name": "76c2e4e7fb529036.macho",
+      "sample_size_bytes": 363408,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "stage3.bin"
+        ],
+        "tags": [
+          "arm",
+          "multi-arch",
+          "macho",
+          "64bits",
+          "self-signed",
+          "service-scan"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/76c2e4e7fb5290366d7bd04703ea60ec92d314ff651172387b9c6dbfca22b82a"
+      },
+      "detected_at": "2026-09-01T07:05:16.190034+00:00"
+    },
+    {
+      "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
+      "namespace": "macos_MALW_macOS_MacSync_Stealer",
+      "tags": [],
+      "meta": {
+        "description": "Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)",
+        "date": "2026-08-31",
+        "family": "MacSync",
+        "threat_type": "Infostealer / Stager / Exfiltrator",
+        "platform": "macOS (x86_64 & ARM64)"
+      },
+      "matched_strings": [],
+      "sample_sha256": "a864c989d8a28cc5d2162050bb862775ee7297ce305c19014a0c63a4b73e993b",
+      "sample_md5": "6c50481eeea199f059bda10184bea0a6",
+      "sample_name": "a864c989d8a28cc5.macho",
+      "sample_size_bytes": 137328,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 23,
+        "total_engines": 76,
+        "detection_ratio": "23/76",
+        "suggested_threat_label": "trojan.coins/abtrojan",
+        "names": [
+          "Launcher",
+          "Launcher/Launcher.app/Contents/MacOS/Launcher"
+        ],
+        "tags": [
+          "64bits",
+          "multi-arch",
+          "macho",
+          "self-delete",
+          "self-signed",
+          "arm"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/a864c989d8a28cc5d2162050bb862775ee7297ce305c19014a0c63a4b73e993b"
+      },
+      "detected_at": "2026-09-01T10:24:38.407549+00:00"
+    },
+    {
+      "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
+      "namespace": "macos_MALW_macOS_MacSync_Stealer",
+      "tags": [],
+      "meta": {
+        "description": "Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)",
+        "date": "2026-08-31",
+        "family": "MacSync",
+        "threat_type": "Infostealer / Stager / Exfiltrator",
+        "platform": "macOS (x86_64 & ARM64)"
+      },
+      "matched_strings": [],
+      "sample_sha256": "9ff32f7c0108e9d27a3b491edf04827b6ca025f44db68aeadc44eeb97c9aab11",
+      "sample_md5": "9678f71ea4cccbc3d511dc8d7f24b113",
+      "sample_name": "9ff32f7c0108e9d2.macho",
+      "sample_size_bytes": 38800,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 27,
+        "total_engines": 76,
+        "detection_ratio": "27/76",
+        "suggested_threat_label": "trojan.coins/infostl",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "self-signed",
+          "malware",
+          "self-delete"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/9ff32f7c0108e9d27a3b491edf04827b6ca025f44db68aeadc44eeb97c9aab11"
+      },
+      "detected_at": "2026-09-01T10:24:38.407549+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "f2b8d86adc1cfe5833d07c0ac09c69192bd1ca54717cc40dd00977deb426b53f",
+      "sample_md5": "fe3fc34719e2266ccf128001bbdbd2b2",
+      "sample_name": "f2b8d86adc1cfe58.macho",
+      "sample_size_bytes": 362624,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 17,
+        "total_engines": 76,
+        "detection_ratio": "17/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "macho",
+          "arm",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/f2b8d86adc1cfe5833d07c0ac09c69192bd1ca54717cc40dd00977deb426b53f"
+      },
+      "detected_at": "2026-09-01T15:39:30.104454+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "162740169bc202ab264ebf99a6e1a8789522601986be7965277a77460b103e2b",
+      "sample_md5": "d41302d8613de5fe37bb0609254bfdd0",
+      "sample_name": "162740169bc202ab.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 76,
+        "detection_ratio": "28/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "pbyb1t39qwbbannl"
+        ],
+        "tags": [
+          "multi-arch",
+          "arm",
+          "64bits",
+          "macho",
+          "self-signed",
+          "self-delete",
+          "checks-cpu-name",
+          "password-dialog"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/162740169bc202ab264ebf99a6e1a8789522601986be7965277a77460b103e2b"
+      },
+      "detected_at": "2026-09-01T15:39:30.104454+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "4bae510072353a0493b1bb58f167e1afb7636f11531dfa696df804fa50d582ef",
+      "sample_md5": "ed25fafe902949680af83c8c74f7e178",
+      "sample_name": "4bae510072353a04.macho",
+      "sample_size_bytes": 163520,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 7,
+        "total_engines": 76,
+        "detection_ratio": "7/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "64bits",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/4bae510072353a0493b1bb58f167e1afb7636f11531dfa696df804fa50d582ef"
+      },
+      "detected_at": "2026-09-01T15:39:30.104454+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "fb5f2418abc9c44235a6495f91cb95e6df19dc1fd30181c8ad5bc91797a55f66",
+      "sample_md5": "92a8c2e77c47ee4d42e65a9b28d90a68",
+      "sample_name": "fb5f2418abc9c442.macho",
+      "sample_size_bytes": 199600,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 13,
+        "total_engines": 76,
+        "detection_ratio": "13/76",
+        "suggested_threat_label": "trojan.amos/amosstealer",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/fb5f2418abc9c44235a6495f91cb95e6df19dc1fd30181c8ad5bc91797a55f66"
+      },
+      "detected_at": "2026-09-01T15:39:30.104454+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "8043fedb8e00499538421af1ffdf4371553c5c93506c6b2d82bf2660823fd05e",
+      "sample_md5": "1d2973afb31831d17f6e248452982ed2",
+      "sample_name": "8043fedb8e004995.macho",
+      "sample_size_bytes": 379824,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 12,
+        "total_engines": 76,
+        "detection_ratio": "12/76",
+        "suggested_threat_label": "trojan.amos/amosstealer",
+        "names": [
+          "/private/tmp/.ecnemodfxi",
+          ".ecnemodfxi"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "multi-arch",
+          "arm",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/8043fedb8e00499538421af1ffdf4371553c5c93506c6b2d82bf2660823fd05e"
+      },
+      "detected_at": "2026-09-01T15:39:30.104454+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "63cba47e46c0b4051c1d9d7e476743f1ce3b7868ceb425a7e8f877460917d2a0",
+      "sample_md5": "70121e1a7b25311b54d06fa14e15e660",
+      "sample_name": "63cba47e46c0b405.macho",
+      "sample_size_bytes": 183184,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 12,
+        "total_engines": 76,
+        "detection_ratio": "12/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "macho",
+          "arm",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/63cba47e46c0b4051c1d9d7e476743f1ce3b7868ceb425a7e8f877460917d2a0"
+      },
+      "detected_at": "2026-09-01T15:39:30.104454+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "72a3e5de9427ba286e1eff30367d629db37f327c55801ace3ad3324f8476a794",
+      "sample_md5": "c2699c98c169dfc2591771fcf8c14957",
+      "sample_name": "72a3e5de9427ba28.macho",
+      "sample_size_bytes": 362624,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 19,
+        "total_engines": 76,
+        "detection_ratio": "19/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/72a3e5de9427ba286e1eff30367d629db37f327c55801ace3ad3324f8476a794"
+      },
+      "detected_at": "2026-09-02T08:06:00.959996+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "1bde09781d733947ff7658c89a4e55af3486f7a9db5e50b24a812e4cc1451e61",
+      "sample_md5": "d36a42c9c3dfdb55601646c8be35b24d",
+      "sample_name": "1bde09781d733947.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 76,
+        "detection_ratio": "28/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "Application"
+        ],
+        "tags": [
+          "arm",
+          "64bits",
+          "macho",
+          "multi-arch",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/1bde09781d733947ff7658c89a4e55af3486f7a9db5e50b24a812e4cc1451e61"
+      },
+      "detected_at": "2026-09-02T08:06:00.959996+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "e5a00c378da0a2bbcc1233a620a115f73c627d9ac9831f66be713632d9611183",
+      "sample_md5": "a4df617e6f0aa3764c61fde8bd12da6c",
+      "sample_name": "e5a00c378da0a2bb.macho",
+      "sample_size_bytes": 199696,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 12,
+        "total_engines": 76,
+        "detection_ratio": "12/76",
+        "suggested_threat_label": "trojan.amos/amosstealer",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "arm",
+          "macho",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/e5a00c378da0a2bbcc1233a620a115f73c627d9ac9831f66be713632d9611183"
+      },
+      "detected_at": "2026-09-02T08:06:00.959996+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "55364ff47a8789d5c4b414dd7dae05820e8129d6c7592708778550b6b3e220f3",
+      "sample_md5": "4fc01d6085031723c4837bfd9f63c6b8",
+      "sample_name": "55364ff47a8789d5.macho",
+      "sample_size_bytes": 163616,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 10,
+        "total_engines": 76,
+        "detection_ratio": "10/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/55364ff47a8789d5c4b414dd7dae05820e8129d6c7592708778550b6b3e220f3"
+      },
+      "detected_at": "2026-09-02T08:06:00.959996+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "0ce6c083c86d95df0962b6274a705631ccb87f5eb497b0fadd34d6040bb4913c",
+      "sample_md5": "36b24dc1e17aa863c60a25db0995d3c2",
+      "sample_name": "0ce6c083c86d95df.macho",
+      "sample_size_bytes": 379920,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 12,
+        "total_engines": 76,
+        "detection_ratio": "12/76",
+        "suggested_threat_label": "trojan.amos/amosstealer",
+        "names": [
+          "/private/tmp/.syu1dko",
+          ".syu1dko"
+        ],
+        "tags": [
+          "64bits",
+          "multi-arch",
+          "macho",
+          "arm",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/0ce6c083c86d95df0962b6274a705631ccb87f5eb497b0fadd34d6040bb4913c"
+      },
+      "detected_at": "2026-09-02T08:06:00.959996+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "ea8f3d6c2bfd3701bf1091f280843e29dec54d9403d77c680079d208fa2924a7",
+      "sample_md5": "b7a718f06c1427aa39b2a01e94e3d537",
+      "sample_name": "ea8f3d6c2bfd3701.macho",
+      "sample_size_bytes": 167776,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "64bits",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/ea8f3d6c2bfd3701bf1091f280843e29dec54d9403d77c680079d208fa2924a7"
+      },
+      "detected_at": "2026-09-02T15:18:39.415006+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "69670fdc892a5794bc78811ef551dcd40bed770cfa4f6aa6851db688c6466dd0",
+      "sample_md5": "15c119e598138c4a75b11c5f705c6761",
+      "sample_name": "69670fdc892a5794.macho",
+      "sample_size_bytes": 183312,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/69670fdc892a5794bc78811ef551dcd40bed770cfa4f6aa6851db688c6466dd0"
+      },
+      "detected_at": "2026-09-02T15:18:39.415006+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "7ac18a468064212c7c74d602364e43afde5b00a93ac7e84acf321ae2279a1213",
+      "sample_md5": "0048461f78477539673e4106e874456e",
+      "sample_name": "7ac18a468064212c.macho",
+      "sample_size_bytes": 163616,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 10,
+        "total_engines": 76,
+        "detection_ratio": "10/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/7ac18a468064212c7c74d602364e43afde5b00a93ac7e84acf321ae2279a1213"
+      },
+      "detected_at": "2026-09-02T15:18:39.415006+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "23269d1af542f94427f6994c509de9b1c31bdad5cc48ed1acc773130faf5bd9a",
+      "sample_md5": "c48ad84d78cc17038647e2c829c77ef2",
+      "sample_name": "23269d1af542f944.macho",
+      "sample_size_bytes": 183280,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/23269d1af542f94427f6994c509de9b1c31bdad5cc48ed1acc773130faf5bd9a"
+      },
+      "detected_at": "2026-09-02T15:18:39.415006+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "fad2eda61740a347df03b0f64fee4510fc05631549c4d501487522cb8fb980c4",
+      "sample_md5": "8671eb11e5d4abcb6040ae9305586720",
+      "sample_name": "fad2eda61740a347.macho",
+      "sample_size_bytes": 363504,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "/private/tmp/.fjaa1",
+          ".fjaa1"
+        ],
+        "tags": [
+          "arm",
+          "multi-arch",
+          "64bits",
+          "macho",
+          "self-signed",
+          "service-scan"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/fad2eda61740a347df03b0f64fee4510fc05631549c4d501487522cb8fb980c4"
+      },
+      "detected_at": "2026-09-02T15:18:39.415006+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "2a3a9a9d69c8cfa90879da2294d603a81fc9e97349b22e6a0aed3b565e092c1d",
+      "sample_md5": "93b8daa2c25a17e0c2abb5d8b0b3cdf2",
+      "sample_name": "2a3a9a9d69c8cfa9.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 76,
+        "detection_ratio": "28/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "b3untvncvmvxniwl"
+        ],
+        "tags": [
+          "arm",
+          "64bits",
+          "multi-arch",
+          "macho",
+          "self-signed",
+          "self-delete",
+          "checks-cpu-name",
+          "password-dialog"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/2a3a9a9d69c8cfa90879da2294d603a81fc9e97349b22e6a0aed3b565e092c1d"
+      },
+      "detected_at": "2026-09-03T05:14:39.088706+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "1f78a436c529a6da706486ee8bd4a6adfe879bea858ef7d3393833d1158c36ce",
+      "sample_md5": "fed2cdf7bf7bd6d18a28a6d60c8a8b46",
+      "sample_name": "1f78a436c529a6da.macho",
+      "sample_size_bytes": 362624,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 18,
+        "total_engines": 76,
+        "detection_ratio": "18/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "macho",
+          "arm",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/1f78a436c529a6da706486ee8bd4a6adfe879bea858ef7d3393833d1158c36ce"
+      },
+      "detected_at": "2026-09-03T05:14:39.088706+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "871ef3467b7dfae4117cf63607010299e413c45af28694c2b5aef9c85561a484",
+      "sample_md5": "0fbe66449889f961bf036960acdc3d02",
+      "sample_name": "871ef3467b7dfae4.macho",
+      "sample_size_bytes": 362624,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 18,
+        "total_engines": 76,
+        "detection_ratio": "18/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/871ef3467b7dfae4117cf63607010299e413c45af28694c2b5aef9c85561a484"
+      },
+      "detected_at": "2026-09-03T05:14:39.088706+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "520ac683d4919cc6cc40104dbf1c147df89baee25a4d591ac635eae8c3b6a1a2",
+      "sample_md5": "97dff05e641290f26df3ae1b1f6446b4",
+      "sample_name": "520ac683d4919cc6.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 76,
+        "detection_ratio": "28/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "1r8usi8o67dob3q7"
+        ],
+        "tags": [
+          "macho",
+          "multi-arch",
+          "arm",
+          "64bits",
+          "self-signed",
+          "self-delete",
+          "checks-cpu-name",
+          "password-dialog"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/520ac683d4919cc6cc40104dbf1c147df89baee25a4d591ac635eae8c3b6a1a2"
+      },
+      "detected_at": "2026-09-03T05:14:39.088706+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "81518176695d31946a991e2ed84c458d687b16ea77b92e718d38a2d915be8bdb",
+      "sample_md5": "9a3548a4babcb2e698acd478a1f7604d",
+      "sample_name": "81518176695d3194.macho",
+      "sample_size_bytes": 159360,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 8,
+        "total_engines": 76,
+        "detection_ratio": "8/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "64bits",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/81518176695d31946a991e2ed84c458d687b16ea77b92e718d38a2d915be8bdb"
+      },
+      "detected_at": "2026-09-03T05:14:39.088706+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "9a2e9044e2c60d273fab7035a00740c7ec49dc1c1b82e8c697b4b90ab2f2db4f",
+      "sample_md5": "1d4d545b5aac3a3122751e4978bad5be",
+      "sample_name": "9a2e9044e2c60d27.macho",
+      "sample_size_bytes": 183168,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "macho",
+          "arm",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/9a2e9044e2c60d273fab7035a00740c7ec49dc1c1b82e8c697b4b90ab2f2db4f"
+      },
+      "detected_at": "2026-09-03T05:14:39.088706+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "aaa56fb51a0dd7cf74667d090d456cc24f6b5b3b3484831f4371e38481cb9fb4",
+      "sample_md5": "7eb816ede6a1d7b913af087b760560bb",
+      "sample_name": "aaa56fb51a0dd7cf.macho",
+      "sample_size_bytes": 363392,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 76,
+        "detection_ratio": "11/76",
+        "suggested_threat_label": "trojan.amos/camelot",
+        "names": [],
+        "tags": [
+          "multi-arch",
+          "arm",
+          "macho",
+          "64bits",
+          "self-signed",
+          "checks-cpu-name"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/aaa56fb51a0dd7cf74667d090d456cc24f6b5b3b3484831f4371e38481cb9fb4"
+      },
+      "detected_at": "2026-09-03T05:14:39.088706+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "a5655a9b4c4889bfd7fcbf928d4979afcacb1577fff3697defae7c0cccafea8a",
+      "sample_md5": "d0d9aa01e0f056550e45e63bc626add5",
+      "sample_name": "a5655a9b4c4889bf.macho",
+      "sample_size_bytes": 362624,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 17,
+        "total_engines": 76,
+        "detection_ratio": "17/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed",
+          "service-scan"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/a5655a9b4c4889bfd7fcbf928d4979afcacb1577fff3697defae7c0cccafea8a"
+      },
+      "detected_at": "2026-09-03T17:22:39.836553+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "3b9aa24a02b112fd7881c9c7fdccba1b4677e138b4571d211b54a1cf5b68fe0d",
+      "sample_md5": "63dec2e7d422c784e50146223c4091f1",
+      "sample_name": "3b9aa24a02b112fd.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 76,
+        "detection_ratio": "28/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "momq4l493yfj6gmq"
+        ],
+        "tags": [
+          "self-signed",
+          "multi-arch",
+          "arm",
+          "macho",
+          "64bits",
+          "self-delete",
+          "checks-cpu-name",
+          "password-dialog"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/3b9aa24a02b112fd7881c9c7fdccba1b4677e138b4571d211b54a1cf5b68fe0d"
+      },
+      "detected_at": "2026-09-03T17:22:39.836553+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "aa293672aa84cf35ce0418ce081f23ea7fc028926f5b369464923ea753c33f21",
+      "sample_md5": "e2af1093f6d4e2b54d6469a72aa5112d",
+      "sample_name": "aa293672aa84cf35.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 32,
+        "total_engines": 76,
+        "detection_ratio": "32/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "rnzixa5gl2ixqum9"
+        ],
+        "tags": [
+          "64bits",
+          "multi-arch",
+          "macho",
+          "checks-cpu-name",
+          "arm",
+          "password-dialog",
+          "self-delete",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/aa293672aa84cf35ce0418ce081f23ea7fc028926f5b369464923ea753c33f21"
+      },
+      "detected_at": "2026-09-04T05:40:37.603450+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "e97f729d30190d8e798254e12bbc95c31c8c6f82718d582fe8fa30a0ac4d2c11",
+      "sample_md5": "f2e4525d7b78436b8b94b70e66ad655b",
+      "sample_name": "e97f729d30190d8e.macho",
+      "sample_size_bytes": 362624,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 18,
+        "total_engines": 76,
+        "detection_ratio": "18/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/e97f729d30190d8e798254e12bbc95c31c8c6f82718d582fe8fa30a0ac4d2c11"
+      },
+      "detected_at": "2026-09-04T05:40:37.603450+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "a5c87b8f2d582e6c145a4f07b2e1a475e4da74dbfd33dc49fffdfc27a184666c",
+      "sample_md5": "b90a9ea037adbfcd49ae7de43006681d",
+      "sample_name": "a5c87b8f2d582e6c.macho",
+      "sample_size_bytes": 362624,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 18,
+        "total_engines": 76,
+        "detection_ratio": "18/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "localfile~.arm64"
+        ],
+        "tags": [
+          "macho",
+          "arm",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/a5c87b8f2d582e6c145a4f07b2e1a475e4da74dbfd33dc49fffdfc27a184666c"
+      },
+      "detected_at": "2026-09-04T05:40:37.603450+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "124f942b3f3dc9052766ba141f76d434f995f83e95a7ce8a53018c4f2f377410",
+      "sample_md5": "1ee2961bbc03f8703bbb17021688f8ee",
+      "sample_name": "124f942b3f3dc905.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 27,
+        "total_engines": 76,
+        "detection_ratio": "27/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "54c2xsfybxekjezb"
+        ],
+        "tags": [
+          "64bits",
+          "multi-arch",
+          "arm",
+          "macho",
+          "self-signed",
+          "self-delete",
+          "checks-cpu-name",
+          "password-dialog"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/124f942b3f3dc9052766ba141f76d434f995f83e95a7ce8a53018c4f2f377410"
+      },
+      "detected_at": "2026-09-04T05:40:37.603450+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "6cbcd5c5b3c1bdef8d23f019fce29221ffc0f6ea32c79e2d1a1b57f40571bca5",
+      "sample_md5": "69070869aa9aa3093036c27babc04052",
+      "sample_name": "6cbcd5c5b3c1bdef.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 33,
+        "total_engines": 76,
+        "detection_ratio": "33/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "d1dxajouzpz3eomc"
+        ],
+        "tags": [
+          "arm",
+          "self-delete",
+          "self-signed",
+          "64bits",
+          "multi-arch",
+          "checks-cpu-name",
+          "password-dialog",
+          "macho"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/6cbcd5c5b3c1bdef8d23f019fce29221ffc0f6ea32c79e2d1a1b57f40571bca5"
+      },
+      "detected_at": "2026-09-04T05:40:37.603450+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [],
+      "sample_sha256": "c69dfd8e46ebea022ac512d9596fe5b1345bcd631815f0e759ea2e941d80df93",
+      "sample_md5": "3ecebee5d28275a6e6da939f6fa18b20",
+      "sample_name": "c69dfd8e46ebea02.macho",
+      "sample_size_bytes": 723072,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 33,
+        "total_engines": 76,
+        "detection_ratio": "33/76",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "names": [
+          "e0stmozypv2fv7xs",
+          "D:\\Itch_bordel\\e0stmozypv2fv7xs"
+        ],
+        "tags": [
+          "multi-arch",
+          "arm",
+          "64bits",
+          "macho",
+          "self-signed",
+          "checks-cpu-name"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/c69dfd8e46ebea022ac512d9596fe5b1345bcd631815f0e759ea2e941d80df93"
+      },
+      "detected_at": "2026-09-04T05:40:37.603450+00:00"
+    }
+  ]
+};

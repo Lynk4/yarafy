@@ -1,22 +1,23 @@
-name: "Automated Feed Hunt & Telemetry"
+name: "VirusTotal Hunt - macOS"
 
 on:
-  schedule:
-    # Run every 6 hours
-    - cron: "0 */6 * * *"
   workflow_dispatch:
     inputs:
+      query:
+        description: "VirusTotal Intelligence Search Query"
+        required: true
+        default: "type:macho positives:5+ fs:30d+"
       limit:
-        description: "Number of samples per query to fetch"
-        required: false
-        default: "25"
+        description: "Number of live samples to download and scan"
+        required: true
+        default: "10"
 
 permissions:
   contents: write
 
 jobs:
-  hunt:
-    name: "MalwareBazaar Hunt & VT Enrichment"
+  vt-hunt-macos:
+    name: "VT macOS Sample Download & YARA Scan"
     runs-on: ubuntu-latest
 
     steps:
@@ -36,13 +37,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: "Execute Threat Feed Hunting"
+      - name: "Execute VirusTotal Live Hunt (macOS)"
         env:
-          MALWAREBAZAAR_API_KEY: ${{ secrets.MALWAREBAZAAR_API_KEY }}
-          VT_API_KEY: ${{ secrets.VT_API_KEY }}
+          VT_ENTERPRISE_API_KEY: ${{ secrets.VT_ENTERPRISE_API_KEY || secrets.VT_API_KEY }}
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: |
-          python -m src.main hunt --limit ${{ github.event.inputs.limit || '25' }}
+          python -m src.main vt-hunt --platform macos --query "${{ github.event.inputs.query }}" --limit ${{ github.event.inputs.limit }}
 
       - name: "Commit and Push Updated Telemetry"
         run: |
@@ -52,6 +52,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No telemetry changes to commit."
           else
-            git commit -m "chore(telemetry): update hits and detection statistics [skip ci]"
+            git commit -m "chore(telemetry): update hits from VirusTotal macOS hunt [skip ci]"
             git push
           fi

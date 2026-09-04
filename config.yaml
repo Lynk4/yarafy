@@ -3,16 +3,19 @@
 # Path to YARA rules root directory
 rules_dir: "yara-rules"
 
-# Active platforms to scan. Options: "macos", "windows", "linux", "non-pe"
+# Active platforms to scan. Supported: "macos", "windows", "linux", "non-pe"
 active_platforms:
   - "macos"
+  - "windows"
+  - "linux"
+  - "non-pe"
 
 # MalwareBazaar Collection Settings
 malwarebazaar:
   enabled: true
   api_url: "https://mb-api.abuse.ch/api/v1/"
   # Number of recent samples / queries to retrieve per execution
-  limit: 50
+  limit: 25
   # Filter by file type for active platforms
   platform_file_types:
     macos:
@@ -25,11 +28,14 @@ malwarebazaar:
       - "msi"
     linux:
       - "elf"
+      - "so"
     non-pe:
       - "script"
       - "sh"
       - "py"
       - "js"
+      - "ps1"
+      - "vbs"
   # Common tags to query for focused hunting
   platform_tags:
     macos:
@@ -46,6 +52,36 @@ malwarebazaar:
       - "CthulhuStealer"
       - "ShadowVault"
       - "DazzleSpy"
+    windows:
+      - "exe"
+      - "dll"
+      - "LNK"
+      - "RedLine"
+      - "Lumma"
+      - "Vidar"
+      - "AgentTesla"
+      - "AsyncRAT"
+      - "Remcos"
+      - "CobaltStrike"
+      - "LockBit"
+      - "Stealer"
+    linux:
+      - "elf"
+      - "Linux"
+      - "Mirai"
+      - "Gafgyt"
+      - "Kinsing"
+      - "Tsunami"
+      - "XorDDoS"
+      - "BPFDoor"
+    non-pe:
+      - "script"
+      - "PowerShell"
+      - "Python"
+      - "bash"
+      - "JavaScript"
+      - "VBScript"
+      - "dropper"
 
 # VirusTotal Enrichment Settings (Free Tier Compliant)
 virustotal:
@@ -61,7 +97,7 @@ telemetry:
   hits_file: "telemetry/hits.json"
   stats_file: "telemetry/stats.json"
   report_file: "telemetry/LATEST_REPORT.md"
-  dashboard_readme: true
+  dashboard_dir: "dashboard"
 
 # Notification and Alerting
 alerts:

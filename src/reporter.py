@@ -110,7 +110,7 @@ class TelemetryReporter:
         stats["total_hits"] = len(existing_hits)
         stats["hits_by_rule"] = {}
         stats["hits_by_source"] = {}
-        stats["hits_by_platform"] = {}
+        stats["hits_by_platform"] = {p: 0 for p in platforms}
 
         for h in existing_hits:
             rule = h.get("rule_name", "unknown")
@@ -119,7 +119,7 @@ class TelemetryReporter:
             source = h.get("source_feed", "MalwareBazaar")
             stats["hits_by_source"][source] = stats["hits_by_source"].get(source, 0) + 1
 
-            plat = h.get("meta", {}).get("os") or h.get("namespace", "").split("_")[0] or "unknown"
+            plat = h.get("platform") or h.get("meta", {}).get("os") or h.get("namespace", "").split("_")[0] or "unknown"
             stats["hits_by_platform"][plat] = stats["hits_by_platform"].get(plat, 0) + 1
 
         # Save hits
@@ -133,11 +133,31 @@ class TelemetryReporter:
         # Generate latest Markdown report
         self.generate_markdown_report(stats, existing_hits, truly_new_hits)
 
+        # Generate latest Dashboard data file
+        self.generate_dashboard_data(stats, existing_hits)
+
         # Send alert if webhook configured
         if self.webhook_url and truly_new_hits:
             self.send_webhook_alert(truly_new_hits)
 
         return stats
+
+    def generate_dashboard_data(self, stats: Dict[str, Any], all_hits: List[Dict[str, Any]]) -> None:
+        """Outputs data.js for zero-CORS browser dashboard viewing."""
+        try:
+            root_dir = self.hits_file.parent.parent
+            dashboard_dir = root_dir / "dashboard"
+            dashboard_dir.mkdir(parents=True, exist_ok=True)
+            
+            payload = {
+                "stats": stats,
+                "hits": all_hits
+            }
+            js_content = f"window.YARAFY_DATA = {json.dumps(payload, indent=2)};\n"
+            with open(dashboard_dir / "data.js", "w", encoding="utf-8") as f:
+                f.write(js_content)
+        except Exception as e:
+            print(f"[!] Warning: Failed to write dashboard data.js: {e}")
 
     def generate_markdown_report(
         self,

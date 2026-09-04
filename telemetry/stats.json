@@ -1,9 +1,12 @@
 {
   "total_scanned": 2465,
   "total_hits": 62,
-  "last_run": "2026-09-04T05:40:37.603450+00:00",
+  "last_run": "2026-09-04T09:25:46.895203+00:00",
   "hits_by_platform": {
-    "macos": 62
+    "macos": 62,
+    "windows": 0,
+    "linux": 0,
+    "non-pe": 0
   },
   "hits_by_rule": {
     "macOS_ClickFix_AppleScript_Dropper": 34,

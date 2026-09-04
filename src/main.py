@@ -187,6 +187,17 @@ def cmd_vt_hunt(args: argparse.Namespace) -> int:
         console.print("[bold red]VT_ENTERPRISE_API_KEY (or VT_API_KEY) is not set. Please add your VirusTotal API key to .env or GitHub Secrets.[/bold red]")
         return 1
 
+    target_platform = getattr(args, "platform", "macos") or "macos"
+    default_queries = {
+        "macos": "type:macho positives:5+ fs:30d+",
+        "windows": "type:peexe positives:10+ fs:30d+",
+        "linux": "type:elf positives:5+ fs:30d+",
+        "non-pe": "(type:powershell OR type:script OR type:python OR type:javascript) positives:5+ fs:30d+",
+        "all": "positives:10+ fs:30d+",
+    }
+    query = args.query or default_queries.get(target_platform, "type:macho positives:5+ fs:30d+")
+    limit = args.limit or 10
+
     # 1. Initialize Scanner
     scanner = YaraScanner(
         rules_root=settings.rules_dir,
@@ -212,8 +223,7 @@ def cmd_vt_hunt(args: argparse.Namespace) -> int:
         webhook_url=settings.webhook_url,
     )
 
-    query = args.query or "type:macho positives:5+ fs:30d+"
-    limit = args.limit or 10
+    console.print(f"[*] Target Platform: [bold green]{target_platform.upper()}[/bold green]")
     console.print(f"[*] Querying VirusTotal Intelligence: [yellow]{query}[/yellow] (Limit: {limit})")
 
     candidates = vt_hunter.search_intelligence(query=query, limit=limit)
@@ -243,6 +253,7 @@ def cmd_vt_hunt(args: argparse.Namespace) -> int:
         if hits:
             for hit in hits:
                 console.print(f"  [bold red]MATCH DETECTED![/bold red] Rule: [bold yellow]{hit['rule_name']}[/bold yellow]")
+                hit["platform"] = target_platform if target_platform != "all" else hit.get("namespace", "").split("_")[0]
                 hit["source_feed"] = "VirusTotal Enterprise"
                 hit["vt_enrichment"] = {
                     "vt_status": "success",
@@ -260,6 +271,7 @@ def cmd_vt_hunt(args: argparse.Namespace) -> int:
     stats = reporter.record_run(scanned_count, matched_hits, settings.active_platforms)
     console.print(Panel(
         f"[bold green]VirusTotal Hunt Complete![/bold green]\n"
+        f"* Platform: [cyan]{target_platform.upper()}[/cyan]\n"
         f"* Samples Downloaded & Scanned from VT: [cyan]{scanned_count}[/cyan]\n"
         f"* Positive Hits in this run: [bold red]{len(matched_hits)}[/bold red]\n"
         f"* Total Lifetime Hits: [bold yellow]{stats['total_hits']}[/bold yellow]\n"
@@ -267,6 +279,49 @@ def cmd_vt_hunt(args: argparse.Namespace) -> int:
     ))
 
     return 0
+
+
+def cmd_dashboard(args: argparse.Namespace) -> int:
+    """Launch interactive telemetry visualization dashboard in browser."""
+    import http.server
+    import socketserver
+    import webbrowser
+    from src.config import PROJECT_ROOT
+
+    reporter = TelemetryReporter(
+        hits_file=settings.hits_file,
+        stats_file=settings.stats_file,
+        report_file=settings.report_file,
+    )
+    stats = reporter.load_stats()
+    hits = reporter.load_hits()
+    reporter.generate_dashboard_data(stats, hits)
+
+    port = getattr(args, "port", 8080) or 8080
+    dashboard_url = f"http://localhost:{port}/dashboard/"
+
+    console.print(Panel(
+        f"[bold blue]Yarafy Telemetry Dashboard[/bold blue]\n\n"
+        f"Serving dashboard at: [bold cyan]{dashboard_url}[/bold cyan]\n"
+        f"Press [bold red]Ctrl+C[/bold red] to stop server."
+    ))
+
+    os.chdir(PROJECT_ROOT)
+    handler = http.server.SimpleHTTPRequestHandler
+
+    class SilentServer(socketserver.TCPServer):
+        allow_reuse_address = True
+
+    try:
+        with SilentServer(("", port), handler) as httpd:
+            webbrowser.open(dashboard_url)
+            httpd.serve_forever()
+    except KeyboardInterrupt:
+        console.print("\n[bold yellow]Dashboard server stopped.[/bold yellow]")
+        return 0
+    except Exception as e:
+        console.print(f"[bold red]Error starting dashboard server: {e}[/bold red]")
+        return 1
 
 
 def cmd_stats(args: argparse.Namespace) -> int:
@@ -324,8 +379,13 @@ def main():
 
     # VT Hunt (VirusTotal Live Sample Download & Scan)
     vt_parser = subparsers.add_parser("vt-hunt", help="Search, download, and scan live samples directly from VirusTotal")
-    vt_parser.add_argument("--query", type=str, default="type:macho positives:5+ fs:30d+", help="VirusTotal search query")
+    vt_parser.add_argument("--platform", type=str, default="macos", choices=["macos", "windows", "linux", "non-pe", "all"], help="Target platform (macos, windows, linux, non-pe, all)")
+    vt_parser.add_argument("--query", type=str, default=None, help="VirusTotal search query (defaults to platform-specific query)")
     vt_parser.add_argument("--limit", type=int, default=10, help="Max number of samples to download & scan")
+
+    # Dashboard
+    dash_parser = subparsers.add_parser("dashboard", help="Launch interactive telemetry visualization dashboard in browser")
+    dash_parser.add_argument("--port", type=int, default=8080, help="Port for local web server (default: 8080)")
 
     # Local scan
     scan_parser = subparsers.add_parser("scan-local", help="Scan a local file or folder with YARA rules")
@@ -345,6 +405,8 @@ def main():
         sys.exit(cmd_hunt(args))
     elif args.command == "vt-hunt":
         sys.exit(cmd_vt_hunt(args))
+    elif args.command == "dashboard":
+        sys.exit(cmd_dashboard(args))
     elif args.command == "scan-local":
         sys.exit(cmd_scan_local(args))
     elif args.command == "stats":

@@ -115,8 +115,10 @@ class YaraScanner:
                 except Exception:
                     continue
 
+            plat = match.namespace.split("_")[0] if match.namespace else "unknown"
             results.append({
                 "rule_name": match.rule,
+                "platform": plat,
                 "namespace": match.namespace,
                 "tags": list(match.tags),
                 "meta": dict(match.meta),
