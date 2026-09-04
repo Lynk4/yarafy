@@ -2678,5 +2678,242 @@
       "vt_permalink": "https://www.virustotal.com/gui/file/3b9aa24a02b112fd7881c9c7fdccba1b4677e138b4571d211b54a1cf5b68fe0d"
     },
     "detected_at": "2026-09-03T17:22:39.836553+00:00"
+  },
+  {
+    "rule_name": "OSX_Stealer_AMOS_Generic",
+    "namespace": "macos_OSX_Stealer_AMOS_Generic",
+    "tags": [],
+    "meta": {
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "date": "2026-08-20",
+      "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "malware_family": "Atomic Stealer / AMOS",
+      "os": "macos",
+      "silent": 1
+    },
+    "matched_strings": [],
+    "sample_sha256": "aa293672aa84cf35ce0418ce081f23ea7fc028926f5b369464923ea753c33f21",
+    "sample_md5": "e2af1093f6d4e2b54d6469a72aa5112d",
+    "sample_name": "aa293672aa84cf35.macho",
+    "sample_size_bytes": 723072,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 32,
+      "total_engines": 76,
+      "detection_ratio": "32/76",
+      "suggested_threat_label": "trojan.stealer/amos",
+      "names": [
+        "rnzixa5gl2ixqum9"
+      ],
+      "tags": [
+        "64bits",
+        "multi-arch",
+        "macho",
+        "checks-cpu-name",
+        "arm",
+        "password-dialog",
+        "self-delete",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/aa293672aa84cf35ce0418ce081f23ea7fc028926f5b369464923ea753c33f21"
+    },
+    "detected_at": "2026-09-04T05:40:37.603450+00:00"
+  },
+  {
+    "rule_name": "OSX_Stealer_AMOS_Generic",
+    "namespace": "macos_OSX_Stealer_AMOS_Generic",
+    "tags": [],
+    "meta": {
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "date": "2026-08-20",
+      "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "malware_family": "Atomic Stealer / AMOS",
+      "os": "macos",
+      "silent": 1
+    },
+    "matched_strings": [],
+    "sample_sha256": "e97f729d30190d8e798254e12bbc95c31c8c6f82718d582fe8fa30a0ac4d2c11",
+    "sample_md5": "f2e4525d7b78436b8b94b70e66ad655b",
+    "sample_name": "e97f729d30190d8e.macho",
+    "sample_size_bytes": 362624,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 18,
+      "total_engines": 76,
+      "detection_ratio": "18/76",
+      "suggested_threat_label": "trojan.stealer/amos",
+      "names": [
+        "localfile~.arm64"
+      ],
+      "tags": [
+        "64bits",
+        "arm",
+        "macho",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/e97f729d30190d8e798254e12bbc95c31c8c6f82718d582fe8fa30a0ac4d2c11"
+    },
+    "detected_at": "2026-09-04T05:40:37.603450+00:00"
+  },
+  {
+    "rule_name": "OSX_Stealer_AMOS_Generic",
+    "namespace": "macos_OSX_Stealer_AMOS_Generic",
+    "tags": [],
+    "meta": {
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "date": "2026-08-20",
+      "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "malware_family": "Atomic Stealer / AMOS",
+      "os": "macos",
+      "silent": 1
+    },
+    "matched_strings": [],
+    "sample_sha256": "a5c87b8f2d582e6c145a4f07b2e1a475e4da74dbfd33dc49fffdfc27a184666c",
+    "sample_md5": "b90a9ea037adbfcd49ae7de43006681d",
+    "sample_name": "a5c87b8f2d582e6c.macho",
+    "sample_size_bytes": 362624,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 18,
+      "total_engines": 76,
+      "detection_ratio": "18/76",
+      "suggested_threat_label": "trojan.stealer/amos",
+      "names": [
+        "localfile~.arm64"
+      ],
+      "tags": [
+        "macho",
+        "arm",
+        "64bits",
+        "self-signed"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/a5c87b8f2d582e6c145a4f07b2e1a475e4da74dbfd33dc49fffdfc27a184666c"
+    },
+    "detected_at": "2026-09-04T05:40:37.603450+00:00"
+  },
+  {
+    "rule_name": "OSX_Stealer_AMOS_Generic",
+    "namespace": "macos_OSX_Stealer_AMOS_Generic",
+    "tags": [],
+    "meta": {
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "date": "2026-08-20",
+      "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "malware_family": "Atomic Stealer / AMOS",
+      "os": "macos",
+      "silent": 1
+    },
+    "matched_strings": [],
+    "sample_sha256": "124f942b3f3dc9052766ba141f76d434f995f83e95a7ce8a53018c4f2f377410",
+    "sample_md5": "1ee2961bbc03f8703bbb17021688f8ee",
+    "sample_name": "124f942b3f3dc905.macho",
+    "sample_size_bytes": 723072,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 27,
+      "total_engines": 76,
+      "detection_ratio": "27/76",
+      "suggested_threat_label": "trojan.stealer/amos",
+      "names": [
+        "54c2xsfybxekjezb"
+      ],
+      "tags": [
+        "64bits",
+        "multi-arch",
+        "arm",
+        "macho",
+        "self-signed",
+        "self-delete",
+        "checks-cpu-name",
+        "password-dialog"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/124f942b3f3dc9052766ba141f76d434f995f83e95a7ce8a53018c4f2f377410"
+    },
+    "detected_at": "2026-09-04T05:40:37.603450+00:00"
+  },
+  {
+    "rule_name": "OSX_Stealer_AMOS_Generic",
+    "namespace": "macos_OSX_Stealer_AMOS_Generic",
+    "tags": [],
+    "meta": {
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "date": "2026-08-20",
+      "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "malware_family": "Atomic Stealer / AMOS",
+      "os": "macos",
+      "silent": 1
+    },
+    "matched_strings": [],
+    "sample_sha256": "6cbcd5c5b3c1bdef8d23f019fce29221ffc0f6ea32c79e2d1a1b57f40571bca5",
+    "sample_md5": "69070869aa9aa3093036c27babc04052",
+    "sample_name": "6cbcd5c5b3c1bdef.macho",
+    "sample_size_bytes": 723072,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 33,
+      "total_engines": 76,
+      "detection_ratio": "33/76",
+      "suggested_threat_label": "trojan.stealer/amos",
+      "names": [
+        "d1dxajouzpz3eomc"
+      ],
+      "tags": [
+        "arm",
+        "self-delete",
+        "self-signed",
+        "64bits",
+        "multi-arch",
+        "checks-cpu-name",
+        "password-dialog",
+        "macho"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/6cbcd5c5b3c1bdef8d23f019fce29221ffc0f6ea32c79e2d1a1b57f40571bca5"
+    },
+    "detected_at": "2026-09-04T05:40:37.603450+00:00"
+  },
+  {
+    "rule_name": "OSX_Stealer_AMOS_Generic",
+    "namespace": "macos_OSX_Stealer_AMOS_Generic",
+    "tags": [],
+    "meta": {
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "date": "2026-08-20",
+      "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "malware_family": "Atomic Stealer / AMOS",
+      "os": "macos",
+      "silent": 1
+    },
+    "matched_strings": [],
+    "sample_sha256": "c69dfd8e46ebea022ac512d9596fe5b1345bcd631815f0e759ea2e941d80df93",
+    "sample_md5": "3ecebee5d28275a6e6da939f6fa18b20",
+    "sample_name": "c69dfd8e46ebea02.macho",
+    "sample_size_bytes": 723072,
+    "source_feed": "VirusTotal Enterprise",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 33,
+      "total_engines": 76,
+      "detection_ratio": "33/76",
+      "suggested_threat_label": "trojan.stealer/amos",
+      "names": [
+        "e0stmozypv2fv7xs",
+        "D:\\Itch_bordel\\e0stmozypv2fv7xs"
+      ],
+      "tags": [
+        "multi-arch",
+        "arm",
+        "64bits",
+        "macho",
+        "self-signed",
+        "checks-cpu-name"
+      ],
+      "vt_permalink": "https://www.virustotal.com/gui/file/c69dfd8e46ebea022ac512d9596fe5b1345bcd631815f0e759ea2e941d80df93"
+    },
+    "detected_at": "2026-09-04T05:40:37.603450+00:00"
   }
 ]
