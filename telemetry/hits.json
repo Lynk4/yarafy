@@ -2951,5 +2951,98 @@
       "vt_permalink": "https://www.virustotal.com/gui/file/9a8d315d8cde1cb627c6844997f9db980174a478dbb1c936a9cd245d9f5745bb"
     },
     "detected_at": "2026-09-05T07:20:33.533588+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "platform": "macos",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "aa3934340337aaceee150fd8e2acaa5b5da71a59161585594e53d0477d9d87c6",
+    "sample_md5": "22777a448492f0b5b2e1bae53b90c5d5",
+    "sample_name": "aa3934340337aaceee150fd8e2acaa5b5da71a59161585594e53d0477d9d87c6.macho",
+    "sample_size_bytes": 412584,
+    "source_feed": "MalwareBazaar",
+    "mb_metadata": {
+      "first_seen": "2026-09-05 13:48:32",
+      "file_type": "macho",
+      "signature": null,
+      "tags": [
+        "arm64e",
+        "backdoor",
+        "Coruna",
+        "iOS",
+        "machO",
+        "PLASMAGRID"
+      ]
+    },
+    "vt_enrichment": {
+      "vt_status": "not_found",
+      "reason": "Sample not seen on VirusTotal yet"
+    },
+    "detected_at": "2026-09-05T15:21:19.633365+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "platform": "macos",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [],
+    "sample_sha256": "7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99",
+    "sample_md5": "b5d80fd9330f57957e74d553247b054c",
+    "sample_name": "7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99.macho",
+    "sample_size_bytes": 198608,
+    "source_feed": "MalwareBazaar",
+    "mb_metadata": {
+      "first_seen": "2026-09-05 11:02:43",
+      "file_type": "macho",
+      "signature": null,
+      "tags": [
+        "arm64",
+        "machO",
+        "macOS",
+        "ProRAM",
+        "RAT"
+      ]
+    },
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 0,
+      "total_engines": 60,
+      "detection_ratio": "0/60",
+      "suggested_threat_label": "unknown",
+      "popular_threat_category": [],
+      "names": [
+        "bftph4f.exe",
+        "helper"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "self-signed",
+        "arm"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {},
+      "vt_permalink": "https://www.virustotal.com/gui/file/7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99"
+    },
+    "detected_at": "2026-09-05T15:21:19.633365+00:00"
   }
 ]
