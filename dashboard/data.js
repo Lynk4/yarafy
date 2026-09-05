@@ -1,10 +1,10 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 5813,
-    "total_hits": 62,
-    "last_run": "2026-09-05T04:24:51.595799+00:00",
+    "total_scanned": 5817,
+    "total_hits": 63,
+    "last_run": "2026-09-05T07:20:33.533588+00:00",
     "hits_by_platform": {
-      "macos": 62,
+      "macos": 63,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
@@ -12,11 +12,11 @@ window.YARAFY_DATA = {
     "hits_by_rule": {
       "macOS_ClickFix_AppleScript_Dropper": 34,
       "OSX_Stealer_AMOS_Generic": 25,
-      "MALW_macOS_MacSync_Stealer_Universal": 3
+      "MALW_macOS_MacSync_Stealer_Universal": 4
     },
     "hits_by_source": {
       "MalwareBazaar": 20,
-      "VirusTotal Enterprise": 42
+      "VirusTotal Enterprise": 43
     }
   },
   "hits": [
@@ -2936,6 +2936,42 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c69dfd8e46ebea022ac512d9596fe5b1345bcd631815f0e759ea2e941d80df93"
       },
       "detected_at": "2026-09-04T05:40:37.603450+00:00"
+    },
+    {
+      "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
+      "platform": "macos",
+      "namespace": "macos_MALW_macOS_MacSync_Stealer",
+      "tags": [],
+      "meta": {
+        "description": "Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)",
+        "date": "2026-08-31",
+        "family": "MacSync",
+        "threat_type": "Infostealer / Stager / Exfiltrator",
+        "platform": "macOS (x86_64 & ARM64)"
+      },
+      "matched_strings": [],
+      "sample_sha256": "9a8d315d8cde1cb627c6844997f9db980174a478dbb1c936a9cd245d9f5745bb",
+      "sample_md5": "24f440340a461587ce1a5226f22922c1",
+      "sample_name": "9a8d315d8cde1cb6.macho",
+      "sample_size_bytes": 38800,
+      "source_feed": "VirusTotal Enterprise",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 8,
+        "total_engines": 76,
+        "detection_ratio": "8/76",
+        "suggested_threat_label": "trojan.coins",
+        "names": [
+          "localfile~.x64"
+        ],
+        "tags": [
+          "macho",
+          "64bits",
+          "self-signed"
+        ],
+        "vt_permalink": "https://www.virustotal.com/gui/file/9a8d315d8cde1cb627c6844997f9db980174a478dbb1c936a9cd245d9f5745bb"
+      },
+      "detected_at": "2026-09-05T07:20:33.533588+00:00"
     }
   ]
 };
