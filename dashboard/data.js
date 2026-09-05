@@ -1,21 +1,21 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 7518,
-    "total_hits": 65,
-    "last_run": "2026-09-05T15:21:19.633365+00:00",
+    "total_scanned": 8388,
+    "total_hits": 66,
+    "last_run": "2026-09-05T20:36:41.047342+00:00",
     "hits_by_platform": {
-      "macos": 65,
+      "macos": 66,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
     },
     "hits_by_rule": {
-      "macOS_ClickFix_AppleScript_Dropper": 36,
+      "macOS_ClickFix_AppleScript_Dropper": 37,
       "OSX_Stealer_AMOS_Generic": 25,
       "MALW_macOS_MacSync_Stealer_Universal": 4
     },
     "hits_by_source": {
-      "MalwareBazaar": 22,
+      "MalwareBazaar": 23,
       "VirusTotal Enterprise": 43
     }
   },
@@ -3065,6 +3065,70 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99"
       },
       "detected_at": "2026-09-05T15:21:19.633365+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_macOS_ClickFix_AppleScript",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [],
+      "sample_sha256": "170515dc93120111760cc8c9e1deefb9a81939d123749d15f13ad5eca55042da",
+      "sample_md5": "10239f4da7b43672422c4ae6877d66ef",
+      "sample_name": "170515dc93120111760cc8c9e1deefb9a81939d123749d15f13ad5eca55042da.macho",
+      "sample_size_bytes": 398376,
+      "source_feed": "MalwareBazaar",
+      "mb_metadata": {
+        "first_seen": "2026-09-05 13:48:25",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "arm64",
+          "backdoor",
+          "Coruna",
+          "iOS",
+          "machO",
+          "PLASMAGRID"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 11,
+        "total_engines": 61,
+        "detection_ratio": "11/61",
+        "suggested_threat_label": "trojan.coruna/falsesign",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 6
+          }
+        ],
+        "names": [
+          "170515dc93120111760cc8c9e1deefb9a81939d123749d15f13ad5eca55042da.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "ios",
+          "lib",
+          "arm",
+          "macho"
+        ],
+        "reputation": -52,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:iPhoneOS/Multiverze!rfn",
+          "ESET-NOD32": "iOS/Coruna.B trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/170515dc93120111760cc8c9e1deefb9a81939d123749d15f13ad5eca55042da"
+      },
+      "detected_at": "2026-09-05T20:36:41.047342+00:00"
     }
   ]
 };
