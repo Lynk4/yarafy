@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 12809,
+    "total_scanned": 13423,
     "total_hits": 66,
-    "last_run": "2026-09-07T12:39:58.907275+00:00",
+    "last_run": "2026-09-07T23:45:32.015009+00:00",
     "hits_by_platform": {
       "macos": 66,
       "windows": 0,
