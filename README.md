@@ -125,13 +125,23 @@ Launches the interactive dashboard in your browser:
 python -m src.main dashboard
 ```
 
-### 4. Scan Local File or Folder
+### 4. Refresh Historical VirusTotal Scores
+Re-queries VirusTotal for past hits to update their AV detection scores and threat labels:
+```bash
+# Refresh samples with 0 detections or unverified statuses
+python -m src.main refresh-vt --mode zero-only --limit 20
+
+# Refresh all historical samples
+python -m src.main refresh-vt --mode all --limit 20
+```
+
+### 5. Scan Local File or Folder
 Test your rules against local samples or directories:
 ```bash
 python -m src.main scan-local /path/to/suspicious/folder/
 ```
 
-### 5. View Telemetry Stats in Terminal
+### 6. View Telemetry Stats in Terminal
 ```bash
 python -m src.main stats
 ```
@@ -149,4 +159,6 @@ All hunting workflows are strictly manual (`workflow_dispatch`) with no schedule
 | **MalwareBazaar Hunt - Linux** | Manual | Targeted Linux search with tag, file type, and limit inputs. |
 | **MalwareBazaar Hunt - Non-PE & Scripts** | Manual | Targeted script/non-PE search with tag, file type, and limit inputs. |
 | **MalwareBazaar Hunt - All Platforms** | Manual | Executes hunting across all active platforms simultaneously. |
+| **Refresh VirusTotal Scores** | Manual | Re-checks past hits on VT to update AV scores and threat labels. |
+| **Deploy Dashboard to GitHub Pages** | Push / Manual | Builds and deploys the web dashboard to GitHub Pages. |
 | **YARA Rule Lint & Test** | CI (Push/PR) | Validates rule syntax before code is merged. |

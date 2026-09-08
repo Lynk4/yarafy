@@ -1,4 +1,5 @@
 import argparse
+import json
 import sys
 from pathlib import Path
 from typing import List
@@ -236,6 +237,90 @@ def cmd_dashboard(args: argparse.Namespace) -> int:
         return 1
 
 
+def cmd_refresh_vt(args: argparse.Namespace) -> int:
+    """Refresh historical VirusTotal detection scores for recorded hits."""
+    console.print(Panel("[bold cyan]Refreshing VirusTotal Telemetry Scores[/bold cyan]"))
+
+    if not settings.virustotal_api_key:
+        console.print("[bold red]VT_API_KEY is not set. Please configure your VirusTotal API key in .env or GitHub Secrets.[/bold red]")
+        return 1
+
+    reporter = TelemetryReporter(
+        hits_file=settings.hits_file,
+        stats_file=settings.stats_file,
+        report_file=settings.report_file,
+        webhook_url=settings.webhook_url,
+    )
+    hits = reporter.load_hits()
+    if not hits:
+        console.print("[yellow]No hits found in telemetry/hits.json.[/yellow]")
+        return 0
+
+    mode = getattr(args, "mode", "zero-only") or "zero-only"
+    limit = getattr(args, "limit", 20) or 20
+
+    candidates = []
+    for idx, hit in enumerate(hits):
+        vt_info = hit.get("vt_enrichment", {})
+        positives = vt_info.get("positives", 0)
+        vt_status = vt_info.get("vt_status")
+
+        if mode == "all":
+            candidates.append((idx, hit))
+        elif mode == "zero-only":
+            if positives == 0 or vt_status != "success":
+                candidates.append((idx, hit))
+
+        if len(candidates) >= limit:
+            break
+
+    if not candidates:
+        console.print(f"[green]No hits require refreshing under mode '{mode}'. Everything is up to date![/green]")
+        return 0
+
+    console.print(f"[*] Found [bold yellow]{len(candidates)}[/bold yellow] sample(s) to refresh (Mode: {mode}, Free-tier Delay: 15s/req)...")
+
+    enricher = VirusTotalEnricher(
+        api_key=settings.virustotal_api_key,
+        rate_limit_seconds=settings.virustotal_config.get("rate_limit_seconds", 15.0),
+    )
+
+    updated_count = 0
+    for i, (idx, hit) in enumerate(candidates, 1):
+        sha256 = hit.get("sample_sha256")
+        old_ratio = hit.get("vt_enrichment", {}).get("detection_ratio", "N/A")
+        console.print(f"[{i}/{len(candidates)}] Querying VirusTotal for {sha256[:12]}... (Current Score: {old_ratio})")
+
+        new_data = enricher.lookup_hash(sha256)
+        if new_data.get("vt_status") == "success":
+            new_ratio = new_data.get("detection_ratio")
+            new_label = new_data.get("suggested_threat_label")
+            console.print(f"  [bold green]Updated Score: {new_ratio} | Label: {new_label}[/bold green]")
+            hits[idx]["vt_enrichment"] = new_data
+            updated_count += 1
+        elif new_data.get("vt_status") == "rate_limited":
+            console.print("[bold red]VirusTotal rate limit / daily quota reached. Stopping early to preserve API quota.[/bold red]")
+            break
+        else:
+            console.print(f"  [yellow]Status: {new_data.get('vt_status')} - {new_data.get('reason')}[/yellow]")
+
+    # Save updated hits and re-generate stats, report, and dashboard data
+    stats = reporter.load_stats()
+    with open(settings.hits_file, "w", encoding="utf-8") as f:
+        json.dump(hits, f, indent=2)
+
+    reporter.generate_markdown_report(stats, hits, [])
+    reporter.generate_dashboard_data(stats, hits)
+
+    console.print(Panel(
+        f"[bold green]VT Score Refresh Complete![/bold green]\n"
+        f"* Samples Checked: [cyan]{len(candidates)}[/cyan]\n"
+        f"* Successfully Updated: [bold green]{updated_count}[/bold green]\n"
+        f"* Telemetry and Dashboard data refreshed."
+    ))
+    return 0
+
+
 def cmd_stats(args: argparse.Namespace) -> int:
     """Display current telemetry stats."""
     reporter = TelemetryReporter(
@@ -293,6 +378,11 @@ def main():
     hunt_parser.add_argument("--signature", type=str, default=None, help="Malware family signature to search (e.g. AMOS, Lumma, Mirai)")
     hunt_parser.add_argument("--limit", type=int, default=25, help="Number of samples to fetch per query (default: 25)")
 
+    # Refresh VT scores
+    refresh_parser = subparsers.add_parser("refresh-vt", help="Refresh historical VirusTotal detection scores for past hits")
+    refresh_parser.add_argument("--mode", type=str, default="zero-only", choices=["zero-only", "all"], help="Refresh mode: zero-only (default) or all")
+    refresh_parser.add_argument("--limit", type=int, default=20, help="Max number of past hits to re-query (default: 20)")
+
     # Dashboard
     dash_parser = subparsers.add_parser("dashboard", help="Launch interactive telemetry visualization dashboard in browser")
     dash_parser.add_argument("--port", type=int, default=8080, help="Port for local web server (default: 8080)")
@@ -313,6 +403,8 @@ def main():
         sys.exit(cmd_lint(args))
     elif args.command == "hunt":
         sys.exit(cmd_hunt(args))
+    elif args.command == "refresh-vt":
+        sys.exit(cmd_refresh_vt(args))
     elif args.command == "dashboard":
         sys.exit(cmd_dashboard(args))
     elif args.command == "scan-local":
