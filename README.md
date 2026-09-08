@@ -65,13 +65,25 @@ Fill in your API keys:
 
 ## Interactive Telemetry Dashboard
 
-Launch the local visual dashboard in your default browser:
+### 1. View Live on GitHub Pages
+Your dashboard can be viewed live in the browser without running anything locally:
+
+- **Live Dashboard URL**: `https://lynk4.github.io/yarafy/`
+
+> [!NOTE]
+> To enable GitHub Pages hosting:
+> 1. In your GitHub repository, go to **Settings** -> **Pages**.
+> 2. Under **Build and deployment** -> **Source**, choose **GitHub Actions**.
+> 3. The dashboard will automatically deploy whenever new telemetry is recorded!
+
+### 2. Launch Locally from Terminal
+Run the local visual dashboard in your default browser:
 
 ```bash
 python -m src.main dashboard
 ```
 
-- Accessible at: `http://localhost:8080/dashboard/`
+- Accessible locally at: `http://localhost:8080/dashboard/`
 - **Metrics**: Total scanned throughput, positive detections, hit rates, and platform breakdown.
 - **Visualizations**: Detections by Platform, Source Feed comparison, Top YARA Rules, and Detection History Timeline.
 - **Filters**: Platform tabs (macOS, Windows, Linux, Non-PE), Feed filters, and live keyword search.

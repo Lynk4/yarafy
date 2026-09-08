@@ -597,27 +597,35 @@
     let activePlatform = 'all';
     let chartInstances = {};
 
-    // Load data from fetch or window.YARAFY_DATA fallback
+    // Load data from window.YARAFY_DATA or fetch live JSON
     async function loadTelemetryData() {
-      try {
-        const statsRes = await fetch('../telemetry/stats.json?t=' + Date.now());
-        const hitsRes = await fetch('../telemetry/hits.json?t=' + Date.now());
-        if (statsRes.ok && hitsRes.ok) {
-          globalStats = await statsRes.json();
-          globalHits = await hitsRes.json();
-        } else {
-          throw new Error('Fetch failed, using local window.YARAFY_DATA');
-        }
-      } catch (err) {
-        if (window.YARAFY_DATA) {
-          globalStats = window.YARAFY_DATA.stats || {};
-          globalHits = window.YARAFY_DATA.hits || [];
-        }
+      if (window.YARAFY_DATA) {
+        globalStats = window.YARAFY_DATA.stats || {};
+        globalHits = window.YARAFY_DATA.hits || [];
+        updateKPIs();
+        renderCharts();
+        applyFilters();
       }
 
-      updateKPIs();
-      renderCharts();
-      applyFilters();
+      try {
+        let statsRes = await fetch('../telemetry/stats.json?t=' + Date.now()).catch(() => null);
+        let hitsRes = await fetch('../telemetry/hits.json?t=' + Date.now()).catch(() => null);
+
+        if (!statsRes || !statsRes.ok) {
+          statsRes = await fetch('telemetry/stats.json?t=' + Date.now()).catch(() => null);
+          hitsRes = await fetch('telemetry/hits.json?t=' + Date.now()).catch(() => null);
+        }
+
+        if (statsRes && statsRes.ok && hitsRes && hitsRes.ok) {
+          globalStats = await statsRes.json();
+          globalHits = await hitsRes.json();
+          updateKPIs();
+          renderCharts();
+          applyFilters();
+        }
+      } catch (err) {
+        // Fallback to window.YARAFY_DATA already displayed
+      }
     }
 
     function updateKPIs() {
