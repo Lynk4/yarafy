@@ -3006,8 +3006,35 @@ window.YARAFY_DATA = {
         ]
       },
       "vt_enrichment": {
-        "vt_status": "not_found",
-        "reason": "Sample not seen on VirusTotal yet"
+        "vt_status": "success",
+        "positives": 21,
+        "total_engines": 62,
+        "detection_ratio": "21/62",
+        "suggested_threat_label": "trojan.coruna/falsesign",
+        "popular_threat_category": [
+          {
+            "count": 14,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "mfxxg8f9.exe",
+          "aa3934340337aaceee150fd8e2acaa5b5da71a59161585594e53d0477d9d87c6.macho"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "lib",
+          "ios",
+          "64bits",
+          "arm",
+          "macho"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:iPhoneOS/Multiverze!rfn",
+          "ESET-NOD32": "iOS/Coruna.B trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/aa3934340337aaceee150fd8e2acaa5b5da71a59161585594e53d0477d9d87c6"
       },
       "detected_at": "2026-09-05T15:21:19.633365+00:00"
     },
@@ -3044,24 +3071,37 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 0,
-        "total_engines": 60,
-        "detection_ratio": "0/60",
-        "suggested_threat_label": "unknown",
-        "popular_threat_category": [],
+        "positives": 12,
+        "total_engines": 62,
+        "detection_ratio": "12/62",
+        "suggested_threat_label": "trojan.macho/multiverze",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 11
+          },
+          {
+            "value": "pua",
+            "count": 1
+          }
+        ],
         "names": [
+          "ekdpmzwmc.exe",
+          "7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99.macho",
           "bftph4f.exe",
           "helper"
         ],
         "type_description": "Mach-O",
         "tags": [
+          "arm",
           "macho",
-          "64bits",
           "self-signed",
-          "arm"
+          "64bits"
         ],
-        "reputation": 0,
-        "key_engine_detections": {},
+        "reputation": -52,
+        "key_engine_detections": {
+          "Microsoft": "Backdoor:MacOS/Multiverze!rfn"
+        },
         "vt_permalink": "https://www.virustotal.com/gui/file/7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99"
       },
       "detected_at": "2026-09-05T15:21:19.633365+00:00"
