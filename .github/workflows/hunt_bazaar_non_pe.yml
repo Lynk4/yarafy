@@ -57,6 +57,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No telemetry changes to commit."
           else
-            git commit -m "chore(telemetry): update hits from MalwareBazaar Non-PE hunt [skip ci]"
+            git commit -m "chore(telemetry): update hits from MalwareBazaar Non-PE hunt"
             git push
           fi
