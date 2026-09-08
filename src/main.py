@@ -102,16 +102,31 @@ def cmd_hunt(args: argparse.Namespace) -> int:
     mb_cfg = settings.malwarebazaar_config
     total_samples_meta = []
 
-    for platform in settings.active_platforms:
-        file_types = mb_cfg.get("platform_file_types", {}).get(platform, [])
-        tags = mb_cfg.get("platform_tags", {}).get(platform, [])
-        console.print(f"[*] Querying MalwareBazaar for [yellow]{platform}[/yellow] (Types: {file_types}, Tags: {tags[:3]}...)")
-        
+    target_platform = getattr(args, "platform", "all") or "all"
+    query_platforms = [target_platform] if target_platform != "all" else settings.active_platforms
+
+    custom_tags = [t.strip() for t in args.tags.split(",") if t.strip()] if getattr(args, "tags", None) else None
+    custom_file_type = args.file_type.strip() if getattr(args, "file_type", None) and args.file_type.strip() else None
+    custom_signatures = [s.strip() for s in args.signature.split(",") if s.strip()] if getattr(args, "signature", None) else None
+    limit = args.limit or mb_cfg.get("limit", 25)
+
+    for platform in query_platforms:
+        file_types = [custom_file_type] if custom_file_type else mb_cfg.get("platform_file_types", {}).get(platform, [])
+        tags = custom_tags if custom_tags else mb_cfg.get("platform_tags", {}).get(platform, [])
+        console.print(f"[*] Target Platform: [bold green]{platform.upper()}[/bold green]")
+        if file_types:
+            console.print(f"    File Types: [yellow]{file_types}[/yellow]")
+        if tags:
+            console.print(f"    Tags: [yellow]{tags}[/yellow]")
+        if custom_signatures:
+            console.print(f"    Signatures: [yellow]{custom_signatures}[/yellow]")
+
         samples = collector.query_platform_samples(
             platform=platform,
             file_types=file_types,
             tags=tags,
-            limit_per_query=args.limit or mb_cfg.get("limit", 25),
+            signatures=custom_signatures,
+            limit_per_query=limit,
         )
         total_samples_meta.extend(samples)
 
@@ -146,6 +161,7 @@ def cmd_hunt(args: argparse.Namespace) -> int:
             for hit in hits:
                 console.print(f"  [bold red]MATCH DETECTED![/bold red] Rule: [bold yellow]{hit['rule_name']}[/bold yellow]")
                 hit["source_feed"] = "MalwareBazaar"
+                hit["platform"] = s_meta.get("_source_platform") or hit.get("namespace", "").split("_")[0]
                 # Attach MalwareBazaar metadata
                 hit["mb_metadata"] = {
                     "first_seen": s_meta.get("first_seen"),
@@ -271,7 +287,11 @@ def main():
 
     # Hunt (MalwareBazaar)
     hunt_parser = subparsers.add_parser("hunt", help="Execute hunting against MalwareBazaar")
-    hunt_parser.add_argument("--limit", type=int, default=25, help="Number of samples to fetch per query")
+    hunt_parser.add_argument("--platform", type=str, default="all", choices=["macos", "windows", "linux", "non-pe", "all"], help="Target platform (macos, windows, linux, non-pe, all)")
+    hunt_parser.add_argument("--tags", type=str, default=None, help="Comma-separated MalwareBazaar tags to hunt (e.g. AMOS,ClickFix)")
+    hunt_parser.add_argument("--file-type", type=str, default=None, help="Specific file type (e.g. macho, dmg, exe, elf, script)")
+    hunt_parser.add_argument("--signature", type=str, default=None, help="Malware family signature to search (e.g. AMOS, Lumma, Mirai)")
+    hunt_parser.add_argument("--limit", type=int, default=25, help="Number of samples to fetch per query (default: 25)")
 
     # Dashboard
     dash_parser = subparsers.add_parser("dashboard", help="Launch interactive telemetry visualization dashboard in browser")

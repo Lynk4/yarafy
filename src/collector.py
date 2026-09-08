@@ -62,38 +62,68 @@ class MalwareBazaarCollector:
             return res.get("data", [])[:limit]
         return []
 
+    def get_samples_by_signature(self, signature: str, limit: int = 50) -> List[Dict[str, Any]]:
+        """Fetch samples by signature/family (e.g. AMOS, RedLine, Mirai)."""
+        data = {"query": "get_siginfo", "signature": signature, "limit": limit}
+        res = self._post(data)
+        if res.get("query_status") == "ok":
+            return res.get("data", [])[:limit]
+        return []
+
     def query_platform_samples(
         self,
         platform: str,
         file_types: List[str],
         tags: List[str],
+        signatures: Optional[List[str]] = None,
         limit_per_query: int = 25,
     ) -> List[Dict[str, Any]]:
-        """Collect and deduplicate samples for a target platform based on file types and tags."""
+        """Collect and deduplicate samples for a target platform based on file types, tags, and signatures."""
         seen_hashes = set()
         collected_samples: List[Dict[str, Any]] = []
 
         # 1. Query by file types
         for ft in file_types:
-            samples = self.get_samples_by_file_type(ft, limit=limit_per_query)
+            ft_clean = ft.strip().lower()
+            if not ft_clean or ft_clean == "any":
+                continue
+            samples = self.get_samples_by_file_type(ft_clean, limit=limit_per_query)
             for s in samples:
                 h = s.get("sha256_hash")
                 if h and h not in seen_hashes:
                     seen_hashes.add(h)
                     s["_source_platform"] = platform
-                    s["_query_file_type"] = ft
+                    s["_query_file_type"] = ft_clean
                     collected_samples.append(s)
 
         # 2. Query by specific platform tags
         for tag in tags:
-            samples = self.get_samples_by_tag(tag, limit=limit_per_query)
+            tag_clean = tag.strip()
+            if not tag_clean:
+                continue
+            samples = self.get_samples_by_tag(tag_clean, limit=limit_per_query)
             for s in samples:
                 h = s.get("sha256_hash")
                 if h and h not in seen_hashes:
                     seen_hashes.add(h)
                     s["_source_platform"] = platform
-                    s["_query_tag"] = tag
+                    s["_query_tag"] = tag_clean
                     collected_samples.append(s)
+
+        # 3. Query by signatures if provided
+        if signatures:
+            for sig in signatures:
+                sig_clean = sig.strip()
+                if not sig_clean:
+                    continue
+                samples = self.get_samples_by_signature(sig_clean, limit=limit_per_query)
+                for s in samples:
+                    h = s.get("sha256_hash")
+                    if h and h not in seen_hashes:
+                        seen_hashes.add(h)
+                        s["_source_platform"] = platform
+                        s["_query_signature"] = sig_clean
+                        collected_samples.append(s)
 
         return collected_samples
 

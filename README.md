@@ -88,10 +88,23 @@ Validates that all rules in `yara-rules/` compile without syntax errors:
 python -m src.main lint
 ```
 
-### 2. Run MalwareBazaar Feed Hunt
-Fetches recent samples from MalwareBazaar across active platforms (`macos`, `windows`, `linux`, `non-pe`), scans them with your rules, and updates telemetry:
+### 2. Run Targeted MalwareBazaar Feed Hunt
+Search and download samples by specific platform, tags, file types, or family signatures:
 ```bash
-python -m src.main hunt --limit 25
+# macOS Hunt: Target AMOS & ClickFix Mach-O samples
+python -m src.main hunt --platform macos --tags "AMOS,ClickFix,AtomicStealer" --file-type macho --limit 25
+
+# Windows Hunt: Target Lumma & RedLine PE executables
+python -m src.main hunt --platform windows --tags "Lumma,RedLine,Stealer" --file-type exe --limit 25
+
+# Linux Hunt: Target Mirai & Kinsing ELF binaries
+python -m src.main hunt --platform linux --tags "Mirai,Kinsing,Linux" --file-type elf --limit 25
+
+# Non-PE / Scripts Hunt: Target PowerShell & Python payloads
+python -m src.main hunt --platform non-pe --tags "PowerShell,Python,script" --file-type script --limit 25
+
+# Multi-Platform Hunt: Run across all active platforms with config defaults
+python -m src.main hunt --platform all --limit 25
 ```
 
 ### 3. Launch Telemetry Dashboard
@@ -115,7 +128,13 @@ python -m src.main stats
 
 ## GitHub Actions Workflows
 
+All hunting workflows are strictly manual (`workflow_dispatch`) with no scheduled auto-runs:
+
 | Workflow | Type | Description |
 | :--- | :--- | :--- |
-| **Automated Feed Hunt & Telemetry** | Scheduled (6h) / Manual | Scans MalwareBazaar feeds across active platforms. |
+| **MalwareBazaar Hunt - macOS** | Manual | Targeted macOS search with tag, file type, and limit inputs. |
+| **MalwareBazaar Hunt - Windows** | Manual | Targeted Windows search with tag, file type, and limit inputs. |
+| **MalwareBazaar Hunt - Linux** | Manual | Targeted Linux search with tag, file type, and limit inputs. |
+| **MalwareBazaar Hunt - Non-PE & Scripts** | Manual | Targeted script/non-PE search with tag, file type, and limit inputs. |
+| **MalwareBazaar Hunt - All Platforms** | Manual | Executes hunting across all active platforms simultaneously. |
 | **YARA Rule Lint & Test** | CI (Push/PR) | Validates rule syntax before code is merged. |
