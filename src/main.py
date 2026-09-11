@@ -107,12 +107,12 @@ def cmd_hunt(args: argparse.Namespace) -> int:
     query_platforms = [target_platform] if target_platform != "all" else settings.active_platforms
 
     custom_tags = [t.strip() for t in args.tags.split(",") if t.strip()] if getattr(args, "tags", None) else None
-    custom_file_type = args.file_type.strip() if getattr(args, "file_type", None) and args.file_type.strip() else None
+    custom_file_types = [ft.strip() for ft in args.file_type.split(",") if ft.strip()] if getattr(args, "file_type", None) and args.file_type.strip() else None
     custom_signatures = [s.strip() for s in args.signature.split(",") if s.strip()] if getattr(args, "signature", None) else None
     limit = args.limit or mb_cfg.get("limit", 25)
 
     for platform in query_platforms:
-        file_types = [custom_file_type] if custom_file_type else mb_cfg.get("platform_file_types", {}).get(platform, [])
+        file_types = custom_file_types if custom_file_types else mb_cfg.get("platform_file_types", {}).get(platform, [])
         tags = custom_tags if custom_tags else mb_cfg.get("platform_tags", {}).get(platform, [])
         console.print(f"[*] Target Platform: [bold green]{platform.upper()}[/bold green]")
         if file_types:

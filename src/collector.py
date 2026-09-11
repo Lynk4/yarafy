@@ -70,6 +70,30 @@ class MalwareBazaarCollector:
             return res.get("data", [])[:limit]
         return []
 
+    @staticmethod
+    def _matches_file_types(sample: Dict[str, Any], allowed_types: set) -> bool:
+        """Check if a sample matches the allowed file types."""
+        if not allowed_types or "any" in allowed_types or "all" in allowed_types:
+            return True
+
+        sample_ft = (sample.get("file_type") or "").strip().lower()
+        if sample_ft and sample_ft in allowed_types:
+            return True
+
+        # Fallback check against file name extension
+        fname = (sample.get("file_name") or "").strip().lower()
+        if "." in fname:
+            ext = fname.rsplit(".", 1)[-1]
+            if ext in allowed_types:
+                return True
+            # Common platform mappings
+            if "macho" in allowed_types and ext in {"macho", "dylib", "bundle"}:
+                return True
+            if "elf" in allowed_types and ext in {"elf", "so"}:
+                return True
+
+        return False
+
     def query_platform_samples(
         self,
         platform: str,
@@ -81,11 +105,13 @@ class MalwareBazaarCollector:
         """Collect and deduplicate samples for a target platform based on file types, tags, and signatures."""
         seen_hashes = set()
         collected_samples: List[Dict[str, Any]] = []
+        allowed_types = {ft.strip().lower() for ft in file_types if ft.strip()}
+        strict_file_type_filter = bool(allowed_types and "any" not in allowed_types and "all" not in allowed_types)
 
         # 1. Query by file types
         for ft in file_types:
             ft_clean = ft.strip().lower()
-            if not ft_clean or ft_clean == "any":
+            if not ft_clean or ft_clean in ("any", "all"):
                 continue
             samples = self.get_samples_by_file_type(ft_clean, limit=limit_per_query)
             for s in samples:
@@ -103,6 +129,8 @@ class MalwareBazaarCollector:
                 continue
             samples = self.get_samples_by_tag(tag_clean, limit=limit_per_query)
             for s in samples:
+                if strict_file_type_filter and not self._matches_file_types(s, allowed_types):
+                    continue
                 h = s.get("sha256_hash")
                 if h and h not in seen_hashes:
                     seen_hashes.add(h)
@@ -118,6 +146,8 @@ class MalwareBazaarCollector:
                     continue
                 samples = self.get_samples_by_signature(sig_clean, limit=limit_per_query)
                 for s in samples:
+                    if strict_file_type_filter and not self._matches_file_types(s, allowed_types):
+                        continue
                     h = s.get("sha256_hash")
                     if h and h not in seen_hashes:
                         seen_hashes.add(h)
