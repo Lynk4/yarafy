@@ -1,9 +1,10 @@
 # Yarafy
 
 [![Live Dashboard](https://img.shields.io/badge/Dashboard-Live%20on%20GitHub%20Pages-10b981?style=for-the-badge&logo=github)](https://lynk4.github.io/yarafy/)
-[![Samples Scanned](https://img.shields.io/badge/Samples%20Scanned-14%2C382-3b82f6?style=for-the-badge)](https://lynk4.github.io/yarafy/)
-[![Hits Recorded](https://img.shields.io/badge/Hits%20Recorded-66-f43f5e?style=for-the-badge)](https://lynk4.github.io/yarafy/)
-[![YARA](https://img.shields.io/badge/YARA-v4.5-06b6d4?style=for-the-badge)](https://virustotal.github.io/yara/)
+[![Samples Scanned](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Flynk4.github.io%2Fyarafy%2Ftelemetry%2Fstats.json&query=%24.total_scanned&label=Samples%20Scanned&style=for-the-badge&color=3b82f6)](https://lynk4.github.io/yarafy/)
+[![Hits Recorded](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Flynk4.github.io%2Fyarafy%2Ftelemetry%2Fstats.json&query=%24.total_hits&label=Hits%20Recorded&style=for-the-badge&color=f43f5e)](https://lynk4.github.io/yarafy/)
+[![macOS Detections](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Flynk4.github.io%2Fyarafy%2Ftelemetry%2Fstats.json&query=%24.hits_by_platform.macos&label=macOS%20Detections&style=for-the-badge&color=06b6d4)](https://lynk4.github.io/yarafy/)
+[![YARA](https://img.shields.io/badge/YARA-v4.5-a855f7?style=for-the-badge)](https://virustotal.github.io/yara/)
 
 **Yarafy** is an automated YARA rule management, threat hunting, and telemetry visualization pipeline. It enables security researchers and threat hunters to store YARA rules across **macOS**, **Windows**, **Linux**, and **Non-PE / Script** platforms, hunt against live malware feeds from **MalwareBazaar**, enrich positive detections using **VirusTotal**, record continuous detection telemetry, and explore insights through an interactive cyber dashboard.
 
