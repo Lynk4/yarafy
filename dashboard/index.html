@@ -454,7 +454,7 @@
       <div class="header-actions">
         <div class="status-badge">
           <span class="status-dot"></span>
-          <span>Live Telemetry</span>
+          <span id="last-run-status">Live Telemetry</span>
         </div>
         <button class="btn" onclick="exportData('csv')">Export CSV</button>
         <button class="btn" onclick="exportData('json')">Export JSON</button>
@@ -467,7 +467,7 @@
       <div class="kpi-card">
         <div class="kpi-label">Total Scanned Samples</div>
         <div class="kpi-value" id="kpi-scanned">0</div>
-        <div class="kpi-sub">Lifetime feed throughput</div>
+        <div class="kpi-sub" id="kpi-scanned-sub">Lifetime feed throughput</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-label">Total Rule Hits</div>
@@ -613,12 +613,14 @@
       }
 
       try {
-        let statsRes = await fetch('../telemetry/stats.json?t=' + Date.now()).catch(() => null);
-        let hitsRes = await fetch('../telemetry/hits.json?t=' + Date.now()).catch(() => null);
+        // Try same-origin relative path first (GitHub Pages: /yarafy/telemetry/stats.json)
+        let statsRes = await fetch('telemetry/stats.json?t=' + Date.now()).catch(() => null);
+        let hitsRes = await fetch('telemetry/hits.json?t=' + Date.now()).catch(() => null);
 
+        // Fallback for local folder preview (/dashboard/../telemetry/)
         if (!statsRes || !statsRes.ok) {
-          statsRes = await fetch('telemetry/stats.json?t=' + Date.now()).catch(() => null);
-          hitsRes = await fetch('telemetry/hits.json?t=' + Date.now()).catch(() => null);
+          statsRes = await fetch('../telemetry/stats.json?t=' + Date.now()).catch(() => null);
+          hitsRes = await fetch('../telemetry/hits.json?t=' + Date.now()).catch(() => null);
         }
 
         if (statsRes && statsRes.ok && hitsRes && hitsRes.ok) {
@@ -641,6 +643,17 @@
       document.getElementById('kpi-scanned').textContent = scanned.toLocaleString();
       document.getElementById('kpi-hits').textContent = hits.toLocaleString();
       document.getElementById('kpi-rate').textContent = `${rate}% hit rate`;
+
+      if (globalStats.last_run) {
+        try {
+          const d = new Date(globalStats.last_run);
+          const formatted = d.toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
+          const statusEl = document.getElementById('last-run-status');
+          if (statusEl) statusEl.textContent = `Last Hunt: ${formatted}`;
+          const subEl = document.getElementById('kpi-scanned-sub');
+          if (subEl) subEl.textContent = `Last Hunt: ${formatted}`;
+        } catch (e) {}
+      }
 
       const pStats = globalStats.hits_by_platform || {};
       document.getElementById('kpi-macos').textContent = (pStats.macos || 0).toLocaleString();
