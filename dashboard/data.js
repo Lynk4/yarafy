@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 14423,
+    "total_scanned": 14449,
     "total_hits": 66,
-    "last_run": "2026-09-16T07:02:51.230791+00:00",
+    "last_run": "2026-09-16T07:06:57.019913+00:00",
     "hits_by_platform": {
       "macos": 66,
       "windows": 0,
@@ -19,7 +19,7 @@ window.YARAFY_DATA = {
       "VirusTotal Enterprise": 43
     },
     "new_hits_this_run": 0,
-    "refreshed_hits_this_run": 16
+    "refreshed_hits_this_run": 6
   },
   "hits": [
     {
@@ -159,7 +159,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-09-16T07:02:51.230791+00:00"
+      "last_seen_at": "2026-09-16T07:06:57.019913+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -271,8 +271,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -299,7 +299,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-09-16T07:02:51.230791+00:00"
+      "last_seen_at": "2026-09-16T07:06:57.019913+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -2290,7 +2290,7 @@ window.YARAFY_DATA = {
           "macOS"
         ]
       },
-      "last_seen_at": "2026-09-16T07:02:51.230791+00:00"
+      "last_seen_at": "2026-09-16T07:06:57.019913+00:00"
     },
     {
       "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
@@ -3637,8 +3637,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.coruna/falsesign",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 15
+            "count": 15,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -3663,7 +3663,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/aa3934340337aaceee150fd8e2acaa5b5da71a59161585594e53d0477d9d87c6"
       },
       "detected_at": "2026-09-05T15:21:19.633365+00:00",
-      "last_seen_at": "2026-09-16T07:02:51.230791+00:00"
+      "last_seen_at": "2026-09-16T07:06:57.019913+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -3744,7 +3744,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99"
       },
       "detected_at": "2026-09-05T15:21:19.633365+00:00",
-      "last_seen_at": "2026-09-16T07:02:51.230791+00:00"
+      "last_seen_at": "2026-09-16T07:06:57.019913+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -3827,7 +3827,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/170515dc93120111760cc8c9e1deefb9a81939d123749d15f13ad5eca55042da"
       },
       "detected_at": "2026-09-05T20:36:41.047342+00:00",
-      "last_seen_at": "2026-09-16T07:02:51.230791+00:00"
+      "last_seen_at": "2026-09-16T07:06:57.019913+00:00"
     }
   ]
 };
