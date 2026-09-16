@@ -87,6 +87,18 @@ class YaraScanner:
             print(f"[!] Error scanning {filepath.name}: {e}")
             return []
 
+    @staticmethod
+    def _format_data_preview(data_bytes: Any) -> str:
+        if not isinstance(data_bytes, bytes):
+            return str(data_bytes).replace("\n", " ").replace("\r", "")[:80]
+        try:
+            text = data_bytes.decode("ascii")
+            if text.isprintable():
+                return text.replace("\n", " ").replace("\r", "")[:80]
+        except Exception:
+            pass
+        return " ".join(f"{b:02x}" for b in data_bytes[:32])
+
     def _format_matches(
         self,
         yara_matches: List[Any],
@@ -99,19 +111,26 @@ class YaraScanner:
             matched_strings = []
             for string_match in getattr(match, "strings", []):
                 try:
-                    # In yara-python: string_match is (offset, identifier, data) or Match object
-                    offset, identifier, str_data = string_match
-                    # Format printable preview
-                    if isinstance(str_data, bytes):
-                        preview = str_data.decode("utf-8", errors="replace")[:80]
-                    else:
-                        preview = str(str_data)[:80]
-
-                    matched_strings.append({
-                        "offset": hex(offset),
-                        "identifier": identifier,
-                        "data_preview": preview,
-                    })
+                    # yara-python >= 4.3 returns yara.StringMatch objects with .instances
+                    if hasattr(string_match, "instances"):
+                        ident = getattr(string_match, "identifier", "$unknown")
+                        for inst in getattr(string_match, "instances", []):
+                            data_bytes = getattr(inst, "matched_data", b"")
+                            preview = self._format_data_preview(data_bytes)
+                            matched_strings.append({
+                                "offset": hex(getattr(inst, "offset", 0)),
+                                "identifier": ident,
+                                "data_preview": preview,
+                            })
+                    # Legacy yara-python (< 4.3) returns (offset, identifier, data)
+                    elif isinstance(string_match, (tuple, list)) and len(string_match) == 3:
+                        offset, ident, data_bytes = string_match
+                        preview = self._format_data_preview(data_bytes)
+                        matched_strings.append({
+                            "offset": hex(offset),
+                            "identifier": ident,
+                            "data_preview": preview,
+                        })
                 except Exception:
                     continue
 

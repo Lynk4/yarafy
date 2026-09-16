@@ -122,6 +122,11 @@ class TelemetryReporter:
                     existing["mb_metadata"] = hit["mb_metadata"]
                     updated = True
 
+                # Update matched strings if captured in this scan
+                if hit.get("matched_strings"):
+                    existing["matched_strings"] = hit["matched_strings"]
+                    updated = True
+
                 # Update sample name if the new one is descriptive
                 new_name = hit.get("sample_name")
                 if (

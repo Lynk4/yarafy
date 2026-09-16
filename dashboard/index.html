@@ -829,7 +829,9 @@
       document.getElementById('modal-rule-title').textContent = `${hit.rule_name} - Inspection`;
       const body = document.getElementById('modal-body');
 
-      const stringsFormatted = (hit.matched_strings || []).map(s => `[${s.offset}] ${s.identifier}: ${s.data_preview}`).join('\n') || 'None recorded';
+      const stringsFormatted = (hit.matched_strings && hit.matched_strings.length > 0)
+        ? hit.matched_strings.map(s => `[${s.offset}] ${s.identifier}: ${s.data_preview}`).join('\n')
+        : 'Rule conditions satisfied on binary payload (string offsets not preserved for legacy record)';
       const avList = hit.vt_enrichment?.key_engine_detections ? Object.entries(hit.vt_enrichment.key_engine_detections).map(([eng, res]) => `${eng}: ${res}`).join('\n') : 'No engine specifics';
 
       body.innerHTML = `
