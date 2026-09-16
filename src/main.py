@@ -183,11 +183,13 @@ def cmd_hunt(args: argparse.Namespace) -> int:
 
     # 6. Record Telemetry
     stats = reporter.record_run(scanned_count, matched_hits, settings.active_platforms)
+    new_count = stats.get("new_hits_this_run", 0)
+    refreshed_count = stats.get("refreshed_hits_this_run", 0)
     console.print(Panel(
         f"[bold green]Hunt Complete![/bold green]\n"
         f"* Samples Downloaded & Scanned: [cyan]{scanned_count}[/cyan]\n"
-        f"* Positive Hits in this run: [bold red]{len(matched_hits)}[/bold red]\n"
-        f"* Total Lifetime Hits: [bold yellow]{stats['total_hits']}[/bold yellow]\n"
+        f"* Positive Hits in this run: [bold red]{len(matched_hits)}[/bold red] ([bold green]{new_count}[/bold green] new unique, [bold yellow]{refreshed_count}[/bold yellow] refreshed)\n"
+        f"* Total Lifetime Unique Hits: [bold yellow]{stats['total_hits']}[/bold yellow]\n"
         f"* Report saved to: [magenta]{settings.report_file}[/magenta]"
     ))
 

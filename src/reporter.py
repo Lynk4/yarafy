@@ -92,19 +92,55 @@ class TelemetryReporter:
         stats["last_run"] = timestamp
         stats["total_scanned"] += scanned_count
 
-        # Deduplicate hits by (rule_name, sample_sha256)
-        existing_keys = {
-            f"{h.get('rule_name')}:{h.get('sample_sha256')}" for h in existing_hits
+        # Deduplicate hits by (rule_name, sample_sha256) and map for in-place refreshment
+        existing_hits_map = {
+            f"{h.get('rule_name')}:{h.get('sample_sha256')}": h
+            for h in existing_hits
         }
 
         truly_new_hits = []
+        refreshed_hits = []
         for hit in new_hits:
             hit["detected_at"] = timestamp
             key = f"{hit.get('rule_name')}:{hit.get('sample_sha256')}"
-            if key not in existing_keys:
-                existing_keys.add(key)
+            if key not in existing_hits_map:
+                existing_hits_map[key] = hit
                 existing_hits.append(hit)
                 truly_new_hits.append(hit)
+            else:
+                existing = existing_hits_map[key]
+                updated = False
+
+                # Update VirusTotal telemetry if new scan returned successful enrichment
+                new_vt = hit.get("vt_enrichment")
+                if new_vt and new_vt.get("vt_status") == "success":
+                    existing["vt_enrichment"] = new_vt
+                    updated = True
+
+                # Update MalwareBazaar metadata if present
+                if hit.get("mb_metadata"):
+                    existing["mb_metadata"] = hit["mb_metadata"]
+                    updated = True
+
+                # Update sample name if the new one is descriptive
+                new_name = hit.get("sample_name")
+                if (
+                    new_name
+                    and new_name != "sample.bin"
+                    and (
+                        not existing.get("sample_name")
+                        or existing["sample_name"] == "sample.bin"
+                    )
+                ):
+                    existing["sample_name"] = new_name
+                    updated = True
+
+                existing["last_seen_at"] = timestamp
+                if updated:
+                    refreshed_hits.append(existing)
+
+        stats["new_hits_this_run"] = len(truly_new_hits)
+        stats["refreshed_hits_this_run"] = len(refreshed_hits)
 
         # Full recalculation of stats from all accumulated hits to ensure 100% consistency
         stats["total_hits"] = len(existing_hits)

@@ -413,8 +413,8 @@
     "vt_enrichment": {
       "vt_status": "success",
       "positives": 33,
-      "total_engines": 62,
-      "detection_ratio": "33/62",
+      "total_engines": 61,
+      "detection_ratio": "33/61",
       "suggested_threat_label": "trojan.amos/stealer",
       "popular_threat_category": [
         {
@@ -1639,10 +1639,10 @@
     "source_feed": "VirusTotal Enterprise",
     "vt_enrichment": {
       "vt_status": "success",
-      "positives": 11,
-      "total_engines": 76,
-      "detection_ratio": "11/76",
-      "suggested_threat_label": "trojan.amos/camelot",
+      "positives": 28,
+      "total_engines": 62,
+      "detection_ratio": "28/62",
+      "suggested_threat_label": "trojan.amos/stealer",
       "names": [
         "stage3.bin"
       ],
@@ -2986,9 +2986,9 @@
     },
     "vt_enrichment": {
       "vt_status": "success",
-      "positives": 21,
-      "total_engines": 62,
-      "detection_ratio": "21/62",
+      "positives": 22,
+      "total_engines": 61,
+      "detection_ratio": "22/61",
       "suggested_threat_label": "trojan.coruna/falsesign",
       "popular_threat_category": [
         {
@@ -3050,9 +3050,9 @@
     },
     "vt_enrichment": {
       "vt_status": "success",
-      "positives": 12,
-      "total_engines": 62,
-      "detection_ratio": "12/62",
+      "positives": 15,
+      "total_engines": 61,
+      "detection_ratio": "15/61",
       "suggested_threat_label": "trojan.macho/multiverze",
       "popular_threat_category": [
         {
@@ -3119,9 +3119,9 @@
     },
     "vt_enrichment": {
       "vt_status": "success",
-      "positives": 11,
+      "positives": 21,
       "total_engines": 61,
-      "detection_ratio": "11/61",
+      "detection_ratio": "21/61",
       "suggested_threat_label": "trojan.coruna/falsesign",
       "popular_threat_category": [
         {
