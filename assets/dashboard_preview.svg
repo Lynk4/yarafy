@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" style="background:#0b0f19; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#151d30"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="primaryBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="chartLine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(16, 185, 129, 0.4)"/>
+      <stop offset="100%" stop-color="rgba(16, 185, 129, 0.0)"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Window Frame -->
+  <rect x="0" y="0" width="1200" height="700" rx="12" fill="#0b0f19" stroke="#1f2937" stroke-width="1.5"/>
+
+  <!-- Window Bar -->
+  <rect x="0" y="0" width="1200" height="38" rx="12" fill="#090d16"/>
+  <rect x="0" y="26" width="1200" height="12" fill="#090d16"/>
+  <circle cx="20" cy="19" r="6" fill="#ef4444"/>
+  <circle cx="38" cy="19" r="6" fill="#f59e0b"/>
+  <circle cx="56" cy="19" r="6" fill="#10b981"/>
+  <text x="600" y="24" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">https://lynk4.github.io/yarafy/ — Live Threat Intelligence Dashboard</text>
+
+  <!-- Header -->
+  <g transform="translate(32, 60)">
+    <text x="0" y="24" fill="#ffffff" font-size="22" font-weight="700" letter-spacing="-0.5">Yarafy Threat Intelligence Dashboard</text>
+    <text x="0" y="44" fill="#94a3b8" font-size="12">Real-time YARA detection telemetry across macOS, Windows, Linux, and Non-PE feeds</text>
+    
+    <!-- Status Badge -->
+    <rect x="800" y="6" width="170" height="28" rx="14" fill="rgba(16, 185, 129, 0.1)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+    <circle cx="816" cy="20" r="4" fill="#10b981"/>
+    <text x="826" y="24" fill="#10b981" font-size="11" font-weight="600" letter-spacing="0.3">LIVE TELEMETRY</text>
+
+    <rect x="980" y="6" width="70" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="1015" y="24" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="500">Export</text>
+
+    <rect x="1058" y="6" width="76" height="28" rx="6" fill="url(#primaryBtn)"/>
+    <text x="1096" y="24" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">Refresh</text>
+  </g>
+
+  <!-- KPI Grid -->
+  <g transform="translate(32, 130)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
+      <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">TOTAL SCANNED</text>
+      <text x="16" y="56" fill="#ffffff" font-size="24" font-weight="700">14,382</text>
+      <text x="16" y="74" fill="#64748b" font-size="10">Lifetime throughput</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(192, 0)">
+      <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
+      <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">RULE HITS</text>
+      <text x="16" y="56" fill="#f43f5e" font-size="24" font-weight="700">66</text>
+      <text x="16" y="74" fill="#64748b" font-size="10">0.5% hit rate</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(384, 0)">
+      <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
+      <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">MACOS</text>
+      <text x="16" y="56" fill="#3b82f6" font-size="24" font-weight="700">66</text>
+      <text x="16" y="74" fill="#64748b" font-size="10">Mach-O / DMG / PKG</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(576, 0)">
+      <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
+      <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">WINDOWS</text>
+      <text x="16" y="56" fill="#06b6d4" font-size="24" font-weight="700">0</text>
+      <text x="16" y="74" fill="#64748b" font-size="10">PE / DLL / MSI</text>
+    </g>
+
+    <!-- Card 5 -->
+    <g transform="translate(768, 0)">
+      <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
+      <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">LINUX</text>
+      <text x="16" y="56" fill="#f59e0b" font-size="24" font-weight="700">0</text>
+      <text x="16" y="74" fill="#64748b" font-size="10">ELF / SO binaries</text>
+    </g>
+
+    <!-- Card 6 -->
+    <g transform="translate(960, 0)">
+      <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
+      <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">NON-PE / SCRIPTS</text>
+      <text x="16" y="56" fill="#a855f7" font-size="24" font-weight="700">0</text>
+      <text x="16" y="74" fill="#64748b" font-size="10">PowerShell / Py / Sh</text>
+    </g>
+  </g>
+
+  <!-- Middle Section: Visual Charts & Analytics -->
+  <g transform="translate(32, 236)">
+    <!-- Chart 1: Top YARA Rules -->
+    <rect x="0" y="0" width="554" height="176" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
+    <text x="18" y="24" fill="#ffffff" font-size="13" font-weight="600">Top Triggered YARA Rules</text>
+
+    <!-- Bar 1 -->
+    <text x="18" y="56" fill="#94a3b8" font-size="11">macOS_ClickFix_AppleScript_Dropper</text>
+    <text x="490" y="56" fill="#cbd5e1" font-size="11" text-anchor="end" font-weight="600">37</text>
+    <rect x="18" y="64" width="472" height="10" rx="5" fill="#1e293b"/>
+    <rect x="18" y="64" width="360" height="10" rx="5" fill="url(#roseGrad)"/>
+
+    <!-- Bar 2 -->
+    <text x="18" y="96" fill="#94a3b8" font-size="11">OSX_Stealer_AMOS_Generic</text>
+    <text x="490" y="96" fill="#cbd5e1" font-size="11" text-anchor="end" font-weight="600">25</text>
+    <rect x="18" y="104" width="472" height="10" rx="5" fill="#1e293b"/>
+    <rect x="18" y="104" width="245" height="10" rx="5" fill="url(#blueGrad)"/>
+
+    <!-- Bar 3 -->
+    <text x="18" y="136" fill="#94a3b8" font-size="11">MALW_macOS_MacSync_Stealer_Universal</text>
+    <text x="490" y="136" fill="#cbd5e1" font-size="11" text-anchor="end" font-weight="600">4</text>
+    <rect x="18" y="144" width="472" height="10" rx="5" fill="#1e293b"/>
+    <rect x="18" y="144" width="42" height="10" rx="5" fill="#10b981"/>
+
+    <!-- Chart 2: Timeline Activity -->
+    <g transform="translate(582, 0)">
+      <rect x="0" y="0" width="554" height="176" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
+      <text x="18" y="24" fill="#ffffff" font-size="13" font-weight="600">Detection History Timeline</text>
+
+      <!-- Area Path -->
+      <path d="M 30 140 Q 120 135, 180 110 T 320 80 T 420 50 T 520 65 L 520 150 L 30 150 Z" fill="url(#chartLine)"/>
+      <path d="M 30 140 Q 120 135, 180 110 T 320 80 T 420 50 T 520 65" fill="none" stroke="#10b981" stroke-width="2.5"/>
+      <circle cx="420" cy="50" r="4" fill="#10b981" stroke="#ffffff" stroke-width="2"/>
+      <text x="420" y="40" text-anchor="middle" fill="#10b981" font-size="10" font-weight="700">+28 Scanned</text>
+
+      <!-- Grid lines -->
+      <line x1="30" y1="150" x2="524" y2="150" stroke="#334155" stroke-dasharray="3 3"/>
+      <text x="30" y="166" fill="#64748b" font-size="9">Aug 23</text>
+      <text x="180" y="166" fill="#64748b" font-size="9">Aug 31</text>
+      <text x="320" y="166" fill="#64748b" font-size="9">Sep 05</text>
+      <text x="420" y="166" fill="#64748b" font-size="9">Sep 11</text>
+      <text x="500" y="166" fill="#64748b" font-size="9">Sep 16</text>
+    </g>
+  </g>
+
+  <!-- Bottom Section: Positive Detections Table -->
+  <g transform="translate(32, 430)">
+    <rect x="0" y="0" width="1136" height="236" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
+    
+    <text x="18" y="24" fill="#ffffff" font-size="13" font-weight="600">Positive Detections Log (66 hits recorded)</text>
+
+    <!-- Table Header -->
+    <rect x="18" y="38" width="1100" height="28" fill="#111827" rx="4"/>
+    <text x="32" y="56" fill="#64748b" font-size="10" font-weight="600">DETECTED AT</text>
+    <text x="150" y="56" fill="#64748b" font-size="10" font-weight="600">PLATFORM</text>
+    <text x="250" y="56" fill="#64748b" font-size="10" font-weight="600">YARA RULE</text>
+    <text x="500" y="56" fill="#64748b" font-size="10" font-weight="600">SOURCE FEED</text>
+    <text x="640" y="56" fill="#64748b" font-size="10" font-weight="600">SAMPLE SHA256</text>
+    <text x="800" y="56" fill="#64748b" font-size="10" font-weight="600">VT RATIO</text>
+    <text x="900" y="56" fill="#64748b" font-size="10" font-weight="600">THREAT LABEL</text>
+    <text x="1050" y="56" fill="#64748b" font-size="10" font-weight="600">ACTION</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(18, 72)">
+      <rect x="0" y="0" width="1100" height="34" fill="#151d30" rx="4"/>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-09-05 15:21</text>
+      <rect x="130" y="8" width="54" height="18" rx="9" fill="rgba(59, 130, 246, 0.15)"/>
+      <text x="157" y="21" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">MACOS</text>
+      <text x="232" y="22" fill="#f8fafc" font-size="11" font-weight="500">macOS_ClickFix_AppleScript_Dropper</text>
+      <text x="482" y="22" fill="#94a3b8" font-size="11">MalwareBazaar</text>
+      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">7a8aac687ea6...</text>
+      <rect x="782" y="8" width="46" height="18" rx="4" fill="rgba(239, 68, 68, 0.2)"/>
+      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">15/61</text>
+      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.macho/multiverze</text>
+      <rect x="1032" y="6" width="56" height="22" rx="4" fill="#1e293b" stroke="#334155"/>
+      <text x="1060" y="21" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="500">Inspect</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(18, 112)">
+      <rect x="0" y="0" width="1100" height="34" fill="#101726" rx="4"/>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-09-05 13:48</text>
+      <rect x="130" y="8" width="54" height="18" rx="9" fill="rgba(59, 130, 246, 0.15)"/>
+      <text x="157" y="21" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">MACOS</text>
+      <text x="232" y="22" fill="#f8fafc" font-size="11" font-weight="500">macOS_ClickFix_AppleScript_Dropper</text>
+      <text x="482" y="22" fill="#94a3b8" font-size="11">MalwareBazaar</text>
+      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">170515dc9312...</text>
+      <rect x="782" y="8" width="46" height="18" rx="4" fill="rgba(239, 68, 68, 0.2)"/>
+      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">21/61</text>
+      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.coruna/falsesign</text>
+      <rect x="1032" y="6" width="56" height="22" rx="4" fill="#1e293b" stroke="#334155"/>
+      <text x="1060" y="21" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="500">Inspect</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(18, 152)">
+      <rect x="0" y="0" width="1100" height="34" fill="#151d30" rx="4"/>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-08-31 07:05</text>
+      <rect x="130" y="8" width="54" height="18" rx="9" fill="rgba(59, 130, 246, 0.15)"/>
+      <text x="157" y="21" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">MACOS</text>
+      <text x="232" y="22" fill="#f8fafc" font-size="11" font-weight="500">macOS_ClickFix_AppleScript_Dropper</text>
+      <text x="482" y="22" fill="#94a3b8" font-size="11">VirusTotal</text>
+      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">76c2e4e7fb52...</text>
+      <rect x="782" y="8" width="46" height="18" rx="4" fill="rgba(239, 68, 68, 0.2)"/>
+      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">28/62</text>
+      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.amos/stealer</text>
+      <rect x="1032" y="6" width="56" height="22" rx="4" fill="#1e293b" stroke="#334155"/>
+      <text x="1060" y="21" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="500">Inspect</text>
+    </g>
+
+    <!-- Footer Banner inside Card -->
+    <text x="568" y="215" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="600">Click to explore the full interactive dashboard on GitHub Pages &gt;&gt;</text>
+  </g>
+</svg>

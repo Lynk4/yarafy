@@ -1,6 +1,31 @@
 # Yarafy
 
-**Yarafy** is an automated YARA rule management, threat hunting, and telemetry visualization pipeline. It enables security researchers and threat hunters to store YARA rules across **macOS**, **Windows**, **Linux**, and **Non-PE / Script** platforms, hunt against live malware feeds from **MalwareBazaar**, enrich positive detections using VirusTotal, record continuous detection telemetry, and explore insights through an interactive cyber dashboard.
+[![Live Dashboard](https://img.shields.io/badge/Dashboard-Live%20on%20GitHub%20Pages-10b981?style=for-the-badge&logo=github)](https://lynk4.github.io/yarafy/)
+[![Samples Scanned](https://img.shields.io/badge/Samples%20Scanned-14%2C382-3b82f6?style=for-the-badge)](https://lynk4.github.io/yarafy/)
+[![Hits Recorded](https://img.shields.io/badge/Hits%20Recorded-66-f43f5e?style=for-the-badge)](https://lynk4.github.io/yarafy/)
+[![YARA](https://img.shields.io/badge/YARA-v4.5-06b6d4?style=for-the-badge)](https://virustotal.github.io/yara/)
+
+**Yarafy** is an automated YARA rule management, threat hunting, and telemetry visualization pipeline. It enables security researchers and threat hunters to store YARA rules across **macOS**, **Windows**, **Linux**, and **Non-PE / Script** platforms, hunt against live malware feeds from **MalwareBazaar**, enrich positive detections using **VirusTotal**, record continuous detection telemetry, and explore insights through an interactive cyber dashboard.
+
+---
+
+## Live Threat Intelligence Dashboard
+
+<p align="center">
+  <a href="https://lynk4.github.io/yarafy/">
+    <img src="assets/dashboard_preview.svg" alt="Yarafy Threat Intelligence Dashboard Preview" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <b><a href="https://lynk4.github.io/yarafy/">Open Live Interactive Telemetry Dashboard &rarr;</a></b>
+</p>
+
+- **Live URL:** [https://lynk4.github.io/yarafy/](https://lynk4.github.io/yarafy/)
+- **Real-Time Throughput:** Over 14,000+ candidate malware samples evaluated across feeds.
+- **Automated Deployment:** Automatically updated and published to GitHub Pages upon completion of any hunt workflow.
+- **Deep Inspection Drawer:** Click **Inspect** on any detection to view matched YARA string variable identifiers, exact file byte offsets (e.g. `[0x18] $setup_id: ...`), binary signatures, and VirusTotal multi-engine Antivirus detection ratios.
+- **Telemetry Export:** One-click JSON and CSV export of filtered detections.
 
 ---
 
@@ -8,6 +33,8 @@
 
 ```text
 yarafy/
+├── assets/                       # Visual assets & dashboard preview
+│   └── dashboard_preview.svg     # Dashboard UI preview mockup
 ├── yara-rules/                   # YARA Rules Repository
 │   ├── macos/                    # macOS rules (Mach-O, DMG, PKG, Plists, scripts)
 │   ├── windows/                  # Windows rules (PE, DLL, .NET, MSI)
@@ -21,15 +48,21 @@ yarafy/
 │   ├── stats.json                # Aggregate metrics & detection counts
 │   └── LATEST_REPORT.md          # Generated markdown summary
 ├── src/                          # Core Engine
-│   ├── collector.py              # MalwareBazaar API client & sample downloader
-│   ├── scanner.py                # YARA compiler & multi-file scanner
+│   ├── collector.py              # MalwareBazaar API client & platform type filter
+│   ├── scanner.py                # YARA compiler, multi-file scanner & offset extractor
 │   ├── enricher.py               # VirusTotal API v3 enricher (free tier compliant)
-│   ├── reporter.py               # Telemetry aggregator & report generator
+│   ├── reporter.py               # Telemetry aggregator & in-place score refresher
 │   ├── config.py                 # Configuration manager
 │   └── main.py                   # CLI entrypoint
 ├── .github/workflows/
-│   ├── yara_lint.yml             # CI syntax testing on pull requests / commits
-│   └── hunt_feed.yml             # Scheduled MalwareBazaar background hunting workflow
+│   ├── hunt_bazaar_macos.yml     # Manual macOS feed hunting workflow
+│   ├── hunt_bazaar_windows.yml   # Manual Windows feed hunting workflow
+│   ├── hunt_bazaar_linux.yml     # Manual Linux feed hunting workflow
+│   ├── hunt_bazaar_non_pe.yml    # Manual Script / Non-PE feed hunting workflow
+│   ├── hunt_bazaar_all.yml       # Manual Multi-Platform feed hunting workflow
+│   ├── refresh_vt_scores.yml     # Re-check historical hits against VirusTotal
+│   ├── deploy_dashboard.yml      # Automatic GitHub Pages deployment workflow
+│   └── yara_lint.yml             # CI syntax testing on pull requests / commits
 ├── config.yaml                   # Hunting settings & platform configurations
 ├── requirements.txt              # Dependencies
 └── .env.example                  # API Key template
@@ -66,15 +99,12 @@ Fill in your API keys:
 ## Interactive Telemetry Dashboard
 
 ### 1. View Live on GitHub Pages
-Your dashboard can be viewed live in the browser without running anything locally:
+Your dashboard is hosted live without running anything locally:
 
 - **Live Dashboard URL**: `https://lynk4.github.io/yarafy/`
 
 > [!NOTE]
-> To enable GitHub Pages hosting:
-> 1. In your GitHub repository, go to **Settings** -> **Pages**.
-> 2. Under **Build and deployment** -> **Source**, choose **GitHub Actions**.
-> 3. The dashboard will automatically deploy whenever new telemetry is recorded!
+> The dashboard deploys automatically via GitHub Actions whenever a hunting workflow finishes or telemetry is updated.
 
 ### 2. Launch Locally from Terminal
 Run the local visual dashboard in your default browser:
@@ -119,10 +149,21 @@ python -m src.main hunt --platform non-pe --tags "PowerShell,Python,script" --fi
 python -m src.main hunt --platform all --limit 25
 ```
 
-### 3. Launch Telemetry Dashboard
-Launches the interactive dashboard in your browser:
+### 3. Scan Local Files or Directories
+Test your rules against local suspicious files or test folders:
+
 ```bash
-python -m src.main dashboard
+# Terminal output only (inspect matches, strings, and hex offsets):
+python -m src.main scan-local /path/to/sample
+
+# Filter by platform rules (e.g. macOS only):
+python -m src.main scan-local /path/to/sample --platform macos
+
+# Scan an entire directory recursively:
+python -m src.main scan-local /path/to/samples_folder/
+
+# Test AND record positive hits to telemetry database & dashboard:
+python -m src.main scan-local /path/to/sample --record
 ```
 
 ### 4. Refresh Historical VirusTotal Scores
@@ -135,10 +176,9 @@ python -m src.main refresh-vt --mode zero-only --limit 20
 python -m src.main refresh-vt --mode all --limit 20
 ```
 
-### 5. Scan Local File or Folder
-Test your rules against local samples or directories:
+### 5. Launch Telemetry Dashboard Locally
 ```bash
-python -m src.main scan-local /path/to/suspicious/folder/
+python -m src.main dashboard
 ```
 
 ### 6. View Telemetry Stats in Terminal
@@ -150,7 +190,7 @@ python -m src.main stats
 
 ## GitHub Actions Workflows
 
-All hunting workflows are strictly manual (`workflow_dispatch`) with no scheduled auto-runs:
+All hunting workflows are strictly manual (`workflow_dispatch`) with zero scheduled auto-runs:
 
 | Workflow | Type | Description |
 | :--- | :--- | :--- |
@@ -160,5 +200,5 @@ All hunting workflows are strictly manual (`workflow_dispatch`) with no schedule
 | **MalwareBazaar Hunt - Non-PE & Scripts** | Manual | Targeted script/non-PE search with tag, file type, and limit inputs. |
 | **MalwareBazaar Hunt - All Platforms** | Manual | Executes hunting across all active platforms simultaneously. |
 | **Refresh VirusTotal Scores** | Manual | Re-checks past hits on VT to update AV scores and threat labels. |
-| **Deploy Dashboard to GitHub Pages** | Push / Manual | Builds and deploys the web dashboard to GitHub Pages. |
+| **Deploy Dashboard to GitHub Pages** | Automated / Manual | Automatically builds and deploys the dashboard upon workflow completion. |
 | **YARA Rule Lint & Test** | CI (Push/PR) | Validates rule syntax before code is merged. |
