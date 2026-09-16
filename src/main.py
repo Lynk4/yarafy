@@ -40,30 +40,81 @@ def cmd_lint(args: argparse.Namespace) -> int:
 
 def cmd_scan_local(args: argparse.Namespace) -> int:
     """Scan a local file or directory."""
-    target = Path(args.target)
+    target = Path(args.target).expanduser().resolve()
     if not target.exists():
         console.print(f"[bold red]Target path not found: {target}[/bold red]")
         return 1
 
+    target_platform = getattr(args, "platform", "all") or "all"
+    active_platforms = [target_platform] if target_platform != "all" else settings.active_platforms
+
     scanner = YaraScanner(
         rules_root=settings.rules_dir,
-        active_platforms=settings.active_platforms,
+        active_platforms=active_platforms,
     )
-    scanner.compile()
+    valid, errors = scanner.validate_rules()
+    if not valid:
+        console.print("[bold red]YARA syntax errors found in rules:[/bold red]")
+        for err in errors:
+            console.print(f"  * {err}")
+        return 1
 
-    console.print(f"[bold blue]Scanning {target}...[/bold blue]")
+    scanner.compile()
+    console.print(f"[bold blue]Scanning {target} using [{', '.join(active_platforms)}] rules...[/bold blue]")
 
     files_to_scan = [target] if target.is_file() else [p for p in target.rglob("*") if p.is_file()]
     all_hits = []
 
+    vt_enricher = None
+    if getattr(args, "record", False) and settings.virustotal_config.get("enabled", True) and settings.virustotal_api_key:
+        vt_enricher = VirusTotalEnricher(
+            api_key=settings.virustotal_api_key,
+            rate_limit_seconds=settings.virustotal_config.get("rate_limit_seconds", 15.0),
+        )
+
     for f in files_to_scan:
         hits = scanner.scan_file(f)
         if hits:
-            all_hits.extend(hits)
             for h in hits:
-                console.print(f"[bold red]HIT:[/bold red] Rule [cyan]{h['rule_name']}[/cyan] matched in [yellow]{f.name}[/yellow]")
+                h["source_feed"] = "Local File"
+                console.print(f"\n  [bold red]MATCH DETECTED![/bold red] Rule: [bold yellow]{h['rule_name']}[/bold yellow] in [cyan]{f.name}[/cyan]")
+                meta = h.get("meta", {})
+                if meta.get("description"):
+                    console.print(f"    Description: [dim]{meta['description']}[/dim]")
+                if meta.get("threat_type"):
+                    console.print(f"    Threat Type: [dim]{meta['threat_type']}[/dim]")
 
-    console.print(f"\n[bold green]Scan complete. {len(files_to_scan)} files scanned, {len(all_hits)} hits found.[/bold green]")
+                matched_strs = h.get("matched_strings", [])
+                if matched_strs:
+                    console.print("    [bold]Matched Signatures & Offsets:[/bold]")
+                    for s in matched_strs:
+                        console.print(f"      - [{s['offset']}] [bold yellow]{s['identifier']}[/bold yellow]: {s['data_preview']}")
+
+                if getattr(args, "record", False):
+                    if vt_enricher:
+                        sha = h.get("sample_sha256")
+                        console.print(f"    [cyan]Querying VirusTotal for hash {sha[:12]}...[/cyan]")
+                        vt_data = vt_enricher.lookup_hash(sha)
+                        h["vt_enrichment"] = vt_data
+                        if vt_data.get("vt_status") == "success":
+                            console.print(f"    [green]VT Detections: {vt_data.get('detection_ratio')} | Label: {vt_data.get('suggested_threat_label')}[/green]")
+                    all_hits.append(h)
+
+            if not getattr(args, "record", False):
+                all_hits.extend(hits)
+
+    console.print(f"\n[bold green]Scan complete. {len(files_to_scan)} file(s) scanned, {len(all_hits)} hit(s) found.[/bold green]")
+
+    if getattr(args, "record", False) and all_hits:
+        reporter = TelemetryReporter(
+            hits_file=settings.hits_file,
+            stats_file=settings.stats_file,
+            report_file=settings.report_file,
+        )
+        reporter.record_run(len(files_to_scan), all_hits, settings.active_platforms)
+        console.print("[bold green]Recorded hits to telemetry database and updated dashboard data![/bold green]")
+        console.print("Run [cyan]git commit -am 'feat: add local sample telemetry' && git push[/cyan] to deploy to GitHub Pages.")
+
     return 0
 
 
@@ -392,6 +443,8 @@ def main():
     # Local scan
     scan_parser = subparsers.add_parser("scan-local", help="Scan a local file or folder with YARA rules")
     scan_parser.add_argument("target", help="Path to local file or directory to scan")
+    scan_parser.add_argument("--platform", type=str, default="all", choices=["macos", "windows", "linux", "non-pe", "all"], help="Platform rules to scan with (default: all)")
+    scan_parser.add_argument("--record", action="store_true", help="Record hits to telemetry database and dashboard")
 
     # Stats
     subparsers.add_parser("stats", help="Display telemetry statistics")
