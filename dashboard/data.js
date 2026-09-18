@@ -1,10 +1,10 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 14476,
-    "total_hits": 78,
-    "last_run": "2026-09-16T10:24:15.725648+00:00",
+    "total_scanned": 14485,
+    "total_hits": 81,
+    "last_run": "2026-09-18T07:20:48.612365+00:00",
     "hits_by_platform": {
-      "macos": 78,
+      "macos": 81,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
@@ -13,14 +13,16 @@ window.YARAFY_DATA = {
       "macOS_ClickFix_AppleScript_Dropper": 37,
       "OSX_Stealer_AMOS_Generic": 25,
       "MALW_macOS_MacSync_Stealer_Universal": 4,
-      "OSX_Foxveil_AMOS_Stage4_Generic": 12
+      "OSX_Foxveil_AMOS_Stage4_Generic": 12,
+      "APT_macOS_RustBucket_Behavioral_Indicators": 3
     },
     "hits_by_source": {
       "MalwareBazaar": 35,
-      "VirusTotal Enterprise": 43
+      "VirusTotal Enterprise": 43,
+      "Local File": 3
     },
-    "new_hits_this_run": 12,
-    "refreshed_hits_this_run": 6
+    "new_hits_this_run": 3,
+    "refreshed_hits_this_run": 0
   },
   "hits": [
     {
@@ -5558,6 +5560,291 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4903c40fbdb96cf39f35ed592a886a39d230564b26dd80aef3fa6c58bc501551"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00"
+    },
+    {
+      "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
+      "platform": "macos",
+      "namespace": "macos_rust_bucket",
+      "tags": [],
+      "meta": {
+        "description": "Broad hunting rule for macOS RustBucket/Lazarus loaders and drop-and-execute variants",
+        "date": "2026-09-18",
+        "severity": "High",
+        "malware_family": "RustBucket"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x3d89",
+          "identifier": "$ua_anom_01",
+          "data_preview": "msie 8.0; windows nt 5.1"
+        },
+        {
+          "offset": "0x3da3",
+          "identifier": "$ua_anom_02",
+          "data_preview": "trident/4.0"
+        },
+        {
+          "offset": "0x3ebd",
+          "identifier": "$task_sel_01",
+          "data_preview": "setLaunchPath:"
+        },
+        {
+          "offset": "0x3eda",
+          "identifier": "$task_sel_02",
+          "data_preview": "launchAndReturnError:"
+        },
+        {
+          "offset": "0x3ecc",
+          "identifier": "$task_sel_03",
+          "data_preview": "setArguments:"
+        },
+        {
+          "offset": "0x3ea5",
+          "identifier": "$file_01",
+          "data_preview": "temporaryDirectory"
+        },
+        {
+          "offset": "0x3e96",
+          "identifier": "$file_02",
+          "data_preview": "defaultManager"
+        },
+        {
+          "offset": "0xc40b",
+          "identifier": "$file_03",
+          "data_preview": "appendingPathComponent"
+        },
+        {
+          "offset": "0xe003",
+          "identifier": "$file_03",
+          "data_preview": "appendingPathComponent"
+        },
+        {
+          "offset": "0xcc5e",
+          "identifier": "$wipe_01",
+          "data_preview": "swift_stdlib_random"
+        },
+        {
+          "offset": "0xe90f",
+          "identifier": "$wipe_01",
+          "data_preview": "swift_stdlib_random"
+        },
+        {
+          "offset": "0xcc91",
+          "identifier": "$wipe_02",
+          "data_preview": "_unlink"
+        },
+        {
+          "offset": "0xe934",
+          "identifier": "$wipe_02",
+          "data_preview": "_unlink"
+        },
+        {
+          "offset": "0xc88b",
+          "identifier": "$swift_cmd",
+          "data_preview": "CommandLine"
+        },
+        {
+          "offset": "0xe419",
+          "identifier": "$swift_cmd",
+          "data_preview": "CommandLine"
+        }
+      ],
+      "sample_sha256": "9f54ca45b40d1893537bd1899d2343146364d7e3ddca0d51f5c4c0cf238ecae4",
+      "sample_md5": "2f1fba8a22f0fcd737a209f8a1979bfe",
+      "sample_name": "pd_arm64",
+      "sample_size_bytes": 82944,
+      "source_feed": "Local File",
+      "detected_at": "2026-09-18T07:20:48.612365+00:00"
+    },
+    {
+      "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
+      "platform": "macos",
+      "namespace": "macos_rust_bucket",
+      "tags": [],
+      "meta": {
+        "description": "Broad hunting rule for macOS RustBucket/Lazarus loaders and drop-and-execute variants",
+        "date": "2026-09-18",
+        "severity": "High",
+        "malware_family": "RustBucket"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x7d29",
+          "identifier": "$ua_anom_01",
+          "data_preview": "msie 8.0; windows nt 5.1"
+        },
+        {
+          "offset": "0x1bd89",
+          "identifier": "$ua_anom_01",
+          "data_preview": "msie 8.0; windows nt 5.1"
+        },
+        {
+          "offset": "0x7d43",
+          "identifier": "$ua_anom_02",
+          "data_preview": "trident/4.0"
+        },
+        {
+          "offset": "0x1bda3",
+          "identifier": "$ua_anom_02",
+          "data_preview": "trident/4.0"
+        },
+        {
+          "offset": "0x7ef8",
+          "identifier": "$task_sel_01",
+          "data_preview": "setLaunchPath:"
+        },
+        {
+          "offset": "0x1bebd",
+          "identifier": "$task_sel_01",
+          "data_preview": "setLaunchPath:"
+        },
+        {
+          "offset": "0x7f15",
+          "identifier": "$task_sel_02",
+          "data_preview": "launchAndReturnError:"
+        },
+        {
+          "offset": "0x1beda",
+          "identifier": "$task_sel_02",
+          "data_preview": "launchAndReturnError:"
+        },
+        {
+          "offset": "0x7f07",
+          "identifier": "$task_sel_03",
+          "data_preview": "setArguments:"
+        },
+        {
+          "offset": "0x1becc",
+          "identifier": "$task_sel_03",
+          "data_preview": "setArguments:"
+        },
+        {
+          "offset": "0x7ee0",
+          "identifier": "$file_01",
+          "data_preview": "temporaryDirectory"
+        },
+        {
+          "offset": "0x1bea5",
+          "identifier": "$file_01",
+          "data_preview": "temporaryDirectory"
+        },
+        {
+          "offset": "0x7ed1",
+          "identifier": "$file_02",
+          "data_preview": "defaultManager"
+        },
+        {
+          "offset": "0x1be96",
+          "identifier": "$file_02",
+          "data_preview": "defaultManager"
+        },
+        {
+          "offset": "0xc4a4",
+          "identifier": "$file_03",
+          "data_preview": "appendingPathComponent"
+        }
+      ],
+      "sample_sha256": "7887638bcafd57e2896c7c16698e927ce92fd7d409aae698d33cdca3ce8d25b8",
+      "sample_md5": "e169d95fffd8ab489f5eae02365d39ca",
+      "sample_name": ".pd",
+      "sample_size_bytes": 181248,
+      "source_feed": "Local File",
+      "detected_at": "2026-09-18T07:20:48.612365+00:00"
+    },
+    {
+      "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
+      "platform": "macos",
+      "namespace": "macos_rust_bucket",
+      "tags": [],
+      "meta": {
+        "description": "Broad hunting rule for macOS RustBucket/Lazarus loaders and drop-and-execute variants",
+        "date": "2026-09-18",
+        "severity": "High",
+        "malware_family": "RustBucket"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x3d29",
+          "identifier": "$ua_anom_01",
+          "data_preview": "msie 8.0; windows nt 5.1"
+        },
+        {
+          "offset": "0x3d43",
+          "identifier": "$ua_anom_02",
+          "data_preview": "trident/4.0"
+        },
+        {
+          "offset": "0x3ef8",
+          "identifier": "$task_sel_01",
+          "data_preview": "setLaunchPath:"
+        },
+        {
+          "offset": "0x3f15",
+          "identifier": "$task_sel_02",
+          "data_preview": "launchAndReturnError:"
+        },
+        {
+          "offset": "0x3f07",
+          "identifier": "$task_sel_03",
+          "data_preview": "setArguments:"
+        },
+        {
+          "offset": "0x3ee0",
+          "identifier": "$file_01",
+          "data_preview": "temporaryDirectory"
+        },
+        {
+          "offset": "0x3ed1",
+          "identifier": "$file_02",
+          "data_preview": "defaultManager"
+        },
+        {
+          "offset": "0x84a4",
+          "identifier": "$file_03",
+          "data_preview": "appendingPathComponent"
+        },
+        {
+          "offset": "0xab7b",
+          "identifier": "$file_03",
+          "data_preview": "appendingPathComponent"
+        },
+        {
+          "offset": "0x8ede",
+          "identifier": "$wipe_01",
+          "data_preview": "swift_stdlib_random"
+        },
+        {
+          "offset": "0xb5fd",
+          "identifier": "$wipe_01",
+          "data_preview": "swift_stdlib_random"
+        },
+        {
+          "offset": "0x8f11",
+          "identifier": "$wipe_02",
+          "data_preview": "_unlink"
+        },
+        {
+          "offset": "0xb622",
+          "identifier": "$wipe_02",
+          "data_preview": "_unlink"
+        },
+        {
+          "offset": "0x892b",
+          "identifier": "$swift_cmd",
+          "data_preview": "CommandLine"
+        },
+        {
+          "offset": "0xaf91",
+          "identifier": "$swift_cmd",
+          "data_preview": "CommandLine"
+        }
+      ],
+      "sample_sha256": "3474d98ec917eac063525284c86585eb283f4188c7df2f31bf35c16f8787e81c",
+      "sample_md5": "58a1140c0b22d7118ce9ff0649d87f19",
+      "sample_name": "pd_x86",
+      "sample_size_bytes": 72480,
+      "source_feed": "Local File",
+      "detected_at": "2026-09-18T07:20:48.612365+00:00"
     }
   ]
 };
