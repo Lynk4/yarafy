@@ -30,9 +30,9 @@
 ## Recent Positive Detections
 | Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | `3474d98ec9...` | `N/A` | `N/A` |
-| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | `7887638bca...` | `N/A` | `N/A` |
-| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | `9f54ca45b4...` | `N/A` | `N/A` |
+| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | [`3474d98ec9...`](https://www.virustotal.com/gui/file/3474d98ec917eac063525284c86585eb283f4188c7df2f31bf35c16f8787e81c) | `32/63` | `trojan.nukesped/lazarus` |
+| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | [`7887638bca...`](https://www.virustotal.com/gui/file/7887638bcafd57e2896c7c16698e927ce92fd7d409aae698d33cdca3ce8d25b8) | `33/62` | `trojan.nukesped/lazarus` |
+| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | [`9f54ca45b4...`](https://www.virustotal.com/gui/file/9f54ca45b40d1893537bd1899d2343146364d7e3ddca0d51f5c4c0cf238ecae4) | `28/59` | `trojan.lazarus/nukesped` |
 | 2026-09-16 10:24:15 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`4903c40fbd...`](https://www.virustotal.com/gui/file/4903c40fbdb96cf39f35ed592a886a39d230564b26dd80aef3fa6c58bc501551) | `23/59` | `trojan.amos/amosstealer` |
 | 2026-09-16 10:24:15 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`b95ea80546...`](https://www.virustotal.com/gui/file/b95ea805469383b5a419c5043de45bb2b13f36b3a513f98bd608b3f7294f064f) | `27/63` | `trojan.amos/amosstealer` |
 | 2026-09-16 10:24:15 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`76c2e4e7fb...`](https://www.virustotal.com/gui/file/76c2e4e7fb5290366d7bd04703ea60ec92d314ff651172387b9c6dbfca22b82a) | `28/62` | `trojan.amos/stealer` |

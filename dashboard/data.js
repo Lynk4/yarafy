@@ -5654,7 +5654,45 @@ window.YARAFY_DATA = {
       "sample_name": "pd_arm64",
       "sample_size_bytes": 82944,
       "source_feed": "Local File",
-      "detected_at": "2026-09-18T07:20:48.612365+00:00"
+      "detected_at": "2026-09-18T07:20:48.612365+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 59,
+        "detection_ratio": "28/59",
+        "suggested_threat_label": "trojan.lazarus/nukesped",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          },
+          {
+            "value": "downloader",
+            "count": 7
+          }
+        ],
+        "names": [
+          "localfile~.arm64",
+          "7887638bcafd57e2896c7c16698e927ce92fd7d409aae698d33cdca3ce8d25b8.cpu16777228"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "service-scan",
+          "arm",
+          "macho",
+          "64bits",
+          "self-signed",
+          "signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Nukesped.H!MTB",
+          "Kaspersky": "HEUR:Trojan-Downloader.OSX.Agent.gen",
+          "Sophos": "OSX/RustBkt-A",
+          "ESET-NOD32": "OSX/NukeSped.V trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/9f54ca45b40d1893537bd1899d2343146364d7e3ddca0d51f5c4c0cf238ecae4"
+      }
     },
     {
       "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
@@ -5749,7 +5787,43 @@ window.YARAFY_DATA = {
       "sample_name": ".pd",
       "sample_size_bytes": 181248,
       "source_feed": "Local File",
-      "detected_at": "2026-09-18T07:20:48.612365+00:00"
+      "detected_at": "2026-09-18T07:20:48.612365+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 33,
+        "total_engines": 62,
+        "detection_ratio": "33/62",
+        "suggested_threat_label": "trojan.nukesped/lazarus",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 19
+          },
+          {
+            "value": "downloader",
+            "count": 7
+          }
+        ],
+        "names": [
+          "virus.pd"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "self-signed",
+          "64bits",
+          "macho",
+          "multi-arch",
+          "arm"
+        ],
+        "reputation": -35,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Nukesped!rfn",
+          "Kaspersky": "HEUR:Trojan-Downloader.OSX.Agent.gen",
+          "Sophos": "OSX/RustBkt-A",
+          "ESET-NOD32": "OSX/NukeSped.V trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/7887638bcafd57e2896c7c16698e927ce92fd7d409aae698d33cdca3ce8d25b8"
+      }
     },
     {
       "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
@@ -5844,7 +5918,44 @@ window.YARAFY_DATA = {
       "sample_name": "pd_x86",
       "sample_size_bytes": 72480,
       "source_feed": "Local File",
-      "detected_at": "2026-09-18T07:20:48.612365+00:00"
+      "detected_at": "2026-09-18T07:20:48.612365+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 32,
+        "total_engines": 63,
+        "detection_ratio": "32/63",
+        "suggested_threat_label": "trojan.nukesped/lazarus",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 19
+          },
+          {
+            "value": "downloader",
+            "count": 8
+          }
+        ],
+        "names": [
+          "localfile~.x64",
+          "ppp.s",
+          "7887638bcafd57e2896c7c16698e927ce92fd7d409aae698d33cdca3ce8d25b8.x64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "64bits",
+          "signed",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Nukesped.H!MTB",
+          "Kaspersky": "HEUR:Trojan-Downloader.OSX.Agent.gen",
+          "Sophos": "OSX/RustBkt-A",
+          "ESET-NOD32": "OSX/NukeSped.V trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/3474d98ec917eac063525284c86585eb283f4188c7df2f31bf35c16f8787e81c"
+      }
     }
   ]
 };
