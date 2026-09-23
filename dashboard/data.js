@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 14591,
+    "total_scanned": 14626,
     "total_hits": 84,
-    "last_run": "2026-09-23T07:38:51.612704+00:00",
+    "last_run": "2026-09-23T13:19:30.116948+00:00",
     "hits_by_platform": {
       "macos": 84,
       "windows": 0,
@@ -6078,14 +6078,18 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 7,
+        "positives": 14,
         "total_engines": 63,
-        "detection_ratio": "7/63",
-        "suggested_threat_label": "trojan.stealer",
+        "detection_ratio": "14/63",
+        "suggested_threat_label": "trojan.stealer/abtrojan",
         "popular_threat_category": [
           {
-            "count": 2,
+            "count": 5,
             "value": "trojan"
+          },
+          {
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -6096,19 +6100,20 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "multi-arch",
-          "64bits",
-          "arm",
           "macho",
-          "self-signed"
+          "64bits",
+          "self-signed",
+          "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {
+          "Microsoft": "Trojan:Script/Wacatac.B!ml",
           "ESET-NOD32": "OSX/PSW.Agent.JH trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/a7c0d024ed24dcbc1b17cbda430a39edb52325c30ad9b7207c0267e43fbec4b7"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-09-23T07:38:51.612704+00:00"
+      "last_seen_at": "2026-09-23T13:19:30.116948+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -6215,9 +6220,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 13,
-        "total_engines": 61,
-        "detection_ratio": "13/61",
+        "positives": 14,
+        "total_engines": 63,
+        "detection_ratio": "14/63",
         "suggested_threat_label": "trojan.stealer/m1rymg",
         "popular_threat_category": [
           {
@@ -6235,11 +6240,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "arm",
+          "macho",
+          "64bits",
           "multi-arch",
           "self-signed",
-          "macho",
-          "64bits"
+          "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -6249,7 +6254,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/08074ec033c1a5dcfb0125a352f7f499f29f61d8ed2ce2f693d48813074810d4"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-09-23T07:38:51.612704+00:00"
+      "last_seen_at": "2026-09-23T13:19:30.116948+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
