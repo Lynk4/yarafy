@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 14676,
+    "total_scanned": 14706,
     "total_hits": 84,
-    "last_run": "2026-09-23T13:21:31.013801+00:00",
+    "last_run": "2026-09-24T16:09:43.102603+00:00",
     "hits_by_platform": {
       "macos": 84,
       "windows": 0,
@@ -6084,15 +6084,16 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 5
+            "count": 5,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
+          "a7c0d024ed24dcbc1b17cbda430a39edb52325c30ad9b7207c0267e43fbec4b7.macho",
           "lykx48.exe",
           "q1wy6zkgp.exe",
           "macho_a7c0d024ed24.bin"
@@ -6113,7 +6114,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a7c0d024ed24dcbc1b17cbda430a39edb52325c30ad9b7207c0267e43fbec4b7"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-09-23T13:21:31.013801+00:00"
+      "last_seen_at": "2026-09-24T16:09:43.102603+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -6220,13 +6221,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 14,
+        "positives": 26,
         "total_engines": 63,
-        "detection_ratio": "14/63",
-        "suggested_threat_label": "trojan.stealer/m1rymg",
+        "detection_ratio": "26/63",
+        "suggested_threat_label": "trojan.stealer/abtrojan",
         "popular_threat_category": [
           {
-            "count": 6,
+            "count": 15,
             "value": "trojan"
           },
           {
@@ -6235,26 +6236,28 @@ window.YARAFY_DATA = {
           }
         ],
         "names": [
+          "08074ec033c1a5dcfb0125a352f7f499f29f61d8ed2ce2f693d48813074810d4.macho",
           "or2vg984.exe",
           "macho_08074ec033c1.bin"
         ],
         "type_description": "Mach-O",
         "tags": [
-          "macho",
-          "64bits",
           "multi-arch",
+          "macho",
           "self-signed",
+          "64bits",
           "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {
-          "Microsoft": "Trojan:Script/Wacatac.B!ml",
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Agent.gen",
           "ESET-NOD32": "OSX/PSW.Agent.JM trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/08074ec033c1a5dcfb0125a352f7f499f29f61d8ed2ce2f693d48813074810d4"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-09-23T13:21:31.013801+00:00"
+      "last_seen_at": "2026-09-24T16:09:43.102603+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
