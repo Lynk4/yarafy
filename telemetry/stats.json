@@ -1,7 +1,7 @@
 {
-  "total_scanned": 14820,
+  "total_scanned": 14996,
   "total_hits": 100,
-  "last_run": "2026-10-08T06:28:54.784186+00:00",
+  "last_run": "2026-10-08T07:00:26.376817+00:00",
   "hits_by_platform": {
     "macos": 100,
     "windows": 0,
@@ -21,6 +21,6 @@
     "VirusTotal Enterprise": 43,
     "Local File": 3
   },
-  "new_hits_this_run": 16,
-  "refreshed_hits_this_run": 25
+  "new_hits_this_run": 0,
+  "refreshed_hits_this_run": 38
 }
