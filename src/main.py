@@ -113,7 +113,7 @@ def cmd_scan_local(args: argparse.Namespace) -> int:
         )
         reporter.record_run(len(files_to_scan), all_hits, settings.active_platforms)
         console.print("[bold green]Recorded hits to telemetry database and updated dashboard data![/bold green]")
-        console.print("Run [cyan]git commit -am 'feat: add local sample telemetry' && git push[/cyan] to deploy to GitHub Pages.")
+        console.print("Run [cyan]git add yara-rules/ telemetry/ dashboard/ assets/ && git commit -m 'feat: add rule and local sample telemetry' && git push[/cyan] to deploy to GitHub Pages.")
 
     return 0
 
@@ -324,7 +324,8 @@ def cmd_refresh_vt(args: argparse.Namespace) -> int:
             if positives == 0 or vt_status != "success":
                 candidates.append((idx, hit))
 
-        if len(candidates) >= limit:
+        # Only enforce limit for zero-only mode; 'all' refreshes every hit
+        if mode != "all" and len(candidates) >= limit:
             break
 
     if not candidates:
