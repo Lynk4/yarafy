@@ -137,8 +137,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/camelot",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           }
         ],
         "names": [
@@ -558,8 +558,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -710,29 +710,29 @@ window.YARAFY_DATA = {
         "positives": 29,
         "total_engines": 62,
         "detection_ratio": "29/62",
-        "suggested_threat_label": "trojan.stealer/atomic",
+        "suggested_threat_label": "trojan.stealer/amosstealer",
         "popular_threat_category": [
           {
-            "count": 17,
+            "count": 18,
             "value": "trojan"
           }
         ],
         "names": [
-          "bd5a94643df64a4f8901513fbf99d15993d94b8a",
           "payload.bin",
+          "bd5a94643df64a4f8901513fbf99d15993d94b8a",
           "29be0f56275f051181ea3ec37ddc3d3807cde34cb65de855709fae0e13786a40.macho"
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
-          "arm",
           "64bits",
           "self-signed",
-          "macho"
+          "macho",
+          "multi-arch",
+          "arm"
         ],
         "reputation": -52,
         "key_engine_detections": {
-          "Microsoft": "Trojan:Win32/Qwexlafiba!rfn",
+          "Microsoft": "Trojan:MacOS/AmosStealer.DC!MTB",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Agent.ag",
           "ESET-NOD32": "OSX/PSW.Agent.JE trojan"
         },
@@ -795,12 +795,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/stealer",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           },
           {
-            "count": 7,
-            "value": "dropper"
+            "value": "dropper",
+            "count": 7
           }
         ],
         "names": [
@@ -865,8 +865,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           }
         ],
         "names": [
@@ -927,8 +927,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -1074,13 +1074,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 32,
-        "total_engines": 59,
-        "detection_ratio": "32/59",
+        "positives": 35,
+        "total_engines": 63,
+        "detection_ratio": "35/63",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 18,
+            "count": 19,
             "value": "trojan"
           }
         ],
@@ -1092,14 +1092,14 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "arm",
-          "multi-arch",
-          "self-signed",
-          "macho",
-          "self-delete",
           "password-dialog",
+          "macho",
           "64bits",
-          "checks-cpu-name"
+          "self-delete",
+          "multi-arch",
+          "arm",
+          "checks-cpu-name",
+          "self-signed"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -1168,8 +1168,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -1375,8 +1375,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -1568,12 +1568,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.mettle/meterpreter",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 12
+            "count": 12,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 3
+            "count": 3,
+            "value": "pua"
           }
         ],
         "names": [
@@ -1637,12 +1637,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.mettle/meterpreter",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 12
+            "count": 12,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 3
+            "count": 3,
+            "value": "pua"
           }
         ],
         "names": [
@@ -1755,12 +1755,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "downloader",
-            "count": 3
+            "count": 3,
+            "value": "downloader"
           }
         ],
         "names": [
@@ -1922,8 +1922,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/stealer",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
