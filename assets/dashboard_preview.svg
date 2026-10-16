@@ -53,21 +53,21 @@
     <g transform="translate(0, 0)">
       <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
       <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">TOTAL SCANNED</text>
-      <text x="16" y="56" fill="#ffffff" font-size="24" font-weight="700">15,430</text>
+      <text x="16" y="56" fill="#ffffff" font-size="24" font-weight="700">15,462</text>
       <text x="16" y="74" fill="#64748b" font-size="10">Lifetime throughput</text>
     </g>
 
     <g transform="translate(192, 0)">
       <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
       <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">RULE HITS</text>
-      <text x="16" y="56" fill="#f43f5e" font-size="24" font-weight="700">102</text>
+      <text x="16" y="56" fill="#f43f5e" font-size="24" font-weight="700">106</text>
       <text x="16" y="74" fill="#64748b" font-size="10">0.7% hit rate</text>
     </g>
 
     <g transform="translate(384, 0)">
       <rect width="176" height="88" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
       <text x="16" y="24" fill="#94a3b8" font-size="11" font-weight="600">MACOS</text>
-      <text x="16" y="56" fill="#3b82f6" font-size="24" font-weight="700">102</text>
+      <text x="16" y="56" fill="#3b82f6" font-size="24" font-weight="700">106</text>
       <text x="16" y="74" fill="#64748b" font-size="10">Mach-O / DMG / PKG</text>
     </g>
 
@@ -98,17 +98,17 @@
     <text x="18" y="24" fill="#ffffff" font-size="13" font-weight="600">Top Triggered YARA Rules</text>
 
     <text x="18" y="56" fill="#94a3b8" font-size="11">macOS_ClickFix_AppleScript_Dropper</text>
-    <text x="490" y="56" fill="#cbd5e1" font-size="11" text-anchor="end" font-weight="600">40</text>
+    <text x="490" y="56" fill="#cbd5e1" font-size="11" text-anchor="end" font-weight="600">44</text>
     <rect x="18" y="64" width="472" height="10" rx="5" fill="#1e293b"/>
     <rect x="18" y="64" width="440" height="10" rx="5" fill="url(#roseGrad)"/>
     <text x="18" y="96" fill="#94a3b8" font-size="11">OSX_Stealer_AMOS_Generic</text>
     <text x="490" y="96" fill="#cbd5e1" font-size="11" text-anchor="end" font-weight="600">33</text>
     <rect x="18" y="104" width="472" height="10" rx="5" fill="#1e293b"/>
-    <rect x="18" y="104" width="363" height="10" rx="5" fill="url(#blueGrad)"/>
+    <rect x="18" y="104" width="330" height="10" rx="5" fill="url(#blueGrad)"/>
     <text x="18" y="136" fill="#94a3b8" font-size="11">OSX_Foxveil_AMOS_Stage4_Generic</text>
     <text x="490" y="136" fill="#cbd5e1" font-size="11" text-anchor="end" font-weight="600">17</text>
     <rect x="18" y="144" width="472" height="10" rx="5" fill="#1e293b"/>
-    <rect x="18" y="144" width="187" height="10" rx="5" fill="#10b981"/>
+    <rect x="18" y="144" width="170" height="10" rx="5" fill="#10b981"/>
 
     <g transform="translate(582, 0)">
       <rect x="0" y="0" width="554" height="176" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
@@ -131,7 +131,7 @@
   <g transform="translate(32, 430)">
     <rect x="0" y="0" width="1136" height="236" rx="8" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
     
-    <text x="18" y="24" fill="#ffffff" font-size="13" font-weight="600">Positive Detections Log (102 hits recorded)</text>
+    <text x="18" y="24" fill="#ffffff" font-size="13" font-weight="600">Positive Detections Log (106 hits recorded)</text>
 
     <rect x="18" y="38" width="1100" height="28" fill="#111827" rx="4"/>
     <text x="32" y="56" fill="#64748b" font-size="10" font-weight="600">DETECTED AT</text>
@@ -145,43 +145,43 @@
 
     <g transform="translate(18, 72)">
       <rect x="0" y="0" width="1100" height="34" fill="#151d30" rx="4"/>
-      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-10-12 12:01</text>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-10-16 09:33</text>
       <rect x="130" y="8" width="54" height="18" rx="9" fill="rgba(59, 130, 246, 0.15)"/>
       <text x="157" y="21" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">MACOS</text>
       <text x="232" y="22" fill="#f8fafc" font-size="11" font-weight="500">macOS_ClickFix_AppleScript_Dropper</text>
       <text x="482" y="22" fill="#94a3b8" font-size="11">MalwareBazaar</text>
-      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">ddb7afd3e2d5...</text>
+      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">e42b8c35db5a...</text>
       <rect x="782" y="8" width="46" height="18" rx="4" fill="rgba(239, 68, 68, 0.2)"/>
-      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">3/63</text>
-      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.</text>
+      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">6/51</text>
+      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.amos</text>
       <rect x="1032" y="6" width="56" height="22" rx="4" fill="#1e293b" stroke="#334155"/>
       <text x="1060" y="21" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="500">Inspect</text>
     </g>
     <g transform="translate(18, 112)">
       <rect x="0" y="0" width="1100" height="34" fill="#101726" rx="4"/>
-      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-10-09 09:35</text>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-10-16 09:33</text>
       <rect x="130" y="8" width="54" height="18" rx="9" fill="rgba(59, 130, 246, 0.15)"/>
       <text x="157" y="21" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">MACOS</text>
-      <text x="232" y="22" fill="#f8fafc" font-size="11" font-weight="500">OSX_Stealer_AMOS_Generic</text>
+      <text x="232" y="22" fill="#f8fafc" font-size="11" font-weight="500">macOS_ClickFix_AppleScript_Dropper</text>
       <text x="482" y="22" fill="#94a3b8" font-size="11">MalwareBazaar</text>
-      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">9135f4d24e45...</text>
+      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">1e8ed19e771e...</text>
       <rect x="782" y="8" width="46" height="18" rx="4" fill="rgba(239, 68, 68, 0.2)"/>
-      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">28/63</text>
-      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.stealer/amos</text>
+      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">5/51</text>
+      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.</text>
       <rect x="1032" y="6" width="56" height="22" rx="4" fill="#1e293b" stroke="#334155"/>
       <text x="1060" y="21" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="500">Inspect</text>
     </g>
     <g transform="translate(18, 152)">
       <rect x="0" y="0" width="1100" height="34" fill="#151d30" rx="4"/>
-      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-10-08 06:28</text>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">2026-10-16 09:33</text>
       <rect x="130" y="8" width="54" height="18" rx="9" fill="rgba(59, 130, 246, 0.15)"/>
       <text x="157" y="21" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">MACOS</text>
-      <text x="232" y="22" fill="#f8fafc" font-size="11" font-weight="500">MALW_macOS_MacSync_Stealer_Univ...</text>
+      <text x="232" y="22" fill="#f8fafc" font-size="11" font-weight="500">macOS_ClickFix_AppleScript_Dropper</text>
       <text x="482" y="22" fill="#94a3b8" font-size="11">MalwareBazaar</text>
-      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">f5471a00bb6c...</text>
+      <text x="622" y="22" fill="#38bdf8" font-size="11" font-family="monospace">faf572c1c989...</text>
       <rect x="782" y="8" width="46" height="18" rx="4" fill="rgba(239, 68, 68, 0.2)"/>
-      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">33/62</text>
-      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.stealer/coins</text>
+      <text x="805" y="21" text-anchor="middle" fill="#f87171" font-size="10" font-weight="700">4/52</text>
+      <text x="882" y="22" fill="#cbd5e1" font-size="11">trojan.</text>
       <rect x="1032" y="6" width="56" height="22" rx="4" fill="#1e293b" stroke="#334155"/>
       <text x="1060" y="21" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="500">Inspect</text>
     </g>
