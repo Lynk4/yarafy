@@ -527,6 +527,55 @@
       gap: 8px;
       margin-bottom: 16px;
     }
+
+    /* Reload Button in VT Ratio Cell */
+    .vt-ratio-cell {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-icon-reload {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      border-radius: 4px;
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      padding: 0;
+      flex-shrink: 0;
+    }
+
+    .btn-icon-reload:hover {
+      background: var(--card-hover);
+      color: #fff;
+      border-color: var(--accent-blue);
+    }
+
+    .btn-icon-reload.spinning svg {
+      animation: spin-reload 0.8s linear infinite;
+      color: var(--accent-blue);
+    }
+
+    @keyframes spin-reload {
+      100% { transform: rotate(360deg); }
+    }
+
+    .vt-ratio.updated {
+      animation: pulse-green 1.5s ease-out;
+      border-color: var(--accent-green);
+      color: #34d399;
+    }
+
+    @keyframes pulse-green {
+      0% { background: rgba(16, 185, 129, 0.4); transform: scale(1.08); }
+      100% { background: rgba(244, 63, 94, 0.15); transform: scale(1); }
+    }
   </style>
 </head>
 <body>
@@ -778,6 +827,20 @@
       <div id="rule-modal-body"></div>
     </div>
   </div>
+
+  <!-- Static Reanalyze Options Modal (for GitHub Pages) -->
+  <div class="modal-overlay" id="static-reanalyze-modal" onclick="closeStaticReanalyzeModal(event)">
+    <div class="modal-content" style="max-width: 600px;" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="static-reanalyze-title">VirusTotal Reanalysis</h3>
+        <button class="modal-close" onclick="closeStaticReanalyzeModalDirect()">&times;</button>
+      </div>
+      <div id="static-reanalyze-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;"></div>
 
   <script>
     let globalHits = [];
@@ -1109,6 +1172,17 @@
         const label = h.vt_enrichment?.suggested_threat_label || 'Unclassified';
         const ts = (h.detected_at || '').replace('T', ' ').slice(0, 19) || 'N/A';
 
+        const vtRatioHtml = `
+          <div class="vt-ratio-cell">
+            <span class="vt-ratio" id="vt-ratio-${sha}">${vtRatio}</span>
+            <button class="btn-icon-reload" id="btn-reload-${sha}" onclick="refreshSingleSampleVT('${sha}', this)" title="Reanalyze / Refresh VirusTotal score for this sample">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+              </svg>
+            </button>
+          </div>
+        `;
+
         return `
           <tr>
             <td style="color: var(--text-muted); font-size: 12px;">${ts}</td>
@@ -1116,8 +1190,8 @@
             <td style="font-weight: 600; color: #fff;">${h.rule_name}</td>
             <td>${srcBadge}</td>
             <td><a class="hash-code" href="${vtUrl}" target="_blank" title="${sha}">${shortSha}</a></td>
-            <td><span class="vt-ratio">${vtRatio}</span></td>
-            <td style="color: var(--text-muted);">${label}</td>
+            <td>${vtRatioHtml}</td>
+            <td id="threat-label-${sha}" style="color: var(--text-muted);">${label}</td>
             <td><button class="btn" style="padding: 4px 8px; font-size: 11px;" onclick="showDetails(${idx})">Inspect</button></td>
           </tr>
         `;
@@ -1282,13 +1356,122 @@ Source: ${hit.source_feed || 'N/A'}
       }
     }
 
-    function downloadBlob(blob, filename) {
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = filename;
-      a.click();
-      URL.revokeObjectURL(url);
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const toast = document.createElement('div');
+      const bg = type === 'success' ? '#065f46' : (type === 'error' ? '#991b1b' : '#1e293b');
+      const border = type === 'success' ? '#10b981' : (type === 'error' ? '#ef4444' : '#3b82f6');
+      toast.style.cssText = `background: ${bg}; border: 1px solid ${border}; color: #fff; padding: 12px 18px; border-radius: 6px; font-size: 13px; font-weight: 500; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5); max-width: 380px; transition: opacity 0.3s;`;
+      toast.textContent = message;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 4000);
+    }
+
+    async function refreshSingleSampleVT(sha256, btn) {
+      if (!sha256) return;
+
+      const isLocalServer = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+      if (!isLocalServer) {
+        openStaticReanalyzeModal(sha256);
+        return;
+      }
+
+      if (btn) btn.classList.add('spinning');
+      showToast(`Querying VirusTotal for ${sha256.slice(0, 12)}...`, 'info');
+
+      try {
+        const res = await fetch('/api/refresh-sample-vt', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sha256: sha256 })
+        });
+
+        const data = await res.json();
+        if (btn) btn.classList.remove('spinning');
+
+        if (res.ok && data.status === 'success') {
+          const ratioEl = document.getElementById(`vt-ratio-${sha256}`);
+          const labelEl = document.getElementById(`threat-label-${sha256}`);
+
+          if (ratioEl) {
+            ratioEl.textContent = data.detection_ratio;
+            ratioEl.classList.remove('updated');
+            void ratioEl.offsetWidth; // trigger reflow
+            ratioEl.classList.add('updated');
+          }
+          if (labelEl && data.suggested_threat_label) {
+            labelEl.textContent = data.suggested_threat_label;
+          }
+
+          globalHits.forEach(h => {
+            if (h.sample_sha256 === sha256) {
+              h.vt_enrichment = data.vt_enrichment;
+            }
+          });
+
+          showToast(`Updated VT Score for ${sha256.slice(0, 12)}: ${data.detection_ratio} (${data.suggested_threat_label || 'Unclassified'})`, 'success');
+        } else {
+          showToast(`VT Refresh: ${data.error || data.reason || 'VirusTotal lookup failed'}`, 'error');
+        }
+      } catch (err) {
+        if (btn) btn.classList.remove('spinning');
+        showToast(`Request failed: ${err.message}`, 'error');
+      }
+    }
+
+    function openStaticReanalyzeModal(sha256) {
+      const modal = document.getElementById('static-reanalyze-modal');
+      const body = document.getElementById('static-reanalyze-body');
+      if (!modal || !body) return;
+
+      const vtUrl = `https://www.virustotal.com/gui/file/${sha256}`;
+      const wfUrl = `https://github.com/Lynk4/yarafy/actions/workflows/refresh_vt_scores.yml`;
+
+      body.innerHTML = `
+        <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+          This dashboard is hosted statically on GitHub Pages. To reanalyze or refresh the VirusTotal detection score for sample <code style="color: var(--accent-cyan);">${sha256.slice(0, 16)}...</code>, choose one of the options:
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="background: #0b0f19; border: 1px solid var(--card-border); padding: 14px; border-radius: 6px;">
+            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">Option 1: Reanalyze on VirusTotal GUI</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
+              Opens the VirusTotal report directly. Click VirusTotal's native <strong>"Reanalyze"</strong> button to command all 70+ AV engines to rescan the binary now.
+            </div>
+            <a href="${vtUrl}" target="_blank" class="btn btn-primary" style="display: inline-block; text-decoration: none;">Open on VirusTotal &rarr;</a>
+          </div>
+
+          <div style="background: #0b0f19; border: 1px solid var(--card-border); padding: 14px; border-radius: 6px;">
+            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">Option 2: Run GitHub Actions Refresh Workflow</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
+              Triggers the automated workflow that queries VirusTotal via your repository secret and updates all telemetry and badges on GitHub Pages.
+            </div>
+            <a href="${wfUrl}" target="_blank" class="btn" style="display: inline-block; text-decoration: none;">Go to GitHub Actions &rarr;</a>
+          </div>
+
+          <div style="background: #0b0f19; border: 1px solid var(--card-border); padding: 14px; border-radius: 6px;">
+            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">Option 3: 1-Click Refresh via Local Dashboard Server</div>
+            <div style="font-size: 12px; color: var(--text-muted);">
+              Run <code>./.venv/bin/python -m src.main dashboard</code> in your terminal. Clicking the reload button will immediately update the score in-place.
+            </div>
+          </div>
+        </div>
+      `;
+
+      modal.classList.add('active');
+    }
+
+    function closeStaticReanalyzeModalDirect() {
+      document.getElementById('static-reanalyze-modal').classList.remove('active');
+    }
+
+    function closeStaticReanalyzeModal(e) {
+      if (e.target.id === 'static-reanalyze-modal') closeStaticReanalyzeModalDirect();
     }
 
     document.addEventListener('DOMContentLoaded', loadTelemetryData);

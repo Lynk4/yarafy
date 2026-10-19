@@ -273,7 +273,92 @@ def cmd_dashboard(args: argparse.Namespace) -> int:
     ))
 
     os.chdir(PROJECT_ROOT)
-    handler = http.server.SimpleHTTPRequestHandler
+
+    class DashboardHandler(http.server.SimpleHTTPRequestHandler):
+        def do_POST(self):
+            if self.path == "/api/refresh-sample-vt":
+                content_len = int(self.headers.get("Content-Length", 0))
+                body = self.rfile.read(content_len)
+                try:
+                    data = json.loads(body.decode("utf-8"))
+                    sha256 = data.get("sha256", "").strip()
+                except Exception:
+                    sha256 = ""
+
+                if not sha256:
+                    self.send_response(400)
+                    self.send_header("Content-Type", "application/json")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    self.wfile.write(json.dumps({"error": "Missing sha256 parameter"}).encode("utf-8"))
+                    return
+
+                if not settings.virustotal_api_key:
+                    self.send_response(400)
+                    self.send_header("Content-Type", "application/json")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    self.wfile.write(json.dumps({
+                        "error": "VT_API_KEY is not configured in .env. Please set VT_API_KEY in .env to enable live reanalysis."
+                    }).encode("utf-8"))
+                    return
+
+                console.print(f"[cyan]Dashboard: Reanalyzing VirusTotal score for {sha256[:12]}...[/cyan]")
+                enricher = VirusTotalEnricher(
+                    api_key=settings.virustotal_api_key,
+                    rate_limit_seconds=settings.virustotal_config.get("rate_limit_seconds", 15.0),
+                )
+                vt_data = enricher.lookup_hash(sha256)
+
+                if vt_data.get("vt_status") == "success":
+                    current_hits = reporter.load_hits()
+                    updated = False
+                    for h in current_hits:
+                        if h.get("sample_sha256") == sha256:
+                            h["vt_enrichment"] = vt_data
+                            updated = True
+
+                    if updated:
+                        with open(settings.hits_file, "w", encoding="utf-8") as f:
+                            json.dump(current_hits, f, indent=2)
+                        current_stats = reporter.load_stats()
+                        reporter.generate_dashboard_data(current_stats, current_hits)
+                        reporter.generate_dashboard_preview(current_stats, current_hits)
+                        reporter.generate_markdown_report(current_stats, current_hits, [])
+
+                    console.print(f"[bold green]Updated score: {vt_data.get('detection_ratio')} | Label: {vt_data.get('suggested_threat_label')}[/bold green]")
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    self.wfile.write(json.dumps({
+                        "status": "success",
+                        "detection_ratio": vt_data.get("detection_ratio"),
+                        "suggested_threat_label": vt_data.get("suggested_threat_label"),
+                        "vt_enrichment": vt_data,
+                    }).encode("utf-8"))
+                else:
+                    console.print(f"[bold red]VT lookup returned: {vt_data.get('vt_status')} - {vt_data.get('reason')}[/bold red]")
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    self.wfile.write(json.dumps({
+                        "status": vt_data.get("vt_status"),
+                        "error": vt_data.get("reason", "VirusTotal lookup failed"),
+                        "vt_enrichment": vt_data,
+                    }).encode("utf-8"))
+            else:
+                super().do_POST()
+
+        def do_OPTIONS(self):
+            self.send_response(200)
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Access-Control-Allow-Methods", "POST, GET, OPTIONS")
+            self.send_header("Access-Control-Allow-Headers", "Content-Type")
+            self.end_headers()
+
+    handler = DashboardHandler
 
     class SilentServer(socketserver.TCPServer):
         allow_reuse_address = True
