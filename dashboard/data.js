@@ -11491,7 +11491,38 @@ window.YARAFY_DATA = {
       "sample_name": "zoom.dmg",
       "sample_size_bytes": 2027286,
       "source_feed": "Local File",
-      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+      "detected_at": "2026-10-19T02:32:11.677388+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 20,
+        "total_engines": 58,
+        "detection_ratio": "20/58",
+        "suggested_threat_label": "trojan.multiverze/abtrojan",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "Zoom.dmg"
+        ],
+        "type_description": "Macintosh Disk Image",
+        "tags": [
+          "self-signed",
+          "password-dialog",
+          "dmg",
+          "self-delete"
+        ],
+        "reputation": -1,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "UDS:Trojan-PSW.OSX.Agent.gen",
+          "Sophos": "OSX/CldSync-A",
+          "ESET-NOD32": "OSX/PSW.Agent.KO trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/faf2eea05f3c9f1c4ef8f6be339f5459a38f95cfd9d512bc24e2803230e5c7bf"
+      }
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_DMG",
@@ -11546,7 +11577,38 @@ window.YARAFY_DATA = {
       "sample_name": "zoom.dmg",
       "sample_size_bytes": 2027286,
       "source_feed": "Local File",
-      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+      "detected_at": "2026-10-19T02:32:11.677388+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 20,
+        "total_engines": 58,
+        "detection_ratio": "20/58",
+        "suggested_threat_label": "trojan.multiverze/abtrojan",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          }
+        ],
+        "names": [
+          "Zoom.dmg"
+        ],
+        "type_description": "Macintosh Disk Image",
+        "tags": [
+          "self-signed",
+          "password-dialog",
+          "dmg",
+          "self-delete"
+        ],
+        "reputation": -1,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "UDS:Trojan-PSW.OSX.Agent.gen",
+          "Sophos": "OSX/CldSync-A",
+          "ESET-NOD32": "OSX/PSW.Agent.KO trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/faf2eea05f3c9f1c4ef8f6be339f5459a38f95cfd9d512bc24e2803230e5c7bf"
+      }
     },
     {
       "rule_name": "Macho_hVNCRat_generic",
