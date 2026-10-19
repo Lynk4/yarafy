@@ -396,22 +396,30 @@ def cmd_refresh_vt(args: argparse.Namespace) -> int:
 
     mode = getattr(args, "mode", "zero-only") or "zero-only"
     limit = getattr(args, "limit", 20) or 20
+    target_sha = (getattr(args, "sha256", None) or "").strip().lower()
 
     candidates = []
-    for idx, hit in enumerate(hits):
-        vt_info = hit.get("vt_enrichment", {})
-        positives = vt_info.get("positives", 0)
-        vt_status = vt_info.get("vt_status")
+    if target_sha:
+        candidates = [(idx, hit) for idx, hit in enumerate(hits) if hit.get("sample_sha256", "").lower() == target_sha]
+        if not candidates:
+            console.print(f"[bold red]Sample with SHA256 '{target_sha}' not found in telemetry/hits.json.[/bold red]")
+            return 1
+        console.print(f"[*] Targeting specific sample: [bold cyan]{target_sha}[/bold cyan]")
+    else:
+        for idx, hit in enumerate(hits):
+            vt_info = hit.get("vt_enrichment", {})
+            positives = vt_info.get("positives", 0)
+            vt_status = vt_info.get("vt_status")
 
-        if mode == "all":
-            candidates.append((idx, hit))
-        elif mode == "zero-only":
-            if positives == 0 or vt_status != "success":
+            if mode == "all":
                 candidates.append((idx, hit))
+            elif mode == "zero-only":
+                if positives == 0 or vt_status != "success":
+                    candidates.append((idx, hit))
 
-        # Only enforce limit for zero-only mode; 'all' refreshes every hit
-        if mode != "all" and len(candidates) >= limit:
-            break
+            # Only enforce limit for zero-only mode; 'all' refreshes every hit
+            if mode != "all" and len(candidates) >= limit:
+                break
 
     if not candidates:
         console.print(f"[green]No hits require refreshing under mode '{mode}'. Everything is up to date![/green]")
@@ -519,6 +527,7 @@ def main():
 
     # Refresh VT scores
     refresh_parser = subparsers.add_parser("refresh-vt", help="Refresh historical VirusTotal detection scores for past hits")
+    refresh_parser.add_argument("--sha256", type=str, default=None, help="Target specific sample SHA256 to refresh instead of a batch")
     refresh_parser.add_argument("--mode", type=str, default="zero-only", choices=["zero-only", "all"], help="Refresh mode: zero-only (default) or all")
     refresh_parser.add_argument("--limit", type=int, default=20, help="Max number of past hits to re-query (default: 20)")
 

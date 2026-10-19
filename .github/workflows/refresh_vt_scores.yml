@@ -3,6 +3,11 @@ name: "Refresh VirusTotal Scores"
 on:
   workflow_dispatch:
     inputs:
+      sha256:
+        description: "Target specific sample SHA256 (leave empty for batch mode)"
+        required: false
+        default: ""
+        type: string
       mode:
         description: "Refresh Mode (zero-only: samples with 0 score, or all: all past hits)"
         required: true
@@ -45,7 +50,11 @@ jobs:
         env:
           VT_API_KEY: ${{ secrets.VT_API_KEY }}
         run: |
-          python -m src.main refresh-vt --mode "${{ github.event.inputs.mode }}" --limit ${{ github.event.inputs.limit }}
+          if [ -n "${{ github.event.inputs.sha256 }}" ]; then
+            python -m src.main refresh-vt --sha256 "${{ github.event.inputs.sha256 }}"
+          else
+            python -m src.main refresh-vt --mode "${{ github.event.inputs.mode }}" --limit ${{ github.event.inputs.limit }}
+          fi
 
       - name: "Commit and Push Updated Telemetry"
         run: |

@@ -1377,6 +1377,11 @@ Source: ${hit.source_feed || 'N/A'}
       const isLocalServer = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
       if (!isLocalServer) {
+        const savedToken = localStorage.getItem('yarafy_github_pat');
+        if (savedToken) {
+          dispatchGitHubActionForSample(sha256, savedToken, btn);
+          return;
+        }
         openStaticReanalyzeModal(sha256);
         return;
       }
@@ -1424,41 +1429,100 @@ Source: ${hit.source_feed || 'N/A'}
       }
     }
 
+    async function dispatchGitHubActionForSample(sha256, token, btn) {
+      if (btn) btn.classList.add('spinning');
+      showToast(`Triggering single-sample refresh on GitHub for ${sha256.slice(0, 12)}...`, 'info');
+
+      try {
+        const res = await fetch('https://api.github.com/repos/Lynk4/yarafy/actions/workflows/refresh_vt_scores.yml/dispatches', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/vnd.github+json',
+            'Authorization': `Bearer ${token}`
+          },
+          body: JSON.stringify({
+            ref: 'main',
+            inputs: {
+              sha256: sha256
+            }
+          })
+        });
+
+        if (btn) btn.classList.remove('spinning');
+
+        if (res.status === 204) {
+          showToast(`Workflow dispatched for sample ${sha256.slice(0, 12)}! It will update this sample's score on GitHub Pages in ~40s.`, 'success');
+          closeStaticReanalyzeModalDirect();
+        } else {
+          const err = await res.json().catch(() => ({}));
+          showToast(`GitHub Action dispatch failed (${res.status}): ${err.message || 'Check your token permissions'}`, 'error');
+          if (res.status === 401 || res.status === 403) {
+            localStorage.removeItem('yarafy_github_pat');
+          }
+        }
+      } catch (e) {
+        if (btn) btn.classList.remove('spinning');
+        showToast(`Request failed: ${e.message}`, 'error');
+      }
+    }
+
+    function savePatAndDispatch(sha256) {
+      const input = document.getElementById('pat-input');
+      const token = (input?.value || '').trim();
+      if (!token) {
+        showToast('Please enter a GitHub Personal Access Token.', 'error');
+        return;
+      }
+      localStorage.setItem('yarafy_github_pat', token);
+      dispatchGitHubActionForSample(sha256, token, null);
+    }
+
+    function copyShaAndOpenWorkflow(sha256) {
+      navigator.clipboard.writeText(sha256).then(() => {
+        showToast(`Copied SHA256 ${sha256.slice(0, 12)}... to clipboard!`, 'success');
+        window.open('https://github.com/Lynk4/yarafy/actions/workflows/refresh_vt_scores.yml', '_blank');
+      });
+    }
+
     function openStaticReanalyzeModal(sha256) {
       const modal = document.getElementById('static-reanalyze-modal');
       const body = document.getElementById('static-reanalyze-body');
       if (!modal || !body) return;
 
       const vtUrl = `https://www.virustotal.com/gui/file/${sha256}`;
-      const wfUrl = `https://github.com/Lynk4/yarafy/actions/workflows/refresh_vt_scores.yml`;
+      const savedToken = localStorage.getItem('yarafy_github_pat') || '';
 
       body.innerHTML = `
-        <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
-          This dashboard is hosted statically on GitHub Pages. To reanalyze or refresh the VirusTotal detection score for sample <code style="color: var(--accent-cyan);">${sha256.slice(0, 16)}...</code>, choose one of the options:
+        <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+          Update the VirusTotal detection score specifically for sample <code style="color: var(--accent-cyan); font-weight: 600;">${sha256.slice(0, 16)}...</code>:
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 12px;">
           <div style="background: #0b0f19; border: 1px solid var(--card-border); padding: 14px; border-radius: 6px;">
-            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">Option 1: Reanalyze on VirusTotal GUI</div>
+            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">1-Click Refresh from Browser (GitHub Token)</div>
             <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
-              Opens the VirusTotal report directly. Click VirusTotal's native <strong>"Reanalyze"</strong> button to command all 70+ AV engines to rescan the binary now.
+              Enter your GitHub Personal Access Token once (with <code>repo</code> or <code>workflow</code> permission). Future reload clicks will refresh this sample automatically in the background.
             </div>
-            <a href="${vtUrl}" target="_blank" class="btn btn-primary" style="display: inline-block; text-decoration: none;">Open on VirusTotal &rarr;</a>
+            <div style="display: flex; gap: 8px;">
+              <input type="password" id="pat-input" class="search-input" style="flex: 1;" placeholder="ghp_xxxxxxxxxxxx" value="${savedToken}">
+              <button class="btn btn-primary" onclick="savePatAndDispatch('${sha256}')">Refresh Sample</button>
+            </div>
           </div>
 
           <div style="background: #0b0f19; border: 1px solid var(--card-border); padding: 14px; border-radius: 6px;">
-            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">Option 2: Run GitHub Actions Refresh Workflow</div>
+            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">Manual Workflow Run (No Token Required)</div>
             <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
-              Triggers the automated workflow that queries VirusTotal via your repository secret and updates all telemetry and badges on GitHub Pages.
+              Copies this sample's SHA256 to your clipboard and opens the GitHub Actions workflow where you can paste it into the <code>sha256</code> field.
             </div>
-            <a href="${wfUrl}" target="_blank" class="btn" style="display: inline-block; text-decoration: none;">Go to GitHub Actions &rarr;</a>
+            <button class="btn" onclick="copyShaAndOpenWorkflow('${sha256}')">Copy Hash & Open Workflow &rarr;</button>
           </div>
 
           <div style="background: #0b0f19; border: 1px solid var(--card-border); padding: 14px; border-radius: 6px;">
-            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">Option 3: 1-Click Refresh via Local Dashboard Server</div>
-            <div style="font-size: 12px; color: var(--text-muted);">
-              Run <code>./.venv/bin/python -m src.main dashboard</code> in your terminal. Clicking the reload button will immediately update the score in-place.
+            <div style="font-weight: 600; color: #fff; margin-bottom: 4px;">Reanalyze on VirusTotal GUI</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
+              Opens the VirusTotal web report. Click VirusTotal's native <strong>"Reanalyze"</strong> button to command 70+ AV vendors to rescan the binary now.
             </div>
+            <a href="${vtUrl}" target="_blank" class="btn" style="display: inline-block; text-decoration: none;">Open on VirusTotal &rarr;</a>
           </div>
         </div>
       `;
