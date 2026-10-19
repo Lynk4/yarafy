@@ -12033,7 +12033,43 @@ window.YARAFY_DATA = {
       "sample_name": "fa65230781d2d3afc4152f23e3c4c91a91978d67dda2519d6eeb42476d41dc5a",
       "sample_size_bytes": 33936,
       "source_feed": "Local File",
-      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+      "detected_at": "2026-10-19T02:32:11.677388+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 26,
+        "total_engines": 63,
+        "detection_ratio": "26/63",
+        "suggested_threat_label": "trojan.stealer/coins",
+        "popular_threat_category": [
+          {
+            "count": 12,
+            "value": "trojan"
+          },
+          {
+            "count": 3,
+            "value": "downloader"
+          }
+        ],
+        "names": [
+          "localfile~.arm64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "macho",
+          "self-signed",
+          "arm"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Stealer!AMTB",
+          "SentinelOne": "Static AI - Suspicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Coins.b",
+          "Sophos": "OSX/Dldr-XS",
+          "ESET-NOD32": "OSX/PSW.Agent.EK trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/fa65230781d2d3afc4152f23e3c4c91a91978d67dda2519d6eeb42476d41dc5a"
+      }
     }
   ],
   "rules": [

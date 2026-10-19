@@ -37,7 +37,7 @@
 ## Recent Positive Detections
 | Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-10-19 02:32:11 | **Local File** | `MALW_macOS_MacSync_Stealer_Universal` | macos_MALW_macOS_MacSync_Stealer | `fa65230781...` | `N/A` | `N/A` |
+| 2026-10-19 02:32:11 | **Local File** | `MALW_macOS_MacSync_Stealer_Universal` | macos_MALW_macOS_MacSync_Stealer | [`fa65230781...`](https://www.virustotal.com/gui/file/fa65230781d2d3afc4152f23e3c4c91a91978d67dda2519d6eeb42476d41dc5a) | `26/63` | `trojan.stealer/coins` |
 | 2026-10-19 02:32:11 | **Local File** | `OSX_Stealer_AMOS_Generic` | macos | `592d93f589...` | `N/A` | `N/A` |
 | 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_shelldropper` | macos_stealer | `dce578f5af...` | `N/A` | `N/A` |
 | 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_campaign` | macos_stealer | `5681c400f0...` | `N/A` | `N/A` |
