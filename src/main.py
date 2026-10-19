@@ -60,7 +60,7 @@ def cmd_scan_local(args: argparse.Namespace) -> int:
         return 1
 
     scanner.compile()
-    console.print(f"[bold blue]Scanning {target} using [{', '.join(active_platforms)}] rules...[/bold blue]")
+    console.print(f"[bold blue]Scanning {target} using platform rules: [bold cyan]{', '.join(active_platforms)}[/bold cyan]...[/bold blue]")
 
     files_to_scan = [target] if target.is_file() else [p for p in target.rglob("*") if p.is_file()]
     all_hits = []
