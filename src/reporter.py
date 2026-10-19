@@ -397,6 +397,119 @@ class TelemetryReporter:
         except Exception as e:
             print(f"[!] Warning: Failed to generate dashboard_preview.svg: {e}")
 
+    def extract_all_rules(self, all_hits: Optional[List[Dict[str, Any]]] = None) -> List[Dict[str, Any]]:
+        """Parses all YARA rules from yara-rules/ and extracts metadata, source code, and hit counts."""
+        import re
+        try:
+            import yara
+        except ImportError:
+            yara = None
+
+        root_dir = self.hits_file.parent.parent
+        rules_root = root_dir / "yara-rules"
+        if not rules_root.exists():
+            return []
+
+        hits_count_by_rule = {}
+        if all_hits:
+            for h in all_hits:
+                rname = h.get("rule_name")
+                if rname:
+                    hits_count_by_rule[rname] = hits_count_by_rule.get(rname, 0) + 1
+
+        def strip_line_for_braces(line: str) -> str:
+            line = re.sub(r'"(?:\\.|[^"\\])*"', '""', line)
+            line = re.sub(r'/(?:\\.|[^/\\])+/', '//', line)
+            line = re.sub(r'//.*$', '', line)
+            return line
+
+        rule_start_re = re.compile(r'^\s*(?:(?:global|private)\s+)?rule\s+([A-Za-z0-9_]+)')
+        extracted = []
+
+        for yar_path in sorted(rules_root.rglob("*.yar")):
+            try:
+                rel_path = yar_path.relative_to(root_dir)
+                platform = yar_path.parent.name
+                text = yar_path.read_text(encoding="utf-8", errors="ignore")
+
+                meta_by_name = {}
+                if yara:
+                    try:
+                        compiled = yara.compile(filepath=str(yar_path))
+                        for r in compiled:
+                            meta_by_name[r.identifier] = {
+                                "meta": r.meta or {},
+                                "tags": r.tags or [],
+                                "is_global": r.is_global,
+                                "is_private": r.is_private,
+                            }
+                    except Exception:
+                        pass
+
+                rules_code = {}
+                current_rule = None
+                cur_lines = []
+                depth = 0
+
+                for line in text.splitlines(keepends=True):
+                    if not current_rule:
+                        m = rule_start_re.match(line)
+                        if m:
+                            current_rule = m.group(1)
+                            cur_lines = [line]
+                            c = strip_line_for_braces(line)
+                            depth = c.count("{") - c.count("}")
+                            if depth == 0 and "{" in c:
+                                rules_code[current_rule] = "".join(cur_lines).strip()
+                                current_rule = None
+                                cur_lines = []
+                        continue
+
+                    cur_lines.append(line)
+                    c = strip_line_for_braces(line)
+                    depth += c.count("{") - c.count("}")
+                    if depth <= 0:
+                        rules_code[current_rule] = "".join(cur_lines).strip()
+                        current_rule = None
+                        cur_lines = []
+                        depth = 0
+
+                for rule_name, full_code in rules_code.items():
+                    compiled_info = meta_by_name.get(rule_name, {})
+                    meta = dict(compiled_info.get("meta", {}))
+
+                    if not meta:
+                        meta_block = re.search(r'meta:\s*([\s\S]*?)(?:strings:|condition:|\})', full_code)
+                        if meta_block:
+                            for mline in meta_block.group(1).splitlines():
+                                kv = re.search(r'^\s*([a-zA-Z0-9_]+)\s*=\s*(?:"([^"]*)"|(\d+)|([^\s\n]+))', mline)
+                                if kv:
+                                    k = kv.group(1)
+                                    v = kv.group(2) if kv.group(2) is not None else (int(kv.group(3)) if kv.group(3) else kv.group(4))
+                                    meta[k] = v
+
+                    strings_block = re.search(r'strings:\s*([\s\S]*?)condition:', full_code)
+                    strings_count = len(re.findall(r'^\s*\$[a-zA-Z0-9_]*\s*=', strings_block.group(1), re.MULTILINE)) if strings_block else 0
+
+                    extracted.append({
+                        "rule_name": rule_name,
+                        "platform": platform,
+                        "file_path": str(rel_path),
+                        "description": meta.get("description") or "No description provided",
+                        "malware_family": meta.get("malware_family") or meta.get("family") or "Generic",
+                        "author": meta.get("author") or "Unknown",
+                        "date": str(meta.get("date", "N/A")),
+                        "severity": str(meta.get("severity", "Medium")),
+                        "tags": compiled_info.get("tags", []),
+                        "strings_count": strings_count,
+                        "total_hits": hits_count_by_rule.get(rule_name, 0),
+                        "source_code": full_code,
+                    })
+            except Exception as e:
+                print(f"[!] Warning: Failed parsing rule file {yar_path}: {e}")
+
+        return extracted
+
     def generate_dashboard_data(self, stats: Dict[str, Any], all_hits: List[Dict[str, Any]]) -> None:
         """Outputs data.js for zero-CORS browser dashboard viewing."""
         try:
@@ -404,9 +517,13 @@ class TelemetryReporter:
             dashboard_dir = root_dir / "dashboard"
             dashboard_dir.mkdir(parents=True, exist_ok=True)
             
+            all_rules = self.extract_all_rules(all_hits)
+            stats["total_rules"] = len(all_rules)
+
             payload = {
                 "stats": stats,
-                "hits": all_hits
+                "hits": all_hits,
+                "rules": all_rules,
             }
             js_content = f"window.YARAFY_DATA = {json.dumps(payload, indent=2)};\n"
             with open(dashboard_dir / "data.js", "w", encoding="utf-8") as f:

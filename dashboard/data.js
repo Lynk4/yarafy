@@ -24,7 +24,8 @@ window.YARAFY_DATA = {
       "Local File": 3
     },
     "new_hits_this_run": 0,
-    "refreshed_hits_this_run": 51
+    "refreshed_hits_this_run": 51,
+    "total_rules": 12
   },
   "hits": [
     {
@@ -11347,6 +11348,176 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
       "last_seen_at": "2026-10-18T21:37:36.645968+00:00"
+    }
+  ],
+  "rules": [
+    {
+      "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/MALW_macOS_MacSync_Stealer.yar",
+      "description": "Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)",
+      "malware_family": "MacSync",
+      "author": "Unknown",
+      "date": "2026-08-31",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 17,
+      "total_hits": 6,
+      "source_code": "rule MALW_macOS_MacSync_Stealer_Universal {\n    meta:\n        description = \"Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)\"\n        date = \"2026-08-31\"\n        family = \"MacSync\"\n        threat_type = \"Infostealer / Stager / Exfiltrator\"\n        platform = \"macOS (x86_64 & ARM64)\"\n\n    strings:\n        // XOR Modifier: Scans all 256 keys: 0x00 - 0xFF across Intel & ARM)\n        $xor_httpcode   = \"/tmp/.httpcode\" xor\n        $xor_archive    = \"/tmp/osalogging.zip\" xor\n        $xor_osascript  = \"osascript\" xor\n        $xor_curl       = \"curl -k -s\" xor\n        $xor_dd_slice   = \"dd if=\" xor\n        $xor_chunk_fmt  = \"chunk_index=\" xor\n        $xor_dynamic    = \"/dynamic?txd=\" xor\n        $xor_gate       = \"/gate?buildtxd=\" xor\n        $xor_agent      = \"CFNetwork/Darwin\" xor\n\n        // Unencrypted Format String Tokens & Compiler Artifacts\n        $fmt_sess_id    = \"%ld-%08x\" ascii wide\n        $str_obf_class  = \"ObfuscatedString\" ascii\n\n        // Multi-Architecture C++ Decryption Engine Machine Code\n        // x86_64: movsx eax, byte [reg+reg] ; xor eax, <KEY> ; mov byte [reg+reg], dl/al\n        $op_xor_x86_64  = { 0F BE ?? ?? 35 ?? 00 00 00 88 }\n\n        // POSIX Daemonization & Stream Manipulation System Imports (Identical across dyld on Intel & ARM64)\n        $imp_freopen    = \"_freopen\" ascii\n        $imp_setsid     = \"_setsid\" ascii\n        $imp_stat       = \"_stat$INODE64\" ascii\n        $imp_system     = \"_system\" ascii\n        $imp_fork       = \"_fork\" ascii\n\n    condition:\n        // Mach-O Magic Checks: Thin 64-bit/32-bit (Intel & ARM64) OR Universal Fat Binaries (FAT_MAGIC 0xCAFEBABE / FAT_MAGIC_64 0xCAFEBABF)\n        (\n            uint32(0) == 0xFEEDFACF or uint32(0) == 0xCFFAEDFE or  // Thin Mach-O 64-bit (x86_64 & ARM64)\n            uint32(0) == 0xFEEDFACE or uint32(0) == 0xCEFAEDFE or  // Thin Mach-O 32-bit (Legacy x86/ARM)\n            uint32(0) == 0xCAFEBABE or uint32(0) == 0xBEBAFECA or  // Universal Fat Binary (32-bit offsets)\n            uint32(0) == 0xCAFEBABF or uint32(0) == 0xBFBAFECA     // Universal Fat Binary 64-bit\n        ) and\n        filesize < 15MB and\n        (\n            // Primary Detection: Matches any 3 core behavioral strings regardless of XOR key (0x00-0xFF on Intel & ARM)\n            (3 of ($xor_*)) or\n\n            // Stripped Variant Detection: XOR loop opcodes + daemonization API imports\n            ($op_xor_x86_64 and $imp_freopen and ($imp_setsid or $imp_fork or $imp_stat)) or\n\n            // Universal Pipeline Detection: osascript pipe / dd slice + dyld execution APIs (Intel & ARM64)\n            (2 of ($xor_osascript, $xor_dd_slice, $xor_curl, $xor_gate) and $imp_system and ($imp_freopen or $imp_stat)) or\n\n            // Unstripped Variant Detection: ObfuscatedString class template + any single behavioral token\n            ($str_obf_class and (1 of ($xor_*) or $fmt_sess_id))\n        )\n}"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/OSX_Stealer_AMOS_Generic.yar",
+      "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+      "malware_family": "Atomic Stealer / AMOS",
+      "author": "Unknown",
+      "date": "2026-08-20",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 19,
+      "total_hits": 37,
+      "source_code": "rule OSX_Stealer_AMOS_Generic {\n    meta:\n        description = \"Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants\"\n        date = \"2026-08-20\"\n        sample = \"5277bb0dd553d54d81dbd8a12d4634f9\"\n        malware_family = \"Atomic Stealer / AMOS\"\n        os = \"macos\"\n        silent = 1\n\n    strings:\n        // Layer 1: C++ Symbols for serialized build config\n        $sym_1 = \"build_info_t\" ascii\n        $sym_2 = \"serialized_build_info_t\" ascii\n        $sym_3 = \"_g_serialized_build_info\" ascii\n\n        // Layer 2: AMOS Persistence & Artifact Names\n        $persist_1 = \"com.hlpr.agent\" ascii\n        $persist_2 = \".hlpr\" ascii\n        $persist_3 = \".agnt\" ascii\n\n        // Layer 3: AMOS C2 Endpoints and Upload Form Fields\n        $c2_api_1 = \"/api/reports/upload\" ascii\n        $c2_api_2 = \"/api/download/app-bundle\" ascii\n        $c2_api_3 = \"/api/agent/download\" ascii\n        $c2_field_1 = \"report_file=@\" ascii\n        $c2_field_2 = \"build_tag=\" ascii\n\n        // Layer 4: Characteristic AMOS Command Lines & TTP Sequences\n        $cmd_1 = \"SPSoftwareDataType SPHardwareDataType SPDisplaysDataType\" ascii\n        $cmd_2 = \"ditto -c -k --sequesterRsrc\" ascii\n        $cmd_3 = \"security find-generic-password\" ascii\n        $cmd_4 = \"dscl . -authonly\" ascii\n        $cmd_5 = \"com.apple.notificationcenterui doNotDisturb\" ascii\n\n        // Layer 5: Bytecode Signatures (ARM64)\n        // Rolling-ROR Decryption Loop: bfxil, ldrb, add, ldrb, eor, strb, ror x9, x9, #1\n        $op_arm64_dec = { 4b 09 40 b3 6b 01 40 39 [2-6] 8d 41 40 39 ab 01 0b 4a 8b 41 00 39 29 05 c9 93 }\n\n        // Stack-string 32-byte XOR key loader sequences:\n        // mov wX, #0x5b22 ; movk wX, #0xf39f, lsl #16 (0xf39f5b22)\n        $op_key_load_1 = { 4? 64 8b 52 e? 73 be 72 }\n        // mov wX, #0x60cd ; movk wX, #0x5929, lsl #16 (0x592960cd)\n        $op_key_load_2 = { a? 19 8c 52 2? 25 ab 72 }\n\n    condition:\n        // Mach-O 64-bit, 32-bit, or Universal/FAT binary headers\n        (uint32(0) == 0xfeedfacf or uint32(0) == 0xfeedface or \n         uint32(0) == 0xbebafeca or uint32(0) == 0xcafebabe) and (\n            //Symbol indicators + at least one behavioral artifact\n            (2 of ($sym_*) and (1 of ($c2_*) or 1 of ($cmd_*) or 1 of ($persist_*) or $op_arm64_dec or 1 of ($op_key_load_*))) or\n            \n            // C2 endpoints + Recon / Persistence commands / Form fields\n            (1 of ($c2_api_*) and (1 of ($cmd_*) or 1 of ($persist_*) or 1 of ($c2_field_*))) or\n            \n            // Decryption loop + any AMOS artifact / symbol / key loader\n            ($op_arm64_dec and (1 of ($sym_*) or 1 of ($c2_*) or 1 of ($cmd_*) or 1 of ($persist_*) or 1 of ($op_key_load_*))) or\n            \n            // High density of stack string key loader opcodes (for stripped/packed variants)\n            (#op_key_load_1 > 3 and #op_key_load_2 > 3) or\n            \n            // High density of characteristic TTP commands\n            (3 of ($cmd_*) and 2 of ($persist_*))\n        )\n}"
+    },
+    {
+      "rule_name": "Macho_Trojan_CloudSync_Generic",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/cloud_sync.yar",
+      "description": "Generic detection for CloudSync ",
+      "malware_family": "CloudSync",
+      "author": "Unknown",
+      "date": "2026-10-06",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 21,
+      "total_hits": 3,
+      "source_code": "rule Macho_Trojan_CloudSync_Generic {\n    meta:\n        description = \"Generic detection for CloudSync \"\n        date = \"2026-10-06\"\n        family = \"CloudSync\"\n        platform = \"macOS\"\n\n    strings:\n\n        // Invariant 32-byte substitution table (resides in __TEXT,__const, survives full symbol stripping)\n        $sobf_sbox = { d7 19 bf 57 e6 5b a0 9d e1 ba cd b1 82 c9 91 18 ed af d5 18 fd 3a 4a 97 97 bc ad 22 1a db 81 51 }\n\n        // x86_64 machine code sequence for sobf::reveal (imull $-0x7d, %r12d, %eax; andl $0x1f, %r12d)\n        $sobf_code_x86 = { 41 6b c4 83 41 83 e4 1f }\n\n        // ARM64 machine code sequence for sobf::reveal (mov w9, #0x83; mul x9, x22, x9; and x11, x22, #0x1f)\n        $sobf_code_arm = { 69 10 80 52 c9 7e 09 9b cb 12 40 92 }\n\n\n        $ns1 = \"cloudsync_impl\" ascii\n        $ns2 = \"CSURLInsecureDelegate\" ascii\n        $ns3 = \"_ct_APP_PROCESS_DISGUISE_NAME\" ascii\n        $ns4 = \"_ct_APP_INSTALL_DIR\" ascii\n        $ns5 = \"_ct_APP_OPS_URL\" ascii\n        $ns6 = \"_ct_APP_AUTH_JSON_NAME\" ascii\n        $ns7 = \"_ct_APP_PACKAGE_DAEMON_BIN\" ascii\n        $ns8 = \"_ct_APP_TMP_SPAWN_S_PREFIX\" ascii\n        $ns9 = \"cloudsyncd\" ascii\n\n        $ui1 = \"AuthDialog\" ascii\n        $ui2 = \"showPasswordDialog\" ascii\n        $ui3 = \"renderCompositeAuthIcon\" ascii\n        $ui4 = \"ModernStatusWindow\" ascii\n        $ui5 = \"AlertButtonHandler\" ascii\n\n        // -------------------------------------------------------------------------\n        // 4. Stage 2 Backdoor Crypto & TLS Evasion Artifacts\n        // -------------------------------------------------------------------------\n        $c1 = \"chacha20poly1305\" ascii\n        $c2 = \"chacha20_stream\" ascii\n        $c3 = \"SecTrustSetExceptions\" ascii\n        $c4 = \"SecTrustCopyExceptions\" ascii\n\n    condition:\n        // Mach-O Magic Header: 64-bit, 32-bit, Universal/Fat binary (Little/Big Endian)\n        (\n            uint32(0) == 0xfeedfacf or \n            uint32(0) == 0xcafebabe or \n            uint32(0) == 0xbebafeca or \n            uint32(0) == 0xfeedface or \n            uint32(0) == 0xcffaedfe\n        ) and\n        filesize < 25MB and\n        (\n            // High-entropy compile-time obfuscator signatures (matches stripped & unstripped variants)\n            $sobf_sbox or\n            $sobf_code_x86 or\n            $sobf_code_arm or\n\n            // Symbol-based detection requiring 3+ specific internal namespace markers\n            (3 of ($ns*)) or\n\n            // Phishing dropper detection: fake password dialog combined with namespace/malware strings\n            (2 of ($ui*) and (1 of ($ns*) or $c3)) or\n\n            // Backdoor C2 delegate detection: custom insecure delegate combined with trust override & crypto\n            ($ns2 and ($c3 or $c4) and (1 of ($c1, $c2) or 1 of ($ns*)))\n        )\n}"
+    },
+    {
+      "rule_name": "Macho_Trojan_CloudSync_DMG",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/cloud_sync.yar",
+      "description": "Detects CloudSync trojanized DMG disk image containers",
+      "malware_family": "CloudSync",
+      "author": "Unknown",
+      "date": "2026-10-06",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 6,
+      "total_hits": 0,
+      "source_code": "rule Macho_Trojan_CloudSync_DMG {\n    meta:\n        description = \"Detects CloudSync trojanized DMG disk image containers\"\n        date = \"2026-10-06\"\n        family = \"CloudSync\"\n        platform = \"macOS\"\n\n    strings:\n        $koly = \"koly\"\n        $xml = \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\" ascii\n        $plist = \"<!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\"\" ascii\n        $part = \"whole disk (unknown partition : 0)\" ascii\n        $mish_hdr = \"bWlzaAAAAAEAAAAAAAAAAAAAAAAAANg\" ascii\n        $crc_part = \"PbEzG\" ascii // Base64 encoding of partition CRC 0x3DB13318\n\n    condition:\n        $koly at (filesize - 512) and\n        filesize > 1MB and filesize < 100MB and\n        $xml in (filesize-100000..filesize) and\n        $plist in (filesize-100000..filesize) and\n        $part and\n        ($mish_hdr or $crc_part)\n}"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/macOS_ClickFix_AppleScript.yar",
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "malware_family": "Generic",
+      "author": "Unknown",
+      "date": "2026-08-31",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 16,
+      "total_hits": 59,
+      "source_code": "rule macOS_ClickFix_AppleScript_Dropper {\n    meta:\n        description    = \"Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader\"\n        date           = \"2026-08-31\"\n        sample_sha256  = \"05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72\"\n        threat_type    = \"Dropper / Infostealer Loader\"\n        platform       = \"macOS\"\n        confidence     = \"High\"\n\n    strings:\n        // Mach-O Magic Header Identification\n        $macho_fat_be  = { CA FE BA BE }\n        $macho_fat_le  = { BE BA FE CA }\n        $macho_64_be   = { FE ED FA CF }\n        $macho_64_le   = { CF FA ED FE }\n\n        // S-Box / Key Table (256-byte static table header)\n        $sbox = {\n            BE 85 31 24 C3 7D 0C 55 74 5D BE 72 FE B1 DE 80\n            A7 06 DC 9B 74 F1 9B C1 C1 69 9B E4 86 47 BE EF\n        }\n\n        // PBKDF2 / Key Derivation Salt (32 bytes)\n        $pbkdf2_salt = {\n            B1 CD FF 97 CC 3E B0 8F 2B 4A 53 89 4E CD 52 15\n            1A E5 AD 86 89 EA 99 45 06 F9 70 26 F0 34 6A BE\n        }\n\n        // HKDF Salt Constant\n        $hkdf_salt = {\n            85 CD 9E 60 B3 7D E0 B7 33 F7 36 D0 66 DC 49 1A\n            54 94 A7 E8 63 1F 03 24 BF 3E 08 2F CC D5 06 5D\n        }\n\n        // Hardcoded SHA-256 verification hashes for decrypted payloads\n        $payload_hash1 = {\n            9E 0B 82 E1 6D 94 C4 8F BF C7 12 00 4D B9 95 BE\n            A8 23 E8 97 7A C7 A9 4C D7 C3 A4 F2 FE 08 05 07\n        }\n        $payload_hash2 = {\n            7D B4 3F F8 79 96 2B 55 70 44 2C 2A E5 D2 1F D4\n            F6 D8 7D C0 CF DD E7 28 94 39 B4 71 8B 2B EE B9\n        }\n\n        // Multi-chunk encrypted payload length table (0x3ef6, 0x410f, 0x3ba4, 0x40f4, 0x3f79)\n        $chunk_lengths = {\n            F6 3E 00 00 00 00 00 00 0F 41 00 00 00 00 00 00\n            A4 3B 00 00 00 00 00 00 F4 40 00 00 00 00 00 00\n            79 3F 00 00 00 00 00 00\n        }\n\n        // Obfuscated XOR (0x1D) Anti-Analysis / VM Artifact Strings\n        $xor_hw_model   = \"uj3pryxq\"                // \"hw.model\" ^ 0x1d\n        $xor_model_id   = \"Pryxq=Tyxsit{txo\\x27=\"   // \"Model Identifier: \" ^ 0x1d\n        $xor_cpu_brand  = \"syBniotszvxos3urnihhty9\" // \"machdep.cpu.brand_string\" ^ 0x1d\n        $xor_vm_uuid    = \"zf4dtjrdmf\"              // VM UUID prefix ^ 0x1d\n\n        // Dropper Build / Component Identifier\n        $setup_id = \"setup-d192a316d9094048ce8251c66418fa61a3f2d45c\"\n\n        // ChaCha20 constant\n        $chacha20_const = \"expand 32-byte k\"\n\n    condition:\n        // Ensure valid Mach-O file format and size bounds\n        ($macho_fat_be at 0 or $macho_fat_le at 0 or $macho_64_be at 0 or $macho_64_le at 0) and\n        filesize < 2MB and\n        (\n            $sbox or\n            $setup_id or\n            $chunk_lengths or\n            ($pbkdf2_salt and ($payload_hash1 or $payload_hash2)) or\n            2 of ($xor_hw_model, $xor_model_id, $xor_cpu_brand, $xor_vm_uuid) or\n            ($chacha20_const and ($pbkdf2_salt or $hkdf_salt or $payload_hash1 or $payload_hash2))\n        )\n}"
+    },
+    {
+      "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/rust_bucket.yar",
+      "description": "Broad hunting rule for macOS RustBucket/Lazarus loaders and drop-and-execute variants",
+      "malware_family": "RustBucket",
+      "author": "Unknown",
+      "date": "2026-09-18",
+      "severity": "High",
+      "tags": [],
+      "strings_count": 12,
+      "total_hits": 3,
+      "source_code": "rule APT_macOS_RustBucket_Behavioral_Indicators {\n    meta:\n        description = \"Broad hunting rule for macOS RustBucket/Lazarus loaders and drop-and-execute variants\"\n        date = \"2026-09-18\"\n        severity = \"High\"\n        malware_family = \"RustBucket\"\n\n    strings:\n        // C2 User-Agent anomaly (Legacy IE on macOS)\n        $ua_anom_01 = \"msie 8.0; windows nt 5.1\" ascii nocase\n        $ua_anom_02 = \"trident/4.0\" ascii nocase\n\n        // Subprocess spawning via Cocoa NSTask APIs\n        $task_sel_01 = \"setLaunchPath:\" ascii\n        $task_sel_02 = \"launchAndReturnError:\" ascii\n        $task_sel_03 = \"setArguments:\" ascii\n\n        // File-handling & staging indicators\n        $file_01 = \"temporaryDirectory\" ascii\n        $file_02 = \"defaultManager\" ascii\n        $file_03 = \"appendingPathComponent\" ascii\n\n        // Anti-forensic wiping primitives\n        $wipe_01 = \"swift_stdlib_random\" ascii\n        $wipe_02 = \"_unlink\" ascii\n\n        // Swift-specific execution scaffolding\n        $swift_cmd = \"CommandLine\" ascii\n        $swift_sem = \"OS_dispatch_semaphore\" ascii\n\n    condition:\n        // Mach-O Magic Numbers: 64-bit LE/BE or FAT Universal\n        (\n            uint32(0) == 0xfeedfacf or \n            uint32(0) == 0xcffaedfe or \n            uint32(0) == 0xbebafeca\n        )\n        and\n        (\n            // Direct hit: Any variation of the legacy MSIE 8.0 User-Agent inside a macOS Mach-O\n            1 of ($ua_anom_*) or\n\n            // Behavioral composition: Temp path resolution + Process spawning + Anti-forensics\n            (\n                2 of ($task_sel_*) and\n                2 of ($file_*) and\n                1 of ($wipe_*) and\n                all of ($swift_*)\n            )\n        )\n}"
+    },
+    {
+      "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealer.yar",
+      "description": "Generic detection for Foxveil macOS Loader (AMOS / Atomic macOS Stealer Stage 4) utilizing PBKDF2 key stretching, ChaCha20-Poly1305 payload encryption, LCG stack-string decryption, and memory zeroing wipers",
+      "malware_family": "Foxveil / AMOS (Atomic macOS Stealer)",
+      "author": "Unknown",
+      "date": "2026-09-16",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 14,
+      "total_hits": 17,
+      "source_code": "rule OSX_Foxveil_AMOS_Stage4_Generic {\n    meta:\n        description = \"Generic detection for Foxveil macOS Loader (AMOS / Atomic macOS Stealer Stage 4) utilizing PBKDF2 key stretching, ChaCha20-Poly1305 payload encryption, LCG stack-string decryption, and memory zeroing wipers\"\n        date = \"2026-09-16\"\n        reference = \"https://bazaar.abuse.ch/sample/841f0ccf4e6e782476a0844cc861f7f44d7f321bc232444ef5f306fdba8944eb/\"\n        malware_family = \"Foxveil / AMOS (Atomic macOS Stealer)\"\n        threat_type = \"Dropper / Loader / InfoStealer\"\n\n    strings:\n        // Generic ad-hoc signing identifier pattern for disguised fake setups/installers/helpers\n        $id_pattern = /(setup|install|installer|update|helper|patch|cleaner|daemon|task|agent|app)-[0-9a-f]{16,64}/ ascii nocase\n\n        // Constructor table reconstruction in __mod_init_func (x86_64)\n        $mod_init_x86 = { 8B ?? ?? 03 ?? ?? 89 ?? ?? 48 83 C0 04 48 ( 3D ?? ?? 00 00 | 83 F8 ?? ) 75 }\n\n        // Constructor table reconstruction in __mod_init_func (arm64)\n        $mod_init_arm64 = { ?? ?? 68 B8 ?? ?? 68 B8 ?? ?? 0? 0B ?? ?? 28 B8 08 11 00 91 1F ?? ?? F1 ?? ?? ?? 54 }\n\n        // Dynamic API resolution call: dlsym(RTLD_DEFAULT, str) in x86_64 (movq $-2, %rdi; callq _dlsym)\n        $dlsym_call_x86 = { 48 C7 C7 FE FF FF FF E8 ?? ?? 00 00 }\n\n        // Dynamic API resolution call: dlsym(RTLD_DEFAULT, str) in arm64 (mov x0, #-2; bl _dlsym)\n        $dlsym_call_arm64 = { 20 00 80 92 ?? ?? 00 94 }\n\n        // Linear Congruential Generator (LCG) PRNG constants for string decryption (A = 1103515245, C = 12345) in x86_64\n        $lcg_consts_x86 = { 6D 4E C6 41 [0-16] 39 30 00 00 }\n\n        // LCG instruction step in arm64: madd w8, w9, w8, w10 (occurs 200+ times)\n        $lcg_madd_arm64 = { 28 29 08 1B }\n\n        // LCG increment constant load in arm64: mov w9, #12345 (occurs 15+ times)\n        $lcg_const_arm64 = { 29 07 86 52 }\n\n        // Stack zeroing memory wiper loop after dynamic API resolution (x86_64)\n        $wiper_loop_x86 = { C6 84 ?? ?? ?? FF FF 00 48 FF (C0 | C8) [0-4] 75 }\n\n        // PBKDF2 vector XOR accumulation loop (x86_64)\n        $pbkdf2_accum_x86 = { 66 0F 6F 84 05 ?? ?? FF FF 66 0F EF 84 05 ?? ?? FF FF 66 0F 7F 84 05 ?? ?? FF FF 48 83 C0 10 48 83 F8 20 75 }\n\n        // High-iteration PBKDF2 key stretching loop bound check (x86_64: 65k to 131k iterations)\n        $key_stretch_x86 = { 41 81 FE ?? ?? 01 00 0F 85 }\n\n        // HMAC vector constant initialization on arm64 (ipad = 0x36 / 54, opad = 0x5c / 92)\n        $hmac_consts_arm64 = { C0 E6 01 4F [0-8] 81 E7 02 4F }\n\n        // Characteristic minimal dynamic symbol imports\n        $sym_dlsym = \"_dlsym\" ascii\n        $sym_chkstk = \"____chkstk_darwin\" ascii\n\n    condition:\n        // Mach-O binary format validation (Fat universal or standalone Mach-O 32/64)\n        (uint32(0) == 0xbebafeca or uint32(0) == 0xcafebabe or\n         uint32(0) == 0xfeedfacf or uint32(0) == 0xcffaedfe)\n        and filesize < 20MB\n        and (\n            // Condition 1: Fake installer identifier combined with any Foxveil loader engine artifact\n            ($id_pattern and 1 of ($mod_init_*, $lcg_*, $wiper_*, $pbkdf2_*, $hmac_*)) or\n\n            // Condition 2: Generic x86_64 Foxveil loader characteristics\n            (\n                $mod_init_x86 and\n                ($lcg_consts_x86 or $pbkdf2_accum_x86 or $key_stretch_x86) and\n                #wiper_loop_x86 >= 3 and\n                #dlsym_call_x86 >= 5\n            ) or\n\n            // Condition 3: Generic arm64 Foxveil loader characteristics\n            (\n                $mod_init_arm64 and\n                ($hmac_consts_arm64 or #lcg_const_arm64 >= 3) and\n                #lcg_madd_arm64 >= 10 and\n                #dlsym_call_arm64 >= 5\n            ) or\n\n            // Condition 4: Multi-architecture core engine match with minimal symbol indicators\n            (\n                all of ($sym_*) and\n                2 of ($mod_init_*, $lcg_consts_x86, $pbkdf2_accum_x86, $hmac_consts_arm64) and\n                (#dlsym_call_x86 >= 5 or #dlsym_call_arm64 >= 5)\n            )\n        )\n}"
+    },
+    {
+      "rule_name": "Macho_Trojan_CloudSync_1006YR",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealer.yar",
+      "description": "Generic detection for CloudSync ",
+      "malware_family": "CloudSync",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-10-06",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 21,
+      "total_hits": 2,
+      "source_code": "rule Macho_Trojan_CloudSync_1006YR {\n    meta:\n        silent = 1\n        author = \"Chandra Kant Bauri\"\n        description = \"Generic detection for CloudSync \"\n        date = \"2026-10-06\"\n        family = \"CloudSync\"\n        platform = \"macOS\"\n\n    strings:\n\n        // Invariant 32-byte substitution table (resides in __TEXT,__const, survives full symbol stripping)\n        $sobf_sbox = { d7 19 bf 57 e6 5b a0 9d e1 ba cd b1 82 c9 91 18 ed af d5 18 fd 3a 4a 97 97 bc ad 22 1a db 81 51 }\n\n        // x86_64 machine code sequence for sobf::reveal (imull $-0x7d, %r12d, %eax; andl $0x1f, %r12d)\n        $sobf_code_x86 = { 41 6b c4 83 41 83 e4 1f }\n\n        // ARM64 machine code sequence for sobf::reveal (mov w9, #0x83; mul x9, x22, x9; and x11, x22, #0x1f)\n        $sobf_code_arm = { 69 10 80 52 c9 7e 09 9b cb 12 40 92 }\n\n\n        $ns1 = \"cloudsync_impl\" ascii\n        $ns2 = \"CSURLInsecureDelegate\" ascii\n        $ns3 = \"_ct_APP_PROCESS_DISGUISE_NAME\" ascii\n        $ns4 = \"_ct_APP_INSTALL_DIR\" ascii\n        $ns5 = \"_ct_APP_OPS_URL\" ascii\n        $ns6 = \"_ct_APP_AUTH_JSON_NAME\" ascii\n        $ns7 = \"_ct_APP_PACKAGE_DAEMON_BIN\" ascii\n        $ns8 = \"_ct_APP_TMP_SPAWN_S_PREFIX\" ascii\n        $ns9 = \"cloudsyncd\" ascii\n\n        $ui1 = \"AuthDialog\" ascii\n        $ui2 = \"showPasswordDialog\" ascii\n        $ui3 = \"renderCompositeAuthIcon\" ascii\n        $ui4 = \"ModernStatusWindow\" ascii\n        $ui5 = \"AlertButtonHandler\" ascii\n\n\n        // 4. Stage 2 Backdoor Crypto & TLS Evasion Artifacts\n\n        $c1 = \"chacha20poly1305\" ascii\n        $c2 = \"chacha20_stream\" ascii\n        $c3 = \"SecTrustSetExceptions\" ascii\n        $c4 = \"SecTrustCopyExceptions\" ascii\n\n    condition:\n        // Mach-O Magic Header: 64-bit, 32-bit, Universal/Fat binary (Little/Big Endian)\n        (\n            uint32(0) == 0xfeedfacf or \n            uint32(0) == 0xcafebabe or \n            uint32(0) == 0xbebafeca or \n            uint32(0) == 0xfeedface or \n            uint32(0) == 0xcffaedfe\n        ) and\n        filesize < 25MB and\n        (\n            // High-entropy compile-time obfuscator signatures (matches stripped & unstripped variants)\n            $sobf_sbox or\n            $sobf_code_x86 or\n            $sobf_code_arm or\n\n            // Symbol-based detection requiring 3+ specific internal namespace markers\n            (3 of ($ns*)) or\n\n            // Phishing dropper detection: fake password dialog combined with namespace/malware strings\n            (2 of ($ui*) and (1 of ($ns*) or $c3)) or\n\n            // Backdoor C2 delegate detection: custom insecure delegate combined with trust override & crypto\n            ($ns2 and ($c3 or $c4) and (1 of ($c1, $c2) or 1 of ($ns*)))\n        )\n}"
+    },
+    {
+      "rule_name": "Macho_Trojan_CloudSync_1007YR",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealer.yar",
+      "description": "Detects CloudSync trojanized DMG disk image containers",
+      "malware_family": "CloudSync",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-10-06",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 6,
+      "total_hits": 0,
+      "source_code": "rule Macho_Trojan_CloudSync_1007YR {\n    meta:\n        silent = 1\n        author = \"Chandra Kant Bauri\"\n        description = \"Detects CloudSync trojanized DMG disk image containers\"\n        date = \"2026-10-06\"\n        family = \"CloudSync\"\n        platform = \"macOS\"\n\n    strings:\n        $koly = \"koly\"\n        $xml = \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\" ascii\n        $plist = \"<!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\"\" ascii\n        $part = \"whole disk (unknown partition : 0)\" ascii\n        $mish_hdr = \"bWlzaAAAAAEAAAAAAAAAAAAAAAAAANg\" ascii\n        $crc_part = \"PbEzG\" ascii // Base64 encoding of partition CRC 0x3DB13318\n\n    condition:\n        $koly at (filesize - 512) and\n        filesize > 1MB and filesize < 100MB and\n        $xml in (filesize-100000..filesize) and\n        $plist in (filesize-100000..filesize) and\n        $part and\n        ($mish_hdr or $crc_part)\n}"
+    },
+    {
+      "rule_name": "Macho_hVNCRat_generic",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealer.yar",
+      "description": "Detects generic macOS HVNC (Hidden VNC) browser hijacking implant",
+      "malware_family": "macOS.hvnc",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-10-14",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 10,
+      "total_hits": 0,
+      "source_code": "rule Macho_hVNCRat_generic {\n    meta:\n        author = \"Chandra Kant Bauri\"\n        description = \"Detects generic macOS HVNC (Hidden VNC) browser hijacking implant\"\n        date = \"2026-10-14\"\n        malware_family = \"macOS.hvnc\"\n    strings:\n        // Unique custom JavaScript injected into victim browsers for covert interaction\n        $js_find = \"window.__hvncFind\" ascii\n        $js_copy = \"window.__hvncCopySel\" ascii\n        $js_zoom = \"window.__hvncZoomSet\" ascii\n        $css_find = \"::highlight(hvnc-find)\" ascii\n\n        // Unique SQLite shadow backup & APFS clone strings\n        $sqlite_bak = \".backup '$T.hvncbak'\" ascii\n        $pkill_clone = \"/usr/bin/pkill -f 'hvnc_clone_'\" ascii\n        $apfs_clone = \"chromium clone: APFS clonefile snapshot\" ascii\n\n        // Unique DevTools Protocol manipulation & crash prompt suppression\n        $cdp_bounds = \"{\\\"windowId\\\":%d,\\\"bounds\\\":{\\\"left\\\":-32000,\\\"top\\\":-32000}}\" ascii\n        $cdp_crash1 = \"s/\\\"exit_type\\\":\\\"Crashed\\\"/\\\"exit_type\\\":\\\"Normal\\\"/g\" ascii\n        $cdp_crash2 = \"browser.sessionstore.resume_from_crash\" ascii\n    condition:\n        // Enforce valid Mach-O binary (64-bit, 32-bit, or Fat/Universal)\n        (uint32(0) == 0xfeedfacf or uint32(0) == 0xfeedface or uint32(0) == 0xcafebabe or uint32(0) == 0xcffaedfe or uint32(0) == 0xbebafeca)\n        and (\n            2 of ($js_find, $js_copy, $js_zoom, $css_find) or\n            2 of ($sqlite_bak, $pkill_clone, $apfs_clone) or\n            ($cdp_bounds and 1 of ($cdp_crash1, $cdp_crash2)) or\n            (3 of them)\n        )\n}"
+    },
+    {
+      "rule_name": "Macho_hVNCRat_campaign",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealer.yar",
+      "description": "Detects specific campaign build of macOS HVNC implant",
+      "malware_family": "macOS.HVNC",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-10-14",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 4,
+      "total_hits": 0,
+      "source_code": "rule Macho_hVNCRat_campaign {\n    meta:\n        author = \"Chandra Kant Bauri\"\n        description = \"Detects specific campaign build of macOS HVNC implant\"\n        date = \"2026-10-14\"\n        malware_family = \"macOS.HVNC\"\n        sample_hash = \"5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8\"\n    strings:\n        $c2 = \"agent.torrentsbyjimboslimfit.xyz\" ascii\n        $tag = \"HVNC_MAC_TAG:8panel\" ascii\n        $psk = \"hvnc-remote-default-psk\" ascii\n        $id = \"hvnc_agent_macos_universal\" ascii\n    condition:\n        (uint32(0) == 0xfeedfacf or uint32(0) == 0xfeedface or uint32(0) == 0xcafebabe or uint32(0) == 0xcffaedfe or uint32(0) == 0xbebafeca)\n        and 2 of ($c2, $tag, $psk, $id)\n}"
+    },
+    {
+      "rule_name": "Macho_hVNCRat_shelldropper",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealer.yar",
+      "description": "Detects shell dropper script for macOS HVNC agent",
+      "malware_family": "macOS.HVNC",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-10-14",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 6,
+      "total_hits": 0,
+      "source_code": "rule Macho_hVNCRat_shelldropper {\n    meta:\n        author = \"Chandra Kant Bauri\"\n        description = \"Detects shell dropper script for macOS HVNC agent\"\n        date = \"2026-10-14\"\n        malware_family = \"macOS.HVNC\"\n        sample_hash = \"dce578f5af994c77785b96087e4fd4d8124482eab896dceb175a26342a84e31b\"\n    strings:\n        $sh = \"#!/bin/\" ascii\n        $c2 = \"txrouteuifbfewfubewfbhgrabbing.xyz\" ascii\n        $uri = \"/wohnung/agent\" ascii\n        $dest = \"Downloads/wohnung\" ascii\n        $plist = \"com.system.updater.plist\" ascii\n        $check_magic = \"cafebabe|cffaedfe\" ascii\n    condition:\n        $sh at 0\n        and (\n            $c2 or\n            (3 of ($uri, $dest, $plist, $check_magic))\n        )\n}"
     }
   ]
 };

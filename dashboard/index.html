@@ -441,6 +441,92 @@
       max-height: 200px;
       overflow-y: auto;
     }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      gap: 12px;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 24px;
+    }
+
+    .nav-tab {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 18px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .nav-tab:hover {
+      color: var(--text-main);
+    }
+
+    .nav-tab.active {
+      color: #fff;
+      border-bottom-color: var(--accent-blue);
+    }
+
+    .tab-badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      font-weight: 600;
+    }
+
+    /* Views */
+    .view-content {
+      display: none;
+    }
+
+    .view-content.active {
+      display: block;
+    }
+
+    /* Code Viewer for YARA Rules */
+    .code-viewer {
+      background: #070a12;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 16px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      word-break: break-all;
+      max-height: 480px;
+      overflow-y: auto;
+    }
+
+    .rule-meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      background: #1e293b;
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+    }
+
+    .rule-meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
   </style>
 </head>
 <body>
@@ -462,130 +548,216 @@
       </div>
     </header>
 
-    <!-- Metrics Cards -->
-    <section class="kpi-grid">
-      <div class="kpi-card">
-        <div class="kpi-label">Total Scanned Samples</div>
-        <div class="kpi-value" id="kpi-scanned">0</div>
-        <div class="kpi-sub" id="kpi-scanned-sub">Lifetime feed throughput</div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Total Rule Hits</div>
-        <div class="kpi-value" id="kpi-hits" style="color: var(--accent-rose);">0</div>
-        <div class="kpi-sub" id="kpi-rate">0.0% hit rate</div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">macOS Detections</div>
-        <div class="kpi-value" id="kpi-macos" style="color: var(--accent-blue);">0</div>
-        <div class="kpi-sub">Mach-O / DMG / PKG</div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Windows Detections</div>
-        <div class="kpi-value" id="kpi-windows" style="color: var(--accent-cyan);">0</div>
-        <div class="kpi-sub">PE / DLL / MSI</div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Linux Detections</div>
-        <div class="kpi-value" id="kpi-linux" style="color: var(--accent-amber);">0</div>
-        <div class="kpi-sub">ELF binaries / SO</div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Non-PE / Scripts</div>
-        <div class="kpi-value" id="kpi-non-pe" style="color: var(--accent-purple);">0</div>
-        <div class="kpi-sub">PowerShell / Py / Bash</div>
-      </div>
-    </section>
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="nav-tab active" id="tab-telemetry-btn" onclick="switchView('telemetry')">
+        <span>Live Telemetry</span>
+        <span class="tab-badge" id="telemetry-count-badge">0 Hits</span>
+      </button>
+      <button class="nav-tab" id="tab-rules-btn" onclick="switchView('rules')">
+        <span>YARA Rules Catalog</span>
+        <span class="tab-badge" id="rules-count-badge">0 Rules</span>
+      </button>
+    </nav>
 
-    <!-- Charts Section -->
-    <section class="charts-grid">
-      <div class="chart-card">
-        <div class="chart-title">
-          <span>Detections by Platform</span>
+    <!-- View 1: Telemetry Detections -->
+    <div id="view-telemetry" class="view-content active">
+      <!-- Metrics Cards -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">Total Scanned Samples</div>
+          <div class="kpi-value" id="kpi-scanned">0</div>
+          <div class="kpi-sub" id="kpi-scanned-sub">Lifetime feed throughput</div>
         </div>
-        <div class="chart-container">
-          <canvas id="platformChart"></canvas>
+        <div class="kpi-card">
+          <div class="kpi-label">Total Rule Hits</div>
+          <div class="kpi-value" id="kpi-hits" style="color: var(--accent-rose);">0</div>
+          <div class="kpi-sub" id="kpi-rate">0.0% hit rate</div>
         </div>
-      </div>
+        <div class="kpi-card">
+          <div class="kpi-label">macOS Detections</div>
+          <div class="kpi-value" id="kpi-macos" style="color: var(--accent-blue);">0</div>
+          <div class="kpi-sub">Mach-O / DMG / PKG</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Windows Detections</div>
+          <div class="kpi-value" id="kpi-windows" style="color: var(--accent-cyan);">0</div>
+          <div class="kpi-sub">PE / DLL / MSI</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Linux Detections</div>
+          <div class="kpi-value" id="kpi-linux" style="color: var(--accent-amber);">0</div>
+          <div class="kpi-sub">ELF binaries / SO</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Non-PE / Scripts</div>
+          <div class="kpi-value" id="kpi-non-pe" style="color: var(--accent-purple);">0</div>
+          <div class="kpi-sub">PowerShell / Py / Bash</div>
+        </div>
+      </section>
 
-      <div class="chart-card">
-        <div class="chart-title">
-          <span>Detections by Source Feed</span>
+      <!-- Charts Section -->
+      <section class="charts-grid">
+        <div class="chart-card">
+          <div class="chart-title">
+            <span>Detections by Platform</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="platformChart"></canvas>
+          </div>
         </div>
-        <div class="chart-container">
-          <canvas id="sourceChart"></canvas>
-        </div>
-      </div>
 
-      <div class="chart-card">
-        <div class="chart-title">
-          <span>Hits by YARA Rule</span>
+        <div class="chart-card">
+          <div class="chart-title">
+            <span>Detections by Source Feed</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="sourceChart"></canvas>
+          </div>
         </div>
-        <div class="chart-container">
-          <canvas id="rulesChart"></canvas>
+
+        <div class="chart-card">
+          <div class="chart-title">
+            <span>Hits by YARA Rule</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="rulesChart"></canvas>
+          </div>
         </div>
-      </div>
 
-      <div class="chart-card">
-        <div class="chart-title">
-          <span>Detection Timeline</span>
+        <div class="chart-card">
+          <div class="chart-title">
+            <span>Detection Timeline</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="timelineChart"></canvas>
+          </div>
         </div>
-        <div class="chart-container">
-          <canvas id="timelineChart"></canvas>
+      </section>
+
+      <!-- Filter Bar -->
+      <section class="filter-panel">
+        <div class="filter-group">
+          <input type="text" id="search-box" class="search-input" placeholder="Search by hash, rule, label, or tag..." oninput="applyFilters()">
         </div>
-      </div>
-    </section>
+        <div class="filter-group">
+          <button class="filter-pill active" data-platform="all" onclick="setPlatformFilter('all', this)">All Platforms</button>
+          <button class="filter-pill" data-platform="macos" onclick="setPlatformFilter('macos', this)">macOS</button>
+          <button class="filter-pill" data-platform="windows" onclick="setPlatformFilter('windows', this)">Windows</button>
+          <button class="filter-pill" data-platform="linux" onclick="setPlatformFilter('linux', this)">Linux</button>
+          <button class="filter-pill" data-platform="non-pe" onclick="setPlatformFilter('non-pe', this)">Non-PE</button>
+        </div>
+        <div class="filter-group">
+          <select id="source-filter" class="filter-select" onchange="applyFilters()">
+            <option value="all">All Feeds</option>
+            <option value="MalwareBazaar">MalwareBazaar</option>
+          </select>
+        </div>
+      </section>
 
-    <!-- Filter Bar -->
-    <section class="filter-panel">
-      <div class="filter-group">
-        <input type="text" id="search-box" class="search-input" placeholder="Search by hash, rule, label, or tag..." oninput="applyFilters()">
-      </div>
-      <div class="filter-group">
-        <button class="filter-pill active" data-platform="all" onclick="setPlatformFilter('all', this)">All Platforms</button>
-        <button class="filter-pill" data-platform="macos" onclick="setPlatformFilter('macos', this)">macOS</button>
-        <button class="filter-pill" data-platform="windows" onclick="setPlatformFilter('windows', this)">Windows</button>
-        <button class="filter-pill" data-platform="linux" onclick="setPlatformFilter('linux', this)">Linux</button>
-        <button class="filter-pill" data-platform="non-pe" onclick="setPlatformFilter('non-pe', this)">Non-PE</button>
-      </div>
-      <div class="filter-group">
-        <select id="source-filter" class="filter-select" onchange="applyFilters()">
-          <option value="all">All Feeds</option>
-          <option value="MalwareBazaar">MalwareBazaar</option>
-        </select>
-      </div>
-    </section>
+      <!-- Detailed Detections Table -->
+      <section class="table-container">
+        <div class="table-header">
+          <h2>Positive Detections Log</h2>
+          <span class="table-count" id="filtered-count">Showing 0 detections</span>
+        </div>
+        <div class="table-wrapper">
+          <table id="detections-table">
+            <thead>
+              <tr>
+                <th>Detected At</th>
+                <th>Platform</th>
+                <th>YARA Rule</th>
+                <th>Source Feed</th>
+                <th>Sample SHA256</th>
+                <th>VT Ratio</th>
+                <th>Threat Label</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <tr>
+                <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 24px;">Loading telemetry records...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div> <!-- End #view-telemetry -->
 
-    <!-- Detailed Detections Table -->
-    <section class="table-container">
-      <div class="table-header">
-        <h2>Positive Detections Log</h2>
-        <span class="table-count" id="filtered-count">Showing 0 detections</span>
-      </div>
-      <div class="table-wrapper">
-        <table id="detections-table">
-          <thead>
-            <tr>
-              <th>Detected At</th>
-              <th>Platform</th>
-              <th>YARA Rule</th>
-              <th>Source Feed</th>
-              <th>Sample SHA256</th>
-              <th>VT Ratio</th>
-              <th>Threat Label</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody id="table-body">
-            <tr>
-              <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 24px;">Loading telemetry records...</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </div>
+    <!-- View 2: YARA Rules Catalog -->
+    <div id="view-rules" class="view-content">
+      <!-- Rules KPI Grid -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">Active YARA Rules</div>
+          <div class="kpi-value" id="kpi-total-rules" style="color: var(--accent-cyan);">0</div>
+          <div class="kpi-sub">Across all platform categories</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Active Platforms</div>
+          <div class="kpi-value" id="kpi-rules-platforms" style="color: var(--accent-green);">4</div>
+          <div class="kpi-sub">macOS, Windows, Linux, Non-PE</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Rules Firing Hits</div>
+          <div class="kpi-value" id="kpi-rules-firing" style="color: var(--accent-rose);">0</div>
+          <div class="kpi-sub">With confirmed live detections</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Total Strings Signatured</div>
+          <div class="kpi-value" id="kpi-total-strings" style="color: var(--accent-amber);">0</div>
+          <div class="kpi-sub">Static bytecode & regex patterns</div>
+        </div>
+      </section>
 
-  <!-- Details Modal -->
+      <!-- Rules Filter Bar -->
+      <section class="filter-panel">
+        <div class="filter-group">
+          <input type="text" id="search-rules-box" class="search-input" placeholder="Search rules by name, malware family, author, description..." oninput="applyRuleFilters()">
+        </div>
+        <div class="filter-group">
+          <button class="filter-pill rule-filter-pill active" data-rule-platform="all" onclick="setRulePlatformFilter('all', this)">All Platforms</button>
+          <button class="filter-pill rule-filter-pill" data-rule-platform="macos" onclick="setRulePlatformFilter('macos', this)">macOS</button>
+          <button class="filter-pill rule-filter-pill" data-rule-platform="windows" onclick="setRulePlatformFilter('windows', this)">Windows</button>
+          <button class="filter-pill rule-filter-pill" data-rule-platform="linux" onclick="setRulePlatformFilter('linux', this)">Linux</button>
+          <button class="filter-pill rule-filter-pill" data-rule-platform="non-pe" onclick="setRulePlatformFilter('non-pe', this)">Non-PE</button>
+        </div>
+      </section>
+
+      <!-- Rules Table Container -->
+      <section class="table-container">
+        <div class="table-header">
+          <h2>YARA Rules Repository</h2>
+          <span class="table-count" id="filtered-rules-count">Showing 0 rules</span>
+        </div>
+        <div class="table-wrapper">
+          <table id="rules-table">
+            <thead>
+              <tr>
+                <th>Rule Name</th>
+                <th>Platform</th>
+                <th>Malware Family</th>
+                <th>Description</th>
+                <th>Author</th>
+                <th>Strings</th>
+                <th>Lifetime Hits</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="rules-table-body">
+              <tr>
+                <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 24px;">Loading YARA rules...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div> <!-- End #view-rules -->
+
+  </div> <!-- End .container -->
+
+  <!-- Details Modal (Sample Hit) -->
   <div class="modal-overlay" id="detail-modal" onclick="closeModal(event)">
     <div class="modal-content" onclick="event.stopPropagation()">
       <div class="modal-header">
@@ -596,28 +768,62 @@
     </div>
   </div>
 
+  <!-- Rule Code Modal -->
+  <div class="modal-overlay" id="rule-code-modal" onclick="closeRuleModal(event)">
+    <div class="modal-content" style="max-width: 900px;" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="rule-modal-title">YARA Rule Inspector</h3>
+        <button class="modal-close" onclick="closeRuleModalDirect()">&times;</button>
+      </div>
+      <div id="rule-modal-body"></div>
+    </div>
+  </div>
+
   <script>
     let globalHits = [];
     let globalStats = {};
+    let globalRules = [];
     let activePlatform = 'all';
+    let activeRulePlatform = 'all';
+    let currentInspectedRule = null;
     let chartInstances = {};
+
+    function switchView(viewName) {
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.view-content').forEach(v => v.classList.remove('active'));
+
+      if (viewName === 'rules') {
+        const btn = document.getElementById('tab-rules-btn');
+        const view = document.getElementById('view-rules');
+        if (btn) btn.classList.add('active');
+        if (view) view.classList.add('active');
+        applyRuleFilters();
+      } else {
+        const btn = document.getElementById('tab-telemetry-btn');
+        const view = document.getElementById('view-telemetry');
+        if (btn) btn.classList.add('active');
+        if (view) view.classList.add('active');
+        applyFilters();
+      }
+    }
 
     // Load data from window.YARAFY_DATA or fetch live JSON
     async function loadTelemetryData() {
       if (window.YARAFY_DATA) {
         globalStats = window.YARAFY_DATA.stats || {};
         globalHits = window.YARAFY_DATA.hits || [];
+        globalRules = window.YARAFY_DATA.rules || [];
         updateKPIs();
+        updateRulesKPIs();
         renderCharts();
         applyFilters();
+        applyRuleFilters();
       }
 
       try {
-        // Try same-origin relative path first (GitHub Pages: /yarafy/telemetry/stats.json)
         let statsRes = await fetch('telemetry/stats.json?t=' + Date.now()).catch(() => null);
         let hitsRes = await fetch('telemetry/hits.json?t=' + Date.now()).catch(() => null);
 
-        // Fallback for local folder preview (/dashboard/../telemetry/)
         if (!statsRes || !statsRes.ok) {
           statsRes = await fetch('../telemetry/stats.json?t=' + Date.now()).catch(() => null);
           hitsRes = await fetch('../telemetry/hits.json?t=' + Date.now()).catch(() => null);
@@ -627,8 +833,10 @@
           globalStats = await statsRes.json();
           globalHits = await hitsRes.json();
           updateKPIs();
+          updateRulesKPIs();
           renderCharts();
           applyFilters();
+          applyRuleFilters();
         }
       } catch (err) {
         // Fallback to window.YARAFY_DATA already displayed
@@ -643,6 +851,9 @@
       document.getElementById('kpi-scanned').textContent = scanned.toLocaleString();
       document.getElementById('kpi-hits').textContent = hits.toLocaleString();
       document.getElementById('kpi-rate').textContent = `${rate}% hit rate`;
+
+      const telBadge = document.getElementById('telemetry-count-badge');
+      if (telBadge) telBadge.textContent = `${hits.toLocaleString()} Hits`;
 
       if (globalStats.last_run) {
         try {
@@ -660,6 +871,184 @@
       document.getElementById('kpi-windows').textContent = (pStats.windows || 0).toLocaleString();
       document.getElementById('kpi-linux').textContent = (pStats.linux || 0).toLocaleString();
       document.getElementById('kpi-non-pe').textContent = (pStats['non-pe'] || 0).toLocaleString();
+    }
+
+    function updateRulesKPIs() {
+      const total = globalRules.length;
+      const firing = globalRules.filter(r => (r.total_hits || 0) > 0).length;
+      const strings = globalRules.reduce((acc, r) => acc + (r.strings_count || 0), 0);
+      const platforms = new Set(globalRules.map(r => r.platform)).size;
+
+      const totalEl = document.getElementById('kpi-total-rules');
+      if (totalEl) totalEl.textContent = total;
+      const platEl = document.getElementById('kpi-rules-platforms');
+      if (platEl) platEl.textContent = platforms || 4;
+      const firingEl = document.getElementById('kpi-rules-firing');
+      if (firingEl) firingEl.textContent = firing;
+      const strEl = document.getElementById('kpi-total-strings');
+      if (strEl) strEl.textContent = strings;
+
+      const ruleBadge = document.getElementById('rules-count-badge');
+      if (ruleBadge) ruleBadge.textContent = `${total} Rules`;
+    }
+
+    function setRulePlatformFilter(platform, el) {
+      activeRulePlatform = platform;
+      document.querySelectorAll('.rule-filter-pill').forEach(btn => btn.classList.remove('active'));
+      if (el) el.classList.add('active');
+      applyRuleFilters();
+    }
+
+    function applyRuleFilters() {
+      const query = (document.getElementById('search-rules-box')?.value || '').toLowerCase().trim();
+
+      const filtered = globalRules.filter(r => {
+        const plat = (r.platform || 'unknown').toLowerCase();
+        if (activeRulePlatform !== 'all' && plat !== activeRulePlatform) return false;
+
+        if (query) {
+          const matchName = (r.rule_name || '').toLowerCase().includes(query);
+          const matchFam = (r.malware_family || '').toLowerCase().includes(query);
+          const matchDesc = (r.description || '').toLowerCase().includes(query);
+          const matchAuth = (r.author || '').toLowerCase().includes(query);
+          if (!matchName && !matchFam && !matchDesc && !matchAuth) return false;
+        }
+
+        return true;
+      });
+
+      renderRulesTable(filtered);
+    }
+
+    function renderRulesTable(rules) {
+      const tbody = document.getElementById('rules-table-body');
+      const countEl = document.getElementById('filtered-rules-count');
+      if (countEl) countEl.textContent = `Showing ${rules.length} of ${globalRules.length} rules`;
+
+      if (!tbody) return;
+
+      if (!rules || rules.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 32px;">No matching YARA rules found.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = rules.map((r) => {
+        const plat = (r.platform || 'unknown').toLowerCase();
+        const platBadge = `<span class="badge badge-${plat}">${plat.toUpperCase()}</span>`;
+        const hits = r.total_hits || 0;
+        const hitsBadge = hits > 0
+          ? `<button class="btn" style="background: rgba(244, 63, 94, 0.15); color: #fb7185; border-color: rgba(244, 63, 94, 0.3); padding: 3px 8px; font-size: 11px; border-radius: 4px;" onclick="filterTelemetryByRule('${r.rule_name}')" title="Click to view detections for this rule">${hits} Hits &rarr;</button>`
+          : `<span style="color: var(--text-muted); font-size: 12px;">0 Hits</span>`;
+
+        const authorDate = `${r.author && r.author !== 'Unknown' ? r.author : 'Community'}${r.date && r.date !== 'N/A' ? ' &bull; ' + r.date : ''}`;
+        const ghUrl = `https://github.com/Lynk4/yarafy/blob/main/${r.file_path}`;
+
+        return `
+          <tr>
+            <td style="font-weight: 600; color: #fff;">${r.rule_name}</td>
+            <td>${platBadge}</td>
+            <td style="color: var(--accent-cyan); font-weight: 500;">${r.malware_family}</td>
+            <td style="color: var(--text-muted); font-size: 12px; max-width: 320px;">${r.description}</td>
+            <td style="color: var(--text-muted); font-size: 12px;">${authorDate}</td>
+            <td style="font-family: ui-monospace, monospace; color: var(--text-main); font-size: 12px;">${r.strings_count}</td>
+            <td>${hitsBadge}</td>
+            <td>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn btn-primary" style="padding: 4px 8px; font-size: 11px;" onclick="openRuleCodeModal('${r.rule_name}')">View Code</button>
+                <a href="${ghUrl}" target="_blank" class="btn" style="padding: 4px 8px; font-size: 11px; text-decoration: none;">GitHub</a>
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function openRuleCodeModal(ruleName) {
+      const rule = globalRules.find(r => r.rule_name === ruleName);
+      if (!rule) return;
+      currentInspectedRule = rule;
+
+      document.getElementById('rule-modal-title').textContent = rule.rule_name;
+      const body = document.getElementById('rule-modal-body');
+
+      const plat = (rule.platform || 'unknown').toLowerCase();
+      const platBadge = `<span class="badge badge-${plat}">${plat.toUpperCase()}</span>`;
+      const ghUrl = `https://github.com/Lynk4/yarafy/blob/main/${rule.file_path}`;
+
+      body.innerHTML = `
+        <div class="rule-meta-grid">
+          <div class="rule-meta-pill"><strong>Platform:</strong> ${platBadge}</div>
+          <div class="rule-meta-pill"><strong>Family:</strong> ${rule.malware_family}</div>
+          <div class="rule-meta-pill"><strong>Severity:</strong> ${rule.severity}</div>
+          <div class="rule-meta-pill"><strong>Author:</strong> ${rule.author}</div>
+          <div class="rule-meta-pill"><strong>Date:</strong> ${rule.date}</div>
+          <div class="rule-meta-pill"><strong>Lifetime Hits:</strong> ${rule.total_hits || 0}</div>
+          <div class="rule-meta-pill"><strong>File:</strong> <code>${rule.file_path}</code></div>
+        </div>
+
+        <div class="detail-section">
+          <h4>Description</h4>
+          <div style="color: var(--text-main); font-size: 13px; margin-bottom: 16px; background: #0b0f19; padding: 10px 14px; border-radius: 6px; border: 1px solid var(--card-border);">
+            ${rule.description}
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <h4 style="margin: 0;">YARA Rule Source Code</h4>
+            <div style="display: flex; gap: 8px;">
+              <button class="btn btn-primary" id="copy-rule-btn" onclick="copyCurrentRuleCode()">Copy Rule</button>
+              <a href="${ghUrl}" target="_blank" class="btn" style="text-decoration: none;">View on GitHub</a>
+              ${(rule.total_hits > 0) ? `<button class="btn" style="background: rgba(244, 63, 94, 0.15); color: #fb7185; border-color: rgba(244, 63, 94, 0.3);" onclick="filterTelemetryByRule('${rule.rule_name}'); closeRuleModalDirect();">View ${rule.total_hits} Hits</button>` : ''}
+            </div>
+          </div>
+          <div class="code-viewer">${escapeHtml(rule.source_code || '')}</div>
+        </div>
+      `;
+
+      document.getElementById('rule-code-modal').classList.add('active');
+    }
+
+    function escapeHtml(str) {
+      return (str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function closeRuleModalDirect() {
+      document.getElementById('rule-code-modal').classList.remove('active');
+      currentInspectedRule = null;
+    }
+
+    function closeRuleModal(e) {
+      if (e.target.id === 'rule-code-modal') closeRuleModalDirect();
+    }
+
+    function copyCurrentRuleCode() {
+      if (!currentInspectedRule || !currentInspectedRule.source_code) return;
+      navigator.clipboard.writeText(currentInspectedRule.source_code).then(() => {
+        const btn = document.getElementById('copy-rule-btn');
+        if (btn) {
+          const originalText = btn.textContent;
+          btn.textContent = 'Copied!';
+          btn.style.background = 'var(--accent-green)';
+          btn.style.borderColor = 'var(--accent-green)';
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.style.borderColor = '';
+          }, 2000);
+        }
+      });
+    }
+
+    function filterTelemetryByRule(ruleName) {
+      switchView('telemetry');
+      const searchBox = document.getElementById('search-box');
+      if (searchBox) {
+        searchBox.value = ruleName;
+        applyFilters();
+        searchBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        searchBox.focus();
+      }
     }
 
     function setPlatformFilter(platform, el) {
