@@ -10418,8 +10418,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.",
         "popular_threat_category": [
           {
-            "count": 2,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 2
           }
         ],
         "names": [
