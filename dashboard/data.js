@@ -10036,14 +10036,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 4,
-        "total_engines": 56,
-        "detection_ratio": "4/56",
-        "suggested_threat_label": "trojan.",
+        "positives": 12,
+        "total_engines": 63,
+        "detection_ratio": "12/63",
+        "suggested_threat_label": "trojan.abpws/jajl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 2
+            "count": 5,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -10055,12 +10055,13 @@ window.YARAFY_DATA = {
         "tags": [
           "64bits",
           "arm",
-          "self-signed",
+          "macho",
           "multi-arch",
-          "macho"
+          "self-signed"
         ],
         "reputation": 0,
         "key_engine_detections": {
+          "Microsoft": "Trojan:Script/Wacatac.B!ml",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/85fce9826974549c2dd4c92a3207cf2543e10676ad2dfad7c8ea429f616cdf21"
