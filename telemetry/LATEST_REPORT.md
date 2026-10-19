@@ -1,19 +1,19 @@
 # Yarafy Telemetry & Threat Hunting Report
 
-**Last Run:** `2026-10-18T21:37:36.645968+00:00`
-**Total Samples Scanned:** `15928` | **Total Rule Hits:** `127`
+**Last Run:** `2026-10-19T02:32:11.677388+00:00`
+**Total Samples Scanned:** `16057` | **Total Rule Hits:** `134`
 
 ## Hits Breakdown by Source Feed
 | Source Feed | Total Hits |
 | :--- | :--- |
 | **MalwareBazaar** | `81` |
 | **VirusTotal Enterprise** | `43` |
-| **Local File** | `3` |
+| **Local File** | `10` |
 
 ## Hits Breakdown by Platform
 | Platform | Total Hits |
 | :--- | :--- |
-| **MACOS** | `127` |
+| **MACOS** | `134` |
 | **WINDOWS** | `0` |
 | **LINUX** | `0` |
 | **NON-PE** | `0` |
@@ -22,16 +22,28 @@
 | Rule Name | Total Detections |
 | :--- | :--- |
 | [`macOS_ClickFix_AppleScript_Dropper`](../yara-rules/) | `59` |
-| [`OSX_Stealer_AMOS_Generic`](../yara-rules/) | `37` |
+| [`OSX_Stealer_AMOS_Generic`](../yara-rules/) | `38` |
 | [`OSX_Foxveil_AMOS_Stage4_Generic`](../yara-rules/) | `17` |
-| [`MALW_macOS_MacSync_Stealer_Universal`](../yara-rules/) | `6` |
+| [`MALW_macOS_MacSync_Stealer_Universal`](../yara-rules/) | `7` |
 | [`APT_macOS_RustBucket_Behavioral_Indicators`](../yara-rules/) | `3` |
 | [`Macho_Trojan_CloudSync_Generic`](../yara-rules/) | `3` |
 | [`Macho_Trojan_CloudSync_1006YR`](../yara-rules/) | `2` |
+| [`Macho_Trojan_CloudSync_1007YR`](../yara-rules/) | `1` |
+| [`Macho_Trojan_CloudSync_DMG`](../yara-rules/) | `1` |
+| [`Macho_hVNCRat_generic`](../yara-rules/) | `1` |
+| [`Macho_hVNCRat_campaign`](../yara-rules/) | `1` |
+| [`Macho_hVNCRat_shelldropper`](../yara-rules/) | `1` |
 
 ## Recent Positive Detections
 | Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-19 02:32:11 | **Local File** | `MALW_macOS_MacSync_Stealer_Universal` | macos_MALW_macOS_MacSync_Stealer | `fa65230781...` | `N/A` | `N/A` |
+| 2026-10-19 02:32:11 | **Local File** | `OSX_Stealer_AMOS_Generic` | macos | `592d93f589...` | `N/A` | `N/A` |
+| 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_shelldropper` | macos_stealer | `dce578f5af...` | `N/A` | `N/A` |
+| 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_campaign` | macos_stealer | `5681c400f0...` | `N/A` | `N/A` |
+| 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_generic` | macos_stealer | `5681c400f0...` | `N/A` | `N/A` |
+| 2026-10-19 02:32:11 | **Local File** | `Macho_Trojan_CloudSync_DMG` | macos_cloud_sync | `faf2eea05f...` | `N/A` | `N/A` |
+| 2026-10-19 02:32:11 | **Local File** | `Macho_Trojan_CloudSync_1007YR` | macos_stealer | `faf2eea05f...` | `N/A` | `N/A` |
 | 2026-10-18 21:15:48 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`cefb465886...`](https://www.virustotal.com/gui/file/cefb465886bc813ac91e9ad5b1835eefe9828f251b58eb0da012ee4022ff6d98) | `21/60` | `trojan.class/macho` |
 | 2026-10-18 21:15:48 | **MalwareBazaar** | `OSX_Stealer_AMOS_Generic` | macos | [`104a6e4b1d...`](https://www.virustotal.com/gui/file/104a6e4b1da8f7b42bdaf887b82f2c12348c6b1ffe52d1de2d964b6329492ad7) | `35/63` | `trojan.stealer/amos` |
 | 2026-10-18 21:15:48 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`3bf9ac9cb2...`](https://www.virustotal.com/gui/file/3bf9ac9cb26ecffd2ab26bb14c81c110b53fe31c196cc774291ad4af804023c3) | `22/63` | `trojan.abrisk/class` |
@@ -75,10 +87,3 @@
 | 2026-10-08 06:28:54 | **MalwareBazaar** | `OSX_Stealer_AMOS_Generic` | macos | [`689797d97d...`](https://www.virustotal.com/gui/file/689797d97d31c3893e2c8a792614262f1fa9e714d646aef46bc4a6371fa59126) | `35/63` | `trojan.stealer/amos` |
 | 2026-10-08 06:28:54 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`c4c7cc2f8e...`](https://www.virustotal.com/gui/file/c4c7cc2f8e281b36d0bc29de6e08d354d83c4f734acaded25e7c8dfb1f580db5) | `25/63` | `trojan.amos/lummastealer` |
 | 2026-10-08 06:28:54 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`3740e3883b...`](https://www.virustotal.com/gui/file/3740e3883b64840461b3dfe2ce86695f32a14f28c8e0353c860ff6939a8c2538) | `30/63` | `trojan.amos/amosstealer` |
-| 2026-09-23 05:01:05 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`c48bd4f678...`](https://www.virustotal.com/gui/file/c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69) | `30/63` | `trojan.infostl/stealer` |
-| 2026-09-23 05:01:05 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`08074ec033...`](https://www.virustotal.com/gui/file/08074ec033c1a5dcfb0125a352f7f499f29f61d8ed2ce2f693d48813074810d4) | `31/63` | `trojan.infostl/multiverze` |
-| 2026-09-23 05:01:05 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`a7c0d024ed...`](https://www.virustotal.com/gui/file/a7c0d024ed24dcbc1b17cbda430a39edb52325c30ad9b7207c0267e43fbec4b7) | `31/63` | `trojan.amos/infostl` |
-| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | [`3474d98ec9...`](https://www.virustotal.com/gui/file/3474d98ec917eac063525284c86585eb283f4188c7df2f31bf35c16f8787e81c) | `32/63` | `trojan.nukesped/lazarus` |
-| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | [`7887638bca...`](https://www.virustotal.com/gui/file/7887638bcafd57e2896c7c16698e927ce92fd7d409aae698d33cdca3ce8d25b8) | `33/62` | `trojan.nukesped/lazarus` |
-| 2026-09-18 07:20:48 | **Local File** | `APT_macOS_RustBucket_Behavioral_Indicators` | macos_rust_bucket | [`9f54ca45b4...`](https://www.virustotal.com/gui/file/9f54ca45b40d1893537bd1899d2343146364d7e3ddca0d51f5c4c0cf238ecae4) | `28/59` | `trojan.lazarus/nukesped` |
-| 2026-09-16 10:24:15 | **MalwareBazaar** | `OSX_Foxveil_AMOS_Stage4_Generic` | macos_stealer | [`4903c40fbd...`](https://www.virustotal.com/gui/file/4903c40fbdb96cf39f35ed592a886a39d230564b26dd80aef3fa6c58bc501551) | `32/63` | `trojan.amos/amosstealer` |

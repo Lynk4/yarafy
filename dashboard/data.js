@@ -1,30 +1,35 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 15928,
-    "total_hits": 127,
-    "last_run": "2026-10-18T21:37:36.645968+00:00",
+    "total_scanned": 16057,
+    "total_hits": 134,
+    "last_run": "2026-10-19T02:32:11.677388+00:00",
     "hits_by_platform": {
-      "macos": 127,
+      "macos": 134,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
     },
     "hits_by_rule": {
       "macOS_ClickFix_AppleScript_Dropper": 59,
-      "OSX_Stealer_AMOS_Generic": 37,
-      "MALW_macOS_MacSync_Stealer_Universal": 6,
+      "OSX_Stealer_AMOS_Generic": 38,
+      "MALW_macOS_MacSync_Stealer_Universal": 7,
       "OSX_Foxveil_AMOS_Stage4_Generic": 17,
       "APT_macOS_RustBucket_Behavioral_Indicators": 3,
       "Macho_Trojan_CloudSync_Generic": 3,
-      "Macho_Trojan_CloudSync_1006YR": 2
+      "Macho_Trojan_CloudSync_1006YR": 2,
+      "Macho_Trojan_CloudSync_1007YR": 1,
+      "Macho_Trojan_CloudSync_DMG": 1,
+      "Macho_hVNCRat_generic": 1,
+      "Macho_hVNCRat_campaign": 1,
+      "Macho_hVNCRat_shelldropper": 1
     },
     "hits_by_source": {
       "MalwareBazaar": 81,
       "VirusTotal Enterprise": 43,
-      "Local File": 3
+      "Local File": 10
     },
-    "new_hits_this_run": 0,
-    "refreshed_hits_this_run": 51,
+    "new_hits_this_run": 7,
+    "refreshed_hits_this_run": 7,
     "total_rules": 12
   },
   "hits": [
@@ -165,7 +170,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-09-18T09:15:01.829625+00:00"
+      "last_seen_at": "2026-10-19T02:32:11.677388+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -2401,7 +2406,83 @@ window.YARAFY_DATA = {
         "threat_type": "Infostealer / Stager / Exfiltrator",
         "platform": "macOS (x86_64 & ARM64)"
       },
-      "matched_strings": [],
+      "matched_strings": [
+        {
+          "offset": "0x2a2e",
+          "identifier": "$xor_httpcode",
+          "data_preview": "85 de c7 da 85 84 c2 de de da c9 c5 ce cf"
+        },
+        {
+          "offset": "0x2dc1",
+          "identifier": "$xor_archive",
+          "data_preview": "85 de c7 da 85 c5 d9 cb c6 c5 cd cd c3 c4 cd 84 d0 c3 da"
+        },
+        {
+          "offset": "0x2b9a",
+          "identifier": "$xor_osascript",
+          "data_preview": "c5 d9 cb d9 c9 d8 c3 da de"
+        },
+        {
+          "offset": "0x2d5c",
+          "identifier": "$xor_osascript",
+          "data_preview": "c5 d9 cb d9 c9 d8 c3 da de"
+        },
+        {
+          "offset": "0x2a72",
+          "identifier": "$xor_curl",
+          "data_preview": "c9 df d8 c6 8a 87 c1 8a 87 d9"
+        },
+        {
+          "offset": "0x2b55",
+          "identifier": "$xor_curl",
+          "data_preview": "c9 df d8 c6 8a 87 c1 8a 87 d9"
+        },
+        {
+          "offset": "0x2c34",
+          "identifier": "$xor_curl",
+          "data_preview": "c9 df d8 c6 8a 87 c1 8a 87 d9"
+        },
+        {
+          "offset": "0x2d17",
+          "identifier": "$xor_curl",
+          "data_preview": "c9 df d8 c6 8a 87 c1 8a 87 d9"
+        },
+        {
+          "offset": "0x2e04",
+          "identifier": "$xor_curl",
+          "data_preview": "c9 df d8 c6 8a 87 c1 8a 87 d9"
+        },
+        {
+          "offset": "0x2dd5",
+          "identifier": "$xor_dd_slice",
+          "data_preview": "ce ce 8a c3 cc 97"
+        },
+        {
+          "offset": "0x2eb3",
+          "identifier": "$xor_chunk_fmt",
+          "data_preview": "c9 c2 df c4 c1 f5 c3 c4 ce cf d2 97"
+        },
+        {
+          "offset": "0x2a44",
+          "identifier": "$xor_dynamic",
+          "data_preview": "85 ce d3 c4 cb c7 c3 c9 95 de d2 ce 97"
+        },
+        {
+          "offset": "0x2a62",
+          "identifier": "$xor_dynamic",
+          "data_preview": "85 ce d3 c4 cb c7 c3 c9 95 de d2 ce 97"
+        },
+        {
+          "offset": "0x2c06",
+          "identifier": "$xor_dynamic",
+          "data_preview": "85 ce d3 c4 cb c7 c3 c9 95 de d2 ce 97"
+        },
+        {
+          "offset": "0x2c24",
+          "identifier": "$xor_dynamic",
+          "data_preview": "85 ce d3 c4 cb c7 c3 c9 95 de d2 ce 97"
+        }
+      ],
       "sample_sha256": "9ff32f7c0108e9d27a3b491edf04827b6ca025f44db68aeadc44eeb97c9aab11",
       "sample_md5": "9678f71ea4cccbc3d511dc8d7f24b113",
       "sample_name": "9ff32f7c0108e9d2.macho",
@@ -2425,7 +2506,8 @@ window.YARAFY_DATA = {
         ],
         "vt_permalink": "https://www.virustotal.com/gui/file/9ff32f7c0108e9d27a3b491edf04827b6ca025f44db68aeadc44eeb97c9aab11"
       },
-      "detected_at": "2026-09-01T10:24:38.407549+00:00"
+      "detected_at": "2026-09-01T10:24:38.407549+00:00",
+      "last_seen_at": "2026-10-19T02:32:11.677388+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -5768,7 +5850,8 @@ window.YARAFY_DATA = {
           "ESET-NOD32": "OSX/NukeSped.V trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/9f54ca45b40d1893537bd1899d2343146364d7e3ddca0d51f5c4c0cf238ecae4"
-      }
+      },
+      "last_seen_at": "2026-10-19T02:32:11.677388+00:00"
     },
     {
       "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
@@ -5899,7 +5982,8 @@ window.YARAFY_DATA = {
           "ESET-NOD32": "OSX/NukeSped.V trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/7887638bcafd57e2896c7c16698e927ce92fd7d409aae698d33cdca3ce8d25b8"
-      }
+      },
+      "last_seen_at": "2026-10-19T02:32:11.677388+00:00"
     },
     {
       "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
@@ -6031,7 +6115,8 @@ window.YARAFY_DATA = {
           "ESET-NOD32": "OSX/NukeSped.V trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/3474d98ec917eac063525284c86585eb283f4188c7df2f31bf35c16f8787e81c"
-      }
+      },
+      "last_seen_at": "2026-10-19T02:32:11.677388+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -11350,6 +11435,543 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
       "last_seen_at": "2026-10-18T21:37:36.645968+00:00"
+    },
+    {
+      "rule_name": "Macho_Trojan_CloudSync_1007YR",
+      "platform": "macos",
+      "namespace": "macos_stealer",
+      "tags": [],
+      "meta": {
+        "silent": 1,
+        "author": "Chandra Kant Bauri",
+        "description": "Detects CloudSync trojanized DMG disk image containers",
+        "date": "2026-10-06",
+        "family": "CloudSync",
+        "platform": "macOS"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x1eed16",
+          "identifier": "$koly",
+          "data_preview": "koly"
+        },
+        {
+          "offset": "0x1ec574",
+          "identifier": "$xml",
+          "data_preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+        },
+        {
+          "offset": "0x1ec59b",
+          "identifier": "$plist",
+          "data_preview": "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\""
+        },
+        {
+          "offset": "0x1ec6bf",
+          "identifier": "$part",
+          "data_preview": "whole disk (unknown partition : 0)"
+        },
+        {
+          "offset": "0x1ee1de",
+          "identifier": "$part",
+          "data_preview": "whole disk (unknown partition : 0)"
+        },
+        {
+          "offset": "0x1ec70e",
+          "identifier": "$mish_hdr",
+          "data_preview": "bWlzaAAAAAEAAAAAAAAAAAAAAAAAANg"
+        },
+        {
+          "offset": "0x1ec778",
+          "identifier": "$crc_part",
+          "data_preview": "PbEzG"
+        }
+      ],
+      "sample_sha256": "faf2eea05f3c9f1c4ef8f6be339f5459a38f95cfd9d512bc24e2803230e5c7bf",
+      "sample_md5": "0b572c56189c562cd4250cbfe0662be1",
+      "sample_name": "zoom.dmg",
+      "sample_size_bytes": 2027286,
+      "source_feed": "Local File",
+      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    },
+    {
+      "rule_name": "Macho_Trojan_CloudSync_DMG",
+      "platform": "macos",
+      "namespace": "macos_cloud_sync",
+      "tags": [],
+      "meta": {
+        "description": "Detects CloudSync trojanized DMG disk image containers",
+        "date": "2026-10-06",
+        "family": "CloudSync",
+        "platform": "macOS"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x1eed16",
+          "identifier": "$koly",
+          "data_preview": "koly"
+        },
+        {
+          "offset": "0x1ec574",
+          "identifier": "$xml",
+          "data_preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+        },
+        {
+          "offset": "0x1ec59b",
+          "identifier": "$plist",
+          "data_preview": "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\""
+        },
+        {
+          "offset": "0x1ec6bf",
+          "identifier": "$part",
+          "data_preview": "whole disk (unknown partition : 0)"
+        },
+        {
+          "offset": "0x1ee1de",
+          "identifier": "$part",
+          "data_preview": "whole disk (unknown partition : 0)"
+        },
+        {
+          "offset": "0x1ec70e",
+          "identifier": "$mish_hdr",
+          "data_preview": "bWlzaAAAAAEAAAAAAAAAAAAAAAAAANg"
+        },
+        {
+          "offset": "0x1ec778",
+          "identifier": "$crc_part",
+          "data_preview": "PbEzG"
+        }
+      ],
+      "sample_sha256": "faf2eea05f3c9f1c4ef8f6be339f5459a38f95cfd9d512bc24e2803230e5c7bf",
+      "sample_md5": "0b572c56189c562cd4250cbfe0662be1",
+      "sample_name": "zoom.dmg",
+      "sample_size_bytes": 2027286,
+      "source_feed": "Local File",
+      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    },
+    {
+      "rule_name": "Macho_hVNCRat_generic",
+      "platform": "macos",
+      "namespace": "macos_stealer",
+      "tags": [],
+      "meta": {
+        "author": "Chandra Kant Bauri",
+        "description": "Detects generic macOS HVNC (Hidden VNC) browser hijacking implant",
+        "date": "2026-10-14",
+        "malware_family": "macOS.hvnc"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x2a604",
+          "identifier": "$js_find",
+          "data_preview": "window.__hvncFind"
+        },
+        {
+          "offset": "0x2a62c",
+          "identifier": "$js_find",
+          "data_preview": "window.__hvncFind"
+        },
+        {
+          "offset": "0x2a645",
+          "identifier": "$js_find",
+          "data_preview": "window.__hvncFind"
+        },
+        {
+          "offset": "0x605cc",
+          "identifier": "$js_find",
+          "data_preview": "window.__hvncFind"
+        },
+        {
+          "offset": "0x605f4",
+          "identifier": "$js_find",
+          "data_preview": "window.__hvncFind"
+        },
+        {
+          "offset": "0x6060d",
+          "identifier": "$js_find",
+          "data_preview": "window.__hvncFind"
+        },
+        {
+          "offset": "0x2a4c0",
+          "identifier": "$js_copy",
+          "data_preview": "window.__hvncCopySel"
+        },
+        {
+          "offset": "0x60488",
+          "identifier": "$js_copy",
+          "data_preview": "window.__hvncCopySel"
+        },
+        {
+          "offset": "0x2a385",
+          "identifier": "$js_zoom",
+          "data_preview": "window.__hvncZoomSet"
+        },
+        {
+          "offset": "0x6034d",
+          "identifier": "$js_zoom",
+          "data_preview": "window.__hvncZoomSet"
+        },
+        {
+          "offset": "0x2a2d4",
+          "identifier": "$css_find",
+          "data_preview": "::highlight(hvnc-find)"
+        },
+        {
+          "offset": "0x6029c",
+          "identifier": "$css_find",
+          "data_preview": "::highlight(hvnc-find)"
+        },
+        {
+          "offset": "0x2c2c8",
+          "identifier": "$sqlite_bak",
+          "data_preview": ".backup '$T.hvncbak'"
+        },
+        {
+          "offset": "0x6228f",
+          "identifier": "$sqlite_bak",
+          "data_preview": ".backup '$T.hvncbak'"
+        },
+        {
+          "offset": "0x27f09",
+          "identifier": "$pkill_clone",
+          "data_preview": "/usr/bin/pkill -f 'hvnc_clone_'"
+        }
+      ],
+      "sample_sha256": "5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8",
+      "sample_md5": "540a0c1858da1e38cd4b64db1fefa6e0",
+      "sample_name": "5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8",
+      "sample_size_bytes": 469200,
+      "source_feed": "Local File",
+      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    },
+    {
+      "rule_name": "Macho_hVNCRat_campaign",
+      "platform": "macos",
+      "namespace": "macos_stealer",
+      "tags": [],
+      "meta": {
+        "author": "Chandra Kant Bauri",
+        "description": "Detects specific campaign build of macOS HVNC implant",
+        "date": "2026-10-14",
+        "malware_family": "macOS.HVNC",
+        "sample_hash": "5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x2f95e",
+          "identifier": "$c2",
+          "data_preview": "agent.torrentsbyjimboslimfit.xyz"
+        },
+        {
+          "offset": "0x6896e",
+          "identifier": "$c2",
+          "data_preview": "agent.torrentsbyjimboslimfit.xyz"
+        },
+        {
+          "offset": "0x2fa70",
+          "identifier": "$tag",
+          "data_preview": "HVNC_MAC_TAG:8panel"
+        },
+        {
+          "offset": "0x68a78",
+          "identifier": "$tag",
+          "data_preview": "HVNC_MAC_TAG:8panel"
+        },
+        {
+          "offset": "0x27e86",
+          "identifier": "$psk",
+          "data_preview": "hvnc-remote-default-psk"
+        },
+        {
+          "offset": "0x5de52",
+          "identifier": "$psk",
+          "data_preview": "hvnc-remote-default-psk"
+        },
+        {
+          "offset": "0x36134",
+          "identifier": "$id",
+          "data_preview": "hvnc_agent_macos_universal"
+        },
+        {
+          "offset": "0x3687b",
+          "identifier": "$id",
+          "data_preview": "hvnc_agent_macos_universal"
+        },
+        {
+          "offset": "0x72084",
+          "identifier": "$id",
+          "data_preview": "hvnc_agent_macos_universal"
+        },
+        {
+          "offset": "0x7286b",
+          "identifier": "$id",
+          "data_preview": "hvnc_agent_macos_universal"
+        }
+      ],
+      "sample_sha256": "5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8",
+      "sample_md5": "540a0c1858da1e38cd4b64db1fefa6e0",
+      "sample_name": "5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8",
+      "sample_size_bytes": 469200,
+      "source_feed": "Local File",
+      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    },
+    {
+      "rule_name": "Macho_hVNCRat_shelldropper",
+      "platform": "macos",
+      "namespace": "macos_stealer",
+      "tags": [],
+      "meta": {
+        "author": "Chandra Kant Bauri",
+        "description": "Detects shell dropper script for macOS HVNC agent",
+        "date": "2026-10-14",
+        "malware_family": "macOS.HVNC",
+        "sample_hash": "dce578f5af994c77785b96087e4fd4d8124482eab896dceb175a26342a84e31b"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$sh",
+          "data_preview": "#!/bin/"
+        },
+        {
+          "offset": "0x26",
+          "identifier": "$c2",
+          "data_preview": "txrouteuifbfewfubewfbhgrabbing.xyz"
+        },
+        {
+          "offset": "0x75",
+          "identifier": "$c2",
+          "data_preview": "txrouteuifbfewfubewfbhgrabbing.xyz"
+        },
+        {
+          "offset": "0x104",
+          "identifier": "$uri",
+          "data_preview": "/wohnung/agent"
+        },
+        {
+          "offset": "0x2fc",
+          "identifier": "$dest",
+          "data_preview": "Downloads/wohnung"
+        },
+        {
+          "offset": "0x485",
+          "identifier": "$dest",
+          "data_preview": "Downloads/wohnung"
+        },
+        {
+          "offset": "0x8b6",
+          "identifier": "$dest",
+          "data_preview": "Downloads/wohnung"
+        },
+        {
+          "offset": "0x331",
+          "identifier": "$plist",
+          "data_preview": "com.system.updater.plist"
+        },
+        {
+          "offset": "0x210",
+          "identifier": "$check_magic",
+          "data_preview": "cafebabe|cffaedfe"
+        }
+      ],
+      "sample_sha256": "dce578f5af994c77785b96087e4fd4d8124482eab896dceb175a26342a84e31b",
+      "sample_md5": "cdba0eea25ca357b0be56fc0695803d6",
+      "sample_name": "dce578f5af994c77785b96087e4fd4d8124482eab896dceb175a26342a84e31b",
+      "sample_size_bytes": 2331,
+      "source_feed": "Local File",
+      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    },
+    {
+      "rule_name": "OSX_Stealer_AMOS_Generic",
+      "platform": "macos",
+      "namespace": "macos_OSX_Stealer_AMOS_Generic",
+      "tags": [],
+      "meta": {
+        "description": "Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants",
+        "date": "2026-08-20",
+        "sample": "5277bb0dd553d54d81dbd8a12d4634f9",
+        "malware_family": "Atomic Stealer / AMOS",
+        "os": "macos",
+        "silent": 1
+      },
+      "matched_strings": [
+        {
+          "offset": "0x55ec9",
+          "identifier": "$sym_1",
+          "data_preview": "build_info_t"
+        },
+        {
+          "offset": "0x55ee6",
+          "identifier": "$sym_1",
+          "data_preview": "build_info_t"
+        },
+        {
+          "offset": "0x55ef9",
+          "identifier": "$sym_1",
+          "data_preview": "build_info_t"
+        },
+        {
+          "offset": "0x55edb",
+          "identifier": "$sym_2",
+          "data_preview": "serialized_build_info_t"
+        },
+        {
+          "offset": "0x5644a",
+          "identifier": "$sym_3",
+          "data_preview": "_g_serialized_build_info"
+        },
+        {
+          "offset": "0x41418",
+          "identifier": "$op_arm64_dec",
+          "data_preview": "4b 09 40 b3 6b 01 40 39 cc 02 0a 8b 8d 41 40 39 ab 01 0b 4a 8b 41 00 39 29 05 c9 93"
+        },
+        {
+          "offset": "0x37ac",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        },
+        {
+          "offset": "0x4148c",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        },
+        {
+          "offset": "0x41e80",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        },
+        {
+          "offset": "0x41f14",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        },
+        {
+          "offset": "0x41fa8",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        },
+        {
+          "offset": "0x42034",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        },
+        {
+          "offset": "0x420c8",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        },
+        {
+          "offset": "0x4215c",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        },
+        {
+          "offset": "0x421e8",
+          "identifier": "$op_key_load_1",
+          "data_preview": "48 64 8b 52 e8 73 be 72"
+        }
+      ],
+      "sample_sha256": "592d93f5899fb3245b962e9388e503efa085729cc41e1404feaf5ab04aeded45",
+      "sample_md5": "5277bb0dd553d54d81dbd8a12d4634f9",
+      "sample_name": "amos-ARM64",
+      "sample_size_bytes": 362624,
+      "source_feed": "Local File",
+      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    },
+    {
+      "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
+      "platform": "macos",
+      "namespace": "macos_MALW_macOS_MacSync_Stealer",
+      "tags": [],
+      "meta": {
+        "description": "Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)",
+        "date": "2026-08-31",
+        "family": "MacSync",
+        "threat_type": "Infostealer / Stager / Exfiltrator",
+        "platform": "macOS (x86_64 & ARM64)"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x81f",
+          "identifier": "$xor_archive",
+          "data_preview": "/tmp/osalogging.zip"
+        },
+        {
+          "offset": "0x78e",
+          "identifier": "$xor_osascript",
+          "data_preview": "osascript"
+        },
+        {
+          "offset": "0x7d0",
+          "identifier": "$xor_osascript",
+          "data_preview": "osascript"
+        },
+        {
+          "offset": "0x74d",
+          "identifier": "$xor_curl",
+          "data_preview": "curl -k -s"
+        },
+        {
+          "offset": "0x798",
+          "identifier": "$xor_curl",
+          "data_preview": "curl -k -s"
+        },
+        {
+          "offset": "0x774",
+          "identifier": "$xor_dynamic",
+          "data_preview": "/dynamic?txd="
+        },
+        {
+          "offset": "0x7be",
+          "identifier": "$xor_dynamic",
+          "data_preview": "/dynamic?txd="
+        },
+        {
+          "offset": "0x80ce",
+          "identifier": "$imp_freopen",
+          "data_preview": "_freopen"
+        },
+        {
+          "offset": "0x82b1",
+          "identifier": "$imp_freopen",
+          "data_preview": "_freopen"
+        },
+        {
+          "offset": "0x80d7",
+          "identifier": "$imp_setsid",
+          "data_preview": "_setsid"
+        },
+        {
+          "offset": "0x82ba",
+          "identifier": "$imp_setsid",
+          "data_preview": "_setsid"
+        },
+        {
+          "offset": "0x80e9",
+          "identifier": "$imp_system",
+          "data_preview": "_system"
+        },
+        {
+          "offset": "0x82cc",
+          "identifier": "$imp_system",
+          "data_preview": "_system"
+        },
+        {
+          "offset": "0x80c8",
+          "identifier": "$imp_fork",
+          "data_preview": "_fork"
+        },
+        {
+          "offset": "0x82ab",
+          "identifier": "$imp_fork",
+          "data_preview": "_fork"
+        }
+      ],
+      "sample_sha256": "fa65230781d2d3afc4152f23e3c4c91a91978d67dda2519d6eeb42476d41dc5a",
+      "sample_md5": "87aa640b3e03128a5358b60e17b48d2a",
+      "sample_name": "fa65230781d2d3afc4152f23e3c4c91a91978d67dda2519d6eeb42476d41dc5a",
+      "sample_size_bytes": 33936,
+      "source_feed": "Local File",
+      "detected_at": "2026-10-19T02:32:11.677388+00:00"
     }
   ],
   "rules": [
@@ -11364,7 +11986,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 17,
-      "total_hits": 6,
+      "total_hits": 7,
       "source_code": "rule MALW_macOS_MacSync_Stealer_Universal {\n    meta:\n        description = \"Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)\"\n        date = \"2026-08-31\"\n        family = \"MacSync\"\n        threat_type = \"Infostealer / Stager / Exfiltrator\"\n        platform = \"macOS (x86_64 & ARM64)\"\n\n    strings:\n        // XOR Modifier: Scans all 256 keys: 0x00 - 0xFF across Intel & ARM)\n        $xor_httpcode   = \"/tmp/.httpcode\" xor\n        $xor_archive    = \"/tmp/osalogging.zip\" xor\n        $xor_osascript  = \"osascript\" xor\n        $xor_curl       = \"curl -k -s\" xor\n        $xor_dd_slice   = \"dd if=\" xor\n        $xor_chunk_fmt  = \"chunk_index=\" xor\n        $xor_dynamic    = \"/dynamic?txd=\" xor\n        $xor_gate       = \"/gate?buildtxd=\" xor\n        $xor_agent      = \"CFNetwork/Darwin\" xor\n\n        // Unencrypted Format String Tokens & Compiler Artifacts\n        $fmt_sess_id    = \"%ld-%08x\" ascii wide\n        $str_obf_class  = \"ObfuscatedString\" ascii\n\n        // Multi-Architecture C++ Decryption Engine Machine Code\n        // x86_64: movsx eax, byte [reg+reg] ; xor eax, <KEY> ; mov byte [reg+reg], dl/al\n        $op_xor_x86_64  = { 0F BE ?? ?? 35 ?? 00 00 00 88 }\n\n        // POSIX Daemonization & Stream Manipulation System Imports (Identical across dyld on Intel & ARM64)\n        $imp_freopen    = \"_freopen\" ascii\n        $imp_setsid     = \"_setsid\" ascii\n        $imp_stat       = \"_stat$INODE64\" ascii\n        $imp_system     = \"_system\" ascii\n        $imp_fork       = \"_fork\" ascii\n\n    condition:\n        // Mach-O Magic Checks: Thin 64-bit/32-bit (Intel & ARM64) OR Universal Fat Binaries (FAT_MAGIC 0xCAFEBABE / FAT_MAGIC_64 0xCAFEBABF)\n        (\n            uint32(0) == 0xFEEDFACF or uint32(0) == 0xCFFAEDFE or  // Thin Mach-O 64-bit (x86_64 & ARM64)\n            uint32(0) == 0xFEEDFACE or uint32(0) == 0xCEFAEDFE or  // Thin Mach-O 32-bit (Legacy x86/ARM)\n            uint32(0) == 0xCAFEBABE or uint32(0) == 0xBEBAFECA or  // Universal Fat Binary (32-bit offsets)\n            uint32(0) == 0xCAFEBABF or uint32(0) == 0xBFBAFECA     // Universal Fat Binary 64-bit\n        ) and\n        filesize < 15MB and\n        (\n            // Primary Detection: Matches any 3 core behavioral strings regardless of XOR key (0x00-0xFF on Intel & ARM)\n            (3 of ($xor_*)) or\n\n            // Stripped Variant Detection: XOR loop opcodes + daemonization API imports\n            ($op_xor_x86_64 and $imp_freopen and ($imp_setsid or $imp_fork or $imp_stat)) or\n\n            // Universal Pipeline Detection: osascript pipe / dd slice + dyld execution APIs (Intel & ARM64)\n            (2 of ($xor_osascript, $xor_dd_slice, $xor_curl, $xor_gate) and $imp_system and ($imp_freopen or $imp_stat)) or\n\n            // Unstripped Variant Detection: ObfuscatedString class template + any single behavioral token\n            ($str_obf_class and (1 of ($xor_*) or $fmt_sess_id))\n        )\n}"
     },
     {
@@ -11378,7 +12000,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 19,
-      "total_hits": 37,
+      "total_hits": 38,
       "source_code": "rule OSX_Stealer_AMOS_Generic {\n    meta:\n        description = \"Detects Atomic macOS Stealer (AMOS) payloads, memory dumps, and unpacked variants\"\n        date = \"2026-08-20\"\n        sample = \"5277bb0dd553d54d81dbd8a12d4634f9\"\n        malware_family = \"Atomic Stealer / AMOS\"\n        os = \"macos\"\n        silent = 1\n\n    strings:\n        // Layer 1: C++ Symbols for serialized build config\n        $sym_1 = \"build_info_t\" ascii\n        $sym_2 = \"serialized_build_info_t\" ascii\n        $sym_3 = \"_g_serialized_build_info\" ascii\n\n        // Layer 2: AMOS Persistence & Artifact Names\n        $persist_1 = \"com.hlpr.agent\" ascii\n        $persist_2 = \".hlpr\" ascii\n        $persist_3 = \".agnt\" ascii\n\n        // Layer 3: AMOS C2 Endpoints and Upload Form Fields\n        $c2_api_1 = \"/api/reports/upload\" ascii\n        $c2_api_2 = \"/api/download/app-bundle\" ascii\n        $c2_api_3 = \"/api/agent/download\" ascii\n        $c2_field_1 = \"report_file=@\" ascii\n        $c2_field_2 = \"build_tag=\" ascii\n\n        // Layer 4: Characteristic AMOS Command Lines & TTP Sequences\n        $cmd_1 = \"SPSoftwareDataType SPHardwareDataType SPDisplaysDataType\" ascii\n        $cmd_2 = \"ditto -c -k --sequesterRsrc\" ascii\n        $cmd_3 = \"security find-generic-password\" ascii\n        $cmd_4 = \"dscl . -authonly\" ascii\n        $cmd_5 = \"com.apple.notificationcenterui doNotDisturb\" ascii\n\n        // Layer 5: Bytecode Signatures (ARM64)\n        // Rolling-ROR Decryption Loop: bfxil, ldrb, add, ldrb, eor, strb, ror x9, x9, #1\n        $op_arm64_dec = { 4b 09 40 b3 6b 01 40 39 [2-6] 8d 41 40 39 ab 01 0b 4a 8b 41 00 39 29 05 c9 93 }\n\n        // Stack-string 32-byte XOR key loader sequences:\n        // mov wX, #0x5b22 ; movk wX, #0xf39f, lsl #16 (0xf39f5b22)\n        $op_key_load_1 = { 4? 64 8b 52 e? 73 be 72 }\n        // mov wX, #0x60cd ; movk wX, #0x5929, lsl #16 (0x592960cd)\n        $op_key_load_2 = { a? 19 8c 52 2? 25 ab 72 }\n\n    condition:\n        // Mach-O 64-bit, 32-bit, or Universal/FAT binary headers\n        (uint32(0) == 0xfeedfacf or uint32(0) == 0xfeedface or \n         uint32(0) == 0xbebafeca or uint32(0) == 0xcafebabe) and (\n            //Symbol indicators + at least one behavioral artifact\n            (2 of ($sym_*) and (1 of ($c2_*) or 1 of ($cmd_*) or 1 of ($persist_*) or $op_arm64_dec or 1 of ($op_key_load_*))) or\n            \n            // C2 endpoints + Recon / Persistence commands / Form fields\n            (1 of ($c2_api_*) and (1 of ($cmd_*) or 1 of ($persist_*) or 1 of ($c2_field_*))) or\n            \n            // Decryption loop + any AMOS artifact / symbol / key loader\n            ($op_arm64_dec and (1 of ($sym_*) or 1 of ($c2_*) or 1 of ($cmd_*) or 1 of ($persist_*) or 1 of ($op_key_load_*))) or\n            \n            // High density of stack string key loader opcodes (for stripped/packed variants)\n            (#op_key_load_1 > 3 and #op_key_load_2 > 3) or\n            \n            // High density of characteristic TTP commands\n            (3 of ($cmd_*) and 2 of ($persist_*))\n        )\n}"
     },
     {
@@ -11406,7 +12028,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 6,
-      "total_hits": 0,
+      "total_hits": 1,
       "source_code": "rule Macho_Trojan_CloudSync_DMG {\n    meta:\n        description = \"Detects CloudSync trojanized DMG disk image containers\"\n        date = \"2026-10-06\"\n        family = \"CloudSync\"\n        platform = \"macOS\"\n\n    strings:\n        $koly = \"koly\"\n        $xml = \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\" ascii\n        $plist = \"<!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\"\" ascii\n        $part = \"whole disk (unknown partition : 0)\" ascii\n        $mish_hdr = \"bWlzaAAAAAEAAAAAAAAAAAAAAAAAANg\" ascii\n        $crc_part = \"PbEzG\" ascii // Base64 encoding of partition CRC 0x3DB13318\n\n    condition:\n        $koly at (filesize - 512) and\n        filesize > 1MB and filesize < 100MB and\n        $xml in (filesize-100000..filesize) and\n        $plist in (filesize-100000..filesize) and\n        $part and\n        ($mish_hdr or $crc_part)\n}"
     },
     {
@@ -11476,7 +12098,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 6,
-      "total_hits": 0,
+      "total_hits": 1,
       "source_code": "rule Macho_Trojan_CloudSync_1007YR {\n    meta:\n        silent = 1\n        author = \"Chandra Kant Bauri\"\n        description = \"Detects CloudSync trojanized DMG disk image containers\"\n        date = \"2026-10-06\"\n        family = \"CloudSync\"\n        platform = \"macOS\"\n\n    strings:\n        $koly = \"koly\"\n        $xml = \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\" ascii\n        $plist = \"<!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\"\" ascii\n        $part = \"whole disk (unknown partition : 0)\" ascii\n        $mish_hdr = \"bWlzaAAAAAEAAAAAAAAAAAAAAAAAANg\" ascii\n        $crc_part = \"PbEzG\" ascii // Base64 encoding of partition CRC 0x3DB13318\n\n    condition:\n        $koly at (filesize - 512) and\n        filesize > 1MB and filesize < 100MB and\n        $xml in (filesize-100000..filesize) and\n        $plist in (filesize-100000..filesize) and\n        $part and\n        ($mish_hdr or $crc_part)\n}"
     },
     {
@@ -11490,7 +12112,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 10,
-      "total_hits": 0,
+      "total_hits": 1,
       "source_code": "rule Macho_hVNCRat_generic {\n    meta:\n        author = \"Chandra Kant Bauri\"\n        description = \"Detects generic macOS HVNC (Hidden VNC) browser hijacking implant\"\n        date = \"2026-10-14\"\n        malware_family = \"macOS.hvnc\"\n    strings:\n        // Unique custom JavaScript injected into victim browsers for covert interaction\n        $js_find = \"window.__hvncFind\" ascii\n        $js_copy = \"window.__hvncCopySel\" ascii\n        $js_zoom = \"window.__hvncZoomSet\" ascii\n        $css_find = \"::highlight(hvnc-find)\" ascii\n\n        // Unique SQLite shadow backup & APFS clone strings\n        $sqlite_bak = \".backup '$T.hvncbak'\" ascii\n        $pkill_clone = \"/usr/bin/pkill -f 'hvnc_clone_'\" ascii\n        $apfs_clone = \"chromium clone: APFS clonefile snapshot\" ascii\n\n        // Unique DevTools Protocol manipulation & crash prompt suppression\n        $cdp_bounds = \"{\\\"windowId\\\":%d,\\\"bounds\\\":{\\\"left\\\":-32000,\\\"top\\\":-32000}}\" ascii\n        $cdp_crash1 = \"s/\\\"exit_type\\\":\\\"Crashed\\\"/\\\"exit_type\\\":\\\"Normal\\\"/g\" ascii\n        $cdp_crash2 = \"browser.sessionstore.resume_from_crash\" ascii\n    condition:\n        // Enforce valid Mach-O binary (64-bit, 32-bit, or Fat/Universal)\n        (uint32(0) == 0xfeedfacf or uint32(0) == 0xfeedface or uint32(0) == 0xcafebabe or uint32(0) == 0xcffaedfe or uint32(0) == 0xbebafeca)\n        and (\n            2 of ($js_find, $js_copy, $js_zoom, $css_find) or\n            2 of ($sqlite_bak, $pkill_clone, $apfs_clone) or\n            ($cdp_bounds and 1 of ($cdp_crash1, $cdp_crash2)) or\n            (3 of them)\n        )\n}"
     },
     {
@@ -11504,7 +12126,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 4,
-      "total_hits": 0,
+      "total_hits": 1,
       "source_code": "rule Macho_hVNCRat_campaign {\n    meta:\n        author = \"Chandra Kant Bauri\"\n        description = \"Detects specific campaign build of macOS HVNC implant\"\n        date = \"2026-10-14\"\n        malware_family = \"macOS.HVNC\"\n        sample_hash = \"5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8\"\n    strings:\n        $c2 = \"agent.torrentsbyjimboslimfit.xyz\" ascii\n        $tag = \"HVNC_MAC_TAG:8panel\" ascii\n        $psk = \"hvnc-remote-default-psk\" ascii\n        $id = \"hvnc_agent_macos_universal\" ascii\n    condition:\n        (uint32(0) == 0xfeedfacf or uint32(0) == 0xfeedface or uint32(0) == 0xcafebabe or uint32(0) == 0xcffaedfe or uint32(0) == 0xbebafeca)\n        and 2 of ($c2, $tag, $psk, $id)\n}"
     },
     {
@@ -11518,7 +12140,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 6,
-      "total_hits": 0,
+      "total_hits": 1,
       "source_code": "rule Macho_hVNCRat_shelldropper {\n    meta:\n        author = \"Chandra Kant Bauri\"\n        description = \"Detects shell dropper script for macOS HVNC agent\"\n        date = \"2026-10-14\"\n        malware_family = \"macOS.HVNC\"\n        sample_hash = \"dce578f5af994c77785b96087e4fd4d8124482eab896dceb175a26342a84e31b\"\n    strings:\n        $sh = \"#!/bin/\" ascii\n        $c2 = \"txrouteuifbfewfubewfbhgrabbing.xyz\" ascii\n        $uri = \"/wohnung/agent\" ascii\n        $dest = \"Downloads/wohnung\" ascii\n        $plist = \"com.system.updater.plist\" ascii\n        $check_magic = \"cafebabe|cffaedfe\" ascii\n    condition:\n        $sh at 0\n        and (\n            $c2 or\n            (3 of ($uri, $dest, $plist, $check_magic))\n        )\n}"
     }
   ]
