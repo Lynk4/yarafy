@@ -11671,7 +11671,37 @@
     "sample_name": "5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8",
     "sample_size_bytes": 469200,
     "source_feed": "Local File",
-    "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    "detected_at": "2026-10-19T02:32:11.677388+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 4,
+      "total_engines": 63,
+      "detection_ratio": "4/63",
+      "suggested_threat_label": "trojan.horse/stealer",
+      "popular_threat_category": [
+        {
+          "count": 3,
+          "value": "trojan"
+        }
+      ],
+      "names": [
+        "agent",
+        "wohnung"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "service-scan",
+        "long-sleeps",
+        "arm",
+        "malware",
+        "multi-arch",
+        "64bits",
+        "macho"
+      ],
+      "reputation": -3,
+      "key_engine_detections": {},
+      "vt_permalink": "https://www.virustotal.com/gui/file/5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8"
+    }
   },
   {
     "rule_name": "Macho_hVNCRat_campaign",
@@ -11742,7 +11772,37 @@
     "sample_name": "5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8",
     "sample_size_bytes": 469200,
     "source_feed": "Local File",
-    "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    "detected_at": "2026-10-19T02:32:11.677388+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 4,
+      "total_engines": 63,
+      "detection_ratio": "4/63",
+      "suggested_threat_label": "trojan.horse/stealer",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 3
+        }
+      ],
+      "names": [
+        "agent",
+        "wohnung"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "service-scan",
+        "long-sleeps",
+        "arm",
+        "malware",
+        "multi-arch",
+        "64bits",
+        "macho"
+      ],
+      "reputation": -3,
+      "key_engine_detections": {},
+      "vt_permalink": "https://www.virustotal.com/gui/file/5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8"
+    }
   },
   {
     "rule_name": "Macho_hVNCRat_shelldropper",
