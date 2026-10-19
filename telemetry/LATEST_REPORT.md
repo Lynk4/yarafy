@@ -43,7 +43,7 @@
 | 2026-10-19 02:52:22 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`40dc77a48f...`](https://www.virustotal.com/gui/file/40dc77a48faae52f4ab7e2fbac202427947ffd48fc4e3dc6ed9f9b4403dc590c) | `6/63` | `trojan.` |
 | 2026-10-19 02:32:11 | **Local File** | `MALW_macOS_MacSync_Stealer_Universal` | macos_MALW_macOS_MacSync_Stealer | [`fa65230781...`](https://www.virustotal.com/gui/file/fa65230781d2d3afc4152f23e3c4c91a91978d67dda2519d6eeb42476d41dc5a) | `26/63` | `trojan.stealer/coins` |
 | 2026-10-19 02:32:11 | **Local File** | `OSX_Stealer_AMOS_Generic` | macos | `592d93f589...` | `N/A` | `N/A` |
-| 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_shelldropper` | macos_stealer | `dce578f5af...` | `N/A` | `N/A` |
+| 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_shelldropper` | macos_stealer | [`dce578f5af...`](https://www.virustotal.com/gui/file/dce578f5af994c77785b96087e4fd4d8124482eab896dceb175a26342a84e31b) | `5/58` | `trojan.horse/qgil` |
 | 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_campaign` | macos_stealer | [`5681c400f0...`](https://www.virustotal.com/gui/file/5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8) | `4/63` | `trojan.horse/stealer` |
 | 2026-10-19 02:32:11 | **Local File** | `Macho_hVNCRat_generic` | macos_stealer | [`5681c400f0...`](https://www.virustotal.com/gui/file/5681c400f0ed8431b3950e92864e52cffb0bf93a359edffb49e423ad5e8ef0b8) | `4/63` | `trojan.horse/stealer` |
 | 2026-10-19 02:32:11 | **Local File** | `Macho_Trojan_CloudSync_DMG` | macos_cloud_sync | [`faf2eea05f...`](https://www.virustotal.com/gui/file/faf2eea05f3c9f1c4ef8f6be339f5459a38f95cfd9d512bc24e2803230e5c7bf) | `20/58` | `trojan.multiverze/abtrojan` |

@@ -11868,7 +11868,35 @@
     "sample_name": "dce578f5af994c77785b96087e4fd4d8124482eab896dceb175a26342a84e31b",
     "sample_size_bytes": 2331,
     "source_feed": "Local File",
-    "detected_at": "2026-10-19T02:32:11.677388+00:00"
+    "detected_at": "2026-10-19T02:32:11.677388+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 5,
+      "total_engines": 58,
+      "detection_ratio": "5/58",
+      "suggested_threat_label": "trojan.horse/qgil",
+      "popular_threat_category": [
+        {
+          "count": 5,
+          "value": "trojan"
+        }
+      ],
+      "names": [
+        "wohnung"
+      ],
+      "type_description": "Shell script",
+      "tags": [
+        "long-sleeps",
+        "shell",
+        "detect-debug-environment",
+        "persistence"
+      ],
+      "reputation": -2,
+      "key_engine_detections": {
+        "Microsoft": "Trojan:Script/Wacatac.B!ml"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/dce578f5af994c77785b96087e4fd4d8124482eab896dceb175a26342a84e31b"
+    }
   },
   {
     "rule_name": "OSX_Stealer_AMOS_Generic",
