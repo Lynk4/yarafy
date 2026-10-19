@@ -12027,7 +12027,42 @@ window.YARAFY_DATA = {
       "sample_name": "amos-ARM64",
       "sample_size_bytes": 362624,
       "source_feed": "Local File",
-      "detected_at": "2026-10-19T02:32:11.677388+00:00"
+      "detected_at": "2026-10-19T02:32:11.677388+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 32,
+        "total_engines": 63,
+        "detection_ratio": "32/63",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 19
+          }
+        ],
+        "names": [
+          "localfile~.arm64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "macho",
+          "self-signed",
+          "arm",
+          "password-dialog",
+          "self-delete",
+          "checks-cpu-name"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
+          "SentinelOne": "Static AI - Malicious Mach-O",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
+          "Sophos": "OSX/InfoStl-GW",
+          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/592d93f5899fb3245b962e9388e503efa085729cc41e1404feaf5ab04aeded45"
+      }
     },
     {
       "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
