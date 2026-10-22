@@ -1,19 +1,19 @@
 # Yarafy Telemetry & Threat Hunting Report
 
-**Last Run:** `2026-10-22T15:06:28.931817+00:00`
-**Total Samples Scanned:** `17345` | **Total Rule Hits:** `188`
+**Last Run:** `2026-10-22T19:15:34.846800+00:00`
+**Total Samples Scanned:** `17388` | **Total Rule Hits:** `189`
 
 ## Hits Breakdown by Source Feed
 | Source Feed | Total Hits |
 | :--- | :--- |
-| **MalwareBazaar** | `135` |
+| **MalwareBazaar** | `136` |
 | **VirusTotal Enterprise** | `43` |
 | **Local File** | `10` |
 
 ## Hits Breakdown by Platform
 | Platform | Total Hits |
 | :--- | :--- |
-| **MACOS** | `188` |
+| **MACOS** | `189` |
 | **WINDOWS** | `0` |
 | **LINUX** | `0` |
 | **NON-PE** | `0` |
@@ -21,7 +21,7 @@
 ## Hits Breakdown by YARA Rule
 | Rule Name | Total Detections |
 | :--- | :--- |
-| [`macOS_ClickFix_AppleScript_Dropper`](../yara-rules/) | `112` |
+| [`macOS_ClickFix_AppleScript_Dropper`](../yara-rules/) | `113` |
 | [`OSX_Stealer_AMOS_Generic`](../yara-rules/) | `38` |
 | [`OSX_Foxveil_AMOS_Stage4_Generic`](../yara-rules/) | `18` |
 | [`MALW_macOS_MacSync_Stealer_Universal`](../yara-rules/) | `7` |
@@ -37,6 +37,7 @@
 ## Recent Positive Detections
 | Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-22 19:15:34 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | `0ad481c699...` | `N/A` | `N/A` |
 | 2026-10-22 15:06:28 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`2e5bb8cc05...`](https://www.virustotal.com/gui/file/2e5bb8cc0558dfed95e93207bdcc39dfd3ed21851d7ba1e8d56dee83088c5e66) | `15/52` | `trojan.class/togkpj` |
 | 2026-10-22 15:06:28 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`13b4b87da6...`](https://www.virustotal.com/gui/file/13b4b87da6046356804ccfa023d66b9809371027b00f62fb4e4812dca34a1571) | `22/63` | `trojan.infostl/amos` |
 | 2026-10-22 15:06:28 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`66a39ad4e5...`](https://www.virustotal.com/gui/file/66a39ad4e53d93de95c3db38822fb265dcc8835328d591edaf3bbbe5098f391f) | `18/63` | `trojan.amos/abtrojan` |
@@ -86,4 +87,3 @@
 | 2026-10-19 21:33:01 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`47258dad12...`](https://www.virustotal.com/gui/file/47258dad12e7bbb34a8421c79e98a10f62adc6d613fa8d94c30599fffbb040f8) | `19/62` | `trojan.amos/bnhl` |
 | 2026-10-19 21:33:01 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`cf28f44cfe...`](https://www.virustotal.com/gui/file/cf28f44cfec7384cd572f5457a2d7e4a09fd72f7a29264393961fa4493b29c19) | `26/63` | `trojan.abtrojan/amos` |
 | 2026-10-19 21:33:01 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`b0a7077b5d...`](https://www.virustotal.com/gui/file/b0a7077b5d5baa1fb2d31115fbf226bac47f54c9aa499de343385cab6712f79c) | `11/63` | `trojan.` |
-| 2026-10-19 21:33:01 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | `a436ac961c...` | `N/A` | `N/A` |

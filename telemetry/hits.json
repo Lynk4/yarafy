@@ -624,8 +624,8 @@
       "suggested_threat_label": "trojan.infostl/stealer",
       "popular_threat_category": [
         {
-          "value": "trojan",
-          "count": 17
+          "count": 17,
+          "value": "trojan"
         }
       ],
       "names": [
@@ -652,7 +652,7 @@
     },
     "detected_at": "2026-08-31T14:41:41.676801+00:00",
     "source_feed": "MalwareBazaar",
-    "last_seen_at": "2026-10-22T15:06:28.931817+00:00"
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -769,12 +769,12 @@
       "suggested_threat_label": "trojan.amos/infostl",
       "popular_threat_category": [
         {
-          "count": 20,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 20
         },
         {
-          "count": 7,
-          "value": "dropper"
+          "value": "dropper",
+          "count": 7
         }
       ],
       "names": [
@@ -804,7 +804,7 @@
     },
     "detected_at": "2026-08-31T14:41:41.676801+00:00",
     "source_feed": "MalwareBazaar",
-    "last_seen_at": "2026-10-22T15:06:28.931817+00:00"
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -6518,7 +6518,7 @@
       "vt_permalink": "https://www.virustotal.com/gui/file/c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69"
     },
     "detected_at": "2026-09-23T05:01:05.435807+00:00",
-    "last_seen_at": "2026-10-22T15:06:28.931817+00:00"
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -14531,7 +14531,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/ccdc4d7aa75140392ae4d6296c229cb456617f64b6509be93f61ca91412d9af6"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -14571,7 +14572,7 @@
     "mb_metadata": {
       "first_seen": "2026-10-22 02:58:48",
       "file_type": "macho",
-      "signature": null,
+      "signature": "AMOS",
       "tags": [
         "AMOS",
         "ClickFix",
@@ -14589,12 +14590,12 @@
       "suggested_threat_label": "trojan.infostealer/infostl",
       "popular_threat_category": [
         {
-          "count": 6,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 6
         },
         {
-          "count": 1,
-          "value": "pua"
+          "value": "pua",
+          "count": 1
         }
       ],
       "names": [
@@ -14617,7 +14618,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/1b9ebec7a73d0a7c135f71904fef98602fa5ff49d137bb145608da207541c15b"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -14675,12 +14677,12 @@
       "suggested_threat_label": "trojan.infostealer/abtrojan",
       "popular_threat_category": [
         {
-          "value": "trojan",
-          "count": 5
+          "count": 5,
+          "value": "trojan"
         },
         {
-          "value": "pua",
-          "count": 1
+          "count": 1,
+          "value": "pua"
         }
       ],
       "names": [
@@ -14702,7 +14704,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/c81b8c0775f0fa25cfe09cab180e88426340cd1e171c033cd70145294504fefd"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -14760,12 +14763,12 @@
       "suggested_threat_label": "trojan.sgil",
       "popular_threat_category": [
         {
-          "count": 5,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 5
         },
         {
-          "count": 1,
-          "value": "pua"
+          "value": "pua",
+          "count": 1
         }
       ],
       "names": [
@@ -14787,7 +14790,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/66bb0add8962b6b2cf5bb3358e6777a421b54968674d838d7ccd2d3a6da555a0"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -14845,12 +14849,12 @@
       "suggested_threat_label": "trojan.",
       "popular_threat_category": [
         {
-          "count": 3,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 3
         },
         {
-          "count": 1,
-          "value": "pua"
+          "value": "pua",
+          "count": 1
         }
       ],
       "names": [
@@ -14872,7 +14876,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/44306aa41505302c109d90a5c85c68541b98bf783cb47af912a55b4d5a3dcc99"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -14958,7 +14963,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/b626c19713c716a0bc5a49d801300eaade449cec525012a35a6477295b6729a4"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15043,7 +15049,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/9edd2a4e7ce79550637ab4dd1dec171087dcf7313547e0935d64725101140a9b"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15127,7 +15134,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/aeea0651716d990d527a48473e7b54cd56849aee87b8916294c8f2ae81831617"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15213,7 +15221,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/932761c3c90d8db72e53b5e2cbf5f86eee95e15be50e0a4dab91d6e16b33cbd8"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15271,12 +15280,12 @@
       "suggested_threat_label": "trojan.infostl/ekjl",
       "popular_threat_category": [
         {
-          "value": "trojan",
-          "count": 5
+          "count": 5,
+          "value": "trojan"
         },
         {
-          "value": "pua",
-          "count": 1
+          "count": 1,
+          "value": "pua"
         }
       ],
       "names": [
@@ -15299,7 +15308,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/94521a0d9d77513864171e00075b46b5bededbd849efe056687d8494353815d4"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15357,12 +15367,12 @@
       "suggested_threat_label": "trojan.eajl",
       "popular_threat_category": [
         {
-          "count": 4,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 4
         },
         {
-          "count": 1,
-          "value": "pua"
+          "value": "pua",
+          "count": 1
         }
       ],
       "names": [
@@ -15383,7 +15393,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/805a8575437df0241e4f24d3c3d377e7dbcb42924ad9e41664bd0bc7dc26ed9d"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15468,7 +15479,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/a4f89e85ca176c7fccd50335b80e9cb31887297c3e8abb879e35636ae7c6cd68"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15526,12 +15538,12 @@
       "suggested_threat_label": "trojan.ssmw",
       "popular_threat_category": [
         {
-          "value": "trojan",
-          "count": 5
+          "count": 5,
+          "value": "trojan"
         },
         {
-          "value": "pua",
-          "count": 1
+          "count": 1,
+          "value": "pua"
         }
       ],
       "names": [
@@ -15553,7 +15565,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/bfaba22e0b58c2f5ab977de4322563fdeb3f5a90a573175181f34d4830a7fc97"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15624,8 +15637,8 @@
       "suggested_threat_label": "trojan.mmdhlt/uimw",
       "popular_threat_category": [
         {
-          "count": 9,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 9
         }
       ],
       "names": [
@@ -15649,7 +15662,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/d47d4a39e80e5c8c233aa4ecfe28d42f89f688a96421ad68baaf4bd5a4c81b31"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15744,7 +15758,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/621ed067e8214758b584df19b7f9726559d32af16267e6217f878d0b96378a29"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15803,12 +15818,12 @@
       "suggested_threat_label": "trojan.infostl/abapplication",
       "popular_threat_category": [
         {
-          "value": "trojan",
-          "count": 9
+          "count": 9,
+          "value": "trojan"
         },
         {
-          "value": "pua",
-          "count": 1
+          "count": 1,
+          "value": "pua"
         }
       ],
       "names": [
@@ -15831,7 +15846,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/c6dcafd1aaa7cdbf84e2cc6f1f6b3e6cc6a7c1b74ab995003a5d6f828cdf1268"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15917,7 +15933,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/30b4ae5036e76367f9d1165253dc81d4c7ae9fdced72c95cb4ecffc1f6aefcfd"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -15989,8 +16006,8 @@
       "suggested_threat_label": "trojan.abbackdoor/siuj",
       "popular_threat_category": [
         {
-          "count": 5,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 5
         }
       ],
       "names": [
@@ -16013,7 +16030,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/7a3e4f6ac3d726df49bad8f9a1c00bd75a57341238a1be9dac90be5b50b3385c"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16071,12 +16089,12 @@
       "suggested_threat_label": "trojan.infostl/abpws",
       "popular_threat_category": [
         {
-          "count": 6,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 6
         },
         {
-          "count": 1,
-          "value": "pua"
+          "value": "pua",
+          "count": 1
         }
       ],
       "names": [
@@ -16100,7 +16118,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/1d6102cbdf119cd3655d9beb30698a97ab69d996f2a1b913c0bd95b32076d2ac"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16186,7 +16205,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/461f5d168c724db1094e76955ce5ebe15ea611d7d0b497c5f06ffb0baffa10c8"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16232,7 +16252,7 @@
         "ClickFix",
         "Foxveil",
         "Mach-O",
-        "macho",
+        "machO",
         "macOS"
       ]
     },
@@ -16244,12 +16264,12 @@
       "suggested_threat_label": "trojan.infostl/amos",
       "popular_threat_category": [
         {
-          "value": "trojan",
-          "count": 13
+          "count": 13,
+          "value": "trojan"
         },
         {
-          "value": "pua",
-          "count": 1
+          "count": 1,
+          "value": "pua"
         }
       ],
       "names": [
@@ -16272,7 +16292,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/68b736e2aa1c565c1748fcb17a5e44bbf1727714047fbf50e8c9c9d6844fe6ea"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16317,9 +16338,9 @@
         "AMOS",
         "ClickFix",
         "Foxveil",
-        "loader",
+        "Loader",
         "Mach-O",
-        "macho",
+        "machO",
         "macOS"
       ]
     },
@@ -16359,7 +16380,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/6e7dcc1716e5a94f937f66f0796d10280abe40a11f13d2a258784468de71c478"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16404,9 +16426,9 @@
         "AMOS",
         "ClickFix",
         "Foxveil",
-        "loader",
+        "Loader",
         "Mach-O",
-        "macho",
+        "machO",
         "macOS"
       ]
     },
@@ -16446,7 +16468,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/8a2daf154b45503f88abb0f9f77ba79ad4044f235f03c2a1ff5604bc9ef1c227"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16491,9 +16514,9 @@
         "AMOS",
         "ClickFix",
         "Foxveil",
-        "loader",
+        "Loader",
         "Mach-O",
-        "macho",
+        "machO",
         "macOS"
       ]
     },
@@ -16533,7 +16556,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/4892ea6ae970b1c57b505e511ace698878b29666e0da59867b712ea83db1563b"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16578,9 +16602,9 @@
         "AMOS",
         "ClickFix",
         "Foxveil",
-        "loader",
+        "Loader",
         "Mach-O",
-        "macho",
+        "machO",
         "macOS"
       ]
     },
@@ -16592,12 +16616,12 @@
       "suggested_threat_label": "trojan.amos/abpws",
       "popular_threat_category": [
         {
-          "value": "trojan",
-          "count": 8
+          "count": 8,
+          "value": "trojan"
         },
         {
-          "value": "pua",
-          "count": 1
+          "count": 1,
+          "value": "pua"
         }
       ],
       "names": [
@@ -16620,7 +16644,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/09b5143a55acbb87423681f6c70a1bbed0034289a7448becc5d3adab51fddb77"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16665,9 +16690,9 @@
         "AMOS",
         "ClickFix",
         "Foxveil",
-        "loader",
+        "Loader",
         "Mach-O",
-        "macho",
+        "machO",
         "macOS"
       ]
     },
@@ -16679,12 +16704,12 @@
       "suggested_threat_label": "trojan.amos/abtrojan",
       "popular_threat_category": [
         {
-          "count": 8,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 8
         },
         {
-          "count": 1,
-          "value": "pua"
+          "value": "pua",
+          "count": 1
         }
       ],
       "names": [
@@ -16707,7 +16732,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/0ef806bb25a7206b2a7ab4c936ac6aa540c4777574068d51ec3d65c9e1fb67c4"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16752,9 +16778,9 @@
         "AMOS",
         "ClickFix",
         "Foxveil",
-        "loader",
+        "Loader",
         "Mach-O",
-        "macho",
+        "machO",
         "macOS"
       ]
     },
@@ -16766,12 +16792,12 @@
       "suggested_threat_label": "trojan.amos/abtrojan",
       "popular_threat_category": [
         {
-          "count": 9,
-          "value": "trojan"
+          "value": "trojan",
+          "count": 9
         },
         {
-          "count": 1,
-          "value": "pua"
+          "value": "pua",
+          "count": 1
         }
       ],
       "names": [
@@ -16794,7 +16820,8 @@
       },
       "vt_permalink": "https://www.virustotal.com/gui/file/66a39ad4e53d93de95c3db38822fb265dcc8835328d591edaf3bbbe5098f391f"
     },
-    "detected_at": "2026-10-22T15:06:28.931817+00:00"
+    "detected_at": "2026-10-22T15:06:28.931817+00:00",
+    "last_seen_at": "2026-10-22T19:15:34.846800+00:00"
   },
   {
     "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -16969,5 +16996,59 @@
       "vt_permalink": "https://www.virustotal.com/gui/file/2e5bb8cc0558dfed95e93207bdcc39dfd3ed21851d7ba1e8d56dee83088c5e66"
     },
     "detected_at": "2026-10-22T15:06:28.931817+00:00"
+  },
+  {
+    "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+    "platform": "macos",
+    "namespace": "macos_macOS_ClickFix_AppleScript",
+    "tags": [],
+    "meta": {
+      "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+      "date": "2026-08-31",
+      "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+      "threat_type": "Dropper / Infostealer Loader",
+      "platform": "macOS",
+      "confidence": "High"
+    },
+    "matched_strings": [
+      {
+        "offset": "0x0",
+        "identifier": "$macho_fat_be",
+        "data_preview": "ca fe ba be"
+      },
+      {
+        "offset": "0x6f1a8",
+        "identifier": "$sbox",
+        "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+      },
+      {
+        "offset": "0x14e708",
+        "identifier": "$sbox",
+        "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+      }
+    ],
+    "sample_sha256": "0ad481c6994048519dc317896755c1e8f6fec92e458aeaf4fa5cfa09a5126270",
+    "sample_md5": "903d4e0c1ff81b07599893234116257a",
+    "sample_name": "0ad481c6994048519dc317896755c1e8f6fec92e458aeaf4fa5cfa09a5126270.macho",
+    "sample_size_bytes": 1806624,
+    "source_feed": "MalwareBazaar",
+    "mb_metadata": {
+      "first_seen": "2026-10-22 17:23:41",
+      "file_type": "macho",
+      "signature": null,
+      "tags": [
+        "AMOS",
+        "ClickFix",
+        "Foxveil",
+        "Mach-O",
+        "macho",
+        "macOS"
+      ]
+    },
+    "vt_enrichment": {
+      "vt_status": "not_found",
+      "reason": "Sample not seen on VirusTotal yet"
+    },
+    "detected_at": "2026-10-22T19:15:34.846800+00:00"
   }
 ]
