@@ -385,6 +385,14 @@
       padding: 20px;
     }
 
+    #detail-modal {
+      z-index: 1200;
+    }
+
+    #static-reanalyze-modal {
+      z-index: 1250;
+    }
+
     .modal-overlay.active {
       display: flex;
     }
@@ -1440,6 +1448,10 @@ Source: ${hit.source_feed || 'N/A'}
           <h4>VirusTotal Antivirus Engine Detections</h4>
           <div class="detail-box">${avList}</div>
         </div>
+
+        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--card-border); display: flex; justify-content: flex-end;">
+          <button class="btn btn-primary" onclick="closeModalDirect()">Close Inspection</button>
+        </div>
       `;
 
       document.getElementById('detail-modal').classList.add('active');
@@ -1747,6 +1759,20 @@ Source: ${hit.source_feed || 'N/A'}
     function closeStaticReanalyzeModal(e) {
       if (e.target.id === 'static-reanalyze-modal') closeStaticReanalyzeModalDirect();
     }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (document.getElementById('static-reanalyze-modal')?.classList.contains('active')) {
+          closeStaticReanalyzeModalDirect();
+        } else if (document.getElementById('detail-modal')?.classList.contains('active')) {
+          closeModalDirect();
+        } else if (document.getElementById('rule-hits-modal')?.classList.contains('active')) {
+          closeRuleHitsModalDirect();
+        } else if (document.getElementById('rule-code-modal')?.classList.contains('active')) {
+          closeRuleModalDirect();
+        }
+      }
+    });
 
     document.addEventListener('DOMContentLoaded', loadTelemetryData);
   </script>
