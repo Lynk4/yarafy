@@ -141,7 +141,7 @@ class YaraScanner:
                 "namespace": match.namespace,
                 "tags": list(match.tags),
                 "meta": dict(match.meta),
-                "matched_strings": matched_strings[:15], # top 15 matches for brevity
+                "matched_strings": matched_strings, # preserve all matched strings
                 "sample_sha256": hashes["sha256"],
                 "sample_md5": hashes["md5"],
                 "sample_name": sample_name,

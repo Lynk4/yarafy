@@ -446,8 +446,84 @@
       padding: 12px;
       font-family: ui-monospace, SFMono-Regular, monospace;
       font-size: 12px;
-      max-height: 200px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      word-break: break-all;
+      max-height: 220px;
       overflow-y: auto;
+    }
+
+    #detail-modal .modal-content {
+      max-width: 860px;
+    }
+
+    .matched-strings-container {
+      background: #080c14;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      max-height: 320px;
+      overflow-y: auto;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+    }
+
+    .matched-string-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      white-space: nowrap;
+      min-width: fit-content;
+      transition: background 0.15s ease;
+    }
+
+    .matched-string-line:last-child {
+      border-bottom: none;
+    }
+
+    .matched-string-line:hover {
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .matched-string-idx {
+      color: var(--text-muted);
+      font-size: 11px;
+      min-width: 24px;
+      text-align: right;
+      user-select: none;
+      opacity: 0.6;
+    }
+
+    .matched-string-offset {
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
+    .matched-string-ident {
+      color: #34d399;
+      font-weight: 600;
+      min-width: 160px;
+    }
+
+    .matched-string-sep {
+      color: var(--text-muted);
+      user-select: none;
+    }
+
+    .matched-string-data {
+      color: #f1f5f9;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     /* Navigation Tabs */
@@ -1421,9 +1497,24 @@
       document.getElementById('modal-rule-title').textContent = `${hit.rule_name} - Inspection`;
       const body = document.getElementById('modal-body');
 
-      const stringsFormatted = (hit.matched_strings && hit.matched_strings.length > 0)
-        ? hit.matched_strings.map(s => `[${s.offset}] ${s.identifier}: ${s.data_preview}`).join('\n')
-        : 'Rule conditions satisfied on binary payload (string offsets not preserved for legacy record)';
+      const hasStrings = hit.matched_strings && hit.matched_strings.length > 0;
+      const matchCount = hasStrings ? hit.matched_strings.length : 0;
+
+      let stringsListHtml = '';
+      if (!hasStrings) {
+        stringsListHtml = '<div style="padding: 14px; color: var(--text-muted); font-size: 12px;">Rule conditions satisfied on binary payload (string offsets not preserved for legacy record)</div>';
+      } else {
+        stringsListHtml = hit.matched_strings.map((s, idx) => `
+          <div class="matched-string-line">
+            <span class="matched-string-idx">${idx + 1}</span>
+            <span class="matched-string-offset">${s.offset}</span>
+            <span class="matched-string-ident">${escapeHtml(s.identifier)}</span>
+            <span class="matched-string-sep">:</span>
+            <span class="matched-string-data">${escapeHtml(s.data_preview || '')}</span>
+          </div>
+        `).join('');
+      }
+
       const avList = hit.vt_enrichment?.key_engine_detections ? Object.entries(hit.vt_enrichment.key_engine_detections).map(([eng, res]) => `${eng}: ${res}`).join('\n') : 'No engine specifics';
 
       body.innerHTML = `
@@ -1440,8 +1531,13 @@ Source: ${hit.source_feed || 'N/A'}
         </div>
 
         <div class="detail-section">
-          <h4>Matched YARA Signatures & Offsets</h4>
-          <div class="detail-box">${stringsFormatted}</div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <h4 style="margin: 0;">Matched YARA Signatures & Offsets ${hasStrings ? `<span style="background: rgba(16, 185, 129, 0.15); color: var(--accent-green); border: 1px solid rgba(16, 185, 129, 0.3); padding: 1px 7px; border-radius: 999px; font-size: 11px; margin-left: 6px;">${matchCount} matches</span>` : ''}</h4>
+            ${hasStrings ? `<button class="btn" style="padding: 3px 8px; font-size: 11px;" id="copy-matches-btn" onclick="copyMatchedStrings('${hit.sample_sha256}')">Copy Matches</button>` : ''}
+          </div>
+          <div class="matched-strings-container">
+            ${stringsListHtml}
+          </div>
         </div>
 
         <div class="detail-section">
@@ -1455,6 +1551,27 @@ Source: ${hit.source_feed || 'N/A'}
       `;
 
       document.getElementById('detail-modal').classList.add('active');
+    }
+
+    function copyMatchedStrings(sha256) {
+      const hit = globalHits.find(h => (h.sample_sha256 || '').toLowerCase() === sha256.toLowerCase());
+      if (!hit || !hit.matched_strings) return;
+
+      const lines = hit.matched_strings.map(s => `[${s.offset}] ${s.identifier}: ${s.data_preview}`).join('\n');
+      navigator.clipboard.writeText(lines).then(() => {
+        const btn = document.getElementById('copy-matches-btn');
+        if (btn) {
+          const original = btn.textContent;
+          btn.textContent = 'Copied!';
+          btn.style.background = 'var(--accent-green)';
+          btn.style.borderColor = 'var(--accent-green)';
+          setTimeout(() => {
+            btn.textContent = original;
+            btn.style.background = '';
+            btn.style.borderColor = '';
+          }, 2000);
+        }
+      });
     }
 
     function closeModalDirect() {

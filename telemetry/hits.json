@@ -23554,6 +23554,26 @@
         "offset": "0xde6b",
         "identifier": "$bof_api3",
         "data_preview": "InstancePrintf"
+      },
+      {
+        "offset": "0xde7a",
+        "identifier": "$bof_api4",
+        "data_preview": "InstanceFormatAlloc"
+      },
+      {
+        "offset": "0xdd27",
+        "identifier": "$tcc_path",
+        "data_preview": "/Library/Application Support/com.apple.TCC"
+      },
+      {
+        "offset": "0xdd52",
+        "identifier": "$tcc_fda1",
+        "data_preview": "fda.system"
+      },
+      {
+        "offset": "0xdd94",
+        "identifier": "$tcc_fda2",
+        "data_preview": "fda.user"
       }
     ],
     "sample_sha256": "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e",
