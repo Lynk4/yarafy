@@ -1,10 +1,10 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 18701,
-    "total_hits": 264,
-    "last_run": "2026-10-27T23:48:49.639411+00:00",
+    "total_scanned": 18702,
+    "total_hits": 265,
+    "last_run": "2026-10-28T00:02:57.923690+00:00",
     "hits_by_platform": {
-      "macos": 264,
+      "macos": 265,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
@@ -21,15 +21,16 @@ window.YARAFY_DATA = {
       "Macho_Trojan_CloudSync_DMG": 1,
       "Macho_hVNCRat_generic": 1,
       "Macho_hVNCRat_campaign": 1,
-      "Macho_hVNCRat_shelldropper": 1
+      "Macho_hVNCRat_shelldropper": 1,
+      "macOS_Backdoor_C5_Implant": 1
     },
     "hits_by_source": {
       "MalwareBazaar": 211,
       "VirusTotal Enterprise": 43,
-      "Local File": 10
+      "Local File": 11
     },
-    "new_hits_this_run": 0,
-    "refreshed_hits_this_run": 170,
+    "new_hits_this_run": 1,
+    "refreshed_hits_this_run": 0,
     "total_rules": 13
   },
   "hits": [
@@ -23501,6 +23502,101 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
       "last_seen_at": "2026-10-27T23:48:49.639411+00:00"
+    },
+    {
+      "rule_name": "macOS_Backdoor_C5_Implant",
+      "platform": "macos",
+      "namespace": "macos_backdoor",
+      "tags": [],
+      "meta": {
+        "description": "Detects custom macOS x86_64 C2 implant featuring in-memory BOF execution and direct BSD syscalls",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-10-28",
+        "hash": "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x410",
+          "identifier": "$section_c5cfg",
+          "data_preview": "__c5cfg"
+        },
+        {
+          "offset": "0xdc60",
+          "identifier": "$cfg_magic_header",
+          "data_preview": "f2 f8 f2 f8 f2 f8 f2 f8"
+        },
+        {
+          "offset": "0x10040",
+          "identifier": "$cfg_magic_header",
+          "data_preview": "f2 f8 f2 f8 f2 f8 f2 f8"
+        },
+        {
+          "offset": "0xdc61",
+          "identifier": "$cfg_magic_footer",
+          "data_preview": "f8 f2 f8 f2"
+        },
+        {
+          "offset": "0xdc63",
+          "identifier": "$cfg_magic_footer",
+          "data_preview": "f8 f2 f8 f2"
+        },
+        {
+          "offset": "0xdc68",
+          "identifier": "$cfg_magic_footer",
+          "data_preview": "f8 f2 f8 f2"
+        },
+        {
+          "offset": "0x10041",
+          "identifier": "$cfg_magic_footer",
+          "data_preview": "f8 f2 f8 f2"
+        },
+        {
+          "offset": "0x10043",
+          "identifier": "$cfg_magic_footer",
+          "data_preview": "f8 f2 f8 f2"
+        },
+        {
+          "offset": "0x1043c",
+          "identifier": "$cfg_magic_footer",
+          "data_preview": "f8 f2 f8 f2"
+        },
+        {
+          "offset": "0xe19f",
+          "identifier": "$proto_session",
+          "data_preview": "c5-session-v1"
+        },
+        {
+          "offset": "0xdc6d",
+          "identifier": "$proto_magic",
+          "data_preview": "c5-magic"
+        },
+        {
+          "offset": "0xddc8",
+          "identifier": "$bof_error",
+          "data_preview": "EncryptedBofTooShort"
+        },
+        {
+          "offset": "0xde01",
+          "identifier": "$bof_api1",
+          "data_preview": "InstanceDataParse"
+        },
+        {
+          "offset": "0xde5c",
+          "identifier": "$bof_api2",
+          "data_preview": "InstanceOutput"
+        },
+        {
+          "offset": "0xde6b",
+          "identifier": "$bof_api3",
+          "data_preview": "InstancePrintf"
+        }
+      ],
+      "sample_sha256": "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e",
+      "sample_md5": "461d5a69b7eb0df487f9cb47214cc56e",
+      "sample_name": "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e",
+      "sample_size_bytes": 93504,
+      "source_feed": "Local File",
+      "detected_at": "2026-10-28T00:02:57.923690+00:00"
     }
   ],
   "rules": [
@@ -23543,7 +23639,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 13,
-      "total_hits": 0,
+      "total_hits": 1,
       "source_code": "rule macOS_Backdoor_C5_Implant {\n    meta:\n        description = \"Detects custom macOS x86_64 C2 implant featuring in-memory BOF execution and direct BSD syscalls\"\n        author = \"Chandra Kant Bauri\"\n        date = \"2026-10-28\"\n        hash = \"e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e\"\n\n\n    strings:\n        // Dedicated custom configuration section name and magic markers\n        $section_c5cfg = \"__c5cfg\" fullword ascii\n        $cfg_magic_header = { f2 f8 f2 f8 f2 f8 f2 f8 }\n        $cfg_magic_footer = { f8 f2 f8 f2 }\n\n        // Session and protocol indicators\n        $proto_session = \"c5-session-v1\" fullword ascii\n        $proto_magic   = \"c5-magic\" fullword ascii\n\n        // In-memory BOF) loader artifacts\n        $bof_error = \"EncryptedBofTooShort\" fullword ascii\n        $bof_api1  = \"InstanceDataParse\" fullword ascii\n        $bof_api2  = \"InstanceOutput\" fullword ascii\n        $bof_api3  = \"InstancePrintf\" fullword ascii\n        $bof_api4  = \"InstanceFormatAlloc\" fullword ascii\n\n        // TCC / Full Disk Access permission \n        $tcc_path = \"/Library/Application Support/com.apple.TCC\" ascii\n        $tcc_fda1 = \"fda.system\" fullword ascii\n        $tcc_fda2 = \"fda.user\" fullword ascii\n\n    condition:\n        \n        uint32(0) == 0xfeedfacf and\n        \n        filesize < 5MB and\n\n\n        (\n            // Signature A: Contains the custom config section and magic markers\n            ($section_c5cfg and ($cfg_magic_header or $cfg_magic_footer)) or\n\n            // Signature B: Custom C5 protocol identifiers\n            ($proto_session and $proto_magic) or\n\n            // Signature C: In-memory BOF TCC probing\n            ($bof_error and 2 of ($bof_api*) and 1 of ($tcc_*))\n        )\n}"
     },
     {

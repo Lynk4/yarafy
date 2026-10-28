@@ -23467,5 +23467,100 @@
     },
     "detected_at": "2026-10-27T22:02:30.007835+00:00",
     "last_seen_at": "2026-10-27T23:48:49.639411+00:00"
+  },
+  {
+    "rule_name": "macOS_Backdoor_C5_Implant",
+    "platform": "macos",
+    "namespace": "macos_backdoor",
+    "tags": [],
+    "meta": {
+      "description": "Detects custom macOS x86_64 C2 implant featuring in-memory BOF execution and direct BSD syscalls",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-10-28",
+      "hash": "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e"
+    },
+    "matched_strings": [
+      {
+        "offset": "0x410",
+        "identifier": "$section_c5cfg",
+        "data_preview": "__c5cfg"
+      },
+      {
+        "offset": "0xdc60",
+        "identifier": "$cfg_magic_header",
+        "data_preview": "f2 f8 f2 f8 f2 f8 f2 f8"
+      },
+      {
+        "offset": "0x10040",
+        "identifier": "$cfg_magic_header",
+        "data_preview": "f2 f8 f2 f8 f2 f8 f2 f8"
+      },
+      {
+        "offset": "0xdc61",
+        "identifier": "$cfg_magic_footer",
+        "data_preview": "f8 f2 f8 f2"
+      },
+      {
+        "offset": "0xdc63",
+        "identifier": "$cfg_magic_footer",
+        "data_preview": "f8 f2 f8 f2"
+      },
+      {
+        "offset": "0xdc68",
+        "identifier": "$cfg_magic_footer",
+        "data_preview": "f8 f2 f8 f2"
+      },
+      {
+        "offset": "0x10041",
+        "identifier": "$cfg_magic_footer",
+        "data_preview": "f8 f2 f8 f2"
+      },
+      {
+        "offset": "0x10043",
+        "identifier": "$cfg_magic_footer",
+        "data_preview": "f8 f2 f8 f2"
+      },
+      {
+        "offset": "0x1043c",
+        "identifier": "$cfg_magic_footer",
+        "data_preview": "f8 f2 f8 f2"
+      },
+      {
+        "offset": "0xe19f",
+        "identifier": "$proto_session",
+        "data_preview": "c5-session-v1"
+      },
+      {
+        "offset": "0xdc6d",
+        "identifier": "$proto_magic",
+        "data_preview": "c5-magic"
+      },
+      {
+        "offset": "0xddc8",
+        "identifier": "$bof_error",
+        "data_preview": "EncryptedBofTooShort"
+      },
+      {
+        "offset": "0xde01",
+        "identifier": "$bof_api1",
+        "data_preview": "InstanceDataParse"
+      },
+      {
+        "offset": "0xde5c",
+        "identifier": "$bof_api2",
+        "data_preview": "InstanceOutput"
+      },
+      {
+        "offset": "0xde6b",
+        "identifier": "$bof_api3",
+        "data_preview": "InstancePrintf"
+      }
+    ],
+    "sample_sha256": "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e",
+    "sample_md5": "461d5a69b7eb0df487f9cb47214cc56e",
+    "sample_name": "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e",
+    "sample_size_bytes": 93504,
+    "source_feed": "Local File",
+    "detected_at": "2026-10-28T00:02:57.923690+00:00"
   }
 ]
