@@ -23596,7 +23596,36 @@ window.YARAFY_DATA = {
       "sample_name": "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e",
       "sample_size_bytes": 93504,
       "source_feed": "Local File",
-      "detected_at": "2026-10-28T00:02:57.923690+00:00"
+      "detected_at": "2026-10-28T00:02:57.923690+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 7,
+        "total_engines": 63,
+        "detection_ratio": "7/63",
+        "suggested_threat_label": "trojan.bckdr",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 3
+          }
+        ],
+        "names": [
+          "component-macos-x86_64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "macho"
+        ],
+        "reputation": -1,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:Script/Wacatac.C!ml",
+          "Sophos": "OSX/Bckdr-SCV",
+          "ESET-NOD32": "OSX/Agent.IT trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e"
+      }
     }
   ],
   "rules": [

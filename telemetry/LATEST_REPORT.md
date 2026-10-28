@@ -38,7 +38,7 @@
 ## Recent Positive Detections
 | Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-10-28 00:02:57 | **Local File** | `macOS_Backdoor_C5_Implant` | macos_backdoor | `e2b8c46e96...` | `N/A` | `N/A` |
+| 2026-10-28 00:02:57 | **Local File** | `macOS_Backdoor_C5_Implant` | macos_backdoor | [`e2b8c46e96...`](https://www.virustotal.com/gui/file/e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e) | `7/63` | `trojan.bckdr` |
 | 2026-10-27 22:02:30 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`4f937f9bcf...`](https://www.virustotal.com/gui/file/4f937f9bcfbb1ac38a7c0f791a760425bb555ba8002752b879ddda303c1a425e) | `20/62` | `trojan.amos/infostl` |
 | 2026-10-27 22:02:30 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`4fd0502c48...`](https://www.virustotal.com/gui/file/4fd0502c48d621cb9fec491391d408e9c19f5643b57b3841c9fa1d488c779d97) | `13/62` | `trojan.amos/pwbwx7` |
 | 2026-10-27 22:02:30 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`8d8dd9808f...`](https://www.virustotal.com/gui/file/8d8dd9808f875b74c2ba8aa735c00e661b2d366f658d4d78a79bbb041b504eb2) | `15/62` | `trojan.amos/gr1b1g` |
