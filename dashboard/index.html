@@ -660,6 +660,69 @@
       0% { background: rgba(16, 185, 129, 0.4); transform: scale(1.08); }
       100% { background: rgba(244, 63, 94, 0.15); transform: scale(1); }
     }
+
+    /* Table Pagination Bar */
+    .pagination-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      border-top: 1px solid var(--card-border);
+      background: #090e18;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .pagination-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pagination-btn {
+      background: #141c2e;
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+
+    .pagination-btn:hover:not(:disabled) {
+      background: var(--card-border);
+      color: #fff;
+    }
+
+    .pagination-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .pagination-info {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .sortable-th {
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.15s;
+    }
+
+    .sortable-th:hover {
+      color: #fff;
+    }
+
+    .sort-indicator {
+      display: inline-block;
+      margin-left: 4px;
+      font-size: 10px;
+      opacity: 0.8;
+    }
   </style>
 </head>
 <body>
@@ -845,16 +908,48 @@
       </section>
 
       <!-- Rules Filter Bar -->
-      <section class="filter-panel">
-        <div class="filter-group">
-          <input type="text" id="search-rules-box" class="search-input" placeholder="Search rules by name, malware family, author, description..." oninput="applyRuleFilters()">
+      <section class="filter-panel" style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; flex: 1;">
+          <input type="text" id="search-rules-box" class="search-input" style="width: 290px;" placeholder="Search rules by name, malware family, author, description..." oninput="applyRuleFilters()">
+          
+          <div class="filter-group">
+            <button class="filter-pill rule-filter-pill active" data-rule-platform="all" onclick="setRulePlatformFilter('all', this)">All Platforms</button>
+            <button class="filter-pill rule-filter-pill" data-rule-platform="macos" onclick="setRulePlatformFilter('macos', this)">macOS</button>
+            <button class="filter-pill rule-filter-pill" data-rule-platform="windows" onclick="setRulePlatformFilter('windows', this)">Windows</button>
+            <button class="filter-pill rule-filter-pill" data-rule-platform="linux" onclick="setRulePlatformFilter('linux', this)">Linux</button>
+            <button class="filter-pill rule-filter-pill" data-rule-platform="non-pe" onclick="setRulePlatformFilter('non-pe', this)">Non-PE</button>
+          </div>
+
+          <button class="filter-pill" id="rule-hits-toggle-btn" onclick="toggleRuleHitsOnly(this)" style="display: inline-flex; align-items: center; gap: 6px;">
+            <span>Active Hits Only</span>
+            <span class="tab-badge" id="rule-active-hits-badge" style="background: rgba(244, 63, 94, 0.15); color: #fb7185; border-color: rgba(244, 63, 94, 0.3);">0</span>
+          </button>
         </div>
-        <div class="filter-group">
-          <button class="filter-pill rule-filter-pill active" data-rule-platform="all" onclick="setRulePlatformFilter('all', this)">All Platforms</button>
-          <button class="filter-pill rule-filter-pill" data-rule-platform="macos" onclick="setRulePlatformFilter('macos', this)">macOS</button>
-          <button class="filter-pill rule-filter-pill" data-rule-platform="windows" onclick="setRulePlatformFilter('windows', this)">Windows</button>
-          <button class="filter-pill rule-filter-pill" data-rule-platform="linux" onclick="setRulePlatformFilter('linux', this)">Linux</button>
-          <button class="filter-pill rule-filter-pill" data-rule-platform="non-pe" onclick="setRulePlatformFilter('non-pe', this)">Non-PE</button>
+
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 12px; color: var(--text-muted); font-weight: 500;">Sort:</span>
+            <select id="rule-sort-select" class="filter-select" style="padding: 6px 10px; font-size: 12px;" onchange="setRuleSortBy(this.value)">
+              <option value="hits-desc">Hits (High to Low)</option>
+              <option value="hits-asc">Hits (Low to High)</option>
+              <option value="name-asc">Rule Name (A-Z)</option>
+              <option value="name-desc">Rule Name (Z-A)</option>
+              <option value="family-asc">Malware Family (A-Z)</option>
+              <option value="strings-desc">Strings Count (Most)</option>
+              <option value="strings-asc">Strings Count (Least)</option>
+              <option value="platform-asc">Platform (A-Z)</option>
+            </select>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 12px; color: var(--text-muted); font-weight: 500;">Per Page:</span>
+            <select id="rule-page-size-select" class="filter-select" style="padding: 6px 10px; font-size: 12px;" onchange="setRulePageSize(this.value)">
+              <option value="15">15</option>
+              <option value="25" selected>25</option>
+              <option value="50">50</option>
+              <option value="all">All</option>
+            </select>
+          </div>
         </div>
       </section>
 
@@ -868,13 +963,13 @@
           <table id="rules-table">
             <thead>
               <tr>
-                <th>Rule Name</th>
-                <th>Platform</th>
-                <th>Malware Family</th>
+                <th class="sortable-th" onclick="toggleSortHeader('name')" title="Click to sort by Rule Name">Rule Name <span id="sort-ind-name" class="sort-indicator"></span></th>
+                <th class="sortable-th" onclick="toggleSortHeader('platform')" title="Click to sort by Platform">Platform <span id="sort-ind-platform" class="sort-indicator"></span></th>
+                <th class="sortable-th" onclick="toggleSortHeader('family')" title="Click to sort by Malware Family">Malware Family <span id="sort-ind-family" class="sort-indicator"></span></th>
                 <th>Description</th>
                 <th>Author</th>
-                <th>Strings</th>
-                <th>Lifetime Hits</th>
+                <th class="sortable-th" onclick="toggleSortHeader('strings')" title="Click to sort by Strings Count">Strings <span id="sort-ind-strings" class="sort-indicator"></span></th>
+                <th class="sortable-th" onclick="toggleSortHeader('hits')" title="Click to sort by Lifetime Hits">Lifetime Hits <span id="sort-ind-hits" class="sort-indicator">▾</span></th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -884,6 +979,16 @@
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <!-- Rules Pagination Bar -->
+        <div class="pagination-bar" id="rules-pagination-bar">
+          <div class="pagination-info" id="rules-pagination-info">Page 1 of 1</div>
+          <div class="pagination-controls">
+            <button class="pagination-btn" id="rule-prev-btn" onclick="changeRulePage(-1)" disabled>&larr; Previous</button>
+            <span id="rules-page-number" style="font-size: 12px; font-weight: 600; color: #fff; padding: 0 4px;">1</span>
+            <button class="pagination-btn" id="rule-next-btn" onclick="changeRulePage(1)" disabled>Next &rarr;</button>
+          </div>
         </div>
       </section>
     </div> <!-- End #view-rules -->
@@ -943,6 +1048,13 @@
     let globalRules = [];
     let activePlatform = 'all';
     let activeRulePlatform = 'all';
+    let ruleHitsOnly = false;
+    let ruleCurrentPage = 1;
+    let rulePageSize = 25;
+    let ruleSortBy = 'hits-desc';
+    let currentSortCol = 'hits';
+    let currentSortDir = 'desc';
+    let cachedFilteredRules = [];
     let currentInspectedRule = null;
     let chartInstances = {};
 
@@ -975,6 +1087,7 @@
         updateRulesKPIs();
         renderCharts();
         applyFilters();
+        updateSortIndicators();
         applyRuleFilters();
       }
 
@@ -994,6 +1107,7 @@
           updateRulesKPIs();
           renderCharts();
           applyFilters();
+          updateSortIndicators();
           applyRuleFilters();
         }
       } catch (err) {
@@ -1048,21 +1162,106 @@
 
       const ruleBadge = document.getElementById('rules-count-badge');
       if (ruleBadge) ruleBadge.textContent = `${total} Rules`;
+
+      const activeBadge = document.getElementById('rule-active-hits-badge');
+      if (activeBadge) activeBadge.textContent = firing;
     }
 
     function setRulePlatformFilter(platform, el) {
       activeRulePlatform = platform;
       document.querySelectorAll('.rule-filter-pill').forEach(btn => btn.classList.remove('active'));
       if (el) el.classList.add('active');
+      ruleCurrentPage = 1;
       applyRuleFilters();
+    }
+
+    function toggleRuleHitsOnly(el) {
+      ruleHitsOnly = !ruleHitsOnly;
+      if (ruleHitsOnly) {
+        el.classList.add('active');
+        el.style.borderColor = 'var(--accent-rose)';
+        el.style.background = 'rgba(244, 63, 94, 0.15)';
+        el.style.color = '#fb7185';
+      } else {
+        el.classList.remove('active');
+        el.style.borderColor = '';
+        el.style.background = '';
+        el.style.color = '';
+      }
+      ruleCurrentPage = 1;
+      applyRuleFilters();
+    }
+
+    function setRuleSortBy(sortVal) {
+      ruleSortBy = sortVal;
+      const parts = sortVal.split('-');
+      currentSortCol = parts[0];
+      currentSortDir = parts[1] || 'desc';
+      updateSortIndicators();
+      ruleCurrentPage = 1;
+      applyRuleFilters();
+    }
+
+    function toggleSortHeader(col) {
+      if (currentSortCol === col) {
+        currentSortDir = (currentSortDir === 'asc') ? 'desc' : 'asc';
+      } else {
+        currentSortCol = col;
+        currentSortDir = (col === 'hits' || col === 'strings') ? 'desc' : 'asc';
+      }
+      ruleSortBy = `${currentSortCol}-${currentSortDir}`;
+      const sel = document.getElementById('rule-sort-select');
+      if (sel) {
+        const matchingOpt = Array.from(sel.options).find(o => o.value === ruleSortBy);
+        if (matchingOpt) sel.value = ruleSortBy;
+      }
+      updateSortIndicators();
+      ruleCurrentPage = 1;
+      applyRuleFilters();
+    }
+
+    function updateSortIndicators() {
+      ['name', 'platform', 'family', 'strings', 'hits'].forEach(col => {
+        const el = document.getElementById(`sort-ind-${col}`);
+        if (!el) return;
+        if (col === currentSortCol) {
+          el.textContent = (currentSortDir === 'asc') ? '▴' : '▾';
+          el.style.color = 'var(--accent-cyan)';
+          el.style.opacity = '1';
+        } else {
+          el.textContent = '';
+        }
+      });
+    }
+
+    function setRulePageSize(size) {
+      rulePageSize = (size === 'all') ? 'all' : parseInt(size, 10);
+      ruleCurrentPage = 1;
+      applyRuleFilters();
+    }
+
+    function changeRulePage(delta) {
+      if (rulePageSize === 'all') return;
+      const total = cachedFilteredRules.length;
+      const totalPages = Math.ceil(total / rulePageSize) || 1;
+      const targetPage = ruleCurrentPage + delta;
+      if (targetPage >= 1 && targetPage <= totalPages) {
+        ruleCurrentPage = targetPage;
+        renderRulesTable();
+        const table = document.getElementById('rules-table');
+        if (table) table.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
     }
 
     function applyRuleFilters() {
       const query = (document.getElementById('search-rules-box')?.value || '').toLowerCase().trim();
 
-      const filtered = globalRules.filter(r => {
+      cachedFilteredRules = globalRules.filter(r => {
         const plat = (r.platform || 'unknown').toLowerCase();
         if (activeRulePlatform !== 'all' && plat !== activeRulePlatform) return false;
+
+        const hits = r.total_hits || 0;
+        if (ruleHitsOnly && hits <= 0) return false;
 
         if (query) {
           const matchName = (r.rule_name || '').toLowerCase().includes(query);
@@ -1075,22 +1274,55 @@
         return true;
       });
 
-      renderRulesTable(filtered);
+      cachedFilteredRules.sort((a, b) => {
+        if (ruleSortBy === 'hits-desc') return (b.total_hits || 0) - (a.total_hits || 0);
+        if (ruleSortBy === 'hits-asc') return (a.total_hits || 0) - (b.total_hits || 0);
+        if (ruleSortBy === 'name-asc') return (a.rule_name || '').localeCompare(b.rule_name || '');
+        if (ruleSortBy === 'name-desc') return (b.rule_name || '').localeCompare(a.rule_name || '');
+        if (ruleSortBy === 'platform-asc') return (a.platform || '').localeCompare(b.platform || '');
+        if (ruleSortBy === 'platform-desc') return (b.platform || '').localeCompare(a.platform || '');
+        if (ruleSortBy === 'family-asc') return (a.malware_family || '').localeCompare(b.malware_family || '');
+        if (ruleSortBy === 'family-desc') return (b.malware_family || '').localeCompare(a.malware_family || '');
+        if (ruleSortBy === 'strings-desc') return (b.strings_count || 0) - (a.strings_count || 0);
+        if (ruleSortBy === 'strings-asc') return (a.strings_count || 0) - (b.strings_count || 0);
+        return 0;
+      });
+
+      const totalPages = (rulePageSize === 'all') ? 1 : (Math.ceil(cachedFilteredRules.length / rulePageSize) || 1);
+      if (ruleCurrentPage > totalPages) ruleCurrentPage = totalPages;
+      if (ruleCurrentPage < 1) ruleCurrentPage = 1;
+
+      renderRulesTable();
     }
 
-    function renderRulesTable(rules) {
+    function renderRulesTable() {
       const tbody = document.getElementById('rules-table-body');
       const countEl = document.getElementById('filtered-rules-count');
-      if (countEl) countEl.textContent = `Showing ${rules.length} of ${globalRules.length} rules`;
+      const total = cachedFilteredRules.length;
 
       if (!tbody) return;
 
-      if (!rules || rules.length === 0) {
+      if (total === 0) {
+        if (countEl) countEl.textContent = `Showing 0 of ${globalRules.length} rules`;
         tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 32px;">No matching YARA rules found.</td></tr>`;
+        updateRulesPaginationControls(0, 0, 0);
         return;
       }
 
-      tbody.innerHTML = rules.map((r) => {
+      let pageRules = cachedFilteredRules;
+      let startIdx = 0;
+      let endIdx = total;
+
+      if (rulePageSize !== 'all') {
+        startIdx = (ruleCurrentPage - 1) * rulePageSize;
+        endIdx = Math.min(startIdx + rulePageSize, total);
+        pageRules = cachedFilteredRules.slice(startIdx, endIdx);
+        if (countEl) countEl.textContent = `Showing ${startIdx + 1}–${endIdx} of ${total} rules (${globalRules.length} total)`;
+      } else {
+        if (countEl) countEl.textContent = `Showing all ${total} rules (${globalRules.length} total)`;
+      }
+
+      tbody.innerHTML = pageRules.map((r) => {
         const plat = (r.platform || 'unknown').toLowerCase();
         const platBadge = `<span class="badge badge-${plat}">${plat.toUpperCase()}</span>`;
         const hits = r.total_hits || 0;
@@ -1119,6 +1351,31 @@
           </tr>
         `;
       }).join('');
+
+      updateRulesPaginationControls(startIdx, endIdx, total);
+    }
+
+    function updateRulesPaginationControls(startIdx, endIdx, total) {
+      const infoEl = document.getElementById('rules-pagination-info');
+      const pageNumEl = document.getElementById('rules-page-number');
+      const prevBtn = document.getElementById('rule-prev-btn');
+      const nextBtn = document.getElementById('rule-next-btn');
+
+      if (!infoEl) return;
+
+      if (total === 0 || rulePageSize === 'all') {
+        infoEl.textContent = total > 0 ? `Showing all ${total} rules` : 'No rules';
+        if (pageNumEl) pageNumEl.textContent = '1';
+        if (prevBtn) prevBtn.disabled = true;
+        if (nextBtn) nextBtn.disabled = true;
+        return;
+      }
+
+      const totalPages = Math.ceil(total / rulePageSize) || 1;
+      infoEl.textContent = `Page ${ruleCurrentPage} of ${totalPages} (${total} matching rules)`;
+      if (pageNumEl) pageNumEl.textContent = `${ruleCurrentPage} / ${totalPages}`;
+      if (prevBtn) prevBtn.disabled = (ruleCurrentPage <= 1);
+      if (nextBtn) nextBtn.disabled = (ruleCurrentPage >= totalPages);
     }
 
     function openRuleCodeModal(ruleName) {
