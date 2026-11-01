@@ -1,19 +1,19 @@
 # Yarafy Telemetry & Threat Hunting Report
 
-**Last Run:** `2026-10-31T19:26:14.890364+00:00`
-**Total Samples Scanned:** `19381` | **Total Rule Hits:** `576`
+**Last Run:** `2026-11-01T15:48:08.463222+00:00`
+**Total Samples Scanned:** `19383` | **Total Rule Hits:** `580`
 
 ## Hits Breakdown by Source Feed
 | Source Feed | Total Hits |
 | :--- | :--- |
 | **MalwareBazaar** | `256` |
 | **VirusTotal Enterprise** | `43` |
-| **Local File** | `277` |
+| **Local File** | `281` |
 
 ## Hits Breakdown by Platform
 | Platform | Total Hits |
 | :--- | :--- |
-| **MACOS** | `576` |
+| **MACOS** | `580` |
 | **WINDOWS** | `0` |
 | **LINUX** | `0` |
 | **NON-PE** | `0` |
@@ -22,13 +22,14 @@
 | Rule Name | Total Detections |
 | :--- | :--- |
 | [`OSX_Malware_EvilQuest_ThiefQuest`](../yara-rules/) | `266` |
-| [`macOS_ClickFix_AppleScript_Dropper`](../yara-rules/) | `232` |
+| [`macOS_ClickFix_AppleScript_Dropper`](../yara-rules/) | `234` |
 | [`OSX_Stealer_AMOS_Generic`](../yara-rules/) | `39` |
 | [`OSX_Foxveil_AMOS_Stage4_Generic`](../yara-rules/) | `18` |
 | [`MALW_macOS_MacSync_Stealer_Universal`](../yara-rules/) | `7` |
 | [`APT_macOS_RustBucket_Behavioral_Indicators`](../yara-rules/) | `3` |
 | [`Macho_Trojan_CloudSync_Generic`](../yara-rules/) | `3` |
 | [`Macho_Trojan_CloudSync_1006YR`](../yara-rules/) | `2` |
+| [`Macho_Jockey_Implant`](../yara-rules/) | `2` |
 | [`Macho_Trojan_CloudSync_1007YR`](../yara-rules/) | `1` |
 | [`Macho_Trojan_CloudSync_DMG`](../yara-rules/) | `1` |
 | [`Macho_hVNCRat_generic`](../yara-rules/) | `1` |
@@ -39,6 +40,10 @@
 ## Recent Positive Detections
 | Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-01 15:48:08 | **Local File** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | `2338d9333c...` | `N/A` | `N/A` |
+| 2026-11-01 15:48:08 | **Local File** | `Macho_Jockey_Implant` | macOS | `2338d9333c...` | `N/A` | `N/A` |
+| 2026-11-01 15:48:08 | **Local File** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | `a1be741da7...` | `N/A` | `N/A` |
+| 2026-11-01 15:48:08 | **Local File** | `Macho_Jockey_Implant` | macOS | `a1be741da7...` | `N/A` | `N/A` |
 | 2026-10-31 19:26:14 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`3168c669fa...`](https://www.virustotal.com/gui/file/3168c669fae2b267641c203e1abf6fa8e6011201ab8187dfe06d0168ff957c7f) | `22/63` | `trojan.amos/infostl` |
 | 2026-10-31 19:26:14 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`2cbc03368b...`](https://www.virustotal.com/gui/file/2cbc03368b2c63103af1e705a0dd42efe93514f87461ee14d9df858ec19e6a68) | `21/63` | `trojan.amos/infostl` |
 | 2026-10-31 19:26:14 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`0611cf61fa...`](https://www.virustotal.com/gui/file/0611cf61fa7ef2bab6cabd19207b0256a69a2981966b1f32691057c7dc03a433) | `21/63` | `trojan.amos/infostl` |
@@ -85,7 +90,3 @@
 | 2026-10-31 19:26:14 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`7c3b234169...`](https://www.virustotal.com/gui/file/7c3b234169d90ac5d8b18e56e5c46012319124a225316a962506b236fc952075) | `29/63` | `trojan.amos/infostl` |
 | 2026-10-31 19:26:14 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_macOS_ClickFix_AppleScript | [`3bba0dd56b...`](https://www.virustotal.com/gui/file/3bba0dd56b220041d6a7080fa8f53d8563bf2ced7796e88c9dc1b7beba44785a) | `18/47` | `trojan.infostl/amos` |
 | 2026-10-30 21:11:52 | **Local File** | `OSX_Malware_EvilQuest_ThiefQuest` | macos_ransomware | `3a5cd04869...` | `N/A` | `N/A` |
-| 2026-10-30 21:11:52 | **Local File** | `OSX_Malware_EvilQuest_ThiefQuest` | macos_ransomware | `2acb983502...` | `N/A` | `N/A` |
-| 2026-10-30 21:11:52 | **Local File** | `OSX_Malware_EvilQuest_ThiefQuest` | macos_ransomware | `3c03957314...` | `N/A` | `N/A` |
-| 2026-10-30 21:11:52 | **Local File** | `OSX_Malware_EvilQuest_ThiefQuest` | macos_ransomware | `8e2dea31ae...` | `N/A` | `N/A` |
-| 2026-10-30 21:11:52 | **Local File** | `OSX_Malware_EvilQuest_ThiefQuest` | macos_ransomware | `62fce63e27...` | `N/A` | `N/A` |

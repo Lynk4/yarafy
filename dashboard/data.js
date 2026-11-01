@@ -1,16 +1,16 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 19381,
-    "total_hits": 576,
-    "last_run": "2026-10-31T19:26:14.890364+00:00",
+    "total_scanned": 19383,
+    "total_hits": 580,
+    "last_run": "2026-11-01T15:48:08.463222+00:00",
     "hits_by_platform": {
-      "macos": 576,
+      "macos": 580,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
     },
     "hits_by_rule": {
-      "macOS_ClickFix_AppleScript_Dropper": 232,
+      "macOS_ClickFix_AppleScript_Dropper": 234,
       "OSX_Stealer_AMOS_Generic": 39,
       "MALW_macOS_MacSync_Stealer_Universal": 7,
       "OSX_Foxveil_AMOS_Stage4_Generic": 18,
@@ -23,16 +23,17 @@ window.YARAFY_DATA = {
       "Macho_hVNCRat_campaign": 1,
       "Macho_hVNCRat_shelldropper": 1,
       "macOS_Backdoor_C5_Implant": 1,
-      "OSX_Malware_EvilQuest_ThiefQuest": 266
+      "OSX_Malware_EvilQuest_ThiefQuest": 266,
+      "Macho_Jockey_Implant": 2
     },
     "hits_by_source": {
       "MalwareBazaar": 256,
       "VirusTotal Enterprise": 43,
-      "Local File": 277
+      "Local File": 281
     },
-    "new_hits_this_run": 45,
-    "refreshed_hits_this_run": 178,
-    "total_rules": 14
+    "new_hits_this_run": 4,
+    "refreshed_hits_this_run": 0,
+    "total_rules": 15
   },
   "hits": [
     {
@@ -89882,9 +89883,1170 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3168c669fae2b267641c203e1abf6fa8e6011201ab8187dfe06d0168ff957c7f"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00"
+    },
+    {
+      "rule_name": "Macho_Jockey_Implant",
+      "platform": "macos",
+      "namespace": "macos_Triage Implant_recon_implant_yar",
+      "tags": [],
+      "meta": {
+        "description": "JOCKY Forensic Agent macOS arm64 implant family",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-01",
+        "os": "macOS",
+        "architecture": "arm64",
+        "category": "Malware / Surveillance Implant",
+        "hash": "a1be741da7083f06e2e67b2ea5e854af4b780bc1af077b9d1220b288abee2584"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x49caf",
+          "identifier": "$sym_cicd_start",
+          "data_preview": "_j_cicd_start"
+        },
+        {
+          "offset": "0x49c9c",
+          "identifier": "$sym_cicd_gen",
+          "data_preview": "_j_cicd_generation"
+        },
+        {
+          "offset": "0x49ec9",
+          "identifier": "$sym_morph",
+          "data_preview": "_j_morph_mutate"
+        },
+        {
+          "offset": "0x4a1d0",
+          "identifier": "$sym_sandbox",
+          "data_preview": "_j_sandbox_run"
+        },
+        {
+          "offset": "0x49f06",
+          "identifier": "$sym_c2",
+          "data_preview": "_j_net_c2_submit"
+        },
+        {
+          "offset": "0x49ff8",
+          "identifier": "$sym_persist_cron",
+          "data_preview": "_j_persist_cron"
+        },
+        {
+          "offset": "0x4a008",
+          "identifier": "$sym_persist_inst",
+          "data_preview": "_j_persist_install"
+        },
+        {
+          "offset": "0x49d9a",
+          "identifier": "$sym_fs_hijack",
+          "data_preview": "_j_fs_path_hijack"
+        },
+        {
+          "offset": "0x49cf3",
+          "identifier": "$sym_crypto_aes_enc",
+          "data_preview": "_j_crypto_aes_gcm_encrypt"
+        },
+        {
+          "offset": "0x49cd9",
+          "identifier": "$sym_crypto_aes_dec",
+          "data_preview": "_j_crypto_aes_gcm_decrypt"
+        },
+        {
+          "offset": "0x49d38",
+          "identifier": "$sym_evtx",
+          "data_preview": "_j_evtx_parse"
+        },
+        {
+          "offset": "0x49e50",
+          "identifier": "$sym_lnk",
+          "data_preview": "_j_lnk_parse"
+        },
+        {
+          "offset": "0x4a71c",
+          "identifier": "$id_dep",
+          "data_preview": "gen_dep-"
+        },
+        {
+          "offset": "0x4a720",
+          "identifier": "$id_tag",
+          "data_preview": "dep-mum"
+        },
+        {
+          "offset": "0x2718c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2736c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x27c14",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2859c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x286f8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x28750",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x287c0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2886c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x289a4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x28a6c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2a9f4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2b19c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2b590",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2b5e8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2b7ac",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2c01c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2c7e4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2cb68",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2cd2c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2d430",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2d878",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2e67c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2e6d4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2e978",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2f6b8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2f994",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2ff28",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x300b4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3087c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x308d4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x30a7c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x31490",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3268c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x338d4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33ad0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33b84",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33bdc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33c34",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33c8c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33ce4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33f6c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x34520",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x34578",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3496c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x35134",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x35724",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3577c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x35e2c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36490",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36640",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36698",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x367ec",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36a58",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36e84",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36edc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3789c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x37a98",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x38438",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x38630",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x38688",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x38814",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3886c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x388c4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x39118",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x39170",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a9d8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3ab9c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3ad7c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3add4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3ae2c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3ae84",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3afa0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3aff8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b34c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b484",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b4dc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b534",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b5e8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b960",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b9b8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3ba10",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3bc0c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3be2c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3be84",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3bedc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3bf34",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3bf8c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3bfe4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3c03c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0xec20",
+          "identifier": "$code_morph_loop",
+          "data_preview": "55 b9 00 94 a8 72 40 39 e8 00 00 36 00 00 80 52 a4 43 00 94 a8 72 40 39 db a2 04 b9 28 fe 07 37"
+        }
+      ],
+      "sample_sha256": "a1be741da7083f06e2e67b2ea5e854af4b780bc1af077b9d1220b288abee2584",
+      "sample_md5": "d2bd258babf5d93c28f6a9745ca6abf2",
+      "sample_name": "a1be741da7083f06e2e67b2ea5e854af4b780bc1af077b9d1220b288abee2584",
+      "sample_size_bytes": 307344,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-01T15:48:08.463222+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_64_le",
+          "data_preview": "cf fa ed fe"
+        },
+        {
+          "offset": "0x3d5c0",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        }
+      ],
+      "sample_sha256": "a1be741da7083f06e2e67b2ea5e854af4b780bc1af077b9d1220b288abee2584",
+      "sample_md5": "d2bd258babf5d93c28f6a9745ca6abf2",
+      "sample_name": "a1be741da7083f06e2e67b2ea5e854af4b780bc1af077b9d1220b288abee2584",
+      "sample_size_bytes": 307344,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-01T15:48:08.463222+00:00"
+    },
+    {
+      "rule_name": "Macho_Jockey_Implant",
+      "platform": "macos",
+      "namespace": "macos_Triage Implant_recon_implant_yar",
+      "tags": [],
+      "meta": {
+        "description": "JOCKY Forensic Agent macOS arm64 implant family",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-01",
+        "os": "macOS",
+        "architecture": "arm64",
+        "category": "Malware / Surveillance Implant",
+        "hash": "a1be741da7083f06e2e67b2ea5e854af4b780bc1af077b9d1220b288abee2584"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x49cb7",
+          "identifier": "$sym_cicd_start",
+          "data_preview": "_j_cicd_start"
+        },
+        {
+          "offset": "0x49ca4",
+          "identifier": "$sym_cicd_gen",
+          "data_preview": "_j_cicd_generation"
+        },
+        {
+          "offset": "0x49ed1",
+          "identifier": "$sym_morph",
+          "data_preview": "_j_morph_mutate"
+        },
+        {
+          "offset": "0x4a1d8",
+          "identifier": "$sym_sandbox",
+          "data_preview": "_j_sandbox_run"
+        },
+        {
+          "offset": "0x49f0e",
+          "identifier": "$sym_c2",
+          "data_preview": "_j_net_c2_submit"
+        },
+        {
+          "offset": "0x4a000",
+          "identifier": "$sym_persist_cron",
+          "data_preview": "_j_persist_cron"
+        },
+        {
+          "offset": "0x4a010",
+          "identifier": "$sym_persist_inst",
+          "data_preview": "_j_persist_install"
+        },
+        {
+          "offset": "0x49da2",
+          "identifier": "$sym_fs_hijack",
+          "data_preview": "_j_fs_path_hijack"
+        },
+        {
+          "offset": "0x49cfb",
+          "identifier": "$sym_crypto_aes_enc",
+          "data_preview": "_j_crypto_aes_gcm_encrypt"
+        },
+        {
+          "offset": "0x49ce1",
+          "identifier": "$sym_crypto_aes_dec",
+          "data_preview": "_j_crypto_aes_gcm_decrypt"
+        },
+        {
+          "offset": "0x49d40",
+          "identifier": "$sym_evtx",
+          "data_preview": "_j_evtx_parse"
+        },
+        {
+          "offset": "0x49e58",
+          "identifier": "$sym_lnk",
+          "data_preview": "_j_lnk_parse"
+        },
+        {
+          "offset": "0x4a71c",
+          "identifier": "$id_dep",
+          "data_preview": "gen_dep-"
+        },
+        {
+          "offset": "0x4a720",
+          "identifier": "$id_tag",
+          "data_preview": "dep-mum"
+        },
+        {
+          "offset": "0x26ab4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x26c94",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2753c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x27ec4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x28020",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x28078",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x280e8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x28194",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x282cc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x28394",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2a31c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2aac4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2aeb8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2af10",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2b0d4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2b944",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2c10c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2c490",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2c654",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2cd58",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2d1a0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2dfa4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2dffc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2e2a0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2efe0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2f2bc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2f850",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x2f9dc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x301a4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x301fc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x303a4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x30db8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x31fb4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x331fc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x333f8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x334ac",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33504",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3355c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x335b4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3360c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33894",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33e48",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x33ea0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x34294",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x34a5c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3504c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x350a4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x35754",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x35db8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x35f68",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x35fc0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36114",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36380",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x367ac",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x36804",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x371c4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x373c0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x37d60",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x37f58",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x37fb0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3813c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x38194",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x381ec",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x38a40",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x38a98",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a300",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a4c4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a6a4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a6fc",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a754",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a7ac",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a8c8",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3a920",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3ac74",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3adac",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3ae04",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3ae5c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3af10",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b288",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b2e0",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b338",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b534",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b754",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b7ac",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b804",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b85c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b8b4",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b90c",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        },
+        {
+          "offset": "0x3b964",
+          "identifier": "$code_stream_cipher",
+          "data_preview": "4d 69 69 38 8e 7d 10 53 ce 7d 0b 1b ab 01 0b 4a 4b 69 29 38"
+        }
+      ],
+      "sample_sha256": "2338d9333c12afc34596bf22476fdf514b640f6919690e16e7fa9c0b7c196071",
+      "sample_md5": "028d30f3b32c6b7bc8d42a25bfc875d2",
+      "sample_name": "2338d9333c12afc34596bf22476fdf514b640f6919690e16e7fa9c0b7c196071",
+      "sample_size_bytes": 307344,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-01T15:48:08.463222+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_64_le",
+          "data_preview": "cf fa ed fe"
+        },
+        {
+          "offset": "0x3ced8",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        }
+      ],
+      "sample_sha256": "2338d9333c12afc34596bf22476fdf514b640f6919690e16e7fa9c0b7c196071",
+      "sample_md5": "028d30f3b32c6b7bc8d42a25bfc875d2",
+      "sample_name": "2338d9333c12afc34596bf22476fdf514b640f6919690e16e7fa9c0b7c196071",
+      "sample_size_bytes": 307344,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-01T15:48:08.463222+00:00"
     }
   ],
   "rules": [
+    {
+      "rule_name": "Macho_Jockey_Implant",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/Triage Implant/recon_implant.yar",
+      "description": "JOCKY Forensic Agent macOS arm64 implant family",
+      "malware_family": "Generic",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-11-01",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 16,
+      "total_hits": 2,
+      "source_code": "rule Macho_Jockey_Implant {\n    meta:\n        description = \"JOCKY Forensic Agent macOS arm64 implant family\"\n        author = \"Chandra Kant Bauri\"\n        date = \"2026-11-01\"\n        os = \"macOS\"\n        architecture = \"arm64\"\n        category = \"Malware / Surveillance Implant\"\n        hash = \"a1be741da7083f06e2e67b2ea5e854af4b780bc1af077b9d1220b288abee2584\"\n\n    strings:\n        // Set 1: Unique malware symbol markers (for unstripped or partially stripped variants)\n        $sym_cicd_start      = \"_j_cicd_start\" ascii\n        $sym_cicd_gen        = \"_j_cicd_generation\" ascii\n        $sym_morph           = \"_j_morph_mutate\" ascii\n        $sym_sandbox         = \"_j_sandbox_run\" ascii\n        $sym_c2              = \"_j_net_c2_submit\" ascii\n        $sym_persist_cron    = \"_j_persist_cron\" ascii\n        $sym_persist_inst    = \"_j_persist_install\" ascii\n        $sym_fs_hijack       = \"_j_fs_path_hijack\" ascii\n        $sym_crypto_aes_enc  = \"_j_crypto_aes_gcm_encrypt\" ascii\n        $sym_crypto_aes_dec  = \"_j_crypto_aes_gcm_decrypt\" ascii\n        $sym_evtx            = \"_j_evtx_parse\" ascii\n        $sym_lnk             = \"_j_lnk_parse\" ascii\n\n        // Set 2: Internal deployment and campaign identifier tags\n        $id_dep              = \"gen_dep-\" ascii\n        $id_tag              = \"dep-mum\" ascii\n\n        // Set 3: Distinctive ARM64 machine instruction sequences (detects fully stripped variants)\n        // Stream-cipher inner loop: ldrb, lsr #16, mul, eor, strb\n        // 4d 69 69 38 : ldrb w13, [x10, x9]\n        // 8e 7d 10 53 : lsr  w14, w12, #16\n        // ?? 7d ?? 1b : mul  w14, w14, w11\n        // ?? 01 ?? 4a : eor  w11, w13, w11\n        // 4b 69 ?? 38 : strb w11, [x10, x9]\n        $code_stream_cipher = { 4d 69 69 38 8e 7d 10 53 ?? 7d ?? 1b ?? 01 ?? 4a 4b 69 ?? 38 }\n\n        // Metamorphic thread loop: nanosleep followed by mutation call and loopback branch\n        // bl _nanosleep ... bl _j_morph_mutate ... tbnz\n        $code_morph_loop = { 55 b9 00 94 [0-16] a4 43 00 94 [0-16] 28 fe 07 37 }\n\n    condition:\n        // Performance guardrails: Evaluates header magic and file size first\n        (uint32(0) == 0xfeedfacf and uint32(4) == 0x0100000c)\n        and filesize < 5MB\n        and (\n            // Match condition 1: Unstripped binary containing 4 or more family symbols\n            4 of ($sym_*)\n            // Match condition 2: Deployment tag combined with at least 2 family symbols\n            or (any of ($id_*) and 2 of ($sym_*))\n            // Match condition 3: Stripped binary matching the custom stream cipher and metamorphic worker loop\n            or ($code_stream_cipher and ($code_morph_loop or any of ($sym_*)))\n        )\n}"
+    },
     {
       "rule_name": "macOS_Backdoor_C5_Implant",
       "platform": "macos",
@@ -89966,7 +91128,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 16,
-      "total_hits": 232,
+      "total_hits": 234,
       "source_code": "rule macOS_ClickFix_AppleScript_Dropper {\n    meta:\n        description    = \"Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader\"\n        date           = \"2026-08-31\"\n        sample_sha256  = \"05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72\"\n        threat_type    = \"Dropper / Infostealer Loader\"\n        family         = \"ClickFix\"\n        platform       = \"macOS\"\n        confidence     = \"High\"\n\n    strings:\n        // Mach-O Magic Header Identification\n        $macho_fat_be  = { CA FE BA BE }\n        $macho_fat_le  = { BE BA FE CA }\n        $macho_64_be   = { FE ED FA CF }\n        $macho_64_le   = { CF FA ED FE }\n\n        // S-Box / Key Table (256-byte static table header)\n        $sbox = {\n            BE 85 31 24 C3 7D 0C 55 74 5D BE 72 FE B1 DE 80\n            A7 06 DC 9B 74 F1 9B C1 C1 69 9B E4 86 47 BE EF\n        }\n\n        // PBKDF2 / Key Derivation Salt (32 bytes)\n        $pbkdf2_salt = {\n            B1 CD FF 97 CC 3E B0 8F 2B 4A 53 89 4E CD 52 15\n            1A E5 AD 86 89 EA 99 45 06 F9 70 26 F0 34 6A BE\n        }\n\n        // HKDF Salt Constant\n        $hkdf_salt = {\n            85 CD 9E 60 B3 7D E0 B7 33 F7 36 D0 66 DC 49 1A\n            54 94 A7 E8 63 1F 03 24 BF 3E 08 2F CC D5 06 5D\n        }\n\n        // Hardcoded SHA-256 verification hashes for decrypted payloads\n        $payload_hash1 = {\n            9E 0B 82 E1 6D 94 C4 8F BF C7 12 00 4D B9 95 BE\n            A8 23 E8 97 7A C7 A9 4C D7 C3 A4 F2 FE 08 05 07\n        }\n        $payload_hash2 = {\n            7D B4 3F F8 79 96 2B 55 70 44 2C 2A E5 D2 1F D4\n            F6 D8 7D C0 CF DD E7 28 94 39 B4 71 8B 2B EE B9\n        }\n\n        // Multi-chunk encrypted payload length table (0x3ef6, 0x410f, 0x3ba4, 0x40f4, 0x3f79)\n        $chunk_lengths = {\n            F6 3E 00 00 00 00 00 00 0F 41 00 00 00 00 00 00\n            A4 3B 00 00 00 00 00 00 F4 40 00 00 00 00 00 00\n            79 3F 00 00 00 00 00 00\n        }\n\n        // Obfuscated XOR (0x1D) Anti-Analysis / VM Artifact Strings\n        $xor_hw_model   = \"uj3pryxq\"                // \"hw.model\" ^ 0x1d\n        $xor_model_id   = \"Pryxq=Tyxsit{txo\\x27=\"   // \"Model Identifier: \" ^ 0x1d\n        $xor_cpu_brand  = \"syBniotszvxos3urnihhty9\" // \"machdep.cpu.brand_string\" ^ 0x1d\n        $xor_vm_uuid    = \"zf4dtjrdmf\"              // VM UUID prefix ^ 0x1d\n\n        // Dropper Build / Component Identifier\n        $setup_id = \"setup-d192a316d9094048ce8251c66418fa61a3f2d45c\"\n\n        // ChaCha20 constant\n        $chacha20_const = \"expand 32-byte k\"\n\n    condition:\n        // Ensure valid Mach-O file format and size bounds\n        ($macho_fat_be at 0 or $macho_fat_le at 0 or $macho_64_be at 0 or $macho_64_le at 0) and\n        filesize < 2MB and\n        (\n            $sbox or\n            $setup_id or\n            $chunk_lengths or\n            ($pbkdf2_salt and ($payload_hash1 or $payload_hash2)) or\n            2 of ($xor_hw_model, $xor_model_id, $xor_cpu_brand, $xor_vm_uuid) or\n            ($chacha20_const and ($pbkdf2_salt or $hkdf_salt or $payload_hash1 or $payload_hash2))\n        )\n}"
     },
     {
