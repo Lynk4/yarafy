@@ -4,6 +4,8 @@ rule APT_macOS_RustBucket_Behavioral_Indicators {
         date = "2026-09-18"
         severity = "High"
         malware_family = "RustBucket"
+        family = "RustBucket"
+        platform = "macOS"
 
     strings:
         // C2 User-Agent anomaly (Legacy IE on macOS)

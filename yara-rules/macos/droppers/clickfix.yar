@@ -4,6 +4,7 @@ rule macOS_ClickFix_AppleScript_Dropper {
         date           = "2026-08-31"
         sample_sha256  = "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72"
         threat_type    = "Dropper / Infostealer Loader"
+        family         = "ClickFix"
         platform       = "macOS"
         confidence     = "High"
 

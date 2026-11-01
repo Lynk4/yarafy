@@ -4,7 +4,8 @@ rule macOS_Backdoor_C5_Implant {
         author = "Chandra Kant Bauri"
         date = "2026-10-28"
         hash = "e2b8c46e9673699357002778d81335d78a42b008af5c2f9296cc95ae9934fa9e"
-
+        family = "C5 Implant"
+        platform = "macOS"
 
     strings:
         // Dedicated custom configuration section name and magic markers
@@ -16,25 +17,21 @@ rule macOS_Backdoor_C5_Implant {
         $proto_session = "c5-session-v1" fullword ascii
         $proto_magic   = "c5-magic" fullword ascii
 
-        // In-memory BOF) loader artifacts
+        // In-memory BOF loader artifacts
         $bof_error = "EncryptedBofTooShort" fullword ascii
         $bof_api1  = "InstanceDataParse" fullword ascii
         $bof_api2  = "InstanceOutput" fullword ascii
         $bof_api3  = "InstancePrintf" fullword ascii
         $bof_api4  = "InstanceFormatAlloc" fullword ascii
 
-        // TCC / Full Disk Access permission 
+        // TCC / Full Disk Access permission
         $tcc_path = "/Library/Application Support/com.apple.TCC" ascii
         $tcc_fda1 = "fda.system" fullword ascii
         $tcc_fda2 = "fda.user" fullword ascii
 
     condition:
-        
         uint32(0) == 0xfeedfacf and
-        
         filesize < 5MB and
-
-
         (
             // Signature A: Contains the custom config section and magic markers
             ($section_c5cfg and ($cfg_magic_header or $cfg_magic_footer)) or

@@ -9,7 +9,6 @@ rule OSX_Malware_EvilQuest_ThiefQuest {
         reference       = "https://objective-see.org/blog/blog_0x59.html"
         sample_sha256   = "7273b091529f3fa0fc9fd642553ff3b26daa9b1afc4f6ad49fd853e9d420fc7a"
 
-
     strings:
         // 1. High-Entropy Cryptographic Artifacts (High-Quality 4-byte AC Atoms)
         $crypto_key_seed    = "XY345N5s#p$(<d6HjaKvt!DL+Maiy]-0;amP5Be?a}GHI|RQ_2[7%aV{8a.^)~E>:" ascii fullword
