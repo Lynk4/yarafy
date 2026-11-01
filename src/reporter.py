@@ -429,7 +429,8 @@ class TelemetryReporter:
         for yar_path in sorted(rules_root.rglob("*.yar")):
             try:
                 rel_path = yar_path.relative_to(root_dir)
-                platform = yar_path.parent.name
+                rel_from_rules = yar_path.relative_to(rules_root)
+                platform = rel_from_rules.parts[0] if rel_from_rules.parts else yar_path.parent.name
                 text = yar_path.read_text(encoding="utf-8", errors="ignore")
 
                 meta_by_name = {}

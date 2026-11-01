@@ -22,7 +22,7 @@ class YaraScanner:
         for platform in self.active_platforms:
             plat_dir = self.rules_root / platform
             if plat_dir.exists() and plat_dir.is_dir():
-                yar_files = list(plat_dir.glob("*.yar")) + list(plat_dir.glob("*.yara"))
+                yar_files = sorted(list(plat_dir.rglob("*.yar")) + list(plat_dir.rglob("*.yara")))
                 self.rule_files[platform] = yar_files
 
     def validate_rules(self) -> Tuple[bool, List[str]]:
@@ -42,9 +42,14 @@ class YaraScanner:
         """Compile all active platform rules into a single Yara.Rules object with namespaces."""
         filepaths = {}
         for platform, files in self.rule_files.items():
+            plat_dir = self.rules_root / platform
             for f in files:
-                # Namespace format: platform_rulename
-                ns = f"{platform}_{f.stem}"
+                # Namespace format: platform_subpath_filename
+                try:
+                    rel_stem = f.relative_to(plat_dir).as_posix().replace("/", "_").replace(".", "_")
+                except ValueError:
+                    rel_stem = f.stem
+                ns = f"{platform}_{rel_stem}"
                 filepaths[ns] = str(f)
 
         if not filepaths:
