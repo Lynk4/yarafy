@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 19926,
+    "total_scanned": 20565,
     "total_hits": 601,
-    "last_run": "2026-11-02T17:14:50.267754+00:00",
+    "last_run": "2026-11-02T18:28:41.427234+00:00",
     "hits_by_platform": {
       "macos": 601,
       "windows": 0,
@@ -31,8 +31,8 @@ window.YARAFY_DATA = {
       "VirusTotal Enterprise": 43,
       "Local File": 281
     },
-    "new_hits_this_run": 10,
-    "refreshed_hits_this_run": 114,
+    "new_hits_this_run": 0,
+    "refreshed_hits_this_run": 248,
     "total_rules": 15
   },
   "hits": [
@@ -1026,7 +1026,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1119,7 +1119,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1236,12 +1236,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           },
           {
-            "value": "dropper",
-            "count": 7
+            "count": 7,
+            "value": "dropper"
           }
         ],
         "names": [
@@ -1271,7 +1271,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -1460,8 +1460,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -1488,7 +1488,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -1636,7 +1636,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1720,7 +1720,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -1845,7 +1845,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -1942,8 +1942,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -1970,7 +1970,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -2197,12 +2197,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 3,
-            "value": "downloader"
+            "value": "downloader",
+            "count": 3
           }
         ],
         "names": [
@@ -2231,7 +2231,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -2395,7 +2395,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -2746,8 +2746,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/stealer",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -2788,7 +2788,7 @@ window.YARAFY_DATA = {
           "macOS"
         ]
       },
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
@@ -4319,7 +4319,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99"
       },
       "detected_at": "2026-09-05T15:21:19.633365+00:00",
-      "last_seen_at": "2026-10-26T11:44:45.495361+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -4491,6 +4491,1916 @@ window.YARAFY_DATA = {
           "offset": "0x573f",
           "identifier": "$dlsym_call_x86",
           "data_preview": "48 c7 c7 fe ff ff ff e8 fe 82 00 00"
+        },
+        {
+          "offset": "0x5950",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 ed 80 00 00"
+        },
+        {
+          "offset": "0x5b7f",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 be 7e 00 00"
+        },
+        {
+          "offset": "0x5c40",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 fd 7d 00 00"
+        },
+        {
+          "offset": "0x5e74",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 c9 7b 00 00"
+        },
+        {
+          "offset": "0x6037",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 06 7a 00 00"
+        },
+        {
+          "offset": "0x61c0",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 7d 78 00 00"
+        },
+        {
+          "offset": "0x62fe",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 3f 77 00 00"
+        },
+        {
+          "offset": "0x63e7",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 56 76 00 00"
+        },
+        {
+          "offset": "0x9403",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 3a 46 00 00"
+        },
+        {
+          "offset": "0x9559",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 e4 44 00 00"
+        },
+        {
+          "offset": "0xaf9e",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 9f 2a 00 00"
+        },
+        {
+          "offset": "0xb07d",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 c0 29 00 00"
+        },
+        {
+          "offset": "0xbf66",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 d7 1a 00 00"
+        },
+        {
+          "offset": "0xc0ac",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 91 19 00 00"
+        },
+        {
+          "offset": "0xc1ca",
+          "identifier": "$dlsym_call_x86",
+          "data_preview": "48 c7 c7 fe ff ff ff e8 73 18 00 00"
+        },
+        {
+          "offset": "0x48804",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 01 24 00 94"
+        },
+        {
+          "offset": "0x488e4",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 c9 23 00 94"
+        },
+        {
+          "offset": "0x489f0",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 86 23 00 94"
+        },
+        {
+          "offset": "0x48af0",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 46 23 00 94"
+        },
+        {
+          "offset": "0x48ebc",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 53 22 00 94"
+        },
+        {
+          "offset": "0x49334",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 35 21 00 94"
+        },
+        {
+          "offset": "0x49434",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 f5 20 00 94"
+        },
+        {
+          "offset": "0x499cc",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 8f 1f 00 94"
+        },
+        {
+          "offset": "0x49c14",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 fd 1e 00 94"
+        },
+        {
+          "offset": "0x49ee4",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 49 1e 00 94"
+        },
+        {
+          "offset": "0x4a0f0",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 c6 1d 00 94"
+        },
+        {
+          "offset": "0x4a308",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 40 1d 00 94"
+        },
+        {
+          "offset": "0x4a3ec",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 07 1d 00 94"
+        },
+        {
+          "offset": "0x4a624",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 79 1c 00 94"
+        },
+        {
+          "offset": "0x4a7cc",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 0f 1c 00 94"
+        },
+        {
+          "offset": "0x4a95c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 ab 1b 00 94"
+        },
+        {
+          "offset": "0x4aab4",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 55 1b 00 94"
+        },
+        {
+          "offset": "0x4aba8",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 18 1b 00 94"
+        },
+        {
+          "offset": "0x4d770",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 26 10 00 94"
+        },
+        {
+          "offset": "0x4d8cc",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 cf 0f 00 94"
+        },
+        {
+          "offset": "0x4eaa0",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 5a 0b 00 94"
+        },
+        {
+          "offset": "0x4ebac",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 17 0b 00 94"
+        },
+        {
+          "offset": "0x4fcbc",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 d3 06 00 94"
+        },
+        {
+          "offset": "0x4fe0c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 7f 06 00 94"
+        },
+        {
+          "offset": "0x4ff40",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 32 06 00 94"
+        },
+        {
+          "offset": "0x48f3",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 90 39 30 00 00"
+        },
+        {
+          "offset": "0x4d16",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 70 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x5283",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 70 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x5787",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 70 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x6217",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 90 39 30 00 00"
+        },
+        {
+          "offset": "0x6353",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 90 39 30 00 00"
+        },
+        {
+          "offset": "0x647f",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 90 39 30 00 00"
+        },
+        {
+          "offset": "0x68f6",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 90 39 30 00 00"
+        },
+        {
+          "offset": "0x6ac3",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 90 39 30 00 00"
+        },
+        {
+          "offset": "0x6d70",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 90 39 30 00 00"
+        },
+        {
+          "offset": "0x7797",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 d0 39 30 00 00"
+        },
+        {
+          "offset": "0x7b57",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 d0 39 30 00 00"
+        },
+        {
+          "offset": "0x9691",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 70 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xb0cd",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 d4 39 30 00 00"
+        },
+        {
+          "offset": "0xb7b4",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 d4 39 30 00 00"
+        },
+        {
+          "offset": "0xbb84",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 d4 39 30 00 00"
+        },
+        {
+          "offset": "0xc236",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 d0 39 30 00 00"
+        },
+        {
+          "offset": "0xc671",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 b8 39 30 00 00"
+        },
+        {
+          "offset": "0x48944",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4895c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48970",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48984",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4899c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49208",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4921c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49234",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4924c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49264",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49278",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49290",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x492a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x492bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x492d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x492e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49300",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49a34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49a48",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49a5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49a74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49a8c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49aa4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49ab8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49ad0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49ae8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49b00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49b14",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49b2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49b40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49b58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49b6c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49b84",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49b9c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49bb0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49bc8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49be0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49f4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49f64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49f78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49f90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49fa4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49fbc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49fd4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49fec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a000",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a014",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a02c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a044",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a05c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a074",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a08c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a0a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a0bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a0d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a9c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a9d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a9f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4aa08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4aa20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4aa38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4aa50",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4aa68",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4aa80",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ab1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ab34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ab4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ab60",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ab78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ab90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b0c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b0d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b0f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b108",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b120",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b138",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b150",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b164",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b17c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b190",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b1a8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b1c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b1d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b1f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b204",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b21c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b234",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b2b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b2cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b2e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b2fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b314",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b32c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b344",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b35c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b374",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b388",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b39c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b3b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b3cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b3e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b3fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b410",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b428",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b440",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b454",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b468",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b480",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b494",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b4ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b4c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b4d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b4f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b508",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b594",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b5ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b5c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b5d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b5f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b604",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b618",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b62c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b644",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b65c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b674",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b68c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b6a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b6b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b6d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b6e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b6fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b710",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b724",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b738",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b750",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b768",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b77c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b794",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b7ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b7c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b7d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b7ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b804",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b81c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b834",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4be2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4be48",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4be60",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4be78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4be90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bea4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bebc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bed4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4beec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bf04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bf18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bf30",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bf44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bf5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bf74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bf8c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bfa4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bfb8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bfd0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c288",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c2a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c2b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c2c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c2e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c2f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c310",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c328",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c33c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c354",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c368",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c380",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c398",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c3ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c3c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c3d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c3f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c408",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c41c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c434",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c44c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c460",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d9f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da60",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f48c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f4a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f4b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f4d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f4e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f4fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f510",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f524",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f53c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f554",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f568",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f580",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f880",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f894",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f8ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f8c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f8dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f8f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f908",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f920",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f938",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f94c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f964",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f97c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f994",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f9ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ffc4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ffd8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4fff0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50008",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50020",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50034",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5004c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50064",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5007c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50090",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x500a8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x500c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x500d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50448",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50460",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50478",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50490",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x504a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x504bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x504d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x504e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50500",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50514",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50528",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50540",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50554",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50568",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50580",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50598",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x505b0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x505c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x505e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x505f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5060c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50624",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5063c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50654",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5066c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50684",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48934",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x491f8",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x49a24",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x49f3c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4a9b4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4ab0c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4b0b4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4b2a8",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4b584",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4be1c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4c278",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4d9e0",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4f47c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4f870",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4ffb4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x50438",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x47e0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ed ff ff 00 48 ff c0 48 83 f8 05 75"
+        },
+        {
+          "offset": "0x48c0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x49c0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x4c30",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x5250",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x54a0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x5750",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ed ff ff 00 48 ff c0 48 83 f8 13 75"
+        },
+        {
+          "offset": "0x5e90",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ed ff ff 00 48 ff c0 48 83 f8 0d 75"
+        },
+        {
+          "offset": "0x6050",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ed ff ff 00 48 ff c0 48 83 f8 1a 75"
+        },
+        {
+          "offset": "0x61e0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ed ff ff 00 48 ff c0 48 83 f8 13 75"
+        },
+        {
+          "offset": "0x6320",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x6890",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ed ff ff 00 48 ff c0 48 83 f8 31 75"
+        },
+        {
+          "offset": "0x6a90",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x7030",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x74d0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 fe ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0x7740",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 fe ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0x7ab0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 50 ff ff ff 00 48 ff c0 48 83 f8 11 75"
+        },
+        {
+          "offset": "0x9210",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 a0 fe ff ff 00 48 ff c0 48 83 f8 40 75"
+        },
+        {
+          "offset": "0x9260",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 a0 fe ff ff 00 48 ff c0 48 83 f8 40 75"
+        },
+        {
+          "offset": "0x9580",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ed ff ff 00 48 ff c0 48 83 f8 0f 75"
+        },
+        {
+          "offset": "0x9900",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ed ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0x9aa0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 a0 fe ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0x9ac0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x9ba0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 fd ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0x9bc0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 a0 fd ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0x9cd0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 a0 fe ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0x9cf0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x9e30",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 a0 fe ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0x9e50",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ed ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0x9f30",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 a0 fd ff ff 00 48 ff c0 48 83 f8 20 75"
+        },
+        {
+          "offset": "0xa650",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 80 fe ff ff 00 48 ff c0 48 83 f8 40 75"
+        },
+        {
+          "offset": "0xb520",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ff ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0xb610",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ff ff ff 00 48 ff c0 48 83 f8 0b 75"
+        },
+        {
+          "offset": "0xb780",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ff ff ff 00 48 ff c0 48 83 f8 15 75"
+        },
+        {
+          "offset": "0xb8c0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ff ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0xb9e0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ff ff ff 00 48 ff c0 48 83 f8 0e 75"
+        },
+        {
+          "offset": "0xbb50",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ff ff ff 00 48 ff c0 48 83 f8 15 75"
+        },
+        {
+          "offset": "0xbcb0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ff ff ff 00 48 ff c0 48 83 f8 0f 75"
+        },
+        {
+          "offset": "0xbdb0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 6f ff ff ff 00 48 ff c8 75"
+        },
+        {
+          "offset": "0xc0c0",
+          "identifier": "$wiper_loop_x86",
+          "data_preview": "c6 84 05 70 ff ff ff 00 48 ff c0 48 83 f8 11 75"
+        },
+        {
+          "offset": "0x8af0",
+          "identifier": "$pbkdf2_accum_x86",
+          "data_preview": "66 0f 6f 84 05 70 dd ff ff 66 0f ef 84 05 20 ff ff ff 66 0f 7f 84 05 70 dd ff ff 48 83 c0 10 48"
+        },
+        {
+          "offset": "0x8b18",
+          "identifier": "$key_stretch_x86",
+          "data_preview": "41 81 fe fa 6e 01 00 0f 85"
+        },
+        {
+          "offset": "0x4dde8",
+          "identifier": "$hmac_consts_arm64",
+          "data_preview": "c0 e6 01 4f a9 03 03 d1 81 e7 02 4f"
+        },
+        {
+          "offset": "0x4204b",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x4215f",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x8c051",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x8c15c",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x42024",
+          "identifier": "$sym_chkstk",
+          "data_preview": "____chkstk_darwin"
+        },
+        {
+          "offset": "0x42144",
+          "identifier": "$sym_chkstk",
+          "data_preview": "____chkstk_darwin"
         }
       ],
       "sample_sha256": "841f0ccf4e6e782476a0844cc861f7f44d7f321bc232444ef5f306fdba8944eb",
@@ -4517,8 +6427,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -4544,7 +6454,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/841f0ccf4e6e782476a0844cc861f7f44d7f321bc232444ef5f306fdba8944eb"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-26T11:44:45.495361+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -6254,7 +8164,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a981fdba66721eb21e7a3c0ab18e487247bbcf97158737ab8c80e98f4ec240dd"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -7472,12 +9382,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.dropr/multiverze",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -7506,7 +9416,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/204b5d236e4384b23c1f0201bc52c06f32ef8eea679b975e9b432f2b111d1dbc"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -8482,7 +10392,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/708a0836a8c20e79f2ae522f097787326a90965e0532f3fd488d8d6e428f77b6"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -9876,8 +11786,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/dropr",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -9904,7 +11814,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b3c05142afc6d7c708c55ba7a97dbb4272f43353205e8cab7b9a8117959cc270"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -11453,8 +13363,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/dropr",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -11480,7 +13390,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/beac3bae8f10cbb37ddde43f41dc44c0dd1c19e8e38723700e901751f6bd5072"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -13441,7 +15351,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/fd4896cf61b676a39918f119247f3f7c746b29645e732ab09b3318f8479da728"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -13962,7 +15872,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3e5097274c863873dfc79f315c39c30eb61e49e74db1bcee76bb372f584b9ff3"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -14315,7 +16225,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/60362accd00f57e929f33799f43f6d9588f469577004eb05aba96bc21ca119ba"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -14554,8 +16464,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/stealer",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -14581,7 +16491,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/76c2e4e7fb5290366d7bd04703ea60ec92d314ff651172387b9c6dbfca22b82a"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -14929,7 +16839,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b95ea805469383b5a419c5043de45bb2b13f36b3a513f98bd608b3f7294f064f"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -15507,7 +17417,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4903c40fbdb96cf39f35ed592a886a39d230564b26dd80aef3fa6c58bc501551"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
@@ -15995,6 +17905,3236 @@ window.YARAFY_DATA = {
           "offset": "0x4c2fc",
           "identifier": "$dlsym_call_arm64",
           "data_preview": "20 00 80 92 34 53 00 94"
+        },
+        {
+          "offset": "0x52518",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 ad 3a 00 94"
+        },
+        {
+          "offset": "0x52534",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 a6 3a 00 94"
+        },
+        {
+          "offset": "0x52550",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 9f 3a 00 94"
+        },
+        {
+          "offset": "0x5284c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 e0 39 00 94"
+        },
+        {
+          "offset": "0x52aa8",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 49 39 00 94"
+        },
+        {
+          "offset": "0x57080",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 d3 27 00 94"
+        },
+        {
+          "offset": "0x57180",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 93 27 00 94"
+        },
+        {
+          "offset": "0x5e380",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 13 0b 00 94"
+        },
+        {
+          "offset": "0x8faa",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 44 24 10 b8 39 30 00 00"
+        },
+        {
+          "offset": "0x991d",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 54 24 08 b8 39 30 00 00"
+        },
+        {
+          "offset": "0x9f95",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 bd 39 30 00 00"
+        },
+        {
+          "offset": "0xa8a9",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 50 39 30 00 00"
+        },
+        {
+          "offset": "0xa98a",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 70 01 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0xad96",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 44 89 44 24 14 41 b9 39 30 00 00"
+        },
+        {
+          "offset": "0xcb4c",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 20 03 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0xcfcb",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 d0 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0xd8e8",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 b0 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0xf078",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 44 89 4c 24 58 41 bb 39 30 00 00"
+        },
+        {
+          "offset": "0x10ba7",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 44 39 30 00 00"
+        },
+        {
+          "offset": "0x11d4d",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 b8 05 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x11e95",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 80 05 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x127f4",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 bc 24 90 02 00 00 41 b8 39 30 00 00"
+        },
+        {
+          "offset": "0x1379f",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 40 39 30 00 00"
+        },
+        {
+          "offset": "0x13c2a",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 08 39 30 00 00"
+        },
+        {
+          "offset": "0x13fad",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 14 39 30 00 00"
+        },
+        {
+          "offset": "0x14128",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 04 24 39 30 00 00"
+        },
+        {
+          "offset": "0x147d3",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 4c 24 0c b9 39 30 00 00"
+        },
+        {
+          "offset": "0x14c72",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 4c 24 0c b9 39 30 00 00"
+        },
+        {
+          "offset": "0x14f54",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 4c 24 0c b9 39 30 00 00"
+        },
+        {
+          "offset": "0x15313",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 4c 24 0c b9 39 30 00 00"
+        },
+        {
+          "offset": "0x1560d",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 4c 24 0c b9 39 30 00 00"
+        },
+        {
+          "offset": "0x15a08",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 4c 24 0c b9 39 30 00 00"
+        },
+        {
+          "offset": "0x16b1f",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 54 39 30 00 00"
+        },
+        {
+          "offset": "0x16c52",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 3c 39 30 00 00"
+        },
+        {
+          "offset": "0x16ef9",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 20 39 30 00 00"
+        },
+        {
+          "offset": "0x176e9",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 5c 39 30 00 00"
+        },
+        {
+          "offset": "0x17dbb",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 08 39 30 00 00"
+        },
+        {
+          "offset": "0x1a3c6",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 0c 39 30 00 00"
+        },
+        {
+          "offset": "0x1b02c",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 08 39 30 00 00"
+        },
+        {
+          "offset": "0x1b9ce",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 89 54 24 44 41 b8 39 30 00 00"
+        },
+        {
+          "offset": "0x1be14",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 24 39 30 00 00"
+        },
+        {
+          "offset": "0x1eef2",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 60 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x1f993",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 80 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x1fe8f",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 80 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x20498",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 80 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x20684",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 80 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x2084c",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 80 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x20a07",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 84 24 80 02 00 00 39 30 00 00"
+        },
+        {
+          "offset": "0x218be",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 08 39 30 00 00"
+        },
+        {
+          "offset": "0x226bc",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 08 39 30 00 00"
+        },
+        {
+          "offset": "0x23164",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 44 24 04 39 30 00 00"
+        },
+        {
+          "offset": "0x41d40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41d58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41d70",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41d88",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41da0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41db8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41dcc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41de4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41dfc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41e14",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41e2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41e44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41e5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41e70",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41e88",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4218c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x421a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x421bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x421d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x421ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42200",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42214",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42228",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x427d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x427e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x427f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4280c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42820",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42838",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42850",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42864",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42878",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4288c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x428a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x428b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x428c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x428dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x428f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42908",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42920",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42938",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42950",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42964",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4297c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42994",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x429ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x429c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x429d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x429ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42a04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42a18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42a2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42a44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42a5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42a74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42a8c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42aa0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42ab4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42acc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42ae0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42af4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42b08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42b20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42c1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42c34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42c4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42c64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42c7c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42dcc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42de0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42f28",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42f40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42f54",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42f68",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42f80",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x42f98",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x430a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x430b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x430cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x430e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x430f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4310c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43124",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4313c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x438d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x438ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43904",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4391c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4399c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x439b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x439c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x439e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x439f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43a08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43a20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43a38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43a50",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43a68",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43a80",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43a94",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43aa8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43abc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43ad0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43ae4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43afc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43b14",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43b2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43b44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43dac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43dc0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43dd8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43df0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43e08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43e20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43e38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43e50",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43e68",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43e80",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43e94",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43eac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43ec4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43edc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43ef0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43f04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43f18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43f2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43f44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43f58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43f70",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43f88",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43fa0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43fb4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x43fc8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44010",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44024",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4403c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44054",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44068",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x440b0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x440c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x440e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x440f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44110",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44128",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4429c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x442b0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x442c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x442e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45f08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45f20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45f34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45f4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45f60",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45f78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45f90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45fa8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47c74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47c8c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47ca0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47cb8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47ccc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47ce4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47cf8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47d0c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47e14",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47e28",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47e40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47e58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47e6c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47e84",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47e98",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47eb0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47ec8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47ee0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47ef8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47f10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47f28",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47f40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47f58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47f6c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47f84",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47f9c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47fb4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47fc8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47fe0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x47ff8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48010",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48028",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4803c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48050",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48064",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48078",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48090",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x480a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x480bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x480d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x480ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48100",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48114",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4812c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48144",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4815c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48170",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48184",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4819c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x481b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x481c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48548",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48560",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48574",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4858c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x485a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x485bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x485d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x485e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x485fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48610",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48624",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48638",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4864c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48664",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4867c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48690",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x486a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x486b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x486cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x486e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x486f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4870c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48724",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48738",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4874c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48760",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48774",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48788",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4879c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x487b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x487c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x487dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x487f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48808",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48820",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48838",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4884c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48864",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4887c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48894",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x488a8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x488c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x488d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x488ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48900",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48914",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48928",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4893c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48954",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4896c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48980",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48994",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48a10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48a28",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48a3c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48a54",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49504",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49518",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49530",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49544",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49558",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49570",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49588",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4959c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x495b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x495c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x495e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x495f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49608",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4961c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49634",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49648",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a3a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a3b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a4a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4a4b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bc38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bc50",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bc68",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bc80",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bc98",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bcb0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bfac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bfc4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bfd8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4bff0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c008",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c020",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c038",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c04c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c064",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c07c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c0c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c0d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c0f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c108",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c120",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c134",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c14c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c164",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c17c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c194",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4c5e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4cccc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4cce4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ccfc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4cd78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4cd90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4cda8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4cdc0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4cdd8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4cdec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ce04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ce1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ce34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ce4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d1f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d20c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d220",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d234",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d248",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d260",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d274",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d28c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d2a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d51c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d534",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d54c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d564",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d578",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d590",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d95c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d970",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4d988",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dcb0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dcc8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dcdc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dcf4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd48",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd60",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4e130",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4e148",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4e15c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4e1c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4e1dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4e1f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f420",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f434",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f44c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f464",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f47c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f574",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f58c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f5b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f83c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f854",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f86c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f884",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f89c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f8b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ffc4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ffd8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4fff0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50004",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50018",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50030",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50048",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5005c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50070",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50088",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x500a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50874",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5088c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x508a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x508b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x508d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x508e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x508fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50914",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50928",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5093c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50950",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5289c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x528b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x528cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x528e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x528f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5297c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x52994",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x529ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x529c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x529d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x529f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x52a08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x52a1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x52a34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x52a4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x52a64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x52a7c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x52a94",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x535c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x535dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x535f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53608",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53620",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53638",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53650",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53664",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5367c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53690",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x536a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x536b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x536d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x536e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53700",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53718",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53730",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53748",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5375c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x53774",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5378c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x537a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x537bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x54414",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x54428",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x54440",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x574ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x574c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x574dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x575c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x575d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x575e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x575fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57610",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57ca4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57cbc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57cd4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57ce8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d30",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d48",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d60",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57da8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57dc0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57dd4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57dec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e7c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57ea4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57ebc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57ed4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57eec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57f00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57f18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57f2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57f40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57f54",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58148",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58344",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5835c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5875c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58774",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58788",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x587a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x587b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x587cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x587e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x587fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58814",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5882c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58844",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5885c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58874",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5888c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x588a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x588b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x588cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5893c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58950",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58964",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5897c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58990",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x589a8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x589c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x589d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x589ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58a00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58a18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58a30",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58a44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58a5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58a74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58af0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58b08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58b1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58b34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58b4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58b64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58b7c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58b90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58ba8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58bc0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58bd8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58bf0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58c08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58c20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58c38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58cac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58cc4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58cdc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58cf0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58d08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58d20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58d38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58d50",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58d68",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58d7c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58d90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58da8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58dc0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58dd8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58df0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x58e04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59af4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59b0c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59ce0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59cf8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a934",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a94c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a960",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a978",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a988",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a9a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a9b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a9cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a9e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a9fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa14",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x41d30",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x427c0",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x438c0",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x45ef8",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x494f4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4a390",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4a494",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4bc28",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4bf9c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4c5d8",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4ccb8",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4e120",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x50864",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x5288c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x535b4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x54404",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x571d4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x57c94",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x58138",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x5874c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x5892c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x58ae0",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x58c9c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x59ae4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x5a924",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x5b49c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x37e73",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x396a1",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x78e71",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x7a697",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
         }
       ],
       "sample_sha256": "a7c0d024ed24dcbc1b17cbda430a39edb52325c30ad9b7207c0267e43fbec4b7",
@@ -16019,12 +21159,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -16052,7 +21192,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a7c0d024ed24dcbc1b17cbda430a39edb52325c30ad9b7207c0267e43fbec4b7"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-10-26T11:44:45.495361+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -16141,6 +21281,3496 @@ window.YARAFY_DATA = {
           "offset": "0x450b8",
           "identifier": "$dlsym_call_arm64",
           "data_preview": "20 00 80 92 b2 db 00 94"
+        },
+        {
+          "offset": "0x451b8",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 72 db 00 94"
+        },
+        {
+          "offset": "0x452c4",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 2f db 00 94"
+        },
+        {
+          "offset": "0x48674",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 43 ce 00 94"
+        },
+        {
+          "offset": "0x4877c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 01 ce 00 94"
+        },
+        {
+          "offset": "0x48868",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 c6 cd 00 94"
+        },
+        {
+          "offset": "0x48990",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 7c cd 00 94"
+        },
+        {
+          "offset": "0x48a7c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 41 cd 00 94"
+        },
+        {
+          "offset": "0x48b6c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 05 cd 00 94"
+        },
+        {
+          "offset": "0x49c88",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 be c8 00 94"
+        },
+        {
+          "offset": "0x49dc8",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 6e c8 00 94"
+        },
+        {
+          "offset": "0x5b48c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 bd 82 00 94"
+        },
+        {
+          "offset": "0x5d188",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 7e 7b 00 94"
+        },
+        {
+          "offset": "0x5d284",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 3f 7b 00 94"
+        },
+        {
+          "offset": "0x5d39c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 f9 7a 00 94"
+        },
+        {
+          "offset": "0x5e830",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 d4 75 00 94"
+        },
+        {
+          "offset": "0x5e924",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 97 75 00 94"
+        },
+        {
+          "offset": "0x5ea28",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 56 75 00 94"
+        },
+        {
+          "offset": "0x5f9dc",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 69 71 00 94"
+        },
+        {
+          "offset": "0x5fbb8",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 f2 70 00 94"
+        },
+        {
+          "offset": "0x5fcc4",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 af 70 00 94"
+        },
+        {
+          "offset": "0x5ffa0",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 f8 6f 00 94"
+        },
+        {
+          "offset": "0x60174",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 83 6f 00 94"
+        },
+        {
+          "offset": "0x60400",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 e0 6e 00 94"
+        },
+        {
+          "offset": "0x6061c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 59 6e 00 94"
+        },
+        {
+          "offset": "0x60830",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 d4 6d 00 94"
+        },
+        {
+          "offset": "0x60938",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 92 6d 00 94"
+        },
+        {
+          "offset": "0x60c98",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 ba 6c 00 94"
+        },
+        {
+          "offset": "0x60e08",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 5e 6c 00 94"
+        },
+        {
+          "offset": "0x617a0",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 f8 69 00 94"
+        },
+        {
+          "offset": "0x61890",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 bc 69 00 94"
+        },
+        {
+          "offset": "0x62c44",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 cf 64 00 94"
+        },
+        {
+          "offset": "0x62d00",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 a0 64 00 94"
+        },
+        {
+          "offset": "0x62e20",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 58 64 00 94"
+        },
+        {
+          "offset": "0x70ad8",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 2a 2d 00 94"
+        },
+        {
+          "offset": "0x72c00",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 e0 24 00 94"
+        },
+        {
+          "offset": "0x72e1c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 59 24 00 94"
+        },
+        {
+          "offset": "0x73050",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 cc 23 00 94"
+        },
+        {
+          "offset": "0x73228",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 56 23 00 94"
+        },
+        {
+          "offset": "0x733b4",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 f3 22 00 94"
+        },
+        {
+          "offset": "0x73590",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 7c 22 00 94"
+        },
+        {
+          "offset": "0x7381c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 d9 21 00 94"
+        },
+        {
+          "offset": "0x739c4",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 6f 21 00 94"
+        },
+        {
+          "offset": "0x74ca4",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 b7 1c 00 94"
+        },
+        {
+          "offset": "0x4e96",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 34 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x4f83",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 88 39 30 00 00"
+        },
+        {
+          "offset": "0x5073",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 58 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x8449",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 30 e8 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x8573",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 00 e8 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x868a",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 f8 e7 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x88f3",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 38 e8 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x8ca7",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 e4 39 30 00 00"
+        },
+        {
+          "offset": "0x8d16",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 ec 39 30 00 00"
+        },
+        {
+          "offset": "0x99f3",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 2c f6 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x9d87",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 0c f7 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xac1f",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 04 f7 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xaf36",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 fc f6 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xd3c3",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 e8 f6 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xd685",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 f0 f6 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xe456",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 70 fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xed02",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 60 fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xee16",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 68 fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0xf8a8",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 2c ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1015c",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 ec fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x102cf",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 e4 fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1149b",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 08 ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x11772",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 44 ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x11c4d",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 64 ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x16f61",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 38 ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x17171",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 50 ec ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x174d5",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 10 ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x18f9c",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 58 ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1916d",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 74 ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x19926",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 4c ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x19a8b",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 6c ef ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1b614",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 54 ed ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1d9e0",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 e8 ec ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1da60",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 c8 eb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1f042",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 64 da ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1f31a",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 94 da ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1fbaa",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 b4 da ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x1ff88",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 9c da ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x202f0",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 a4 da ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x204b3",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 bc da ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x213f7",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 c0 df ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x22996",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 d0 fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x22a66",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 00 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x22d79",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 a0 fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x22fd0",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 d8 fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x234a2",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 60 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x23738",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 98 fe ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x239b4",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 ac 39 30 00 00"
+        },
+        {
+          "offset": "0x25acf",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 e8 39 30 00 00"
+        },
+        {
+          "offset": "0x29886",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 b4 39 30 00 00"
+        },
+        {
+          "offset": "0x2c3c3",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 4c ea ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x2c869",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 0c ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x2cf9b",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 04 ff ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x2da7b",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 c0 39 30 00 00"
+        },
+        {
+          "offset": "0x30b8a",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 d4 fb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x30fb2",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 bc fb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x31826",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 b4 fb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x31c3a",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 c4 fb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x3207a",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 a4 fb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x3293a",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 ac fb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x32caa",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 cc fb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x33d70",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 dc fb ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x351ac",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 45 9c 39 30 00 00"
+        },
+        {
+          "offset": "0x3557f",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 d0 f5 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x35627",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 44 f6 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x3678d",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 c8 f5 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x367ff",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 d8 f5 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x36cbe",
+          "identifier": "$lcg_consts_x86",
+          "data_preview": "6d 4e c6 41 c7 85 4c f6 ff ff 39 30 00 00"
+        },
+        {
+          "offset": "0x44f20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44f3c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44f54",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44f68",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44ff4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4500c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45020",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45038",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45050",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45064",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4507c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45108",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45120",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4513c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45154",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4516c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x45180",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x488cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x488e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x488fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48910",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48928",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48940",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x489fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48a18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48a30",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48a44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48a5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48acc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48ae8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48b04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48b18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48b30",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48d34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48d4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48d64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48d78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48d8c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48da0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x48db4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49168",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49180",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49198",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49d00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49d1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49d38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49d54",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49d70",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x49d8c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b038",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b054",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b06c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b084",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b0a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b0bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b0d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b0f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b110",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b128",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b144",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b15c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b178",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b190",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b1ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b1c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b1e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b200",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b218",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b234",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b250",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b26c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b288",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b2a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b2b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b330",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b34c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b368",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b384",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b3a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b3bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b3d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b3f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b410",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b42c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b448",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b464",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b480",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b49c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b4b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b4d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b4ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4b508",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da48",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4da98",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dab0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dac8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dae0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4daf8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4db10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dc34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dc50",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dc6c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dc84",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dc9c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dcb4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dccc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dce4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dcfc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd14",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4dd74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f4e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f504",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f520",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f534",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f54c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f564",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f57c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4f594",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ff3c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ff58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ff74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ff90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ffac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ffc8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4ffe4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x4fffc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50014",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50030",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5004c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50068",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50084",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5009c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x500b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x500d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x500ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50108",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50124",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50140",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x509bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x509d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x509f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50a0c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50a28",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50b10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50b2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50b44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x50b60",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x51b68",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57d98",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57db0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57dcc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57de8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57e18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59af4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59b10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59b2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59b48",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59b64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59b80",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59b9c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59bb4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59bd0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59bec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59c08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59c24",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59c40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59c5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59c78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59cc4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59ce0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59cfc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59d18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59d38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59d54",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59d70",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59d8c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59da4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59dc0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59ddc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59df8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59e10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59e2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59e48",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59e64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59e7c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59e98",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59eb0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59ec8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59ee4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59f00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59f1c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59f38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59f50",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59f6c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59f88",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59fa4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59fc0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59fd8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x59ff4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a010",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a028",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a044",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a060",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a078",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a094",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a0b0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a0cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a0e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a104",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a120",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a13c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a154",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a170",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a18c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a1a8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a1c0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a1dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a1f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a214",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a230",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a24c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a268",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a284",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a2a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a2b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a2d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a2ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a304",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a31c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a334",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a350",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a368",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a384",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a39c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a3b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a3d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a3e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a400",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a41c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a464",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a480",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a49c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a4b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a4d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a4ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a508",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a520",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a53c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a554",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a570",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a5b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a5d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a5e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a604",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a620",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a638",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a654",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a670",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a688",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a6a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a6bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a6d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a6ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a704",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a720",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a738",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a750",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a76c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a784",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a79c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a7b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a7d4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a7ec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a804",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a820",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a838",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a850",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a86c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a888",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a8a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a8bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a8d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a8f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a910",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a92c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a948",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a960",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a97c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a998",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a9b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a9d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5a9e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa3c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa54",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa6c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aa84",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aaa0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aabc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aad4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5aaf0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ab0c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ab28",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ab44",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ab60",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ab7c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ab98",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5abb0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5abc8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5abe4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ac00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ac18",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5ac34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5b984",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5b99c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5b9b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5b9f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5d0fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5d118",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5d134",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5d150",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5f930",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5f94c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5f968",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5f984",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5f9a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5f9bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5fc08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5fc20",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5fc38",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5fc50",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5fc5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5fc74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x5fc88",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x605e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x60778",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x60794",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x607b0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x607c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x607e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x607f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x60810",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x617f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x61810",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x61828",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x61840",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x61858",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x61870",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62c9c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62cac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62cc8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62ce0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62d58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62d74",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62d90",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62dac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62dc8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x62de4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63040",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6305c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63078",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63770",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63784",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6379c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x637f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63808",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63820",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x639e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63a04",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63cb8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63cd0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63ce4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63cfc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63d10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63d28",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63d40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63d58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63d70",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63d84",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63d9c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63db4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63dcc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63de0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x63df8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65d4c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65d64",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65d78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65d8c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65da4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65dbc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65dd4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65dec",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65e00",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65e14",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x65e2c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6d4d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6d4f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6d50c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6d524",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6de80",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6de98",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6deb0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x6dec8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7152c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71544",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7155c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71574",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7158c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x718ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x718c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x718d8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x718f0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71908",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71920",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71938",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7194c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71964",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7197c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71994",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x719ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x719c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x719dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x719f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71a0c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71a24",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71a3c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71a54",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x71a6c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7215c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72178",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72194",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x721ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x721c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x721dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x721f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7220c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72224",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7223c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72254",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7226c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72280",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72294",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x722ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x722c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x722dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x722f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72538",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72550",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72568",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72580",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72594",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x725ac",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x725c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x726dc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x726f4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72934",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72950",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7296c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72984",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7299c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x729b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x729cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x729e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x729f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x72a10",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7327c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73298",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x732b4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x732cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x732e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x732fc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73310",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73324",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73338",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73350",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73368",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7337c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73394",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x735e4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73600",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7361c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73634",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7364c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x73664",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74720",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7473c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74754",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74768",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74780",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74798",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x747b0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x747c8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x747e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x747f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74810",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74828",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74840",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74858",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74870",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74888",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x748a0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x748b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x748cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x748e0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x748f8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74910",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74928",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74940",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74a58",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74a70",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74a88",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74a9c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x74ab4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76008",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76024",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76040",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7605c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76078",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76094",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x760b0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x760cc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x760e8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76100",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7611c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76138",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76154",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7616c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x76188",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x761a4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x761bc",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x77a08",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x77a24",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x77a40",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x77a5c",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x77a78",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x44f10",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x44fe4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x450f8",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x488bc",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x489d0",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x48abc",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x48d24",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x49cf0",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4a11c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4b028",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4b320",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4da00",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4dc24",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4ecc8",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x4ff2c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x57d64",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x5d0ec",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x5f920",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x5fbf8",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x60440",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x60768",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x617ec",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x62c8c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x62d48",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x6302c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x63cac",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x65d40",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x6de74",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x7151c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x7189c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x7214c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x72528",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x72924",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x7326c",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x735d4",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x74710",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x75b80",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x75f60",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x77104",
+          "identifier": "$lcg_const_arm64",
+          "data_preview": "29 07 86 52"
+        },
+        {
+          "offset": "0x411a0",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x42fec",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x891a0",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0x8afe4",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
         }
       ],
       "sample_sha256": "08074ec033c1a5dcfb0125a352f7f499f29f61d8ed2ce2f693d48813074810d4",
@@ -16165,12 +24795,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/multiverze",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -16197,7 +24827,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/08074ec033c1a5dcfb0125a352f7f499f29f61d8ed2ce2f693d48813074810d4"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-10-26T11:44:45.495361+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -16448,8 +25078,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/stealer",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -16475,7 +25105,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -17860,7 +26490,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3740e3883b64840461b3dfe2ce86695f32a14f28c8e0353c860ff6939a8c2538"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -18143,8 +26773,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/lummastealer",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -18169,7 +26799,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c4c7cc2f8e281b36d0bc29de6e08d354d83c4f734acaded25e7c8dfb1f580db5"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -18747,7 +27377,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/689797d97d31c3893e2c8a792614262f1fa9e714d646aef46bc4a6371fa59126"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -19197,7 +27827,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6bfcdb4920383375b7e519918df7eb4db751b974b5571a15ce66b82478012620"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -20450,9 +29080,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 33,
-        "total_engines": 54,
-        "detection_ratio": "33/54",
+        "positives": 36,
+        "total_engines": 63,
+        "detection_ratio": "36/63",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
@@ -20462,27 +29092,27 @@ window.YARAFY_DATA = {
         ],
         "names": [
           "ujnyyodzjazt2491",
+          "ujnyyodzjazt2491.class",
           "ujnyyodzjazt2491.exe",
           "fd0cd32edfe9b4f68dcc2fddb8f27c6102e9a9c8b90c5def07ac8e62b2a75303.macho",
-          "ldf3qqow.exe",
-          "macho_fd0cd32edfe9.bin"
+          "ldf3qqow.exe"
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
-          "macho",
-          "checks-cpu-name",
           "arm",
+          "os-credentials",
           "64bits",
+          "macho",
+          "self-signed",
+          "browser-creds",
+          "multi-arch",
           "self-delete",
           "crypto-wallets",
-          "browser-creds",
-          "password-dialog",
-          "os-credentials",
-          "multi-arch",
-          "checks-vm"
+          "checks-vm",
+          "checks-cpu-name",
+          "password-dialog"
         ],
-        "reputation": 0,
+        "reputation": -11,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
           "SentinelOne": "Static AI - Malicious Mach-O",
@@ -20493,7 +29123,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/fd0cd32edfe9b4f68dcc2fddb8f27c6102e9a9c8b90c5def07ac8e62b2a75303"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -20746,12 +29376,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/coins",
         "popular_threat_category": [
           {
-            "count": 12,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 12
           },
           {
-            "count": 10,
-            "value": "downloader"
+            "value": "downloader",
+            "count": 10
           }
         ],
         "names": [
@@ -20775,7 +29405,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f80ff072316e2d62490df743cbd5363bfb6ec5459409cc162d0602f7a1c607bb"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
@@ -20997,7 +29627,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f5471a00bb6cdaf01e44311c04de2e66c6f92ccc4b8e42bbb1bcb4e48f86ef3e"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -21326,7 +29956,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3b8375f092798ac851bfacdb94310ccabfebcbe106f6e7324764a0e4fd4ea57"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -21412,7 +30042,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/faf572c1c989ca17101d5003bceb8b4796e709b93bf014f642b2a2c4b7b77fb4"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -21499,7 +30129,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1e8ed19e771e7a9378daf3b3652802143345db8ea4196e560e54f28176ef958a"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -21585,7 +30215,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e42b8c35db5ab7169327b9185c3e05db4a156e8922b985da61bcbd6223df8aea"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -21657,8 +30287,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.abtrojan/class",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -21683,7 +30313,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5b2531253b7fd1a18516dd937ad2e0ca3093b3b2f058b1a173fc65b037b37493"
       },
       "detected_at": "2026-10-16T09:42:46.011654+00:00",
-      "last_seen_at": "2026-10-31T19:26:14.890364+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -22261,7 +30891,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4799b1f41221745e4e3e902526b9635e697b64c5c07a344b59fe1a6ddc018c34"
       },
       "detected_at": "2026-10-16T09:42:46.011654+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1006YR",
@@ -22639,7 +31269,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/81e34b0ec6928234d0a24f9b1634d1e2201fe0fca38bf048229d750ba35f64ca"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -23186,8 +31816,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -23222,7 +31852,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e395c5343703a570d12620c81b9593ea6117d2f57c95bd8247704d9dbd256ce6"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -23280,12 +31910,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.multiverze/abpws",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -23311,7 +31941,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/85fce9826974549c2dd4c92a3207cf2543e10676ad2dfad7c8ea429f616cdf21"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -23529,7 +32159,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6c118d4bd1a56f56756b78134474c2a5becd3f138803d3297155691a427f6524"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -23588,12 +32218,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 15,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 15
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -23619,7 +32249,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/813bb6f2bc378364b4a0ed1405fe6ccd34a1510c4c94fe98f5908e6514999c1a"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -23678,12 +32308,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -23709,7 +32339,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/aa2fe64a8b365f79ba99c5cae660602063d6b555b3dd2e40d05f5293ca2c2a96"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -23800,7 +32430,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f2c7af231a3dc1a9291a2421d2b67e3c6ed829073fdcbd7aeec3c33a933d2f6e"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -23890,7 +32520,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d64921058e03078b75565d5aeea126e75698f39be3c6387d17c5d9fa8536d0ac"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -23980,7 +32610,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e6490a700b965a6dcf264eb1e8291217d9e52f167470d70bc24806697fabeeaa"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -24038,12 +32668,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/abtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -24069,7 +32699,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/efc0f30e9b1c8e4b1479006ecdcc95d5d4fa0627af8b294a6babe57da17b58d3"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -24159,7 +32789,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/322a9bdadc796f2b2a7459b949ff367ed3258e9a8eefb1af161b557418ce845d"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -24218,12 +32848,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -24249,7 +32879,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/51ad0fe8782d9756f1fc647bfd19e649b1b3e55e8b641a295062c935c1939bd8"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -24308,12 +32938,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/abtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -24339,7 +32969,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ecf0f6b181632fb335c800bcc77cccc5584bc15b5ac594dc68019f05081c3d5d"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -24398,12 +33028,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/abrisk",
         "popular_threat_category": [
           {
-            "count": 14,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 14
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -24428,7 +33058,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3bf9ac9cb26ecffd2ab26bb14c81c110b53fe31c196cc774291ad4af804023c3"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -24635,12 +33265,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.class/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -24665,7 +33295,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cefb465886bc813ac91e9ad5b1835eefe9828f251b58eb0da012ee4022ff6d98"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1007YR",
@@ -25482,12 +34112,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -25514,7 +34144,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/40dc77a48faae52f4ab7e2fbac202427947ffd48fc4e3dc6ed9f9b4403dc590c"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -25573,12 +34203,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -25604,7 +34234,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0119e2bc2281379155fe73917dc347f31501873867e7d8174b71c8cdbf0e5c8f"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -25663,12 +34293,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -25695,7 +34325,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ff9c8f57fa3ec4c935c343bc636dee3253e6b6e4dbbd0d64e7898f0c7f7c5598"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -25785,7 +34415,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b5d4aba0fe4004e851756d0329f0c165db2c1667c7c73516e0f1537c9afd3298"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26011,7 +34641,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cf28f44cfec7384cd572f5457a2d7e4a09fd72f7a29264393961fa4493b29c19"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26069,12 +34699,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -26100,7 +34730,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/47258dad12e7bbb34a8421c79e98a10f62adc6d613fa8d94c30599fffbb040f8"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26190,7 +34820,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/08e7c04e22c51313e5095f2db39e11fcc59adf56a63481ae92d8730e2788edc7"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26249,12 +34879,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/etgl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 13
+            "count": 13,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -26280,7 +34910,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/225f89ad501a71af48f405b6c61309a6c0f041ad8add6625e75274c536954f1f"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26370,7 +35000,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ab5b9b53b603bc5bc8abb0eb0aab014d82d20b603b40fdc69642b5b907fcea43"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -26467,7 +35097,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8e9dd132e044d2d44ef09c4bcce1ab64f089100a7c6414c9b8d0c95c57cabcd0"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-10-20T18:52:09.961170+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26525,12 +35155,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/lummastealer",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -26556,7 +35186,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bc0bde5dd5ca313436bc7119c5f603d9f4fb99dcbb09b2eaa5fd7ccda2c33794"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26646,7 +35276,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9d0c0819b915625b6c7bc2898cb5f1248df6ab941ce86447c059c4d6de5e0002"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26736,7 +35366,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1b317f7c91282bc41153d12a28a41a883eeb655c245e76f8c3142a8cc8458bb4"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26826,7 +35456,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/863ea1012d1379896cba11f581f4a8e8c86143297f5cdf4c432a8d652a717107"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -26915,7 +35545,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ac4484f6139484fd0099d9fa54d6feebb91c26418f4e7aed9eba6185da58b7d4"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27006,7 +35636,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/706c3b12e8be63504ef14663eb7084a2d14587419166918f2fe32cfe55d78ee8"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27065,12 +35695,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 11,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 11
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -27096,7 +35726,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f59d0a5f63972619bb2c5184cecbe7d4fc59d5e291ede27ba13acbe49dab839b"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27186,7 +35816,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/407902441438f0f73a0ce5f5b89f50f9b6fcf7551a6179617fa21efac1cd524f"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27277,7 +35907,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2d6f829d87773207cabc9360f8aae81adcf838829be00b0b6040fb7ebccf393e"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27367,7 +35997,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2f4b6d386a70eea4d5aaa951b8a9095095410cef0963b4a769aa9cc4b7e356a0"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27456,7 +36086,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1e7cc2bd060683795a7bfa0ee3610e6b896c71ad20677b65ccde4278594911f9"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27514,12 +36144,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -27547,7 +36177,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2ff0a9594923b8896910fd338b4a899649bb89bca20ace4d00b9fada9da93441"
       },
       "detected_at": "2026-10-20T18:52:09.961170+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27605,12 +36235,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -27636,7 +36266,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/89ab3b9e84198d8bb8d207964ee8cc02d75da3d6bdbd9cf1ccf34f9500272053"
       },
       "detected_at": "2026-10-20T18:52:09.961170+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27694,12 +36324,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -27725,7 +36355,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ccdc4d7aa75140392ae4d6296c229cb456617f64b6509be93f61ca91412d9af6"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27783,12 +36413,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -27814,7 +36444,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1b9ebec7a73d0a7c135f71904fef98602fa5ff49d137bb145608da207541c15b"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27898,7 +36528,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c81b8c0775f0fa25cfe09cab180e88426340cd1e171c033cd70145294504fefd"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -27987,7 +36617,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/66bb0add8962b6b2cf5bb3358e6777a421b54968674d838d7ccd2d3a6da555a0"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28045,12 +36675,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -28077,7 +36707,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/44306aa41505302c109d90a5c85c68541b98bf783cb47af912a55b4d5a3dcc99"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28167,7 +36797,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b626c19713c716a0bc5a49d801300eaade449cec525012a35a6477295b6729a4"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28255,7 +36885,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9edd2a4e7ce79550637ab4dd1dec171087dcf7313547e0935d64725101140a9b"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28344,7 +36974,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/aeea0651716d990d527a48473e7b54cd56849aee87b8916294c8f2ae81831617"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28434,7 +37064,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/932761c3c90d8db72e53b5e2cbf5f86eee95e15be50e0a4dab91d6e16b33cbd8"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28524,7 +37154,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/94521a0d9d77513864171e00075b46b5bededbd849efe056687d8494353815d4"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28582,12 +37212,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/amos5",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -28613,7 +37243,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/805a8575437df0241e4f24d3c3d377e7dbcb42924ad9e41664bd0bc7dc26ed9d"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28671,12 +37301,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -28703,7 +37333,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a4f89e85ca176c7fccd50335b80e9cb31887297c3e8abb879e35636ae7c6cd68"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28761,12 +37391,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 15,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 15
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -28792,7 +37422,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bfaba22e0b58c2f5ab977de4322563fdeb3f5a90a573175181f34d4830a7fc97"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28863,8 +37493,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.abtrojan/iqba",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -28889,7 +37519,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d47d4a39e80e5c8c233aa4ecfe28d42f89f688a96421ad68baaf4bd5a4c81b31"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -28986,7 +37616,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/621ed067e8214758b584df19b7f9726559d32af16267e6217f878d0b96378a29"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29045,12 +37675,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -29076,7 +37706,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c6dcafd1aaa7cdbf84e2cc6f1f6b3e6cc6a7c1b74ab995003a5d6f828cdf1268"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29134,12 +37764,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -29165,7 +37795,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/30b4ae5036e76367f9d1165253dc81d4c7ae9fdced72c95cb4ecffc1f6aefcfd"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29264,7 +37894,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7a3e4f6ac3d726df49bad8f9a1c00bd75a57341238a1be9dac90be5b50b3385c"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29322,12 +37952,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -29355,7 +37985,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1d6102cbdf119cd3655d9beb30698a97ab69d996f2a1b913c0bd95b32076d2ac"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29445,7 +38075,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/461f5d168c724db1094e76955ce5ebe15ea611d7d0b497c5f06ffb0baffa10c8"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29535,7 +38165,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/68b736e2aa1c565c1748fcb17a5e44bbf1727714047fbf50e8c9c9d6844fe6ea"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29594,12 +38224,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -29625,7 +38255,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6e7dcc1716e5a94f937f66f0796d10280abe40a11f13d2a258784468de71c478"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29684,12 +38314,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -29715,7 +38345,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8a2daf154b45503f88abb0f9f77ba79ad4044f235f03c2a1ff5604bc9ef1c227"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29805,7 +38435,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4892ea6ae970b1c57b505e511ace698878b29666e0da59867b712ea83db1563b"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29895,7 +38525,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/09b5143a55acbb87423681f6c70a1bbed0034289a7448becc5d3adab51fddb77"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -29954,12 +38584,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -29985,7 +38615,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0ef806bb25a7206b2a7ab4c936ac6aa540c4777574068d51ec3d65c9e1fb67c4"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30044,12 +38674,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -30075,7 +38705,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/66a39ad4e53d93de95c3db38822fb265dcc8835328d591edaf3bbbe5098f391f"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30165,7 +38795,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/13b4b87da6046356804ccfa023d66b9809371027b00f62fb4e4812dca34a1571"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30223,12 +38853,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -30254,7 +38884,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2e5bb8cc0558dfed95e93207bdcc39dfd3ed21851d7ba1e8d56dee83088c5e66"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30337,7 +38967,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0ad481c6994048519dc317896755c1e8f6fec92e458aeaf4fa5cfa09a5126270"
       },
       "detected_at": "2026-10-22T19:15:34.846800+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30421,7 +39051,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7aa96e6f115552e6cc2ecff9f0d481a50978c41aabcac921e2225e0a24b465c1"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30505,7 +39135,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cc30e4d19f6c7975ba027b58b79bb58794c0baa7007350e4db5e15408b566f0c"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30589,7 +39219,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/61d1c1ca3ed32698a440f3815606b23283a41a2c282567bfca2ee904b0932c6b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30674,7 +39304,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5ef3b2ae6aac4c7b6a1ba0a14d0b4283da20002a6deee8d0d9ae2fd2fce79f58"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30732,8 +39362,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abpws",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -30758,7 +39388,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4c565810ae06d551174b32ebb5e309693be3ceb8fe9939ece971180760949847"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30816,8 +39446,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -30842,7 +39472,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5f6ace8d46faae452b7b3056db7c12df1847a63ce105c7d837c4965e7ee1bc2f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30926,7 +39556,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9e641b2840dc1edf0dc82878a3cc9ae9bae6b458169390da7160539d9dfd3aa4"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30984,8 +39614,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -31010,7 +39640,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2d7e3e63207b4c7f2c7dd8658469c97fa73d2e45f7104de19b49654c44079e72"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31094,7 +39724,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/45ef0cea3b608f167c3e3101a0f78a4290ccf4ca1164c355bf4d56ac4bf44c0b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31178,7 +39808,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9c7713ce0a1fa2ef4b43651ef3a984b1656a6ee8dc3a94c4682e5e5e86428373"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31236,8 +39866,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -31264,7 +39894,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b2b904053a6d1b783e597bbab0d0ac9cf8d33dfd06b06e7a9ab3d99a769dd10b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31348,7 +39978,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7ec6df0cae345fd0c3bdb220c2634e52cbb9ece8755143587a546e00d91b2ad8"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31432,7 +40062,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/94ecec65874eef8917d8f91d11724bca77194319c8711aecec0f8b39d6db93ca"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31490,8 +40120,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/bdhl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -31516,7 +40146,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/33dd4fa348582867ac7ccec455f018a929207b16d1f3e6771fc0f7f2b91572e0"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31599,7 +40229,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/18438ce3e58bdbe47c9d7058ce05f456d5792d99926be82eb894fba985c567c8"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31683,7 +40313,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d838168d234ce4bedef14162b85b2c47ac97539e16a3d451682d493b5a173785"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31767,7 +40397,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/dc4db648c12775028fd2eaa82e831fafb1aa0b9e950fea74033eeb23220d1bca"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31825,8 +40455,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -31850,7 +40480,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/78d0bbf3ddb244caae5b955e6e9476e26f33f5a2e37b9d02863ad34b6476fb64"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31933,7 +40563,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/dba12dd044d53dc35cb15d9432a2e6fa139d9f76d813ace626b3f84bac9f67ea"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32016,7 +40646,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/540d24a82a36a3e60497ee29fa51e3cc9963ecc50a9fa77fb245670d34879e09"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32074,8 +40704,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -32099,7 +40729,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f09773a220d16e25ff8626af5ae925829bf180bcceb84431f72778bfe84a0475"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32157,8 +40787,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -32182,7 +40812,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d60004e652baebc1230dc7262b2983b3d8c62f1f7b132edaba8b68c6a82b20c0"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32266,7 +40896,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6bbd6311fa06d6dba192c8739fb1519b9a86074f718bae304c2bdc92c2608e7f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32349,7 +40979,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/49006e5ef2cd5c0b48dcd4ec4f14ff17e15b737191dbb22c93bbac963f89ab15"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32431,7 +41061,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3ab2cca8113b62240a9bce2d312a920a55f0a2313c6a8f76d0427400e6d6ab3f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32514,7 +41144,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e59471dbb08a04c5ec6df736f149919cc5333ef19da2b2de298d4f429d0c3612"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32597,7 +41227,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a9c7b69cece1e5999a2302d4152bc038ffe8305e84e3d974ace49132241c3206"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32655,8 +41285,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -32681,7 +41311,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/eaddd0e6bf1c396859cee853792e6878977c8951829e1c43a66b204cc11a6a47"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32739,8 +41369,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -32765,7 +41395,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2c4229230fdcb224538828468a8642aaf4429a1591fe83776f8b3aa683d65050"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32823,8 +41453,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abmtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -32847,7 +41477,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0d98501ac73fd2c318e0e1a4a223b9e2589f235627e512eac8b88a275315b69a"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32930,7 +41560,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/70b2276aaa5ff9a8e714d625b9238c5bad790145be09827fb928143810df3bc9"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32988,8 +41618,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -33014,7 +41644,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2df7b49b9987822e437f1b88efedd9fbe58a7f524ec02974034c6188f6e39c35"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33098,7 +41728,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/06a3833ccb61fe1dea39f628f1425524fd865c05a850aaf12da84bca23713292"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33156,8 +41786,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -33183,7 +41813,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0bde7e85c0d4d2f39996772a6348b1bee4717349afa648a301f182529429c81d"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33241,8 +41871,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -33267,7 +41897,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/fb3a907fa1c573b1d5604fb511c9c9c04d3f8b75bbdacd1402c31b53b5393a23"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33325,8 +41955,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -33352,7 +41982,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/11387a0d240ca6a184d4fd7524e63661012b26a51926ba6562fd7d966ad1b23d"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33410,8 +42040,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -33437,7 +42067,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d2ec7a876540ce8f4096e004a42db4cb541383a2bd85087169bc96fda4c875db"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33495,8 +42125,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -33521,7 +42151,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/840ebbef896ec2ccff40ce45096b63a6145665244077626d78509d7fdc32f6dd"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33604,7 +42234,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6015a6d3a00d5771932ce7abf625a53c0bc4ba6b2353bd7e033f2434d708fe16"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33662,8 +42292,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/adhl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -33688,7 +42318,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0bb6aca14af0fb513500770ca601c5b66e46c47e565f6e87c31f0c293fa8f5e3"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33746,8 +42376,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/cgow",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           }
         ],
         "names": [
@@ -33772,7 +42402,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ff72b39a559646d5a546eba3c939994ce9c3ed28efe200fa7929018c11292dd3"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33830,8 +42460,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -33857,7 +42487,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5670d4f79411fd5cb2ec03c2b5ed81b44e2b0681a72de5d9ce0de4001066d02a"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33915,8 +42545,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           }
         ],
         "names": [
@@ -33942,7 +42572,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b61faf483a13cc25f7b90129cb7088cd498560a09c1a014b5ca72ab713814352"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34000,8 +42630,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/lummastealer",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -34025,7 +42655,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c15a21e69b3142e50d4e42a4203741d924795b44a6a3907dcaf2a5dec0ae9d77"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34083,8 +42713,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 15
+            "count": 15,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -34107,7 +42737,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/598b0992d69d55845c1be3233b3abdc63ad1184cbc01705d5bbd1e65ea11fdbb"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34190,7 +42820,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/62d5eae2e4f7deba6554026ee460e04ca0b100761f9fad62aa79983b6c5c444a"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34248,8 +42878,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/ht1ll7",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 15
+            "count": 15,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -34272,7 +42902,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/af9fedc9c2e8a653812e75ba6315e41b734d33e1f85868a4834670b19863adba"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34330,8 +42960,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/cgow",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -34356,7 +42986,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ffc3f8bdd9d37069c190378fc681e70992d9b88d9b8810cf00a1d89080c9ee8f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34440,7 +43070,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/67b75dbf7e0fa3009c3726b03cafd47b8eea8b7bd937409de615015410b3aa64"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34498,8 +43128,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/lummastealer",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -34524,7 +43154,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3bca04a525efbce865d03bd7cc7631c7dca3e9c50f4e1949c955541e3660103"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34582,8 +43212,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -34609,7 +43239,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/71fbe49d223d272852212f304d1dfa207b671b060426a3e619e6c0c6813b589d"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34694,7 +43324,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ab253de6924568c6a4574561fc6ec14ee98e5fd48e98162245c71a612af96a26"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34752,8 +43382,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -34779,7 +43409,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c7bebd02f8db04103ac5f83078e634535db5ff1d3a59fe241b707c36813d2983"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34865,7 +43495,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3169f13963324e6b06335f3f19c672630ddc0c0da423b2d0bdd9378d1de6de71"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34950,7 +43580,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/27e4adf26375ac044a8631d8998471b0c4746635cb8e45d9f12e5d6a24d080d9"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35008,8 +43638,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -35037,7 +43667,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9081546dcd8528fa3b26aabcab3baf5ece17faadcb0f6e697e7591f73c6ed839"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35095,8 +43725,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -35123,7 +43753,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6d2c7f1837bd52c975c29c8ac8c0bc2f4b5b688ac987482da05c77e0ea2295c5"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35181,8 +43811,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -35208,7 +43838,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b2a38245d0cd7985793e03df229a46ea8cee0941b8b1dc116a3a128e8fe1aa03"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35266,8 +43896,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -35292,7 +43922,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/533fdbf6b54775472b63e8e67a29d1647c207273b3cb32971f8647c42c6066a7"
       },
       "detected_at": "2026-10-26T20:05:47.015161+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35377,7 +44007,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7d969f25af3d016f00dd2858f28c5f2ff166f13b85072eaa8d736885ee956068"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35435,8 +44065,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -35462,7 +44092,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bd1c28603a4fae25b60dc7263c88ffcc7fc14f1cf2cac5143d5bfa786b151433"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35520,8 +44150,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -35547,7 +44177,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/297878107f9a04137afb70647994becb2452fff58104faf93203fac09248241b"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35632,7 +44262,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/163a3b1821e5527f75e7620b6cfd10718c715c96a8cb72a71465fe0a887bf253"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -35814,8 +44444,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -35841,7 +44471,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1d892af7a9b3989131c81cf4e1adcc52822390ee06cbd304eea43031c3d31ec1"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35899,8 +44529,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -35926,7 +44556,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8fc35a16f8829ea8dadecc724830813583e2b5d668cb733932c8d1c3d1733fa2"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36011,7 +44641,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8c34eefaceeed222cd9779fb3e72d0c9c87df96ebfcdc7b19b9e696ab16afcc3"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36095,7 +44725,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/44e49692c182143a7630be5decb072a12fb1462aaf143284411de135697896de"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36139,21 +44769,21 @@ window.YARAFY_DATA = {
         "tags": [
           "ClickFix",
           "Foxveil",
-          "loader",
+          "Loader",
           "Mach-O",
-          "macho",
+          "machO",
           "macOS"
         ]
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 30,
-        "total_engines": 63,
-        "detection_ratio": "30/63",
+        "positives": 29,
+        "total_engines": 57,
+        "detection_ratio": "29/57",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
+            "count": 20,
             "value": "trojan"
           }
         ],
@@ -36165,10 +44795,10 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "arm",
-          "64bits",
           "macho",
+          "multi-arch",
           "self-signed",
-          "multi-arch"
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -36180,7 +44810,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2b2db5ba050175472c1ba8c4853b151de3a7ff55f3eeca901802ec75aa73b770"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36224,9 +44854,9 @@ window.YARAFY_DATA = {
         "tags": [
           "ClickFix",
           "Foxveil",
-          "loader",
+          "Loader",
           "Mach-O",
-          "macho",
+          "machO",
           "macOS"
         ]
       },
@@ -36265,7 +44895,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3ce73d8dbdb4c9323ed56386f5c0861d69f3ef257f821705b9326ed8058b5e3"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36323,8 +44953,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -36350,7 +44980,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/46c09f852a7f05361b8758d10aba4426d4eacab74ed6e0ea5fdef20812934133"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36435,7 +45065,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/04e30db39d13194ddd1d20dcc31779bf3e174d7957931be3aa7cb92f852fa11e"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36520,7 +45150,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8d8dd9808f875b74c2ba8aa735c00e661b2d366f658d4d78a79bbb041b504eb2"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36605,7 +45235,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4fd0502c48d621cb9fec491391d408e9c19f5643b57b3841c9fa1d488c779d97"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36663,8 +45293,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -36690,7 +45320,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4f937f9bcfbb1ac38a7c0f791a760425bb555ba8002752b879ddda303c1a425e"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-01T16:48:03.047528+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_Backdoor_C5_Implant",
@@ -86233,7 +94863,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3bba0dd56b220041d6a7080fa8f53d8563bf2ced7796e88c9dc1b7beba44785a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86291,8 +94921,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -86319,7 +94949,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7c3b234169d90ac5d8b18e56e5c46012319124a225316a962506b236fc952075"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86403,7 +95033,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3f84244dcab460b6fba60510836251c5999611c7f440d6bdad5c63121909a9f9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86487,7 +95117,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/99ec22bed70db1293ac55f87019f49d4ce04e2deacb503f498b072b72979d524"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86571,7 +95201,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/326eaea523a3f44a6faebafb5bc8bf4395c713b4a6d375e8b57f2f6d23602983"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86655,7 +95285,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ac22530ddcc9b0ce1841dcc1c82ce813dc04a2c37d29bf393388d3a214ac6626"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86713,8 +95343,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -86738,7 +95368,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bff661c290456430436cb22cf83826e9e63b2959764fe27cdb725cb975b8f416"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86823,7 +95453,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/747ae1b6626bd476e0d01ca5862d73d789393ec17481ca652669351d43a6bd3a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86881,8 +95511,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -86907,7 +95537,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/14c2594caebd59572aaf0410e92b06f112dc3b2b9640c66aa820b87d5b898689"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -86965,8 +95595,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -86992,7 +95622,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ccb36936001ee1f0c0c70eac9f7fe177d5652afb20f351ff1122c93e42045320"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87050,8 +95680,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -87077,7 +95707,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1eb39dbd8ca631431e37f173fa80b00fbac4a6c3a26effe6dacbe5b3eb4d8ecd"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87162,7 +95792,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3eec7ca615e28918446d87032d4630279a77979a8e863cc43456b109d664d48"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87220,8 +95850,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/abtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -87247,7 +95877,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2a93e929b69caa6dc56901cda012b0073d83a4682a025193a0fc7234fedff83f"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87305,8 +95935,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -87332,7 +95962,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/eb38f2f91b58545f0511de0954534472e65de8b07abb57cee40a73576b0318af"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87390,8 +96020,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -87417,7 +96047,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9eabb901cc361b1b74cda3d7449ccc45d4b142c822c5e78b47246b0d8bbf7bee"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87475,8 +96105,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           }
         ],
         "names": [
@@ -87500,7 +96130,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a8ee26aaa41e04b86cdeebd2c3748171bec0f8e4fab02f9a48cd5bbedd5db544"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87585,7 +96215,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bb4568b5a0a179f5391be75ac164900363133b29c24b225438f66c17a741d2dd"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87643,8 +96273,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -87670,7 +96300,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f9713062c7f48d9689b2f921def5c3ebcb35e036b2ab694d625102dbadce8b52"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87756,7 +96386,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/23746b451646aeaec0e56f813c7654fd75cb3c5a6d7c0e75fcda66c6287e5df2"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87842,7 +96472,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/54c7ebe70c5981d14bda4f2ed99adbac28fcf390e4ddd0e0f272dd893f6caa1b"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87900,8 +96530,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           }
         ],
         "names": [
@@ -87927,7 +96557,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/85279394e95efea3d2678c9561021cb4a9f7a4d88dbafc74668ee918fff0fd0a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -87985,8 +96615,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -88013,7 +96643,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/69092c70e390ba31429d4bbd08ca01eef3415e665551d3d3a66b673f36ed48d3"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88071,8 +96701,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -88098,7 +96728,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/83ef81d48afa643d27fe562d1c4a709a35a42b10cd57ea82213f0fdeb9d78633"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88156,8 +96786,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -88183,7 +96813,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0c6dc7c70dd1f121245c5eb743c18fc8a9532024e137535070d6c8479e7ccd9a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88241,8 +96871,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -88269,7 +96899,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f64b3080432867f3778e62399cc109dfbc10ddc924bc5221daa3c1d54eecc831"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88327,8 +96957,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -88354,7 +96984,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5300c0e0296ae4d2897ea72b5282b2fa57f8b824507e1a3d9dd80d6530395fdc"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88412,8 +97042,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -88439,7 +97069,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1c5efea856059fc548f2b21e9e6e5079727949e5c86f8f428acfeef314ed1060"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88497,8 +97127,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -88524,7 +97154,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8ac8e983086e7e35004a8ea6575a37e14b986c518b13bc5c906e3df89f37d8d3"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88609,7 +97239,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8220416c319dfc519aaf6023ac5c50394d758e3ebe436f3e7c43ff7feb19c0a0"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88694,7 +97324,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bb4490884100ee84e132ea822d06da99508becdc16e434dcf11ade19b0971dd0"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88752,8 +97382,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -88779,7 +97409,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a2badf05b11de0f772600c9fef2357c1f514a0ca21feb43240f188dbf7522992"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88864,7 +97494,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/643af4611e02c36280cdf4a9b22be3488ec48278db7511e268c13d0c11a0daf9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -88922,8 +97552,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -88948,7 +97578,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e2fcffd2ce53fe38b555db86e14e96b706eb811367dba4725f96a248c667b9a8"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89033,7 +97663,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/87367d9c60bb5923526138d10340a60d13d150f3280bba966d0ef8a335893635"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89118,7 +97748,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6335a4427566446e65202fb47dac5bac3433308c5daabf2293afb3c795f5353c"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89176,8 +97806,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -89203,7 +97833,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/acd2e7872edb9612a92e835bd243a83d185407e1680dea2e70845620874ff1dc"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89286,7 +97916,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1fbdd925143e28ea6542bcc3b15cd44de7c0b226082f6f99450f0e1822db2068"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89344,8 +97974,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 12,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 12
           }
         ],
         "names": [
@@ -89371,7 +98001,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/470034fb481dec06585288f94abcc8e9375b12c29a86d64dc30b1a68c24c0282"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89429,8 +98059,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 12,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 12
           }
         ],
         "names": [
@@ -89456,7 +98086,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/114b69aa53a40d7702a11ff81e3fc1d7104a3132c3395f403e6033c68f181230"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89514,8 +98144,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -89541,7 +98171,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d6ce062f26b771b19a085a727ca13d5c568037cee3039a1bbf8c261e8c44e363"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89599,8 +98229,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 12,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 12
           }
         ],
         "names": [
@@ -89626,7 +98256,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9078f1a436d99d859645a65df94b93e80e516972146ce895efed935c642ccba9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89684,8 +98314,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -89711,7 +98341,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b3ffa0ce815def773ca9e9807af167f1378fcebf91eafd1ddaf86b1238fa5412"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89769,8 +98399,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 11
+            "count": 11,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -89796,7 +98426,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0611cf61fa7ef2bab6cabd19207b0256a69a2981966b1f32691057c7dc03a433"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89854,8 +98484,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 11
+            "count": 11,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -89881,7 +98511,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2cbc03368b2c63103af1e705a0dd42efe93514f87461ee14d9df858ec19e6a68"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -89939,8 +98569,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 12
+            "count": 12,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -89966,7 +98596,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3168c669fae2b267641c203e1abf6fa8e6011201ab8187dfe06d0168ff957c7f"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "Macho_Jockey_Implant",
@@ -91172,8 +99802,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -91198,7 +99828,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/21f5852d9ade22f90e63e67898dcc6f0fb240e782c826f513e34d685d3ff8ca8"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91281,7 +99911,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/46b32e8232bd0b359d3cdd5891c9030a58f0a949225cb3eba1b72014a034d5b3"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91340,8 +99970,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 14
+            "count": 14,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -91365,7 +99995,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/32da533a3e59d5b86c115b4302897f5d8a5d791b34f9deb2b933c3476979fcd1"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91448,7 +100078,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cd3569812aefac3396be7f11124c068e200dc83e7882832adf9161e7b2656f75"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91532,7 +100162,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/af95c361f4a077a251c9879c2cbadd1394302db083b6753bba55784d792dcc2c"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91617,7 +100247,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e9e8cbb6e60dec133269e83d5c9564b5fca8ff5293233ae2766bdfc1e17503d0"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91676,8 +100306,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 12,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 12
           }
         ],
         "names": [
@@ -91701,7 +100331,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9dc758ca7a1e93859946e18206a4b3f34ef76b778b43f5226a40ffeb2444db48"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91785,7 +100415,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b28c2590e605070470bbad8963a3f18abeb7c972ac65ba3dc77622cb3cb85324"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91869,7 +100499,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/981ff25c886308d5350b4446184f14406be6cc01186bb19ebf0de8cf843e392f"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -91928,8 +100558,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -91954,7 +100584,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1ec9297709a225f912fc7145f43654bc1a6b61e56c9684bf22c6aaf0fad98289"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92007,13 +100637,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 20,
-        "total_engines": 54,
-        "detection_ratio": "20/54",
+        "positives": 25,
+        "total_engines": 61,
+        "detection_ratio": "25/61",
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 13,
+            "count": 16,
             "value": "trojan"
           }
         ],
@@ -92023,20 +100653,21 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
+          "macho",
           "multi-arch",
           "64bits",
-          "macho",
+          "self-signed",
           "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {
-          "Microsoft": "Trojan:MacOS/Multiverze!rfn"
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/6ee52429a22ee09c723794eaa590cd4f08a4109d5e3bd9bb7e71f94de3e3851a"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-02T17:14:50.267754+00:00"
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92095,8 +100726,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/amos",
         "popular_threat_category": [
           {
-            "count": 8,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 8
           }
         ],
         "names": [
@@ -92120,7 +100751,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/64fb0d531b51a70cd4a40d4b2ece6c98d7a3d453c5d5b148f4cae75208584677"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92179,8 +100811,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 9,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 9
           }
         ],
         "names": [
@@ -92203,7 +100835,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/b01d5a9d05b788cdbff787e3317e207caec6b6e08979a1efe0f7764cbfdd86dc"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92262,8 +100895,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/hajl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 6
+            "count": 6,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -92284,7 +100917,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/5c18af8d98e6b13dbf5b8b408d817a302a5239311fff0da0319e11c9d5ce76cb"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92367,7 +101001,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/ba2fb68385233683f785e3bae69cb79360a2a6c48b43b44f9c43a3b8f54ca1a9"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92451,7 +101086,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/93c9298f7f23e0bdfc19785099fc85bb04acae14bbfe9f9cc3cb9355447ac47c"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92535,7 +101171,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/d3146700547025c387b0f3e707f391d59f2b62c4c60b6ecbf5134c79e01d67e1"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92594,8 +101231,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/amos",
         "popular_threat_category": [
           {
-            "count": 8,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 8
           }
         ],
         "names": [
@@ -92618,7 +101255,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/ec038d8ecdc9f33786ec79dab5b30ac1682bc9378540e1a7e775dda5c8bdb6b5"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92701,7 +101339,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/197596c12388be1a4e07197e5b98535472a672ceab2db16c8c3737a025ffbb0d"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92784,7 +101423,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/b92921e81666ba02fcd593c5f18aa8952b639d1fe7d13849677dd27954c479e8"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -92868,7 +101508,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/95b3a52bad5da0468d6af8a8c56e0ca7e307c2c0151f2531903e27c49458d308"
       },
-      "detected_at": "2026-11-02T17:14:50.267754+00:00"
+      "detected_at": "2026-11-02T17:14:50.267754+00:00",
+      "last_seen_at": "2026-11-02T18:28:41.427234+00:00"
     }
   ],
   "rules": [

@@ -1,7 +1,7 @@
 # Yarafy Telemetry & Threat Hunting Report
 
-**Last Run:** `2026-11-02T17:14:50.267754+00:00`
-**Total Samples Scanned:** `19926` | **Total Rule Hits:** `601`
+**Last Run:** `2026-11-02T18:28:41.427234+00:00`
+**Total Samples Scanned:** `20565` | **Total Rule Hits:** `601`
 
 ## Hits Breakdown by Source Feed
 | Source Feed | Total Hits |
@@ -50,7 +50,7 @@
 | 2026-11-02 17:14:50 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`5c18af8d98...`](https://www.virustotal.com/gui/file/5c18af8d98e6b13dbf5b8b408d817a302a5239311fff0da0319e11c9d5ce76cb) | `12/39` | `trojan.amos/hajl` |
 | 2026-11-02 17:14:50 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`b01d5a9d05...`](https://www.virustotal.com/gui/file/b01d5a9d05b788cdbff787e3317e207caec6b6e08979a1efe0f7764cbfdd86dc) | `21/63` | `trojan.amos/infostl` |
 | 2026-11-02 17:14:50 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`64fb0d531b...`](https://www.virustotal.com/gui/file/64fb0d531b51a70cd4a40d4b2ece6c98d7a3d453c5d5b148f4cae75208584677) | `20/63` | `trojan.infostl/amos` |
-| 2026-11-01 16:48:03 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`6ee52429a2...`](https://www.virustotal.com/gui/file/6ee52429a22ee09c723794eaa590cd4f08a4109d5e3bd9bb7e71f94de3e3851a) | `20/54` | `trojan.amos/abtrojan` |
+| 2026-11-01 16:48:03 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`6ee52429a2...`](https://www.virustotal.com/gui/file/6ee52429a22ee09c723794eaa590cd4f08a4109d5e3bd9bb7e71f94de3e3851a) | `25/61` | `trojan.amos/abtrojan` |
 | 2026-11-01 16:48:03 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`1ec9297709...`](https://www.virustotal.com/gui/file/1ec9297709a225f912fc7145f43654bc1a6b61e56c9684bf22c6aaf0fad98289) | `29/62` | `trojan.amos/infostl` |
 | 2026-11-01 16:48:03 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`981ff25c88...`](https://www.virustotal.com/gui/file/981ff25c886308d5350b4446184f14406be6cc01186bb19ebf0de8cf843e392f) | `26/63` | `trojan.amos/infostl` |
 | 2026-11-01 16:48:03 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`b28c2590e6...`](https://www.virustotal.com/gui/file/b28c2590e605070470bbad8963a3f18abeb7c972ac65ba3dc77622cb3cb85324) | `26/63` | `trojan.amos/infostl` |
