@@ -1,21 +1,21 @@
 {
-  "total_scanned": 20983,
-  "total_hits": 612,
-  "last_run": "2026-11-03T18:10:01.791690+00:00",
+  "total_scanned": 21447,
+  "total_hits": 635,
+  "last_run": "2026-11-05T20:49:02.799448+00:00",
   "hits_by_platform": {
-    "macos": 612,
+    "macos": 635,
     "windows": 0,
     "linux": 0,
     "non-pe": 0
   },
   "hits_by_rule": {
-    "macOS_ClickFix_AppleScript_Dropper": 266,
-    "OSX_Stealer_AMOS_Generic": 39,
+    "macOS_ClickFix_AppleScript_Dropper": 284,
+    "OSX_Stealer_AMOS_Generic": 40,
     "MALW_macOS_MacSync_Stealer_Universal": 7,
     "OSX_Foxveil_AMOS_Stage4_Generic": 18,
     "APT_macOS_RustBucket_Behavioral_Indicators": 3,
-    "Macho_Trojan_CloudSync_Generic": 3,
-    "Macho_Trojan_CloudSync_1006YR": 2,
+    "Macho_Trojan_CloudSync_Generic": 5,
+    "Macho_Trojan_CloudSync_1006YR": 4,
     "Macho_Trojan_CloudSync_1007YR": 1,
     "Macho_Trojan_CloudSync_DMG": 1,
     "Macho_hVNCRat_generic": 1,
@@ -26,10 +26,10 @@
     "Macho_Jockey_Implant": 2
   },
   "hits_by_source": {
-    "MalwareBazaar": 288,
+    "MalwareBazaar": 311,
     "VirusTotal Enterprise": 43,
     "Local File": 281
   },
-  "new_hits_this_run": 11,
-  "refreshed_hits_this_run": 220
+  "new_hits_this_run": 23,
+  "refreshed_hits_this_run": 202
 }
