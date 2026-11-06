@@ -832,21 +832,31 @@
       </section>
 
       <!-- Filter Bar -->
-      <section class="filter-panel">
-        <div class="filter-group">
-          <input type="text" id="search-box" class="search-input" placeholder="Search by hash, rule, label, or tag..." oninput="applyFilters()">
+      <section class="filter-panel" style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; flex: 1;">
+          <input type="text" id="search-box" class="search-input" placeholder="Search by hash, rule, label, or tag..." oninput="telemetryCurrentPage = 1; applyFilters();">
+          <div class="filter-group">
+            <button class="filter-pill active" data-platform="all" onclick="setPlatformFilter('all', this)">All Platforms</button>
+            <button class="filter-pill" data-platform="macos" onclick="setPlatformFilter('macos', this)">macOS</button>
+            <button class="filter-pill" data-platform="windows" onclick="setPlatformFilter('windows', this)">Windows</button>
+            <button class="filter-pill" data-platform="linux" onclick="setPlatformFilter('linux', this)">Linux</button>
+            <button class="filter-pill" data-platform="non-pe" onclick="setPlatformFilter('non-pe', this)">Non-PE</button>
+          </div>
+          <div class="filter-group">
+            <select id="source-filter" class="filter-select" onchange="telemetryCurrentPage = 1; applyFilters();">
+              <option value="all">All Feeds</option>
+              <option value="MalwareBazaar">MalwareBazaar</option>
+            </select>
+          </div>
         </div>
-        <div class="filter-group">
-          <button class="filter-pill active" data-platform="all" onclick="setPlatformFilter('all', this)">All Platforms</button>
-          <button class="filter-pill" data-platform="macos" onclick="setPlatformFilter('macos', this)">macOS</button>
-          <button class="filter-pill" data-platform="windows" onclick="setPlatformFilter('windows', this)">Windows</button>
-          <button class="filter-pill" data-platform="linux" onclick="setPlatformFilter('linux', this)">Linux</button>
-          <button class="filter-pill" data-platform="non-pe" onclick="setPlatformFilter('non-pe', this)">Non-PE</button>
-        </div>
-        <div class="filter-group">
-          <select id="source-filter" class="filter-select" onchange="applyFilters()">
-            <option value="all">All Feeds</option>
-            <option value="MalwareBazaar">MalwareBazaar</option>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <span style="font-size: 12px; color: var(--text-muted); font-weight: 500;">Per Page:</span>
+          <select id="telemetry-page-size-select" class="filter-select" style="padding: 6px 10px; font-size: 12px;" onchange="setTelemetryPageSize(this.value)">
+            <option value="15">15</option>
+            <option value="25" selected>25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="all">All</option>
           </select>
         </div>
       </section>
@@ -877,6 +887,16 @@
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <!-- Telemetry Pagination Bar -->
+        <div class="pagination-bar" id="telemetry-pagination-bar">
+          <div class="pagination-info" id="telemetry-pagination-info">Page 1 of 1</div>
+          <div class="pagination-controls">
+            <button class="pagination-btn" id="telemetry-prev-btn" onclick="changeTelemetryPage(-1)" disabled>&larr; Previous</button>
+            <span id="telemetry-page-number" style="font-size: 12px; font-weight: 600; color: #fff; padding: 0 4px;">1</span>
+            <button class="pagination-btn" id="telemetry-next-btn" onclick="changeTelemetryPage(1)" disabled>Next &rarr;</button>
+          </div>
         </div>
       </section>
     </div> <!-- End #view-telemetry -->
@@ -1048,6 +1068,9 @@
     let globalRules = [];
     let activePlatform = 'all';
     let activeRulePlatform = 'all';
+    let telemetryCurrentPage = 1;
+    let telemetryPageSize = 25;
+    let cachedFilteredHits = [];
     let ruleHitsOnly = false;
     let ruleCurrentPage = 1;
     let rulePageSize = 25;
@@ -1563,6 +1586,7 @@
       const searchBox = document.getElementById('search-box');
       if (searchBox) {
         searchBox.value = ruleName;
+        telemetryCurrentPage = 1;
         applyFilters();
         searchBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
         searchBox.focus();
@@ -1573,7 +1597,27 @@
       activePlatform = platform;
       document.querySelectorAll('.filter-pill').forEach(btn => btn.classList.remove('active'));
       if (el) el.classList.add('active');
+      telemetryCurrentPage = 1;
       applyFilters();
+    }
+
+    function setTelemetryPageSize(size) {
+      telemetryPageSize = (size === 'all') ? 'all' : parseInt(size, 10);
+      telemetryCurrentPage = 1;
+      applyFilters();
+    }
+
+    function changeTelemetryPage(delta) {
+      if (telemetryPageSize === 'all') return;
+      const total = cachedFilteredHits.length;
+      const totalPages = Math.ceil(total / telemetryPageSize) || 1;
+      const targetPage = telemetryCurrentPage + delta;
+      if (targetPage >= 1 && targetPage <= totalPages) {
+        telemetryCurrentPage = targetPage;
+        renderTable();
+        const table = document.getElementById('detections-table');
+        if (table) table.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
     }
 
     function applyFilters() {
@@ -1599,19 +1643,43 @@
         return true;
       });
 
-      renderTable(filtered);
+      cachedFilteredHits = filtered.slice().reverse();
+
+      const totalPages = (telemetryPageSize === 'all') ? 1 : (Math.ceil(cachedFilteredHits.length / telemetryPageSize) || 1);
+      if (telemetryCurrentPage > totalPages) telemetryCurrentPage = totalPages;
+      if (telemetryCurrentPage < 1) telemetryCurrentPage = 1;
+
+      renderTable();
     }
 
-    function renderTable(hits) {
+    function renderTable() {
       const tbody = document.getElementById('table-body');
-      document.getElementById('filtered-count').textContent = `Showing ${hits.length} of ${globalHits.length} detections`;
+      const countEl = document.getElementById('filtered-count');
+      const total = cachedFilteredHits.length;
 
-      if (hits.length === 0) {
+      if (!tbody) return;
+
+      if (total === 0) {
+        if (countEl) countEl.textContent = `Showing 0 of ${globalHits.length} detections`;
         tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 32px;">No matching detections found.</td></tr>`;
+        updateTelemetryPaginationControls(0, 0, 0);
         return;
       }
 
-      tbody.innerHTML = hits.slice().reverse().map((h, idx) => {
+      let pageHits = cachedFilteredHits;
+      let startIdx = 0;
+      let endIdx = total;
+
+      if (telemetryPageSize !== 'all') {
+        startIdx = (telemetryCurrentPage - 1) * telemetryPageSize;
+        endIdx = Math.min(startIdx + telemetryPageSize, total);
+        pageHits = cachedFilteredHits.slice(startIdx, endIdx);
+        if (countEl) countEl.textContent = `Showing ${startIdx + 1}–${endIdx} of ${total} detections (${globalHits.length} total)`;
+      } else {
+        if (countEl) countEl.textContent = `Showing all ${total} detections (${globalHits.length} total)`;
+      }
+
+      tbody.innerHTML = pageHits.map((h, idx) => {
         const plat = (h.platform || h.meta?.os || h.namespace?.split('_')[0] || 'unknown').toLowerCase();
         const platBadge = `<span class="badge badge-${plat}">${plat.toUpperCase()}</span>`;
         
@@ -1651,6 +1719,31 @@
           </tr>
         `;
       }).join('');
+
+      updateTelemetryPaginationControls(startIdx, endIdx, total);
+    }
+
+    function updateTelemetryPaginationControls(startIdx, endIdx, total) {
+      const infoEl = document.getElementById('telemetry-pagination-info');
+      const pageNumEl = document.getElementById('telemetry-page-number');
+      const prevBtn = document.getElementById('telemetry-prev-btn');
+      const nextBtn = document.getElementById('telemetry-next-btn');
+
+      if (!infoEl) return;
+
+      if (total === 0 || telemetryPageSize === 'all') {
+        infoEl.textContent = total > 0 ? `Showing all ${total} detections` : 'No detections';
+        if (pageNumEl) pageNumEl.textContent = '1';
+        if (prevBtn) prevBtn.disabled = true;
+        if (nextBtn) nextBtn.disabled = true;
+        return;
+      }
+
+      const totalPages = Math.ceil(total / telemetryPageSize) || 1;
+      infoEl.textContent = `Page ${telemetryCurrentPage} of ${totalPages} (${total} matching detections)`;
+      if (pageNumEl) pageNumEl.textContent = `${telemetryCurrentPage} / ${totalPages}`;
+      if (prevBtn) prevBtn.disabled = (telemetryCurrentPage <= 1);
+      if (nextBtn) nextBtn.disabled = (telemetryCurrentPage >= totalPages);
     }
 
     function renderCharts() {
