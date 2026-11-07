@@ -1,7 +1,7 @@
 {
-  "total_scanned": 22047,
+  "total_scanned": 22535,
   "total_hits": 635,
-  "last_run": "2026-11-06T16:52:44.472483+00:00",
+  "last_run": "2026-11-07T20:27:02.759219+00:00",
   "hits_by_platform": {
     "macos": 635,
     "windows": 0,
@@ -31,5 +31,5 @@
     "Local File": 281
   },
   "new_hits_this_run": 0,
-  "refreshed_hits_this_run": 249
+  "refreshed_hits_this_run": 227
 }
