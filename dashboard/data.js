@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 22535,
+    "total_scanned": 22607,
     "total_hits": 635,
-    "last_run": "2026-11-07T20:27:02.759219+00:00",
+    "last_run": "2026-11-08T23:34:05.002407+00:00",
     "hits_by_platform": {
       "macos": 635,
       "windows": 0,
@@ -32,8 +32,8 @@ window.YARAFY_DATA = {
       "Local File": 281
     },
     "new_hits_this_run": 0,
-    "refreshed_hits_this_run": 227,
-    "total_rules": 15
+    "refreshed_hits_this_run": 19,
+    "total_rules": 17
   },
   "hits": [
     {
@@ -1091,8 +1091,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/stealer",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -1119,7 +1119,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1230,13 +1230,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 34,
+        "positives": 35,
         "total_engines": 63,
-        "detection_ratio": "34/63",
+        "detection_ratio": "35/63",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
+            "count": 21,
             "value": "trojan"
           },
           {
@@ -1253,11 +1253,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
           "arm",
-          "checks-cpu-name",
           "macho",
           "multi-arch",
+          "checks-cpu-name",
+          "64bits",
           "self-signed"
         ],
         "reputation": -52,
@@ -1271,7 +1271,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -25105,7 +25105,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -44021,7 +44021,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7d969f25af3d016f00dd2858f28c5f2ff166f13b85072eaa8d736885ee956068"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44106,7 +44106,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bd1c28603a4fae25b60dc7263c88ffcc7fc14f1cf2cac5143d5bfa786b151433"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44191,7 +44191,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/297878107f9a04137afb70647994becb2452fff58104faf93203fac09248241b"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -94849,8 +94849,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/abmrisk",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -94876,7 +94876,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3bba0dd56b220041d6a7080fa8f53d8563bf2ced7796e88c9dc1b7beba44785a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -94934,8 +94934,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -94962,7 +94962,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7c3b234169d90ac5d8b18e56e5c46012319124a225316a962506b236fc952075"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -95444,8 +95444,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -95471,7 +95471,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/747ae1b6626bd476e0d01ca5862d73d789393ec17481ca652669351d43a6bd3a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -95641,7 +95641,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ccb36936001ee1f0c0c70eac9f7fe177d5652afb20f351ff1122c93e42045320"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -95699,8 +95699,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -95726,7 +95726,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1eb39dbd8ca631431e37f173fa80b00fbac4a6c3a26effe6dacbe5b3eb4d8ecd"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -96719,8 +96719,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/hajl",
         "popular_threat_category": [
           {
-            "count": 14,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 14
           }
         ],
         "names": [
@@ -96743,7 +96743,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/83ef81d48afa643d27fe562d1c4a709a35a42b10cd57ea82213f0fdeb9d78633"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -96801,8 +96801,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -96828,7 +96828,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0c6dc7c70dd1f121245c5eb743c18fc8a9532024e137535070d6c8479e7ccd9a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -97843,7 +97843,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/acd2e7872edb9612a92e835bd243a83d185407e1680dea2e70845620874ff1dc"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -99813,8 +99813,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -99840,7 +99840,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/21f5852d9ade22f90e63e67898dcc6f0fb240e782c826f513e34d685d3ff8ca8"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -100612,7 +100612,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1ec9297709a225f912fc7145f43654bc1a6b61e56c9684bf22c6aaf0fad98289"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101528,8 +101528,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -101555,7 +101555,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/95b3a52bad5da0468d6af8a8c56e0ca7e307c2c0151f2531903e27c49458d308"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101642,7 +101642,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9d3df907e1aae13743a47276d4e06ba974e3781763fa23f99c09867609a4fb4a"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102470,8 +102470,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -102497,7 +102497,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d561097aaf56697eafd98e5fe24297866c9ea64375db931fa99dc8dfd640b84c"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+      "last_seen_at": "2026-11-08T23:34:05.002407+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -135417,6 +135417,34 @@ window.YARAFY_DATA = {
       "strings_count": 17,
       "total_hits": 7,
       "source_code": "rule MALW_macOS_MacSync_Stealer_Universal {\n    meta:\n        description = \"Universal multi-architecture detection for macOS MacSync Stealer (Intel x86_64 & Apple Silicon ARM64 / Universal Fat Binaries)\"\n        date = \"2026-08-31\"\n        family = \"MacSync\"\n        threat_type = \"Infostealer / Stager / Exfiltrator\"\n        platform = \"macOS (x86_64 & ARM64)\"\n\n    strings:\n        // XOR Modifier: Scans all 256 keys: 0x00 - 0xFF across Intel & ARM)\n        $xor_httpcode   = \"/tmp/.httpcode\" xor\n        $xor_archive    = \"/tmp/osalogging.zip\" xor\n        $xor_osascript  = \"osascript\" xor\n        $xor_curl       = \"curl -k -s\" xor\n        $xor_dd_slice   = \"dd if=\" xor\n        $xor_chunk_fmt  = \"chunk_index=\" xor\n        $xor_dynamic    = \"/dynamic?txd=\" xor\n        $xor_gate       = \"/gate?buildtxd=\" xor\n        $xor_agent      = \"CFNetwork/Darwin\" xor\n\n        // Unencrypted Format String Tokens & Compiler Artifacts\n        $fmt_sess_id    = \"%ld-%08x\" ascii wide\n        $str_obf_class  = \"ObfuscatedString\" ascii\n\n        // Multi-Architecture C++ Decryption Engine Machine Code\n        // x86_64: movsx eax, byte [reg+reg] ; xor eax, <KEY> ; mov byte [reg+reg], dl/al\n        $op_xor_x86_64  = { 0F BE ?? ?? 35 ?? 00 00 00 88 }\n\n        // POSIX Daemonization & Stream Manipulation System Imports (Identical across dyld on Intel & ARM64)\n        $imp_freopen    = \"_freopen\" ascii\n        $imp_setsid     = \"_setsid\" ascii\n        $imp_stat       = \"_stat$INODE64\" ascii\n        $imp_system     = \"_system\" ascii\n        $imp_fork       = \"_fork\" ascii\n\n    condition:\n        // Mach-O Magic Checks: Thin 64-bit/32-bit (Intel & ARM64) OR Universal Fat Binaries (FAT_MAGIC 0xCAFEBABE / FAT_MAGIC_64 0xCAFEBABF)\n        (\n            uint32(0) == 0xFEEDFACF or uint32(0) == 0xCFFAEDFE or  // Thin Mach-O 64-bit (x86_64 & ARM64)\n            uint32(0) == 0xFEEDFACE or uint32(0) == 0xCEFAEDFE or  // Thin Mach-O 32-bit (Legacy x86/ARM)\n            uint32(0) == 0xCAFEBABE or uint32(0) == 0xBEBAFECA or  // Universal Fat Binary (32-bit offsets)\n            uint32(0) == 0xCAFEBABF or uint32(0) == 0xBFBAFECA     // Universal Fat Binary 64-bit\n        ) and\n        filesize < 15MB and\n        (\n            // Primary Detection: Matches any 3 core behavioral strings regardless of XOR key (0x00-0xFF on Intel & ARM)\n            (3 of ($xor_*)) or\n\n            // Stripped Variant Detection: XOR loop opcodes + daemonization API imports\n            ($op_xor_x86_64 and $imp_freopen and ($imp_setsid or $imp_fork or $imp_stat)) or\n\n            // Universal Pipeline Detection: osascript pipe / dd slice + dyld execution APIs (Intel & ARM64)\n            (2 of ($xor_osascript, $xor_dd_slice, $xor_curl, $xor_gate) and $imp_system and ($imp_freopen or $imp_stat)) or\n\n            // Unstripped Variant Detection: ObfuscatedString class template + any single behavioral token\n            ($str_obf_class and (1 of ($xor_*) or $fmt_sess_id))\n        )\n}"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealers/pam_stealer.yar",
+      "description": "Avenger / PAM Stealer macOS information stealer binaries",
+      "malware_family": "AvengerStealer",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-11-09",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 16,
+      "total_hits": 0,
+      "source_code": "rule OSX_Avenger_Stealer {\n    meta:\n        description = \"Avenger / PAM Stealer macOS information stealer binaries\"\n        author = \"Chandra Kant Bauri\"\n        date = \"2026-11-09\"\n        malware_family = \"AvengerStealer\"\n\t\t\t\thash = \"06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0\"\n    strings:\n        // Cryptographic cha20 RFC 7539 state initialization\n        $chacha = \"expand 32-byte k\" ascii\n\n        // Subprocess IPC execution primitives\n        $ipc_pipe   = \"_pipe\" ascii\n        $ipc_spawn  = \"_posix_spawnp\" ascii\n        $ipc_dup2   = \"posix_spawn_file_actions_adddup2\" ascii\n\n        // Variant 1 (v1.3.x): PAM verification, clipboard harvesting, and embedded helpers\n        $crate       = \"avenger_agent\" ascii\n        $kh_id       = \"kh-57aebaab0e5de898\" ascii\n        $api_pam     = \"_pam_authenticate\" ascii\n        $api_pb      = \"_NSPasteboardTypeString\" ascii\n        $api_csr     = \"_csr_get_active_config\" ascii\n        $macho_embed = { CF FA ED FE 0C 00 00 01 }\n\n        // Variant 2 Chrome DevTools Protocol (CDP) & Cocoa workspace automation\n        $cdp_nav    = \"Page.navigate\" ascii\n        $cdp_dl1    = \"Browser.setDownloadBehavior\" ascii\n        $cdp_dl2    = \"Page.setDownloadBehavior\" ascii\n        $cocoa_ws   = \"NSWorkspaceOpenConfiguration\" ascii\n        $cocoa_inst = \"setCreatesNewApplicationInstance:\" ascii\n        $cocoa_open = \"openApplicationAtURL:configuration:completionHandler:\" ascii\n\n    condition:\n        (\n            (uint32(0) == 0xfeedfacf and (uint32(4) == 0x0100000c or uint32(4) == 0x01000007)) or\n            uint32(0) == 0xcafebabe or\n            uint32be(0) == 0xcafebabe\n        ) and\n\n        filesize < 10MB and\n\n        (\n            $crate or\n\n            (\n                $chacha and\n                2 of ($ipc_*) and\n                (\n                    ($api_pam and ($api_pb or $api_csr)) or\n                    $kh_id or\n                    #macho_embed > 1 or\n\n                    (1 of ($cdp_*) and 1 of ($cocoa_*))\n                )\n            )\n        )\n}"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer_Keychain_Helper",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealers/pam_stealer.yar",
+      "description": "carved or standalone keychain dumper helper dropped by Avenger / PAM Stealer",
+      "malware_family": "AvengerStealer",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-11-09",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 3,
+      "total_hits": 0,
+      "source_code": "rule OSX_Avenger_Stealer_Keychain_Helper {\n    meta:\n        description = \"carved or standalone keychain dumper helper dropped by Avenger / PAM Stealer\"\n        author = \"Chandra Kant Bauri\"\n        date = \"2026-11-09\"\n        malware_family = \"AvengerStealer\"\n        platform = \"macOS\"\n\n    strings:\n        // Keychain Dumper Helper (kh): Unique ad-hoc code-signing identifier & API\n        $kh_id  = \"kh-57aebaab0e5de898\" ascii\n        $sec1   = \"SecItemCopyMatching\" ascii\n        $sec2   = \"kSecClassGenericPassword\" ascii\n\n    condition:\n        uint32(0) == 0xfeedfacf and\n        (uint32(4) == 0x0100000c or uint32(4) == 0x01000007) and\n        filesize < 200KB and\n        $kh_id and\n        all of ($sec*)\n}"
     }
   ]
 };
