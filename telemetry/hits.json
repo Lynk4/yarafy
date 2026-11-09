@@ -34428,8 +34428,36 @@
       ]
     },
     "vt_enrichment": {
-      "vt_status": "not_found",
-      "reason": "Sample not seen on VirusTotal yet"
+      "vt_status": "success",
+      "positives": 21,
+      "total_engines": 63,
+      "detection_ratio": "21/63",
+      "suggested_threat_label": "trojan.coruna/falsesign",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 16
+        }
+      ],
+      "names": [
+        "a436ac961ce25a0072fbafb8c1937a94b8c900e3ac512a5aa32ecf4610f2260e",
+        "a436ac961ce25a0072fbafb8c1937a94b8c900e3ac512a5aa32ecf4610f2260e.macho"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "lib",
+        "ios",
+        "arm",
+        "self-signed"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+        "ESET-NOD32": "iOS/Coruna.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/a436ac961ce25a0072fbafb8c1937a94b8c900e3ac512a5aa32ecf4610f2260e"
     },
     "detected_at": "2026-10-19T21:33:01.399119+00:00",
     "last_seen_at": "2026-10-22T15:06:28.931817+00:00"
@@ -65740,7 +65768,46 @@
     "sample_name": "ac26450780bbce8d049dc2e1985c2ab5743f089b2023c8f9c36c3c5b43caf231",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:07:38.624112+00:00"
+    "detected_at": "2026-10-30T21:07:38.624112+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmgd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "dropper",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/ac26450780bbce8d049dc2e1985c2ab5743f089b2023c8f9c36c3c5b43caf231"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -65909,7 +65976,46 @@
     "sample_name": "d2bcb4acabc9be2f10b2b8d7745f2378b84da30e93811ef392de864359454cba",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:07:38.624112+00:00"
+    "detected_at": "2026-10-30T21:07:38.624112+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmkd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/d2bcb4acabc9be2f10b2b8d7745f2378b84da30e93811ef392de864359454cba"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -66079,7 +66185,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:07:38.624112+00:00",
-    "last_seen_at": "2026-10-30T21:10:12.801322+00:00"
+    "last_seen_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 62,
+      "detection_ratio": "42/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 15
+        },
+        {
+          "value": "ransomware",
+          "count": 9
+        },
+        {
+          "value": "virus",
+          "count": 3
+        }
+      ],
+      "names": [
+        "com.apple.fmxd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/e550ce5f812243b6e02a87cb770a2d501deb2c6b7de6c864b3c15db918860fd5"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -66249,7 +66394,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:07:38.624112+00:00",
-    "last_seen_at": "2026-10-30T21:10:12.801322+00:00"
+    "last_seen_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmgd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "dropper",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/76aa197e5532bbf4b43dbebbf6753e9477c5a2ce5f50a321bd0c4cde21e5b68b"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -66419,7 +66603,45 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 30,
+      "total_engines": 52,
+      "detection_ratio": "30/52",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 7
+        },
+        {
+          "value": "virus",
+          "count": 1
+        }
+      ],
+      "names": [
+        "com.apple.fmjd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/8d0854f9a333fd0d9e21eade53bc43da836d49ce60fb91ef48bd7e5616d726c3"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -66588,7 +66810,46 @@
     "sample_name": "e248a5641b02d0090ae9dec104be8651f6b917a22d7af0b772dd7119df946c5e",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 15
+        },
+        {
+          "value": "ransomware",
+          "count": 9
+        },
+        {
+          "value": "virus",
+          "count": 3
+        }
+      ],
+      "names": [
+        "com.apple.fmkd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/e248a5641b02d0090ae9dec104be8651f6b917a22d7af0b772dd7119df946c5e"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -66757,7 +67018,46 @@
     "sample_name": "097f76f15de8f323e816f66faa0fa6227037440f529bd95806288f6dc102a72f",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 39,
+      "total_engines": 63,
+      "detection_ratio": "39/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 9
+        },
+        {
+          "value": "virus",
+          "count": 2
+        }
+      ],
+      "names": [
+        "com.apple.fmnd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/097f76f15de8f323e816f66faa0fa6227037440f529bd95806288f6dc102a72f"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -66927,7 +67227,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 63,
+      "detection_ratio": "38/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 8
+        },
+        {
+          "value": "virus",
+          "count": 2
+        }
+      ],
+      "names": [
+        "com.apple.fmpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/d94945b3babeb1f30f1abadfa63f9edd7f67406513735730d8c55764a9de7f8c"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -67097,7 +67436,48 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 37,
+      "total_engines": 62,
+      "detection_ratio": "37/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 8,
+          "value": "ransomware"
+        },
+        {
+          "count": 1,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.afsvcpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper",
+        "service-scan",
+        "persistence"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/947f6e70112ab1ee043486ed9899e4117cdc81b28e33884764f755c70d4f205e"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -67266,7 +67646,46 @@
     "sample_name": "f38407f8c7861759ef5003f29d3d0f798ea2335da4202244a8979303f2b97381",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmtd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/f38407f8c7861759ef5003f29d3d0f798ea2335da4202244a8979303f2b97381"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -67435,7 +67854,46 @@
     "sample_name": "f3a644c8f11b9e08db0c0caba868ea6144922b119dcd48477afb5bed2360aef0",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 62,
+      "detection_ratio": "38/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 7,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.afsvcpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "dropper",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/f3a644c8f11b9e08db0c0caba868ea6144922b119dcd48477afb5bed2360aef0"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -67605,7 +68063,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 63,
+      "detection_ratio": "38/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 8,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmgd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/390de4379d424a795d00358d87757d6a80ca845438a53455ea04c6218d8dc619"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -67774,7 +68271,46 @@
     "sample_name": "f03fa3b619eaf633e1c480b4e645be540ce582e3915f79ebef3db457ce8d6098",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.afsvcpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "dropper",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/f03fa3b619eaf633e1c480b4e645be540ce582e3915f79ebef3db457ce8d6098"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -67943,7 +68479,46 @@
     "sample_name": "117d99908b1ba9e6c6dbbd96b8bc3a2c56b2b1c41a902816b5c0d0b3d97aefeb",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 15
+        },
+        {
+          "value": "ransomware",
+          "count": 9
+        },
+        {
+          "value": "virus",
+          "count": 3
+        }
+      ],
+      "names": [
+        "com.apple.fmsd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "dropper",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/117d99908b1ba9e6c6dbbd96b8bc3a2c56b2b1c41a902816b5c0d0b3d97aefeb"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -68113,7 +68688,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 37,
+      "total_engines": 62,
+      "detection_ratio": "37/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 8,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmjd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/0eb6e417e08b44a492004a0b7003bafa20c360c506ad0d4b81523f532a8c10dc"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -68282,7 +68896,46 @@
     "sample_name": "4ae15d67f7def867745cae511e114b3586b6f81ba3c09045531573cc13522c30",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 37,
+      "total_engines": 63,
+      "detection_ratio": "37/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 8
+        },
+        {
+          "value": "virus",
+          "count": 1
+        }
+      ],
+      "names": [
+        "com.apple.fmzd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/4ae15d67f7def867745cae511e114b3586b6f81ba3c09045531573cc13522c30"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -68451,7 +69104,48 @@
     "sample_name": "eda5a442ae929f548b20b98a7c40736c052c8e6cb65e173ea876bb0f10ac0547",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 63,
+      "detection_ratio": "38/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 8,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "localfile~",
+        "com.apple.fmwd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "64bits",
+        "macho",
+        "persistence"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/eda5a442ae929f548b20b98a7c40736c052c8e6cb65e173ea876bb0f10ac0547"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -68620,7 +69314,46 @@
     "sample_name": "23ef51624598beb8ca2bf4b4019a67966ea4f4c75ed30af8cf03e0f7861ce9a0",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 10
+        },
+        {
+          "value": "virus",
+          "count": 3
+        }
+      ],
+      "names": [
+        "com.apple.fmrd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "dropper",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/23ef51624598beb8ca2bf4b4019a67966ea4f4c75ed30af8cf03e0f7861ce9a0"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -68789,7 +69522,46 @@
     "sample_name": "6cc1eb9fada56ba9d69e9acff418e46eb2788acb43ee9c422caf93fef4001983",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 15
+        },
+        {
+          "value": "ransomware",
+          "count": 9
+        },
+        {
+          "value": "virus",
+          "count": 3
+        }
+      ],
+      "names": [
+        "com.apple.fmnd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/6cc1eb9fada56ba9d69e9acff418e46eb2788acb43ee9c422caf93fef4001983"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -69103,7 +69875,46 @@
     "sample_name": "c7d9784e675c703551f8d12d7b9158fed9d71d672b09f3d93da19ac51528906f",
     "sample_size_bytes": 345584,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmsd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "dropper",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/c7d9784e675c703551f8d12d7b9158fed9d71d672b09f3d93da19ac51528906f"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -69272,7 +70083,46 @@
     "sample_name": "4b162328112888a8fc9883e24ac76cd81a7051b97a63d6c94267038a9b234c17",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmxd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "dropper",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/4b162328112888a8fc9883e24ac76cd81a7051b97a63d6c94267038a9b234c17"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -69441,7 +70291,46 @@
     "sample_name": "e8dff81ca5cae52b5744bf1ca56753ae09dab1995232dc0aac9f39c79f516437",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 37,
+      "total_engines": 62,
+      "detection_ratio": "37/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 8
+        },
+        {
+          "value": "virus",
+          "count": 2
+        }
+      ],
+      "names": [
+        "com.apple.fmld"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/e8dff81ca5cae52b5744bf1ca56753ae09dab1995232dc0aac9f39c79f516437"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -69610,7 +70499,46 @@
     "sample_name": "39ac47c49d12f3dff5f33b1ade9a04779ddc8df80fe068c44ae28d3f15b4bd62",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmfd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/39ac47c49d12f3dff5f33b1ade9a04779ddc8df80fe068c44ae28d3f15b4bd62"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -69779,7 +70707,46 @@
     "sample_name": "5cc10d6053efc91bc85bcd34f6784de3c08238b868fdc8ad9bf2d6a505107d2f",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 10,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "64bits",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/5cc10d6053efc91bc85bcd34f6784de3c08238b868fdc8ad9bf2d6a505107d2f"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -69948,7 +70915,46 @@
     "sample_name": "51dae2d48fd10b930e8efcece8acec393493c9ba2e1c312441691706b5995968",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 39,
+      "total_engines": 63,
+      "detection_ratio": "39/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 15
+        },
+        {
+          "value": "ransomware",
+          "count": 8
+        },
+        {
+          "value": "virus",
+          "count": 2
+        }
+      ],
+      "names": [
+        "com.apple.afsvcpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "64bits",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/51dae2d48fd10b930e8efcece8acec393493c9ba2e1c312441691706b5995968"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -70117,7 +71123,46 @@
     "sample_name": "fb0d0bea74a3a37c69ce17ebd4c330eeadab8bf208087cc0aeca629446807c9e",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmcd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "64bits",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/fb0d0bea74a3a37c69ce17ebd4c330eeadab8bf208087cc0aeca629446807c9e"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -70287,7 +71332,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 40,
+      "total_engines": 60,
+      "detection_ratio": "40/60",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 10
+        },
+        {
+          "value": "virus",
+          "count": 3
+        }
+      ],
+      "names": [
+        "com.apple.fmfd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/054bc10b2cc5ad0cd8ee626397966e74ca817a5dea09b7c5395def2ec0036549"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -70457,7 +71541,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 63,
+      "detection_ratio": "38/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 8,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmsd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": -11,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/0c0016ca9fdfa2d0ab4beeb9bfa2f6d81cd299123c30542b08f33fcaadccf2ea"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -70626,7 +71749,46 @@
     "sample_name": "c99285cf23c081ec5b795dc5a9feeb13355f73716d86bf34f26c156f7c0a0f07",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 10,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmcd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/c99285cf23c081ec5b795dc5a9feeb13355f73716d86bf34f26c156f7c0a0f07"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -70795,7 +71957,46 @@
     "sample_name": "76c39f1b0017fcd2a63761d00fb47d6d3bf64c720d09252767a42c78473d0f3a",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 62,
+      "detection_ratio": "38/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 5,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmdd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/76c39f1b0017fcd2a63761d00fb47d6d3bf64c720d09252767a42c78473d0f3a"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -70965,7 +72166,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 39,
+      "total_engines": 63,
+      "detection_ratio": "39/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 8,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmcd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/3cbaf07f7c428231d574f6463405dfdcdead6a1672d802fb40904a5c5da83832"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -71134,7 +72374,46 @@
     "sample_name": "54685ee91e4a2848ee1658c8e0371339afe90d01133625c2368c11fb1d0022ad",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/54685ee91e4a2848ee1658c8e0371339afe90d01133625c2368c11fb1d0022ad"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -71448,7 +72727,46 @@
     "sample_name": "f939f044885df72cd4b431b35f55256f791f07bda058eea3b05a9606df2c86fd",
     "sample_size_bytes": 345584,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 63,
+      "detection_ratio": "38/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 8
+        },
+        {
+          "value": "virus",
+          "count": 2
+        }
+      ],
+      "names": [
+        "com.apple.fmjd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "dropper",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/f939f044885df72cd4b431b35f55256f791f07bda058eea3b05a9606df2c86fd"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -71617,7 +72935,46 @@
     "sample_name": "eec850d502160ec648410d24599faf7ebe28ae7a524bdbedc49e556331fdebdc",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmwd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "dropper",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/eec850d502160ec648410d24599faf7ebe28ae7a524bdbedc49e556331fdebdc"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -71786,7 +73143,46 @@
     "sample_name": "4650aadff8feb2a824354edd7f324c28ce9c15c593282f39bdcca0afcca95c8a",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 63,
+      "detection_ratio": "38/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 8,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmcd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "64bits",
+        "macho"
+      ],
+      "reputation": -11,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/4650aadff8feb2a824354edd7f324c28ce9c15c593282f39bdcca0afcca95c8a"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -71955,7 +73351,46 @@
     "sample_name": "a0a0181a8a7782bd6155862147cb62d6c1d7314054fd29918dd6705459888f9a",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 15
+        },
+        {
+          "value": "ransomware",
+          "count": 9
+        },
+        {
+          "value": "virus",
+          "count": 3
+        }
+      ],
+      "names": [
+        "com.apple.fmdd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/a0a0181a8a7782bd6155862147cb62d6c1d7314054fd29918dd6705459888f9a"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -72124,7 +73559,46 @@
     "sample_name": "ea3a69340cc77ddd4ecb1d351e32dffc3c3bed1057f23692bd4102d74e0c68d0",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 42,
+      "total_engines": 63,
+      "detection_ratio": "42/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 15,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmld"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/ea3a69340cc77ddd4ecb1d351e32dffc3c3bed1057f23692bd4102d74e0c68d0"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -72293,7 +73767,46 @@
     "sample_name": "5bdc49549aa4c4a709909daa50bb6ff4a3ab870988351940ffe7f8bad09da7da",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 13,
+          "value": "trojan"
+        },
+        {
+          "count": 10,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.afsvcpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "64bits",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/5bdc49549aa4c4a709909daa50bb6ff4a3ab870988351940ffe7f8bad09da7da"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -72463,7 +73976,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 37,
+      "total_engines": 63,
+      "detection_ratio": "37/63",
+      "suggested_threat_label": "trojan.evilquest/evilq",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 10
+        },
+        {
+          "value": "ransomware",
+          "count": 7
+        },
+        {
+          "value": "virus",
+          "count": 1
+        }
+      ],
+      "names": [
+        "com.apple.fmqd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "64bits",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/ea11335e8898337cbc09a7ce8050c0fa29869279f17de201ddf2e06cdb4defd5"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -72632,7 +74184,46 @@
     "sample_name": "b9a073e01e8ce0fcc70f62753d5aac28c51e4228d58dd41bfefcde2fd78806bd",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 40,
+      "total_engines": 62,
+      "detection_ratio": "40/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmxd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/b9a073e01e8ce0fcc70f62753d5aac28c51e4228d58dd41bfefcde2fd78806bd"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -72801,7 +74392,46 @@
     "sample_name": "962a4c45b6a99bb90ba310ac71413bafefef90e2147edcea88f51ea679a0b36f",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 15
+        },
+        {
+          "value": "ransomware",
+          "count": 10
+        },
+        {
+          "value": "virus",
+          "count": 1
+        }
+      ],
+      "names": [
+        "com.apple.fmnd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/962a4c45b6a99bb90ba310ac71413bafefef90e2147edcea88f51ea679a0b36f"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -72970,7 +74600,46 @@
     "sample_name": "568f06141c49fdd637390d316140ac2af2f1320d8dbe73ce509192ae7bd716f2",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 62,
+      "detection_ratio": "41/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmkd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "64bits",
+        "macho"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/568f06141c49fdd637390d316140ac2af2f1320d8dbe73ce509192ae7bd716f2"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -73140,7 +74809,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 34,
+      "total_engines": 60,
+      "detection_ratio": "34/60",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 7,
+          "value": "ransomware"
+        },
+        {
+          "count": 1,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmxd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/936615151f7079369a3566f98a04513759626bb319d77fd814a87fc36d4de9f3"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -73309,7 +75017,46 @@
     "sample_name": "23923752452c4f2a38c8751d394fa80e8a06d8ad09ed3dab26bf40e83baeb280",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 40,
+      "total_engines": 63,
+      "detection_ratio": "40/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 2,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmtd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/23923752452c4f2a38c8751d394fa80e8a06d8ad09ed3dab26bf40e83baeb280"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -73478,7 +75225,46 @@
     "sample_name": "d262fb73b8954f19ca286d516544dadd5aad19c1c110ed4ac89036c86eeee992",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 62,
+      "detection_ratio": "38/62",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 15
+        },
+        {
+          "value": "ransomware",
+          "count": 7
+        },
+        {
+          "value": "virus",
+          "count": 2
+        }
+      ],
+      "names": [
+        "com.apple.afsvcpd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "64bits",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/d262fb73b8954f19ca286d516544dadd5aad19c1c110ed4ac89036c86eeee992"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -73648,7 +75434,46 @@
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
     "detected_at": "2026-10-30T21:10:12.801322+00:00",
-    "last_seen_at": "2026-10-30T21:11:52.337591+00:00"
+    "last_seen_at": "2026-10-30T21:11:52.337591+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 63,
+      "detection_ratio": "38/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 8
+        },
+        {
+          "value": "virus",
+          "count": 2
+        }
+      ],
+      "names": [
+        "com.apple.fmvd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/5f35a0ea058a2fda0829f4a9aa75006847486008b430cac347d8e15ba20f3ea4"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -73817,7 +75642,46 @@
     "sample_name": "1d0709a3200a6dccd99012c124787f6fd4bc027594448e07baa9a367e73dd13b",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 38,
+      "total_engines": 63,
+      "detection_ratio": "38/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "value": "trojan",
+          "count": 14
+        },
+        {
+          "value": "ransomware",
+          "count": 8
+        },
+        {
+          "value": "virus",
+          "count": 2
+        }
+      ],
+      "names": [
+        "com.apple.fmvd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "64bits",
+        "macho",
+        "dropper"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/1d0709a3200a6dccd99012c124787f6fd4bc027594448e07baa9a367e73dd13b"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -73986,7 +75850,46 @@
     "sample_name": "f95e806da81d96002f729e197834c21d06d02ade1149158aba3b771e8ad525dc",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmdd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "macho",
+        "dropper",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/f95e806da81d96002f729e197834c21d06d02ade1149158aba3b771e8ad525dc"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
@@ -74155,7 +76058,46 @@
     "sample_name": "f31c4ad175e2cbffa94569fea7d8b86046ed126a34e8836ec143c01310b8f8f8",
     "sample_size_bytes": 172792,
     "source_feed": "Local File",
-    "detected_at": "2026-10-30T21:10:12.801322+00:00"
+    "detected_at": "2026-10-30T21:10:12.801322+00:00",
+    "vt_enrichment": {
+      "vt_status": "success",
+      "positives": 41,
+      "total_engines": 63,
+      "detection_ratio": "41/63",
+      "suggested_threat_label": "trojan.evilquest/thiefquest",
+      "popular_threat_category": [
+        {
+          "count": 14,
+          "value": "trojan"
+        },
+        {
+          "count": 9,
+          "value": "ransomware"
+        },
+        {
+          "count": 3,
+          "value": "virus"
+        }
+      ],
+      "names": [
+        "com.apple.fmtd"
+      ],
+      "type_description": "Mach-O",
+      "tags": [
+        "dropper",
+        "macho",
+        "64bits"
+      ],
+      "reputation": 0,
+      "key_engine_detections": {
+        "Microsoft": "Ransom:MacOS/EvilQuest.A!MTB",
+        "SentinelOne": "Static AI - Malicious Mach-O",
+        "Kaspersky": "Virus.OSX.ThifQseut.a",
+        "Sophos": "OSX/Filecode-S",
+        "ESET-NOD32": "OSX/Filecoder.EvilQuest.H trojan"
+      },
+      "vt_permalink": "https://www.virustotal.com/gui/file/f31c4ad175e2cbffa94569fea7d8b86046ed126a34e8836ec143c01310b8f8f8"
+    }
   },
   {
     "rule_name": "OSX_Malware_EvilQuest_ThiefQuest",
