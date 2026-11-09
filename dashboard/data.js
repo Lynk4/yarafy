@@ -1,19 +1,19 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 22607,
-    "total_hits": 635,
-    "last_run": "2026-11-08T23:34:05.002407+00:00",
+    "total_scanned": 22638,
+    "total_hits": 659,
+    "last_run": "2026-11-09T00:01:32.363604+00:00",
     "hits_by_platform": {
-      "macos": 635,
+      "macos": 659,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
     },
     "hits_by_rule": {
-      "macOS_ClickFix_AppleScript_Dropper": 284,
+      "macOS_ClickFix_AppleScript_Dropper": 292,
       "OSX_Stealer_AMOS_Generic": 40,
       "MALW_macOS_MacSync_Stealer_Universal": 7,
-      "OSX_Foxveil_AMOS_Stage4_Generic": 18,
+      "OSX_Foxveil_AMOS_Stage4_Generic": 19,
       "APT_macOS_RustBucket_Behavioral_Indicators": 3,
       "Macho_Trojan_CloudSync_Generic": 5,
       "Macho_Trojan_CloudSync_1006YR": 4,
@@ -24,15 +24,17 @@ window.YARAFY_DATA = {
       "Macho_hVNCRat_shelldropper": 1,
       "macOS_Backdoor_C5_Implant": 1,
       "OSX_Malware_EvilQuest_ThiefQuest": 266,
-      "Macho_Jockey_Implant": 2
+      "Macho_Jockey_Implant": 2,
+      "OSX_Avenger_Stealer": 14,
+      "OSX_Avenger_Stealer_Keychain_Helper": 1
     },
     "hits_by_source": {
       "MalwareBazaar": 311,
       "VirusTotal Enterprise": 43,
-      "Local File": 281
+      "Local File": 305
     },
-    "new_hits_this_run": 0,
-    "refreshed_hits_this_run": 19,
+    "new_hits_this_run": 24,
+    "refreshed_hits_this_run": 0,
     "total_rules": 17
   },
   "hits": [
@@ -135205,6 +135207,2226 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
       "last_seen_at": "2026-11-07T20:27:02.759219+00:00"
+    },
+    {
+      "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
+      "platform": "macos",
+      "namespace": "macos_stealers_amos_yar",
+      "tags": [],
+      "meta": {
+        "description": "Generic detection for Foxveil macOS Loader (AMOS / Atomic macOS Stealer Stage 4) utilizing PBKDF2 key stretching, ChaCha20-Poly1305 payload encryption, LCG stack-string decryption, and memory zeroing wipers",
+        "date": "2026-09-16",
+        "reference": "https://bazaar.abuse.ch/sample/841f0ccf4e6e782476a0844cc861f7f44d7f321bc232444ef5f306fdba8944eb/",
+        "malware_family": "Foxveil / AMOS (Atomic macOS Stealer)",
+        "threat_type": "Dropper / Loader / InfoStealer"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xe4668",
+          "identifier": "$id_pattern",
+          "data_preview": "agent-bacc7f3ef1dfcbdb"
+        },
+        {
+          "offset": "0x74a4c",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 b8 d8 00 94"
+        },
+        {
+          "offset": "0x9bd48",
+          "identifier": "$dlsym_call_arm64",
+          "data_preview": "20 00 80 92 f9 3b 00 94"
+        },
+        {
+          "offset": "0x10a34",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x222c4",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x22344",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x31498",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x314b8",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x57fc0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0x7f5d0",
+          "identifier": "$lcg_madd_arm64",
+          "data_preview": "28 29 08 1b"
+        },
+        {
+          "offset": "0xe0876",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        },
+        {
+          "offset": "0xe3f3c",
+          "identifier": "$sym_dlsym",
+          "data_preview": "_dlsym"
+        }
+      ],
+      "sample_sha256": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0",
+      "sample_md5": "65ddfaf0b2b012392eb14cede6649a60",
+      "sample_name": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0",
+      "sample_size_bytes": 942880,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xabc20",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe0b75",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xe42d3",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xe0cc4",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xe3e63",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xe0ba7",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xe45bc",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xe4660",
+          "identifier": "$crate",
+          "data_preview": "avenger_agent"
+        },
+        {
+          "offset": "0xc1c25",
+          "identifier": "$kh_id",
+          "data_preview": "kh-57aebaab0e5de898"
+        },
+        {
+          "offset": "0xe0b2c",
+          "identifier": "$api_pam",
+          "data_preview": "_pam_authenticate"
+        },
+        {
+          "offset": "0xe41f6",
+          "identifier": "$api_pam",
+          "data_preview": "_pam_authenticate"
+        },
+        {
+          "offset": "0xe0143",
+          "identifier": "$api_pb",
+          "data_preview": "_NSPasteboardTypeString"
+        },
+        {
+          "offset": "0xe4064",
+          "identifier": "$api_pb",
+          "data_preview": "_NSPasteboardTypeString"
+        },
+        {
+          "offset": "0xe0734",
+          "identifier": "$api_csr",
+          "data_preview": "_csr_get_active_config"
+        },
+        {
+          "offset": "0xe40be",
+          "identifier": "$api_csr",
+          "data_preview": "_csr_get_active_config"
+        },
+        {
+          "offset": "0x0",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xac812",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xb4e75",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        }
+      ],
+      "sample_sha256": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0",
+      "sample_md5": "65ddfaf0b2b012392eb14cede6649a60",
+      "sample_name": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0",
+      "sample_size_bytes": 942880,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer_Keychain_Helper",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "carved or standalone keychain dumper helper dropped by Avenger / PAM Stealer",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "platform": "macOS"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xcdb0",
+          "identifier": "$kh_id",
+          "data_preview": "kh-57aebaab0e5de898"
+        },
+        {
+          "offset": "0xc150",
+          "identifier": "$sec1",
+          "data_preview": "SecItemCopyMatching"
+        },
+        {
+          "offset": "0xcc10",
+          "identifier": "$sec1",
+          "data_preview": "SecItemCopyMatching"
+        },
+        {
+          "offset": "0xc036",
+          "identifier": "$sec2",
+          "data_preview": "kSecClassGenericPassword"
+        },
+        {
+          "offset": "0xcced",
+          "identifier": "$sec2",
+          "data_preview": "kSecClassGenericPassword"
+        }
+      ],
+      "sample_sha256": "c77f94d0a5439ae0a08b628b2cc49dd385a7416787e550969f894428c7052f29",
+      "sample_md5": "152eff8373515ff328105ede28931f41",
+      "sample_name": "helper_2",
+      "sample_size_bytes": 53104,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_fat_be",
+          "data_preview": "ca fe ba be"
+        },
+        {
+          "offset": "0xfb6d8",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        },
+        {
+          "offset": "0xe24e0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe24f0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfb5f0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1e71c0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        }
+      ],
+      "sample_sha256": "d04adb87914b01bb6ceb022a82b62d57c894459d5057cc821d58c0c1fe9ab31e",
+      "sample_md5": "f05867225f37ce9df5399fb7fc32e8ce",
+      "sample_name": "d04adb87914b01bb6ceb022a82b62d57c894459d5057cc821d58c0c1fe9ab31e",
+      "sample_size_bytes": 2060896,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xe24e0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe24f0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfb5f0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1e71c0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfe7d9",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x10132f",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f076c",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f3c2d",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xfe928",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x100f89",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f08bb",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f3889",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xfe80b",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1015c9",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f079e",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f3e38",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x108000",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xfbaa2",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0x1e7a92",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xfbadb",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1e7acb",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfbb3e",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1e7b2e",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfbd14",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0x1e7d04",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xfbcf2",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0x1e7ce2",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xfbca0",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        },
+        {
+          "offset": "0x1e7c90",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "d04adb87914b01bb6ceb022a82b62d57c894459d5057cc821d58c0c1fe9ab31e",
+      "sample_md5": "f05867225f37ce9df5399fb7fc32e8ce",
+      "sample_name": "d04adb87914b01bb6ceb022a82b62d57c894459d5057cc821d58c0c1fe9ab31e",
+      "sample_size_bytes": 2060896,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_64_le",
+          "data_preview": "cf fa ed fe"
+        },
+        {
+          "offset": "0xf8608",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        },
+        {
+          "offset": "0xdf480",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xdf490",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xf8520",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        }
+      ],
+      "sample_sha256": "5d00706467733fa7533a627c335242c6dbfff44722ac7bdb30d719d9a31b974a",
+      "sample_md5": "2c3f65355f723ca406e3531aefd7fd6d",
+      "sample_name": "5d00706467733fa7533a627c335242c6dbfff44722ac7bdb30d719d9a31b974a",
+      "sample_size_bytes": 1055328,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xdf480",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xdf490",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xf8520",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfb7e1",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xfe394",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xfb930",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xfdfd9",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xfb813",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xfe62c",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xf8aab",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xf8ae4",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xf8b47",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xf8d1c",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xf8cfa",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xf8ca8",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "5d00706467733fa7533a627c335242c6dbfff44722ac7bdb30d719d9a31b974a",
+      "sample_md5": "2c3f65355f723ca406e3531aefd7fd6d",
+      "sample_name": "5d00706467733fa7533a627c335242c6dbfff44722ac7bdb30d719d9a31b974a",
+      "sample_size_bytes": 1055328,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_64_le",
+          "data_preview": "cf fa ed fe"
+        },
+        {
+          "offset": "0xfc668",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        },
+        {
+          "offset": "0xe3500",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe3510",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfc580",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        }
+      ],
+      "sample_sha256": "5f3c2f6b4e9bfbad3ee2ead10955aedf7de8ef9af23d7298f5fdb58d88e05b06",
+      "sample_md5": "42869fdcb00306fb60974edf2057e7ab",
+      "sample_name": "5f3c2f6b4e9bfbad3ee2ead10955aedf7de8ef9af23d7298f5fdb58d88e05b06",
+      "sample_size_bytes": 1072736,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xe3500",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe3510",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfc580",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xff7e1",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x10239c",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xff930",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x101fe1",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xff813",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x102634",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xfca99",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xfcad2",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfcb35",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfcd02",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xfcce0",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xfcc8e",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "5f3c2f6b4e9bfbad3ee2ead10955aedf7de8ef9af23d7298f5fdb58d88e05b06",
+      "sample_md5": "42869fdcb00306fb60974edf2057e7ab",
+      "sample_name": "5f3c2f6b4e9bfbad3ee2ead10955aedf7de8ef9af23d7298f5fdb58d88e05b06",
+      "sample_size_bytes": 1072736,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xdf1c0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe876c",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xebc2d",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xe88bb",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xeb889",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xe879e",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xebe38",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x0",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xdfa92",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xdfacb",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfb2e",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfd04",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xdfce2",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xdfc90",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "fb2e274ae9dcd0ff6e294d1e4785e06c7023a46abdcf7a063af0ab6f6c6fe251",
+      "sample_md5": "997aaaffa1dce324f35c340f0d2fb587",
+      "sample_name": "fb2e274ae9dcd0ff6e294d1e4785e06c7023a46abdcf7a063af0ab6f6c6fe251",
+      "sample_size_bytes": 979552,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_64_le",
+          "data_preview": "cf fa ed fe"
+        },
+        {
+          "offset": "0xf76d8",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        },
+        {
+          "offset": "0xde4e0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xde4f0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xf75f0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        }
+      ],
+      "sample_sha256": "6db19db41d3f023a6d5d5444e9362bad9657b9b92af2db90abd261c993a52520",
+      "sample_md5": "c15728f980634f6015c34ab5e46cf4cd",
+      "sample_name": "6db19db41d3f023a6d5d5444e9362bad9657b9b92af2db90abd261c993a52520",
+      "sample_size_bytes": 1051120,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xde4e0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xde4f0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xf75f0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfa7d9",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xfd32f",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xfa928",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xfcf89",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xfa80b",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xfd5c9",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xf7aa2",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xf7adb",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xf7b3e",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xf7d14",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xf7cf2",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xf7ca0",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "6db19db41d3f023a6d5d5444e9362bad9657b9b92af2db90abd261c993a52520",
+      "sample_md5": "c15728f980634f6015c34ab5e46cf4cd",
+      "sample_name": "6db19db41d3f023a6d5d5444e9362bad9657b9b92af2db90abd261c993a52520",
+      "sample_size_bytes": 1051120,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xdf1c0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe8774",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xebc48",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xe88c3",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xeb88f",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xe87a6",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xebe53",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x0",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xdfa9f",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xdfad8",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfb3b",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfd0c",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xdfcea",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xdfc98",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "a22d3b565ae34e315d8787a2d7f772b325eb8ef74d5917b77e7d5e079bb76470",
+      "sample_md5": "02f105947f93314667a343371725d6a4",
+      "sample_name": "a22d3b565ae34e315d8787a2d7f772b325eb8ef74d5917b77e7d5e079bb76470",
+      "sample_size_bytes": 979584,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xdf140",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe8774",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xebc70",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xe88c3",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xeb8b7",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xe87a6",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xebe7b",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x0",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xdfa87",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xdfac0",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfb23",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfcf0",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xdfcce",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xdfc7c",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "234815e6e03e8da6274c8f80d7cc2250ffd81ff3cfea88c61679282881be04dd",
+      "sample_md5": "3ad7272246c82cf8346babd9c4815622",
+      "sample_name": "234815e6e03e8da6274c8f80d7cc2250ffd81ff3cfea88c61679282881be04dd",
+      "sample_size_bytes": 979632,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xdf1c0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe8774",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xebcc0",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xe88c3",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xeb907",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xe87a6",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xebecb",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x0",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xdfa8b",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xdfac4",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfb27",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfcf4",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xdfcd2",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xdfc80",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "96b908b6ab84aba07cbffcdc84aa973a3f7dbbead1a7ca836c4b4b19635fc4bf",
+      "sample_md5": "feaf971f8076ceda0ff7634b479b3954",
+      "sample_name": "96b908b6ab84aba07cbffcdc84aa973a3f7dbbead1a7ca836c4b4b19635fc4bf",
+      "sample_size_bytes": 979712,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_fat_be",
+          "data_preview": "ca fe ba be"
+        },
+        {
+          "offset": "0x100668",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        },
+        {
+          "offset": "0xe7500",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe7510",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x100580",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1eb140",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        }
+      ],
+      "sample_sha256": "0fe422f752f3e1fa75d3ad4556a1ca2a1a1e39bf883ee54e40698400e799d3f0",
+      "sample_md5": "6b8ba63369e9e0e14efdefdb250804db",
+      "sample_name": "0fe422f752f3e1fa75d3ad4556a1ca2a1a1e39bf883ee54e40698400e799d3f0",
+      "sample_size_bytes": 2077360,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xe7500",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe7510",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x100580",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1eb140",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1037e1",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x10639c",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f4774",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f7c70",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x103930",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x105fe1",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f48c3",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f78b7",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x103813",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x106634",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f47a6",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f7e7b",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x10c000",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0x100a99",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0x1eba87",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0x100ad2",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1ebac0",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0x100b35",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1ebb23",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0x100d02",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0x1ebcf0",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0x100ce0",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0x1ebcce",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0x100c8e",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        },
+        {
+          "offset": "0x1ebc7c",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "0fe422f752f3e1fa75d3ad4556a1ca2a1a1e39bf883ee54e40698400e799d3f0",
+      "sample_md5": "6b8ba63369e9e0e14efdefdb250804db",
+      "sample_name": "0fe422f752f3e1fa75d3ad4556a1ca2a1a1e39bf883ee54e40698400e799d3f0",
+      "sample_size_bytes": 2077360,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_fat_be",
+          "data_preview": "ca fe ba be"
+        },
+        {
+          "offset": "0xfd638",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        },
+        {
+          "offset": "0xe4500",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe4510",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfd550",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1e71c0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        }
+      ],
+      "sample_sha256": "45ce45c4ab0be0b8e07570d60d5fa7211d706c52ad2ae0b1691560121e71052e",
+      "sample_md5": "ab111fbf608f12fcf4db83f17441a06c",
+      "sample_name": "45ce45c4ab0be0b8e07570d60d5fa7211d706c52ad2ae0b1691560121e71052e",
+      "sample_size_bytes": 2060928,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xe4500",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe4510",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfd550",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1e71c0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1007e1",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x10339c",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f0774",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f3c48",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x100930",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x102fe1",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f08c3",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f388f",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x100813",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x103634",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f07a6",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f3e53",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x108000",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xfdaab",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0x1e7a9f",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xfdae4",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1e7ad8",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfdb47",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1e7b3b",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfdd14",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0x1e7d0c",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xfdcf2",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0x1e7cea",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xfdca0",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        },
+        {
+          "offset": "0x1e7c98",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "45ce45c4ab0be0b8e07570d60d5fa7211d706c52ad2ae0b1691560121e71052e",
+      "sample_md5": "ab111fbf608f12fcf4db83f17441a06c",
+      "sample_name": "45ce45c4ab0be0b8e07570d60d5fa7211d706c52ad2ae0b1691560121e71052e",
+      "sample_size_bytes": 2060928,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_fat_be",
+          "data_preview": "ca fe ba be"
+        },
+        {
+          "offset": "0xfc608",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        },
+        {
+          "offset": "0xe3480",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe3490",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfc520",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1e71c0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        }
+      ],
+      "sample_sha256": "1286c98e0e858357b3945bd9c15f07dcbf68e8f508ee484207ea47fb718f697d",
+      "sample_md5": "de2272bea6f8268248f563453c955a1e",
+      "sample_name": "1286c98e0e858357b3945bd9c15f07dcbf68e8f508ee484207ea47fb718f697d",
+      "sample_size_bytes": 2061056,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xe3480",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe3490",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfc520",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1e71c0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xff7e1",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x102394",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f0774",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f3cc0",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xff930",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x101fd9",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f08c3",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f3907",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xff813",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x10262c",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f07a6",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f3ecb",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x108000",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xfcaab",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0x1e7a8b",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xfcae4",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1e7ac4",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfcb47",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1e7b27",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfcd1c",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0x1e7cf4",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xfccfa",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0x1e7cd2",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xfcca8",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        },
+        {
+          "offset": "0x1e7c80",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "1286c98e0e858357b3945bd9c15f07dcbf68e8f508ee484207ea47fb718f697d",
+      "sample_md5": "de2272bea6f8268248f563453c955a1e",
+      "sample_name": "1286c98e0e858357b3945bd9c15f07dcbf68e8f508ee484207ea47fb718f697d",
+      "sample_size_bytes": 2061056,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "macOS_ClickFix_AppleScript_Dropper",
+      "platform": "macos",
+      "namespace": "macos_droppers_clickfix_yar",
+      "tags": [],
+      "meta": {
+        "description": "Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader",
+        "date": "2026-08-31",
+        "sample_sha256": "05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72",
+        "threat_type": "Dropper / Infostealer Loader",
+        "family": "ClickFix",
+        "platform": "macOS",
+        "confidence": "High"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x0",
+          "identifier": "$macho_fat_be",
+          "data_preview": "ca fe ba be"
+        },
+        {
+          "offset": "0xfb698",
+          "identifier": "$sbox",
+          "data_preview": "be 85 31 24 c3 7d 0c 55 74 5d be 72 fe b1 de 80 a7 06 dc 9b 74 f1 9b c1 c1 69 9b e4 86 47 be ef"
+        },
+        {
+          "offset": "0xe24c0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe24d0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfb5b0",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1e7200",
+          "identifier": "$chacha20_const",
+          "data_preview": "expand 32-byte k"
+        }
+      ],
+      "sample_sha256": "0039b2a4d422d9a1c7990df9046fa77245852fef1dcbe1772a582f0adf459c8b",
+      "sample_md5": "a1af1800f4f1fe31ffea1d70ba8dc833",
+      "sample_name": "0039b2a4d422d9a1c7990df9046fa77245852fef1dcbe1772a582f0adf459c8b",
+      "sample_size_bytes": 2060992,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xe24c0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe24d0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfb5b0",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0x1e7200",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xfe7e1",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x10139c",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f0774",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0x1f3c80",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xfe930",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x100fe1",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f08c3",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0x1f38c7",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xfe813",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x101634",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f07a6",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x1f3e8b",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x108000",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xfbaaf",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0x1e7abf",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xfbae8",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1e7af8",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfbb4b",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0x1e7b5b",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xfbd1c",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0x1e7d28",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xfbcfa",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0x1e7d06",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xfbca8",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        },
+        {
+          "offset": "0x1e7cb4",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "0039b2a4d422d9a1c7990df9046fa77245852fef1dcbe1772a582f0adf459c8b",
+      "sample_md5": "a1af1800f4f1fe31ffea1d70ba8dc833",
+      "sample_name": "0039b2a4d422d9a1c7990df9046fa77245852fef1dcbe1772a582f0adf459c8b",
+      "sample_size_bytes": 2060992,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+    },
+    {
+      "rule_name": "OSX_Avenger_Stealer",
+      "platform": "macos",
+      "namespace": "macos_stealers_pam_stealer_yar",
+      "tags": [],
+      "meta": {
+        "description": "Avenger / PAM Stealer macOS information stealer binaries",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-09",
+        "malware_family": "AvengerStealer",
+        "hash": "06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0"
+      },
+      "matched_strings": [
+        {
+          "offset": "0xdf200",
+          "identifier": "$chacha",
+          "data_preview": "expand 32-byte k"
+        },
+        {
+          "offset": "0xe8774",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xebc80",
+          "identifier": "$ipc_pipe",
+          "data_preview": "_pipe"
+        },
+        {
+          "offset": "0xe88c3",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xeb8c7",
+          "identifier": "$ipc_spawn",
+          "data_preview": "_posix_spawnp"
+        },
+        {
+          "offset": "0xe87a6",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0xebe8b",
+          "identifier": "$ipc_dup2",
+          "data_preview": "posix_spawn_file_actions_adddup2"
+        },
+        {
+          "offset": "0x0",
+          "identifier": "$macho_embed",
+          "data_preview": "cf fa ed fe 0c 00 00 01"
+        },
+        {
+          "offset": "0xdfabf",
+          "identifier": "$cdp_nav",
+          "data_preview": "Page.navigate"
+        },
+        {
+          "offset": "0xdfaf8",
+          "identifier": "$cdp_dl1",
+          "data_preview": "Browser.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfb5b",
+          "identifier": "$cdp_dl2",
+          "data_preview": "Page.setDownloadBehavior"
+        },
+        {
+          "offset": "0xdfd28",
+          "identifier": "$cocoa_ws",
+          "data_preview": "NSWorkspaceOpenConfiguration"
+        },
+        {
+          "offset": "0xdfd06",
+          "identifier": "$cocoa_inst",
+          "data_preview": "setCreatesNewApplicationInstance:"
+        },
+        {
+          "offset": "0xdfcb4",
+          "identifier": "$cocoa_open",
+          "data_preview": "openApplicationAtURL:configuration:completionHandler:"
+        }
+      ],
+      "sample_sha256": "4886ea2ed8fb7421ac16d687a29c46b66bdf87987c3bbf8d4cb1bb32a3fc157a",
+      "sample_md5": "4798cb35f8fd212a2434845d7877ad9a",
+      "sample_name": "4886ea2ed8fb7421ac16d687a29c46b66bdf87987c3bbf8d4cb1bb32a3fc157a",
+      "sample_size_bytes": 979648,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-09T00:01:32.363604+00:00"
     }
   ],
   "rules": [
@@ -135303,7 +137525,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 16,
-      "total_hits": 284,
+      "total_hits": 292,
       "source_code": "rule macOS_ClickFix_AppleScript_Dropper {\n    meta:\n        description    = \"Detects macOS ClickFix ChaCha20/AppleScript dropper and payload loader\"\n        date           = \"2026-08-31\"\n        sample_sha256  = \"05d0d69ca9f28d70bd35d7acc7b0130032abea012418d36a9b84230f8e4f9f72\"\n        threat_type    = \"Dropper / Infostealer Loader\"\n        family         = \"ClickFix\"\n        platform       = \"macOS\"\n        confidence     = \"High\"\n\n    strings:\n        // Mach-O Magic Header Identification\n        $macho_fat_be  = { CA FE BA BE }\n        $macho_fat_le  = { BE BA FE CA }\n        $macho_64_be   = { FE ED FA CF }\n        $macho_64_le   = { CF FA ED FE }\n\n        // S-Box / Key Table (256-byte static table header)\n        $sbox = {\n            BE 85 31 24 C3 7D 0C 55 74 5D BE 72 FE B1 DE 80\n            A7 06 DC 9B 74 F1 9B C1 C1 69 9B E4 86 47 BE EF\n        }\n\n        // PBKDF2 / Key Derivation Salt (32 bytes)\n        $pbkdf2_salt = {\n            B1 CD FF 97 CC 3E B0 8F 2B 4A 53 89 4E CD 52 15\n            1A E5 AD 86 89 EA 99 45 06 F9 70 26 F0 34 6A BE\n        }\n\n        // HKDF Salt Constant\n        $hkdf_salt = {\n            85 CD 9E 60 B3 7D E0 B7 33 F7 36 D0 66 DC 49 1A\n            54 94 A7 E8 63 1F 03 24 BF 3E 08 2F CC D5 06 5D\n        }\n\n        // Hardcoded SHA-256 verification hashes for decrypted payloads\n        $payload_hash1 = {\n            9E 0B 82 E1 6D 94 C4 8F BF C7 12 00 4D B9 95 BE\n            A8 23 E8 97 7A C7 A9 4C D7 C3 A4 F2 FE 08 05 07\n        }\n        $payload_hash2 = {\n            7D B4 3F F8 79 96 2B 55 70 44 2C 2A E5 D2 1F D4\n            F6 D8 7D C0 CF DD E7 28 94 39 B4 71 8B 2B EE B9\n        }\n\n        // Multi-chunk encrypted payload length table (0x3ef6, 0x410f, 0x3ba4, 0x40f4, 0x3f79)\n        $chunk_lengths = {\n            F6 3E 00 00 00 00 00 00 0F 41 00 00 00 00 00 00\n            A4 3B 00 00 00 00 00 00 F4 40 00 00 00 00 00 00\n            79 3F 00 00 00 00 00 00\n        }\n\n        // Obfuscated XOR (0x1D) Anti-Analysis / VM Artifact Strings\n        $xor_hw_model   = \"uj3pryxq\"                // \"hw.model\" ^ 0x1d\n        $xor_model_id   = \"Pryxq=Tyxsit{txo\\x27=\"   // \"Model Identifier: \" ^ 0x1d\n        $xor_cpu_brand  = \"syBniotszvxos3urnihhty9\" // \"machdep.cpu.brand_string\" ^ 0x1d\n        $xor_vm_uuid    = \"zf4dtjrdmf\"              // VM UUID prefix ^ 0x1d\n\n        // Dropper Build / Component Identifier\n        $setup_id = \"setup-d192a316d9094048ce8251c66418fa61a3f2d45c\"\n\n        // ChaCha20 constant\n        $chacha20_const = \"expand 32-byte k\"\n\n    condition:\n        // Ensure valid Mach-O file format and size bounds\n        ($macho_fat_be at 0 or $macho_fat_le at 0 or $macho_64_be at 0 or $macho_64_le at 0) and\n        filesize < 2MB and\n        (\n            $sbox or\n            $setup_id or\n            $chunk_lengths or\n            ($pbkdf2_salt and ($payload_hash1 or $payload_hash2)) or\n            2 of ($xor_hw_model, $xor_model_id, $xor_cpu_brand, $xor_vm_uuid) or\n            ($chacha20_const and ($pbkdf2_salt or $hkdf_salt or $payload_hash1 or $payload_hash2))\n        )\n}"
     },
     {
@@ -135401,7 +137623,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 14,
-      "total_hits": 18,
+      "total_hits": 19,
       "source_code": "rule OSX_Foxveil_AMOS_Stage4_Generic {\n    meta:\n        description = \"Generic detection for Foxveil macOS Loader (AMOS / Atomic macOS Stealer Stage 4) utilizing PBKDF2 key stretching, ChaCha20-Poly1305 payload encryption, LCG stack-string decryption, and memory zeroing wipers\"\n        date = \"2026-09-16\"\n        reference = \"https://bazaar.abuse.ch/sample/841f0ccf4e6e782476a0844cc861f7f44d7f321bc232444ef5f306fdba8944eb/\"\n        malware_family = \"Foxveil / AMOS (Atomic macOS Stealer)\"\n        threat_type = \"Dropper / Loader / InfoStealer\"\n\n    strings:\n        // Generic ad-hoc signing identifier pattern for disguised fake setups/installers/helpers\n        $id_pattern = /(setup|install|installer|update|helper|patch|cleaner|daemon|task|agent|app)-[0-9a-f]{16,64}/ ascii nocase\n\n        // Constructor table reconstruction in __mod_init_func (x86_64)\n        $mod_init_x86 = { 8B ?? ?? 03 ?? ?? 89 ?? ?? 48 83 C0 04 48 ( 3D ?? ?? 00 00 | 83 F8 ?? ) 75 }\n\n        // Constructor table reconstruction in __mod_init_func (arm64)\n        $mod_init_arm64 = { ?? ?? 68 B8 ?? ?? 68 B8 ?? ?? 0? 0B ?? ?? 28 B8 08 11 00 91 1F ?? ?? F1 ?? ?? ?? 54 }\n\n        // Dynamic API resolution call: dlsym(RTLD_DEFAULT, str) in x86_64 (movq $-2, %rdi; callq _dlsym)\n        $dlsym_call_x86 = { 48 C7 C7 FE FF FF FF E8 ?? ?? 00 00 }\n\n        // Dynamic API resolution call: dlsym(RTLD_DEFAULT, str) in arm64 (mov x0, #-2; bl _dlsym)\n        $dlsym_call_arm64 = { 20 00 80 92 ?? ?? 00 94 }\n\n        // Linear Congruential Generator (LCG) PRNG constants for string decryption (A = 1103515245, C = 12345) in x86_64\n        $lcg_consts_x86 = { 6D 4E C6 41 [0-16] 39 30 00 00 }\n\n        // LCG instruction step in arm64: madd w8, w9, w8, w10 (occurs 200+ times)\n        $lcg_madd_arm64 = { 28 29 08 1B }\n\n        // LCG increment constant load in arm64: mov w9, #12345 (occurs 15+ times)\n        $lcg_const_arm64 = { 29 07 86 52 }\n\n        // Stack zeroing memory wiper loop after dynamic API resolution (x86_64)\n        $wiper_loop_x86 = { C6 84 ?? ?? ?? FF FF 00 48 FF (C0 | C8) [0-4] 75 }\n\n        // PBKDF2 vector XOR accumulation loop (x86_64)\n        $pbkdf2_accum_x86 = { 66 0F 6F 84 05 ?? ?? FF FF 66 0F EF 84 05 ?? ?? FF FF 66 0F 7F 84 05 ?? ?? FF FF 48 83 C0 10 48 83 F8 20 75 }\n\n        // High-iteration PBKDF2 key stretching loop bound check (x86_64: 65k to 131k iterations)\n        $key_stretch_x86 = { 41 81 FE ?? ?? 01 00 0F 85 }\n\n        // HMAC vector constant initialization on arm64 (ipad = 0x36 / 54, opad = 0x5c / 92)\n        $hmac_consts_arm64 = { C0 E6 01 4F [0-8] 81 E7 02 4F }\n\n        // Characteristic minimal dynamic symbol imports\n        $sym_dlsym = \"_dlsym\" ascii\n        $sym_chkstk = \"____chkstk_darwin\" ascii\n\n    condition:\n        // Mach-O binary format validation (Fat universal or standalone Mach-O 32/64)\n        (uint32(0) == 0xbebafeca or uint32(0) == 0xcafebabe or\n         uint32(0) == 0xfeedfacf or uint32(0) == 0xcffaedfe)\n        and filesize < 20MB\n        and (\n            // Condition 1: Fake installer identifier combined with any Foxveil loader engine artifact\n            ($id_pattern and 1 of ($mod_init_*, $lcg_*, $wiper_*, $pbkdf2_*, $hmac_*)) or\n\n            // Condition 2: Generic x86_64 Foxveil loader characteristics\n            (\n                $mod_init_x86 and\n                ($lcg_consts_x86 or $pbkdf2_accum_x86 or $key_stretch_x86) and\n                #wiper_loop_x86 >= 3 and\n                #dlsym_call_x86 >= 5\n            ) or\n\n            // Condition 3: Generic arm64 Foxveil loader characteristics\n            (\n                $mod_init_arm64 and\n                ($hmac_consts_arm64 or #lcg_const_arm64 >= 3) and\n                #lcg_madd_arm64 >= 10 and\n                #dlsym_call_arm64 >= 5\n            ) or\n\n            // Condition 4: Multi-architecture core engine match with minimal symbol indicators\n            (\n                all of ($sym_*) and\n                2 of ($mod_init_*, $lcg_consts_x86, $pbkdf2_accum_x86, $hmac_consts_arm64) and\n                (#dlsym_call_x86 >= 5 or #dlsym_call_arm64 >= 5)\n            )\n        )\n}"
     },
     {
@@ -135429,7 +137651,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 16,
-      "total_hits": 0,
+      "total_hits": 14,
       "source_code": "rule OSX_Avenger_Stealer {\n    meta:\n        description = \"Avenger / PAM Stealer macOS information stealer binaries\"\n        author = \"Chandra Kant Bauri\"\n        date = \"2026-11-09\"\n        malware_family = \"AvengerStealer\"\n\t\t\t\thash = \"06fdd1d97df1105c542ddb881d751b659d555b5522c266f6364dae9f350fcfd0\"\n    strings:\n        // Cryptographic cha20 RFC 7539 state initialization\n        $chacha = \"expand 32-byte k\" ascii\n\n        // Subprocess IPC execution primitives\n        $ipc_pipe   = \"_pipe\" ascii\n        $ipc_spawn  = \"_posix_spawnp\" ascii\n        $ipc_dup2   = \"posix_spawn_file_actions_adddup2\" ascii\n\n        // Variant 1 (v1.3.x): PAM verification, clipboard harvesting, and embedded helpers\n        $crate       = \"avenger_agent\" ascii\n        $kh_id       = \"kh-57aebaab0e5de898\" ascii\n        $api_pam     = \"_pam_authenticate\" ascii\n        $api_pb      = \"_NSPasteboardTypeString\" ascii\n        $api_csr     = \"_csr_get_active_config\" ascii\n        $macho_embed = { CF FA ED FE 0C 00 00 01 }\n\n        // Variant 2 Chrome DevTools Protocol (CDP) & Cocoa workspace automation\n        $cdp_nav    = \"Page.navigate\" ascii\n        $cdp_dl1    = \"Browser.setDownloadBehavior\" ascii\n        $cdp_dl2    = \"Page.setDownloadBehavior\" ascii\n        $cocoa_ws   = \"NSWorkspaceOpenConfiguration\" ascii\n        $cocoa_inst = \"setCreatesNewApplicationInstance:\" ascii\n        $cocoa_open = \"openApplicationAtURL:configuration:completionHandler:\" ascii\n\n    condition:\n        (\n            (uint32(0) == 0xfeedfacf and (uint32(4) == 0x0100000c or uint32(4) == 0x01000007)) or\n            uint32(0) == 0xcafebabe or\n            uint32be(0) == 0xcafebabe\n        ) and\n\n        filesize < 10MB and\n\n        (\n            $crate or\n\n            (\n                $chacha and\n                2 of ($ipc_*) and\n                (\n                    ($api_pam and ($api_pb or $api_csr)) or\n                    $kh_id or\n                    #macho_embed > 1 or\n\n                    (1 of ($cdp_*) and 1 of ($cocoa_*))\n                )\n            )\n        )\n}"
     },
     {
@@ -135443,7 +137665,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 3,
-      "total_hits": 0,
+      "total_hits": 1,
       "source_code": "rule OSX_Avenger_Stealer_Keychain_Helper {\n    meta:\n        description = \"carved or standalone keychain dumper helper dropped by Avenger / PAM Stealer\"\n        author = \"Chandra Kant Bauri\"\n        date = \"2026-11-09\"\n        malware_family = \"AvengerStealer\"\n        platform = \"macOS\"\n\n    strings:\n        // Keychain Dumper Helper (kh): Unique ad-hoc code-signing identifier & API\n        $kh_id  = \"kh-57aebaab0e5de898\" ascii\n        $sec1   = \"SecItemCopyMatching\" ascii\n        $sec2   = \"kSecClassGenericPassword\" ascii\n\n    condition:\n        uint32(0) == 0xfeedfacf and\n        (uint32(4) == 0x0100000c or uint32(4) == 0x01000007) and\n        filesize < 200KB and\n        $kh_id and\n        all of ($sec*)\n}"
     }
   ]
