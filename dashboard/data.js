@@ -1,10 +1,10 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 24211,
-    "total_hits": 667,
-    "last_run": "2026-11-15T01:38:36.980750+00:00",
+    "total_scanned": 24215,
+    "total_hits": 670,
+    "last_run": "2026-11-15T02:34:20.645889+00:00",
     "hits_by_platform": {
-      "macos": 667,
+      "macos": 670,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
@@ -27,15 +27,15 @@ window.YARAFY_DATA = {
       "Macho_Jockey_Implant": 2,
       "OSX_Avenger_Stealer": 14,
       "OSX_Avenger_Stealer_Keychain_Helper": 1,
-      "osx_stealer_icmacos": 5
+      "osx_stealer_icmacos": 8
     },
     "hits_by_source": {
       "MalwareBazaar": 319,
       "VirusTotal Enterprise": 43,
-      "Local File": 305
+      "Local File": 308
     },
-    "new_hits_this_run": 5,
-    "refreshed_hits_this_run": 221,
+    "new_hits_this_run": 3,
+    "refreshed_hits_this_run": 1,
     "total_rules": 18
   },
   "hits": [
@@ -148704,7 +148704,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
       },
-      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+      "detected_at": "2026-11-15T01:38:36.980750+00:00",
+      "last_seen_at": "2026-11-15T02:34:20.645889+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -149298,6 +149299,2757 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c"
       },
       "detected_at": "2026-11-15T01:38:36.980750+00:00"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "namespace": "macos_stealers_Generic_stealers_yar",
+      "tags": [],
+      "meta": {
+        "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-14",
+        "platform": "macOS",
+        "family": "ICMacOs",
+        "sample": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x53eb95",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x53ebb9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x561bd4",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a484",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a4b7",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a4f2",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a52b",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a559",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a588",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ec93",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ecef",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ed2c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ed71",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67edb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67edf8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ee3a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ee7c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67eeb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67eefd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ef45",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ef8a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67efcf",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69ca97",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cad8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cb1c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e079",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e0bd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e142",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8f0040",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8f0064",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabbab",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabbe3",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabc29",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabc6f",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabcb2",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabcf5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd38",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd73",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabdbb",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe04",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe4a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe90",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabed6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf0a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf46",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf75",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabfa5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x4871e5",
+          "identifier": "$author_tg",
+          "data_preview": "https://t.me/ICMACOS"
+        },
+        {
+          "offset": "0x492512",
+          "identifier": "$author_forum",
+          "data_preview": "https://forum.exploit.in/topic/291615/"
+        },
+        {
+          "offset": "0x48c389",
+          "identifier": "$op_plist",
+          "data_preview": "com.apple.systemupdater.plist"
+        },
+        {
+          "offset": "0x484686",
+          "identifier": "$op_pdir",
+          "data_preview": ".systemd-helper"
+        },
+        {
+          "offset": "0x48b978",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x48e264",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x4839dd",
+          "identifier": "$op_zip",
+          "data_preview": "organized.zip"
+        },
+        {
+          "offset": "0x4882cd",
+          "identifier": "$op_log",
+          "data_preview": "/tmp/.cache-update.log"
+        },
+        {
+          "offset": "0x497f19",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x498225",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x492c81",
+          "identifier": "$op_cis",
+          "data_preview": "CIS country detected"
+        },
+        {
+          "offset": "0x489fc2",
+          "identifier": "$op_pwd",
+          "data_preview": "Restuck: invalid password"
+        },
+        {
+          "offset": "0x4924d7",
+          "identifier": "$op_shell",
+          "data_preview": "Command timeout (30s)"
+        },
+        {
+          "offset": "0x53ed4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x55eeb9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648971",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64899f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6489d2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a00",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a38",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a61",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a92",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648abc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648aec",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b1c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b5a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b8a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648bba",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648bf9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648c32",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648c73",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648cb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648cf1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d1f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d53",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d86",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648db9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648ded",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e1d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e4c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e7c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648eb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648ef2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f2b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f64",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f9b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648fd6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649006",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649039",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64906f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6490a6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6490d7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64910b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649141",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649172",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6491b2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6491f2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649225",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649256",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64928d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6492c4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6492fa",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649339",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649373",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f98f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f9bc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f9ed",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c780",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c7c7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c816",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c85b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c8a1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c8e7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x8f01f6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa51a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa55c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa59f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa5dc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa61b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa65c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa69d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa6dd",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa715",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa74d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa785",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa7bc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa7f3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa82d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa869",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa8a3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa8db",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa915",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa94e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa97d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa9b1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa9f0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa21",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa7c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaaae",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaae7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab1c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab50",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab7f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaabb3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaabe3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac18",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac4d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac81",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaacb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaace0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad11",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad42",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad72",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaada1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaadd3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaae12",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaae4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaf6d8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaf706",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe09027",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe0905d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x488dd4",
+          "identifier": "$op_dev_start",
+          "data_preview": "collectDevSecrets START"
+        },
+        {
+          "offset": "0x48febd",
+          "identifier": "$op_dev_env",
+          "data_preview": "DevSecrets: %d env files collected"
+        },
+        {
+          "offset": "0x488d4a",
+          "identifier": "$op_gcloud",
+          "data_preview": "gcloud_credentials.json"
+        },
+        {
+          "offset": "0x499959",
+          "identifier": "$op_msg_wa",
+          "data_preview": "group.net.whatsapp.WhatsApp.shared"
+        },
+        {
+          "offset": "0x48c36c",
+          "identifier": "$op_msg_im",
+          "data_preview": "Messages: dir not found, skip"
+        },
+        {
+          "offset": "0x4933ac",
+          "identifier": "$op_msg_tg",
+          "data_preview": "Telegram: tdata copied"
+        },
+        {
+          "offset": "0x48a8aa",
+          "identifier": "$op_msg_dc",
+          "data_preview": "Discord leveldb: %s copied"
+        },
+        {
+          "offset": "0x487a45",
+          "identifier": "$op_wallets",
+          "data_preview": "Wallets: %d collected"
+        },
+        {
+          "offset": "0x488e30",
+          "identifier": "$op_exodus",
+          "data_preview": "Exodus: collection done"
+        },
+        {
+          "offset": "0x482c0f",
+          "identifier": "$op_grabber",
+          "data_preview": "Filegrabber"
+        }
+      ],
+      "sample_sha256": "68c1691d2be97fa6119aaf85f20a76a5fbb81cf560f2c527ca517b12e51ee0ca",
+      "sample_md5": "f9f60f0a709f6185a63deb3c501fb6b2",
+      "sample_name": "68c1691d2be97fa6119aaf85f20a76a5fbb81cf560f2c527ca517b12e51ee0ca",
+      "sample_size_bytes": 14872032,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-15T02:34:20.645889+00:00"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "namespace": "macos_stealers_Generic_stealers_yar",
+      "tags": [],
+      "meta": {
+        "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-14",
+        "platform": "macOS",
+        "family": "ICMacOs",
+        "sample": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x53eb95",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x53ebb9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x561bd4",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a484",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a4b7",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a4f2",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a52b",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a559",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a588",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ec93",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ecef",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ed2c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ed71",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67edb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67edf8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ee3a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ee7c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67eeb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67eefd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ef45",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ef8a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67efcf",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69ca97",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cad8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cb1c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e079",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e0bd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e142",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8f0040",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8f0064",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabbab",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabbe3",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabc29",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabc6f",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabcb2",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabcf5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd38",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd73",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabdbb",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe04",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe4a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe90",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabed6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf0a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf46",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf75",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabfa5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x4871e5",
+          "identifier": "$author_tg",
+          "data_preview": "https://t.me/ICMACOS"
+        },
+        {
+          "offset": "0x492512",
+          "identifier": "$author_forum",
+          "data_preview": "https://forum.exploit.in/topic/291615/"
+        },
+        {
+          "offset": "0x48c389",
+          "identifier": "$op_plist",
+          "data_preview": "com.apple.systemupdater.plist"
+        },
+        {
+          "offset": "0x484686",
+          "identifier": "$op_pdir",
+          "data_preview": ".systemd-helper"
+        },
+        {
+          "offset": "0x48b978",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x48e264",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x4839dd",
+          "identifier": "$op_zip",
+          "data_preview": "organized.zip"
+        },
+        {
+          "offset": "0x4882cd",
+          "identifier": "$op_log",
+          "data_preview": "/tmp/.cache-update.log"
+        },
+        {
+          "offset": "0x497f19",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x498225",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x492c81",
+          "identifier": "$op_cis",
+          "data_preview": "CIS country detected"
+        },
+        {
+          "offset": "0x489fc2",
+          "identifier": "$op_pwd",
+          "data_preview": "Restuck: invalid password"
+        },
+        {
+          "offset": "0x4924d7",
+          "identifier": "$op_shell",
+          "data_preview": "Command timeout (30s)"
+        },
+        {
+          "offset": "0x53ed4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x55eeb9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648971",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64899f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6489d2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a00",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a38",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a61",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a92",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648abc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648aec",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b1c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b5a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b8a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648bba",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648bf9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648c32",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648c73",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648cb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648cf1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d1f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d53",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d86",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648db9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648ded",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e1d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e4c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e7c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648eb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648ef2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f2b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f64",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f9b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648fd6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649006",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649039",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64906f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6490a6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6490d7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64910b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649141",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649172",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6491b2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6491f2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649225",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649256",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64928d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6492c4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6492fa",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649339",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649373",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f98f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f9bc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f9ed",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c780",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c7c7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c816",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c85b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c8a1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c8e7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x8f01f6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa51a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa55c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa59f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa5dc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa61b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa65c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa69d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa6dd",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa715",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa74d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa785",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa7bc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa7f3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa82d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa869",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa8a3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa8db",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa915",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa94e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa97d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa9b1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa9f0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa21",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa7c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaaae",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaae7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab1c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab50",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab7f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaabb3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaabe3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac18",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac4d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac81",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaacb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaace0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad11",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad42",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad72",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaada1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaadd3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaae12",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaae4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaf6d8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaf706",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe09027",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe0905d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x488dd4",
+          "identifier": "$op_dev_start",
+          "data_preview": "collectDevSecrets START"
+        },
+        {
+          "offset": "0x48febd",
+          "identifier": "$op_dev_env",
+          "data_preview": "DevSecrets: %d env files collected"
+        },
+        {
+          "offset": "0x488d4a",
+          "identifier": "$op_gcloud",
+          "data_preview": "gcloud_credentials.json"
+        },
+        {
+          "offset": "0x499959",
+          "identifier": "$op_msg_wa",
+          "data_preview": "group.net.whatsapp.WhatsApp.shared"
+        },
+        {
+          "offset": "0x48c36c",
+          "identifier": "$op_msg_im",
+          "data_preview": "Messages: dir not found, skip"
+        },
+        {
+          "offset": "0x4933ac",
+          "identifier": "$op_msg_tg",
+          "data_preview": "Telegram: tdata copied"
+        },
+        {
+          "offset": "0x48a8aa",
+          "identifier": "$op_msg_dc",
+          "data_preview": "Discord leveldb: %s copied"
+        },
+        {
+          "offset": "0x487a45",
+          "identifier": "$op_wallets",
+          "data_preview": "Wallets: %d collected"
+        },
+        {
+          "offset": "0x488e30",
+          "identifier": "$op_exodus",
+          "data_preview": "Exodus: collection done"
+        },
+        {
+          "offset": "0x482c0f",
+          "identifier": "$op_grabber",
+          "data_preview": "Filegrabber"
+        }
+      ],
+      "sample_sha256": "afdcaa1830a83f8ad418ac6d21aabe2ba626443956a3caf01054d5b339b9d8cb",
+      "sample_md5": "da8a0233569a74ffa3aca4d0f1fb988e",
+      "sample_name": "afdcaa1830a83f8ad418ac6d21aabe2ba626443956a3caf01054d5b339b9d8cb",
+      "sample_size_bytes": 14866578,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-15T02:34:20.645889+00:00"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "namespace": "macos_stealers_Generic_stealers_yar",
+      "tags": [],
+      "meta": {
+        "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-14",
+        "platform": "macOS",
+        "family": "ICMacOs",
+        "sample": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x53eb95",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x53ebb9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x561bd4",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a484",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a4b7",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a4f2",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a52b",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a559",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a588",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ec93",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ecef",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ed2c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ed71",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67edb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67edf8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ee3a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ee7c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67eeb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67eefd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ef45",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ef8a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67efcf",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69ca97",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cad8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cb1c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e079",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e0bd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e142",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8f0040",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8f0064",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabbab",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabbe3",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabc29",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabc6f",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabcb2",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabcf5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd38",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd73",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabdbb",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe04",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe4a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe90",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabed6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf0a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf46",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf75",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabfa5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x4871e5",
+          "identifier": "$author_tg",
+          "data_preview": "https://t.me/ICMACOS"
+        },
+        {
+          "offset": "0x492512",
+          "identifier": "$author_forum",
+          "data_preview": "https://forum.exploit.in/topic/291615/"
+        },
+        {
+          "offset": "0x48c389",
+          "identifier": "$op_plist",
+          "data_preview": "com.apple.systemupdater.plist"
+        },
+        {
+          "offset": "0x484686",
+          "identifier": "$op_pdir",
+          "data_preview": ".systemd-helper"
+        },
+        {
+          "offset": "0x48b978",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x48e264",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x4839dd",
+          "identifier": "$op_zip",
+          "data_preview": "organized.zip"
+        },
+        {
+          "offset": "0x4882cd",
+          "identifier": "$op_log",
+          "data_preview": "/tmp/.cache-update.log"
+        },
+        {
+          "offset": "0x497f19",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x498225",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x492c81",
+          "identifier": "$op_cis",
+          "data_preview": "CIS country detected"
+        },
+        {
+          "offset": "0x489fc2",
+          "identifier": "$op_pwd",
+          "data_preview": "Restuck: invalid password"
+        },
+        {
+          "offset": "0x4924d7",
+          "identifier": "$op_shell",
+          "data_preview": "Command timeout (30s)"
+        },
+        {
+          "offset": "0x53ed4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x55eeb9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648971",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64899f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6489d2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a00",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a38",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a61",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a92",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648abc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648aec",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b1c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b5a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b8a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648bba",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648bf9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648c32",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648c73",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648cb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648cf1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d1f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d53",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d86",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648db9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648ded",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e1d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e4c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e7c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648eb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648ef2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f2b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f64",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f9b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648fd6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649006",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649039",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64906f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6490a6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6490d7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64910b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649141",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649172",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6491b2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6491f2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649225",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649256",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64928d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6492c4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6492fa",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649339",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649373",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f98f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f9bc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f9ed",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c780",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c7c7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c816",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c85b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c8a1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c8e7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x8f01f6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa51a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa55c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa59f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa5dc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa61b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa65c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa69d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa6dd",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa715",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa74d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa785",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa7bc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa7f3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa82d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa869",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa8a3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa8db",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa915",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa94e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa97d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa9b1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa9f0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa21",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa7c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaaae",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaae7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab1c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab50",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab7f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaabb3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaabe3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac18",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac4d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac81",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaacb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaace0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad11",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad42",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad72",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaada1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaadd3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaae12",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaae4b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaf6d8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaf706",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe09027",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe0905d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x488dd4",
+          "identifier": "$op_dev_start",
+          "data_preview": "collectDevSecrets START"
+        },
+        {
+          "offset": "0x48febd",
+          "identifier": "$op_dev_env",
+          "data_preview": "DevSecrets: %d env files collected"
+        },
+        {
+          "offset": "0x488d4a",
+          "identifier": "$op_gcloud",
+          "data_preview": "gcloud_credentials.json"
+        },
+        {
+          "offset": "0x499959",
+          "identifier": "$op_msg_wa",
+          "data_preview": "group.net.whatsapp.WhatsApp.shared"
+        },
+        {
+          "offset": "0x48c36c",
+          "identifier": "$op_msg_im",
+          "data_preview": "Messages: dir not found, skip"
+        },
+        {
+          "offset": "0x4933ac",
+          "identifier": "$op_msg_tg",
+          "data_preview": "Telegram: tdata copied"
+        },
+        {
+          "offset": "0x48a8aa",
+          "identifier": "$op_msg_dc",
+          "data_preview": "Discord leveldb: %s copied"
+        },
+        {
+          "offset": "0x487a45",
+          "identifier": "$op_wallets",
+          "data_preview": "Wallets: %d collected"
+        },
+        {
+          "offset": "0x488e30",
+          "identifier": "$op_exodus",
+          "data_preview": "Exodus: collection done"
+        },
+        {
+          "offset": "0x482c0f",
+          "identifier": "$op_grabber",
+          "data_preview": "Filegrabber"
+        }
+      ],
+      "sample_sha256": "ad37f66434ff098ffccf20caf5753d0b2f180a2904c389970ad0bb0294c046e4",
+      "sample_md5": "8e8f1e01245ab3cd1a2e6d7e62461cc1",
+      "sample_name": "ad37f66434ff098ffccf20caf5753d0b2f180a2904c389970ad0bb0294c046e4",
+      "sample_size_bytes": 14866578,
+      "source_feed": "Local File",
+      "detected_at": "2026-11-15T02:34:20.645889+00:00"
     }
   ],
   "rules": [
@@ -149480,7 +152232,7 @@ window.YARAFY_DATA = {
       "severity": "Medium",
       "tags": [],
       "strings_count": 23,
-      "total_hits": 5,
+      "total_hits": 8,
       "source_code": "rule osx_stealer_icmacos {\n    meta:\n        description = \"ICMacOs Apple Silicon stealer across multiple campaign domains\"\n        author = \"Chandra Kant Bauri\"\n        date = \"2026-11-14\"\n        platform = \"macOS\"\n        family = \"ICMacOs\"\n        sample = \"d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4\"\n\n    strings:\n        // Author and module anchors\n        $author_mod       = \"github.com/ultra-supara/ICMacOs\" ascii\n        $author_tg        = \"https://t.me/ICMACOS\" ascii\n        $author_forum     = \"https://forum.exploit.in/topic/291615/\" ascii\n\n        // Staging and persistence markers\n        $op_plist         = \"com.apple.systemupdater.plist\" ascii\n        $op_pdir          = \".systemd-helper\" ascii\n        $op_stage         = \"/tmp/.systemd-private-helper\" ascii\n        $op_zip           = \"organized.zip\" ascii\n        $op_log           = \"/tmp/.cache-update.log\" ascii\n\n        // Evasion and operational indicators\n        $op_tcc           = \"Safari: TCC BLOCKED\" ascii\n        $op_cis           = \"CIS country detected\" ascii\n        $op_pwd           = \"Restuck: invalid password\" ascii\n        $op_shell         = \"Command timeout (30s)\" ascii\n        $op_keychain      = \"moond4rk/keychainbreaker\" ascii\n\n        // Cloud and developer secret harvesting\n        $op_dev_start     = \"collectDevSecrets START\" ascii\n        $op_dev_env       = \"DevSecrets: %d env files collected\" ascii\n        $op_gcloud        = \"gcloud_credentials.json\" ascii\n\n        // Messaging and communication theft\n        $op_msg_wa        = \"group.net.whatsapp.WhatsApp.shared\" ascii\n        $op_msg_im        = \"Messages: dir not found, skip\" ascii\n        $op_msg_tg        = \"Telegram: tdata copied\" ascii\n        $op_msg_dc        = \"Discord leveldb: %s copied\" ascii\n\n        // Cryptocurrency wallets and file harvesting\n        $op_wallets       = \"Wallets: %d collected\" ascii\n        $op_exodus        = \"Exodus: collection done\" ascii\n        $op_grabber       = \"Filegrabber\" ascii\n\n    condition:\n        (uint32(0) == 0xfeedfacf or uint32(0) == 0xcffaedfe) and\n        \n        // file size envelope (Go compiled stealer cluster is ~14.8 MB)\n        (filesize > 5MB and filesize < 35MB) and\n        \n        // Either author identity matches, OR at least 4 operational markers co-occur\n        (\n            1 of ($author*) or\n            4 of ($op_*)\n        )\n}"
     },
     {

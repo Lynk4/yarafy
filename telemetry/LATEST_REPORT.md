@@ -1,19 +1,19 @@
 # Yarafy Telemetry & Threat Hunting Report
 
-**Last Run:** `2026-11-15T01:38:36.980750+00:00`
-**Total Samples Scanned:** `24211` | **Total Rule Hits:** `667`
+**Last Run:** `2026-11-15T02:34:20.645889+00:00`
+**Total Samples Scanned:** `24215` | **Total Rule Hits:** `670`
 
 ## Hits Breakdown by Source Feed
 | Source Feed | Total Hits |
 | :--- | :--- |
 | **MalwareBazaar** | `319` |
 | **VirusTotal Enterprise** | `43` |
-| **Local File** | `305` |
+| **Local File** | `308` |
 
 ## Hits Breakdown by Platform
 | Platform | Total Hits |
 | :--- | :--- |
-| **MACOS** | `667` |
+| **MACOS** | `670` |
 | **WINDOWS** | `0` |
 | **LINUX** | `0` |
 | **NON-PE** | `0` |
@@ -26,9 +26,9 @@
 | [`OSX_Stealer_AMOS_Generic`](../yara-rules/) | `43` |
 | [`OSX_Foxveil_AMOS_Stage4_Generic`](../yara-rules/) | `19` |
 | [`OSX_Avenger_Stealer`](../yara-rules/) | `14` |
+| [`osx_stealer_icmacos`](../yara-rules/) | `8` |
 | [`MALW_macOS_MacSync_Stealer_Universal`](../yara-rules/) | `7` |
 | [`Macho_Trojan_CloudSync_Generic`](../yara-rules/) | `5` |
-| [`osx_stealer_icmacos`](../yara-rules/) | `5` |
 | [`Macho_Trojan_CloudSync_1006YR`](../yara-rules/) | `4` |
 | [`APT_macOS_RustBucket_Behavioral_Indicators`](../yara-rules/) | `3` |
 | [`Macho_Jockey_Implant`](../yara-rules/) | `2` |
@@ -43,6 +43,9 @@
 ## Recent Positive Detections
 | Timestamp | Source Feed | Rule | Platform | SHA256 | VT Detection | VT Threat Label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-15 02:34:20 | **Local File** | `osx_stealer_icmacos` | macos_stealers_Generic_stealers_yar | `ad37f66434...` | `N/A` | `N/A` |
+| 2026-11-15 02:34:20 | **Local File** | `osx_stealer_icmacos` | macos_stealers_Generic_stealers_yar | `afdcaa1830...` | `N/A` | `N/A` |
+| 2026-11-15 02:34:20 | **Local File** | `osx_stealer_icmacos` | macos_stealers_Generic_stealers_yar | `68c1691d2b...` | `N/A` | `N/A` |
 | 2026-11-15 01:38:36 | **MalwareBazaar** | `osx_stealer_icmacos` | macos_stealers_Generic_stealers_yar | [`c8136413ad...`](https://www.virustotal.com/gui/file/c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c) | `28/52` | `trojan.stealer/amos` |
 | 2026-11-15 01:38:36 | **MalwareBazaar** | `osx_stealer_icmacos` | macos_stealers_Generic_stealers_yar | [`d9df05a3fb...`](https://www.virustotal.com/gui/file/d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4) | `29/55` | `trojan.stealer/amos` |
 | 2026-11-15 01:38:36 | **MalwareBazaar** | `osx_stealer_icmacos` | macos_stealers_Generic_stealers_yar | [`e52855d447...`](https://www.virustotal.com/gui/file/e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31) | `35/63` | `trojan.stealer/amos` |
@@ -90,6 +93,3 @@
 | 2026-11-05 20:49:02 | **MalwareBazaar** | `Macho_Trojan_CloudSync_Generic` | macos_droppers_cloudsync_yar | [`b3cca282ed...`](https://www.virustotal.com/gui/file/b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845) | `23/56` | `trojan.cloudsyncd/abrisk` |
 | 2026-11-05 20:49:02 | **MalwareBazaar** | `Macho_Trojan_CloudSync_1006YR` | macos_droppers_cloudsync_yar | [`e8b7503f40...`](https://www.virustotal.com/gui/file/e8b7503f40fbcc41ed6769584b410da29827e505160290335454214074b7a511) | `29/62` | `trojan.cloudsyncd/macho` |
 | 2026-11-05 20:49:02 | **MalwareBazaar** | `Macho_Trojan_CloudSync_Generic` | macos_droppers_cloudsync_yar | [`e8b7503f40...`](https://www.virustotal.com/gui/file/e8b7503f40fbcc41ed6769584b410da29827e505160290335454214074b7a511) | `29/62` | `trojan.cloudsyncd/macho` |
-| 2026-11-05 20:49:02 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`87153046bb...`](https://www.virustotal.com/gui/file/87153046bb0e4d822defedf4546ae51f4e68402f3b10872f28f5ea8611774eac) | `32/63` | `trojan.amos/infostl` |
-| 2026-11-05 20:49:02 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`0b5981059d...`](https://www.virustotal.com/gui/file/0b5981059d2626952a96b9f06aaebe909697ebe7b9f9623d3f7ef127e2ff981a) | `32/63` | `trojan.amos/infostl` |
-| 2026-11-05 20:49:02 | **MalwareBazaar** | `macOS_ClickFix_AppleScript_Dropper` | macos_droppers_clickfix_yar | [`80f9844f15...`](https://www.virustotal.com/gui/file/80f9844f1582858b5afd0259e0d8f2b8f26a2e71f08bb0d43ae1a1850e3b2a41) | `31/63` | `trojan.amos/infostl` |
