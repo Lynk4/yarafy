@@ -1,10 +1,10 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 23723,
-    "total_hits": 662,
-    "last_run": "2026-11-14T15:28:11.156712+00:00",
+    "total_scanned": 24211,
+    "total_hits": 667,
+    "last_run": "2026-11-15T01:38:36.980750+00:00",
     "hits_by_platform": {
-      "macos": 662,
+      "macos": 667,
       "windows": 0,
       "linux": 0,
       "non-pe": 0
@@ -26,16 +26,17 @@ window.YARAFY_DATA = {
       "OSX_Malware_EvilQuest_ThiefQuest": 266,
       "Macho_Jockey_Implant": 2,
       "OSX_Avenger_Stealer": 14,
-      "OSX_Avenger_Stealer_Keychain_Helper": 1
+      "OSX_Avenger_Stealer_Keychain_Helper": 1,
+      "osx_stealer_icmacos": 5
     },
     "hits_by_source": {
-      "MalwareBazaar": 314,
+      "MalwareBazaar": 319,
       "VirusTotal Enterprise": 43,
       "Local File": 305
     },
-    "new_hits_this_run": 3,
-    "refreshed_hits_this_run": 262,
-    "total_rules": 17
+    "new_hits_this_run": 5,
+    "refreshed_hits_this_run": 221,
+    "total_rules": 18
   },
   "hits": [
     {
@@ -1093,8 +1094,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/stealer",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -1121,7 +1122,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1238,12 +1239,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           },
           {
-            "value": "dropper",
-            "count": 7
+            "count": 7,
+            "value": "dropper"
           }
         ],
         "names": [
@@ -1273,7 +1274,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -2233,7 +2234,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -25080,8 +25081,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/stealer",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -25107,7 +25108,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -26493,7 +26494,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3740e3883b64840461b3dfe2ce86695f32a14f28c8e0353c860ff6939a8c2538"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -26776,8 +26777,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/lummastealer",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -26802,7 +26803,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c4c7cc2f8e281b36d0bc29de6e08d354d83c4f734acaded25e7c8dfb1f580db5"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -27349,8 +27350,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -27380,7 +27381,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/689797d97d31c3893e2c8a792614262f1fa9e714d646aef46bc4a6371fa59126"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -27830,7 +27831,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6bfcdb4920383375b7e519918df7eb4db751b974b5571a15ce66b82478012620"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -29089,8 +29090,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amosstealer",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -29125,7 +29126,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/fd0cd32edfe9b4f68dcc2fddb8f27c6102e9a9c8b90c5def07ac8e62b2a75303"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -29378,12 +29379,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/coins",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 12
+            "count": 12,
+            "value": "trojan"
           },
           {
-            "value": "downloader",
-            "count": 10
+            "count": 10,
+            "value": "downloader"
           }
         ],
         "names": [
@@ -29407,7 +29408,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f80ff072316e2d62490df743cbd5363bfb6ec5459409cc162d0602f7a1c607bb"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
@@ -29590,14 +29591,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 33,
-        "total_engines": 62,
-        "detection_ratio": "33/62",
-        "suggested_threat_label": "trojan.stealer/coins",
+        "positives": 30,
+        "total_engines": 56,
+        "detection_ratio": "30/56",
+        "suggested_threat_label": "trojan.stealer/abtrojan",
         "popular_threat_category": [
           {
             "value": "trojan",
-            "count": 19
+            "count": 18
           },
           {
             "value": "downloader",
@@ -29613,23 +29614,22 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "multi-arch",
-          "64bits",
-          "macho",
           "arm",
-          "self-signed"
+          "self-signed",
+          "macho",
+          "64bits"
         ],
         "reputation": -59,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Stealer!AMTB",
           "SentinelOne": "Static AI - Malicious Mach-O",
-          "Kaspersky": "HEUR:Trojan-PSW.OSX.Coins.b",
           "Sophos": "OSX/Dldr-XS",
           "ESET-NOD32": "OSX/PSW.Agent.EK trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/f5471a00bb6cdaf01e44311c04de2e66c6f92ccc4b8e42bbb1bcb4e48f86ef3e"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -29958,7 +29958,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3b8375f092798ac851bfacdb94310ccabfebcbe106f6e7324764a0e4fd4ea57"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30016,8 +30016,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -30044,7 +30044,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/faf572c1c989ca17101d5003bceb8b4796e709b93bf014f642b2a2c4b7b77fb4"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30103,8 +30103,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -30131,7 +30131,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1e8ed19e771e7a9378daf3b3652802143345db8ea4196e560e54f28176ef958a"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30190,8 +30190,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -30217,7 +30217,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e42b8c35db5ab7169327b9185c3e05db4a156e8922b985da61bcbd6223df8aea"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30863,8 +30863,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -30893,7 +30893,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4799b1f41221745e4e3e902526b9635e697b64c5c07a344b59fe1a6ddc018c34"
       },
       "detected_at": "2026-10-16T09:42:46.011654+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1006YR",
@@ -31271,7 +31271,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/81e34b0ec6928234d0a24f9b1634d1e2201fe0fca38bf048229d750ba35f64ca"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -31818,8 +31818,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -31854,7 +31854,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e395c5343703a570d12620c81b9593ea6117d2f57c95bd8247704d9dbd256ce6"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31943,7 +31943,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/85fce9826974549c2dd4c92a3207cf2543e10676ad2dfad7c8ea429f616cdf21"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -32161,7 +32161,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6c118d4bd1a56f56756b78134474c2a5becd3f138803d3297155691a427f6524"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32220,12 +32220,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 15,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 15
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -32251,7 +32251,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/813bb6f2bc378364b4a0ed1405fe6ccd34a1510c4c94fe98f5908e6514999c1a"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32341,7 +32341,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/aa2fe64a8b365f79ba99c5cae660602063d6b555b3dd2e40d05f5293ca2c2a96"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32400,12 +32400,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -32433,7 +32433,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f2c7af231a3dc1a9291a2421d2b67e3c6ed829073fdcbd7aeec3c33a933d2f6e"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32492,12 +32492,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -32524,7 +32524,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d64921058e03078b75565d5aeea126e75698f39be3c6387d17c5d9fa8536d0ac"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32614,7 +32614,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e6490a700b965a6dcf264eb1e8291217d9e52f167470d70bc24806697fabeeaa"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32703,7 +32703,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/efc0f30e9b1c8e4b1479006ecdcc95d5d4fa0627af8b294a6babe57da17b58d3"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32793,7 +32793,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/322a9bdadc796f2b2a7459b949ff367ed3258e9a8eefb1af161b557418ce845d"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32852,12 +32852,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -32883,7 +32883,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/51ad0fe8782d9756f1fc647bfd19e649b1b3e55e8b641a295062c935c1939bd8"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32973,7 +32973,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ecf0f6b181632fb335c800bcc77cccc5584bc15b5ac594dc68019f05081c3d5d"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33032,12 +33032,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/abrisk",
         "popular_threat_category": [
           {
-            "count": 14,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 14
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -33062,7 +33062,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3bf9ac9cb26ecffd2ab26bb14c81c110b53fe31c196cc774291ad4af804023c3"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -33269,12 +33269,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.class/macho",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -33299,7 +33299,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cefb465886bc813ac91e9ad5b1835eefe9828f251b58eb0da012ee4022ff6d98"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1007YR",
@@ -34116,12 +34116,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -34147,7 +34147,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/40dc77a48faae52f4ab7e2fbac202427947ffd48fc4e3dc6ed9f9b4403dc590c"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34206,12 +34206,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -34238,7 +34238,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0119e2bc2281379155fe73917dc347f31501873867e7d8174b71c8cdbf0e5c8f"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34297,12 +34297,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -34329,7 +34329,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ff9c8f57fa3ec4c935c343bc636dee3253e6b6e4dbbd0d64e7898f0c7f7c5598"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34419,7 +34419,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b5d4aba0fe4004e851756d0329f0c165db2c1667c7c73516e0f1537c9afd3298"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34642,12 +34642,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -34673,7 +34673,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cf28f44cfec7384cd572f5457a2d7e4a09fd72f7a29264393961fa4493b29c19"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34763,7 +34763,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/47258dad12e7bbb34a8421c79e98a10f62adc6d613fa8d94c30599fffbb040f8"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34854,7 +34854,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/08e7c04e22c51313e5095f2db39e11fcc59adf56a63481ae92d8730e2788edc7"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34913,12 +34913,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/etgl",
         "popular_threat_category": [
           {
-            "count": 13,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 13
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -34944,7 +34944,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/225f89ad501a71af48f405b6c61309a6c0f041ad8add6625e75274c536954f1f"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35034,7 +35034,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ab5b9b53b603bc5bc8abb0eb0aab014d82d20b603b40fdc69642b5b907fcea43"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -35221,7 +35221,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bc0bde5dd5ca313436bc7119c5f603d9f4fb99dcbb09b2eaa5fd7ccda2c33794"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35311,7 +35311,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9d0c0819b915625b6c7bc2898cb5f1248df6ab941ce86447c059c4d6de5e0002"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35369,12 +35369,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -35401,7 +35401,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1b317f7c91282bc41153d12a28a41a883eeb655c245e76f8c3142a8cc8458bb4"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35491,7 +35491,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/863ea1012d1379896cba11f581f4a8e8c86143297f5cdf4c432a8d652a717107"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35639,12 +35639,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 11
+            "count": 11,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -35671,7 +35671,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/706c3b12e8be63504ef14663eb7084a2d14587419166918f2fe32cfe55d78ee8"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35761,7 +35761,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f59d0a5f63972619bb2c5184cecbe7d4fc59d5e291ede27ba13acbe49dab839b"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35851,7 +35851,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/407902441438f0f73a0ce5f5b89f50f9b6fcf7551a6179617fa21efac1cd524f"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35910,12 +35910,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 14,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 14
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -35942,7 +35942,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2d6f829d87773207cabc9360f8aae81adcf838829be00b0b6040fb7ebccf393e"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36001,12 +36001,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 12
+            "count": 12,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -36032,7 +36032,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2f4b6d386a70eea4d5aaa951b8a9095095410cef0963b4a769aa9cc4b7e356a0"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36121,7 +36121,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1e7cc2bd060683795a7bfa0ee3610e6b896c71ad20677b65ccde4278594911f9"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36179,12 +36179,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -36212,7 +36212,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2ff0a9594923b8896910fd338b4a899649bb89bca20ace4d00b9fada9da93441"
       },
       "detected_at": "2026-10-20T18:52:09.961170+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36270,12 +36270,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -36301,7 +36301,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/89ab3b9e84198d8bb8d207964ee8cc02d75da3d6bdbd9cf1ccf34f9500272053"
       },
       "detected_at": "2026-10-20T18:52:09.961170+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36480,7 +36480,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1b9ebec7a73d0a7c135f71904fef98602fa5ff49d137bb145608da207541c15b"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36538,8 +36538,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -36565,7 +36565,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c81b8c0775f0fa25cfe09cab180e88426340cd1e171c033cd70145294504fefd"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37375,7 +37375,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a4f89e85ca176c7fccd50335b80e9cb31887297c3e8abb879e35636ae7c6cd68"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37433,12 +37433,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 15,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 15
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -37463,7 +37463,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bfaba22e0b58c2f5ab977de4322563fdeb3f5a90a573175181f34d4830a7fc97"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37747,7 +37747,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c6dcafd1aaa7cdbf84e2cc6f1f6b3e6cc6a7c1b74ab995003a5d6f828cdf1268"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37805,12 +37805,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -37836,7 +37836,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/30b4ae5036e76367f9d1165253dc81d4c7ae9fdced72c95cb4ecffc1f6aefcfd"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38026,7 +38026,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1d6102cbdf119cd3655d9beb30698a97ab69d996f2a1b913c0bd95b32076d2ac"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38116,7 +38116,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/461f5d168c724db1094e76955ce5ebe15ea611d7d0b497c5f06ffb0baffa10c8"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38174,12 +38174,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -38206,7 +38206,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/68b736e2aa1c565c1748fcb17a5e44bbf1727714047fbf50e8c9c9d6844fe6ea"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38265,12 +38265,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -38296,7 +38296,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6e7dcc1716e5a94f937f66f0796d10280abe40a11f13d2a258784468de71c478"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38387,7 +38387,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8a2daf154b45503f88abb0f9f77ba79ad4044f235f03c2a1ff5604bc9ef1c227"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38446,12 +38446,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -38477,7 +38477,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4892ea6ae970b1c57b505e511ace698878b29666e0da59867b712ea83db1563b"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38567,7 +38567,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/09b5143a55acbb87423681f6c70a1bbed0034289a7448becc5d3adab51fddb77"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38626,12 +38626,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -38657,7 +38657,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0ef806bb25a7206b2a7ab4c936ac6aa540c4777574068d51ec3d65c9e1fb67c4"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38748,7 +38748,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/66a39ad4e53d93de95c3db38822fb265dcc8835328d591edaf3bbbe5098f391f"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38806,12 +38806,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -38838,7 +38838,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/13b4b87da6046356804ccfa023d66b9809371027b00f62fb4e4812dca34a1571"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38928,7 +38928,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2e5bb8cc0558dfed95e93207bdcc39dfd3ed21851d7ba1e8d56dee83088c5e66"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39011,7 +39011,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0ad481c6994048519dc317896755c1e8f6fec92e458aeaf4fa5cfa09a5126270"
       },
       "detected_at": "2026-10-22T19:15:34.846800+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39095,7 +39095,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7aa96e6f115552e6cc2ecff9f0d481a50978c41aabcac921e2225e0a24b465c1"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39179,7 +39179,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cc30e4d19f6c7975ba027b58b79bb58794c0baa7007350e4db5e15408b566f0c"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39237,8 +39237,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -39263,7 +39263,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/61d1c1ca3ed32698a440f3815606b23283a41a2c282567bfca2ee904b0932c6b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39321,8 +39321,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -39348,7 +39348,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5ef3b2ae6aac4c7b6a1ba0a14d0b4283da20002a6deee8d0d9ae2fd2fce79f58"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39406,8 +39406,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abpws",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -39432,7 +39432,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4c565810ae06d551174b32ebb5e309693be3ceb8fe9939ece971180760949847"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39516,7 +39516,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5f6ace8d46faae452b7b3056db7c12df1847a63ce105c7d837c4965e7ee1bc2f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39574,8 +39574,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/lummastealer",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           }
         ],
         "names": [
@@ -39600,7 +39600,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9e641b2840dc1edf0dc82878a3cc9ae9bae6b458169390da7160539d9dfd3aa4"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39658,8 +39658,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -39684,7 +39684,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2d7e3e63207b4c7f2c7dd8658469c97fa73d2e45f7104de19b49654c44079e72"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39768,7 +39768,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/45ef0cea3b608f167c3e3101a0f78a4290ccf4ca1164c355bf4d56ac4bf44c0b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39852,7 +39852,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9c7713ce0a1fa2ef4b43651ef3a984b1656a6ee8dc3a94c4682e5e5e86428373"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39938,7 +39938,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b2b904053a6d1b783e597bbab0d0ac9cf8d33dfd06b06e7a9ab3d99a769dd10b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39996,8 +39996,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abpws",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -40022,7 +40022,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7ec6df0cae345fd0c3bdb220c2634e52cbb9ece8755143587a546e00d91b2ad8"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40106,7 +40106,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/94ecec65874eef8917d8f91d11724bca77194319c8711aecec0f8b39d6db93ca"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40164,8 +40164,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/bdhl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -40190,7 +40190,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/33dd4fa348582867ac7ccec455f018a929207b16d1f3e6771fc0f7f2b91572e0"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40273,7 +40273,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/18438ce3e58bdbe47c9d7058ce05f456d5792d99926be82eb894fba985c567c8"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40331,8 +40331,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostealer",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -40357,7 +40357,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d838168d234ce4bedef14162b85b2c47ac97539e16a3d451682d493b5a173785"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40441,7 +40441,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/dc4db648c12775028fd2eaa82e831fafb1aa0b9e950fea74033eeb23220d1bca"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40499,8 +40499,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -40524,7 +40524,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/78d0bbf3ddb244caae5b955e6e9476e26f33f5a2e37b9d02863ad34b6476fb64"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40607,7 +40607,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/dba12dd044d53dc35cb15d9432a2e6fa139d9f76d813ace626b3f84bac9f67ea"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41189,7 +41189,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e59471dbb08a04c5ec6df736f149919cc5333ef19da2b2de298d4f429d0c3612"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41247,8 +41247,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -41273,7 +41273,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a9c7b69cece1e5999a2302d4152bc038ffe8305e84e3d974ace49132241c3206"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41331,8 +41331,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -41357,7 +41357,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/eaddd0e6bf1c396859cee853792e6878977c8951829e1c43a66b204cc11a6a47"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41415,8 +41415,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -41442,7 +41442,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2c4229230fdcb224538828468a8642aaf4429a1591fe83776f8b3aa683d65050"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41525,7 +41525,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0d98501ac73fd2c318e0e1a4a223b9e2589f235627e512eac8b88a275315b69a"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41583,8 +41583,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/iqil",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           }
         ],
         "names": [
@@ -41609,7 +41609,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/70b2276aaa5ff9a8e714d625b9238c5bad790145be09827fb928143810df3bc9"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41667,8 +41667,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -41693,7 +41693,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2df7b49b9987822e437f1b88efedd9fbe58a7f524ec02974034c6188f6e39c35"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41779,7 +41779,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/06a3833ccb61fe1dea39f628f1425524fd865c05a850aaf12da84bca23713292"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42712,7 +42712,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c15a21e69b3142e50d4e42a4203741d924795b44a6a3907dcaf2a5dec0ae9d77"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42770,8 +42770,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -42797,7 +42797,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/598b0992d69d55845c1be3233b3abdc63ad1184cbc01705d5bbd1e65ea11fdbb"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42882,7 +42882,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/62d5eae2e4f7deba6554026ee460e04ca0b100761f9fad62aa79983b6c5c444a"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42940,8 +42940,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/ht1ll7",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 15
+            "count": 15,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -42965,7 +42965,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/af9fedc9c2e8a653812e75ba6315e41b734d33e1f85868a4834670b19863adba"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43050,7 +43050,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ffc3f8bdd9d37069c190378fc681e70992d9b88d9b8810cf00a1d89080c9ee8f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43108,8 +43108,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -43134,7 +43134,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/67b75dbf7e0fa3009c3726b03cafd47b8eea8b7bd937409de615015410b3aa64"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43963,8 +43963,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -43989,7 +43989,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/533fdbf6b54775472b63e8e67a29d1647c207273b3cb32971f8647c42c6066a7"
       },
       "detected_at": "2026-10-26T20:05:47.015161+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44047,8 +44047,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -44074,7 +44074,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7d969f25af3d016f00dd2858f28c5f2ff166f13b85072eaa8d736885ee956068"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44132,8 +44132,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -44159,7 +44159,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bd1c28603a4fae25b60dc7263c88ffcc7fc14f1cf2cac5143d5bfa786b151433"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44217,8 +44217,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -44244,7 +44244,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/297878107f9a04137afb70647994becb2452fff58104faf93203fac09248241b"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44302,8 +44302,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -44329,7 +44329,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/163a3b1821e5527f75e7620b6cfd10718c715c96a8cb72a71465fe0a887bf253"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -44511,8 +44511,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -44538,7 +44538,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1d892af7a9b3989131c81cf4e1adcc52822390ee06cbd304eea43031c3d31ec1"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44596,8 +44596,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -44623,7 +44623,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8fc35a16f8829ea8dadecc724830813583e2b5d668cb733932c8d1c3d1733fa2"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44681,8 +44681,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -44708,7 +44708,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8c34eefaceeed222cd9779fb3e72d0c9c87df96ebfcdc7b19b9e696ab16afcc3"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44792,7 +44792,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/44e49692c182143a7630be5decb072a12fb1462aaf143284411de135697896de"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44876,7 +44876,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2b2db5ba050175472c1ba8c4853b151de3a7ff55f3eeca901802ec75aa73b770"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44961,7 +44961,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3ce73d8dbdb4c9323ed56386f5c0861d69f3ef257f821705b9326ed8058b5e3"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45019,8 +45019,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -45046,7 +45046,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/46c09f852a7f05361b8758d10aba4426d4eacab74ed6e0ea5fdef20812934133"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45104,8 +45104,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -45131,7 +45131,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/04e30db39d13194ddd1d20dcc31779bf3e174d7957931be3aa7cb92f852fa11e"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45189,8 +45189,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -45216,7 +45216,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8d8dd9808f875b74c2ba8aa735c00e661b2d366f658d4d78a79bbb041b504eb2"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45301,7 +45301,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4fd0502c48d621cb9fec491391d408e9c19f5643b57b3841c9fa1d488c779d97"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45359,8 +45359,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -45386,7 +45386,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4f937f9bcfbb1ac38a7c0f791a760425bb555ba8002752b879ddda303c1a425e"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_Backdoor_C5_Implant",
@@ -101531,8 +101531,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/abmrisk",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -101558,7 +101558,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3bba0dd56b220041d6a7080fa8f53d8563bf2ced7796e88c9dc1b7beba44785a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101616,8 +101616,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -101644,7 +101644,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7c3b234169d90ac5d8b18e56e5c46012319124a225316a962506b236fc952075"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101702,8 +101702,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -101729,7 +101729,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3f84244dcab460b6fba60510836251c5999611c7f440d6bdad5c63121909a9f9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101787,8 +101787,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -101814,7 +101814,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/99ec22bed70db1293ac55f87019f49d4ce04e2deacb503f498b072b72979d524"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101899,7 +101899,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/326eaea523a3f44a6faebafb5bc8bf4395c713b4a6d375e8b57f2f6d23602983"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101957,8 +101957,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -101984,7 +101984,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ac22530ddcc9b0ce1841dcc1c82ce813dc04a2c37d29bf393388d3a214ac6626"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102068,7 +102068,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bff661c290456430436cb22cf83826e9e63b2959764fe27cdb725cb975b8f416"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102153,7 +102153,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/747ae1b6626bd476e0d01ca5862d73d789393ec17481ca652669351d43a6bd3a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102238,7 +102238,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/14c2594caebd59572aaf0410e92b06f112dc3b2b9640c66aa820b87d5b898689"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102323,7 +102323,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ccb36936001ee1f0c0c70eac9f7fe177d5652afb20f351ff1122c93e42045320"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102381,8 +102381,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -102408,7 +102408,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1eb39dbd8ca631431e37f173fa80b00fbac4a6c3a26effe6dacbe5b3eb4d8ecd"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102493,7 +102493,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3eec7ca615e28918446d87032d4630279a77979a8e863cc43456b109d664d48"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102551,8 +102551,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -102578,7 +102578,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2a93e929b69caa6dc56901cda012b0073d83a4682a025193a0fc7234fedff83f"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102663,7 +102663,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/eb38f2f91b58545f0511de0954534472e65de8b07abb57cee40a73576b0318af"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102721,8 +102721,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -102748,7 +102748,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9eabb901cc361b1b74cda3d7449ccc45d4b142c822c5e78b47246b0d8bbf7bee"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102833,7 +102833,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a8ee26aaa41e04b86cdeebd2c3748171bec0f8e4fab02f9a48cd5bbedd5db544"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102891,8 +102891,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -102918,7 +102918,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bb4568b5a0a179f5391be75ac164900363133b29c24b225438f66c17a741d2dd"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102976,8 +102976,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -103003,7 +103003,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f9713062c7f48d9689b2f921def5c3ebcb35e036b2ab694d625102dbadce8b52"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103089,7 +103089,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/23746b451646aeaec0e56f813c7654fd75cb3c5a6d7c0e75fcda66c6287e5df2"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103175,7 +103175,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/54c7ebe70c5981d14bda4f2ed99adbac28fcf390e4ddd0e0f272dd893f6caa1b"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103233,8 +103233,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -103261,7 +103261,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/85279394e95efea3d2678c9561021cb4a9f7a4d88dbafc74668ee918fff0fd0a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103319,8 +103319,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -103347,7 +103347,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/69092c70e390ba31429d4bbd08ca01eef3415e665551d3d3a66b673f36ed48d3"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103405,8 +103405,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 22
+            "count": 22,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -103432,7 +103432,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/83ef81d48afa643d27fe562d1c4a709a35a42b10cd57ea82213f0fdeb9d78633"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103490,8 +103490,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -103517,7 +103517,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0c6dc7c70dd1f121245c5eb743c18fc8a9532024e137535070d6c8479e7ccd9a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103603,7 +103603,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f64b3080432867f3778e62399cc109dfbc10ddc924bc5221daa3c1d54eecc831"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103661,8 +103661,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -103688,7 +103688,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5300c0e0296ae4d2897ea72b5282b2fa57f8b824507e1a3d9dd80d6530395fdc"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103746,8 +103746,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -103773,7 +103773,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1c5efea856059fc548f2b21e9e6e5079727949e5c86f8f428acfeef314ed1060"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103831,8 +103831,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -103858,7 +103858,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8ac8e983086e7e35004a8ea6575a37e14b986c518b13bc5c906e3df89f37d8d3"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103916,8 +103916,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -103943,7 +103943,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8220416c319dfc519aaf6023ac5c50394d758e3ebe436f3e7c43ff7feb19c0a0"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104001,8 +104001,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 22
+            "count": 22,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -104028,7 +104028,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bb4490884100ee84e132ea822d06da99508becdc16e434dcf11ade19b0971dd0"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104086,8 +104086,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/eflw",
         "popular_threat_category": [
           {
-            "count": 11,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 11
           }
         ],
         "names": [
@@ -104110,7 +104110,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a2badf05b11de0f772600c9fef2357c1f514a0ca21feb43240f188dbf7522992"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104168,8 +104168,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -104195,7 +104195,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/643af4611e02c36280cdf4a9b22be3488ec48278db7511e268c13d0c11a0daf9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104253,8 +104253,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 22
+            "count": 22,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -104280,7 +104280,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e2fcffd2ce53fe38b555db86e14e96b706eb811367dba4725f96a248c667b9a8"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104365,7 +104365,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/87367d9c60bb5923526138d10340a60d13d150f3280bba966d0ef8a335893635"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104423,8 +104423,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 22,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 22
           }
         ],
         "names": [
@@ -104450,7 +104450,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6335a4427566446e65202fb47dac5bac3433308c5daabf2293afb3c795f5353c"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104508,8 +104508,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -104535,7 +104535,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/acd2e7872edb9612a92e835bd243a83d185407e1680dea2e70845620874ff1dc"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104593,8 +104593,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -104620,7 +104620,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1fbdd925143e28ea6542bcc3b15cd44de7c0b226082f6f99450f0e1822db2068"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104678,8 +104678,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -104705,7 +104705,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/470034fb481dec06585288f94abcc8e9375b12c29a86d64dc30b1a68c24c0282"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104790,7 +104790,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/114b69aa53a40d7702a11ff81e3fc1d7104a3132c3395f403e6033c68f181230"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104848,8 +104848,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 16,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -104875,7 +104875,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d6ce062f26b771b19a085a727ca13d5c568037cee3039a1bbf8c261e8c44e363"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104960,7 +104960,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9078f1a436d99d859645a65df94b93e80e516972146ce895efed935c642ccba9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -105018,8 +105018,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -105044,7 +105044,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b3ffa0ce815def773ca9e9807af167f1378fcebf91eafd1ddaf86b1238fa5412"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -105102,8 +105102,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 11,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 11
           }
         ],
         "names": [
@@ -105129,7 +105129,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0611cf61fa7ef2bab6cabd19207b0256a69a2981966b1f32691057c7dc03a433"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -105187,8 +105187,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 11,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 11
           }
         ],
         "names": [
@@ -105214,7 +105214,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2cbc03368b2c63103af1e705a0dd42efe93514f87461ee14d9df858ec19e6a68"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -105299,7 +105299,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3168c669fae2b267641c203e1abf6fa8e6011201ab8187dfe06d0168ff957c7f"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Jockey_Implant",
@@ -106620,7 +106620,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/21f5852d9ade22f90e63e67898dcc6f0fb240e782c826f513e34d685d3ff8ca8"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106679,8 +106679,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -106705,7 +106705,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/46b32e8232bd0b359d3cdd5891c9030a58f0a949225cb3eba1b72014a034d5b3"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106791,7 +106791,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/32da533a3e59d5b86c115b4302897f5d8a5d791b34f9deb2b933c3476979fcd1"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106850,8 +106850,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abmtrojan",
         "popular_threat_category": [
           {
-            "count": 14,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 14
           }
         ],
         "names": [
@@ -106876,7 +106876,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cd3569812aefac3396be7f11124c068e200dc83e7882832adf9161e7b2656f75"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106935,8 +106935,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -106962,7 +106962,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/af95c361f4a077a251c9879c2cbadd1394302db083b6753bba55784d792dcc2c"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107048,7 +107048,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e9e8cbb6e60dec133269e83d5c9564b5fca8ff5293233ae2766bdfc1e17503d0"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107107,8 +107107,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -107134,7 +107134,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9dc758ca7a1e93859946e18206a4b3f34ef76b778b43f5226a40ffeb2444db48"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107220,7 +107220,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b28c2590e605070470bbad8963a3f18abeb7c972ac65ba3dc77622cb3cb85324"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107306,7 +107306,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/981ff25c886308d5350b4446184f14406be6cc01186bb19ebf0de8cf843e392f"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107392,7 +107392,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1ec9297709a225f912fc7145f43654bc1a6b61e56c9684bf22c6aaf0fad98289"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107451,8 +107451,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 15,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 15
           }
         ],
         "names": [
@@ -107477,7 +107477,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6ee52429a22ee09c723794eaa590cd4f08a4109d5e3bd9bb7e71f94de3e3851a"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107536,8 +107536,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -107563,7 +107563,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/64fb0d531b51a70cd4a40d4b2ece6c98d7a3d453c5d5b148f4cae75208584677"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107649,7 +107649,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b01d5a9d05b788cdbff787e3317e207caec6b6e08979a1efe0f7764cbfdd86dc"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107733,7 +107733,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5c18af8d98e6b13dbf5b8b408d817a302a5239311fff0da0319e11c9d5ce76cb"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107792,8 +107792,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -107818,7 +107818,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ba2fb68385233683f785e3bae69cb79360a2a6c48b43b44f9c43a3b8f54ca1a9"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107904,7 +107904,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/93c9298f7f23e0bdfc19785099fc85bb04acae14bbfe9f9cc3cb9355447ac47c"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107963,8 +107963,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -107991,7 +107991,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d3146700547025c387b0f3e707f391d59f2b62c4c60b6ecbf5134c79e01d67e1"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108050,8 +108050,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/multiverze",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -108077,7 +108077,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ec038d8ecdc9f33786ec79dab5b30ac1682bc9378540e1a7e775dda5c8bdb6b5"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108136,8 +108136,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -108163,7 +108163,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/197596c12388be1a4e07197e5b98535472a672ceab2db16c8c3737a025ffbb0d"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108249,7 +108249,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b92921e81666ba02fcd593c5f18aa8952b639d1fe7d13849677dd27954c479e8"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108335,7 +108335,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/95b3a52bad5da0468d6af8a8c56e0ca7e307c2c0151f2531903e27c49458d308"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108422,7 +108422,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9d3df907e1aae13743a47276d4e06ba974e3781763fa23f99c09867609a4fb4a"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108508,7 +108508,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1dffdfbda8c09dd397b1d65ef019202c1dd12c1b172a6f90e1f45918f3a9a4b7"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108567,8 +108567,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -108593,7 +108593,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9f633733db4d5c8d085beb28c3ec145a7e0d0af6ea29f1092d410e3bbe833ac1"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108652,8 +108652,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -108678,7 +108678,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/48b170f32c51d94fa7d9d2040b753500e8e3e23c934e3b900cad733b33687bc0"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108737,8 +108737,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -108764,7 +108764,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/910e33613d9ed72442909f57564d8aba029b77422b1c3138deadb8732d882d4a"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108823,8 +108823,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -108849,7 +108849,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bd4fb920575b7fa5f2b856cc49af0e6f55f0062dc67bb378aa4cb36760118c3e"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108934,7 +108934,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/46bcabf552548de2f2fb4f4c3781d10aa2cd8e3699be5b5616a6c4df1039f981"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109019,7 +109019,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ae6a965e363eb206757d4b00741e2b7c0937f1efbb256df9007177421ded6962"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109078,8 +109078,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -109105,7 +109105,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/937e0b01afe0b72a92d8b5cd0284f057240e833d783f5efb1385f9f5a600c320"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109191,7 +109191,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/85733cc2d4fc2697579777f402c154603fd6576921698ed601bd636420329fe4"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109277,7 +109277,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d561097aaf56697eafd98e5fe24297866c9ea64375db931fa99dc8dfd640b84c"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109362,7 +109362,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1915e2b4792be27bedf68c2e496d5dcf0f870656263f3195bf2e5ea225af90e8"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109421,8 +109421,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -109447,7 +109447,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5c1b00db39b643a1540d7c0d41bb4f6a8f12f76963f694fe15e30d7159c6dd42"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109506,8 +109506,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -109534,7 +109534,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a1207ab455644e9c9ba6a822f4bef88a519893421821c6840a6ec8bbf51bedd1"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109619,7 +109619,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/82fc8392dbf1d4f87aaaf087448566ae36d9387e47758c5645ef72369c7fe63f"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109678,8 +109678,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -109706,7 +109706,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/83fbae547d319db480b78f3256d0f4dd1b21123458a547cd5688a23702a2393a"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109765,8 +109765,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -109792,7 +109792,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/80f9844f1582858b5afd0259e0d8f2b8f26a2e71f08bb0d43ae1a1850e3b2a41"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109878,7 +109878,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0b5981059d2626952a96b9f06aaebe909697ebe7b9f9623d3f7ef127e2ff981a"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109964,7 +109964,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/87153046bb0e4d822defedf4546ae51f4e68402f3b10872f28f5ea8611774eac"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -117148,7 +117148,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e8b7503f40fbcc41ed6769584b410da29827e505160290335454214074b7a511"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1006YR",
@@ -124334,7 +124334,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e8b7503f40fbcc41ed6769584b410da29827e505160290335454214074b7a511"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -132669,7 +132669,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1006YR",
@@ -140981,8 +140981,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.cloudsyncd/abrisk",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -141006,7 +141006,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -141187,8 +141187,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -141213,7 +141213,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1c4e9a6a9bcce85414ef68e51bb2b0b8a869613ffd17dfde4062f84a17f4f249"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141299,7 +141299,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4f9bfba5dc5b19360bd785ac5df0da4310e90da7cf3c0c1330ee77de037e0ee9"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141386,7 +141386,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/dd9f917582660b3d1623203343a57c8984e95b4503cf2fd9295fbda832d3bf6b"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141471,7 +141471,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b056036d41d9992cde1cff4c9db6ca343ce86e41fd4394b382df0db6d1c81989"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141530,8 +141530,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -141557,7 +141557,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/503b965c67a4712791ce7cbdcbecd492fcb85bdbebb777ebffb4aa74708eb3c6"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141642,7 +141642,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0eefe5dd5605680e24f2b6c0cb75f5dcdc4688b7c0f8ee2986a592a326cabc5f"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141727,7 +141727,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/eea3fc56edae8f987bd841192f5810d240d27662e976d1087a68945f0e923172"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141813,7 +141813,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1db680ecf7e3c1668f2454df9d661fe3bf84a4e82031725bd871f8eeffd59eff"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141898,7 +141898,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a0d1321649b45899e56bd86f5dffec509f0cb8ac6e44acafb38f55649a69cbb0"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141957,8 +141957,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -141984,7 +141984,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/323214d1eb020eb1919c87bc48541f1e2997082279969adc77f52b6cc17f0135"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -144919,7 +144919,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/2d352712cad9e47d9c8ce0b62589e7c09c2a5dd97bd35bf72140a252cc600ea3"
       },
-      "detected_at": "2026-11-14T15:28:11.156712+00:00"
+      "detected_at": "2026-11-14T15:28:11.156712+00:00",
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -145495,7 +145496,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/ae4f1b9547db90636514df913a422eff22ebf1cf60712e1f1ec5753b6e26a9e8"
       },
-      "detected_at": "2026-11-14T15:28:11.156712+00:00"
+      "detected_at": "2026-11-14T15:28:11.156712+00:00",
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -146039,8 +146041,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -146065,7 +146067,3237 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/e5566d680f0c6484b51bceb7d737340bd43aff97164b24bff8b326d02c038af4"
       },
-      "detected_at": "2026-11-14T15:28:11.156712+00:00"
+      "detected_at": "2026-11-14T15:28:11.156712+00:00",
+      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "namespace": "macos_stealers_Generic_stealers_yar",
+      "tags": [],
+      "meta": {
+        "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-14",
+        "platform": "macOS",
+        "family": "ICMacOs",
+        "sample": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x4e502d",
+          "identifier": "$author_tg",
+          "data_preview": "https://t.me/ICMACOS"
+        },
+        {
+          "offset": "0x4eebb1",
+          "identifier": "$author_forum",
+          "data_preview": "https://forum.exploit.in/topic/291615/"
+        },
+        {
+          "offset": "0x4e9010",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x4eb4bf",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x4e1ece",
+          "identifier": "$op_zip",
+          "data_preview": "organized.zip"
+        },
+        {
+          "offset": "0x4e5f65",
+          "identifier": "$op_log",
+          "data_preview": "/tmp/.cache-update.log"
+        },
+        {
+          "offset": "0x4eca20",
+          "identifier": "$op_dev_env",
+          "data_preview": "DevSecrets: %d env files collected"
+        },
+        {
+          "offset": "0x4e6898",
+          "identifier": "$op_gcloud",
+          "data_preview": "gcloud_credentials.json"
+        },
+        {
+          "offset": "0x4f5640",
+          "identifier": "$op_msg_wa",
+          "data_preview": "group.net.whatsapp.WhatsApp.shared"
+        },
+        {
+          "offset": "0x4e804b",
+          "identifier": "$op_msg_dc",
+          "data_preview": "Discord leveldb: %s copied"
+        },
+        {
+          "offset": "0x4e6939",
+          "identifier": "$op_exodus",
+          "data_preview": "Exodus: collection done"
+        },
+        {
+          "offset": "0x4e1289",
+          "identifier": "$op_grabber",
+          "data_preview": "Filegrabber"
+        }
+      ],
+      "sample_sha256": "bc8d70f000e73c0c7a69a2676805190e7109cab59df3e34c5a74d2cb7f13a7e4",
+      "sample_md5": "83f38d531dbbbb8462d6b5c86a3bc5cc",
+      "sample_name": "bc8d70f000e73c0c7a69a2676805190e7109cab59df3e34c5a74d2cb7f13a7e4.macho",
+      "sample_size_bytes": 10299312,
+      "source_feed": "MalwareBazaar",
+      "mb_metadata": {
+        "first_seen": "2026-10-12 12:35:59",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "ICMacOS",
+          "machO",
+          "STRU"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 33,
+        "total_engines": 62,
+        "detection_ratio": "33/62",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 22
+          }
+        ],
+        "names": [
+          "bc8d70f000e73c0c7a69a2676805190e7109cab59df3e34c5a74d2cb7f13a7e4.macho",
+          "8zk77.exe",
+          "ICMacOs"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "macho"
+        ],
+        "reputation": -1,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-IV",
+          "ESET-NOD32": "OSX/PSW.Agent.KF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/bc8d70f000e73c0c7a69a2676805190e7109cab59df3e34c5a74d2cb7f13a7e4"
+      },
+      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "namespace": "macos_stealers_Generic_stealers_yar",
+      "tags": [],
+      "meta": {
+        "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-14",
+        "platform": "macOS",
+        "family": "ICMacOs",
+        "sample": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x59b695",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x59b6b9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x5bbe30",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69c299",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69c2cc",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69c307",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69c340",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69c36e",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69c39d",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d099e",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d09fa",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0a37",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0a7c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0ac1",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0b03",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0b45",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0b87",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0bc1",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0c08",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0c50",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0c95",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6d0cda",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ee168",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ee1a9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ee1ed",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ef7a4",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ef7e8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ef86d",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x957040",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x957064",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x4f0cdc",
+          "identifier": "$author_tg",
+          "data_preview": "https://t.me/ICMACOS"
+        },
+        {
+          "offset": "0x4fb168",
+          "identifier": "$author_forum",
+          "data_preview": "https://forum.exploit.in/topic/291615/"
+        },
+        {
+          "offset": "0x4f4ffd",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x4f77ca",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x4ed86b",
+          "identifier": "$op_zip",
+          "data_preview": "organized.zip"
+        },
+        {
+          "offset": "0x4f1ce2",
+          "identifier": "$op_log",
+          "data_preview": "/tmp/.cache-update.log"
+        },
+        {
+          "offset": "0x59b7f3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x5b9503",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a7c9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a7f7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a82a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a858",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a890",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a8b9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a8ea",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a914",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a944",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a974",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a9b2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69a9e2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69aa12",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69aa51",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69aa8a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69aacb",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ab0d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ab49",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ab77",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69abab",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69abde",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ac11",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ac45",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ac75",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69aca4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69acd4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ad0d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ad4a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ad83",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69adbc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69adf3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ae2e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ae5e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69ae91",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69aec7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69aefe",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69af2f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69af63",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69af99",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69afca",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b00a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b04a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b07d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b0ae",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b0e5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b11c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b152",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b191",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69b1cb",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6d13df",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6d140c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6d143d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6ede51",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6ede98",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6edee7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6edf2c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6edf72",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6edfb8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x95719e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x4f26df",
+          "identifier": "$op_dev_start",
+          "data_preview": "collectDevSecrets START"
+        },
+        {
+          "offset": "0x4f8e74",
+          "identifier": "$op_dev_env",
+          "data_preview": "DevSecrets: %d env files collected"
+        },
+        {
+          "offset": "0x4f2683",
+          "identifier": "$op_gcloud",
+          "data_preview": "gcloud_credentials.json"
+        },
+        {
+          "offset": "0x501f22",
+          "identifier": "$op_msg_wa",
+          "data_preview": "group.net.whatsapp.WhatsApp.shared"
+        },
+        {
+          "offset": "0x4f599d",
+          "identifier": "$op_msg_im",
+          "data_preview": "Messages: dir not found, skip"
+        },
+        {
+          "offset": "0x4f3fce",
+          "identifier": "$op_msg_dc",
+          "data_preview": "Discord leveldb: %s copied"
+        },
+        {
+          "offset": "0x4f273b",
+          "identifier": "$op_exodus",
+          "data_preview": "Exodus: collection done"
+        },
+        {
+          "offset": "0x4ecbab",
+          "identifier": "$op_grabber",
+          "data_preview": "Filegrabber"
+        }
+      ],
+      "sample_sha256": "a9b21ac0112855b835b5e5850ef167471eff7305d42b3a8104c1961b257a444d",
+      "sample_md5": "6506b8b269e42269fe4e8da39181238d",
+      "sample_name": "a9b21ac0112855b835b5e5850ef167471eff7305d42b3a8104c1961b257a444d.macho",
+      "sample_size_bytes": 10387392,
+      "source_feed": "MalwareBazaar",
+      "mb_metadata": {
+        "first_seen": "2026-10-12 12:35:42",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "ICMacOS",
+          "machO",
+          "STRU"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 31,
+        "total_engines": 58,
+        "detection_ratio": "31/58",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 20
+          },
+          {
+            "value": "adware",
+            "count": 1
+          }
+        ],
+        "names": [
+          "a9b21ac0112855b835b5e5850ef167471eff7305d42b3a8104c1961b257a444d.macho",
+          "jiymy74.exe"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "service-scan",
+          "64bits"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Icarus!AMTB",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-IV",
+          "ESET-NOD32": "OSX/PSW.Agent.KF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/a9b21ac0112855b835b5e5850ef167471eff7305d42b3a8104c1961b257a444d"
+      },
+      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "namespace": "macos_stealers_Generic_stealers_yar",
+      "tags": [],
+      "meta": {
+        "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-14",
+        "platform": "macOS",
+        "family": "ICMacOs",
+        "sample": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x5b24b5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x5b24d9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x5d35d1",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6b8664",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6b8697",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6b86d2",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6b870b",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6b8739",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6b8768",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ecd5a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ecdb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ecdf3",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ece38",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ece7d",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ecebf",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ecf01",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ecf43",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ecf7d",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ecfc4",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ed00c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ed051",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6ed096",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x70ae8e",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x70aecf",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x70af13",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x70c470",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x70c4b4",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x70c539",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x97b040",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x97b064",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c614",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c64c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c692",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c6d8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c71b",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c75e",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c7a1",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c7dc",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c824",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c86d",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c8b3",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c8f9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c93f",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c973",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c9af",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5c9de",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xe5ca0e",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x504505",
+          "identifier": "$author_tg",
+          "data_preview": "https://t.me/ICMACOS"
+        },
+        {
+          "offset": "0x50f7ae",
+          "identifier": "$author_forum",
+          "data_preview": "https://forum.exploit.in/topic/291615/"
+        },
+        {
+          "offset": "0x509643",
+          "identifier": "$op_plist",
+          "data_preview": "com.apple.systemupdater.plist"
+        },
+        {
+          "offset": "0x5019b8",
+          "identifier": "$op_pdir",
+          "data_preview": ".systemd-helper"
+        },
+        {
+          "offset": "0x508c4e",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x50b4e3",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x500d1d",
+          "identifier": "$op_zip",
+          "data_preview": "organized.zip"
+        },
+        {
+          "offset": "0x5055d9",
+          "identifier": "$op_log",
+          "data_preview": "/tmp/.cache-update.log"
+        },
+        {
+          "offset": "0x51522a",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x515536",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x50ff69",
+          "identifier": "$op_cis",
+          "data_preview": "CIS country detected"
+        },
+        {
+          "offset": "0x5072e6",
+          "identifier": "$op_pwd",
+          "data_preview": "Restuck: invalid password"
+        },
+        {
+          "offset": "0x5b266b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x5d0c20",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6b94",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6bc2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6bf5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6c23",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6c5b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6c84",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6cb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6cdf",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6d0f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6d3f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6d7d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6dad",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6ddd",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6e1c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6e55",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6e96",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6ed8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6f14",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6f42",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6f76",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6fa9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b6fdc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7010",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7040",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b706f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b709f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b70d8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7115",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b714e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7187",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b71be",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b71f9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7229",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b725c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7292",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b72c9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b72fa",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b732e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7364",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7395",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b73d5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7415",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7448",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7479",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b74b0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b74e7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b751d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b755c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6b7596",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6eda84",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6edab1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6edae2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x70ab77",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x70abbe",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x70ac0d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x70ac52",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x70ac98",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x70acde",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x97b1f6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5af83",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5afc5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b008",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b045",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b084",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b0c5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b106",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b146",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b17e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b1b6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b1ee",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b225",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b25c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b296",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b2d2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b30c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b344",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b37e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b3b7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b3e6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b41a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b459",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b48a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b4b4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b4e5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b517",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b550",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b585",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b5b9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b5e8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b61c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b64c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b681",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b6b6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b6ea",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b71e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b749",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b77a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b7ab",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b7db",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b80a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b83c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b87b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe5b8b4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe60141",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe6016f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xeb9d57",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xeb9d8d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x5060e0",
+          "identifier": "$op_dev_start",
+          "data_preview": "collectDevSecrets START"
+        },
+        {
+          "offset": "0x50d15d",
+          "identifier": "$op_dev_env",
+          "data_preview": "DevSecrets: %d env files collected"
+        },
+        {
+          "offset": "0x506056",
+          "identifier": "$op_gcloud",
+          "data_preview": "gcloud_credentials.json"
+        },
+        {
+          "offset": "0x516c34",
+          "identifier": "$op_msg_wa",
+          "data_preview": "group.net.whatsapp.WhatsApp.shared"
+        },
+        {
+          "offset": "0x509626",
+          "identifier": "$op_msg_im",
+          "data_preview": "Messages: dir not found, skip"
+        },
+        {
+          "offset": "0x510694",
+          "identifier": "$op_msg_tg",
+          "data_preview": "Telegram: tdata copied"
+        },
+        {
+          "offset": "0x507bb5",
+          "identifier": "$op_msg_dc",
+          "data_preview": "Discord leveldb: %s copied"
+        },
+        {
+          "offset": "0x504d51",
+          "identifier": "$op_wallets",
+          "data_preview": "Wallets: %d collected"
+        },
+        {
+          "offset": "0x50613c",
+          "identifier": "$op_exodus",
+          "data_preview": "Exodus: collection done"
+        },
+        {
+          "offset": "0x4fff44",
+          "identifier": "$op_grabber",
+          "data_preview": "Filegrabber"
+        }
+      ],
+      "sample_sha256": "e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31",
+      "sample_md5": "8e11dac9edde9d520bcbcad047e8192e",
+      "sample_name": "e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31.macho",
+      "sample_size_bytes": 15477168,
+      "source_feed": "MalwareBazaar",
+      "mb_metadata": {
+        "first_seen": "2026-10-12 12:35:31",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "ICMacOS",
+          "machO",
+          "STRU"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 35,
+        "total_engines": 63,
+        "detection_ratio": "35/63",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 22
+          },
+          {
+            "value": "adware",
+            "count": 1
+          }
+        ],
+        "names": [
+          "e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31.macho",
+          "5chupli.exe",
+          "ICMacOs_amd64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "macho"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Icarus!AMTB",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-IV",
+          "ESET-NOD32": "OSX/PSW.Agent.KF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31"
+      },
+      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "namespace": "macos_stealers_Generic_stealers_yar",
+      "tags": [],
+      "meta": {
+        "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-14",
+        "platform": "macOS",
+        "family": "ICMacOs",
+        "sample": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x53efd5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x53eff9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x561bd4",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a484",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a4b7",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a4f2",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a52b",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a559",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x64a588",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ec93",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ecef",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ed2c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ed71",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67edb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67edf8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ee3a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ee7c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67eeb6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67eefd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ef45",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67ef8a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x67efcf",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cad7",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cb18",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69cb5c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e0b9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e0fd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x69e182",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8f0040",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8f0064",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabbc3",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabbfb",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabc41",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabc87",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabcca",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd0d",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd50",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabd8b",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabdd3",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe1c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabe62",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabea8",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabeee",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf22",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf5e",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabf8d",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0xdabfbd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x487548",
+          "identifier": "$author_tg",
+          "data_preview": "https://t.me/ICMACOS"
+        },
+        {
+          "offset": "0x492879",
+          "identifier": "$author_forum",
+          "data_preview": "https://forum.exploit.in/topic/291615/"
+        },
+        {
+          "offset": "0x48c6f0",
+          "identifier": "$op_plist",
+          "data_preview": "com.apple.systemupdater.plist"
+        },
+        {
+          "offset": "0x4849d6",
+          "identifier": "$op_pdir",
+          "data_preview": ".systemd-helper"
+        },
+        {
+          "offset": "0x48bcdf",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x48e5cb",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x483d2d",
+          "identifier": "$op_zip",
+          "data_preview": "organized.zip"
+        },
+        {
+          "offset": "0x48861c",
+          "identifier": "$op_log",
+          "data_preview": "/tmp/.cache-update.log"
+        },
+        {
+          "offset": "0x498280",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x49858c",
+          "identifier": "$op_tcc",
+          "data_preview": "Safari: TCC BLOCKED"
+        },
+        {
+          "offset": "0x492fe8",
+          "identifier": "$op_cis",
+          "data_preview": "CIS country detected"
+        },
+        {
+          "offset": "0x48a329",
+          "identifier": "$op_pwd",
+          "data_preview": "Restuck: invalid password"
+        },
+        {
+          "offset": "0x49283e",
+          "identifier": "$op_shell",
+          "data_preview": "Command timeout (30s)"
+        },
+        {
+          "offset": "0x53f18b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x55eeb9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648971",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64899f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6489d2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a00",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a38",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a61",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648a92",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648abc",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648aec",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b1c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b5a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648b8a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648bba",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648bf9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648c32",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648c73",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648cb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648cf1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d1f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d53",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648d86",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648db9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648ded",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e1d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e4c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648e7c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648eb5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648ef2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f2b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f64",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648f9b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x648fd6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649006",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649039",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64906f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6490a6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6490d7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64910b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649141",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649172",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6491b2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6491f2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649225",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649256",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x64928d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6492c4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x6492fa",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649339",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x649373",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f9bd",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67f9ea",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x67fa1b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c7c0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c807",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c856",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c89b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c8e1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x69c927",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x8f01f6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa532",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa574",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa5b7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa5f4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa633",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa674",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa6b5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa6f5",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa72d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa765",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa79d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa7d4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa80b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa845",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa881",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa8bb",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa8f3",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa92d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa966",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa995",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaa9c9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa08",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa39",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa63",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaa94",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaac6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaaff",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab34",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab68",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaab97",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaabcb",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaabfb",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac30",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac65",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaac99",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaaccd",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaacf8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad29",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad5a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaad8a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaadb9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaadeb",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaae2a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaae63",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaf6f0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xdaf71e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe0906e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0xe090a4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x489123",
+          "identifier": "$op_dev_start",
+          "data_preview": "collectDevSecrets START"
+        },
+        {
+          "offset": "0x490224",
+          "identifier": "$op_dev_env",
+          "data_preview": "DevSecrets: %d env files collected"
+        },
+        {
+          "offset": "0x489099",
+          "identifier": "$op_gcloud",
+          "data_preview": "gcloud_credentials.json"
+        },
+        {
+          "offset": "0x499cc0",
+          "identifier": "$op_msg_wa",
+          "data_preview": "group.net.whatsapp.WhatsApp.shared"
+        },
+        {
+          "offset": "0x48c6d3",
+          "identifier": "$op_msg_im",
+          "data_preview": "Messages: dir not found, skip"
+        },
+        {
+          "offset": "0x493713",
+          "identifier": "$op_msg_tg",
+          "data_preview": "Telegram: tdata copied"
+        },
+        {
+          "offset": "0x48ac11",
+          "identifier": "$op_msg_dc",
+          "data_preview": "Discord leveldb: %s copied"
+        },
+        {
+          "offset": "0x487d94",
+          "identifier": "$op_wallets",
+          "data_preview": "Wallets: %d collected"
+        },
+        {
+          "offset": "0x48917f",
+          "identifier": "$op_exodus",
+          "data_preview": "Exodus: collection done"
+        },
+        {
+          "offset": "0x482f5f",
+          "identifier": "$op_grabber",
+          "data_preview": "Filegrabber"
+        }
+      ],
+      "sample_sha256": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4",
+      "sample_md5": "386922e499ef6c147fd158603bd7b3ce",
+      "sample_name": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4.macho",
+      "sample_size_bytes": 14866642,
+      "source_feed": "MalwareBazaar",
+      "mb_metadata": {
+        "first_seen": "2026-10-12 12:35:14",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "ICMacOS",
+          "machO",
+          "STRU"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 29,
+        "total_engines": 55,
+        "detection_ratio": "29/55",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "count": 20,
+            "value": "trojan"
+          },
+          {
+            "count": 1,
+            "value": "adware"
+          }
+        ],
+        "names": [
+          "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4.macho",
+          "8x9g1g.exe",
+          "ICMacOs(1)_arm64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "self-signed",
+          "64bits",
+          "arm",
+          "macho"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Icarus!AMTB",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-IV",
+          "ESET-NOD32": "OSX/PSW.Agent.KF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "namespace": "macos_stealers_Generic_stealers_yar",
+      "tags": [],
+      "meta": {
+        "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+        "author": "Chandra Kant Bauri",
+        "date": "2026-11-14",
+        "platform": "macOS",
+        "family": "ICMacOs",
+        "sample": "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x52a215",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x52a239",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x54d433",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6310d9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x63110c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x631147",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x631180",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6311ae",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6311dd",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6658f7",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665953",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665990",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6659d5",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665a1a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665a5c",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665a9e",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665ae0",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665b1a",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665b61",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665ba9",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665bee",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x665c33",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x682dd1",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x682e12",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x682e56",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x68440d",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x684451",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x6844d6",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8d0040",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x8d0064",
+          "identifier": "$author_mod",
+          "data_preview": "github.com/ultra-supara/ICMacOs"
+        },
+        {
+          "offset": "0x475dac",
+          "identifier": "$author_tg",
+          "data_preview": "https://t.me/ICMACOS"
+        },
+        {
+          "offset": "0x480282",
+          "identifier": "$author_forum",
+          "data_preview": "https://forum.exploit.in/topic/291615/"
+        },
+        {
+          "offset": "0x47a103",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x47c927",
+          "identifier": "$op_stage",
+          "data_preview": "/tmp/.systemd-private-helper"
+        },
+        {
+          "offset": "0x472926",
+          "identifier": "$op_zip",
+          "data_preview": "organized.zip"
+        },
+        {
+          "offset": "0x476db2",
+          "identifier": "$op_log",
+          "data_preview": "/tmp/.cache-update.log"
+        },
+        {
+          "offset": "0x52a373",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x54a79c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f5c6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f5f4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f627",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f655",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f68d",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f6b6",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f6e7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f711",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f741",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f771",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f7af",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f7df",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f80f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f84e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f887",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f8c8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f90a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f946",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f974",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f9a8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62f9db",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fa0e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fa42",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fa72",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62faa1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fad1",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fb0a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fb47",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fb80",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fbb9",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fbf0",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fc2b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fc5b",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fc8e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fcc4",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fcfb",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fd2c",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fd60",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fd96",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fdc7",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fe07",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fe47",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fe7a",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62feab",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62fee2",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62ff19",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62ff4f",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62ff8e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x62ffc8",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x666338",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x666365",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x666396",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x682aba",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x682b01",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x682b50",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x682b95",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x682bdb",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x682c21",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x8d019e",
+          "identifier": "$op_keychain",
+          "data_preview": "moond4rk/keychainbreaker"
+        },
+        {
+          "offset": "0x4777af",
+          "identifier": "$op_dev_start",
+          "data_preview": "collectDevSecrets START"
+        },
+        {
+          "offset": "0x47dfb0",
+          "identifier": "$op_dev_env",
+          "data_preview": "DevSecrets: %d env files collected"
+        },
+        {
+          "offset": "0x477753",
+          "identifier": "$op_gcloud",
+          "data_preview": "gcloud_credentials.json"
+        },
+        {
+          "offset": "0x486ffd",
+          "identifier": "$op_msg_wa",
+          "data_preview": "group.net.whatsapp.WhatsApp.shared"
+        },
+        {
+          "offset": "0x47aabf",
+          "identifier": "$op_msg_im",
+          "data_preview": "Messages: dir not found, skip"
+        },
+        {
+          "offset": "0x47909f",
+          "identifier": "$op_msg_dc",
+          "data_preview": "Discord leveldb: %s copied"
+        },
+        {
+          "offset": "0x47780b",
+          "identifier": "$op_exodus",
+          "data_preview": "Exodus: collection done"
+        },
+        {
+          "offset": "0x471c7d",
+          "identifier": "$op_grabber",
+          "data_preview": "Filegrabber"
+        }
+      ],
+      "sample_sha256": "c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c",
+      "sample_md5": "31d59569d1f6fa2e4b197a07d1069c13",
+      "sample_name": "c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c.macho",
+      "sample_size_bytes": 9927026,
+      "source_feed": "MalwareBazaar",
+      "mb_metadata": {
+        "first_seen": "2026-10-12 12:34:57",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "ICMacOS",
+          "machO",
+          "STRU"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 52,
+        "detection_ratio": "28/52",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 17
+          },
+          {
+            "value": "adware",
+            "count": 1
+          }
+        ],
+        "names": [
+          "c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c.macho",
+          "b548809m.exe"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Icarus!AMTB",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-IV",
+          "ESET-NOD32": "OSX/PSW.Agent.KF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c"
+      },
+      "detected_at": "2026-11-15T01:38:36.980750+00:00"
     }
   ],
   "rules": [
@@ -146236,6 +149468,20 @@ window.YARAFY_DATA = {
       "strings_count": 23,
       "total_hits": 266,
       "source_code": "rule OSX_Malware_EvilQuest_ThiefQuest {\n    meta:\n        description     = \"Detects OSX.EvilQuest / ThiefQuest / MacRansom.K multi-stage macOS malware\"\n        author          = \"Chandra kant\"\n        date            = \"2026-10-30\"\n        threat_type     = \"Ransomware / InfoStealer / Backdoor / Keylogger\"\n        platform        = \"macOS\"\n        family          = \"OSX.EvilQuest\"\n        reference       = \"https://objective-see.org/blog/blog_0x59.html\"\n        sample_sha256   = \"7273b091529f3fa0fc9fd642553ff3b26daa9b1afc4f6ad49fd853e9d420fc7a\"\n\n    strings:\n        // 1. High-Entropy Cryptographic Artifacts (High-Quality 4-byte AC Atoms)\n        $crypto_key_seed    = \"XY345N5s#p$(<d6HjaKvt!DL+Maiy]-0;amP5Be?a}GHI|RQ_2[7%aV{8a.^)~E>:\" ascii fullword\n        $crypto_alpha_61    = \"ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvxyz01234567890\" ascii fullword\n        $crypto_prime_table = { 02 03 05 07 0B 0D 11 13 17 1D 1F 25 29 2B 2F 35 3B 3D 43 47 49 4F 53 59 61 65 67 6B 6D 71 7F 83 }\n\n        // 2. Author's Reversed Source Tree Tokens (\"effectiveidiot\")\n        $path_rev_1    = \"/e/toidievitceffe/libpersist/rennur.c\" ascii\n        $path_rev_2    = \"/e/toidievitceffe/libtpyrc/tpyrc.c\" ascii\n        $path_rev_3    = \"/e/toidievitceffe/libpersist/persist.c\" ascii\n        $path_rev_base = \"/e/toidievitceffe/\" ascii\n\n        // 3. Reflective In-Memory Bundle Loader Symbols & Assertions\n        $loader_entry    = \"kBundleEntryPointName\" ascii fullword\n        $loader_assert_1 = \"_16taSim->magic == FAT_MAGIC\" ascii\n        $loader_assert_2 = \"_16taSim->nfat_arch > 0\" ascii\n        $loader_assert_3 = \"(1 << _16vXzmm->align) <= getpagesize()\" ascii\n        $loader_assert_4 = \"(dyldErr == NSObjectFileImageSuccess) == (*ofiPtr != NULL)\" ascii\n        $loader_assert_5 = \"*codeSizePtr >= (sizeof(*_16taSim) + (sizeof(*_16uCPmm) * _16taSim->nfat_arch))\" ascii\n\n        // 4. Exact Obfuscation Symbol Tags (Optimized linear string search; avoids regex overhead)\n        $tag_1 = \"_16HEASh\" ascii fullword\n        $tag_2 = \"_16taSim\" ascii fullword\n        $tag_3 = \"_16ythNm\" ascii fullword\n        $tag_4 = \"_16iPrGk\" ascii fullword\n        $tag_5 = \"_16ZRHQh\" ascii fullword\n        $tag_6 = \"_16fUggs\" ascii fullword\n\n        // 5. Execution & Runtime Strings\n        $str_priv_1 = \"This application has to be run by root\" ascii\n        $str_priv_2 = \"This program is designed to run with admin privileges\" ascii\n        $str_ver    = \"EI %s\\n\\n\" ascii\n        $str_spot   = \"Error writing spot data\" ascii\n\n    condition:\n        // Performance Guard: Immediately skip files > 15MB without deep scanning\n        filesize < 15MB\n        // Format Guard: Validate Mach-O Magic Header at offset 0\n        // (64-bit LE/BE, 32-bit LE/BE, Universal FAT LE/BE)\n        and (\n            uint32(0) == 0xfeedfacf or\n            uint32(0) == 0xcffaedfe or\n            uint32(0) == 0xfeedface or\n            uint32(0) == 0xcefaedfe or\n            uint32(0) == 0xcafebabe or\n            uint32(0) == 0xbebafeca\n        )\n        and (\n            // Zero-FP Tier 1: Unique 67-char high-entropy seed or reversed project paths\n            $crypto_key_seed or\n            $path_rev_base or\n            // Zero-FP Tier 2: Crypto tables corroborated with secondary artifacts\n            ($crypto_alpha_61 and ($crypto_prime_table or 1 of ($path_rev_*) or 1 of ($loader_*) or 1 of ($str_*))) or\n            ($crypto_prime_table and (1 of ($path_rev_*) or 1 of ($loader_*) or 1 of ($str_*))) or\n            // Zero-FP Tier 3: Corroborated reflective loader & obfuscated symbol tags\n            (2 of ($loader_*) and (1 of ($tag_*) or 1 of ($str_*))) or\n            (3 of ($tag_*) and 1 of ($str_*))\n        )\n}"
+    },
+    {
+      "rule_name": "osx_stealer_icmacos",
+      "platform": "macos",
+      "file_path": "yara-rules/macos/stealers/Generic_stealers.yar",
+      "description": "ICMacOs Apple Silicon stealer across multiple campaign domains",
+      "malware_family": "ICMacOs",
+      "author": "Chandra Kant Bauri",
+      "date": "2026-11-14",
+      "severity": "Medium",
+      "tags": [],
+      "strings_count": 23,
+      "total_hits": 5,
+      "source_code": "rule osx_stealer_icmacos {\n    meta:\n        description = \"ICMacOs Apple Silicon stealer across multiple campaign domains\"\n        author = \"Chandra Kant Bauri\"\n        date = \"2026-11-14\"\n        platform = \"macOS\"\n        family = \"ICMacOs\"\n        sample = \"d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4\"\n\n    strings:\n        // Author and module anchors\n        $author_mod       = \"github.com/ultra-supara/ICMacOs\" ascii\n        $author_tg        = \"https://t.me/ICMACOS\" ascii\n        $author_forum     = \"https://forum.exploit.in/topic/291615/\" ascii\n\n        // Staging and persistence markers\n        $op_plist         = \"com.apple.systemupdater.plist\" ascii\n        $op_pdir          = \".systemd-helper\" ascii\n        $op_stage         = \"/tmp/.systemd-private-helper\" ascii\n        $op_zip           = \"organized.zip\" ascii\n        $op_log           = \"/tmp/.cache-update.log\" ascii\n\n        // Evasion and operational indicators\n        $op_tcc           = \"Safari: TCC BLOCKED\" ascii\n        $op_cis           = \"CIS country detected\" ascii\n        $op_pwd           = \"Restuck: invalid password\" ascii\n        $op_shell         = \"Command timeout (30s)\" ascii\n        $op_keychain      = \"moond4rk/keychainbreaker\" ascii\n\n        // Cloud and developer secret harvesting\n        $op_dev_start     = \"collectDevSecrets START\" ascii\n        $op_dev_env       = \"DevSecrets: %d env files collected\" ascii\n        $op_gcloud        = \"gcloud_credentials.json\" ascii\n\n        // Messaging and communication theft\n        $op_msg_wa        = \"group.net.whatsapp.WhatsApp.shared\" ascii\n        $op_msg_im        = \"Messages: dir not found, skip\" ascii\n        $op_msg_tg        = \"Telegram: tdata copied\" ascii\n        $op_msg_dc        = \"Discord leveldb: %s copied\" ascii\n\n        // Cryptocurrency wallets and file harvesting\n        $op_wallets       = \"Wallets: %d collected\" ascii\n        $op_exodus        = \"Exodus: collection done\" ascii\n        $op_grabber       = \"Filegrabber\" ascii\n\n    condition:\n        (uint32(0) == 0xfeedfacf or uint32(0) == 0xcffaedfe) and\n        \n        // file size envelope (Go compiled stealer cluster is ~14.8 MB)\n        (filesize > 5MB and filesize < 35MB) and\n        \n        // Either author identity matches, OR at least 4 operational markers co-occur\n        (\n            1 of ($author*) or\n            4 of ($op_*)\n        )\n}"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
