@@ -105846,8 +105846,8 @@ window.YARAFY_DATA = {
       "vt_enrichment": {
         "vt_status": "success",
         "positives": 0,
-        "total_engines": 63,
-        "detection_ratio": "0/63",
+        "total_engines": 62,
+        "detection_ratio": "0/62",
         "suggested_threat_label": "unknown",
         "popular_threat_category": [],
         "names": [
@@ -105855,10 +105855,10 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "arm",
-          "64bits",
           "self-signed",
-          "macho"
+          "macho",
+          "64bits",
+          "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {},
@@ -105900,8 +105900,8 @@ window.YARAFY_DATA = {
       "vt_enrichment": {
         "vt_status": "success",
         "positives": 0,
-        "total_engines": 63,
-        "detection_ratio": "0/63",
+        "total_engines": 62,
+        "detection_ratio": "0/62",
         "suggested_threat_label": "unknown",
         "popular_threat_category": [],
         "names": [
@@ -105909,10 +105909,10 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "arm",
-          "64bits",
           "self-signed",
-          "macho"
+          "macho",
+          "64bits",
+          "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {},
@@ -106469,11 +106469,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
+          "self-signed",
+          "arm",
           "service-scan",
           "macho",
-          "arm",
-          "self-signed"
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {},
@@ -106525,11 +106525,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
+          "self-signed",
+          "arm",
           "service-scan",
           "macho",
-          "arm",
-          "self-signed"
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {},
@@ -142629,7 +142629,38 @@ window.YARAFY_DATA = {
       "sample_name": "5d00706467733fa7533a627c335242c6dbfff44722ac7bdb30d719d9a31b974a",
       "sample_size_bytes": 1055328,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 26,
+        "total_engines": 63,
+        "detection_ratio": "26/63",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "localfile~.x64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "64bits",
+          "os-credentials",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/5d00706467733fa7533a627c335242c6dbfff44722ac7bdb30d719d9a31b974a"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -142725,7 +142756,38 @@ window.YARAFY_DATA = {
       "sample_name": "5d00706467733fa7533a627c335242c6dbfff44722ac7bdb30d719d9a31b974a",
       "sample_size_bytes": 1055328,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 26,
+        "total_engines": 63,
+        "detection_ratio": "26/63",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "localfile~.x64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "64bits",
+          "os-credentials",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/5d00706467733fa7533a627c335242c6dbfff44722ac7bdb30d719d9a31b974a"
+      }
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -142773,7 +142835,38 @@ window.YARAFY_DATA = {
       "sample_name": "5f3c2f6b4e9bfbad3ee2ead10955aedf7de8ef9af23d7298f5fdb58d88e05b06",
       "sample_size_bytes": 1072736,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 26,
+        "total_engines": 63,
+        "detection_ratio": "26/63",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "localfile~.x64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "os-credentials",
+          "macho",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/5f3c2f6b4e9bfbad3ee2ead10955aedf7de8ef9af23d7298f5fdb58d88e05b06"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -142869,7 +142962,38 @@ window.YARAFY_DATA = {
       "sample_name": "5f3c2f6b4e9bfbad3ee2ead10955aedf7de8ef9af23d7298f5fdb58d88e05b06",
       "sample_size_bytes": 1072736,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 26,
+        "total_engines": 63,
+        "detection_ratio": "26/63",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "localfile~.x64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "os-credentials",
+          "macho",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/5f3c2f6b4e9bfbad3ee2ead10955aedf7de8ef9af23d7298f5fdb58d88e05b06"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -142960,7 +143084,37 @@ window.YARAFY_DATA = {
       "sample_name": "fb2e274ae9dcd0ff6e294d1e4785e06c7023a46abdcf7a063af0ab6f6c6fe251",
       "sample_size_bytes": 979552,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 24,
+        "total_engines": 63,
+        "detection_ratio": "24/63",
+        "suggested_threat_label": "trojan.pamstealer/abtrojan",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          }
+        ],
+        "names": [
+          "localfile~.arm64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "arm",
+          "macho"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/fb2e274ae9dcd0ff6e294d1e4785e06c7023a46abdcf7a063af0ab6f6c6fe251"
+      }
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -143008,7 +143162,37 @@ window.YARAFY_DATA = {
       "sample_name": "6db19db41d3f023a6d5d5444e9362bad9657b9b92af2db90abd261c993a52520",
       "sample_size_bytes": 1051120,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 27,
+        "total_engines": 63,
+        "detection_ratio": "27/63",
+        "suggested_threat_label": "trojan.infostl/pamstealer",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          }
+        ],
+        "names": [
+          "localfile~.x64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "self-signed",
+          "64bits"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/6db19db41d3f023a6d5d5444e9362bad9657b9b92af2db90abd261c993a52520"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -143104,7 +143288,37 @@ window.YARAFY_DATA = {
       "sample_name": "6db19db41d3f023a6d5d5444e9362bad9657b9b92af2db90abd261c993a52520",
       "sample_size_bytes": 1051120,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 27,
+        "total_engines": 63,
+        "detection_ratio": "27/63",
+        "suggested_threat_label": "trojan.infostl/pamstealer",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "localfile~.x64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "self-signed",
+          "64bits"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/6db19db41d3f023a6d5d5444e9362bad9657b9b92af2db90abd261c993a52520"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -143195,7 +143409,38 @@ window.YARAFY_DATA = {
       "sample_name": "a22d3b565ae34e315d8787a2d7f772b325eb8ef74d5917b77e7d5e079bb76470",
       "sample_size_bytes": 979584,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 24,
+        "total_engines": 62,
+        "detection_ratio": "24/62",
+        "suggested_threat_label": "trojan.macho/abtrojan",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 17
+          }
+        ],
+        "names": [
+          "localfile~.arm64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "arm",
+          "64bits",
+          "self-signed",
+          "os-credentials",
+          "macho"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/a22d3b565ae34e315d8787a2d7f772b325eb8ef74d5917b77e7d5e079bb76470"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -143286,7 +143531,37 @@ window.YARAFY_DATA = {
       "sample_name": "234815e6e03e8da6274c8f80d7cc2250ffd81ff3cfea88c61679282881be04dd",
       "sample_size_bytes": 979632,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 24,
+        "total_engines": 62,
+        "detection_ratio": "24/62",
+        "suggested_threat_label": "trojan.macho/pamstealer",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "localfile~.arm64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "arm",
+          "self-signed",
+          "64bits"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/234815e6e03e8da6274c8f80d7cc2250ffd81ff3cfea88c61679282881be04dd"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -143377,7 +143652,37 @@ window.YARAFY_DATA = {
       "sample_name": "96b908b6ab84aba07cbffcdc84aa973a3f7dbbead1a7ca836c4b4b19635fc4bf",
       "sample_size_bytes": 979712,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 23,
+        "total_engines": 63,
+        "detection_ratio": "23/63",
+        "suggested_threat_label": "trojan.pamstealer/abtrojan",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 15
+          }
+        ],
+        "names": [
+          "localfile~.arm64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "macho",
+          "arm"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/96b908b6ab84aba07cbffcdc84aa973a3f7dbbead1a7ca836c4b4b19635fc4bf"
+      }
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -143430,7 +143735,38 @@ window.YARAFY_DATA = {
       "sample_name": "0fe422f752f3e1fa75d3ad4556a1ca2a1a1e39bf883ee54e40698400e799d3f0",
       "sample_size_bytes": 2077360,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 27,
+        "total_engines": 63,
+        "detection_ratio": "27/63",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          }
+        ],
+        "names": [],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "multi-arch",
+          "self-signed",
+          "os-credentials"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/0fe422f752f3e1fa75d3ad4556a1ca2a1a1e39bf883ee54e40698400e799d3f0"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -143596,7 +143932,38 @@ window.YARAFY_DATA = {
       "sample_name": "0fe422f752f3e1fa75d3ad4556a1ca2a1a1e39bf883ee54e40698400e799d3f0",
       "sample_size_bytes": 2077360,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 27,
+        "total_engines": 63,
+        "detection_ratio": "27/63",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "multi-arch",
+          "self-signed",
+          "os-credentials"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/0fe422f752f3e1fa75d3ad4556a1ca2a1a1e39bf883ee54e40698400e799d3f0"
+      }
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -143649,7 +144016,40 @@ window.YARAFY_DATA = {
       "sample_name": "45ce45c4ab0be0b8e07570d60d5fa7211d706c52ad2ae0b1691560121e71052e",
       "sample_size_bytes": 2060928,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 27,
+        "total_engines": 63,
+        "detection_ratio": "27/63",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "FCE936C6.bin"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "arm",
+          "64bits",
+          "multi-arch",
+          "os-credentials",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/45ce45c4ab0be0b8e07570d60d5fa7211d706c52ad2ae0b1691560121e71052e"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -143815,7 +144215,40 @@ window.YARAFY_DATA = {
       "sample_name": "45ce45c4ab0be0b8e07570d60d5fa7211d706c52ad2ae0b1691560121e71052e",
       "sample_size_bytes": 2060928,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 27,
+        "total_engines": 63,
+        "detection_ratio": "27/63",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          }
+        ],
+        "names": [
+          "FCE936C6.bin"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "arm",
+          "64bits",
+          "multi-arch",
+          "os-credentials",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/45ce45c4ab0be0b8e07570d60d5fa7211d706c52ad2ae0b1691560121e71052e"
+      }
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -143868,7 +144301,38 @@ window.YARAFY_DATA = {
       "sample_name": "1286c98e0e858357b3945bd9c15f07dcbf68e8f508ee484207ea47fb718f697d",
       "sample_size_bytes": 2061056,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 26,
+        "total_engines": 62,
+        "detection_ratio": "26/62",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [],
+        "type_description": "Mach-O",
+        "tags": [
+          "arm",
+          "os-credentials",
+          "multi-arch",
+          "self-signed",
+          "macho",
+          "64bits"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/1286c98e0e858357b3945bd9c15f07dcbf68e8f508ee484207ea47fb718f697d"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -144034,7 +144498,38 @@ window.YARAFY_DATA = {
       "sample_name": "1286c98e0e858357b3945bd9c15f07dcbf68e8f508ee484207ea47fb718f697d",
       "sample_size_bytes": 2061056,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 26,
+        "total_engines": 62,
+        "detection_ratio": "26/62",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 16
+          }
+        ],
+        "names": [],
+        "type_description": "Mach-O",
+        "tags": [
+          "arm",
+          "os-credentials",
+          "multi-arch",
+          "self-signed",
+          "macho",
+          "64bits"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/1286c98e0e858357b3945bd9c15f07dcbf68e8f508ee484207ea47fb718f697d"
+      }
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -144087,7 +144582,38 @@ window.YARAFY_DATA = {
       "sample_name": "0039b2a4d422d9a1c7990df9046fa77245852fef1dcbe1772a582f0adf459c8b",
       "sample_size_bytes": 2060992,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 24,
+        "total_engines": 62,
+        "detection_ratio": "24/62",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "multi-arch",
+          "arm",
+          "os-credentials",
+          "macho"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/0039b2a4d422d9a1c7990df9046fa77245852fef1dcbe1772a582f0adf459c8b"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -144253,7 +144779,38 @@ window.YARAFY_DATA = {
       "sample_name": "0039b2a4d422d9a1c7990df9046fa77245852fef1dcbe1772a582f0adf459c8b",
       "sample_size_bytes": 2060992,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 24,
+        "total_engines": 62,
+        "detection_ratio": "24/62",
+        "suggested_threat_label": "trojan.infostl/macho",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "multi-arch",
+          "arm",
+          "os-credentials",
+          "macho"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "Sophos": "OSX/InfoStl-IX",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/0039b2a4d422d9a1c7990df9046fa77245852fef1dcbe1772a582f0adf459c8b"
+      }
     },
     {
       "rule_name": "OSX_Avenger_Stealer",
@@ -144344,7 +144901,37 @@ window.YARAFY_DATA = {
       "sample_name": "4886ea2ed8fb7421ac16d687a29c46b66bdf87987c3bbf8d4cb1bb32a3fc157a",
       "sample_size_bytes": 979648,
       "source_feed": "Local File",
-      "detected_at": "2026-11-09T00:01:32.363604+00:00"
+      "detected_at": "2026-11-09T00:01:32.363604+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 21,
+        "total_engines": 62,
+        "detection_ratio": "21/62",
+        "suggested_threat_label": "trojan.macho/cnhl",
+        "popular_threat_category": [
+          {
+            "count": 16,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "localfile~.arm64"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "macho",
+          "arm"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/PamStealer.DB!MTB",
+          "Kaspersky": "HEUR:Backdoor.OSX.Agent.bt",
+          "ESET-NOD32": "OSX/PSW.Agent.IY trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/4886ea2ed8fb7421ac16d687a29c46b66bdf87987c3bbf8d4cb1bb32a3fc157a"
+      }
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -150222,7 +150809,42 @@ window.YARAFY_DATA = {
       "sample_name": "68c1691d2be97fa6119aaf85f20a76a5fbb81cf560f2c527ca517b12e51ee0ca",
       "sample_size_bytes": 14872032,
       "source_feed": "Local File",
-      "detected_at": "2026-11-15T02:34:20.645889+00:00"
+      "detected_at": "2026-11-15T02:34:20.645889+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 58,
+        "detection_ratio": "28/58",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "count": 18,
+            "value": "trojan"
+          },
+          {
+            "count": 1,
+            "value": "adware"
+          }
+        ],
+        "names": [
+          "ICMacOs"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "self-signed",
+          "macho",
+          "arm"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.f",
+          "Sophos": "OSX/InfoStl-IV",
+          "ESET-NOD32": "OSX/PSW.Agent.KF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/68c1691d2be97fa6119aaf85f20a76a5fbb81cf560f2c527ca517b12e51ee0ca"
+      }
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -151139,7 +151761,38 @@ window.YARAFY_DATA = {
       "sample_name": "afdcaa1830a83f8ad418ac6d21aabe2ba626443956a3caf01054d5b339b9d8cb",
       "sample_size_bytes": 14866578,
       "source_feed": "Local File",
-      "detected_at": "2026-11-15T02:34:20.645889+00:00"
+      "detected_at": "2026-11-15T02:34:20.645889+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 25,
+        "total_engines": 63,
+        "detection_ratio": "25/63",
+        "suggested_threat_label": "trojan.stealer/amos",
+        "popular_threat_category": [
+          {
+            "count": 17,
+            "value": "trojan"
+          }
+        ],
+        "names": [
+          "ICMacOs_downloaded",
+          "ICMacOs"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "macho",
+          "self-signed",
+          "64bits",
+          "arm"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.f",
+          "ESET-NOD32": "OSX/PSW.Agent.KF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/afdcaa1830a83f8ad418ac6d21aabe2ba626443956a3caf01054d5b339b9d8cb"
+      }
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -152056,7 +152709,40 @@ window.YARAFY_DATA = {
       "sample_name": "ad37f66434ff098ffccf20caf5753d0b2f180a2904c389970ad0bb0294c046e4",
       "sample_size_bytes": 14866578,
       "source_feed": "Local File",
-      "detected_at": "2026-11-15T02:34:20.645889+00:00"
+      "detected_at": "2026-11-15T02:34:20.645889+00:00",
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 28,
+        "total_engines": 62,
+        "detection_ratio": "28/62",
+        "suggested_threat_label": "trojan.stealer/bmhm",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 17
+          },
+          {
+            "value": "adware",
+            "count": 1
+          }
+        ],
+        "names": [],
+        "type_description": "Mach-O",
+        "tags": [
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.f",
+          "Sophos": "OSX/Agent-BMHM",
+          "ESET-NOD32": "OSX/PSW.Agent.KF trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/ad37f66434ff098ffccf20caf5753d0b2f180a2904c389970ad0bb0294c046e4"
+      }
     }
   ],
   "rules": [
