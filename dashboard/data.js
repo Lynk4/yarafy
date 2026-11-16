@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 24215,
+    "total_scanned": 24276,
     "total_hits": 670,
-    "last_run": "2026-11-15T02:34:20.645889+00:00",
+    "last_run": "2026-11-16T01:58:21.730439+00:00",
     "hits_by_platform": {
       "macos": 670,
       "windows": 0,
@@ -34,8 +34,8 @@ window.YARAFY_DATA = {
       "VirusTotal Enterprise": 43,
       "Local File": 308
     },
-    "new_hits_this_run": 3,
-    "refreshed_hits_this_run": 1,
+    "new_hits_this_run": 0,
+    "refreshed_hits_this_run": 23,
     "total_rules": 18
   },
   "hits": [
@@ -1088,13 +1088,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 30,
+        "positives": 33,
         "total_engines": 63,
-        "detection_ratio": "30/63",
-        "suggested_threat_label": "trojan.infostl/stealer",
+        "detection_ratio": "33/63",
+        "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
-            "count": 17,
+            "count": 20,
             "value": "trojan"
           }
         ],
@@ -1105,15 +1105,15 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
+          "arm",
           "64bits",
+          "self-signed",
           "macho",
-          "multi-arch",
-          "arm"
+          "multi-arch"
         ],
         "reputation": -51,
         "key_engine_detections": {
-          "Microsoft": "Trojan:MacOS/AmosStealer.DC!MTB",
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Agent.ag",
           "Sophos": "OSX/InfoStl-HA",
           "ESET-NOD32": "OSX/PSW.Agent.JE trojan"
@@ -1122,7 +1122,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1239,12 +1239,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           },
           {
-            "count": 7,
-            "value": "dropper"
+            "value": "dropper",
+            "count": 7
           }
         ],
         "names": [
@@ -1274,7 +1274,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -25075,14 +25075,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 30,
+        "positives": 33,
         "total_engines": 63,
-        "detection_ratio": "30/63",
-        "suggested_threat_label": "trojan.infostl/stealer",
+        "detection_ratio": "33/63",
+        "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -25092,15 +25092,15 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
+          "arm",
           "64bits",
+          "self-signed",
           "macho",
-          "multi-arch",
-          "arm"
+          "multi-arch"
         ],
         "reputation": -51,
         "key_engine_detections": {
-          "Microsoft": "Trojan:MacOS/AmosStealer.DC!MTB",
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Agent.ag",
           "Sophos": "OSX/InfoStl-HA",
           "ESET-NOD32": "OSX/PSW.Agent.JE trojan"
@@ -25108,7 +25108,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -101558,7 +101558,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3bba0dd56b220041d6a7080fa8f53d8563bf2ced7796e88c9dc1b7beba44785a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101644,7 +101644,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7c3b234169d90ac5d8b18e56e5c46012319124a225316a962506b236fc952075"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102153,7 +102153,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/747ae1b6626bd476e0d01ca5862d73d789393ec17481ca652669351d43a6bd3a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102323,7 +102323,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ccb36936001ee1f0c0c70eac9f7fe177d5652afb20f351ff1122c93e42045320"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102376,13 +102376,13 @@ window.YARAFY_DATA = {
       "vt_enrichment": {
         "vt_status": "success",
         "positives": 33,
-        "total_engines": 62,
-        "detection_ratio": "33/62",
-        "suggested_threat_label": "trojan.amos/infostl",
+        "total_engines": 63,
+        "detection_ratio": "33/63",
+        "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -102392,11 +102392,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
           "64bits",
-          "macho",
           "arm",
-          "multi-arch"
+          "multi-arch",
+          "self-signed",
+          "macho"
         ],
         "reputation": -11,
         "key_engine_detections": {
@@ -102408,7 +102408,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1eb39dbd8ca631431e37f173fa80b00fbac4a6c3a26effe6dacbe5b3eb4d8ecd"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103402,11 +103402,11 @@ window.YARAFY_DATA = {
         "positives": 34,
         "total_engines": 63,
         "detection_ratio": "34/63",
-        "suggested_threat_label": "trojan.amos/infostl",
+        "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 22,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 22
           }
         ],
         "names": [
@@ -103417,9 +103417,9 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "self-signed",
-          "64bits",
-          "multi-arch",
           "arm",
+          "multi-arch",
+          "64bits",
           "macho"
         ],
         "reputation": 0,
@@ -103432,7 +103432,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/83ef81d48afa643d27fe562d1c4a709a35a42b10cd57ea82213f0fdeb9d78633"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103484,14 +103484,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 27,
-        "total_engines": 59,
-        "detection_ratio": "27/59",
-        "suggested_threat_label": "trojan.amos/infostl",
+        "positives": 31,
+        "total_engines": 61,
+        "detection_ratio": "31/61",
+        "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -103501,11 +103501,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "64bits",
+          "macho",
           "self-signed",
           "arm",
-          "macho",
-          "multi-arch",
-          "64bits"
+          "multi-arch"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -103517,7 +103517,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0c6dc7c70dd1f121245c5eb743c18fc8a9532024e137535070d6c8479e7ccd9a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104502,14 +104502,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 31,
+        "positives": 32,
         "total_engines": 63,
-        "detection_ratio": "31/63",
-        "suggested_threat_label": "trojan.amos/infostl",
+        "detection_ratio": "32/63",
+        "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -104519,10 +104519,10 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
-          "arm",
-          "multi-arch",
           "macho",
+          "multi-arch",
+          "arm",
+          "64bits",
           "self-signed"
         ],
         "reputation": 0,
@@ -104535,7 +104535,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/acd2e7872edb9612a92e835bd243a83d185407e1680dea2e70845620874ff1dc"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106620,7 +106620,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/21f5852d9ade22f90e63e67898dcc6f0fb240e782c826f513e34d685d3ff8ca8"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107365,8 +107365,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -107392,7 +107392,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1ec9297709a225f912fc7145f43654bc1a6b61e56c9684bf22c6aaf0fad98289"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108422,7 +108422,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9d3df907e1aae13743a47276d4e06ba974e3781763fa23f99c09867609a4fb4a"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109277,7 +109277,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d561097aaf56697eafd98e5fe24297866c9ea64375db931fa99dc8dfd640b84c"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -144882,32 +144882,33 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 35,
-        "total_engines": 63,
-        "detection_ratio": "35/63",
+        "positives": 32,
+        "total_engines": 59,
+        "detection_ratio": "32/59",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
+            "count": 19,
             "value": "trojan"
           }
         ],
         "names": [
+          "2d352712cad9e47d9c8ce0b62589e7c09c2a5dd97bd35bf72140a252cc600ea3.macho",
           "o14rm5.exe",
           "Tamizo"
         ],
         "type_description": "Mach-O",
         "tags": [
+          "self-signed",
           "multi-arch",
+          "crypto-wallets",
+          "checks-vm",
+          "password-dialog",
+          "macho",
           "arm",
           "os-credentials",
-          "self-signed",
-          "macho",
-          "password-dialog",
-          "64bits",
-          "checks-vm",
-          "crypto-wallets",
-          "checks-cpu-name"
+          "checks-cpu-name",
+          "64bits"
         ],
         "reputation": -11,
         "key_engine_detections": {
@@ -144920,7 +144921,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2d352712cad9e47d9c8ce0b62589e7c09c2a5dd97bd35bf72140a252cc600ea3"
       },
       "detected_at": "2026-11-14T15:28:11.156712+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -145458,33 +145459,34 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 35,
-        "total_engines": 62,
-        "detection_ratio": "35/62",
+        "positives": 33,
+        "total_engines": 61,
+        "detection_ratio": "33/61",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
+          "ae4f1b9547db90636514df913a422eff22ebf1cf60712e1f1ec5753b6e26a9e8.macho",
           "n190oc.exe"
         ],
         "type_description": "Mach-O",
         "tags": [
-          "macho",
-          "crypto-wallets",
-          "checks-vm",
           "service-scan",
-          "os-credentials",
-          "checks-cpu-name",
           "self-signed",
-          "64bits",
           "password-dialog",
+          "browser-creds",
+          "crypto-wallets",
+          "64bits",
+          "checks-vm",
+          "os-credentials",
+          "macho",
           "arm",
           "multi-arch",
-          "browser-creds"
+          "checks-cpu-name"
         ],
         "reputation": -11,
         "key_engine_detections": {
@@ -145497,7 +145499,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ae4f1b9547db90636514df913a422eff22ebf1cf60712e1f1ec5753b6e26a9e8"
       },
       "detected_at": "2026-11-14T15:28:11.156712+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -146035,9 +146037,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 35,
-        "total_engines": 62,
-        "detection_ratio": "35/62",
+        "positives": 31,
+        "total_engines": 57,
+        "detection_ratio": "31/57",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
@@ -146046,16 +146048,17 @@ window.YARAFY_DATA = {
           }
         ],
         "names": [
+          "e5566d680f0c6484b51bceb7d737340bd43aff97164b24bff8b326d02c038af4.macho",
           "lmeb3o.exe",
           "Pegako"
         ],
         "type_description": "Mach-O",
         "tags": [
           "multi-arch",
+          "arm",
           "64bits",
           "macho",
-          "self-signed",
-          "arm"
+          "self-signed"
         ],
         "reputation": -11,
         "key_engine_detections": {
@@ -146068,7 +146071,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e5566d680f0c6484b51bceb7d737340bd43aff97164b24bff8b326d02c038af4"
       },
       "detected_at": "2026-11-14T15:28:11.156712+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -146191,7 +146194,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/bc8d70f000e73c0c7a69a2676805190e7109cab59df3e34c5a74d2cb7f13a7e4"
       },
-      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+      "detected_at": "2026-11-15T01:38:36.980750+00:00",
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -146750,14 +146754,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 31,
-        "total_engines": 58,
-        "detection_ratio": "31/58",
+        "positives": 35,
+        "total_engines": 63,
+        "detection_ratio": "35/63",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
             "value": "trojan",
-            "count": 20
+            "count": 22
           },
           {
             "value": "adware",
@@ -146770,9 +146774,9 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "macho",
+          "64bits",
           "service-scan",
-          "64bits"
+          "macho"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -146783,7 +146787,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/a9b21ac0112855b835b5e5850ef167471eff7305d42b3a8104c1961b257a444d"
       },
-      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+      "detected_at": "2026-11-15T01:38:36.980750+00:00",
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -147713,12 +147718,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 22
+            "count": 22,
+            "value": "trojan"
           },
           {
-            "value": "adware",
-            "count": 1
+            "count": 1,
+            "value": "adware"
           }
         ],
         "names": [
@@ -147740,7 +147745,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31"
       },
-      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+      "detected_at": "2026-11-15T01:38:36.980750+00:00",
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -148675,12 +148681,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           },
           {
-            "count": 1,
-            "value": "adware"
+            "value": "adware",
+            "count": 1
           }
         ],
         "names": [
@@ -148705,7 +148711,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
       },
       "detected_at": "2026-11-15T01:38:36.980750+00:00",
-      "last_seen_at": "2026-11-15T02:34:20.645889+00:00"
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -149298,7 +149304,8 @@ window.YARAFY_DATA = {
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c"
       },
-      "detected_at": "2026-11-15T01:38:36.980750+00:00"
+      "detected_at": "2026-11-15T01:38:36.980750+00:00",
+      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
