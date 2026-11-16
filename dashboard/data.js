@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 24276,
+    "total_scanned": 24281,
     "total_hits": 670,
-    "last_run": "2026-11-16T01:58:21.730439+00:00",
+    "last_run": "2026-11-16T02:00:33.334103+00:00",
     "hits_by_platform": {
       "macos": 670,
       "windows": 0,
@@ -35,7 +35,7 @@ window.YARAFY_DATA = {
       "Local File": 308
     },
     "new_hits_this_run": 0,
-    "refreshed_hits_this_run": 23,
+    "refreshed_hits_this_run": 4,
     "total_rules": 18
   },
   "hits": [
@@ -146788,7 +146788,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a9b21ac0112855b835b5e5850ef167471eff7305d42b3a8104c1961b257a444d"
       },
       "detected_at": "2026-11-15T01:38:36.980750+00:00",
-      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
+      "last_seen_at": "2026-11-16T02:00:33.334103+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -147746,7 +147746,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31"
       },
       "detected_at": "2026-11-15T01:38:36.980750+00:00",
-      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
+      "last_seen_at": "2026-11-16T02:00:33.334103+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -148711,7 +148711,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4"
       },
       "detected_at": "2026-11-15T01:38:36.980750+00:00",
-      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
+      "last_seen_at": "2026-11-16T02:00:33.334103+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
@@ -149305,7 +149305,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c"
       },
       "detected_at": "2026-11-15T01:38:36.980750+00:00",
-      "last_seen_at": "2026-11-16T01:58:21.730439+00:00"
+      "last_seen_at": "2026-11-16T02:00:33.334103+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
