@@ -930,7 +930,7 @@
       <!-- Rules Filter Bar -->
       <section class="filter-panel" style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;">
         <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; flex: 1;">
-          <input type="text" id="search-rules-box" class="search-input" style="width: 290px;" placeholder="Search rules by name, malware family, author, description..." oninput="applyRuleFilters()">
+          <input type="text" id="search-rules-box" class="search-input" style="width: 250px;" placeholder="Search rules by name, malware family, author, description..." oninput="applyRuleFilters()">
           
           <div class="filter-group">
             <button class="filter-pill rule-filter-pill active" data-rule-platform="all" onclick="setRulePlatformFilter('all', this)">All Platforms</button>
@@ -940,6 +940,12 @@
             <button class="filter-pill rule-filter-pill" data-rule-platform="non-pe" onclick="setRulePlatformFilter('non-pe', this)">Non-PE</button>
           </div>
 
+          <div class="filter-group">
+            <select id="rule-family-select" class="filter-select" style="padding: 6px 10px; font-size: 12px;" onchange="setRuleFamilyFilter(this.value)">
+              <option value="all">All Families</option>
+            </select>
+          </div>
+
           <button class="filter-pill" id="rule-hits-toggle-btn" onclick="toggleRuleHitsOnly(this)" style="display: inline-flex; align-items: center; gap: 6px;">
             <span>Active Hits Only</span>
             <span class="tab-badge" id="rule-active-hits-badge" style="background: rgba(244, 63, 94, 0.15); color: #fb7185; border-color: rgba(244, 63, 94, 0.3);">0</span>
@@ -947,6 +953,10 @@
         </div>
 
         <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <button class="filter-pill" id="rule-view-mode-btn" onclick="toggleRuleViewMode()" title="Toggle between flat table view and malware family grouping">
+            <span>View: <strong>Flat Table</strong></span>
+          </button>
+
           <div style="display: flex; align-items: center; gap: 6px;">
             <span style="font-size: 12px; color: var(--text-muted); font-weight: 500;">Sort:</span>
             <select id="rule-sort-select" class="filter-select" style="padding: 6px 10px; font-size: 12px;" onchange="setRuleSortBy(this.value)">
@@ -961,7 +971,7 @@
             </select>
           </div>
 
-          <div style="display: flex; align-items: center; gap: 6px;">
+          <div style="display: flex; align-items: center; gap: 6px;" id="rule-per-page-container">
             <span style="font-size: 12px; color: var(--text-muted); font-weight: 500;">Per Page:</span>
             <select id="rule-page-size-select" class="filter-select" style="padding: 6px 10px; font-size: 12px;" onchange="setRulePageSize(this.value)">
               <option value="15">15</option>
@@ -979,7 +989,7 @@
           <h2>YARA Rules Repository</h2>
           <span class="table-count" id="filtered-rules-count">Showing 0 rules</span>
         </div>
-        <div class="table-wrapper">
+        <div class="table-wrapper" id="rules-table-wrapper">
           <table id="rules-table">
             <thead>
               <tr>
@@ -1000,6 +1010,9 @@
             </tbody>
           </table>
         </div>
+
+        <!-- Rules Family Grouped Container (hidden by default) -->
+        <div id="rules-family-container" style="display: none; padding: 16px; flex-direction: column; gap: 12px;"></div>
 
         <!-- Rules Pagination Bar -->
         <div class="pagination-bar" id="rules-pagination-bar">
@@ -1068,6 +1081,8 @@
     let globalRules = [];
     let activePlatform = 'all';
     let activeRulePlatform = 'all';
+    let activeRuleFamily = 'all';
+    let ruleViewMode = 'table';
     let telemetryCurrentPage = 1;
     let telemetryPageSize = 25;
     let cachedFilteredHits = [];
@@ -1090,6 +1105,7 @@
         const view = document.getElementById('view-rules');
         if (btn) btn.classList.add('active');
         if (view) view.classList.add('active');
+        populateFamilyDropdown();
         applyRuleFilters();
       } else {
         const btn = document.getElementById('tab-telemetry-btn');
@@ -1108,6 +1124,7 @@
         globalRules = window.YARAFY_DATA.rules || [];
         updateKPIs();
         updateRulesKPIs();
+        populateFamilyDropdown();
         renderCharts();
         applyFilters();
         updateSortIndicators();
@@ -1128,6 +1145,7 @@
           globalHits = await hitsRes.json();
           updateKPIs();
           updateRulesKPIs();
+          populateFamilyDropdown();
           renderCharts();
           applyFilters();
           updateSortIndicators();
@@ -1188,6 +1206,166 @@
 
       const activeBadge = document.getElementById('rule-active-hits-badge');
       if (activeBadge) activeBadge.textContent = firing;
+    }
+
+    function populateFamilyDropdown() {
+      const sel = document.getElementById('rule-family-select');
+      if (!sel) return;
+      const currentVal = activeRuleFamily;
+      const counts = {};
+      globalRules.forEach(r => {
+        const f = r.malware_family || 'Generic';
+        counts[f] = (counts[f] || 0) + 1;
+      });
+      const sortedFamilies = Object.keys(counts).sort((a, b) => a.localeCompare(b));
+      
+      sel.innerHTML = `<option value="all">All Families (${globalRules.length})</option>` +
+        sortedFamilies.map(f => `<option value="${escapeHtml(f)}" ${f === currentVal ? 'selected' : ''}>${escapeHtml(f)} (${counts[f]})</option>`).join('');
+    }
+
+    function setRuleFamilyFilter(family) {
+      activeRuleFamily = family;
+      ruleCurrentPage = 1;
+      applyRuleFilters();
+    }
+
+    function toggleRuleViewMode() {
+      ruleViewMode = (ruleViewMode === 'table') ? 'family' : 'table';
+      const btn = document.getElementById('rule-view-mode-btn');
+      if (btn) {
+        btn.innerHTML = (ruleViewMode === 'family')
+          ? `<span>View: <strong>By Family</strong></span>`
+          : `<span>View: <strong>Flat Table</strong></span>`;
+        if (ruleViewMode === 'family') {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      }
+      applyRuleFilters();
+    }
+
+    function toggleFamilyCard(famId) {
+      const body = document.getElementById(`fam-body-${famId}`);
+      const icon = document.getElementById(`fam-icon-${famId}`);
+      if (!body || !icon) return;
+      if (body.style.display === 'none') {
+        body.style.display = 'block';
+        icon.textContent = '▾';
+      } else {
+        body.style.display = 'none';
+        icon.textContent = '▸';
+      }
+    }
+
+    function renderRuleTableRow(r) {
+      const plat = (r.platform || 'unknown').toLowerCase();
+      const platBadge = `<span class="badge badge-${plat}">${plat.toUpperCase()}</span>`;
+      const hits = r.total_hits || 0;
+      const hitsBadge = hits > 0
+        ? `<button class="btn" style="background: rgba(244, 63, 94, 0.15); color: #fb7185; border-color: rgba(244, 63, 94, 0.3); padding: 3px 8px; font-size: 11px; border-radius: 4px;" onclick="openRuleHitsModal('${r.rule_name}')" title="Click to view detections for this rule right here in the catalog">${hits} Hits &rarr;</button>`
+        : `<span style="color: var(--text-muted); font-size: 12px;">0 Hits</span>`;
+
+      const authorDate = `${r.author && r.author !== 'Unknown' ? r.author : 'Community'}${r.date && r.date !== 'N/A' ? ' &bull; ' + r.date : ''}`;
+      const ghUrl = `https://github.com/Lynk4/yarafy/blob/main/${r.file_path}`;
+
+      return `
+        <tr>
+          <td style="font-weight: 600; color: #fff;">${r.rule_name}</td>
+          <td>${platBadge}</td>
+          <td style="color: var(--accent-cyan); font-weight: 500;">${r.malware_family}</td>
+          <td style="color: var(--text-muted); font-size: 12px; max-width: 320px;">${r.description}</td>
+          <td style="color: var(--text-muted); font-size: 12px;">${authorDate}</td>
+          <td style="font-family: ui-monospace, monospace; color: var(--text-main); font-size: 12px;">${r.strings_count}</td>
+          <td>${hitsBadge}</td>
+          <td>
+            <div style="display: flex; gap: 6px;">
+              <button class="btn btn-primary" style="padding: 4px 8px; font-size: 11px;" onclick="openRuleCodeModal('${r.rule_name}')">View Code</button>
+              <a href="${ghUrl}" target="_blank" class="btn" style="padding: 4px 8px; font-size: 11px; text-decoration: none;">GitHub</a>
+            </div>
+          </td>
+        </tr>
+      `;
+    }
+
+    function renderFamilyGroupedView() {
+      const container = document.getElementById('rules-family-container');
+      const countEl = document.getElementById('filtered-rules-count');
+      const total = cachedFilteredRules.length;
+
+      if (!container) return;
+
+      if (total === 0) {
+        if (countEl) countEl.textContent = `Showing 0 of ${globalRules.length} rules`;
+        container.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 32px; background: #0b0f19; border: 1px solid var(--card-border); border-radius: 6px;">No matching YARA rules found.</div>`;
+        return;
+      }
+
+      // Group by family
+      const groups = {};
+      cachedFilteredRules.forEach(r => {
+        const fam = r.malware_family || 'Generic';
+        if (!groups[fam]) groups[fam] = [];
+        groups[fam].push(r);
+      });
+
+      const familyNames = Object.keys(groups).sort((a, b) => {
+        const hitsA = groups[a].reduce((sum, r) => sum + (r.total_hits || 0), 0);
+        const hitsB = groups[b].reduce((sum, r) => sum + (r.total_hits || 0), 0);
+        if (hitsB !== hitsA) return hitsB - hitsA;
+        return a.localeCompare(b);
+      });
+
+      if (countEl) countEl.textContent = `Showing ${familyNames.length} malware ${familyNames.length === 1 ? 'family' : 'families'} (${total} rules total)`;
+
+      container.innerHTML = familyNames.map((fam, idx) => {
+        const rules = groups[fam];
+        const famId = `fam-card-${idx}`;
+        const totalHits = rules.reduce((sum, r) => sum + (r.total_hits || 0), 0);
+        const platforms = Array.from(new Set(rules.map(r => (r.platform || 'unknown').toLowerCase())));
+        const platBadges = platforms.map(p => `<span class="badge badge-${p}">${p.toUpperCase()}</span>`).join(' ');
+
+        const hitsBadge = totalHits > 0
+          ? `<span class="badge" style="background: rgba(244, 63, 94, 0.15); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); font-size: 11px;">${totalHits} Lifetime Hits</span>`
+          : `<span style="font-size: 12px; color: var(--text-muted);">0 Hits</span>`;
+
+        const childRows = rules.map(renderRuleTableRow).join('');
+
+        return `
+          <div style="background: #0b0f19; border: 1px solid var(--card-border); border-radius: 6px; overflow: hidden;">
+            <div onclick="toggleFamilyCard('${famId}')" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; cursor: pointer; user-select: none; background: #0e1424; transition: background 0.15s ease;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span id="fam-icon-${famId}" style="font-size: 11px; color: var(--accent-cyan); font-family: monospace;">▾</span>
+                <span style="font-weight: 600; color: #fff; font-size: 14px;">${escapeHtml(fam)}</span>
+                <span class="tab-badge" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-color: rgba(56, 189, 248, 0.25);">${rules.length} ${rules.length === 1 ? 'Rule' : 'Rules'}</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <div style="display: flex; gap: 4px;">${platBadges}</div>
+                ${hitsBadge}
+              </div>
+            </div>
+            <div id="fam-body-${famId}" style="border-top: 1px solid var(--card-border); overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
+                <thead>
+                  <tr style="background: rgba(255,255,255,0.02);">
+                    <th style="padding: 10px 14px;">Rule Name</th>
+                    <th style="padding: 10px 14px;">Platform</th>
+                    <th style="padding: 10px 14px;">Malware Family</th>
+                    <th style="padding: 10px 14px;">Description</th>
+                    <th style="padding: 10px 14px;">Author</th>
+                    <th style="padding: 10px 14px;">Strings</th>
+                    <th style="padding: 10px 14px;">Hits</th>
+                    <th style="padding: 10px 14px;">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${childRows}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }).join('');
     }
 
     function setRulePlatformFilter(platform, el) {
@@ -1283,6 +1461,9 @@
         const plat = (r.platform || 'unknown').toLowerCase();
         if (activeRulePlatform !== 'all' && plat !== activeRulePlatform) return false;
 
+        const fam = (r.malware_family || 'Generic');
+        if (activeRuleFamily !== 'all' && fam !== activeRuleFamily) return false;
+
         const hits = r.total_hits || 0;
         if (ruleHitsOnly && hits <= 0) return false;
 
@@ -1319,10 +1500,30 @@
     }
 
     function renderRulesTable() {
-      const tbody = document.getElementById('rules-table-body');
+      const tableWrapper = document.getElementById('rules-table-wrapper');
+      const familyContainer = document.getElementById('rules-family-container');
       const countEl = document.getElementById('filtered-rules-count');
+      const paginationBar = document.getElementById('rules-pagination-bar');
+      const perPageContainer = document.getElementById('rule-per-page-container');
       const total = cachedFilteredRules.length;
 
+      if (!tableWrapper || !familyContainer) return;
+
+      if (ruleViewMode === 'family') {
+        tableWrapper.style.display = 'none';
+        familyContainer.style.display = 'flex';
+        if (paginationBar) paginationBar.style.display = 'none';
+        if (perPageContainer) perPageContainer.style.display = 'none';
+        renderFamilyGroupedView();
+        return;
+      }
+
+      tableWrapper.style.display = 'block';
+      familyContainer.style.display = 'none';
+      if (paginationBar) paginationBar.style.display = 'flex';
+      if (perPageContainer) perPageContainer.style.display = 'flex';
+
+      const tbody = document.getElementById('rules-table-body');
       if (!tbody) return;
 
       if (total === 0) {
@@ -1345,36 +1546,7 @@
         if (countEl) countEl.textContent = `Showing all ${total} rules (${globalRules.length} total)`;
       }
 
-      tbody.innerHTML = pageRules.map((r) => {
-        const plat = (r.platform || 'unknown').toLowerCase();
-        const platBadge = `<span class="badge badge-${plat}">${plat.toUpperCase()}</span>`;
-        const hits = r.total_hits || 0;
-        const hitsBadge = hits > 0
-          ? `<button class="btn" style="background: rgba(244, 63, 94, 0.15); color: #fb7185; border-color: rgba(244, 63, 94, 0.3); padding: 3px 8px; font-size: 11px; border-radius: 4px;" onclick="openRuleHitsModal('${r.rule_name}')" title="Click to view detections for this rule right here in the catalog">${hits} Hits &rarr;</button>`
-          : `<span style="color: var(--text-muted); font-size: 12px;">0 Hits</span>`;
-
-        const authorDate = `${r.author && r.author !== 'Unknown' ? r.author : 'Community'}${r.date && r.date !== 'N/A' ? ' &bull; ' + r.date : ''}`;
-        const ghUrl = `https://github.com/Lynk4/yarafy/blob/main/${r.file_path}`;
-
-        return `
-          <tr>
-            <td style="font-weight: 600; color: #fff;">${r.rule_name}</td>
-            <td>${platBadge}</td>
-            <td style="color: var(--accent-cyan); font-weight: 500;">${r.malware_family}</td>
-            <td style="color: var(--text-muted); font-size: 12px; max-width: 320px;">${r.description}</td>
-            <td style="color: var(--text-muted); font-size: 12px;">${authorDate}</td>
-            <td style="font-family: ui-monospace, monospace; color: var(--text-main); font-size: 12px;">${r.strings_count}</td>
-            <td>${hitsBadge}</td>
-            <td>
-              <div style="display: flex; gap: 6px;">
-                <button class="btn btn-primary" style="padding: 4px 8px; font-size: 11px;" onclick="openRuleCodeModal('${r.rule_name}')">View Code</button>
-                <a href="${ghUrl}" target="_blank" class="btn" style="padding: 4px 8px; font-size: 11px; text-decoration: none;">GitHub</a>
-              </div>
-            </td>
-          </tr>
-        `;
-      }).join('');
-
+      tbody.innerHTML = pageRules.map(renderRuleTableRow).join('');
       updateRulesPaginationControls(startIdx, endIdx, total);
     }
 
