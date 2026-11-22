@@ -1,8 +1,8 @@
 window.YARAFY_DATA = {
   "stats": {
-    "total_scanned": 24945,
+    "total_scanned": 25665,
     "total_hits": 670,
-    "last_run": "2026-11-16T23:43:06.102641+00:00",
+    "last_run": "2026-11-22T04:26:05.270038+00:00",
     "hits_by_platform": {
       "macos": 670,
       "windows": 0,
@@ -35,7 +35,7 @@ window.YARAFY_DATA = {
       "Local File": 308
     },
     "new_hits_this_run": 0,
-    "refreshed_hits_this_run": 74,
+    "refreshed_hits_this_run": 271,
     "total_rules": 18
   },
   "hits": [
@@ -1011,11 +1011,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "arm",
           "64bits",
-          "self-signed",
           "macho",
-          "multi-arch"
+          "arm",
+          "multi-arch",
+          "self-signed"
         ],
         "reputation": -63,
         "key_engine_detections": {
@@ -1029,7 +1029,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1088,9 +1088,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 33,
-        "total_engines": 63,
-        "detection_ratio": "33/63",
+        "positives": 31,
+        "total_engines": 61,
+        "detection_ratio": "31/61",
         "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
@@ -1105,11 +1105,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "multi-arch",
           "arm",
           "64bits",
           "self-signed",
-          "macho",
-          "multi-arch"
+          "macho"
         ],
         "reputation": -51,
         "key_engine_detections": {
@@ -1122,7 +1122,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1239,12 +1239,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           },
           {
-            "count": 7,
-            "value": "dropper"
+            "value": "dropper",
+            "count": 7
           }
         ],
         "names": [
@@ -1256,10 +1256,10 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
+          "macho",
           "64bits",
           "multi-arch",
-          "macho",
+          "self-signed",
           "arm",
           "checks-cpu-name"
         ],
@@ -1274,7 +1274,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -1457,13 +1457,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 32,
+        "positives": 34,
         "total_engines": 62,
-        "detection_ratio": "32/62",
+        "detection_ratio": "34/62",
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
+            "count": 20,
             "value": "trojan"
           }
         ],
@@ -1474,11 +1474,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
           "macho",
           "self-signed",
           "multi-arch",
-          "arm"
+          "arm",
+          "64bits"
         ],
         "reputation": -52,
         "key_engine_detections": {
@@ -1491,7 +1491,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -1606,13 +1606,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 31,
-        "total_engines": 63,
-        "detection_ratio": "31/63",
-        "suggested_threat_label": "trojan.amos/stealer",
+        "positives": 30,
+        "total_engines": 60,
+        "detection_ratio": "30/60",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
+            "count": 20,
             "value": "trojan"
           }
         ],
@@ -1621,12 +1621,12 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "arm",
+          "self-signed",
           "checks-cpu-name",
-          "macho",
           "multi-arch",
-          "64bits",
-          "self-signed"
+          "arm",
+          "macho",
+          "64bits"
         ],
         "reputation": -52,
         "key_engine_detections": {
@@ -1639,7 +1639,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -1690,13 +1690,13 @@ window.YARAFY_DATA = {
       "vt_enrichment": {
         "vt_status": "success",
         "positives": 31,
-        "total_engines": 63,
-        "detection_ratio": "31/63",
-        "suggested_threat_label": "trojan.stealer/amos",
+        "total_engines": 60,
+        "detection_ratio": "31/60",
+        "suggested_threat_label": "trojan.amos/stealer",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -1704,12 +1704,12 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
-          "multi-arch",
+          "macho",
+          "checks-cpu-name",
           "64bits",
           "arm",
-          "macho",
-          "checks-cpu-name"
+          "multi-arch",
+          "self-signed"
         ],
         "reputation": -52,
         "key_engine_detections": {
@@ -1723,7 +1723,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -1814,9 +1814,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 36,
-        "total_engines": 62,
-        "detection_ratio": "36/62",
+        "positives": 37,
+        "total_engines": 63,
+        "detection_ratio": "37/63",
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
@@ -1830,11 +1830,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "arm",
           "64bits",
+          "multi-arch",
           "self-signed",
           "macho",
-          "multi-arch"
+          "arm"
         ],
         "reputation": -1,
         "key_engine_detections": {
@@ -1848,7 +1848,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -1939,14 +1939,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 35,
-        "total_engines": 61,
-        "detection_ratio": "35/61",
+        "positives": 36,
+        "total_engines": 63,
+        "detection_ratio": "36/63",
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -1955,11 +1955,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
-          "self-signed",
+          "macho",
           "arm",
+          "multi-arch",
           "64bits",
-          "macho"
+          "self-signed"
         ],
         "reputation": -1,
         "key_engine_detections": {
@@ -1973,7 +1973,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -2361,9 +2361,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 33,
-        "total_engines": 58,
-        "detection_ratio": "33/58",
+        "positives": 34,
+        "total_engines": 55,
+        "detection_ratio": "34/55",
         "suggested_threat_label": "trojan.amos/stealer",
         "popular_threat_category": [
           {
@@ -2381,16 +2381,15 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "multi-arch",
-          "arm",
           "64bits",
-          "self-signed",
-          "macho"
+          "arm",
+          "macho",
+          "self-signed"
         ],
         "reputation": -160,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/AMOS.HAD!MTB",
           "SentinelOne": "Static AI - Malicious Mach-O",
-          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
           "Sophos": "OSX/InfoStl-FX",
           "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
         },
@@ -2398,7 +2397,7 @@ window.YARAFY_DATA = {
       },
       "detected_at": "2026-08-31T14:41:41.676801+00:00",
       "source_feed": "MalwareBazaar",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -2749,8 +2748,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/stealer",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -2791,7 +2790,7 @@ window.YARAFY_DATA = {
           "macOS"
         ]
       },
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "MALW_macOS_MacSync_Stealer_Universal",
@@ -8167,7 +8166,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a981fdba66721eb21e7a3c0ab18e487247bbcf97158737ab8c80e98f4ec240dd"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -9419,7 +9418,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/204b5d236e4384b23c1f0201bc52c06f32ef8eea679b975e9b432f2b111d1dbc"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -10368,8 +10367,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/dropr",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -10395,7 +10394,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/708a0836a8c20e79f2ae522f097787326a90965e0532f3fd488d8d6e428f77b6"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -11817,7 +11816,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b3c05142afc6d7c708c55ba7a97dbb4272f43353205e8cab7b9a8117959cc270"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -13393,7 +13392,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/beac3bae8f10cbb37ddde43f41dc44c0dd1c19e8e38723700e901751f6bd5072"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -15321,14 +15320,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 33,
+        "positives": 34,
         "total_engines": 63,
-        "detection_ratio": "33/63",
+        "detection_ratio": "34/63",
         "suggested_threat_label": "trojan.stealer/dropr",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -15338,11 +15337,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
           "arm",
-          "64bits",
           "macho",
-          "multi-arch"
+          "multi-arch",
+          "64bits",
+          "self-signed"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -15354,7 +15353,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/fd4896cf61b676a39918f119247f3f7c746b29645e732ab09b3318f8479da728"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -15848,8 +15847,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -15875,7 +15874,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3e5097274c863873dfc79f315c39c30eb61e49e74db1bcee76bb372f584b9ff3"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -16199,8 +16198,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -16228,7 +16227,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/60362accd00f57e929f33799f43f6d9588f469577004eb05aba96bc21ca119ba"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-12T00:47:37.628231+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -16494,7 +16493,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/76c2e4e7fb5290366d7bd04703ea60ec92d314ff651172387b9c6dbfca22b82a"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -16810,9 +16809,9 @@ window.YARAFY_DATA = {
       "vt_enrichment": {
         "vt_status": "success",
         "positives": 32,
-        "total_engines": 63,
-        "detection_ratio": "32/63",
-        "suggested_threat_label": "trojan.amos/amosstealer",
+        "total_engines": 61,
+        "detection_ratio": "32/61",
+        "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
             "value": "trojan",
@@ -16828,13 +16827,13 @@ window.YARAFY_DATA = {
         "tags": [
           "self-signed",
           "macho",
-          "arm",
           "64bits",
+          "arm",
           "multi-arch"
         ],
         "reputation": 0,
         "key_engine_detections": {
-          "Microsoft": "Trojan:MacOS/AmosStealer.DC!MTB",
+          "Microsoft": "Trojan:Script/Wacatac.B!ml",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bz",
           "Sophos": "OSX/InfoStl-HA",
           "ESET-NOD32": "OSX/PSW.Agent.JL trojan"
@@ -16842,7 +16841,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b95ea805469383b5a419c5043de45bb2b13f36b3a513f98bd608b3f7294f064f"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -17393,8 +17392,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -17420,7 +17419,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4903c40fbdb96cf39f35ed592a886a39d230564b26dd80aef3fa6c58bc501551"
       },
       "detected_at": "2026-09-16T10:24:15.725648+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "APT_macOS_RustBucket_Behavioral_Indicators",
@@ -25075,9 +25074,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 33,
-        "total_engines": 63,
-        "detection_ratio": "33/63",
+        "positives": 31,
+        "total_engines": 61,
+        "detection_ratio": "31/61",
         "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
@@ -25092,11 +25091,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "multi-arch",
           "arm",
           "64bits",
           "self-signed",
-          "macho",
-          "multi-arch"
+          "macho"
         ],
         "reputation": -51,
         "key_engine_detections": {
@@ -25108,7 +25107,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c48bd4f678a498b9173353d8fd400093541326e6b40a1a99c9a15fd28721ed69"
       },
       "detected_at": "2026-09-23T05:01:05.435807+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -26466,8 +26465,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/amosstealer",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -26494,7 +26493,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3740e3883b64840461b3dfe2ce86695f32a14f28c8e0353c860ff6939a8c2538"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -26803,7 +26802,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c4c7cc2f8e281b36d0bc29de6e08d354d83c4f734acaded25e7c8dfb1f580db5"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -27345,8 +27344,8 @@ window.YARAFY_DATA = {
       "vt_enrichment": {
         "vt_status": "success",
         "positives": 36,
-        "total_engines": 63,
-        "detection_ratio": "36/63",
+        "total_engines": 62,
+        "detection_ratio": "36/62",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
@@ -27361,14 +27360,14 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-delete",
-          "64bits",
-          "checks-cpu-name",
-          "macho",
-          "password-dialog",
           "multi-arch",
+          "macho",
+          "64bits",
           "self-signed",
-          "arm"
+          "checks-cpu-name",
+          "arm",
+          "password-dialog",
+          "self-delete"
         ],
         "reputation": -11,
         "key_engine_detections": {
@@ -27381,7 +27380,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/689797d97d31c3893e2c8a792614262f1fa9e714d646aef46bc4a6371fa59126"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -27798,13 +27797,13 @@ window.YARAFY_DATA = {
       "vt_enrichment": {
         "vt_status": "success",
         "positives": 36,
-        "total_engines": 63,
-        "detection_ratio": "36/63",
+        "total_engines": 62,
+        "detection_ratio": "36/62",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 22,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 22
           }
         ],
         "names": [
@@ -27814,12 +27813,12 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
           "checks-cpu-name",
+          "multi-arch",
           "self-signed",
           "arm",
           "macho",
-          "multi-arch"
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -27831,7 +27830,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6bfcdb4920383375b7e519918df7eb4db751b974b5571a15ce66b82478012620"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -29090,8 +29089,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amosstealer",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -29126,7 +29125,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/fd0cd32edfe9b4f68dcc2fddb8f27c6102e9a9c8b90c5def07ac8e62b2a75303"
       },
       "detected_at": "2026-10-08T06:28:54.784186+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -29930,8 +29929,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -29958,7 +29957,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3b8375f092798ac851bfacdb94310ccabfebcbe106f6e7324764a0e4fd4ea57"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30044,7 +30043,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/faf572c1c989ca17101d5003bceb8b4796e709b93bf014f642b2a2c4b7b77fb4"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30131,7 +30130,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1e8ed19e771e7a9378daf3b3652802143345db8ea4196e560e54f28176ef958a"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30190,8 +30189,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -30217,7 +30216,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e42b8c35db5ab7169327b9185c3e05db4a156e8922b985da61bcbd6223df8aea"
       },
       "detected_at": "2026-10-16T09:33:37.569300+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -30893,7 +30892,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4799b1f41221745e4e3e902526b9635e697b64c5c07a344b59fe1a6ddc018c34"
       },
       "detected_at": "2026-10-16T09:42:46.011654+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1006YR",
@@ -31271,7 +31270,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/81e34b0ec6928234d0a24f9b1634d1e2201fe0fca38bf048229d750ba35f64ca"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -31854,7 +31853,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e395c5343703a570d12620c81b9593ea6117d2f57c95bd8247704d9dbd256ce6"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -31943,7 +31942,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/85fce9826974549c2dd4c92a3207cf2543e10676ad2dfad7c8ea429f616cdf21"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -32161,7 +32160,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6c118d4bd1a56f56756b78134474c2a5becd3f138803d3297155691a427f6524"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32220,12 +32219,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 15
+            "count": 15,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -32251,7 +32250,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/813bb6f2bc378364b4a0ed1405fe6ccd34a1510c4c94fe98f5908e6514999c1a"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32341,7 +32340,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/aa2fe64a8b365f79ba99c5cae660602063d6b555b3dd2e40d05f5293ca2c2a96"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32400,12 +32399,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -32433,7 +32432,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f2c7af231a3dc1a9291a2421d2b67e3c6ed829073fdcbd7aeec3c33a933d2f6e"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32524,7 +32523,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d64921058e03078b75565d5aeea126e75698f39be3c6387d17c5d9fa8536d0ac"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32614,7 +32613,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e6490a700b965a6dcf264eb1e8291217d9e52f167470d70bc24806697fabeeaa"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32672,12 +32671,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -32703,7 +32702,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/efc0f30e9b1c8e4b1479006ecdcc95d5d4fa0627af8b294a6babe57da17b58d3"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32762,12 +32761,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.egairtigado/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -32793,7 +32792,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/322a9bdadc796f2b2a7459b949ff367ed3258e9a8eefb1af161b557418ce845d"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32852,12 +32851,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -32883,7 +32882,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/51ad0fe8782d9756f1fc647bfd19e649b1b3e55e8b641a295062c935c1939bd8"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -32973,7 +32972,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ecf0f6b181632fb335c800bcc77cccc5584bc15b5ac594dc68019f05081c3d5d"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -33062,7 +33061,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3bf9ac9cb26ecffd2ab26bb14c81c110b53fe31c196cc774291ad4af804023c3"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -33269,12 +33268,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.class/macho",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -33299,7 +33298,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cefb465886bc813ac91e9ad5b1835eefe9828f251b58eb0da012ee4022ff6d98"
       },
       "detected_at": "2026-10-18T21:15:48.044327+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1007YR",
@@ -34147,7 +34146,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/40dc77a48faae52f4ab7e2fbac202427947ffd48fc4e3dc6ed9f9b4403dc590c"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34206,12 +34205,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -34238,7 +34237,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0119e2bc2281379155fe73917dc347f31501873867e7d8174b71c8cdbf0e5c8f"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34329,7 +34328,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ff9c8f57fa3ec4c935c343bc636dee3253e6b6e4dbbd0d64e7898f0c7f7c5598"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34419,7 +34418,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b5d4aba0fe4004e851756d0329f0c165db2c1667c7c73516e0f1537c9afd3298"
       },
       "detected_at": "2026-10-19T02:52:22.004609+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34673,7 +34672,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cf28f44cfec7384cd572f5457a2d7e4a09fd72f7a29264393961fa4493b29c19"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34731,12 +34730,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -34763,7 +34762,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/47258dad12e7bbb34a8421c79e98a10f62adc6d613fa8d94c30599fffbb040f8"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34821,12 +34820,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -34854,7 +34853,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/08e7c04e22c51313e5095f2db39e11fcc59adf56a63481ae92d8730e2788edc7"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -34944,7 +34943,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/225f89ad501a71af48f405b6c61309a6c0f041ad8add6625e75274c536954f1f"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35034,7 +35033,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ab5b9b53b603bc5bc8abb0eb0aab014d82d20b603b40fdc69642b5b907fcea43"
       },
       "detected_at": "2026-10-19T21:33:01.399119+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -35221,7 +35220,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bc0bde5dd5ca313436bc7119c5f603d9f4fb99dcbb09b2eaa5fd7ccda2c33794"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35279,12 +35278,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -35311,7 +35310,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9d0c0819b915625b6c7bc2898cb5f1248df6ab941ce86447c059c4d6de5e0002"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35401,7 +35400,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1b317f7c91282bc41153d12a28a41a883eeb655c245e76f8c3142a8cc8458bb4"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35459,12 +35458,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "count": 13,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 13
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -35491,7 +35490,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/863ea1012d1379896cba11f581f4a8e8c86143297f5cdf4c432a8d652a717107"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35671,7 +35670,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/706c3b12e8be63504ef14663eb7084a2d14587419166918f2fe32cfe55d78ee8"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35761,7 +35760,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f59d0a5f63972619bb2c5184cecbe7d4fc59d5e291ede27ba13acbe49dab839b"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35851,7 +35850,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/407902441438f0f73a0ce5f5b89f50f9b6fcf7551a6179617fa21efac1cd524f"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -35910,12 +35909,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 14
+            "count": 14,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -35942,7 +35941,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2d6f829d87773207cabc9360f8aae81adcf838829be00b0b6040fb7ebccf393e"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36001,12 +36000,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/class",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 12
+            "count": 12,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -36032,7 +36031,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2f4b6d386a70eea4d5aaa951b8a9095095410cef0963b4a769aa9cc4b7e356a0"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36090,12 +36089,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -36121,7 +36120,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1e7cc2bd060683795a7bfa0ee3610e6b896c71ad20677b65ccde4278594911f9"
       },
       "detected_at": "2026-10-20T08:26:32.598064+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36179,12 +36178,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -36212,7 +36211,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2ff0a9594923b8896910fd338b4a899649bb89bca20ace4d00b9fada9da93441"
       },
       "detected_at": "2026-10-20T18:52:09.961170+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36270,12 +36269,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -36301,7 +36300,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/89ab3b9e84198d8bb8d207964ee8cc02d75da3d6bdbd9cf1ccf34f9500272053"
       },
       "detected_at": "2026-10-20T18:52:09.961170+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36391,7 +36390,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ccdc4d7aa75140392ae4d6296c229cb456617f64b6509be93f61ca91412d9af6"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36449,12 +36448,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -36480,7 +36479,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1b9ebec7a73d0a7c135f71904fef98602fa5ff49d137bb145608da207541c15b"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36565,7 +36564,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c81b8c0775f0fa25cfe09cab180e88426340cd1e171c033cd70145294504fefd"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36623,12 +36622,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -36655,7 +36654,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/66bb0add8962b6b2cf5bb3358e6777a421b54968674d838d7ccd2d3a6da555a0"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-12T00:47:37.628231+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36746,7 +36745,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/44306aa41505302c109d90a5c85c68541b98bf783cb47af912a55b4d5a3dcc99"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-12T00:47:37.628231+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36804,12 +36803,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -36836,7 +36835,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b626c19713c716a0bc5a49d801300eaade449cec525012a35a6477295b6729a4"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-12T00:47:37.628231+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -36894,12 +36893,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -36926,7 +36925,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9edd2a4e7ce79550637ab4dd1dec171087dcf7313547e0935d64725101140a9b"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-12T00:47:37.628231+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37016,7 +37015,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/aeea0651716d990d527a48473e7b54cd56849aee87b8916294c8f2ae81831617"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-12T00:47:37.628231+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37074,12 +37073,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -37106,7 +37105,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/932761c3c90d8db72e53b5e2cbf5f86eee95e15be50e0a4dab91d6e16b33cbd8"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-06T16:52:44.472483+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37196,7 +37195,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/94521a0d9d77513864171e00075b46b5bededbd849efe056687d8494353815d4"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-06T16:52:44.472483+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37248,13 +37247,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 23,
-        "total_engines": 58,
-        "detection_ratio": "23/58",
-        "suggested_threat_label": "trojan.amos/amos5",
+        "positives": 32,
+        "total_engines": 62,
+        "detection_ratio": "32/62",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 16,
+            "count": 20,
             "value": "trojan"
           },
           {
@@ -37270,22 +37269,23 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
           "multi-arch",
           "macho",
           "self-signed",
+          "64bits",
           "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {
-          "Microsoft": "Trojan:Script/Wacatac.B!ml",
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/805a8575437df0241e4f24d3c3d377e7dbcb42924ad9e41664bd0bc7dc26ed9d"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-06T16:52:44.472483+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37375,7 +37375,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a4f89e85ca176c7fccd50335b80e9cb31887297c3e8abb879e35636ae7c6cd68"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37463,7 +37463,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bfaba22e0b58c2f5ab977de4322563fdeb3f5a90a573175181f34d4830a7fc97"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37747,7 +37747,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c6dcafd1aaa7cdbf84e2cc6f1f6b3e6cc6a7c1b74ab995003a5d6f828cdf1268"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -37805,12 +37805,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -37836,7 +37836,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/30b4ae5036e76367f9d1165253dc81d4c7ae9fdced72c95cb4ecffc1f6aefcfd"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38026,7 +38026,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1d6102cbdf119cd3655d9beb30698a97ab69d996f2a1b913c0bd95b32076d2ac"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38116,7 +38116,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/461f5d168c724db1094e76955ce5ebe15ea611d7d0b497c5f06ffb0baffa10c8"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38206,7 +38206,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/68b736e2aa1c565c1748fcb17a5e44bbf1727714047fbf50e8c9c9d6844fe6ea"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38265,12 +38265,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -38296,7 +38296,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6e7dcc1716e5a94f937f66f0796d10280abe40a11f13d2a258784468de71c478"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38355,12 +38355,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -38387,7 +38387,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8a2daf154b45503f88abb0f9f77ba79ad4044f235f03c2a1ff5604bc9ef1c227"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38446,12 +38446,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -38477,7 +38477,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4892ea6ae970b1c57b505e511ace698878b29666e0da59867b712ea83db1563b"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38536,12 +38536,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abpws",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 16
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -38567,7 +38567,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/09b5143a55acbb87423681f6c70a1bbed0034289a7448becc5d3adab51fddb77"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38626,12 +38626,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -38657,7 +38657,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0ef806bb25a7206b2a7ab4c936ac6aa540c4777574068d51ec3d65c9e1fb67c4"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38716,12 +38716,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -38748,7 +38748,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/66a39ad4e53d93de95c3db38822fb265dcc8835328d591edaf3bbbe5098f391f"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38806,12 +38806,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           },
           {
-            "count": 1,
-            "value": "pua"
+            "value": "pua",
+            "count": 1
           }
         ],
         "names": [
@@ -38838,7 +38838,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/13b4b87da6046356804ccfa023d66b9809371027b00f62fb4e4812dca34a1571"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -38896,12 +38896,12 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           },
           {
-            "value": "pua",
-            "count": 1
+            "count": 1,
+            "value": "pua"
           }
         ],
         "names": [
@@ -38928,7 +38928,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2e5bb8cc0558dfed95e93207bdcc39dfd3ed21851d7ba1e8d56dee83088c5e66"
       },
       "detected_at": "2026-10-22T15:06:28.931817+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39011,7 +39011,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0ad481c6994048519dc317896755c1e8f6fec92e458aeaf4fa5cfa09a5126270"
       },
       "detected_at": "2026-10-22T19:15:34.846800+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39094,7 +39094,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7aa96e6f115552e6cc2ecff9f0d481a50978c41aabcac921e2225e0a24b465c1"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39152,8 +39152,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -39177,7 +39177,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cc30e4d19f6c7975ba027b58b79bb58794c0baa7007350e4db5e15408b566f0c"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39235,8 +39235,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 22
+            "count": 22,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -39261,7 +39261,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/61d1c1ca3ed32698a440f3815606b23283a41a2c282567bfca2ee904b0932c6b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39346,7 +39346,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5ef3b2ae6aac4c7b6a1ba0a14d0b4283da20002a6deee8d0d9ae2fd2fce79f58"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39404,8 +39404,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -39431,7 +39431,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4c565810ae06d551174b32ebb5e309693be3ceb8fe9939ece971180760949847"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39516,7 +39516,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5f6ace8d46faae452b7b3056db7c12df1847a63ce105c7d837c4965e7ee1bc2f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39574,8 +39574,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -39601,7 +39601,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9e641b2840dc1edf0dc82878a3cc9ae9bae6b458169390da7160539d9dfd3aa4"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39686,7 +39686,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2d7e3e63207b4c7f2c7dd8658469c97fa73d2e45f7104de19b49654c44079e72"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39744,8 +39744,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -39771,7 +39771,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/45ef0cea3b608f167c3e3101a0f78a4290ccf4ca1164c355bf4d56ac4bf44c0b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39856,7 +39856,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9c7713ce0a1fa2ef4b43651ef3a984b1656a6ee8dc3a94c4682e5e5e86428373"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -39942,7 +39942,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b2b904053a6d1b783e597bbab0d0ac9cf8d33dfd06b06e7a9ab3d99a769dd10b"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40027,7 +40027,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7ec6df0cae345fd0c3bdb220c2634e52cbb9ece8755143587a546e00d91b2ad8"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40085,8 +40085,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -40112,7 +40112,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/94ecec65874eef8917d8f91d11724bca77194319c8711aecec0f8b39d6db93ca"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40170,8 +40170,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -40197,7 +40197,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/33dd4fa348582867ac7ccec455f018a929207b16d1f3e6771fc0f7f2b91572e0"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40281,7 +40281,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/18438ce3e58bdbe47c9d7058ce05f456d5792d99926be82eb894fba985c567c8"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40339,8 +40339,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -40366,7 +40366,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d838168d234ce4bedef14162b85b2c47ac97539e16a3d451682d493b5a173785"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40450,7 +40450,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/dc4db648c12775028fd2eaa82e831fafb1aa0b9e950fea74033eeb23220d1bca"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40502,14 +40502,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 26,
-        "total_engines": 62,
-        "detection_ratio": "26/62",
-        "suggested_threat_label": "trojan.amos/abtrojan",
+        "positives": 30,
+        "total_engines": 61,
+        "detection_ratio": "30/61",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
             "value": "trojan",
-            "count": 17
+            "count": 20
           }
         ],
         "names": [
@@ -40518,22 +40518,23 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
-          "arm",
-          "self-signed",
+          "64bits",
           "macho",
-          "64bits"
+          "self-signed",
+          "multi-arch",
+          "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/78d0bbf3ddb244caae5b955e6e9476e26f33f5a2e37b9d02863ad34b6476fb64"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40585,14 +40586,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 26,
-        "total_engines": 62,
-        "detection_ratio": "26/62",
-        "suggested_threat_label": "trojan.infostl/amos",
+        "positives": 30,
+        "total_engines": 55,
+        "detection_ratio": "30/55",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
             "value": "trojan",
-            "count": 17
+            "count": 21
           }
         ],
         "names": [
@@ -40600,10 +40601,10 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
           "multi-arch",
-          "self-signed",
+          "64bits",
           "arm",
+          "self-signed",
           "macho"
         ],
         "reputation": 0,
@@ -40616,7 +40617,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/dba12dd044d53dc35cb15d9432a2e6fa139d9f76d813ace626b3f84bac9f67ea"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-15T01:38:36.980750+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40668,14 +40669,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 27,
+        "positives": 31,
         "total_engines": 58,
-        "detection_ratio": "27/58",
+        "detection_ratio": "31/58",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -40683,11 +40684,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "macho",
+          "arm",
           "multi-arch",
+          "macho",
           "self-signed",
-          "64bits",
-          "arm"
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -40699,7 +40700,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/540d24a82a36a3e60497ee29fa51e3cc9963ecc50a9fa77fb245670d34879e09"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40751,14 +40752,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 25,
-        "total_engines": 62,
-        "detection_ratio": "25/62",
+        "positives": 30,
+        "total_engines": 61,
+        "detection_ratio": "30/61",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -40766,10 +40767,10 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "arm",
+          "multi-arch",
           "64bits",
           "macho",
-          "multi-arch",
-          "arm",
           "self-signed"
         ],
         "reputation": 0,
@@ -40782,7 +40783,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f09773a220d16e25ff8626af5ae925829bf180bcceb84431f72778bfe84a0475"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40834,14 +40835,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 26,
-        "total_engines": 56,
-        "detection_ratio": "26/56",
+        "positives": 32,
+        "total_engines": 60,
+        "detection_ratio": "32/60",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
             "value": "trojan",
-            "count": 18
+            "count": 21
           }
         ],
         "names": [
@@ -40850,22 +40851,23 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
           "arm",
-          "self-signed",
           "macho",
+          "self-signed",
+          "multi-arch",
           "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
-          "Sophos": "OSX/InfoStl-IP"
+          "Sophos": "OSX/InfoStl-IP",
+          "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/d60004e652baebc1230dc7262b2983b3d8c62f1f7b132edaba8b68c6a82b20c0"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -40917,14 +40919,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 28,
-        "total_engines": 62,
-        "detection_ratio": "28/62",
+        "positives": 32,
+        "total_engines": 63,
+        "detection_ratio": "32/63",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -40933,15 +40935,15 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "64bits",
           "arm",
-          "multi-arch",
           "macho",
           "self-signed",
-          "64bits"
+          "multi-arch"
         ],
         "reputation": 0,
         "key_engine_detections": {
-          "Microsoft": "Trojan:Script/Wacatac.B!ml",
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
           "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
@@ -40949,7 +40951,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6bbd6311fa06d6dba192c8739fb1519b9a86074f718bae304c2bdc92c2608e7f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41001,14 +41003,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 27,
+        "positives": 33,
         "total_engines": 62,
-        "detection_ratio": "27/62",
-        "suggested_threat_label": "trojan.amos/abtrojan",
+        "detection_ratio": "33/62",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -41018,21 +41020,22 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "64bits",
-          "multi-arch",
-          "macho",
+          "arm",
           "self-signed",
-          "arm"
+          "multi-arch",
+          "macho"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/49006e5ef2cd5c0b48dcd4ec4f14ff17e15b737191dbb22c93bbac963f89ab15"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41084,13 +41087,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 24,
-        "total_engines": 62,
-        "detection_ratio": "24/62",
-        "suggested_threat_label": "trojan.amos/abtrojan",
+        "positives": 31,
+        "total_engines": 60,
+        "detection_ratio": "31/60",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 16,
+            "count": 20,
             "value": "trojan"
           }
         ],
@@ -41099,22 +41102,23 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
-          "self-signed",
           "arm",
-          "macho",
-          "64bits"
+          "self-signed",
+          "64bits",
+          "multi-arch",
+          "macho"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/3ab2cca8113b62240a9bce2d312a920a55f0a2313c6a8f76d0427400e6d6ab3f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41198,7 +41202,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e59471dbb08a04c5ec6df736f149919cc5333ef19da2b2de298d4f429d0c3612"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41256,8 +41260,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -41282,7 +41286,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a9c7b69cece1e5999a2302d4152bc038ffe8305e84e3d974ace49132241c3206"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41367,7 +41371,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/eaddd0e6bf1c396859cee853792e6878977c8951829e1c43a66b204cc11a6a47"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41425,8 +41429,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -41452,7 +41456,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2c4229230fdcb224538828468a8642aaf4429a1591fe83776f8b3aa683d65050"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41536,7 +41540,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0d98501ac73fd2c318e0e1a4a223b9e2589f235627e512eac8b88a275315b69a"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41621,7 +41625,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/70b2276aaa5ff9a8e714d625b9238c5bad790145be09827fb928143810df3bc9"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41679,8 +41683,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 17
+            "count": 17,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -41704,7 +41708,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2df7b49b9987822e437f1b88efedd9fbe58a7f524ec02974034c6188f6e39c35"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41762,8 +41766,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -41789,7 +41793,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/06a3833ccb61fe1dea39f628f1425524fd865c05a850aaf12da84bca23713292"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41841,13 +41845,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 30,
-        "total_engines": 62,
-        "detection_ratio": "30/62",
+        "positives": 33,
+        "total_engines": 63,
+        "detection_ratio": "33/63",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
+            "count": 21,
             "value": "trojan"
           }
         ],
@@ -41859,14 +41863,14 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "arm",
-          "64bits",
-          "multi-arch",
           "self-signed",
-          "macho"
+          "macho",
+          "multi-arch",
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {
-          "Microsoft": "Trojan:Script/Wacatac.B!ml",
+          "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
           "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
@@ -41874,7 +41878,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0bde7e85c0d4d2f39996772a6348b1bee4717349afa648a301f182529429c81d"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -41926,14 +41930,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 26,
-        "total_engines": 62,
-        "detection_ratio": "26/62",
-        "suggested_threat_label": "trojan.amos/abtrojan",
+        "positives": 32,
+        "total_engines": 63,
+        "detection_ratio": "32/63",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -41945,21 +41949,22 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "multi-arch",
-          "arm",
           "macho",
+          "64bits",
           "self-signed",
-          "64bits"
+          "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/fb3a907fa1c573b1d5604fb511c9c9c04d3f8b75bbdacd1402c31b53b5393a23"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42011,14 +42016,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 28,
-        "total_engines": 62,
-        "detection_ratio": "28/62",
+        "positives": 30,
+        "total_engines": 59,
+        "detection_ratio": "30/59",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 16
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -42028,23 +42033,23 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "self-signed",
           "arm",
+          "self-signed",
+          "macho",
           "multi-arch",
-          "64bits",
-          "macho"
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
           "Sophos": "OSX/InfoStl-IP",
-          "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
+          "ESET-NOD32": "OSX/PSW.Agent.KV trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/11387a0d240ca6a184d4fd7524e63661012b26a51926ba6562fd7d966ad1b23d"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42096,14 +42101,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 28,
-        "total_engines": 61,
-        "detection_ratio": "28/61",
-        "suggested_threat_label": "trojan.amos/infostl",
+        "positives": 29,
+        "total_engines": 53,
+        "detection_ratio": "29/53",
+        "suggested_threat_label": "trojan.infostl/macho",
         "popular_threat_category": [
           {
             "value": "trojan",
-            "count": 17
+            "count": 18
           }
         ],
         "names": [
@@ -42114,23 +42119,22 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "64bits",
           "arm",
           "macho",
-          "multi-arch",
-          "self-signed"
+          "64bits",
+          "self-signed",
+          "multi-arch"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
-          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
           "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/d2ec7a876540ce8f4096e004a42db4cb541383a2bd85087169bc96fda4c875db"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42182,13 +42186,13 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 27,
-        "total_engines": 61,
-        "detection_ratio": "27/61",
-        "suggested_threat_label": "trojan.amos/abtrojan",
+        "positives": 28,
+        "total_engines": 56,
+        "detection_ratio": "28/56",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
+            "count": 18,
             "value": "trojan"
           }
         ],
@@ -42199,8 +42203,8 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
           "self-signed",
+          "multi-arch",
           "arm",
           "macho",
           "64bits"
@@ -42208,13 +42212,13 @@ window.YARAFY_DATA = {
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
-          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/840ebbef896ec2ccff40ce45096b63a6145665244077626d78509d7fdc32f6dd"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42266,9 +42270,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 32,
+        "positives": 33,
         "total_engines": 62,
-        "detection_ratio": "32/62",
+        "detection_ratio": "33/62",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
@@ -42283,11 +42287,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "arm",
-          "64bits",
-          "multi-arch",
           "self-signed",
-          "macho"
+          "64bits",
+          "macho",
+          "multi-arch",
+          "arm"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -42299,7 +42303,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6015a6d3a00d5771932ce7abf625a53c0bc4ba6b2353bd7e033f2434d708fe16"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42351,14 +42355,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 23,
-        "total_engines": 58,
-        "detection_ratio": "23/58",
-        "suggested_threat_label": "trojan.amos/adhl",
+        "positives": 29,
+        "total_engines": 60,
+        "detection_ratio": "29/60",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -42368,9 +42372,9 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "arm",
           "self-signed",
           "multi-arch",
-          "arm",
           "macho",
           "64bits"
         ],
@@ -42378,12 +42382,13 @@ window.YARAFY_DATA = {
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/0bb6aca14af0fb513500770ca601c5b66e46c47e565f6e87c31f0c293fa8f5e3"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42435,14 +42440,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 23,
-        "total_engines": 62,
-        "detection_ratio": "23/62",
-        "suggested_threat_label": "trojan.amos/cgow",
+        "positives": 29,
+        "total_engines": 60,
+        "detection_ratio": "29/60",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 16,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -42452,22 +42457,23 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "arm",
+          "64bits",
           "macho",
           "self-signed",
-          "arm",
-          "multi-arch",
-          "64bits"
+          "multi-arch"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/ff72b39a559646d5a546eba3c939994ce9c3ed28efe200fa7929018c11292dd3"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42519,14 +42525,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 27,
-        "total_engines": 63,
-        "detection_ratio": "27/63",
-        "suggested_threat_label": "trojan.amos/macho",
+        "positives": 31,
+        "total_engines": 61,
+        "detection_ratio": "31/61",
+        "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -42537,22 +42543,23 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "self-signed",
-          "64bits",
-          "arm",
           "service-scan",
           "macho",
-          "multi-arch"
+          "multi-arch",
+          "arm",
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KU trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/5670d4f79411fd5cb2ec03c2b5ed81b44e2b0681a72de5d9ce0de4001066d02a"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42604,9 +42611,9 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 32,
-        "total_engines": 63,
-        "detection_ratio": "32/63",
+        "positives": 31,
+        "total_engines": 62,
+        "detection_ratio": "31/62",
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
@@ -42621,11 +42628,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "macho",
-          "arm",
-          "self-signed",
           "multi-arch",
-          "64bits"
+          "64bits",
+          "arm",
+          "macho",
+          "self-signed"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -42637,7 +42644,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b61faf483a13cc25f7b90129cb7088cd498560a09c1a014b5ca72ab713814352"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42722,7 +42729,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c15a21e69b3142e50d4e42a4203741d924795b44a6a3907dcaf2a5dec0ae9d77"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42780,8 +42787,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -42807,7 +42814,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/598b0992d69d55845c1be3233b3abdc63ad1184cbc01705d5bbd1e65ea11fdbb"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42892,7 +42899,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/62d5eae2e4f7deba6554026ee460e04ca0b100761f9fad62aa79983b6c5c444a"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -42950,8 +42957,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -42976,7 +42983,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/af9fedc9c2e8a653812e75ba6315e41b734d33e1f85868a4834670b19863adba"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43034,8 +43041,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -43062,7 +43069,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ffc3f8bdd9d37069c190378fc681e70992d9b88d9b8810cf00a1d89080c9ee8f"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43146,7 +43153,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/67b75dbf7e0fa3009c3726b03cafd47b8eea8b7bd937409de615015410b3aa64"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43204,8 +43211,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -43232,7 +43239,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3bca04a525efbce865d03bd7cc7631c7dca3e9c50f4e1949c955541e3660103"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43290,8 +43297,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -43317,7 +43324,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/71fbe49d223d272852212f304d1dfa207b671b060426a3e619e6c0c6813b589d"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43375,8 +43382,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -43403,7 +43410,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ab253de6924568c6a4574561fc6ec14ee98e5fd48e98162245c71a612af96a26"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43461,8 +43468,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -43488,7 +43495,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c7bebd02f8db04103ac5f83078e634535db5ff1d3a59fe241b707c36813d2983"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43574,7 +43581,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3169f13963324e6b06335f3f19c672630ddc0c0da423b2d0bdd9378d1de6de71"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43659,7 +43666,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/27e4adf26375ac044a8631d8998471b0c4746635cb8e45d9f12e5d6a24d080d9"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43717,8 +43724,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -43746,7 +43753,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9081546dcd8528fa3b26aabcab3baf5ece17faadcb0f6e697e7591f73c6ed839"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43832,7 +43839,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6d2c7f1837bd52c975c29c8ac8c0bc2f4b5b688ac987482da05c77e0ea2295c5"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -43890,8 +43897,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abtrojan",
         "popular_threat_category": [
           {
-            "count": 17,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 17
           }
         ],
         "names": [
@@ -43917,7 +43924,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b2a38245d0cd7985793e03df229a46ea8cee0941b8b1dc116a3a128e8fe1aa03"
       },
       "detected_at": "2026-10-26T11:44:45.495361+00:00",
-      "last_seen_at": "2026-11-14T15:28:11.156712+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44001,7 +44008,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/533fdbf6b54775472b63e8e67a29d1647c207273b3cb32971f8647c42c6066a7"
       },
       "detected_at": "2026-10-26T20:05:47.015161+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44059,8 +44066,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -44085,7 +44092,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7d969f25af3d016f00dd2858f28c5f2ff166f13b85072eaa8d736885ee956068"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44170,7 +44177,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bd1c28603a4fae25b60dc7263c88ffcc7fc14f1cf2cac5143d5bfa786b151433"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44254,7 +44261,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/297878107f9a04137afb70647994becb2452fff58104faf93203fac09248241b"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44339,7 +44346,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/163a3b1821e5527f75e7620b6cfd10718c715c96a8cb72a71465fe0a887bf253"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -44521,8 +44528,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -44548,7 +44555,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1d892af7a9b3989131c81cf4e1adcc52822390ee06cbd304eea43031c3d31ec1"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44633,7 +44640,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8fc35a16f8829ea8dadecc724830813583e2b5d668cb733932c8d1c3d1733fa2"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44718,7 +44725,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8c34eefaceeed222cd9779fb3e72d0c9c87df96ebfcdc7b19b9e696ab16afcc3"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44803,7 +44810,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/44e49692c182143a7630be5decb072a12fb1462aaf143284411de135697896de"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44888,7 +44895,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2b2db5ba050175472c1ba8c4853b151de3a7ff55f3eeca901802ec75aa73b770"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -44973,7 +44980,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3ce73d8dbdb4c9323ed56386f5c0861d69f3ef257f821705b9326ed8058b5e3"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45031,8 +45038,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -45058,7 +45065,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/46c09f852a7f05361b8758d10aba4426d4eacab74ed6e0ea5fdef20812934133"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45143,7 +45150,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/04e30db39d13194ddd1d20dcc31779bf3e174d7957931be3aa7cb92f852fa11e"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45201,8 +45208,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -45228,7 +45235,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8d8dd9808f875b74c2ba8aa735c00e661b2d366f658d4d78a79bbb041b504eb2"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45286,8 +45293,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -45313,7 +45320,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4fd0502c48d621cb9fec491391d408e9c19f5643b57b3841c9fa1d488c779d97"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -45371,8 +45378,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -45398,7 +45405,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4f937f9bcfbb1ac38a7c0f791a760425bb555ba8002752b879ddda303c1a425e"
       },
       "detected_at": "2026-10-27T22:02:30.007835+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_Backdoor_C5_Implant",
@@ -101543,8 +101550,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/abmrisk",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -101570,7 +101577,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3bba0dd56b220041d6a7080fa8f53d8563bf2ced7796e88c9dc1b7beba44785a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101628,8 +101635,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -101656,7 +101663,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/7c3b234169d90ac5d8b18e56e5c46012319124a225316a962506b236fc952075"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101714,8 +101721,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -101741,7 +101748,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3f84244dcab460b6fba60510836251c5999611c7f440d6bdad5c63121909a9f9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101799,8 +101806,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -101826,7 +101833,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/99ec22bed70db1293ac55f87019f49d4ce04e2deacb503f498b072b72979d524"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101911,7 +101918,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/326eaea523a3f44a6faebafb5bc8bf4395c713b4a6d375e8b57f2f6d23602983"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -101969,8 +101976,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -101996,7 +102003,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ac22530ddcc9b0ce1841dcc1c82ce813dc04a2c37d29bf393388d3a214ac6626"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102080,7 +102087,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bff661c290456430436cb22cf83826e9e63b2959764fe27cdb725cb975b8f416"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102165,7 +102172,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/747ae1b6626bd476e0d01ca5862d73d789393ec17481ca652669351d43a6bd3a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102223,8 +102230,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -102250,7 +102257,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/14c2594caebd59572aaf0410e92b06f112dc3b2b9640c66aa820b87d5b898689"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102335,7 +102342,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ccb36936001ee1f0c0c70eac9f7fe177d5652afb20f351ff1122c93e42045320"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102393,8 +102400,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -102420,7 +102427,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1eb39dbd8ca631431e37f173fa80b00fbac4a6c3a26effe6dacbe5b3eb4d8ecd"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102478,8 +102485,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -102505,7 +102512,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/c3eec7ca615e28918446d87032d4630279a77979a8e863cc43456b109d664d48"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102590,7 +102597,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2a93e929b69caa6dc56901cda012b0073d83a4682a025193a0fc7234fedff83f"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102675,7 +102682,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/eb38f2f91b58545f0511de0954534472e65de8b07abb57cee40a73576b0318af"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102733,8 +102740,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -102760,7 +102767,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9eabb901cc361b1b74cda3d7449ccc45d4b142c822c5e78b47246b0d8bbf7bee"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102818,8 +102825,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -102845,7 +102852,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a8ee26aaa41e04b86cdeebd2c3748171bec0f8e4fab02f9a48cd5bbedd5db544"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -102903,8 +102910,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -102930,7 +102937,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bb4568b5a0a179f5391be75ac164900363133b29c24b225438f66c17a741d2dd"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103015,7 +103022,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f9713062c7f48d9689b2f921def5c3ebcb35e036b2ab694d625102dbadce8b52"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103073,8 +103080,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -103101,7 +103108,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/23746b451646aeaec0e56f813c7654fd75cb3c5a6d7c0e75fcda66c6287e5df2"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103187,7 +103194,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/54c7ebe70c5981d14bda4f2ed99adbac28fcf390e4ddd0e0f272dd893f6caa1b"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103245,8 +103252,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -103273,7 +103280,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/85279394e95efea3d2678c9561021cb4a9f7a4d88dbafc74668ee918fff0fd0a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103331,8 +103338,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -103359,7 +103366,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/69092c70e390ba31429d4bbd08ca01eef3415e665551d3d3a66b673f36ed48d3"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103417,8 +103424,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 22,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 22
           }
         ],
         "names": [
@@ -103444,7 +103451,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/83ef81d48afa643d27fe562d1c4a709a35a42b10cd57ea82213f0fdeb9d78633"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103529,7 +103536,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0c6dc7c70dd1f121245c5eb743c18fc8a9532024e137535070d6c8479e7ccd9a"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103615,7 +103622,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/f64b3080432867f3778e62399cc109dfbc10ddc924bc5221daa3c1d54eecc831"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103673,8 +103680,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -103700,7 +103707,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5300c0e0296ae4d2897ea72b5282b2fa57f8b824507e1a3d9dd80d6530395fdc"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103785,7 +103792,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1c5efea856059fc548f2b21e9e6e5079727949e5c86f8f428acfeef314ed1060"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103843,8 +103850,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -103869,7 +103876,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8ac8e983086e7e35004a8ea6575a37e14b986c518b13bc5c906e3df89f37d8d3"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -103927,8 +103934,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -103954,7 +103961,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/8220416c319dfc519aaf6023ac5c50394d758e3ebe436f3e7c43ff7feb19c0a0"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104012,8 +104019,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -104038,7 +104045,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bb4490884100ee84e132ea822d06da99508becdc16e434dcf11ade19b0971dd0"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104123,7 +104130,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a2badf05b11de0f772600c9fef2357c1f514a0ca21feb43240f188dbf7522992"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104208,7 +104215,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/643af4611e02c36280cdf4a9b22be3488ec48278db7511e268c13d0c11a0daf9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104266,8 +104273,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -104292,7 +104299,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e2fcffd2ce53fe38b555db86e14e96b706eb811367dba4725f96a248c667b9a8"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104350,8 +104357,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -104377,7 +104384,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/87367d9c60bb5923526138d10340a60d13d150f3280bba966d0ef8a335893635"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104462,7 +104469,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/6335a4427566446e65202fb47dac5bac3433308c5daabf2293afb3c795f5353c"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104532,8 +104539,8 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "macho",
-          "multi-arch",
           "arm",
+          "multi-arch",
           "64bits",
           "self-signed"
         ],
@@ -104547,7 +104554,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/acd2e7872edb9612a92e835bd243a83d185407e1680dea2e70845620874ff1dc"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104632,7 +104639,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1fbdd925143e28ea6542bcc3b15cd44de7c0b226082f6f99450f0e1822db2068"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104717,7 +104724,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/470034fb481dec06585288f94abcc8e9375b12c29a86d64dc30b1a68c24c0282"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104802,7 +104809,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/114b69aa53a40d7702a11ff81e3fc1d7104a3132c3395f403e6033c68f181230"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104887,7 +104894,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d6ce062f26b771b19a085a727ca13d5c568037cee3039a1bbf8c261e8c44e363"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -104945,8 +104952,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -104972,7 +104979,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9078f1a436d99d859645a65df94b93e80e516972146ce895efed935c642ccba9"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -105057,7 +105064,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b3ffa0ce815def773ca9e9807af167f1378fcebf91eafd1ddaf86b1238fa5412"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -105115,8 +105122,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -105142,7 +105149,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0611cf61fa7ef2bab6cabd19207b0256a69a2981966b1f32691057c7dc03a433"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -105227,7 +105234,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2cbc03368b2c63103af1e705a0dd42efe93514f87461ee14d9df858ec19e6a68"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -105285,8 +105292,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.stealer/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -105312,7 +105319,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/3168c669fae2b267641c203e1abf6fa8e6011201ab8187dfe06d0168ff957c7f"
       },
       "detected_at": "2026-10-31T19:26:14.890364+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "Macho_Jockey_Implant",
@@ -106633,7 +106640,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/21f5852d9ade22f90e63e67898dcc6f0fb240e782c826f513e34d685d3ff8ca8"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106692,8 +106699,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 21
+            "count": 21,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -106718,7 +106725,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/46b32e8232bd0b359d3cdd5891c9030a58f0a949225cb3eba1b72014a034d5b3"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106804,7 +106811,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/32da533a3e59d5b86c115b4302897f5d8a5d791b34f9deb2b933c3476979fcd1"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106889,7 +106896,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/cd3569812aefac3396be7f11124c068e200dc83e7882832adf9161e7b2656f75"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -106975,7 +106982,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/af95c361f4a077a251c9879c2cbadd1394302db083b6753bba55784d792dcc2c"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107028,14 +107035,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 31,
-        "total_engines": 62,
-        "detection_ratio": "31/62",
-        "suggested_threat_label": "trojan.amos/infostl",
+        "positives": 33,
+        "total_engines": 63,
+        "detection_ratio": "33/63",
+        "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -107045,11 +107052,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
-          "64bits",
-          "macho",
           "arm",
-          "self-signed"
+          "macho",
+          "multi-arch",
+          "self-signed",
+          "64bits"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -107061,7 +107068,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e9e8cbb6e60dec133269e83d5c9564b5fca8ff5293233ae2766bdfc1e17503d0"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107117,11 +107124,11 @@ window.YARAFY_DATA = {
         "positives": 31,
         "total_engines": 63,
         "detection_ratio": "31/63",
-        "suggested_threat_label": "trojan.amos/infostl",
+        "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -107131,11 +107138,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
-          "macho",
-          "self-signed",
           "arm",
-          "64bits"
+          "multi-arch",
+          "64bits",
+          "macho",
+          "self-signed"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -107147,7 +107154,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9dc758ca7a1e93859946e18206a4b3f34ef76b778b43f5226a40ffeb2444db48"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107233,7 +107240,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b28c2590e605070470bbad8963a3f18abeb7c972ac65ba3dc77622cb3cb85324"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107286,10 +107293,10 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 30,
-        "total_engines": 62,
-        "detection_ratio": "30/62",
-        "suggested_threat_label": "trojan.amos/infostl",
+        "positives": 32,
+        "total_engines": 63,
+        "detection_ratio": "32/63",
+        "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
             "value": "trojan",
@@ -107303,11 +107310,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
-          "multi-arch",
-          "macho",
-          "self-signed",
           "64bits",
-          "arm"
+          "multi-arch",
+          "arm",
+          "self-signed",
+          "macho"
         ],
         "reputation": 0,
         "key_engine_detections": {
@@ -107319,7 +107326,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/981ff25c886308d5350b4446184f14406be6cc01186bb19ebf0de8cf843e392f"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107405,7 +107412,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1ec9297709a225f912fc7145f43654bc1a6b61e56c9684bf22c6aaf0fad98289"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107458,14 +107465,14 @@ window.YARAFY_DATA = {
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 22,
-        "total_engines": 53,
-        "detection_ratio": "22/53",
-        "suggested_threat_label": "trojan.amos/abtrojan",
+        "positives": 33,
+        "total_engines": 63,
+        "detection_ratio": "33/63",
+        "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 15
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -107476,21 +107483,22 @@ window.YARAFY_DATA = {
         "type_description": "Mach-O",
         "tags": [
           "macho",
-          "self-signed",
-          "multi-arch",
           "64bits",
-          "arm"
+          "self-signed",
+          "arm",
+          "multi-arch"
         ],
         "reputation": 0,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/Multiverze!rfn",
           "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.ca",
+          "Sophos": "OSX/InfoStl-IP",
           "ESET-NOD32": "OSX/PSW.Agent.KV trojan"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/6ee52429a22ee09c723794eaa590cd4f08a4109d5e3bd9bb7e71f94de3e3851a"
       },
       "detected_at": "2026-11-01T16:48:03.047528+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107549,8 +107557,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -107576,7 +107584,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/64fb0d531b51a70cd4a40d4b2ece6c98d7a3d453c5d5b148f4cae75208584677"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107635,8 +107643,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -107662,7 +107670,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b01d5a9d05b788cdbff787e3317e207caec6b6e08979a1efe0f7764cbfdd86dc"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107746,7 +107754,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5c18af8d98e6b13dbf5b8b408d817a302a5239311fff0da0319e11c9d5ce76cb"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107831,7 +107839,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ba2fb68385233683f785e3bae69cb79360a2a6c48b43b44f9c43a3b8f54ca1a9"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107917,7 +107925,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/93c9298f7f23e0bdfc19785099fc85bb04acae14bbfe9f9cc3cb9355447ac47c"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -107976,8 +107984,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -108004,7 +108012,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d3146700547025c387b0f3e707f391d59f2b62c4c60b6ecbf5134c79e01d67e1"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108063,8 +108071,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.infostl/multiverze",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -108090,7 +108098,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ec038d8ecdc9f33786ec79dab5b30ac1682bc9378540e1a7e775dda5c8bdb6b5"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108149,8 +108157,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -108176,7 +108184,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/197596c12388be1a4e07197e5b98535472a672ceab2db16c8c3737a025ffbb0d"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108235,8 +108243,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -108262,7 +108270,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b92921e81666ba02fcd593c5f18aa8952b639d1fe7d13849677dd27954c479e8"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108321,8 +108329,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -108348,7 +108356,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/95b3a52bad5da0468d6af8a8c56e0ca7e307c2c0151f2531903e27c49458d308"
       },
       "detected_at": "2026-11-02T17:14:50.267754+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108435,7 +108443,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9d3df907e1aae13743a47276d4e06ba974e3781763fa23f99c09867609a4fb4a"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108521,7 +108529,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1dffdfbda8c09dd397b1d65ef019202c1dd12c1b172a6f90e1f45918f3a9a4b7"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108606,7 +108614,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/9f633733db4d5c8d085beb28c3ec145a7e0d0af6ea29f1092d410e3bbe833ac1"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108691,7 +108699,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/48b170f32c51d94fa7d9d2040b753500e8e3e23c934e3b900cad733b33687bc0"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108750,8 +108758,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 18
+            "count": 18,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -108777,7 +108785,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/910e33613d9ed72442909f57564d8aba029b77422b1c3138deadb8732d882d4a"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108862,7 +108870,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/bd4fb920575b7fa5f2b856cc49af0e6f55f0062dc67bb378aa4cb36760118c3e"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -108921,8 +108929,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 13,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 13
           }
         ],
         "names": [
@@ -108947,7 +108955,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/46bcabf552548de2f2fb4f4c3781d10aa2cd8e3699be5b5616a6c4df1039f981"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109032,7 +109040,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/ae6a965e363eb206757d4b00741e2b7c0937f1efbb256df9007177421ded6962"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109118,7 +109126,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/937e0b01afe0b72a92d8b5cd0284f057240e833d783f5efb1385f9f5a600c320"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109204,7 +109212,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/85733cc2d4fc2697579777f402c154603fd6576921698ed601bd636420329fe4"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109263,8 +109271,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 19,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -109290,7 +109298,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/d561097aaf56697eafd98e5fe24297866c9ea64375db931fa99dc8dfd640b84c"
       },
       "detected_at": "2026-11-03T18:10:01.791690+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109349,8 +109357,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -109375,7 +109383,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1915e2b4792be27bedf68c2e496d5dcf0f870656263f3195bf2e5ea225af90e8"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109434,8 +109442,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -109460,7 +109468,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/5c1b00db39b643a1540d7c0d41bb4f6a8f12f76963f694fe15e30d7159c6dd42"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109547,7 +109555,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a1207ab455644e9c9ba6a822f4bef88a519893421821c6840a6ec8bbf51bedd1"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109632,7 +109640,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/82fc8392dbf1d4f87aaaf087448566ae36d9387e47758c5645ef72369c7fe63f"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109691,8 +109699,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -109719,7 +109727,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/83fbae547d319db480b78f3256d0f4dd1b21123458a547cd5688a23702a2393a"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109778,8 +109786,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -109805,7 +109813,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/80f9844f1582858b5afd0259e0d8f2b8f26a2e71f08bb0d43ae1a1850e3b2a41"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109864,8 +109872,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -109891,7 +109899,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0b5981059d2626952a96b9f06aaebe909697ebe7b9f9623d3f7ef127e2ff981a"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -109977,7 +109985,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/87153046bb0e4d822defedf4546ae51f4e68402f3b10872f28f5ea8611774eac"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -117161,7 +117169,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e8b7503f40fbcc41ed6769584b410da29827e505160290335454214074b7a511"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_1006YR",
@@ -124347,7 +124355,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e8b7503f40fbcc41ed6769584b410da29827e505160290335454214074b7a511"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "Macho_Trojan_CloudSync_Generic",
@@ -124355,6 +124363,8343 @@ window.YARAFY_DATA = {
       "namespace": "macos_droppers_cloudsync_yar",
       "tags": [],
       "meta": {
+        "description": "Generic detection for CloudSync",
+        "date": "2026-10-06",
+        "family": "CloudSync",
+        "platform": "macOS"
+      },
+      "matched_strings": [
+        {
+          "offset": "0x2458a0",
+          "identifier": "$sobf_sbox",
+          "data_preview": "d7 19 bf 57 e6 5b a0 9d e1 ba cd b1 82 c9 91 18 ed af d5 18 fd 3a 4a 97 97 bc ad 22 1a db 81 51"
+        },
+        {
+          "offset": "0xcb4150",
+          "identifier": "$sobf_sbox",
+          "data_preview": "d7 19 bf 57 e6 5b a0 9d e1 ba cd b1 82 c9 91 18 ed af d5 18 fd 3a 4a 97 97 bc ad 22 1a db 81 51"
+        },
+        {
+          "offset": "0x32a7f",
+          "identifier": "$sobf_code_x86",
+          "data_preview": "41 6b c4 83 41 83 e4 1f"
+        },
+        {
+          "offset": "0xae842c",
+          "identifier": "$sobf_code_arm",
+          "data_preview": "69 10 80 52 c9 7e 09 9b cb 12 40 92"
+        },
+        {
+          "offset": "0x24f3b7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x24f3f8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x24f896",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x24f8d7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x24fbc2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x24fcc2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x26180e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x261a54",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x265c5f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x265dcc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x265e1c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x265ea9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x265f38",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x265ff4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x266097",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x266154",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x266279",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x26634e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b53a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b572",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b5a8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b5e3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b61d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b657",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b692",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b6ce",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b70a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b746",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b782",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b7be",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b7fb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b838",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b875",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b8b3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b8f1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b930",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b96f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b9ae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7b9ed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ba2c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ba6b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7baaa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7baea",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bb2a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bb6a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bbaa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bbeb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bc2c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bc6d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bcae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bcef",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bd30",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bd71",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bdb2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bdf4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7be36",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7be78",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7beba",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7befc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bf3e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bf81",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7bfc4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c007",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c04a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c08e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c0d2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c116",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c15a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c19e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c1e2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c227",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c26c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c2b1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c2f6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c33c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c382",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c3c8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c40e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c455",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c49c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c4e3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c52a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c571",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c5b8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c5ff",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c646",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c68d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c6d5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c71f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c76b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c7b7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c803",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c84c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c886",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c8c2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c8ff",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c94e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c99b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7c9e8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ca35",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ca84",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cad3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cb23",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cb6c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cbb5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cc01",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cc4d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cc9a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cce7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cd34",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cd82",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cdd1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ce20",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ce6f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cec0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cf09",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cf4e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cf86",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cfb6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7cfe8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d01b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d04f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d084",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d0b9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d0ee",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d123",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d159",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d18f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d1c5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d1fc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d233",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d26b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d2a3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d2db",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d313",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d34b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d383",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d3bb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d3f4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d42d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d466",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d49f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d4d9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d513",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d54d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d587",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d5c1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d5fb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d635",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d66f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d6aa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d6e5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d720",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d75b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d796",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d7d1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d80d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d849",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d885",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d8c1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d8fe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d93b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d978",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d9b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7d9f2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7da2f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7da6d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7daab",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dae9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7db27",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7db66",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dba5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dbe4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dc23",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dc63",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dca3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dce3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dd23",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dd63",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dda3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dde3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7de23",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7de63",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dea4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7dee7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7df2c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7df71",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7e2b6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7e44d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7eb57",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ebcf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7f0ed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7f281",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7f9d1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fa43",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fc55",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fcc3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fcfb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fd2e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fd61",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fd95",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fdce",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fe00",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fe35",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fe6b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7feae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7fee6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ff1e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ff57",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ff91",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa7ffcb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80005",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8003f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80079",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa800b4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa800ef",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8012a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80166",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa801a2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa801df",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8021c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80259",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80296",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa802d3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80310",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8034d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8038b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa803c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80407",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80445",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80484",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa804c3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80502",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80541",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80580",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa805bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa805fe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8063d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8067d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa806bd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa806fd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8073d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8077d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa807bd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa807fe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8083f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80880",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa808c1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80903",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80945",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80987",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa809c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80a0b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80a4d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80a90",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80ad3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80b16",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80b59",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80b9d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80be1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80c25",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80c69",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80cae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80cf3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80d38",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80d7d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80dc2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80e07",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80e4c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80e91",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80ed6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80f1c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80f64",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80fae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa80ff8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81042",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81089",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa810c1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa810fb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81136",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81183",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa811ce",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81219",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81264",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa812b1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa812fe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8134c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81393",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa813da",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81424",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8146e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa814b9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81504",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8154f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8159b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa815e8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81635",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81682",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa816d1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa81718",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa852f3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa85307",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa89dde",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa89ea5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8a16b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8a9f7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8ac3d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8ad04",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8b193",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8b1a9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8b248",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa8b25e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94c81",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94cb4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94ce8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94d21",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94d56",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94d8e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94dc7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94e01",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94e3b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94e75",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94eaf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94ee9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94f24",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94f5f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94f9a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa94fd6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95012",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9504f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9508c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa950c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95106",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95143",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95180",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa951bd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa951fb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95239",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95277",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa952b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa952f4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95333",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95372",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa953b1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa953f0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9542f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9546e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa954ad",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa954ed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9552d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9556d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa955ad",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa955ed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9562d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9566e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa956af",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa956f0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95731",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95773",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa957b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa957f7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95839",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9587b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa958bd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95900",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95943",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95986",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa959c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95a0d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95a51",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95a95",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95ad9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95b1e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95b63",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95ba8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95bed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95c32",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95c77",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95cbc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95d01",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95d46",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95d8c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95dd4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95e1e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95e68",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95eb2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95ef6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95f2e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95f68",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95fa3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa95fed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96038",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96083",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa960ce",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9611b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96168",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa961b6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa961fd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96244",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9628e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa962d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96323",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9636e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa963b9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96405",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96452",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9649f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa964ec",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9653b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96582",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa965c5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96649",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9666c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96692",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9670a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96817",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9684a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9687d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa968b0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9692a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa969a1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96a1a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96a97",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96b12",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96b61",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96c4d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96cc9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96d46",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96d96",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96dd4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96e56",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa96edc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97001",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9702a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9708f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa970b3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97136",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97162",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97195",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa971ca",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa972af",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa972f7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa973df",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97419",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9748b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa974c5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9752d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa975bd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97605",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9764c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97674",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa976af",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9774a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa977eb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97890",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa978d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97921",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9794b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97988",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa979d1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97a1a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97a63",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97a8d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97ad6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97b20",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97b8c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97bb6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97c00",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97c6c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97c97",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97cd5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97d11",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97d9d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97e7f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97eab",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97f1b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97f6b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97f97",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa97fe2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9800e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9803a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98085",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa980e0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9810d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98198",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa981d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9822c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98259",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98295",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98318",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa983b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa983e7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98419",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9844e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa984d0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa984fe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9852c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9859b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa985e8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98617",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98647",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98676",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa986a5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa986eb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9875b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa987cc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa987fb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9882a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9886c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa988ba",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa988e9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98939",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98969",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa989f4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98a43",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98a73",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98aa4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98ad5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98b06",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98b7b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98bb9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98c2e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98c72",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98ce5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98d37",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98daa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98e1e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98e51",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98ec6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98f3a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa98faf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9900a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9907f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa990d3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9915b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa991d4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9920a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9925f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa992ac",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa992e3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99341",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99377",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa993a2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99440",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa994de",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99552",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99645",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9968a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa996f8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99781",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa997f0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9985d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa998ea",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99918",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99949",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9997b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa999ae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa999e1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99a14",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99a47",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99a7b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99aaf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99ae3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99b18",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99b4d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99b83",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99bb9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99bef",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99c25",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99c5b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99c91",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99cc7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99cfe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99d35",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99d6c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99da3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99ddb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99e13",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99e4b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99e83",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99ebb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99ef3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99f2b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99f63",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99f9c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa99fd5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a00e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a047",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a080",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a0b9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a0f3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a12d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a167",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a1a1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a1dc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a217",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a252",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a28d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a2c8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a303",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a33f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a37b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a3b7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a3f3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a430",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a46d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a4aa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a4e7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a525",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a563",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a5a1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a5df",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a61d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a65b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a699",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a6d7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a715",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a754",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a795",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a7d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a81b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a85e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a896",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a8df",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a912",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9a9ab",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9aa18",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9aaab",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9aad7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ab05",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ab79",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9abac",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9abe1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ac07",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ac62",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9acdf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ad41",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ad6b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ad98",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9adc5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9adf2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ae20",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9aeaa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9af1e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9afa9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b01e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b050",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b138",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b1ac",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b1e0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b268",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b29f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b2d7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b30f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b336",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b3a7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b3da",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b458",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b4d6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b552",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b5ce",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b5f1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b6ee",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b766",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b7fa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b820",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b847",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b86a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b88d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b8b0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b8d3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b901",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b973",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b9a2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9b9d1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ba00",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ba71",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bae2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bb15",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bb4d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bb74",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bb97",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bbba",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bbdd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bc00",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bc2f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bca0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bcd1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bd03",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bd36",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bd61",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bd93",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bdcb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bdf1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9be59",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9becd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9befb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bf29",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bf57",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9bf87",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9c243",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9c3b6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9c9b6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ca21",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ce64",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9cfd7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d62e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d699",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d853",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d8b4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d8ea",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d91b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d94c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d97e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d9b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9d9e5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9da18",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9da4c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9da8d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dac0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9daf6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9db2d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9db65",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9db9d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dbd5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dc0d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dc45",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dc7e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dcb7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dcf0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dd2a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dd64",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dd9f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ddda",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9de15",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9de50",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9de8b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dec6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9df01",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9df3d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9df79",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dfb5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9dff1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e02e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e06b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e0a8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e0e5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e122",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e15f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e19c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e1d9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e217",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e255",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e293",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e2d1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e30f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e34d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e38c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e3cb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e40a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e449",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e489",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e4c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e509",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e549",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e589",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e5c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e60a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e64b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e68c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e6cd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e70f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e751",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e793",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e7d5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e818",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e85b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e89e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e8e1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e924",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e967",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e9aa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9e9ed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ea30",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ea74",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9eaba",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9eb02",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9eb4a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9eb92",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ebd4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ec0a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ec42",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ec7b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ecc3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ed0c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ed55",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ed9e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ede9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ee34",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ee80",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9eec5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ef0a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ef52",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9ef9a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9efe3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9f02c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9f075",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9f0bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9f10a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9f155",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9f1a0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9f1ed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xa9f232",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcbe19f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcbe1e0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcbe67e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcbe6bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcbe8fa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcbe9ea",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd0dce",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd1014",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd53bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd552c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd557c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd5609",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd5698",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd5754",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd57f7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd58b4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd59d9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0xcd5aae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edc9c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edccf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edd03",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edd3c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edd80",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eddb8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eddf2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ede29",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ede5c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ede88",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edeb6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edee7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edf19",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edf4c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edf7f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edfb2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14edfe5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee019",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee04d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee081",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee0b6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee0eb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee121",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee157",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee18d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee1c3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee1f9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee22f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee265",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee29c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee2d3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee30a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee341",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee379",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee3b1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee3e9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee421",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee459",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee491",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee4c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee501",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee53a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee573",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee5ac",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee5e5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee61e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee657",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee691",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee6cb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee705",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee73f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee77a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee7b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee7f0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee82b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee866",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee8a1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee8dd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee919",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee955",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee991",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14ee9ce",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eea0b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eea48",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eea85",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eeac3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eeb01",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eeb3f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eeb7d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eebbb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eebf9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eec37",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eec75",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eecb3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eecf2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eed33",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eed76",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14eedb9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0c6d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0cce",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0d04",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0d35",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0d66",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0d98",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0dcf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0dff",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0e32",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0e66",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0ea7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0ee9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0f1f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f0f57",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2364",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2399",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f23d1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f240a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2444",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f247e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f24b8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f24f2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f252c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2567",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f25a2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f25dd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2619",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2655",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2692",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f26cf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f270c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2749",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2786",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f27c3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2800",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f283e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f287c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f28ba",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f28f8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2937",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2976",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f29b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f29f4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2a33",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2a72",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2ab1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2af0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2b30",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2b70",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2bb0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2bf0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2c30",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2c70",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2cb1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2cf2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2d33",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2d74",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2db6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2df8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2e3a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2e7c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2ebe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2f00",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2f43",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2f86",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f2fc9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f300c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3050",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3094",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f30d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f311c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3161",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f31a6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f31eb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3230",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3275",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f32ba",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f32ff",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3344",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3389",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f33cf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3417",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3461",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f34ab",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f34f6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3540",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f358b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f35d6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3621",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f366e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f36bb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3709",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3750",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3797",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f37e1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f382b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3876",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f38c1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f390c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3958",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f39a5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f39f2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3a3f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3a8e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3ad5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3b19",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3b4c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3b82",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3bb9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3bf1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3c29",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3c61",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3c99",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3cd1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3d0a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3d43",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3d7c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3db6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3df0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3e2b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3e66",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3ea1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3edc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3f17",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3f52",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3f8d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f3fc9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4005",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4041",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f407d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f40ba",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f40f7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4134",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4171",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f41ae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f41eb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4228",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4265",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f42a3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f42e1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f431f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f435d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f439b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f43d9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4418",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4457",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4496",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f44d5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4515",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4555",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4595",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f45d5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4615",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4655",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4696",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f46d7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4718",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4759",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f479b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f47dd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f481f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4861",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f48a4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f48e7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f492a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f496d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f49b0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f49f3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4a36",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4a79",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4abc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4b00",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4b46",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4b8e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4bd6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4c1f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4c67",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4cb0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4cf9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4d42",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4d8d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4dd8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4e24",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4e69",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4eae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4ef6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4f3e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4f87",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f4fd0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f5019",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f5063",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f50ae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f50f9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f5144",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f5191",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f51d6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f52b6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f52ca",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f9c6c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f9c82",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f9ddb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x14f9df1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15034a9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15034dc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503510",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503549",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150357e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15035b6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15035ef",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503629",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503663",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150369d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15036d7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503711",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150374c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503787",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15037c2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15037fe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150383a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503877",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15038b4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15038f1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150392e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150396b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15039a8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15039e5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503a23",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503a61",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503a9f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503add",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503b1c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503b5b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503b9a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503bd9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503c18",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503c57",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503c96",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503cd5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503d15",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503d55",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503d95",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503dd5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503e15",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503e55",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503e96",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503ed7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503f18",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503f59",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503f9b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1503fdd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150401f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504061",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15040a3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15040e5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504128",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150416b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15041ae",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15041f1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504235",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504279",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15042bd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504301",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504346",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150438b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15043d0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504415",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150445a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150449f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15044e4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504529",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150456e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15045b4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15045fc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504646",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504690",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15046da",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150471e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504756",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504790",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15047cb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504815",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504860",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15048ab",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15048f6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504943",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504990",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15049de",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504a25",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504a6c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504ab6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504b00",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504b4b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504b96",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504be1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504c2d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504c7a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504cc7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504d14",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504d63",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504daa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504ded",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504e71",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504e94",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504eba",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1504f32",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150503f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505072",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15050a5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15050d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505152",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15051c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505242",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15052bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150533a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505389",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505475",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15054f1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150556e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15055be",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15055fc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150567e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505704",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505829",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505852",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15058b7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15058db",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150595e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150598a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15059bd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15059f2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505ad7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505b1f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505c07",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505c41",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505cb3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505ced",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505d55",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505de5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505e2d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505e74",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505e9c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505ed7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1505f72",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506013",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15060b8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506100",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506149",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506173",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15061b0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15061f9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506242",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150628b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15062b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15062fe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506348",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15063b4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15063de",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506428",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506494",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15064bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15064fd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506539",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15065c5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15066a7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15066d3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506743",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506793",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15067bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150680a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506836",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506862",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15068ad",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506908",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506935",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15069c0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506a00",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506a54",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506a81",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506abd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506b40",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506bdd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506c0f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506c41",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506c76",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506cf8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506d26",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506d54",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506dc3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506e10",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506e3f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506e6f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506e9e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506ecd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506f13",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506f83",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1506ff4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507023",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507052",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507094",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15070e2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507111",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507161",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507191",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150721c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150726b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150729b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15072cc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15072fd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150732e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15073a3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15073e1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507456",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150749a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150750d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150755f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15075d2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507646",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507679",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15076ee",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507762",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15077d7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507832",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15078a7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15078fb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507983",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15079fc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507a32",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507a87",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507ad4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507b0b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507b69",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507b9f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507bca",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507c68",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507d06",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507d7a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507e6d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507eb2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507f20",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1507fa9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508018",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508085",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508112",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508140",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508171",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15081a3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15081d6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508209",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150823c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150826f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15082a3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15082d7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150830b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508340",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508375",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15083ab",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15083e1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508417",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150844d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508483",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15084b9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15084ef",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508526",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150855d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508594",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15085cb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508603",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150863b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508673",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15086ab",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15086e3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150871b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508753",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150878b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15087c4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15087fd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508836",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150886f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15088a8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15088e1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150891b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508955",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150898f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15089c9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508a04",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508a3f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508a7a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508ab5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508af0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508b2b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508b67",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508ba3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508bdf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508c1b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508c58",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508c95",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508cd2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508d0f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508d4d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508d8b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508dc9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508e07",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508e45",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508e83",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508ec1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508eff",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508f3d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508f7c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1508fbd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509000",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509043",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509086",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15090be",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509107",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150913a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15091d3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509240",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15092d3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15092ff",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150932d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15093a1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15093d4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509409",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150942f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150948a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509507",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509569",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509593",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15095c0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15095ed",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150961a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509648",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15096d2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509746",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15097d1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509846",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509878",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509960",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x15099d4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509a08",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509a90",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509ac7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509aff",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509b37",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509b5e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509bcf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509c02",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509c80",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509cfe",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509d7a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509df6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509e19",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509f16",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x1509f8e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a022",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a048",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a06f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a092",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a0b5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a0d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a0fb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a129",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a19b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a1ca",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a1f9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a228",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a299",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a30a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a33d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a375",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a39c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a3bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a3e2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a405",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a428",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a457",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a4c8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a4f9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a52b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a55e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a589",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a5bb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a5f3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a619",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a681",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a6f5",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a723",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a751",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a77f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a7af",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a7e2",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a843",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a879",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a8aa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a8db",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a90d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a944",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a974",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a9a7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150a9db",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150aa1c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150aa4f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150aa85",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150aabc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150aaf4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ab2c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ab64",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ab9c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150abd4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ac0d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ac46",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ac7f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150acb9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150acf3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ad2e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ad69",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ada4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150addf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ae1a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ae55",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ae90",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150aecc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150af08",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150af44",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150af80",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150afbd",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150affa",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b037",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b074",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b0b1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b0ee",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b12b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b168",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b1a6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b1e4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b222",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b260",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b29e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b2dc",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b31b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b35a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b399",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b3d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b418",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b458",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b498",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b4d8",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b518",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b558",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b599",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b5da",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b61b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b65c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b69e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b6e0",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b722",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b764",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b7a7",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b7ea",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b82d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b870",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b8b3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b8f6",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b939",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b97c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150b9bf",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ba03",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ba49",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150ba91",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bad9",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bb21",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bb63",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bb99",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bbd1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bc0a",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bc52",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bc9b",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bce4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bd2d",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bd78",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bdc3",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150be0f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150be54",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150be99",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bee1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bf29",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bf72",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150bfbb",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150c004",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150c04e",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150c099",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150c0e4",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150c12f",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150c17c",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x150c1c1",
+          "identifier": "$ns1",
+          "data_preview": "cloudsync_impl"
+        },
+        {
+          "offset": "0x26fe0d",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0xa8b146",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0xa8b167",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0xa94bb2",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0xa94bda",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0xcdf4ee",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0x14f9c1f",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0x14f9c40",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0x15033da",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0x1503402",
+          "identifier": "$ns2",
+          "data_preview": "CSURLInsecureDelegate"
+        },
+        {
+          "offset": "0xa7dcbc",
+          "identifier": "$ns3",
+          "data_preview": "_ct_APP_PROCESS_DISGUISE_NAME"
+        },
+        {
+          "offset": "0xa9a57c",
+          "identifier": "$ns3",
+          "data_preview": "_ct_APP_PROCESS_DISGUISE_NAME"
+        },
+        {
+          "offset": "0x14eeb1a",
+          "identifier": "$ns3",
+          "data_preview": "_ct_APP_PROCESS_DISGUISE_NAME"
+        },
+        {
+          "offset": "0x1508da4",
+          "identifier": "$ns3",
+          "data_preview": "_ct_APP_PROCESS_DISGUISE_NAME"
+        },
+        {
+          "offset": "0xa7d172",
+          "identifier": "$ns4",
+          "data_preview": "_ct_APP_INSTALL_DIR"
+        },
+        {
+          "offset": "0xa99a94",
+          "identifier": "$ns4",
+          "data_preview": "_ct_APP_INSTALL_DIR"
+        },
+        {
+          "offset": "0x14ee032",
+          "identifier": "$ns4",
+          "data_preview": "_ct_APP_INSTALL_DIR"
+        },
+        {
+          "offset": "0x15082bc",
+          "identifier": "$ns4",
+          "data_preview": "_ct_APP_INSTALL_DIR"
+        },
+        {
+          "offset": "0xa7d3d4",
+          "identifier": "$ns6",
+          "data_preview": "_ct_APP_AUTH_JSON_NAME"
+        },
+        {
+          "offset": "0xa99ce0",
+          "identifier": "$ns6",
+          "data_preview": "_ct_APP_AUTH_JSON_NAME"
+        },
+        {
+          "offset": "0x14ee27e",
+          "identifier": "$ns6",
+          "data_preview": "_ct_APP_AUTH_JSON_NAME"
+        },
+        {
+          "offset": "0x1508508",
+          "identifier": "$ns6",
+          "data_preview": "_ct_APP_AUTH_JSON_NAME"
+        },
+        {
+          "offset": "0xa7d991",
+          "identifier": "$ns7",
+          "data_preview": "_ct_APP_PACKAGE_DAEMON_BIN"
+        },
+        {
+          "offset": "0xa9a26b",
+          "identifier": "$ns7",
+          "data_preview": "_ct_APP_PACKAGE_DAEMON_BIN"
+        },
+        {
+          "offset": "0x14ee809",
+          "identifier": "$ns7",
+          "data_preview": "_ct_APP_PACKAGE_DAEMON_BIN"
+        },
+        {
+          "offset": "0x1508a93",
+          "identifier": "$ns7",
+          "data_preview": "_ct_APP_PACKAGE_DAEMON_BIN"
+        },
+        {
+          "offset": "0xa86515",
+          "identifier": "$c1",
+          "data_preview": "chacha20poly1305"
+        },
+        {
+          "offset": "0xa9b4ed",
+          "identifier": "$c1",
+          "data_preview": "chacha20poly1305"
+        },
+        {
+          "offset": "0xa9b569",
+          "identifier": "$c1",
+          "data_preview": "chacha20poly1305"
+        },
+        {
+          "offset": "0x14f64d8",
+          "identifier": "$c1",
+          "data_preview": "chacha20poly1305"
+        },
+        {
+          "offset": "0x1509d15",
+          "identifier": "$c1",
+          "data_preview": "chacha20poly1305"
+        },
+        {
+          "offset": "0x1509d91",
+          "identifier": "$c1",
+          "data_preview": "chacha20poly1305"
+        },
+        {
+          "offset": "0xa8652a",
+          "identifier": "$c2",
+          "data_preview": "chacha20_stream"
+        },
+        {
+          "offset": "0xa9b3f1",
+          "identifier": "$c2",
+          "data_preview": "chacha20_stream"
+        },
+        {
+          "offset": "0xa9b46f",
+          "identifier": "$c2",
+          "data_preview": "chacha20_stream"
+        },
+        {
+          "offset": "0x14f64ed",
+          "identifier": "$c2",
+          "data_preview": "chacha20_stream"
+        },
+        {
+          "offset": "0x1509c19",
+          "identifier": "$c2",
+          "data_preview": "chacha20_stream"
+        },
+        {
+          "offset": "0x1509c97",
+          "identifier": "$c2",
+          "data_preview": "chacha20_stream"
+        },
+        {
+          "offset": "0xa8244e",
+          "identifier": "$c3",
+          "data_preview": "SecTrustSetExceptions"
+        },
+        {
+          "offset": "0xaa0572",
+          "identifier": "$c3",
+          "data_preview": "SecTrustSetExceptions"
+        },
+        {
+          "offset": "0x14edbf0",
+          "identifier": "$c3",
+          "data_preview": "SecTrustSetExceptions"
+        },
+        {
+          "offset": "0x150d501",
+          "identifier": "$c3",
+          "data_preview": "SecTrustSetExceptions"
+        },
+        {
+          "offset": "0xa8240d",
+          "identifier": "$c4",
+          "data_preview": "SecTrustCopyExceptions"
+        },
+        {
+          "offset": "0xaa053f",
+          "identifier": "$c4",
+          "data_preview": "SecTrustCopyExceptions"
+        },
+        {
+          "offset": "0x14edbbd",
+          "identifier": "$c4",
+          "data_preview": "SecTrustCopyExceptions"
+        },
+        {
+          "offset": "0x150d4ce",
+          "identifier": "$c4",
+          "data_preview": "SecTrustCopyExceptions"
+        }
+      ],
+      "sample_sha256": "b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845",
+      "sample_md5": "98366774f0a855f4529b052e2b87456f",
+      "sample_name": "b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845.macho",
+      "sample_size_bytes": 22176656,
+      "source_feed": "MalwareBazaar",
+      "mb_metadata": {
+        "first_seen": "2026-11-04 10:54:22",
+        "file_type": "macho",
+        "signature": null,
+        "tags": [
+          "CloudSyncD",
+          "Mach-O",
+          "machO",
+          "macOS",
+          "wallet"
+        ]
+      },
+      "vt_enrichment": {
+        "vt_status": "success",
+        "positives": 23,
+        "total_engines": 56,
+        "detection_ratio": "23/56",
+        "suggested_threat_label": "trojan.cloudsyncd/abrisk",
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 17
+          }
+        ],
+        "names": [
+          "b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845.macho",
+          "appd.sample"
+        ],
+        "type_description": "Mach-O",
+        "tags": [
+          "multi-arch",
+          "self-signed",
+          "64bits",
+          "dropper",
+          "macho",
+          "arm"
+        ],
+        "reputation": 0,
+        "key_engine_detections": {
+          "Microsoft": "Trojan:MacOS/CloudSyncD.DA!MTB",
+          "ESET-NOD32": "OSX/Agent.JA trojan"
+        },
+        "vt_permalink": "https://www.virustotal.com/gui/file/b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845"
+      },
+      "detected_at": "2026-11-05T20:49:02.799448+00:00",
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
+    },
+    {
+      "rule_name": "Macho_Trojan_CloudSync_1006YR",
+      "platform": "macos",
+      "namespace": "macos_droppers_cloudsync_yar",
+      "tags": [],
+      "meta": {
+        "silent": 1,
+        "author": "Chandra Kant Bauri",
         "description": "Generic detection for CloudSync",
         "date": "2026-10-06",
         "family": "CloudSync",
@@ -132682,8344 +141027,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
-    },
-    {
-      "rule_name": "Macho_Trojan_CloudSync_1006YR",
-      "platform": "macos",
-      "namespace": "macos_droppers_cloudsync_yar",
-      "tags": [],
-      "meta": {
-        "silent": 1,
-        "author": "Chandra Kant Bauri",
-        "description": "Generic detection for CloudSync",
-        "date": "2026-10-06",
-        "family": "CloudSync",
-        "platform": "macOS"
-      },
-      "matched_strings": [
-        {
-          "offset": "0x2458a0",
-          "identifier": "$sobf_sbox",
-          "data_preview": "d7 19 bf 57 e6 5b a0 9d e1 ba cd b1 82 c9 91 18 ed af d5 18 fd 3a 4a 97 97 bc ad 22 1a db 81 51"
-        },
-        {
-          "offset": "0xcb4150",
-          "identifier": "$sobf_sbox",
-          "data_preview": "d7 19 bf 57 e6 5b a0 9d e1 ba cd b1 82 c9 91 18 ed af d5 18 fd 3a 4a 97 97 bc ad 22 1a db 81 51"
-        },
-        {
-          "offset": "0x32a7f",
-          "identifier": "$sobf_code_x86",
-          "data_preview": "41 6b c4 83 41 83 e4 1f"
-        },
-        {
-          "offset": "0xae842c",
-          "identifier": "$sobf_code_arm",
-          "data_preview": "69 10 80 52 c9 7e 09 9b cb 12 40 92"
-        },
-        {
-          "offset": "0x24f3b7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x24f3f8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x24f896",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x24f8d7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x24fbc2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x24fcc2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x26180e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x261a54",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x265c5f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x265dcc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x265e1c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x265ea9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x265f38",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x265ff4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x266097",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x266154",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x266279",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x26634e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b53a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b572",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b5a8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b5e3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b61d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b657",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b692",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b6ce",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b70a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b746",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b782",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b7be",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b7fb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b838",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b875",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b8b3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b8f1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b930",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b96f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b9ae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7b9ed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ba2c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ba6b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7baaa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7baea",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bb2a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bb6a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bbaa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bbeb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bc2c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bc6d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bcae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bcef",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bd30",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bd71",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bdb2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bdf4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7be36",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7be78",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7beba",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7befc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bf3e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bf81",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7bfc4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c007",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c04a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c08e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c0d2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c116",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c15a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c19e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c1e2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c227",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c26c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c2b1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c2f6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c33c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c382",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c3c8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c40e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c455",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c49c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c4e3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c52a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c571",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c5b8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c5ff",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c646",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c68d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c6d5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c71f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c76b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c7b7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c803",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c84c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c886",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c8c2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c8ff",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c94e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c99b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7c9e8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ca35",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ca84",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cad3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cb23",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cb6c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cbb5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cc01",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cc4d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cc9a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cce7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cd34",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cd82",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cdd1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ce20",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ce6f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cec0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cf09",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cf4e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cf86",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cfb6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7cfe8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d01b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d04f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d084",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d0b9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d0ee",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d123",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d159",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d18f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d1c5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d1fc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d233",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d26b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d2a3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d2db",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d313",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d34b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d383",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d3bb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d3f4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d42d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d466",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d49f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d4d9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d513",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d54d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d587",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d5c1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d5fb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d635",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d66f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d6aa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d6e5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d720",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d75b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d796",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d7d1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d80d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d849",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d885",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d8c1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d8fe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d93b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d978",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d9b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7d9f2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7da2f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7da6d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7daab",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dae9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7db27",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7db66",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dba5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dbe4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dc23",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dc63",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dca3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dce3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dd23",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dd63",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dda3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dde3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7de23",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7de63",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dea4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7dee7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7df2c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7df71",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7e2b6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7e44d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7eb57",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ebcf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7f0ed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7f281",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7f9d1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fa43",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fc55",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fcc3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fcfb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fd2e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fd61",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fd95",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fdce",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fe00",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fe35",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fe6b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7feae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7fee6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ff1e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ff57",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ff91",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa7ffcb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80005",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8003f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80079",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa800b4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa800ef",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8012a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80166",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa801a2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa801df",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8021c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80259",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80296",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa802d3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80310",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8034d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8038b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa803c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80407",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80445",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80484",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa804c3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80502",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80541",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80580",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa805bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa805fe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8063d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8067d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa806bd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa806fd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8073d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8077d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa807bd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa807fe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8083f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80880",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa808c1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80903",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80945",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80987",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa809c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80a0b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80a4d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80a90",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80ad3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80b16",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80b59",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80b9d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80be1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80c25",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80c69",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80cae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80cf3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80d38",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80d7d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80dc2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80e07",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80e4c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80e91",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80ed6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80f1c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80f64",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80fae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa80ff8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81042",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81089",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa810c1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa810fb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81136",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81183",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa811ce",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81219",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81264",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa812b1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa812fe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8134c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81393",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa813da",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81424",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8146e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa814b9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81504",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8154f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8159b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa815e8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81635",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81682",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa816d1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa81718",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa852f3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa85307",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa89dde",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa89ea5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8a16b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8a9f7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8ac3d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8ad04",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8b193",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8b1a9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8b248",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa8b25e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94c81",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94cb4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94ce8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94d21",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94d56",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94d8e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94dc7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94e01",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94e3b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94e75",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94eaf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94ee9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94f24",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94f5f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94f9a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa94fd6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95012",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9504f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9508c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa950c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95106",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95143",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95180",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa951bd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa951fb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95239",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95277",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa952b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa952f4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95333",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95372",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa953b1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa953f0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9542f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9546e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa954ad",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa954ed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9552d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9556d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa955ad",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa955ed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9562d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9566e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa956af",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa956f0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95731",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95773",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa957b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa957f7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95839",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9587b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa958bd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95900",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95943",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95986",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa959c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95a0d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95a51",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95a95",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95ad9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95b1e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95b63",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95ba8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95bed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95c32",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95c77",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95cbc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95d01",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95d46",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95d8c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95dd4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95e1e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95e68",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95eb2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95ef6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95f2e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95f68",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95fa3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa95fed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96038",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96083",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa960ce",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9611b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96168",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa961b6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa961fd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96244",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9628e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa962d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96323",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9636e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa963b9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96405",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96452",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9649f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa964ec",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9653b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96582",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa965c5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96649",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9666c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96692",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9670a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96817",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9684a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9687d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa968b0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9692a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa969a1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96a1a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96a97",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96b12",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96b61",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96c4d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96cc9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96d46",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96d96",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96dd4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96e56",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa96edc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97001",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9702a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9708f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa970b3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97136",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97162",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97195",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa971ca",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa972af",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa972f7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa973df",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97419",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9748b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa974c5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9752d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa975bd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97605",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9764c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97674",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa976af",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9774a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa977eb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97890",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa978d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97921",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9794b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97988",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa979d1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97a1a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97a63",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97a8d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97ad6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97b20",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97b8c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97bb6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97c00",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97c6c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97c97",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97cd5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97d11",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97d9d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97e7f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97eab",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97f1b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97f6b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97f97",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa97fe2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9800e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9803a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98085",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa980e0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9810d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98198",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa981d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9822c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98259",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98295",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98318",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa983b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa983e7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98419",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9844e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa984d0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa984fe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9852c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9859b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa985e8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98617",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98647",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98676",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa986a5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa986eb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9875b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa987cc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa987fb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9882a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9886c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa988ba",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa988e9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98939",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98969",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa989f4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98a43",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98a73",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98aa4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98ad5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98b06",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98b7b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98bb9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98c2e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98c72",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98ce5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98d37",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98daa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98e1e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98e51",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98ec6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98f3a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa98faf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9900a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9907f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa990d3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9915b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa991d4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9920a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9925f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa992ac",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa992e3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99341",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99377",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa993a2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99440",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa994de",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99552",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99645",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9968a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa996f8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99781",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa997f0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9985d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa998ea",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99918",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99949",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9997b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa999ae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa999e1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99a14",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99a47",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99a7b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99aaf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99ae3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99b18",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99b4d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99b83",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99bb9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99bef",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99c25",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99c5b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99c91",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99cc7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99cfe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99d35",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99d6c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99da3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99ddb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99e13",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99e4b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99e83",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99ebb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99ef3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99f2b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99f63",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99f9c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa99fd5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a00e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a047",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a080",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a0b9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a0f3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a12d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a167",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a1a1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a1dc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a217",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a252",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a28d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a2c8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a303",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a33f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a37b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a3b7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a3f3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a430",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a46d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a4aa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a4e7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a525",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a563",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a5a1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a5df",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a61d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a65b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a699",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a6d7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a715",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a754",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a795",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a7d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a81b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a85e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a896",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a8df",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a912",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9a9ab",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9aa18",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9aaab",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9aad7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ab05",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ab79",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9abac",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9abe1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ac07",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ac62",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9acdf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ad41",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ad6b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ad98",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9adc5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9adf2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ae20",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9aeaa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9af1e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9afa9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b01e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b050",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b138",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b1ac",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b1e0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b268",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b29f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b2d7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b30f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b336",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b3a7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b3da",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b458",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b4d6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b552",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b5ce",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b5f1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b6ee",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b766",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b7fa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b820",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b847",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b86a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b88d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b8b0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b8d3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b901",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b973",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b9a2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9b9d1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ba00",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ba71",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bae2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bb15",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bb4d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bb74",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bb97",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bbba",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bbdd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bc00",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bc2f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bca0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bcd1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bd03",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bd36",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bd61",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bd93",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bdcb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bdf1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9be59",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9becd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9befb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bf29",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bf57",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9bf87",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9c243",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9c3b6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9c9b6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ca21",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ce64",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9cfd7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d62e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d699",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d853",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d8b4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d8ea",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d91b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d94c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d97e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d9b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9d9e5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9da18",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9da4c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9da8d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dac0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9daf6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9db2d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9db65",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9db9d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dbd5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dc0d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dc45",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dc7e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dcb7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dcf0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dd2a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dd64",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dd9f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ddda",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9de15",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9de50",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9de8b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dec6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9df01",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9df3d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9df79",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dfb5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9dff1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e02e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e06b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e0a8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e0e5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e122",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e15f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e19c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e1d9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e217",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e255",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e293",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e2d1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e30f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e34d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e38c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e3cb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e40a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e449",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e489",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e4c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e509",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e549",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e589",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e5c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e60a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e64b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e68c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e6cd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e70f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e751",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e793",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e7d5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e818",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e85b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e89e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e8e1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e924",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e967",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e9aa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9e9ed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ea30",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ea74",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9eaba",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9eb02",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9eb4a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9eb92",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ebd4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ec0a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ec42",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ec7b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ecc3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ed0c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ed55",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ed9e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ede9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ee34",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ee80",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9eec5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ef0a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ef52",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9ef9a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9efe3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9f02c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9f075",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9f0bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9f10a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9f155",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9f1a0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9f1ed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xa9f232",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcbe19f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcbe1e0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcbe67e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcbe6bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcbe8fa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcbe9ea",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd0dce",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd1014",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd53bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd552c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd557c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd5609",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd5698",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd5754",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd57f7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd58b4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd59d9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0xcd5aae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edc9c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edccf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edd03",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edd3c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edd80",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eddb8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eddf2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ede29",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ede5c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ede88",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edeb6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edee7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edf19",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edf4c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edf7f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edfb2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14edfe5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee019",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee04d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee081",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee0b6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee0eb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee121",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee157",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee18d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee1c3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee1f9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee22f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee265",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee29c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee2d3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee30a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee341",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee379",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee3b1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee3e9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee421",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee459",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee491",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee4c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee501",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee53a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee573",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee5ac",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee5e5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee61e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee657",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee691",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee6cb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee705",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee73f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee77a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee7b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee7f0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee82b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee866",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee8a1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee8dd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee919",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee955",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee991",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14ee9ce",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eea0b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eea48",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eea85",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eeac3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eeb01",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eeb3f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eeb7d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eebbb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eebf9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eec37",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eec75",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eecb3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eecf2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eed33",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eed76",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14eedb9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0c6d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0cce",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0d04",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0d35",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0d66",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0d98",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0dcf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0dff",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0e32",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0e66",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0ea7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0ee9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0f1f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f0f57",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2364",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2399",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f23d1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f240a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2444",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f247e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f24b8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f24f2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f252c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2567",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f25a2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f25dd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2619",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2655",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2692",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f26cf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f270c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2749",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2786",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f27c3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2800",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f283e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f287c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f28ba",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f28f8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2937",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2976",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f29b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f29f4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2a33",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2a72",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2ab1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2af0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2b30",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2b70",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2bb0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2bf0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2c30",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2c70",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2cb1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2cf2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2d33",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2d74",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2db6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2df8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2e3a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2e7c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2ebe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2f00",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2f43",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2f86",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f2fc9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f300c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3050",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3094",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f30d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f311c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3161",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f31a6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f31eb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3230",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3275",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f32ba",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f32ff",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3344",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3389",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f33cf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3417",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3461",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f34ab",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f34f6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3540",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f358b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f35d6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3621",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f366e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f36bb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3709",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3750",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3797",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f37e1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f382b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3876",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f38c1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f390c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3958",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f39a5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f39f2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3a3f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3a8e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3ad5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3b19",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3b4c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3b82",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3bb9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3bf1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3c29",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3c61",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3c99",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3cd1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3d0a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3d43",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3d7c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3db6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3df0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3e2b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3e66",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3ea1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3edc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3f17",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3f52",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3f8d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f3fc9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4005",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4041",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f407d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f40ba",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f40f7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4134",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4171",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f41ae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f41eb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4228",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4265",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f42a3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f42e1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f431f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f435d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f439b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f43d9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4418",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4457",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4496",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f44d5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4515",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4555",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4595",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f45d5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4615",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4655",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4696",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f46d7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4718",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4759",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f479b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f47dd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f481f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4861",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f48a4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f48e7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f492a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f496d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f49b0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f49f3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4a36",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4a79",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4abc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4b00",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4b46",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4b8e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4bd6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4c1f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4c67",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4cb0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4cf9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4d42",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4d8d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4dd8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4e24",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4e69",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4eae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4ef6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4f3e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4f87",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f4fd0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f5019",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f5063",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f50ae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f50f9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f5144",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f5191",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f51d6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f52b6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f52ca",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f9c6c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f9c82",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f9ddb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x14f9df1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15034a9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15034dc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503510",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503549",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150357e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15035b6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15035ef",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503629",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503663",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150369d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15036d7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503711",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150374c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503787",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15037c2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15037fe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150383a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503877",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15038b4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15038f1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150392e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150396b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15039a8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15039e5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503a23",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503a61",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503a9f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503add",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503b1c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503b5b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503b9a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503bd9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503c18",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503c57",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503c96",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503cd5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503d15",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503d55",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503d95",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503dd5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503e15",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503e55",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503e96",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503ed7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503f18",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503f59",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503f9b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1503fdd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150401f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504061",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15040a3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15040e5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504128",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150416b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15041ae",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15041f1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504235",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504279",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15042bd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504301",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504346",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150438b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15043d0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504415",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150445a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150449f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15044e4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504529",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150456e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15045b4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15045fc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504646",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504690",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15046da",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150471e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504756",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504790",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15047cb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504815",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504860",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15048ab",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15048f6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504943",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504990",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15049de",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504a25",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504a6c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504ab6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504b00",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504b4b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504b96",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504be1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504c2d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504c7a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504cc7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504d14",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504d63",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504daa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504ded",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504e71",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504e94",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504eba",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1504f32",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150503f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505072",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15050a5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15050d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505152",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15051c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505242",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15052bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150533a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505389",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505475",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15054f1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150556e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15055be",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15055fc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150567e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505704",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505829",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505852",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15058b7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15058db",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150595e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150598a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15059bd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15059f2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505ad7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505b1f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505c07",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505c41",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505cb3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505ced",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505d55",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505de5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505e2d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505e74",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505e9c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505ed7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1505f72",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506013",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15060b8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506100",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506149",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506173",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15061b0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15061f9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506242",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150628b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15062b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15062fe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506348",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15063b4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15063de",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506428",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506494",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15064bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15064fd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506539",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15065c5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15066a7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15066d3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506743",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506793",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15067bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150680a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506836",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506862",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15068ad",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506908",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506935",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15069c0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506a00",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506a54",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506a81",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506abd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506b40",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506bdd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506c0f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506c41",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506c76",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506cf8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506d26",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506d54",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506dc3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506e10",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506e3f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506e6f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506e9e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506ecd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506f13",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506f83",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1506ff4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507023",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507052",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507094",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15070e2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507111",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507161",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507191",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150721c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150726b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150729b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15072cc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15072fd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150732e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15073a3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15073e1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507456",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150749a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150750d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150755f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15075d2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507646",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507679",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15076ee",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507762",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15077d7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507832",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15078a7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15078fb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507983",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15079fc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507a32",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507a87",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507ad4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507b0b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507b69",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507b9f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507bca",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507c68",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507d06",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507d7a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507e6d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507eb2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507f20",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1507fa9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508018",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508085",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508112",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508140",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508171",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15081a3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15081d6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508209",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150823c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150826f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15082a3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15082d7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150830b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508340",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508375",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15083ab",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15083e1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508417",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150844d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508483",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15084b9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15084ef",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508526",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150855d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508594",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15085cb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508603",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150863b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508673",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15086ab",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15086e3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150871b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508753",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150878b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15087c4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15087fd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508836",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150886f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15088a8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15088e1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150891b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508955",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150898f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15089c9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508a04",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508a3f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508a7a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508ab5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508af0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508b2b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508b67",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508ba3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508bdf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508c1b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508c58",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508c95",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508cd2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508d0f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508d4d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508d8b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508dc9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508e07",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508e45",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508e83",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508ec1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508eff",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508f3d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508f7c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1508fbd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509000",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509043",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509086",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15090be",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509107",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150913a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15091d3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509240",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15092d3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15092ff",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150932d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15093a1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15093d4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509409",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150942f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150948a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509507",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509569",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509593",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15095c0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15095ed",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150961a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509648",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15096d2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509746",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15097d1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509846",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509878",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509960",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x15099d4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509a08",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509a90",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509ac7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509aff",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509b37",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509b5e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509bcf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509c02",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509c80",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509cfe",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509d7a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509df6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509e19",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509f16",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x1509f8e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a022",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a048",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a06f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a092",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a0b5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a0d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a0fb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a129",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a19b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a1ca",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a1f9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a228",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a299",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a30a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a33d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a375",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a39c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a3bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a3e2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a405",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a428",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a457",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a4c8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a4f9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a52b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a55e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a589",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a5bb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a5f3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a619",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a681",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a6f5",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a723",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a751",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a77f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a7af",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a7e2",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a843",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a879",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a8aa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a8db",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a90d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a944",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a974",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a9a7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150a9db",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150aa1c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150aa4f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150aa85",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150aabc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150aaf4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ab2c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ab64",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ab9c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150abd4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ac0d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ac46",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ac7f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150acb9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150acf3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ad2e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ad69",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ada4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150addf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ae1a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ae55",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ae90",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150aecc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150af08",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150af44",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150af80",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150afbd",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150affa",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b037",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b074",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b0b1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b0ee",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b12b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b168",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b1a6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b1e4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b222",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b260",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b29e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b2dc",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b31b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b35a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b399",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b3d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b418",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b458",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b498",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b4d8",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b518",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b558",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b599",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b5da",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b61b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b65c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b69e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b6e0",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b722",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b764",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b7a7",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b7ea",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b82d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b870",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b8b3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b8f6",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b939",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b97c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150b9bf",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ba03",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ba49",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150ba91",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bad9",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bb21",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bb63",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bb99",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bbd1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bc0a",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bc52",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bc9b",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bce4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bd2d",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bd78",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bdc3",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150be0f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150be54",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150be99",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bee1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bf29",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bf72",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150bfbb",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150c004",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150c04e",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150c099",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150c0e4",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150c12f",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150c17c",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x150c1c1",
-          "identifier": "$ns1",
-          "data_preview": "cloudsync_impl"
-        },
-        {
-          "offset": "0x26fe0d",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0xa8b146",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0xa8b167",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0xa94bb2",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0xa94bda",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0xcdf4ee",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0x14f9c1f",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0x14f9c40",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0x15033da",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0x1503402",
-          "identifier": "$ns2",
-          "data_preview": "CSURLInsecureDelegate"
-        },
-        {
-          "offset": "0xa7dcbc",
-          "identifier": "$ns3",
-          "data_preview": "_ct_APP_PROCESS_DISGUISE_NAME"
-        },
-        {
-          "offset": "0xa9a57c",
-          "identifier": "$ns3",
-          "data_preview": "_ct_APP_PROCESS_DISGUISE_NAME"
-        },
-        {
-          "offset": "0x14eeb1a",
-          "identifier": "$ns3",
-          "data_preview": "_ct_APP_PROCESS_DISGUISE_NAME"
-        },
-        {
-          "offset": "0x1508da4",
-          "identifier": "$ns3",
-          "data_preview": "_ct_APP_PROCESS_DISGUISE_NAME"
-        },
-        {
-          "offset": "0xa7d172",
-          "identifier": "$ns4",
-          "data_preview": "_ct_APP_INSTALL_DIR"
-        },
-        {
-          "offset": "0xa99a94",
-          "identifier": "$ns4",
-          "data_preview": "_ct_APP_INSTALL_DIR"
-        },
-        {
-          "offset": "0x14ee032",
-          "identifier": "$ns4",
-          "data_preview": "_ct_APP_INSTALL_DIR"
-        },
-        {
-          "offset": "0x15082bc",
-          "identifier": "$ns4",
-          "data_preview": "_ct_APP_INSTALL_DIR"
-        },
-        {
-          "offset": "0xa7d3d4",
-          "identifier": "$ns6",
-          "data_preview": "_ct_APP_AUTH_JSON_NAME"
-        },
-        {
-          "offset": "0xa99ce0",
-          "identifier": "$ns6",
-          "data_preview": "_ct_APP_AUTH_JSON_NAME"
-        },
-        {
-          "offset": "0x14ee27e",
-          "identifier": "$ns6",
-          "data_preview": "_ct_APP_AUTH_JSON_NAME"
-        },
-        {
-          "offset": "0x1508508",
-          "identifier": "$ns6",
-          "data_preview": "_ct_APP_AUTH_JSON_NAME"
-        },
-        {
-          "offset": "0xa7d991",
-          "identifier": "$ns7",
-          "data_preview": "_ct_APP_PACKAGE_DAEMON_BIN"
-        },
-        {
-          "offset": "0xa9a26b",
-          "identifier": "$ns7",
-          "data_preview": "_ct_APP_PACKAGE_DAEMON_BIN"
-        },
-        {
-          "offset": "0x14ee809",
-          "identifier": "$ns7",
-          "data_preview": "_ct_APP_PACKAGE_DAEMON_BIN"
-        },
-        {
-          "offset": "0x1508a93",
-          "identifier": "$ns7",
-          "data_preview": "_ct_APP_PACKAGE_DAEMON_BIN"
-        },
-        {
-          "offset": "0xa86515",
-          "identifier": "$c1",
-          "data_preview": "chacha20poly1305"
-        },
-        {
-          "offset": "0xa9b4ed",
-          "identifier": "$c1",
-          "data_preview": "chacha20poly1305"
-        },
-        {
-          "offset": "0xa9b569",
-          "identifier": "$c1",
-          "data_preview": "chacha20poly1305"
-        },
-        {
-          "offset": "0x14f64d8",
-          "identifier": "$c1",
-          "data_preview": "chacha20poly1305"
-        },
-        {
-          "offset": "0x1509d15",
-          "identifier": "$c1",
-          "data_preview": "chacha20poly1305"
-        },
-        {
-          "offset": "0x1509d91",
-          "identifier": "$c1",
-          "data_preview": "chacha20poly1305"
-        },
-        {
-          "offset": "0xa8652a",
-          "identifier": "$c2",
-          "data_preview": "chacha20_stream"
-        },
-        {
-          "offset": "0xa9b3f1",
-          "identifier": "$c2",
-          "data_preview": "chacha20_stream"
-        },
-        {
-          "offset": "0xa9b46f",
-          "identifier": "$c2",
-          "data_preview": "chacha20_stream"
-        },
-        {
-          "offset": "0x14f64ed",
-          "identifier": "$c2",
-          "data_preview": "chacha20_stream"
-        },
-        {
-          "offset": "0x1509c19",
-          "identifier": "$c2",
-          "data_preview": "chacha20_stream"
-        },
-        {
-          "offset": "0x1509c97",
-          "identifier": "$c2",
-          "data_preview": "chacha20_stream"
-        },
-        {
-          "offset": "0xa8244e",
-          "identifier": "$c3",
-          "data_preview": "SecTrustSetExceptions"
-        },
-        {
-          "offset": "0xaa0572",
-          "identifier": "$c3",
-          "data_preview": "SecTrustSetExceptions"
-        },
-        {
-          "offset": "0x14edbf0",
-          "identifier": "$c3",
-          "data_preview": "SecTrustSetExceptions"
-        },
-        {
-          "offset": "0x150d501",
-          "identifier": "$c3",
-          "data_preview": "SecTrustSetExceptions"
-        },
-        {
-          "offset": "0xa8240d",
-          "identifier": "$c4",
-          "data_preview": "SecTrustCopyExceptions"
-        },
-        {
-          "offset": "0xaa053f",
-          "identifier": "$c4",
-          "data_preview": "SecTrustCopyExceptions"
-        },
-        {
-          "offset": "0x14edbbd",
-          "identifier": "$c4",
-          "data_preview": "SecTrustCopyExceptions"
-        },
-        {
-          "offset": "0x150d4ce",
-          "identifier": "$c4",
-          "data_preview": "SecTrustCopyExceptions"
-        }
-      ],
-      "sample_sha256": "b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845",
-      "sample_md5": "98366774f0a855f4529b052e2b87456f",
-      "sample_name": "b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845.macho",
-      "sample_size_bytes": 22176656,
-      "source_feed": "MalwareBazaar",
-      "mb_metadata": {
-        "first_seen": "2026-11-04 10:54:22",
-        "file_type": "macho",
-        "signature": null,
-        "tags": [
-          "CloudSyncD",
-          "Mach-O",
-          "machO",
-          "macOS",
-          "wallet"
-        ]
-      },
-      "vt_enrichment": {
-        "vt_status": "success",
-        "positives": 23,
-        "total_engines": 56,
-        "detection_ratio": "23/56",
-        "suggested_threat_label": "trojan.cloudsyncd/abrisk",
-        "popular_threat_category": [
-          {
-            "count": 17,
-            "value": "trojan"
-          }
-        ],
-        "names": [
-          "b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845.macho",
-          "appd.sample"
-        ],
-        "type_description": "Mach-O",
-        "tags": [
-          "multi-arch",
-          "self-signed",
-          "64bits",
-          "dropper",
-          "macho",
-          "arm"
-        ],
-        "reputation": 0,
-        "key_engine_detections": {
-          "Microsoft": "Trojan:MacOS/CloudSyncD.DA!MTB",
-          "ESET-NOD32": "OSX/Agent.JA trojan"
-        },
-        "vt_permalink": "https://www.virustotal.com/gui/file/b3cca282ed4a60bda2297d84eb3fc0ecb74cae57a913ebcbc409fa0ee10b2845"
-      },
-      "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -141200,8 +141208,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/macho",
         "popular_threat_category": [
           {
-            "count": 21,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 21
           }
         ],
         "names": [
@@ -141226,7 +141234,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1c4e9a6a9bcce85414ef68e51bb2b0b8a869613ffd17dfde4062f84a17f4f249"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141285,8 +141293,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 20,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 20
           }
         ],
         "names": [
@@ -141312,7 +141320,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/4f9bfba5dc5b19360bd785ac5df0da4310e90da7cf3c0c1330ee77de037e0ee9"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141399,7 +141407,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/dd9f917582660b3d1623203343a57c8984e95b4503cf2fd9295fbda832d3bf6b"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141484,7 +141492,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/b056036d41d9992cde1cff4c9db6ca343ce86e41fd4394b382df0db6d1c81989"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141543,8 +141551,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -141570,7 +141578,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/503b965c67a4712791ce7cbdcbecd492fcb85bdbebb777ebffb4aa74708eb3c6"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141655,7 +141663,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/0eefe5dd5605680e24f2b6c0cb75f5dcdc4688b7c0f8ee2986a592a326cabc5f"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141740,7 +141748,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/eea3fc56edae8f987bd841192f5810d240d27662e976d1087a68945f0e923172"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141799,8 +141807,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -141826,7 +141834,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/1db680ecf7e3c1668f2454df9d661fe3bf84a4e82031725bd871f8eeffd59eff"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141885,8 +141893,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/abmrisk",
         "popular_threat_category": [
           {
-            "count": 18,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 18
           }
         ],
         "names": [
@@ -141911,7 +141919,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/a0d1321649b45899e56bd86f5dffec509f0cb8ac6e44acafb38f55649a69cbb0"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "macOS_ClickFix_AppleScript_Dropper",
@@ -141970,8 +141978,8 @@ window.YARAFY_DATA = {
         "suggested_threat_label": "trojan.amos/infostl",
         "popular_threat_category": [
           {
-            "count": 19,
-            "value": "trojan"
+            "value": "trojan",
+            "count": 19
           }
         ],
         "names": [
@@ -141997,7 +142005,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/323214d1eb020eb1919c87bc48541f1e2997082279969adc77f52b6cc17f0135"
       },
       "detected_at": "2026-11-05T20:49:02.799448+00:00",
-      "last_seen_at": "2026-11-16T23:43:06.102641+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Foxveil_AMOS_Stage4_Generic",
@@ -145476,20 +145484,20 @@ window.YARAFY_DATA = {
         "file_type": "macho",
         "signature": "AMOS",
         "tags": [
-          "amos",
-          "macho"
+          "AMOS",
+          "machO"
         ]
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 32,
-        "total_engines": 59,
-        "detection_ratio": "32/59",
+        "positives": 34,
+        "total_engines": 62,
+        "detection_ratio": "34/62",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 19
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -145499,16 +145507,16 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "checks-vm",
+          "macho",
+          "crypto-wallets",
+          "64bits",
+          "os-credentials",
           "self-signed",
           "multi-arch",
-          "crypto-wallets",
-          "checks-vm",
-          "password-dialog",
-          "macho",
-          "arm",
-          "os-credentials",
           "checks-cpu-name",
-          "64bits"
+          "arm",
+          "password-dialog"
         ],
         "reputation": -11,
         "key_engine_detections": {
@@ -145521,7 +145529,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/2d352712cad9e47d9c8ce0b62589e7c09c2a5dd97bd35bf72140a252cc600ea3"
       },
       "detected_at": "2026-11-14T15:28:11.156712+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -146053,19 +146061,19 @@ window.YARAFY_DATA = {
         "file_type": "macho",
         "signature": "AMOS",
         "tags": [
-          "amos",
-          "macho"
+          "AMOS",
+          "machO"
         ]
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 33,
-        "total_engines": 61,
-        "detection_ratio": "33/61",
-        "suggested_threat_label": "trojan.stealer/amos",
+        "positives": 21,
+        "total_engines": 47,
+        "detection_ratio": "21/47",
+        "suggested_threat_label": "trojan.stealer/amosstealer",
         "popular_threat_category": [
           {
-            "count": 18,
+            "count": 10,
             "value": "trojan"
           }
         ],
@@ -146075,31 +146083,29 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "checks-cpu-name",
           "service-scan",
-          "self-signed",
-          "password-dialog",
-          "browser-creds",
-          "crypto-wallets",
-          "64bits",
           "checks-vm",
+          "self-signed",
           "os-credentials",
           "macho",
-          "arm",
           "multi-arch",
-          "checks-cpu-name"
+          "password-dialog",
+          "64bits",
+          "arm",
+          "browser-creds",
+          "crypto-wallets"
         ],
         "reputation": -11,
         "key_engine_detections": {
           "Microsoft": "Trojan:MacOS/AmosStealer.DB!MTB",
           "SentinelOne": "Static AI - Malicious Mach-O",
-          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg",
-          "Sophos": "OSX/InfoStl-GW",
-          "ESET-NOD32": "OSX/PSW.Agent.GF trojan"
+          "Kaspersky": "HEUR:Trojan-PSW.OSX.Amos.bg"
         },
         "vt_permalink": "https://www.virustotal.com/gui/file/ae4f1b9547db90636514df913a422eff22ebf1cf60712e1f1ec5753b6e26a9e8"
       },
       "detected_at": "2026-11-14T15:28:11.156712+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "OSX_Stealer_AMOS_Generic",
@@ -146631,20 +146637,20 @@ window.YARAFY_DATA = {
         "file_type": "macho",
         "signature": "AMOS",
         "tags": [
-          "amos",
-          "macho"
+          "AMOS",
+          "machO"
         ]
       },
       "vt_enrichment": {
         "vt_status": "success",
-        "positives": 31,
-        "total_engines": 57,
-        "detection_ratio": "31/57",
+        "positives": 35,
+        "total_engines": 63,
+        "detection_ratio": "35/63",
         "suggested_threat_label": "trojan.stealer/amos",
         "popular_threat_category": [
           {
-            "value": "trojan",
-            "count": 20
+            "count": 20,
+            "value": "trojan"
           }
         ],
         "names": [
@@ -146654,11 +146660,11 @@ window.YARAFY_DATA = {
         ],
         "type_description": "Mach-O",
         "tags": [
+          "self-signed",
           "multi-arch",
-          "arm",
-          "64bits",
           "macho",
-          "self-signed"
+          "arm",
+          "64bits"
         ],
         "reputation": -11,
         "key_engine_detections": {
@@ -146671,7 +146677,7 @@ window.YARAFY_DATA = {
         "vt_permalink": "https://www.virustotal.com/gui/file/e5566d680f0c6484b51bceb7d737340bd43aff97164b24bff8b326d02c038af4"
       },
       "detected_at": "2026-11-14T15:28:11.156712+00:00",
-      "last_seen_at": "2026-11-16T03:43:07.450531+00:00"
+      "last_seen_at": "2026-11-22T04:26:05.270038+00:00"
     },
     {
       "rule_name": "osx_stealer_icmacos",
